@@ -19,7 +19,7 @@
 - [x] VIDEOS unique count and RECENT VIDEOS with OPEN links
 - [x] Atomic command acknowledgement, observation storage and capture logs
 - [x] Live Chrome capture on current TikTok DOM: 8 inserted, then 8 duplicates updated (API/log verified)
-- [ ] User confirmation of RECENT VIDEOS rendering in the live dashboard
+- [x] User confirmed RECENT VIDEOS with 8 videos, stable count on recapture and duplicate-update logs (2026-10-21)
 - [ ] Evidence snapshots/structured records
 - [x] No social interaction
 

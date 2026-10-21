@@ -103,4 +103,7 @@ These tests do not replace manual acceptance in the authenticated normal Chrome.
 Live capture verified on 2026-10-21 through the running local API: capture #3
 inserted 8 unique videos; capture #4 inserted 0 and updated the same 8. IDs and
 first_seen_at were preserved and last_seen_at advanced. Live Log contained the
-full requested sequence. Dashboard visual confirmation remains a manual check.
+full requested sequence. On 2026-10-21 the user confirmed RECENT VIDEOS displayed
+all 8 collected videos, a second capture kept the total at 8, and Live Log showed
+8 result links detected, 0 unique observations stored and 8 duplicates updated.
+The READ-ONLY SEARCH CAPTURE sprint is closed. No next sprint was started.
