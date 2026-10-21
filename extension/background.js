@@ -45,18 +45,28 @@ async function tick() {
     }
     const {command} = await request(`/api/bridge/commands/next?extension_id=${encodeURIComponent(chrome.runtime.id)}`);
     if (command) {
-      let status = "FAILED", detail = "Unsupported command";
+      let status = "FAILED", detail = "Unsupported command", capture = null;
       try {
-        if (command.type !== "SEARCH" || typeof command.query !== "string" || !command.query.trim() || command.query.length > 200) throw new Error("Invalid SEARCH command");
+        if (!['SEARCH', 'READ_SEARCH_RESULTS'].includes(command.type) || typeof command.query !== "string" || !command.query.trim() || command.query.length > 200) throw new Error("Invalid read-only command");
         if (!tab) throw new Error("TikTok tab is no longer open");
         const current = await chrome.tabs.get(tab.id);
         if (!isTikTok(current.url)) throw new Error("Target tab is no longer TikTok");
-        const target = new URL("https://www.tiktok.com/search");
-        target.searchParams.set("q", command.query);
-        await chrome.tabs.update(tab.id, {url: target.href, active: true});
-        status = "SUCCEEDED"; detail = `Chrome accepted navigation to ${target.href}`;
+        if (command.type === 'READ_SEARCH_RESULTS') {
+          const page = new URL(current.url);
+          if (page.pathname.replace(/\/$/, '') !== '/search' || page.searchParams.get('q') !== command.query) throw new Error('Search page changed before capture');
+          const response = await chrome.tabs.sendMessage(tab.id, {type: 'PH_READ_SEARCH_RESULTS', query: command.query});
+          if (!response?.ok || !response.capture) throw new Error(response?.error || 'Reload the TikTok tab to enable capture');
+          capture = response.capture;
+          status = 'SUCCEEDED'; detail = `${capture.results_count} visible unique results read`;
+        } else {
+          const target = new URL("https://www.tiktok.com/search");
+          target.searchParams.set("q", command.query);
+          await chrome.tabs.update(tab.id, {url: target.href, active: true});
+          status = "SUCCEEDED"; detail = `Chrome accepted navigation to ${target.href}`;
+        }
       } catch (err) { detail = String(err).slice(0, 1000); }
       const body = {extension_id: chrome.runtime.id, status, detail};
+      if (capture !== null) body.capture = capture;
       await chrome.storage.local.set({pendingResult: {id: command.id, body}});
       await request(`/api/bridge/commands/${command.id}/result`, body);
       await chrome.storage.local.remove("pendingResult");

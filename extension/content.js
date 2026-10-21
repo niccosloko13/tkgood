@@ -42,6 +42,15 @@
 
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message?.type === "PH_SIGNALS") sendResponse(collectSignals());
+    if (message?.type === 'PH_READ_SEARCH_RESULTS') {
+      try {
+        const query = new URL(location.href).searchParams.get('q');
+        if (query !== message.query) throw new Error('Search query changed before capture');
+        const results = ProductHunterSearch.extractSearchResults();
+        sendResponse({ok: true, capture: {query, page_url: location.href,
+          results_count: results.length, links_detected: results.linksDetected, results}});
+      } catch (error) { sendResponse({ok: false, error: String(error)}); }
+    }
   });
 
   heartbeat();

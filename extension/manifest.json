@@ -20,6 +20,7 @@
         "https://www.tiktok.com/*"
       ],
       "js": [
+        "search_results.js",
         "content.js"
       ],
       "run_at": "document_idle"

@@ -66,6 +66,10 @@ input,select{
 .mission{color:var(--yellow)}
 .warn{color:var(--red)}
 .full{grid-column:1/-1}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.video{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-wrap:anywhere}
+.video p{font-size:13px;line-height:1.5}
+.video a{color:var(--blue)}
 .notice{
   margin-top:16px;padding:12px;border:1px solid #273746;background:#101923;border-radius:10px;color:#aebdca;font-size:12px;line-height:1.45
 }
@@ -116,19 +120,20 @@ input,select{
         <button class="btn" id="searchButton" disabled>SEARCH no Chrome</button>
       </form>
       <div class="notice" id="searchInfo" aria-live="polite">Somente navegação para a busca do TikTok.</div>
+      <div class="actions"><button class="btn secondary" id="captureButton" disabled>CAPTURE RESULTS</button></div>
+      <div class="notice" id="captureInfo" aria-live="polite">Abra uma busca e aguarde os resultados. Captura apenas o que está visível, sem rolar.</div>
     </div>
 
     <div class="card">
-      <h2>Today</h2>
+      <h2>Collected</h2>
       <div class="metricgrid">
-        <div class="metric"><span class="label">Videos</span><b>0</b></div>
+        <div class="metric"><span class="label">Videos</span><b id="videosCount">0</b></div>
         <div class="metric"><span class="label">Products</span><b>0</b></div>
         <div class="metric"><span class="label">Candidates</span><b>0</b></div>
         <div class="metric"><span class="label">Strong</span><b>0</b></div>
       </div>
       <div class="notice">
-        Estes contadores ficam zerados na v0.1.4 porque a descoberta automática será a próxima camada.
-        Primeiro estamos validando painel, sessão persistente e regras.
+        VIDEOS mostra o total de vídeos únicos coletados. Os demais contadores ainda não são utilizados.
       </div>
     </div>
 
@@ -169,6 +174,10 @@ input,select{
     </div>
 
     <div class="card full">
+      <h2>RECENT VIDEOS</h2>
+      <div id="recentVideos" class="videos" aria-live="polite">Nenhum vídeo coletado.</div>
+    </div>
+    <div class="card full">
       <h2>Live Log</h2>
       <div class="log" id="log"></div>
     </div>
@@ -186,6 +195,23 @@ function esc(s){
   return String(s ?? "")
     .replaceAll("&","&amp;").replaceAll("<","&lt;")
     .replaceAll(">","&gt;").replaceAll('"',"&quot;");
+}
+
+let captureSubmitting = false;
+function isSearchPage(url){
+  try { const u = new URL(url); return u.origin === 'https://www.tiktok.com' && u.pathname.replace(/\/$/, '') === '/search' && !!u.searchParams.get('q')?.trim(); }
+  catch { return false; }
+}
+
+function renderVideos(data){
+  document.getElementById('videosCount').textContent = data.total;
+  document.getElementById('recentVideos').innerHTML = data.items.map(v => {
+    if(!/^https:\/\/www\.tiktok\.com\/@[A-Za-z0-9._]+\/video\/[0-9]+$/.test(v.video_url)) return '';
+    return `<article class="video"><b>${esc(v.creator_display_name || v.creator_username || 'Creator não visível')}</b>
+      <p>${esc(v.caption ? v.caption.slice(0,200) : 'Caption não visível')}</p>
+      <p>Views: ${esc(v.views ?? 'não visíveis')}<br>Search: ${esc(v.search_query)}<br>Collected: ${esc(new Date(v.collected_at).toLocaleString())}</p>
+      <a href="${esc(v.video_url)}" target="_blank" rel="noopener noreferrer">OPEN</a></article>`;
+  }).join('') || 'Nenhum vídeo coletado.';
 }
 
 async function refresh(){
@@ -230,10 +256,16 @@ async function refresh(){
 
     const ev = await request("/api/events");
     const commands = await request("/api/commands");
-    if(commands.items.length){
-      const c = commands.items[0];
+    const search = commands.items.find(c => c.type === 'SEARCH');
+    if(search){
+      const c = search;
       document.getElementById("searchInfo").textContent = `SEARCH #${c.id}: ${c.status} · ${c.query} · ${c.detail || "Aguardando extensão"}`;
     }
+    const capture = commands.items.find(c => c.type === 'READ_SEARCH_RESULTS');
+    const pending = commands.items.some(c => ['PENDING','DISPATCHED'].includes(c.status));
+    document.getElementById('captureButton').disabled = captureSubmitting || pending || !bridge.chrome_connected || !isSearchPage(bridge.url);
+    if(capture) document.getElementById('captureInfo').textContent = `Capture #${capture.id}: ${capture.status} · ${capture.query} · ${capture.detail || 'Aguardando extensão'}`;
+    renderVideos(await request('/api/videos/recent'));
     const box = document.getElementById("log");
     box.innerHTML = ev.items.map(e => {
       const t = new Date(e.created_at).toLocaleTimeString();
@@ -246,6 +278,7 @@ async function refresh(){
     document.getElementById("sessionStatus").textContent = "Conexão não verificada";
     document.getElementById("browserStatus").textContent = "Conexão não verificada";
     document.getElementById("searchButton").disabled = true;
+    document.getElementById("captureButton").disabled = true;
   }
 }
 
@@ -292,6 +325,17 @@ document.getElementById("searchForm").addEventListener("submit", async event => 
     document.getElementById("searchInfo").textContent = `SEARCH #${c.id}: ${c.status}`;
     await refresh();
   } catch(err) { document.getElementById("searchInfo").textContent = err.message; }
+});
+
+document.getElementById('captureButton').addEventListener('click', async () => {
+  captureSubmitting = true;
+  document.getElementById('captureButton').disabled = true;
+  try {
+    const c = await request('/api/commands', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({type:'READ_SEARCH_RESULTS'})});
+    document.getElementById('captureInfo').textContent = `Capture requested #${c.id}`;
+  } catch(err) { document.getElementById('captureInfo').textContent = err.message; }
+  finally { captureSubmitting = false; }
+  await refresh();
 });
 
 refresh();

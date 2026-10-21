@@ -1,0 +1,23 @@
+<!doctype html><html><body><main>
+  <article data-e2e="search_top-item">
+    <a href="https://www.tiktok.com/@maker/video/123456789?tracking=example"><img alt="Thumbnail"></a>
+    <a href="/@maker/video/123456789#duplicate">same video</a>
+    <a href="/@maker">@maker</a>
+    <span data-e2e="search-card-user-nickname">Maker Studio</span>
+    <p data-e2e="search-card-video-caption">Portable home gadget <span hidden>SECRET HIDDEN TEXT</span></p>
+    <strong data-e2e="video-views">1.2M</strong>
+    <span data-e2e="like-count">42K</span>
+    <span data-e2e="comment-count" style="display:none">100</span>
+  </article>
+  <div class="arbitrary-changing-class"><a href="/@other/video/987654321">A video link without metadata</a></div>
+  <article data-fixture-offscreen><a href="/@below/video/333">Offscreen video</a></article>
+  <article hidden><a href="/@hidden/video/444">Hidden video</a></article>
+  <article style="opacity:0"><a href="/@transparent/video/555">Transparent video</a></article>
+  <article aria-hidden="true"><a href="/@aria/video/666">Hidden accessibility tree</a></article>
+  <a href="https://evil.example/@maker/video/123">External</a>
+  <a href="https://www.tiktok.com.evil.example/@maker/video/123">Wrong host</a>
+  <a href="http://www.tiktok.com/@maker/video/123">Insecure</a>
+  <a href="https://www.tiktok.com/@maker/video/not-a-number">Invalid ID</a>
+  <a href="javascript:alert('/video/123')">Invalid scheme</a>
+  <a href="https://www.tiktok.com/@maker">Not a video</a>
+</main></body></html>

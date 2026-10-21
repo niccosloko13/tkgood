@@ -4,6 +4,7 @@ ALLOWED_ACTIONS = {
     "open_tiktok",
     "check_session",
     "search",
+    "read_search_results",
     "navigate",
     "open_result",
     "scroll",

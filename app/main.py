@@ -1,8 +1,8 @@
 from datetime import datetime, timezone
 from fastapi import FastAPI, HTTPException, Header
 from fastapi.responses import HTMLResponse
-from .schemas import BridgeHeartbeat, SearchCommand, CommandResult
-from .db import enqueue_search, list_commands, claim_command, finish_command
+from .schemas import BridgeHeartbeat, SearchCommand, CaptureCommand, CommandResult, RecentVideos, VideoCount, search_page_query
+from .db import enqueue_search, enqueue_command, list_commands, claim_command, finish_command, recent_videos
 
 from .chrome_launcher import open_tiktok_in_normal_chrome
 from .db import (
@@ -100,16 +100,20 @@ def bridge_state():
 
 
 @app.post("/api/commands", status_code=201)
-def create_command(payload: SearchCommand):
-    try:
-        query = SearchCommand.normalized_query(payload.query)
-    except ValueError as exc:
-        raise HTTPException(422, str(exc))
+def create_command(payload: SearchCommand | CaptureCommand):
     bridge = live_bridge()
     if not bridge["chrome_connected"] or not bridge["tiktok_open"]:
         raise HTTPException(409, "Connect the Companion and open a TikTok tab first")
-    command_id = enqueue_search(query, bridge["extension_id"])
-    return {"id": command_id, "type": "SEARCH", "query": query, "status": "PENDING"}
+    if isinstance(payload, CaptureCommand):
+        try:
+            query = search_page_query(bridge.get('url', ''))
+        except ValueError as exc:
+            raise HTTPException(409, str(exc))
+        command_id = enqueue_command(payload.type, query, bridge['extension_id'])
+    else:
+        query = payload.query
+        command_id = enqueue_search(query, bridge["extension_id"])
+    return {"id": command_id, "type": payload.type, "query": query, "status": "PENDING"}
 
 
 @app.get("/api/commands")
@@ -127,10 +131,21 @@ def next_command(extension_id: str):
 
 @app.post("/api/bridge/commands/{command_id}/result")
 def command_result(command_id: int, payload: CommandResult):
-    result = finish_command(command_id, payload.extension_id, payload.status, payload.detail)
+    result = finish_command(command_id, payload.extension_id, payload.status, payload.detail,
+                            payload.capture.model_dump() if payload.capture is not None else None)
     if result != 'ok':
         raise HTTPException(404 if result == 'missing' else 409, "Invalid command or state transition")
     return {"ok": True}
+
+
+@app.get('/api/videos/count', response_model=VideoCount)
+def video_count():
+    return {'total': recent_videos(0)['total']}
+
+
+@app.get('/api/videos/recent', response_model=RecentVideos)
+def videos_recent():
+    return recent_videos()
 
 
 @app.get("/api/events")
