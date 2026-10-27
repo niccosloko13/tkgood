@@ -54,3 +54,16 @@ O Client Secret enviado anteriormente em conversa deve ser rotacionado no
 Mercado Livre DevCenter. Depois, configure somente o novo valor como secret
 `MERCADO_LIVRE_CLIENT_SECRET` em Production no Vercel. Nenhuma nova autorização
 OAuth foi iniciada por esta correção.
+
+## Deploy
+
+- Branch: `feat/babi-product-rebuild-v1`
+- Commits: `a5f9c98` e `f4b42ba`
+- Produção: `https://babi-product-hunter.vercel.app`
+- Callback: `https://babi-product-hunter.vercel.app/api/v2/market-radar/mercado-livre/auth/callback`
+- Deployment validado: `dpl_Fi5c6qaHVU4UMzDvFMAjxBkjV8LG`
+
+O endpoint de status confirma `storage=postgres_encrypted`. Uma chamada anônima
+para iniciar OAuth retornou `401`; uma chamada autenticada chegou à regra de
+configuração e retornou `409` porque o Client Secret exposto foi removido. A
+rota de callback respondeu `400` para parâmetros sintéticos, sem erro interno.
