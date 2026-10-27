@@ -1,3 +1,4 @@
+from scripts.process_runtime import hidden_kwargs
 import json
 import threading
 import socket
@@ -43,7 +44,7 @@ def test_heartbeat_defaults():
 
 def extension_heartbeat(*args):
     script = Path(__file__).with_name('heartbeat_payload.cjs')
-    return json.loads(subprocess.check_output(['node', str(script), *args], text=True, timeout=10))
+    return json.loads(subprocess.check_output(['node', str(script), *args], text=True, timeout=10, **hidden_kwargs()))
 
 
 def test_stale_bridge(isolated_db):
@@ -98,8 +99,8 @@ def test_http_bridge_on_temporary_port(isolated_db):
     try:
         assert call('/api/commands', {'query': 'gadgets'})[0] == 409
         payload = extension_heartbeat()
-        assert set(payload) == {'extension_version', 'current_url', 'page_title', 'authenticated_hint', 'page_ready_state', 'has_search_ui', 'playback_error_visible'}
-        assert payload == {'extension_version': '0.1.4', 'current_url': 'https://www.tiktok.com/', 'page_title': 'TikTok', 'authenticated_hint': True, 'page_ready_state': 'complete', 'has_search_ui': True, 'playback_error_visible': False}
+        assert set(payload) == {'security_stop_observed_at','current_page_status','tiktok_session_status','session_evidence','window_state','window_width','window_height','tab_active','tab_id','window_id','tiktok_tab_count','document_visibility','security_stop','extension_version', 'current_url', 'page_title', 'authenticated_hint', 'page_ready_state', 'has_search_ui', 'playback_error_visible'}
+        assert payload == {'security_stop_observed_at':None,'current_page_status':'unknown','tiktok_session_status':'unconfirmed','session_evidence':[],'window_state':None,'window_width':None,'window_height':None,'tab_active':None,'tab_id':7,'window_id':None,'tiktok_tab_count':1,'document_visibility':None,'security_stop':None,'extension_version': '0.1.4', 'current_url': 'https://www.tiktok.com/', 'page_title': 'TikTok', 'authenticated_hint': False, 'page_ready_state': 'complete', 'has_search_ui': True, 'playback_error_visible': False}
         code, result = call('/api/bridge/heartbeat', payload)
         assert code == 200, result
         assert call('/api/status')[1]['bridge']['extension_connected']

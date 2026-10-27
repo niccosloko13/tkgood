@@ -1,0 +1,9 @@
+{
+  "version": "intelligence-core-v1.2.2-activation",
+  "decision": {"independent_listings": 2, "identity_score": 80, "image_similarity": 0.85, "text_similarity": 0.85},
+  "jobs": {"max_attempts": 3, "retry_seconds": 30, "lease_seconds": 600, "batch_limit": 45},
+  "resources": {"max_cpu_percent": 85, "max_ram_percent": 85, "min_available_mb": 1024, "inference_available_mb": 384, "stop_available_mb": 256, "stop_ram_percent": 98.5, "cooldown_seconds": 20, "idle_unload_seconds": 30, "concurrency": 1, "threads": 2, "device": "auto", "gpu_min_free_mb": 1536},
+  "text": {"generic": ["gadget", "gadgets", "product", "produto", "tool", "thing", "cleaner", "device", "home find", "home finds"], "extra_heads": ["light", "adapter", "mop", "holder", "vacuum", "lamp"], "weak": ["mini", "new", "viral", "great", "home", "portable", "best"], "min_compound_tokens": 2, "auto_comment_authors": 2, "auto_candidate_occurrences": 2},
+  "consumer": {"strong_intent_ratio": 0.3, "strong_intent_authors": 3, "minimum_sample": 5},
+  "embedding": {"model": "ViT-B-32", "weights": "laion2b_s34b_b79k", "package_version": "3.3.0", "version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1", "checkpoint": "data/models/openclip-ViT-B-32.bin", "sha256": "1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad", "repository": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K", "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf"}
+}

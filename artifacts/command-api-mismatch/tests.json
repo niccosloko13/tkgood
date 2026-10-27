@@ -1,0 +1,22 @@
+{
+  "python": {
+    "id": "43fe00b60dd84ca8825e558583e82769",
+    "task": "pytest",
+    "status": "SUCCEEDED",
+    "created_at": "2026-10-24T15:19:19.443375+00:00",
+    "pid": 87880,
+    "exit_code": 0,
+    "finished_at": "2026-10-24T15:20:23.499296+00:00",
+    "passed": 464
+  },
+  "node": {
+    "id": "18aed653a3e5423f911ab7b5e4ff4d02",
+    "task": "node-tests",
+    "status": "SUCCEEDED",
+    "created_at": "2026-10-24T15:22:05.079825+00:00",
+    "pid": 88396,
+    "exit_code": 0,
+    "finished_at": "2026-10-24T15:22:06.257963+00:00",
+    "passed": 135
+  }
+}

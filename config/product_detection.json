@@ -1,0 +1,297 @@
+{
+  "version": "product-candidate-v1",
+  "comment_support_terms": {
+    "portable blender": [
+      "blender"
+    ],
+    "mini blender": [
+      "blender"
+    ],
+    "makeup organizer": [
+      "organizer"
+    ],
+    "pet steam brush": [
+      "brush"
+    ],
+    "soap dispenser": [
+      "dispenser"
+    ],
+    "fruit spinner": [
+      "spinner"
+    ]
+  },
+  "minimum_phrase_length": 3,
+  "maximum_phrase_length": 90,
+  "stop_terms": [
+    "viral",
+    "trending",
+    "amazon finds",
+    "amazon home finds",
+    "tiktok finds",
+    "gadgets",
+    "home gadgets",
+    "cool stuff",
+    "must have",
+    "link in bio",
+    "buy now",
+    "shop now",
+    "tiktok made me buy it",
+    "amazing"
+  ],
+  "product_patterns": [
+    "(?:Ninja[\\s_-]+Blast[\\s_-]+)?(?:portable|mini|usb|travel)[\\s_-]+blender",
+    "facial[\\s_-]+massager",
+    "pet[\\s_-]+steam[\\s_-]+brush",
+    "makeup[\\s_-]+organizer",
+    "soap[\\s_-]+dispenser",
+    "dish[\\s_-]+brush",
+    "burger[\\s_-]+patty[\\s_-]+maker",
+    "fruit[\\s_-]+spinner",
+    "(?:long[ -]handled[\\s_-]+)?floor[\\s_-]+brush",
+    "(?:3[\\s_-]+in[\\s_-]+1[\\s_-]+)?window[\\s_-]+cleaner",
+    "portable[\\s_-]+dryer",
+    "(?:mini[\\s_-]+)?liquidificador[\\s_-]+port\u00e1til",
+    "escova(?:[\\s_-]+a[\\s_-]+vapor)?",
+    "organizador[\\s_-]+de[\\s_-]+maquiagem",
+    "licuadora[\\s_-]+port\u00e1til",
+    "\u062e\u0644\u0627\u0637[\\s_-]+\u0645\u062d\u0645\u0648\u0644"
+  ],
+  "supported_evidence_types": [
+    "caption",
+    "hashtag",
+    "comment",
+    "creator_bio",
+    "profile_link",
+    "external_link",
+    "search_query",
+    "video_metadata"
+  ],
+  "evidence_weights": {
+    "caption": 0.42,
+    "hashtag": 0.28,
+    "comment": 0.12,
+    "creator_bio": 0.18,
+    "search_query": 0.05,
+    "profile_link": 0.0,
+    "external_link": 0.0,
+    "video_metadata": 0.0
+  },
+  "confidence_caps": {
+    "single_source": 0.49,
+    "observed": 0.69,
+    "corroborated": 0.94,
+    "context": 0.15
+  },
+  "corroboration": {
+    "minimum_videos": 2,
+    "minimum_creators": 2,
+    "minimum_comments": 5,
+    "minimum_source_types": 3
+  },
+  "bonuses": {
+    "independent_video": 0.22,
+    "multiple_comments": 0.12
+  },
+  "corroboration_version": "product-corroboration-v1",
+  "corroboration_v2": {
+    "rules": {
+      "A": {
+        "minimum_videos": 2,
+        "minimum_creators": 2
+      },
+      "B": {
+        "minimum_videos": 2,
+        "minimum_commenters": 2,
+        "minimum_comment_texts": 2,
+        "minimum_strong_phrase_tokens": 2
+      },
+      "C": {
+        "minimum_videos": 3
+      }
+    },
+    "base_weights": {
+      "caption": 0.42,
+      "hashtag": 0.28,
+      "creator_bio": 0.18,
+      "comment": 0.12,
+      "video_metadata": 0
+    },
+    "second_video_bonus": 0.12,
+    "additional_video_bonus": 0.08,
+    "video_bonus_cap": 0.28,
+    "second_creator_bonus": 0.1,
+    "additional_creator_bonus": 0.05,
+    "creator_bonus_cap": 0.2,
+    "comment_steps": [
+      0.04,
+      0.02,
+      0.01
+    ],
+    "comment_per_video_cap": 0.06,
+    "comment_total_cap": 0.08,
+    "specific_query_weight": 0.01,
+    "minimum_query_tokens": 2,
+    "single_video_cap": 0.49,
+    "observed_cap": 0.69,
+    "corroborated_cap": 0.94
+  },
+  "diversity": {
+    "weights": {
+      "videos": 35,
+      "creators": 25,
+      "commenters": 20,
+      "search_observations": 10,
+      "evidence_types": 10
+    },
+    "targets": {
+      "videos": 3,
+      "creators": 3,
+      "commenters": 4,
+      "search_observations": 3,
+      "evidence_types": 3
+    }
+  },
+  "relationships": {
+    "generic_tokens": [
+      "brush",
+      "cleaner",
+      "maker",
+      "tool",
+      "device",
+      "gadget",
+      "gadgets",
+      "portable",
+      "mini",
+      "usb",
+      "travel",
+      "cool",
+      "new",
+      "home",
+      "product",
+      "products",
+      "in",
+      "and",
+      "the",
+      "for",
+      "a",
+      "of"
+    ],
+    "signature_remove_sequences": [
+      [
+        "3",
+        "in",
+        "1"
+      ]
+    ],
+    "minimum_specific_shared_tokens": 1,
+    "minimum_phrase_tokens": 2,
+    "minimum_specific_combination": 2,
+    "maximum_extra_tokens": 1,
+    "scores": {
+      "same_normalized_phrase": 1.0,
+      "shared_alias": 0.85,
+      "lexically_related": 0.78,
+      "same_video": 0.4,
+      "same_creator": 0.2,
+      "possible_same_product": 0.78
+    }
+  },
+  "gap_discovery": {
+    "minimum_tokens": 2,
+    "maximum_tokens": 5,
+    "maximum_phrases_per_video": 10,
+    "recurrence_minimum": 2,
+    "unknown_noun_patterns": [
+      "(?:mini\\s+)?vacuum\\s+cleaner",
+      "(?:self[ -]squeezing\\s+)?mop",
+      "(?:[a-z]+[ -]){1,3}(?:mop|squeegee|scrubber|rack|dispenser|organizer|spinner|blender|dryer|cleaner)"
+    ],
+    "generic_phrases": [
+      "home gadgets",
+      "gadgets",
+      "kitchen gadgeg i use daily",
+      "tecnologia futuro",
+      "cool stuff",
+      "home finds"
+    ],
+    "noise_phrases": [
+      "link in bio",
+      "in bio",
+      "amazon home finds",
+      "amazon finds",
+      "buy now",
+      "shop now",
+      "viral",
+      "trending"
+    ],
+    "ignored_tokens": [
+      "link",
+      "bio",
+      "amazon",
+      "finds",
+      "wow",
+      "need",
+      "this",
+      "one",
+      "price",
+      "very",
+      "useful",
+      "responder",
+      "the",
+      "a",
+      "is",
+      "it",
+      "i",
+      "my",
+      "you",
+      "to",
+      "for",
+      "where",
+      "can",
+      "buy",
+      "now",
+      "please",
+      "pls",
+      "me",
+      "and",
+      "in",
+      "on",
+      "of",
+      "how",
+      "much"
+    ],
+    "generic_tokens": [
+      "gadgets",
+      "gadget",
+      "home",
+      "kitchen",
+      "finds",
+      "tecnologia",
+      "futuro",
+      "cool",
+      "stuff"
+    ],
+    "recurring_sources": [
+      "caption",
+      "comment"
+    ],
+    "require_head_for_recurring": true,
+    "noun_heads": [
+      "mop",
+      "squeegee",
+      "scrubber",
+      "rack",
+      "cleaner",
+      "dispenser",
+      "organizer",
+      "spinner",
+      "blender",
+      "dryer",
+      "brush"
+    ],
+    "supported_script_patterns": [
+      "[a-zA-Z\\u00c0-\\u024f]",
+      "[\\u0600-\\u06ff]"
+    ]
+  }
+}

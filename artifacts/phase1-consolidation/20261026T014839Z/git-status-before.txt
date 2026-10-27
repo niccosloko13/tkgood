@@ -1,0 +1,210 @@
+ M .gitignore
+ M README.md
+ M app/browser.py
+ M app/chrome_launcher.py
+ M app/db.py
+ M app/main.py
+ M app/policy.py
+ M app/safe_actions.py
+ M app/schemas.py
+ M app/static/index.html
+ M docs/BRIDGE.md
+ M docs/ROADMAP.md
+ M docs/SAFETY.md
+ M extension/background.js
+ M extension/content.js
+ M extension/manifest.json
+ M extension/search_results.js
+ M requirements.txt
+ M run.py
+ M tests/bridge.test.cjs
+ M tests/capture_client.cjs
+ M tests/dashboard.test.cjs
+ M tests/extraction.test.cjs
+ M tests/fixtures/tiktok-search.html
+ M tests/heartbeat_payload.cjs
+ M tests/test_bridge.py
+ M tests/test_capture.py
+?? AGENTS.md
+?? BABI_V1_EXECUTION_PLAN_PART1.md
+?? app/browser_safety.py
+?? app/candidate_corroboration.py
+?? app/candidate_gaps.py
+?? app/candidate_semantics.py
+?? app/category_api.py
+?? app/category_intelligence.py
+?? app/collection_mode.py
+?? app/comment_schemas.py
+?? app/comments.py
+?? app/companion_contract.py
+?? app/creator_schemas.py
+?? app/creators.py
+?? app/dev_control.py
+?? app/discovery.py
+?? app/discovery_api.py
+?? app/enrichment.py
+?? app/enrichment_api.py
+?? app/extraction.py
+?? app/gold_set.py
+?? app/gold_set_api.py
+?? app/intelligence_api.py
+?? app/intelligence_core.py
+?? app/intelligence_decisions.py
+?? app/intelligence_embeddings.py
+?? app/intelligence_evaluation.py
+?? app/intelligence_index.py
+?? app/intelligence_jobs.py
+?? app/intelligence_signals.py
+?? app/manual_captcha_recovery.py
+?? app/night_discovery.py
+?? app/observations.py
+?? app/offline_api.py
+?? app/offline_intelligence.py
+?? app/product_candidate_api.py
+?? app/product_detection.py
+?? app/product_identity_resolver.py
+?? app/product_vocabulary.py
+?? app/safe_collection.py
+?? app/safe_collection_api.py
+?? app/search_intelligence.py
+?? app/selective_api.py
+?? app/selective_enrichment.py
+?? app/session_api.py
+?? app/static/assets/
+?? app/static/category-intelligence.js
+?? app/static/intelligence-core.html
+?? app/static/intelligence-core.js
+?? app/static/logo.png
+?? app/static/offline-intelligence.js
+?? app/static/selective-enrichment.js
+?? app/static/visual-identification.js
+?? app/supplier_foundation.py
+?? app/target_safety.py
+?? app/trend_history.py
+?? app/visual_assets.py
+?? app/visual_identification.py
+?? app/visual_identification_api.py
+?? app/visual_providers.py
+?? artifacts/
+?? config/
+?? docs/CATEGORY_INTELLIGENCE.md
+?? docs/COMMENTS.md
+?? docs/CONTROLLED_DISCOVERY.md
+?? docs/CONTROLLED_STAGE2.md
+?? docs/CREATORS.md
+?? docs/DETECTION_BENCHMARK.md
+?? docs/DEV_CONTROL.md
+?? docs/ENRICHMENT_BACKLOG.md
+?? docs/ESCOVA_REVIEW.md
+?? docs/EXTRACTION.md
+?? docs/INTELLIGENCE_CORE.md
+?? docs/LOCAL_VISUAL_ASSETS.md
+?? docs/NEXT_SESSION.md
+?? docs/OFFLINE_AUDIT.md
+?? docs/PERSISTENT_RUNTIME.md
+?? docs/PRODUCT_CANDIDATES.md
+?? docs/PRODUCT_CORROBORATION.md
+?? docs/PRODUCT_IDENTIFICATION_PIPELINE.md
+?? docs/PRODUCT_IDENTITY.md
+?? docs/PRODUCT_IDENTITY_RESOLVER.md
+?? docs/SAFE_COLLECTION_RECOVERY.md
+?? docs/SEARCH_ONLY_MODE.md
+?? docs/SELECTIVE_ENRICHMENT.md
+?? docs/TARGET_QUARANTINE.md
+?? docs/TREND_HISTORY.md
+?? docs/VIDEO_DETAIL_METRICS.md
+?? docs/VIRALITY_QUALITY.md
+?? docs/VISUAL_IDENTIFICATION.md
+?? docs/VISUAL_IDENTITY_COMPLETION.md
+?? extension/build.js
+?? extension/comments.js
+?? extension/creator_profile.js
+?? extension/dev_bootstrap.html
+?? extension/dev_bootstrap.js
+?? extension/dev_worker.js
+?? extension/discovery_worker.js
+?? extension/pacing.js
+?? extension/safety.js
+?? extension/search_discovery.js
+?? extension/search_stability.js
+?? extension/session_observer.js
+?? extension/session_probe.js
+?? extension/session_signals.js
+?? extension/target_security.js
+?? extension/video_detail.js
+?? requirements-intelligence.txt
+?? scripts/
+?? tests/category-ui.test.cjs
+?? tests/comments.test.cjs
+?? tests/comments_payload.cjs
+?? tests/connection-panel.test.cjs
+?? tests/creator-profile.test.cjs
+?? tests/creator_payload.cjs
+?? tests/dashboard-ui.test.cjs
+?? tests/detail-metrics.test.cjs
+?? tests/detail-readiness.test.cjs
+?? tests/detail_payload.cjs
+?? tests/dev-control.test.cjs
+?? tests/discovery-worker.test.cjs
+?? tests/discovery.test.cjs
+?? tests/enrichment.test.cjs
+?? tests/fixtures/gold-review-video-1.json
+?? tests/fixtures/product-identity-escova.json
+?? tests/fixtures/tiktok-comments-live.html
+?? tests/fixtures/tiktok-comments.html
+?? tests/fixtures/tiktok-creator-profile.html
+?? tests/fixtures/tiktok-detail-metrics.html
+?? tests/fixtures/tiktok-enrichment.html
+?? tests/fixtures/tiktok-live-metadata.html
+?? tests/fixtures/tiktok-media-tile.html
+?? tests/fixtures/tiktok-video-detail.html
+?? tests/fixtures/view-formats.json
+?? tests/gold-set-ui.test.cjs
+?? tests/identity-resolver-ui.test.cjs
+?? tests/intelligence-core.test.cjs
+?? tests/local-visual-assets.test.cjs
+?? tests/offline-insights.test.cjs
+?? tests/runtime-safety.test.cjs
+?? tests/safe-collection.test.cjs
+?? tests/search-only-mode.test.cjs
+?? tests/search-stability.test.cjs
+?? tests/selective-ui.test.cjs
+?? tests/session-recovery.test.cjs
+?? tests/target-security.test.cjs
+?? tests/test_authenticated_dom.py
+?? tests/test_backlog.py
+?? tests/test_candidate_corroboration.py
+?? tests/test_category_intelligence.py
+?? tests/test_command_api_contract.py
+?? tests/test_comments.py
+?? tests/test_controlled_stage2.py
+?? tests/test_core_activation.py
+?? tests/test_creators.py
+?? tests/test_detection_benchmark.py
+?? tests/test_dev_control.py
+?? tests/test_discovery.py
+?? tests/test_enrichment.py
+?? tests/test_gold_filters.py
+?? tests/test_identity_resolver.py
+?? tests/test_intelligence_core.py
+?? tests/test_local_visual_assets.py
+?? tests/test_manual_captcha_recovery.py
+?? tests/test_offline_intelligence.py
+?? tests/test_product_detection.py
+?? tests/test_product_identity_semantics.py
+?? tests/test_runtime.py
+?? tests/test_safe_collection.py
+?? tests/test_search_only_mode.py
+?? tests/test_selective_enrichment.py
+?? tests/test_session_panel.py
+?? tests/test_session_recovery.py
+?? tests/test_stage2_resume.py
+?? tests/test_target_safety.py
+?? tests/test_trend_history.py
+?? tests/test_virality_quality.py
+?? tests/test_visual_identification.py
+?? tests/test_visual_identity_completion.py
+?? tests/trend-history.test.cjs
+?? tests/video-detail.test.cjs
+?? tests/virality-quality.test.cjs
+?? tests/visual-identification.test.cjs

@@ -1,0 +1,498 @@
+{
+  ".lib": {
+    "count": 43,
+    "size": 2772473156
+  },
+  ".bin": {
+    "count": 2,
+    "size": 613313272
+  },
+  "[no extension]": {
+    "count": 2676,
+    "size": 544060001
+  },
+  ".dll": {
+    "count": 24,
+    "size": 362581448
+  },
+  ".tflite": {
+    "count": 29,
+    "size": 126900886
+  },
+  ".py": {
+    "count": 7189,
+    "size": 117764779
+  },
+  ".pyc": {
+    "count": 7206,
+    "size": 99128801
+  },
+  ".db": {
+    "count": 32,
+    "size": 92827648
+  },
+  ".pyd": {
+    "count": 45,
+    "size": 64907776
+  },
+  ".h": {
+    "count": 9185,
+    "size": 36779937
+  },
+  ".log": {
+    "count": 320,
+    "size": 34435924
+  },
+  ".js": {
+    "count": 1094,
+    "size": 32154347
+  },
+  ".wasm": {
+    "count": 4,
+    "size": 27962764
+  },
+  ".json": {
+    "count": 874,
+    "size": 19929492
+  },
+  ".4_13437153258836801": {
+    "count": 1,
+    "size": 16636504
+  },
+  ".pma": {
+    "count": 6,
+    "size": 12582912
+  },
+  ".svg": {
+    "count": 270,
+    "size": 9065101
+  },
+  ".png": {
+    "count": 390,
+    "size": 7741465
+  },
+  ".exe": {
+    "count": 38,
+    "size": 7052590
+  },
+  ".txt": {
+    "count": 122,
+    "size": 5780886
+  },
+  ".pyi": {
+    "count": 293,
+    "size": 4314895
+  },
+  ".ts": {
+    "count": 381,
+    "size": 2900324
+  },
+  ".ldb": {
+    "count": 12,
+    "size": 2470085
+  },
+  ".model": {
+    "count": 3,
+    "size": 2383038
+  },
+  ".html": {
+    "count": 108,
+    "size": 2323354
+  },
+  ".css": {
+    "count": 92,
+    "size": 2243714
+  },
+  ".32_13437069839986319": {
+    "count": 1,
+    "size": 1917504
+  },
+  ".hyb": {
+    "count": 52,
+    "size": 1762492
+  },
+  ".csv": {
+    "count": 30,
+    "size": 1391679
+  },
+  ".gz": {
+    "count": 5,
+    "size": 1366505
+  },
+  ".pb": {
+    "count": 35,
+    "size": 1235833
+  },
+  ".mp4": {
+    "count": 10,
+    "size": 1203879
+  },
+  ".hpp": {
+    "count": 66,
+    "size": 1200090
+  },
+  ".yaml": {
+    "count": 5,
+    "size": 828927
+  },
+  ".md": {
+    "count": 106,
+    "size": 719540
+  },
+  ".map": {
+    "count": 211,
+    "size": 700439
+  },
+  ".cuh": {
+    "count": 55,
+    "size": 686042
+  },
+  ".sqlite": {
+    "count": 1,
+    "size": 593920
+  },
+  ".otf": {
+    "count": 2,
+    "size": 504036
+  },
+  ".woff2": {
+    "count": 7,
+    "size": 394216
+  },
+  ".binarypb": {
+    "count": 55,
+    "size": 380871
+  },
+  ".xsl": {
+    "count": 3,
+    "size": 366181
+  },
+  ".4_13437153258804043": {
+    "count": 1,
+    "size": 339596
+  },
+  ".32_13437142455147405": {
+    "count": 1,
+    "size": 315488
+  },
+  ".license": {
+    "count": 6,
+    "size": 295352
+  },
+  ".pem": {
+    "count": 2,
+    "size": 276941
+  },
+  ".cmake": {
+    "count": 29,
+    "size": 272878
+  },
+  ".4_13437153258653323": {
+    "count": 1,
+    "size": 265500
+  },
+  ".ttf": {
+    "count": 3,
+    "size": 241020
+  },
+  ".bz2": {
+    "count": 4,
+    "size": 193975
+  },
+  ".cjs": {
+    "count": 44,
+    "size": 191016
+  },
+  ".jpg": {
+    "count": 5,
+    "size": 186905
+  },
+  ".jpeg": {
+    "count": 3,
+    "size": 177782
+  },
+  ".cpp": {
+    "count": 36,
+    "size": 124887
+  },
+  ".pxd": {
+    "count": 10,
+    "size": 113523
+  },
+  ".c": {
+    "count": 54,
+    "size": 111712
+  },
+  ".4_13437153258757647": {
+    "count": 1,
+    "size": 110848
+  },
+  ".tmp": {
+    "count": 3,
+    "size": 84402
+  },
+  ".gif": {
+    "count": 3,
+    "size": 83631
+  },
+  ".4_13437153258697093": {
+    "count": 1,
+    "size": 49716
+  },
+  ".4_13437153258727711": {
+    "count": 1,
+    "size": 40956
+  },
+  ".32_13437069839982454": {
+    "count": 1,
+    "size": 37344
+  },
+  ".pyx": {
+    "count": 6,
+    "size": 34633
+  },
+  ".ps1": {
+    "count": 10,
+    "size": 33922
+  },
+  ".f90": {
+    "count": 60,
+    "size": 29992
+  },
+  ".sample": {
+    "count": 14,
+    "size": 25827
+  },
+  ".faiss": {
+    "count": 3,
+    "size": 16519
+  },
+  ".mjs": {
+    "count": 5,
+    "size": 14479
+  },
+  ".1": {
+    "count": 2,
+    "size": 14197
+  },
+  ".lark": {
+    "count": 2,
+    "size": 14158
+  },
+  ".rst": {
+    "count": 2,
+    "size": 11585
+  },
+  ".f": {
+    "count": 24,
+    "size": 11332
+  },
+  ".apache": {
+    "count": 1,
+    "size": 10174
+  },
+  ".sh": {
+    "count": 11,
+    "size": 10067
+  },
+  ".g4": {
+    "count": 2,
+    "size": 10016
+  },
+  ".fits": {
+    "count": 1,
+    "size": 8640
+  },
+  ".old": {
+    "count": 35,
+    "size": 7804
+  },
+  ".al": {
+    "count": 16,
+    "size": 7590
+  },
+  ".thrift": {
+    "count": 1,
+    "size": 7375
+  },
+  ".build": {
+    "count": 3,
+    "size": 4744
+  },
+  ".4_13437069839981195": {
+    "count": 1,
+    "size": 3960
+  },
+  ".b99": {
+    "count": 2,
+    "size": 3044
+  },
+  ".crx": {
+    "count": 1,
+    "size": 2723
+  },
+  ".pyf": {
+    "count": 7,
+    "size": 2433
+  },
+  ".mdown": {
+    "count": 1,
+    "size": 2028
+  },
+  ".a99": {
+    "count": 2,
+    "size": 1752
+  },
+  ".template": {
+    "count": 1,
+    "size": 1654
+  },
+  ".yml": {
+    "count": 2,
+    "size": 1518
+  },
+  ".bat": {
+    "count": 2,
+    "size": 1401
+  },
+  ".bsd": {
+    "count": 1,
+    "size": 1344
+  },
+  ".ini": {
+    "count": 4,
+    "size": 1309
+  },
+  ".store": {
+    "count": 11,
+    "size": 1191
+  },
+  ".32_13437069839981423": {
+    "count": 1,
+    "size": 1120
+  },
+  ".npy": {
+    "count": 5,
+    "size": 1033
+  },
+  ".npz": {
+    "count": 2,
+    "size": 819
+  },
+  ".pkl": {
+    "count": 1,
+    "size": 716
+  },
+  ".cmd": {
+    "count": 2,
+    "size": 649
+  },
+  ".xml": {
+    "count": 1,
+    "size": 628
+  },
+  ".cu": {
+    "count": 1,
+    "size": 515
+  },
+  ".ld": {
+    "count": 1,
+    "size": 438
+  },
+  ".webmanifest": {
+    "count": 1,
+    "size": 429
+  },
+  ".typed": {
+    "count": 37,
+    "size": 416
+  },
+  ".pyw": {
+    "count": 1,
+    "size": 385
+  },
+  ".bzl": {
+    "count": 1,
+    "size": 362
+  },
+  ".tmpl": {
+    "count": 2,
+    "size": 356
+  },
+  ".cts": {
+    "count": 3,
+    "size": 301
+  },
+  ".pid": {
+    "count": 1,
+    "size": 227
+  },
+  ".in": {
+    "count": 1,
+    "size": 210
+  },
+  ".pc": {
+    "count": 1,
+    "size": 198
+  },
+  ".tag": {
+    "count": 1,
+    "size": 191
+  },
+  ".pth": {
+    "count": 1,
+    "size": 151
+  },
+  ".f95": {
+    "count": 1,
+    "size": 144
+  },
+  ".cfg": {
+    "count": 2,
+    "size": 128
+  },
+  ".dat": {
+    "count": 3,
+    "size": 120
+  },
+  ".bazel": {
+    "count": 1,
+    "size": 108
+  },
+  ".4_13437069839997494": {
+    "count": 1,
+    "size": 68
+  },
+  ".baf": {
+    "count": 3,
+    "size": 60
+  },
+  ".inc": {
+    "count": 1,
+    "size": 17
+  },
+  ".baj": {
+    "count": 3,
+    "size": 12
+  },
+  ".lock": {
+    "count": 2,
+    "size": 2
+  },
+  ".db-journal": {
+    "count": 8,
+    "size": 0
+  },
+  ".db-wal": {
+    "count": 3,
+    "size": 0
+  },
+  ".journal": {
+    "count": 3,
+    "size": 0
+  },
+  ".whl": {
+    "count": 1,
+    "size": 0
+  }
+}

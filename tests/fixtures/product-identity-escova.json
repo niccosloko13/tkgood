@@ -1,0 +1,208 @@
+{
+  "source": "Persisted Library; offline snapshot 2026-10-22; no navigation",
+  "canonical_name": "escova",
+  "legacy_status": "corroborated",
+  "legacy_confidence": 0.64,
+  "videos": [
+    {
+      "id": 39,
+      "video_id": "7657730138993446151",
+      "canonical_url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "caption": "Essa escova elétrica gira sozinha e ajuda a limpar rejunte, cantos e sujeira grudada sem tanto esforço.",
+      "username": "@isadoravalebr",
+      "profile_url": "https://www.tiktok.com/@isadoravalebr"
+    },
+    {
+      "id": 40,
+      "video_id": "7673992589036506388",
+      "canonical_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "caption": "escova elétrica 9 em 1, limpeza profunda, cabo extensível, banheiro, cozinha, piso, box e rejunte",
+      "username": "@vitrineglei",
+      "profile_url": "https://www.tiktok.com/@vitrineglei"
+    }
+  ],
+  "aliases": [
+    {
+      "candidate_id": 8,
+      "alias": "escova",
+      "normalized_alias": "escova",
+      "source": "caption",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T11:55:43.389991+00:00",
+      "detected_language": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": 60,
+      "candidate_id": 8,
+      "evidence_type": "caption",
+      "source_entity_type": "search_observations",
+      "source_entity_id": "160",
+      "video_id": 39,
+      "creator_id": 524,
+      "commenter": null,
+      "source_url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "raw_text": "Essa escova elétrica gira sozinha e ajuda a limpar rejunte, cantos e sujeira grudada sem tanto esforço.",
+      "extracted_text": "escova",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T11:55:43.389991+00:00",
+      "extractor_version": "product-candidate-v1",
+      "dedup_key": "d7de4c885f035c672b6c06e524a6df5fc500396b5a01c5efcdf5c65bd562fdc3"
+    },
+    {
+      "id": 61,
+      "candidate_id": 8,
+      "evidence_type": "caption",
+      "source_entity_type": "search_observations",
+      "source_entity_id": "153",
+      "video_id": 39,
+      "creator_id": 524,
+      "commenter": null,
+      "source_url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "raw_text": "Essa escova elétrica gira sozinha e ajuda a limpar rejunte, cantos e sujeira grudada sem tanto esforço.",
+      "extracted_text": "escova",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T11:55:40.102163+00:00",
+      "extractor_version": "product-candidate-v1",
+      "dedup_key": "a5696b29e676863ada0004cd04d3d591952a969c80e6ace4ef5149a9d8a2b87d"
+    },
+    {
+      "id": 62,
+      "candidate_id": 8,
+      "evidence_type": "caption",
+      "source_entity_type": "search_observations",
+      "source_entity_id": "107",
+      "video_id": 39,
+      "creator_id": 524,
+      "commenter": null,
+      "source_url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "raw_text": "Essa escova elétrica gira sozinha e ajuda a limpar rejunte, cantos e sujeira grudada sem tanto esforço.",
+      "extracted_text": "escova",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T11:54:06.377386+00:00",
+      "extractor_version": "product-candidate-v1",
+      "dedup_key": "9957b3fcdd49a2db24affbd6f333ea3b4443c6e6efa83d3e64f8e8c28b0f1b54"
+    },
+    {
+      "id": 63,
+      "candidate_id": 8,
+      "evidence_type": "caption",
+      "source_entity_type": "search_observations",
+      "source_entity_id": "163",
+      "video_id": 40,
+      "creator_id": 525,
+      "commenter": null,
+      "source_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "raw_text": "escova elétrica 9 em 1, limpeza profunda, cabo extensível, banheiro, cozinha, piso, box e rejunte",
+      "extracted_text": "escova",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T11:55:43.389991+00:00",
+      "extractor_version": "product-candidate-v1",
+      "dedup_key": "fef5a497ff54e8a7280a20f0c83fc360af79153c5d4afc9bf73be8b773389f23"
+    },
+    {
+      "id": 64,
+      "candidate_id": 8,
+      "evidence_type": "caption",
+      "source_entity_type": "search_observations",
+      "source_entity_id": "108",
+      "video_id": 40,
+      "creator_id": 525,
+      "commenter": null,
+      "source_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "raw_text": "escova elétrica 9 em 1, limpeza profunda, cabo extensível, banheiro, cozinha, piso, box e rejunte",
+      "extracted_text": "escova",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T11:54:06.377386+00:00",
+      "extractor_version": "product-candidate-v1",
+      "dedup_key": "266f91b6ce20d60659214d5a1da6c7de39e522d935bf9c452b52db9315fbb717"
+    },
+    {
+      "id": 65,
+      "candidate_id": 8,
+      "evidence_type": "caption",
+      "source_entity_type": "video_detail_observations",
+      "source_entity_id": "21",
+      "video_id": 39,
+      "creator_id": 524,
+      "commenter": null,
+      "source_url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "raw_text": "Essa escova elétrica gira sozinha e ajuda a limpar rejunte, cantos e sujeira grudada sem tanto esforço.",
+      "extracted_text": "escova",
+      "confidence": 0.42,
+      "observed_at": "2026-10-22T12:24:47.297131+00:00",
+      "extractor_version": "product-candidate-v1",
+      "dedup_key": "0ba9dfbe68a8a122282a07b3c9c53339dea04761901d6c637098a121de275ef0"
+    }
+  ],
+  "urls": [
+    {
+      "candidate_id": 8,
+      "url": "https://www.tiktok.com/@isadoravalebr",
+      "url_type": "creator_profile",
+      "source": "observed_creator",
+      "observed_at": "2026-10-22T11:55:43.389991+00:00"
+    },
+    {
+      "candidate_id": 8,
+      "url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "url_type": "video",
+      "source": "caption",
+      "observed_at": "2026-10-22T11:55:43.389991+00:00"
+    },
+    {
+      "candidate_id": 8,
+      "url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+      "url_type": "video",
+      "source": "library",
+      "observed_at": "2026-10-22T11:55:43.389991+00:00"
+    },
+    {
+      "candidate_id": 8,
+      "url": "https://www.tiktok.com/@vitrineglei",
+      "url_type": "creator_profile",
+      "source": "observed_creator",
+      "observed_at": "2026-10-22T11:55:43.389991+00:00"
+    },
+    {
+      "candidate_id": 8,
+      "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "url_type": "video",
+      "source": "caption",
+      "observed_at": "2026-10-22T11:55:43.389991+00:00"
+    },
+    {
+      "candidate_id": 8,
+      "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "url_type": "video",
+      "source": "library",
+      "observed_at": "2026-10-22T11:55:43.389991+00:00"
+    }
+  ],
+  "supporting_comment_count": 0,
+  "evidence_groups": [
+    {
+      "group_key": "video:39",
+      "group_type": "video",
+      "identity_support": true,
+      "evidence_ids": [
+        60,
+        61,
+        62,
+        65
+      ],
+      "independent": true
+    },
+    {
+      "group_key": "video:40",
+      "group_type": "video",
+      "identity_support": true,
+      "evidence_ids": [
+        63,
+        64
+      ],
+      "independent": true
+    }
+  ]
+}

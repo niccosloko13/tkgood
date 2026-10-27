@@ -23,7 +23,7 @@ let signals;
 collect({type: 'PH_SIGNALS'}, {}, result => {signals = result;});
 runtime.onMessage = event();
 const tab = {id: 7, url: 'https://www.tiktok.com/', title: loading ? undefined : 'TikTok'};
-vm.runInNewContext(fs.readFileSync(path.join(root, 'extension/background.js'), 'utf8'), {
+vm.runInNewContext(fs.readFileSync(path.join(root,'extension/pacing.js'),'utf8')+fs.readFileSync(path.join(root, 'extension/background.js'), 'utf8'), {
   URL, AbortSignal, setInterval() {},
   fetch: async (url, options) => {
     if (url.endsWith('/api/bridge/heartbeat')) process.stdout.write(options.body);

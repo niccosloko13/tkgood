@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-23T19:13:00.137603+00:00",
+  "changed_original_tables": [
+    "events",
+    "sqlite_sequence",
+    "system_state"
+  ],
+  "changed_existing_files": [
+    "app\\visual_identification.py",
+    "app\\visual_identification_api.py",
+    "app\\static\\visual-identification.js",
+    "docs\\NEXT_SESSION.md",
+    "docs\\VISUAL_IDENTIFICATION.md"
+  ],
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "extension_unchanged": true,
+  "remote_thumbnail_urls_unchanged": true,
+  "browser_security_stop_unchanged": true,
+  "browser_security_history_unchanged": true,
+  "browser_security_clearance_unchanged": true
+}

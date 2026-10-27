@@ -1,0 +1,112 @@
+{
+  "scope": "historical persisted library only; no new discovery",
+  "criteria": "candidate_missing AND thumbnail_available AND (category_known OR unresolved_phrase)",
+  "count": 2,
+  "items": [
+    {
+      "video_id": 42,
+      "platform_video_id": "7614319393232719122",
+      "caption": "Chega de falta de tomada e carregador espalhado pela casa ⚡",
+      "category": {
+        "id": 42,
+        "video_id": 42,
+        "primary_category": "electronics",
+        "primary_subcategory": null,
+        "product_family": null,
+        "category_status": "classified",
+        "category_confidence": 0.7,
+        "category_evidence": [
+          {
+            "matched_term": "carregador",
+            "source_entity": "video",
+            "source_id": 42,
+            "text": "Chega de falta de tomada e carregador espalhado pela casa ⚡",
+            "type": "caption",
+            "url": "https://www.tiktok.com/@top_achadinhos_shopp/video/7614319393232719122",
+            "weight": 0.7
+          }
+        ],
+        "classifier_version": "category-classifier-v1",
+        "taxonomy_version": "category-taxonomy-v1",
+        "input_hash": "1b0ba25bc4bf866849e510ba0d5aebbbe5cb91f553c0a684f8c4363e0ac96d39",
+        "observed_at": "2026-10-23T06:00:54.938887+00:00",
+        "human_review": null
+      },
+      "reasons": [
+        "candidate_missing",
+        "thumbnail_available",
+        "category_known",
+        "comments_insufficient"
+      ],
+      "source_queries": [
+        "home gadgets"
+      ]
+    },
+    {
+      "video_id": 1,
+      "platform_video_id": "7462746836533677358",
+      "caption": "Easy to remove the stains😏 #gadgets",
+      "category": {
+        "id": 1,
+        "video_id": 1,
+        "primary_category": "home",
+        "primary_subcategory": "cleaning",
+        "product_family": "cleaning tools",
+        "category_status": "classified",
+        "category_confidence": 0.5,
+        "category_evidence": [
+          {
+            "matched_term": "vacuum cleaner",
+            "source_entity": "comment",
+            "source_id": 126,
+            "text": "vacuum cleaner",
+            "type": "comment",
+            "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+            "weight": 0.5
+          },
+          {
+            "matched_term": "vacuum cleaner",
+            "source_entity": "comment",
+            "source_id": 142,
+            "text": "Mini Vacuum Cleaner Price? very useful ✨",
+            "type": "comment",
+            "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+            "weight": 0.5
+          },
+          {
+            "matched_term": "vacuum cleaner",
+            "source_entity": "unresolved_phrase",
+            "source_id": 1,
+            "text": "vacuum cleaner",
+            "type": "unresolved",
+            "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+            "weight": 0.45
+          },
+          {
+            "matched_term": "vacuum cleaner",
+            "source_entity": "unresolved_phrase",
+            "source_id": 2,
+            "text": "Mini Vacuum Cleaner",
+            "type": "unresolved",
+            "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+            "weight": 0.45
+          }
+        ],
+        "classifier_version": "category-classifier-v1",
+        "taxonomy_version": "category-taxonomy-v1",
+        "input_hash": "8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84",
+        "observed_at": "2026-10-23T06:00:54.873885+00:00",
+        "human_review": null
+      },
+      "reasons": [
+        "candidate_missing",
+        "thumbnail_available",
+        "category_known",
+        "unresolved_phrase"
+      ],
+      "source_queries": [
+        "home gadgets"
+      ]
+    }
+  ]
+}

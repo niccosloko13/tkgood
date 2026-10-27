@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-10-23T19:13:00.137603+00:00",
+  "assets_uploaded": 0,
+  "assets_total": 0,
+  "HIGH_resolved": 0,
+  "HIGH_remaining": 14,
+  "HIGH_resolved_definition": "local image available, not identity confirmed",
+  "gold_high_items": 7,
+  "gold_FN_items": 6,
+  "Gold_FN_tested": 0,
+  "visual_attempted": 0,
+  "visual_helpful": 0,
+  "visual_match": 0,
+  "visual_wrong": 0,
+  "still_unclear": 7,
+  "helpfulness_assessed": 0,
+  "pilot": [
+    {
+      "video_id": 4,
+      "benchmark_category": "fn",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p16-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    },
+    {
+      "video_id": 5,
+      "benchmark_category": "fn",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p16-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    },
+    {
+      "video_id": 6,
+      "benchmark_category": "fn",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p16-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    },
+    {
+      "video_id": 11,
+      "benchmark_category": "fn",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p16-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    },
+    {
+      "video_id": 12,
+      "benchmark_category": "fn",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p19-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    },
+    {
+      "video_id": 14,
+      "benchmark_category": "fn",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p16-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    },
+    {
+      "video_id": 2,
+      "benchmark_category": "unclear",
+      "image": {
+        "status": "visual_unavailable",
+        "source_type": "remote_thumbnail",
+        "sha256": null,
+        "image_source": null,
+        "remote_host": "p16-common-sign.tiktokcdn.com",
+        "reason": "blocked_by_security_stop_tiktok_cdn"
+      }
+    }
+  ],
+  "product_confirmed": false
+}

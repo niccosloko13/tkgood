@@ -1,0 +1,131 @@
+{
+  "queries": [
+    "home gadgets",
+    "home finds",
+    "useful home products",
+    "kitchen gadgets",
+    "cleaning gadgets"
+  ],
+  "pack_version": "HOME_DISCOVERY_V1",
+  "authorization": {
+    "validation_id": "cac98c924f9f3cb65f6252481f0f5fd6",
+    "queries": [
+      "home gadgets",
+      "home finds",
+      "useful home products",
+      "kitchen gadgets",
+      "cleaning gadgets"
+    ],
+    "max_queries": 5,
+    "max_new_videos": 30,
+    "max_runtime_seconds": 180
+  },
+  "intents": [
+    {
+      "query": "home gadgets",
+      "action": "START_STAGE2"
+    },
+    {
+      "query": "home finds",
+      "action": "EXPLICIT_NEXT_QUERY"
+    }
+  ],
+  "stage3_executed": false,
+  "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+  "commands": [
+    102,
+    103
+  ],
+  "batch": {
+    "id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+    "stage": 2,
+    "status": "FAILED",
+    "created_at": "2026-10-25T17:34:35.939061+00:00",
+    "validation_id": "cac98c924f9f3cb65f6252481f0f5fd6",
+    "queries_json": "[\"home gadgets\", \"home finds\", \"useful home products\", \"kitchen gadgets\", \"cleaning gadgets\"]",
+    "query_index": 2,
+    "command_id": 103,
+    "new_videos": 3,
+    "seen": 8,
+    "duplicates": 5,
+    "snapshots": 8,
+    "stop_reason": "COMMAND_FAILED_NO_RETRY",
+    "completed_at": "2026-10-25T17:34:45.528777+00:00"
+  },
+  "query_metrics": [
+    {
+      "command_id": 102,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "home gadgets",
+      "status": "SUCCEEDED",
+      "results": 8,
+      "new_videos": 3,
+      "duplicates": 5,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 3,
+      "category_matches": 2,
+      "observed_at": "2026-10-25T17:34:38.338468+00:00",
+      "snapshots": 8
+    },
+    {
+      "command_id": 103,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "home finds",
+      "status": "FAILED",
+      "results": 0,
+      "new_videos": 0,
+      "duplicates": 0,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 0,
+      "observed_at": "2026-10-25T17:34:45.533900+00:00",
+      "snapshots": 0
+    }
+  ],
+  "queries_completed": 1,
+  "results": 8,
+  "new_videos": 3,
+  "duplicates": 5,
+  "blocked_targets_skipped": 0,
+  "invalid": 0,
+  "observations": 8,
+  "trend_snapshots": 8,
+  "unique_creators": 3,
+  "final_page": "healthy",
+  "session": "unconfirmed",
+  "global_security": {},
+  "blocked_targets": [
+    {
+      "target_type": "VIDEO",
+      "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "reason": "HTTP_403",
+      "first_seen": "2026-10-25T01:32:10.269892+00:00",
+      "last_seen": "2026-10-25T01:32:10.269892+00:00",
+      "attempt_count": 1,
+      "status": "BLOCKED"
+    }
+  ],
+  "final_url": "https://www.tiktok.com/search?q=home+finds",
+  "stop_reason": "COMMAND_FAILED_NO_RETRY: Error: Stage 2 session/page not healthy; stopped without retry",
+  "post_stop_check": {
+    "observed_at": "2026-10-25T17:36:00.874891+00:00",
+    "page": "healthy",
+    "session": "confirmed",
+    "global_security": {}
+  },
+  "not_executed": [
+    "useful home products",
+    "kitchen gadgets",
+    "cleaning gadgets"
+  ],
+  "audit": {
+    "command_types": [
+      "READ_SEARCH_RESULTS",
+      "READ_SEARCH_RESULTS"
+    ],
+    "later_commands": [],
+    "timestamp_mismatches": 0
+  }
+}

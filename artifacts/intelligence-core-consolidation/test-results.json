@@ -1,0 +1,11 @@
+{
+  "python": {
+    "passed": 338,
+    "full_run": "071ca5bac66240a3bc2086180ecea907",
+    "focused_after_matching_change": 36
+  },
+  "node": {
+    "passed": 120,
+    "full_run": "9be8f9a4e24c4ac4add02cb1114064ce"
+  }
+}

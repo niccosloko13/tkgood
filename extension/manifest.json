@@ -2,10 +2,14 @@
   "manifest_version": 3,
   "minimum_chrome_version": "120",
   "name": "Product Hunter Companion",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Read-only TikTok companion for the local Product Hunter dashboard.",
   "permissions": [
-    "storage", "tabs", "alarms"
+    "storage",
+    "tabs",
+    "scripting",
+    "alarms",
+    "webRequest"
   ],
   "host_permissions": [
     "https://www.tiktok.com/*",
@@ -20,7 +24,17 @@
         "https://www.tiktok.com/*"
       ],
       "js": [
+        "build.js",
+        "safety_gate.js",
+        "pacing.js",
+        "safety.js",
+        "session_signals.js",
+        "session_observer.js",
         "search_results.js",
+        "search_discovery.js",
+        "video_detail.js",
+        "comments.js",
+        "creator_profile.js",
         "content.js"
       ],
       "run_at": "document_idle"

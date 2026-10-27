@@ -1,0 +1,171 @@
+{
+  "checked_at": "2026-10-25T23:16:48.737119+00:00",
+  "mode": {
+    "direct_video_enrichment": {
+      "paused_at": "2026-10-25T23:05:50.165758+00:00",
+      "reason": "REPEATED_CHALLENGE_AFTER_VIDEO_NAVIGATION",
+      "resume_requires": "new explicit human authorization",
+      "scope": "individual video navigation workflow risk; no absolute target causality",
+      "status": "PAUSED"
+    },
+    "enrichment_availability": "SEARCH_ONLY",
+    "search_collection": "BLOCKED",
+    "page": "unknown",
+    "session": "unconfirmed",
+    "global_security": "BLOCKED",
+    "automatic_resume": false
+  },
+  "security_stop": {
+    "reason": "GLOBAL_BLOCK: challenge/captcha/verification",
+    "observed_at": "2026-10-25T22:29:30.817062+00:00"
+  },
+  "challenge_contexts": [
+    {
+      "event_key": "selective:1:individual-navigation-challenge",
+      "navigation_mode": "DIRECT_VIDEO_ENRICHMENT",
+      "target": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+      "timestamp": "2026-10-25T21:02:19.706020+00:00",
+      "stage": "READ_VIDEO_DETAIL",
+      "pre_health_json": "{\"gate\": \"HEALTHY/CONFIRMED required at original run creation\", \"samples\": [], \"status\": \"RAW_SAMPLES_NOT_RETAINED\"}",
+      "post_health_json": "{\"observed_at\": \"2026-10-25T21:03:22.918668+00:00\", \"page\": \"challenge\", \"session\": \"unconfirmed\"}",
+      "source_json": "{\"artifact\": \"artifacts\\\\selective-enrichment\\\\pilot-v1.json\", \"causality\": \"context association only; not proof this target technically caused CAPTCHA\", \"command_id\": 108, \"detail_status\": \"FAILED\", \"incident\": {\"observed_at\": \"2026-10-25T21:02:19.706020+00:00\", \"reason\": \"Error: Security challenge; human intervention required\"}, \"run_id\": 1, \"timestamp_basis\": \"incident.observed_at\"}",
+      "pre_health": {
+        "gate": "HEALTHY/CONFIRMED required at original run creation",
+        "samples": [],
+        "status": "RAW_SAMPLES_NOT_RETAINED"
+      },
+      "post_health": {
+        "observed_at": "2026-10-25T21:03:22.918668+00:00",
+        "page": "challenge",
+        "session": "unconfirmed"
+      },
+      "source": {
+        "artifact": "artifacts\\selective-enrichment\\pilot-v1.json",
+        "causality": "context association only; not proof this target technically caused CAPTCHA",
+        "command_id": 108,
+        "detail_status": "FAILED",
+        "incident": {
+          "observed_at": "2026-10-25T21:02:19.706020+00:00",
+          "reason": "Error: Security challenge; human intervention required"
+        },
+        "run_id": 1,
+        "timestamp_basis": "incident.observed_at"
+      }
+    },
+    {
+      "event_key": "selective:2:individual-navigation-challenge",
+      "navigation_mode": "DIRECT_VIDEO_ENRICHMENT",
+      "target": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+      "timestamp": "2026-10-25T22:29:30.817062+00:00",
+      "stage": "READ_VIDEO_DETAIL",
+      "pre_health_json": "{\"final_page\": \"healthy\", \"samples\": [{\"consecutive\": 1, \"observed_at\": \"2026-10-25T22:28:55.775039+00:00\", \"page\": \"healthy\", \"ready_state\": \"complete\", \"session\": \"confirmed\", \"state\": \"HEALTHY_CONFIRMED\"}, {\"consecutive\": 2, \"observed_at\": \"2026-10-25T22:28:58.776333+00:00\", \"page\": \"healthy\", \"ready_state\": \"complete\", \"session\": \"confirmed\", \"state\": \"HEALTHY_CONFIRMED\"}], \"session\": \"confirmed\", \"status\": \"HEALTHY\"}",
+      "post_health_json": "{\"observed_at\": \"2026-10-25T22:30:16.781063+00:00\", \"page\": \"challenge\", \"session\": \"unconfirmed\"}",
+      "source_json": "{\"artifact\": \"artifacts\\\\selective-enrichment\\\\manual-captcha-resume-v1.json\", \"causality\": \"context association only; not proof this target technically caused CAPTCHA\", \"command_id\": 109, \"detail_status\": \"SUCCEEDED\", \"incident\": {\"observed_at\": \"2026-10-25T22:29:30.817062+00:00\", \"reason\": \"GLOBAL_BLOCK: challenge/captcha/verification\"}, \"run_id\": 2, \"timestamp_basis\": \"incident.observed_at\"}",
+      "pre_health": {
+        "final_page": "healthy",
+        "samples": [
+          {
+            "consecutive": 1,
+            "observed_at": "2026-10-25T22:28:55.775039+00:00",
+            "page": "healthy",
+            "ready_state": "complete",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED"
+          },
+          {
+            "consecutive": 2,
+            "observed_at": "2026-10-25T22:28:58.776333+00:00",
+            "page": "healthy",
+            "ready_state": "complete",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED"
+          }
+        ],
+        "session": "confirmed",
+        "status": "HEALTHY"
+      },
+      "post_health": {
+        "observed_at": "2026-10-25T22:30:16.781063+00:00",
+        "page": "challenge",
+        "session": "unconfirmed"
+      },
+      "source": {
+        "artifact": "artifacts\\selective-enrichment\\manual-captcha-resume-v1.json",
+        "causality": "context association only; not proof this target technically caused CAPTCHA",
+        "command_id": 109,
+        "detail_status": "SUCCEEDED",
+        "incident": {
+          "observed_at": "2026-10-25T22:29:30.817062+00:00",
+          "reason": "GLOBAL_BLOCK: challenge/captcha/verification"
+        },
+        "run_id": 2,
+        "timestamp_basis": "incident.observed_at"
+      }
+    }
+  ],
+  "counts": {
+    "videos": 53,
+    "search_observations": 203,
+    "trend_snapshots": 428,
+    "search_only_intelligence": 53
+  },
+  "last_content_command": 109,
+  "new_content_commands": 0,
+  "new_search_observations": 0,
+  "new_trend_snapshots": 0,
+  "api_checks": {
+    "/api/selective-enrichment": {
+      "http": 200,
+      "items": 16,
+      "operational": {
+        "direct_video_enrichment": {
+          "paused_at": "2026-10-25T23:05:50.165758+00:00",
+          "reason": "REPEATED_CHALLENGE_AFTER_VIDEO_NAVIGATION",
+          "resume_requires": "new explicit human authorization",
+          "scope": "individual video navigation workflow risk; no absolute target causality",
+          "status": "PAUSED"
+        },
+        "enrichment_availability": "SEARCH_ONLY",
+        "search_collection": "BLOCKED",
+        "page": "unknown",
+        "session": "unconfirmed",
+        "global_security": "BLOCKED",
+        "automatic_resume": false
+      },
+      "counts": {
+        "HIGH": 2,
+        "MEDIUM": 3,
+        "LOW": 5,
+        "INSUFFICIENT": 6
+      }
+    },
+    "/api/search-only-intelligence": {
+      "http": 200,
+      "items": 53,
+      "operational": {
+        "direct_video_enrichment": {
+          "paused_at": "2026-10-25T23:05:50.165758+00:00",
+          "reason": "REPEATED_CHALLENGE_AFTER_VIDEO_NAVIGATION",
+          "resume_requires": "new explicit human authorization",
+          "scope": "individual video navigation workflow risk; no absolute target causality",
+          "status": "PAUSED"
+        },
+        "enrichment_availability": "SEARCH_ONLY",
+        "search_collection": "BLOCKED",
+        "page": "unknown",
+        "session": "unconfirmed",
+        "global_security": "BLOCKED",
+        "automatic_resume": false
+      }
+    }
+  },
+  "tests": {
+    "node_all": 171,
+    "python_new_mode": 5,
+    "python_existing_selective_manual_safe": 37,
+    "python_backlog_target_resume_contract": 52,
+    "python_total_passed": 94
+  },
+  "dev_reload": "READY; refreshed TikTok tabs 0; security stop retained; no navigation",
+  "commit": false
+}

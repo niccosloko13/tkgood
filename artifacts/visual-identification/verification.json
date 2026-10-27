@@ -1,0 +1,19 @@
+{
+  "changed_original_tables": [
+    "events",
+    "sqlite_sequence",
+    "system_state"
+  ],
+  "changed_existing_files": [
+    "app\\db.py",
+    "app\\main.py",
+    "app\\static\\index.html",
+    "docs\\NEXT_SESSION.md"
+  ],
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "extension_unchanged": true,
+  "browser_security_stop_unchanged": true,
+  "browser_security_history_unchanged": true,
+  "browser_security_clearance_unchanged": true
+}

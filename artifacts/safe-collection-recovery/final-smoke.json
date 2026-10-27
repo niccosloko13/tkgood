@@ -1,0 +1,39 @@
+{
+  "http_status": 200,
+  "collection_health": {
+    "companion": true,
+    "session": "unconfirmed",
+    "page": "unknown",
+    "security_stop": {
+      "reason": "HTTP 403: https://www.tiktok.com/",
+      "observed_at": "2026-10-23T16:23:11.456Z"
+    },
+    "last_safe_validation": null,
+    "last_check": {
+      "id": "c92e25864ad212d9269f43432ce973ea",
+      "status": "UNKNOWN",
+      "created_at": "2026-10-24T02:27:14.890914+00:00",
+      "validated_at": null,
+      "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+      "build_id": "d2b455eaa25cef67",
+      "incident_json": "{\"observed_at\": \"2026-10-23T16:23:11.456Z\", \"reason\": \"HTTP 403: https://www.tiktok.com/\"}",
+      "samples_json": "[]",
+      "evidence_json": "{\"account_signals\": [], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"\", \"document_ready\": false, \"heartbeat_at\": \"2026-10-24T02:27:14.265641+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"unknown\", \"session\": \"unconfirmed\", \"status\": \"UNKNOWN\", \"tab_id\": null}",
+      "release_json": null
+    },
+    "last_collection": null,
+    "new_videos": 0,
+    "last_stop_reason": "HTTP 403: https://www.tiktok.com/"
+  },
+  "identity": {
+    "AUTO": 0,
+    "REVIEW": 6,
+    "UNRESOLVED": 39
+  },
+  "trend_snapshots": 392,
+  "security_unchanged": true,
+  "released": false,
+  "queries_executed": 0,
+  "new_videos": 0,
+  "new_snapshots": 0
+}

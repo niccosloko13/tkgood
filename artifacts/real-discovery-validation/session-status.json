@@ -1,0 +1,3875 @@
+{
+  "app": "online",
+  "discovery_sessions": [
+    {
+      "id": 7,
+      "command_id": 94,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T11:55:24.358199+00:00",
+      "started_at": "2026-10-22T11:55:26.100012+00:00",
+      "finished_at": "2026-10-22T11:55:43.397992+00:00",
+      "scroll_count": 4,
+      "results_seen": 59,
+      "unique_videos": 30,
+      "new_videos": 3,
+      "duplicates": 29,
+      "visible_start": 4,
+      "status": "FINISHED",
+      "stop_reason": "max_videos",
+      "stagnant_cycles": 0,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": "438711e7-610c-430e-98f9-33a427920ba1",
+      "dom_stagnant_cycles": 0,
+      "stop_detail": null,
+      "steps": [
+        {
+          "session_id": 7,
+          "scroll_iteration": 0,
+          "capture_id": "discovery:7:0",
+          "payload_hash": "2b0fae6393062d8238d647b2f28955ab9b3953a6ed1aa2e0ccb74a0ca8b1caa5",
+          "new_links_detected": 4,
+          "duplicates_seen": 0,
+          "total_visible": 4,
+          "total_unique_session": 4,
+          "dom_card_count": 18,
+          "observed_at": "2026-10-22T11:55:30.633714+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 0.0,
+          "scroll_after": 0.0
+        },
+        {
+          "session_id": 7,
+          "scroll_iteration": 1,
+          "capture_id": "discovery:7:1",
+          "payload_hash": "00d0b426917e777453aa7fb6cb60e6271f1a7ef897267ac0ac110653ed9e1421",
+          "new_links_detected": 8,
+          "duplicates_seen": 4,
+          "total_visible": 12,
+          "total_unique_session": 12,
+          "dom_card_count": 30,
+          "observed_at": "2026-10-22T11:55:33.703240+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 0.0,
+          "scroll_after": 560.0
+        },
+        {
+          "session_id": 7,
+          "scroll_iteration": 2,
+          "capture_id": "discovery:7:2",
+          "payload_hash": "51c80fc0d321a8bd1ec74ad4e35e56fbba05b4fb97d2dc61287f1b1896e78f6d",
+          "new_links_detected": 8,
+          "duplicates_seen": 8,
+          "total_visible": 16,
+          "total_unique_session": 20,
+          "dom_card_count": 42,
+          "observed_at": "2026-10-22T11:55:36.887654+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 560.0,
+          "scroll_after": 1120.0
+        },
+        {
+          "session_id": 7,
+          "scroll_iteration": 3,
+          "capture_id": "discovery:7:3",
+          "payload_hash": "b0f3cb5743cc07ca63c7665536092f8bbd07af9fece3cab39fafb0b98d64ad98",
+          "new_links_detected": 7,
+          "duplicates_seen": 8,
+          "total_visible": 15,
+          "total_unique_session": 27,
+          "dom_card_count": 42,
+          "observed_at": "2026-10-22T11:55:40.102163+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 1120.0,
+          "scroll_after": 1680.0
+        },
+        {
+          "session_id": 7,
+          "scroll_iteration": 4,
+          "capture_id": "discovery:7:4",
+          "payload_hash": "372e9bf0734bb3bfcdd15dc61257d55b8202f6f866179859a65b8bef11c3d174",
+          "new_links_detected": 3,
+          "duplicates_seen": 9,
+          "total_visible": 12,
+          "total_unique_session": 30,
+          "dom_card_count": 54,
+          "observed_at": "2026-10-22T11:55:43.389991+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 1680.0,
+          "scroll_after": 2240.0
+        }
+      ],
+      "new_video_urls": [
+        "https://www.tiktok.com/@hh5ebk4/video/7694173456987983156",
+        "https://www.tiktok.com/@tkjusticebuy/video/7637186594922958093",
+        "https://www.tiktok.com/@elnazhamai/video/7640163903044979982"
+      ]
+    },
+    {
+      "id": 6,
+      "command_id": 89,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T11:53:51.487875+00:00",
+      "started_at": "2026-10-22T11:53:51.793256+00:00",
+      "finished_at": "2026-10-22T11:54:06.380385+00:00",
+      "scroll_count": 4,
+      "results_seen": 56,
+      "unique_videos": 30,
+      "new_videos": 23,
+      "duplicates": 26,
+      "visible_start": 8,
+      "status": "FINISHED",
+      "stop_reason": "max_videos",
+      "stagnant_cycles": 0,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": "d23d0930-46aa-4aab-aeb8-c09ab0d12f72",
+      "dom_stagnant_cycles": 0,
+      "stop_detail": null,
+      "steps": [
+        {
+          "session_id": 6,
+          "scroll_iteration": 0,
+          "capture_id": "discovery:6:0",
+          "payload_hash": "df2acc795bbaceeef97ad6db49b1f95ea1e3ebe8884a026726437f75d622958f",
+          "new_links_detected": 8,
+          "duplicates_seen": 0,
+          "total_visible": 8,
+          "total_unique_session": 8,
+          "dom_card_count": 18,
+          "observed_at": "2026-10-22T11:53:54.689722+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 0.0,
+          "scroll_after": 0.0
+        },
+        {
+          "session_id": 6,
+          "scroll_iteration": 1,
+          "capture_id": "discovery:6:1",
+          "payload_hash": "ad8a9e6591592b7d33480b7e1e383014c43547f4bee4358ce897984ea946557c",
+          "new_links_detected": 8,
+          "duplicates_seen": 4,
+          "total_visible": 12,
+          "total_unique_session": 16,
+          "dom_card_count": 30,
+          "observed_at": "2026-10-22T11:53:57.582909+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 0.0,
+          "scroll_after": 510.3999938964844
+        },
+        {
+          "session_id": 6,
+          "scroll_iteration": 2,
+          "capture_id": "discovery:6:2",
+          "payload_hash": "c0f736faea1aec0236702cbc78a77aa959c8267bfdefea542dca61fc11561b94",
+          "new_links_detected": 6,
+          "duplicates_seen": 8,
+          "total_visible": 14,
+          "total_unique_session": 22,
+          "dom_card_count": 42,
+          "observed_at": "2026-10-22T11:54:00.500255+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 510.3999938964844,
+          "scroll_after": 1070.4000244140625
+        },
+        {
+          "session_id": 6,
+          "scroll_iteration": 3,
+          "capture_id": "discovery:6:3",
+          "payload_hash": "535c2d4fe29061d146b440b85183bd0a2b8a975e3683d3478df3ae59173f58a4",
+          "new_links_detected": 6,
+          "duplicates_seen": 6,
+          "total_visible": 12,
+          "total_unique_session": 28,
+          "dom_card_count": 42,
+          "observed_at": "2026-10-22T11:54:03.446118+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 1070.4000244140625,
+          "scroll_after": 1630.4000244140625
+        },
+        {
+          "session_id": 6,
+          "scroll_iteration": 4,
+          "capture_id": "discovery:6:4",
+          "payload_hash": "aebc7e79c6d8b43d7b82d975968f3f75a00f2d1af728e3d2496a91527e753530",
+          "new_links_detected": 2,
+          "duplicates_seen": 8,
+          "total_visible": 10,
+          "total_unique_session": 30,
+          "dom_card_count": 54,
+          "observed_at": "2026-10-22T11:54:06.377386+00:00",
+          "scroll_target": "MAIN:",
+          "scroll_before": 1630.4000244140625,
+          "scroll_after": 2190.39990234375
+        }
+      ],
+      "new_video_urls": [
+        "https://www.tiktok.com/@chinauniquefinds/video/7420091773810183455",
+        "https://www.tiktok.com/@wareviews/video/7696875163178110224",
+        "https://www.tiktok.com/@gavrcyai/video/7695035642748669215",
+        "https://www.tiktok.com/@homegadgets55/video/7696924648633584918",
+        "https://www.tiktok.com/@home.gadgets17/video/7688311146864069910",
+        "https://www.tiktok.com/@vvivistore/video/7663541311957372168",
+        "https://www.tiktok.com/@angelo04261917/video/7676829783585606930",
+        "https://www.tiktok.com/@sapinho.cururu321/video/7685726086520507669",
+        "https://www.tiktok.com/@radardosachados97/video/7675904047030766868",
+        "https://www.tiktok.com/@alexfindsbest/video/7572955043016559894",
+        "https://www.tiktok.com/@airlandolists/video/7698771758421118221",
+        "https://www.tiktok.com/@elnazhamai/video/7677643118593789197",
+        "https://www.tiktok.com/@ghclazmzhqjq/video/7681992973587975445",
+        "https://www.tiktok.com/@airlandolists/video/7695041251682422030",
+        "https://www.tiktok.com/@layzguyprocessing/video/7673302468435954945",
+        "https://www.tiktok.com/@airlandolists/video/7697638524341865742",
+        "https://www.tiktok.com/@elnazhamai/video/7695826187506994445",
+        "https://www.tiktok.com/@tkjusticebuy/video/7656867972094381325",
+        "https://www.tiktok.com/@fendo977/video/7675686037334592782",
+        "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+        "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+        "https://www.tiktok.com/@home.appliances513/video/7642072920306634014",
+        "https://www.tiktok.com/@top_achadinhos_shopp/video/7614319393232719122"
+      ]
+    },
+    {
+      "id": 5,
+      "command_id": 84,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T02:19:04.861463+00:00",
+      "started_at": "2026-10-22T02:19:06.180995+00:00",
+      "finished_at": "2026-10-22T02:20:18.357924+00:00",
+      "scroll_count": 0,
+      "results_seen": 0,
+      "unique_videos": 0,
+      "new_videos": 0,
+      "duplicates": 0,
+      "visible_start": 0,
+      "status": "CANCELLED",
+      "stop_reason": "manual_stop",
+      "stagnant_cycles": 0,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": null,
+      "dom_stagnant_cycles": 0,
+      "stop_detail": null,
+      "steps": [],
+      "new_video_urls": []
+    },
+    {
+      "id": 4,
+      "command_id": 82,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T02:15:05.119785+00:00",
+      "started_at": "2026-10-22T02:15:05.294803+00:00",
+      "finished_at": "2026-10-22T02:16:36.767667+00:00",
+      "scroll_count": 0,
+      "results_seen": 0,
+      "unique_videos": 0,
+      "new_videos": 0,
+      "duplicates": 0,
+      "visible_start": 0,
+      "status": "FINISHED",
+      "stop_reason": "timeout",
+      "stagnant_cycles": 0,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": null,
+      "dom_stagnant_cycles": 0,
+      "stop_detail": null,
+      "steps": [],
+      "new_video_urls": []
+    },
+    {
+      "id": 3,
+      "command_id": 76,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T02:11:29.591967+00:00",
+      "started_at": "2026-10-22T02:11:30.465534+00:00",
+      "finished_at": "2026-10-22T02:11:36.769416+00:00",
+      "scroll_count": 2,
+      "results_seen": 24,
+      "unique_videos": 8,
+      "new_videos": 2,
+      "duplicates": 16,
+      "visible_start": 8,
+      "status": "FINISHED",
+      "stop_reason": "no_new_results",
+      "stagnant_cycles": 2,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": "6dee9191-35b1-4bf5-bfc3-8939ee36730a",
+      "dom_stagnant_cycles": 2,
+      "stop_detail": "no_new_ids",
+      "steps": [
+        {
+          "session_id": 3,
+          "scroll_iteration": 0,
+          "capture_id": "discovery:3:0",
+          "payload_hash": "e0e29298cdcda2140e59a0c859a570aac2796b65ba1125d1f9e28a821f26f087",
+          "new_links_detected": 8,
+          "duplicates_seen": 0,
+          "total_visible": 8,
+          "total_unique_session": 8,
+          "dom_card_count": 18,
+          "observed_at": "2026-10-22T02:11:33.049253+00:00",
+          "scroll_target": null,
+          "scroll_before": null,
+          "scroll_after": null
+        },
+        {
+          "session_id": 3,
+          "scroll_iteration": 1,
+          "capture_id": "discovery:3:1",
+          "payload_hash": "d8a3577477506d1d402bc714bfd4a624135b897b6985232dd1a2c2882ebf214e",
+          "new_links_detected": 0,
+          "duplicates_seen": 8,
+          "total_visible": 8,
+          "total_unique_session": 8,
+          "dom_card_count": 18,
+          "observed_at": "2026-10-22T02:11:34.910074+00:00",
+          "scroll_target": null,
+          "scroll_before": null,
+          "scroll_after": null
+        },
+        {
+          "session_id": 3,
+          "scroll_iteration": 2,
+          "capture_id": "discovery:3:2",
+          "payload_hash": "e3363f718c50fe7335560be05775b5b05e1b07616fd782d5f681977d3ccb1c01",
+          "new_links_detected": 0,
+          "duplicates_seen": 8,
+          "total_visible": 8,
+          "total_unique_session": 8,
+          "dom_card_count": 18,
+          "observed_at": "2026-10-22T02:11:36.766505+00:00",
+          "scroll_target": null,
+          "scroll_before": null,
+          "scroll_after": null
+        }
+      ],
+      "new_video_urls": [
+        "https://www.tiktok.com/@kingkyhu9da/video/7663847349050985742",
+        "https://www.tiktok.com/@football_clips_asr/video/7659710911728438550"
+      ]
+    },
+    {
+      "id": 2,
+      "command_id": 74,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T02:08:15.249022+00:00",
+      "started_at": "2026-10-22T02:08:15.440500+00:00",
+      "finished_at": "2026-10-22T02:09:48.550603+00:00",
+      "scroll_count": 0,
+      "results_seen": 0,
+      "unique_videos": 0,
+      "new_videos": 0,
+      "duplicates": 0,
+      "visible_start": 0,
+      "status": "FINISHED",
+      "stop_reason": "timeout",
+      "stagnant_cycles": 0,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": null,
+      "dom_stagnant_cycles": 0,
+      "stop_detail": null,
+      "steps": [],
+      "new_video_urls": []
+    },
+    {
+      "id": 1,
+      "command_id": 72,
+      "query": "home gadgets",
+      "created_at": "2026-10-22T02:05:43.418193+00:00",
+      "started_at": "2026-10-22T02:05:45.207287+00:00",
+      "finished_at": "2026-10-22T02:07:15.334869+00:00",
+      "scroll_count": 0,
+      "results_seen": 0,
+      "unique_videos": 0,
+      "new_videos": 0,
+      "duplicates": 0,
+      "visible_start": 0,
+      "status": "FINISHED",
+      "stop_reason": "timeout",
+      "stagnant_cycles": 0,
+      "max_scrolls": 5,
+      "max_new_videos": 30,
+      "max_runtime": 90,
+      "discovery_version": "controlled-discovery-v1",
+      "document_token": null,
+      "dom_stagnant_cycles": 0,
+      "stop_detail": null,
+      "steps": [],
+      "new_video_urls": []
+    }
+  ],
+  "enrichment": {
+    "items": [
+      {
+        "video_id": 42,
+        "platform_video_id": "7614319393232719122",
+        "url": "https://www.tiktok.com/@top_achadinhos_shopp/video/7614319393232719122",
+        "first_seen_at": "2026-10-22T11:54:06.377386+00:00",
+        "caption": "Chega de falta de tomada e carregador espalhado pela casa ⚡",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 6,
+        "discovery_priority_reasons": [
+          "category",
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 42,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "comments": {
+            "video_id": 42,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "creator": {
+            "video_id": 42,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "product_detection": {
+            "video_id": 42,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "corroboration": {
+            "video_id": 42,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 18,
+        "platform_video_id": "7663847349050985742",
+        "url": "https://www.tiktok.com/@kingkyhu9da/video/7663847349050985742",
+        "first_seen_at": "2026-10-22T02:11:33.049253+00:00",
+        "caption": "🚚 Free Shipping Today! 360° Rotating Faucet Filter Set 💦",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 6,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "comments_available",
+          "thumbnail",
+          "buy_intent"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 18,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 19,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "comments": {
+            "video_id": 18,
+            "step": "comments",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 10,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "creator": {
+            "video_id": 18,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 21,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "product_detection": {
+            "video_id": 18,
+            "step": "product_detection",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "corroboration": {
+            "video_id": 18,
+            "step": "corroboration",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          }
+        },
+        "status": "complete"
+      },
+      {
+        "video_id": 23,
+        "platform_video_id": "7696924648633584918",
+        "url": "https://www.tiktok.com/@homegadgets55/video/7696924648633584918",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "#lights #tiktokmadebuythis",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 5,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 23,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "comments": {
+            "video_id": 23,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "creator": {
+            "video_id": 23,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "product_detection": {
+            "video_id": 23,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "corroboration": {
+            "video_id": 23,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 26,
+        "platform_video_id": "7676829783585606930",
+        "url": "https://www.tiktok.com/@angelo04261917/video/7676829783585606930",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "#TikTokShop #AchadinhosTikTok",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 5,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 26,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "comments": {
+            "video_id": 26,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "creator": {
+            "video_id": 26,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "product_detection": {
+            "video_id": 26,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "corroboration": {
+            "video_id": 26,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 27,
+        "platform_video_id": "7685726086520507669",
+        "url": "https://www.tiktok.com/@sapinho.cururu321/video/7685726086520507669",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "#tiktokmademebuyit",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 5,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 27,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "comments": {
+            "video_id": 27,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "creator": {
+            "video_id": 27,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "product_detection": {
+            "video_id": 27,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "corroboration": {
+            "video_id": 27,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 39,
+        "platform_video_id": "7657730138993446151",
+        "url": "https://www.tiktok.com/@isadoravalebr/video/7657730138993446151",
+        "first_seen_at": "2026-10-22T11:54:03.446118+00:00",
+        "caption": "Essa escova elétrica gira sozinha e ajuda a limpar rejunte, cantos e sujeira grudada sem tanto esforço.",
+        "priority": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 1110,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "comments_available",
+          "thumbnail",
+          "buy_intent"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 39,
+            "step": "detail",
+            "status": "complete",
+            "command_id": 95,
+            "observation_id": 21,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:24:48.165029+00:00"
+          },
+          "comments": {
+            "video_id": 39,
+            "step": "comments",
+            "status": "complete",
+            "command_id": 96,
+            "observation_id": 12,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:25:20.530540+00:00"
+          },
+          "creator": {
+            "video_id": 39,
+            "step": "creator",
+            "status": "failed",
+            "command_id": 97,
+            "observation_id": null,
+            "reason": "Error: Profile metadata not ready within 25 seconds; [\"Profile header: false; visible username: false; document: complete; visibility: hidden\",\"Username nodes: 0; headings: 0; profile count nodes: 0\"]",
+            "updated_at": "2026-10-22T12:25:54.801090+00:00"
+          },
+          "product_detection": {
+            "video_id": 39,
+            "step": "product_detection",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Existing detector/corroboration pipeline",
+            "updated_at": "2026-10-22T12:25:54.836091+00:00"
+          },
+          "corroboration": {
+            "video_id": 39,
+            "step": "corroboration",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Recalculated atomically by detection",
+            "updated_at": "2026-10-22T12:25:54.837088+00:00"
+          }
+        },
+        "status": "failed"
+      },
+      {
+        "video_id": 40,
+        "platform_video_id": "7673992589036506388",
+        "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+        "first_seen_at": "2026-10-22T11:54:03.446118+00:00",
+        "caption": "escova elétrica 9 em 1, limpeza profunda, cabo extensível, banheiro, cozinha, piso, box e rejunte",
+        "priority": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 1110,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "category",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 40,
+            "step": "detail",
+            "status": "failed",
+            "command_id": 98,
+            "observation_id": null,
+            "reason": "Security stop",
+            "updated_at": "2026-10-22T12:26:00.980733+00:00"
+          },
+          "comments": {
+            "video_id": 40,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "creator": {
+            "video_id": 40,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "product_detection": {
+            "video_id": 40,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "corroboration": {
+            "video_id": 40,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          }
+        },
+        "status": "failed"
+      },
+      {
+        "video_id": 45,
+        "platform_video_id": "7640163903044979982",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7640163903044979982",
+        "first_seen_at": "2026-10-22T11:55:40.102163+00:00",
+        "caption": "🔗In Bio! Motion Sensor Lights💡✨💛",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 45,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "comments": {
+            "video_id": 45,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "creator": {
+            "video_id": 45,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "product_detection": {
+            "video_id": 45,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "corroboration": {
+            "video_id": 45,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 43,
+        "platform_video_id": "7694173456987983156",
+        "url": "https://www.tiktok.com/@hh5ebk4/video/7694173456987983156",
+        "first_seen_at": "2026-10-22T11:55:36.887654+00:00",
+        "caption": "Interruptor de um clique! Muito fácil de usar, até quem não tem prática na cozinha consegue. Triture temperos e grãos em segundos. Design moderno e tampa transparente para você ver o resultado!",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 43,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "comments": {
+            "video_id": 43,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "creator": {
+            "video_id": 43,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "product_detection": {
+            "video_id": 43,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "corroboration": {
+            "video_id": 43,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 44,
+        "platform_video_id": "7637186594922958093",
+        "url": "https://www.tiktok.com/@tkjusticebuy/video/7637186594922958093",
+        "first_seen_at": "2026-10-22T11:55:36.887654+00:00",
+        "caption": "Ultra-Sharp Grater #gadgets",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 44,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.918572+00:00"
+          },
+          "comments": {
+            "video_id": 44,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.919071+00:00"
+          },
+          "creator": {
+            "video_id": 44,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.919071+00:00"
+          },
+          "product_detection": {
+            "video_id": 44,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.919071+00:00"
+          },
+          "corroboration": {
+            "video_id": 44,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:24:31.919071+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 41,
+        "platform_video_id": "7642072920306634014",
+        "url": "https://www.tiktok.com/@home.appliances513/video/7642072920306634014",
+        "first_seen_at": "2026-10-22T11:54:06.377386+00:00",
+        "caption": "professional juicer machine available - link 🔗 in the bio",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 41,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "comments": {
+            "video_id": 41,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "creator": {
+            "video_id": 41,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "product_detection": {
+            "video_id": 41,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          },
+          "corroboration": {
+            "video_id": 41,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.882822+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 35,
+        "platform_video_id": "7697638524341865742",
+        "url": "https://www.tiktok.com/@airlandolists/video/7697638524341865742",
+        "first_seen_at": "2026-10-22T11:54:03.446118+00:00",
+        "caption": "Easy to squeeze out toothpaste😏",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 35,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "comments": {
+            "video_id": 35,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "creator": {
+            "video_id": 35,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "product_detection": {
+            "video_id": 35,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "corroboration": {
+            "video_id": 35,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 36,
+        "platform_video_id": "7695826187506994445",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7695826187506994445",
+        "first_seen_at": "2026-10-22T11:54:03.446118+00:00",
+        "caption": "🔗In Bio! Cookie Press Set🍪🤍",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 36,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "comments": {
+            "video_id": 36,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "creator": {
+            "video_id": 36,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "product_detection": {
+            "video_id": 36,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "corroboration": {
+            "video_id": 36,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 37,
+        "platform_video_id": "7656867972094381325",
+        "url": "https://www.tiktok.com/@tkjusticebuy/video/7656867972094381325",
+        "first_seen_at": "2026-10-22T11:54:03.446118+00:00",
+        "caption": "2-in-1 Ceiling Fan with Light",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 37,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "comments": {
+            "video_id": 37,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "creator": {
+            "video_id": 37,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "product_detection": {
+            "video_id": 37,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "corroboration": {
+            "video_id": 37,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 38,
+        "platform_video_id": "7675686037334592782",
+        "url": "https://www.tiktok.com/@fendo977/video/7675686037334592782",
+        "first_seen_at": "2026-10-22T11:54:03.446118+00:00",
+        "caption": "Watching this thing slice is way too satisfying 🥕⚡ Just feed it in and the slices keep coming.",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 38,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "comments": {
+            "video_id": 38,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "creator": {
+            "video_id": 38,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "product_detection": {
+            "video_id": 38,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          },
+          "corroboration": {
+            "video_id": 38,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.881809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 30,
+        "platform_video_id": "7698771758421118221",
+        "url": "https://www.tiktok.com/@airlandolists/video/7698771758421118221",
+        "first_seen_at": "2026-10-22T11:54:00.500255+00:00",
+        "caption": "Easy to store eggs😏",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 30,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "comments": {
+            "video_id": 30,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "creator": {
+            "video_id": 30,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "product_detection": {
+            "video_id": 30,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "corroboration": {
+            "video_id": 30,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 31,
+        "platform_video_id": "7677643118593789197",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7677643118593789197",
+        "first_seen_at": "2026-10-22T11:54:00.500255+00:00",
+        "caption": "🔗In Bio! Wash & Store Colander 🍓🍇💚",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 31,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "comments": {
+            "video_id": 31,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "creator": {
+            "video_id": 31,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "product_detection": {
+            "video_id": 31,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "corroboration": {
+            "video_id": 31,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 32,
+        "platform_video_id": "7681992973587975445",
+        "url": "https://www.tiktok.com/@ghclazmzhqjq/video/7681992973587975445",
+        "first_seen_at": "2026-10-22T11:54:00.500255+00:00",
+        "caption": "Rodinho absorvente de pia que limpa, absorve com praticidade e eficiência sem pano podi na pia da cozinha! Usou é só enxaguar e ele torce sozinho 🤌🏻",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 32,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "comments": {
+            "video_id": 32,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "creator": {
+            "video_id": 32,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "product_detection": {
+            "video_id": 32,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "corroboration": {
+            "video_id": 32,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 33,
+        "platform_video_id": "7695041251682422030",
+        "url": "https://www.tiktok.com/@airlandolists/video/7695041251682422030",
+        "first_seen_at": "2026-10-22T11:54:00.500255+00:00",
+        "caption": "Easy to store peppers😏",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 33,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "comments": {
+            "video_id": 33,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "creator": {
+            "video_id": 33,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "product_detection": {
+            "video_id": 33,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "corroboration": {
+            "video_id": 33,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 34,
+        "platform_video_id": "7673302468435954945",
+        "url": "https://www.tiktok.com/@layzguyprocessing/video/7673302468435954945",
+        "first_seen_at": "2026-10-22T11:54:00.500255+00:00",
+        "caption": "Prep like a pro, without doing the work 🔪🥑 Say goodbye to chopping by hand.",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 34,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "comments": {
+            "video_id": 34,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "creator": {
+            "video_id": 34,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "product_detection": {
+            "video_id": 34,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          },
+          "corroboration": {
+            "video_id": 34,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.880809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 24,
+        "platform_video_id": "7688311146864069910",
+        "url": "https://www.tiktok.com/@home.gadgets17/video/7688311146864069910",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "🧼✨ The easiest way to keep your soap clean & dry!",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 24,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "comments": {
+            "video_id": 24,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "creator": {
+            "video_id": 24,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "product_detection": {
+            "video_id": 24,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "corroboration": {
+            "video_id": 24,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 25,
+        "platform_video_id": "7663541311957372168",
+        "url": "https://www.tiktok.com/@vvivistore/video/7663541311957372168",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "Difusor Aromatizador de ambientes!!!",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 25,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "comments": {
+            "video_id": 25,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "creator": {
+            "video_id": 25,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "product_detection": {
+            "video_id": 25,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "corroboration": {
+            "video_id": 25,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 28,
+        "platform_video_id": "7675904047030766868",
+        "url": "https://www.tiktok.com/@radardosachados97/video/7675904047030766868",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "👟✨ Chega de sapato úmido e com mau cheiro! Esse secador elétrico portátil deixa seus calçados secos de forma prática e ainda conta com 4 modos de temporizador. 🔥💨 Garanta já o seu no carrinho laranja! 🛒",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 28,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "comments": {
+            "video_id": 28,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "creator": {
+            "video_id": 28,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "product_detection": {
+            "video_id": 28,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "corroboration": {
+            "video_id": 28,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 29,
+        "platform_video_id": "7572955043016559894",
+        "url": "https://www.tiktok.com/@alexfindsbest/video/7572955043016559894",
+        "first_seen_at": "2026-10-22T11:53:57.582909+00:00",
+        "caption": "No more stirring! 🌪️☕",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 29,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "comments": {
+            "video_id": 29,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "creator": {
+            "video_id": 29,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.878810+00:00"
+          },
+          "product_detection": {
+            "video_id": 29,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          },
+          "corroboration": {
+            "video_id": 29,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.879808+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 20,
+        "platform_video_id": "7420091773810183455",
+        "url": "https://www.tiktok.com/@chinauniquefinds/video/7420091773810183455",
+        "first_seen_at": "2026-10-22T11:53:54.689722+00:00",
+        "caption": "Buy directly from us as your trusted Chinese source, for unbeatable prices and fast shipping!",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 20,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "comments": {
+            "video_id": 20,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "creator": {
+            "video_id": 20,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "product_detection": {
+            "video_id": 20,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "corroboration": {
+            "video_id": 20,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 21,
+        "platform_video_id": "7696875163178110224",
+        "url": "https://www.tiktok.com/@wareviews/video/7696875163178110224",
+        "first_seen_at": "2026-10-22T11:53:54.689722+00:00",
+        "caption": "Mosquito Coil Box Home Gadgets Make your Life Easier... Home Appliances Smart Tech Gadgets 😍",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 21,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "comments": {
+            "video_id": 21,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "creator": {
+            "video_id": 21,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "product_detection": {
+            "video_id": 21,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "corroboration": {
+            "video_id": 21,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 22,
+        "platform_video_id": "7695035642748669215",
+        "url": "https://www.tiktok.com/@gavrcyai/video/7695035642748669215",
+        "first_seen_at": "2026-10-22T11:53:54.689722+00:00",
+        "caption": "The Christmas gift your family will actually want and use every day.",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 22,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "comments": {
+            "video_id": 22,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "creator": {
+            "video_id": 22,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "product_detection": {
+            "video_id": 22,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          },
+          "corroboration": {
+            "video_id": 22,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.877826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 19,
+        "platform_video_id": "7659710911728438550",
+        "url": "https://www.tiktok.com/@football_clips_asr/video/7659710911728438550",
+        "first_seen_at": "2026-10-22T02:11:33.049253+00:00",
+        "caption": "Buy Link in Bio",
+        "priority": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 1100,
+        "priority_reason": {
+          "new_video": true,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 19,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "comments": {
+            "video_id": 19,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "creator": {
+            "video_id": 19,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "product_detection": {
+            "video_id": 19,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "corroboration": {
+            "video_id": 19,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 1,
+        "platform_video_id": "7462746836533677358",
+        "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": "Easy to remove the stains😏 #gadgets",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 13,
+        "discovery_priority_reasons": [
+          "category",
+          "candidate_absent",
+          "unresolved",
+          "comments_available",
+          "thumbnail",
+          "buy_intent"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 1,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 11,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.870827+00:00"
+          },
+          "comments": {
+            "video_id": 1,
+            "step": "comments",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 9,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.870827+00:00"
+          },
+          "creator": {
+            "video_id": 1,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.870827+00:00"
+          },
+          "product_detection": {
+            "video_id": 1,
+            "step": "product_detection",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.870827+00:00"
+          },
+          "corroboration": {
+            "video_id": 1,
+            "step": "corroboration",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          }
+        },
+        "status": "complete"
+      },
+      {
+        "video_id": 3,
+        "platform_video_id": "7665799980480826642",
+        "url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": "Soap dispenser and dish brush in one ✨",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 7,
+        "discovery_priority_reasons": [
+          "category",
+          "comments_available",
+          "thumbnail",
+          "buy_intent"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 3,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "comments": {
+            "video_id": 3,
+            "step": "comments",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 11,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "creator": {
+            "video_id": 3,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 22,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "product_detection": {
+            "video_id": 3,
+            "step": "product_detection",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "corroboration": {
+            "video_id": 3,
+            "step": "corroboration",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          }
+        },
+        "status": "complete"
+      },
+      {
+        "video_id": 6,
+        "platform_video_id": "7672558839388048661",
+        "url": "https://www.tiktok.com/@megashopping39/video/7672558839388048661",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": "Você esqueceu de desconectar?",
+        "priority": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 100,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 6,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "comments_available",
+          "thumbnail",
+          "buy_intent"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 6,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "comments": {
+            "video_id": 6,
+            "step": "comments",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 8,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "creator": {
+            "video_id": 6,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 19,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "product_detection": {
+            "video_id": 6,
+            "step": "product_detection",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "corroboration": {
+            "video_id": 6,
+            "step": "corroboration",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          }
+        },
+        "status": "complete"
+      },
+      {
+        "video_id": 17,
+        "platform_video_id": "7698829746569858311",
+        "url": "https://www.tiktok.com/@jornadatop/video/7698829746569858311",
+        "first_seen_at": "2026-10-21T23:23:38.363643+00:00",
+        "caption": "#Tecnologia #futuro",
+        "priority": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 100,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 5,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 17,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "comments": {
+            "video_id": 17,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "creator": {
+            "video_id": 17,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "product_detection": {
+            "video_id": 17,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          },
+          "corroboration": {
+            "video_id": 17,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.876809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 11,
+        "platform_video_id": "7628036818079976735",
+        "url": "https://www.tiktok.com/@dreambunny22/video/7628036818079976735",
+        "first_seen_at": "2026-10-21T16:53:51.260645+00:00",
+        "caption": null,
+        "priority": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "enrichment_priority": 1,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": false,
+          "hypothesis": false,
+          "creator_unknown": true
+        },
+        "discovery_enrichment_priority": 5,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 11,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "comments": {
+            "video_id": 11,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "creator": {
+            "video_id": 11,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "product_detection": {
+            "video_id": 11,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "corroboration": {
+            "video_id": 11,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 5,
+        "platform_video_id": "7505858880568691970",
+        "url": "https://www.tiktok.com/@bk_owner/video/7505858880568691970",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": null,
+        "priority": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "enrichment_priority": 1,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": false,
+          "hypothesis": false,
+          "creator_unknown": true
+        },
+        "discovery_enrichment_priority": 5,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 5,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "comments": {
+            "video_id": 5,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "creator": {
+            "video_id": 5,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "product_detection": {
+            "video_id": 5,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "corroboration": {
+            "video_id": 5,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 13,
+        "platform_video_id": "7671465879976086797",
+        "url": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+        "first_seen_at": "2026-10-21T23:23:38.363643+00:00",
+        "caption": "Bestselling internet-famous cleaning helper &> This popular trending long-handled floor brush is a real lifesaver recommended all over the internet for floor cleaning. No more blind shopping! * No more following trends to kneel scrub!",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "category",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 13,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "comments": {
+            "video_id": 13,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "creator": {
+            "video_id": 13,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "product_detection": {
+            "video_id": 13,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "corroboration": {
+            "video_id": 13,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 15,
+        "platform_video_id": "7643873890845920526",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7643873890845920526",
+        "first_seen_at": "2026-10-21T23:23:38.363643+00:00",
+        "caption": "🔗In Bio! Cleaning Must Have! 3 in 1 Window Cleaner ✨🫧🤍",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "category",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 15,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "comments": {
+            "video_id": 15,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "creator": {
+            "video_id": 15,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "product_detection": {
+            "video_id": 15,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "corroboration": {
+            "video_id": 15,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 16,
+        "platform_video_id": "7685436719868464398",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7685436719868464398",
+        "first_seen_at": "2026-10-21T23:23:38.363643+00:00",
+        "caption": "🔗In Bio! Portable Dryer 🙌🧺🤎",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "category",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 16,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "comments": {
+            "video_id": 16,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "creator": {
+            "video_id": 16,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "product_detection": {
+            "video_id": 16,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "corroboration": {
+            "video_id": 16,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 9,
+        "platform_video_id": "7670966128629288205",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7670966128629288205",
+        "first_seen_at": "2026-10-21T16:53:51.260645+00:00",
+        "caption": "🔗In Bio! Burger Patty Maker 🍔🤍",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "category",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 9,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 15,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "comments": {
+            "video_id": 9,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "creator": {
+            "video_id": 9,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "product_detection": {
+            "video_id": 9,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "corroboration": {
+            "video_id": 9,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 10,
+        "platform_video_id": "7649962108582399253",
+        "url": "https://www.tiktok.com/@sam.shan.shops/video/7649962108582399253",
+        "first_seen_at": "2026-10-21T16:53:51.260645+00:00",
+        "caption": "Washing and prepping strawberries 🍓 this fruit spinner is a game changer 🫧",
+        "priority": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "enrichment_priority": 110,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": true,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "category",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 10,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 18,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "comments": {
+            "video_id": 10,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "creator": {
+            "video_id": 10,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "product_detection": {
+            "video_id": 10,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "corroboration": {
+            "video_id": 10,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 12,
+        "platform_video_id": "7698002338652507405",
+        "url": "https://www.tiktok.com/@airlandolists/video/7698002338652507405",
+        "first_seen_at": "2026-10-21T17:06:05.007646+00:00",
+        "caption": "Easy to dry clothes in house😏 #gadgets",
+        "priority": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 100,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "comments_available",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 12,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 14,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "comments": {
+            "video_id": 12,
+            "step": "comments",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 6,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "creator": {
+            "video_id": 12,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "product_detection": {
+            "video_id": 12,
+            "step": "product_detection",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          },
+          "corroboration": {
+            "video_id": 12,
+            "step": "corroboration",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Detection already covers available observations",
+            "updated_at": "2026-10-22T12:27:58.874809+00:00"
+          }
+        },
+        "status": "complete"
+      },
+      {
+        "video_id": 7,
+        "platform_video_id": "7689057449575337238",
+        "url": "https://www.tiktok.com/@home.gadgets17/video/7689057449575337238",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": null,
+        "priority": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "enrichment_priority": 1,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": false,
+          "hypothesis": false,
+          "creator_unknown": true
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 7,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "comments": {
+            "video_id": 7,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "creator": {
+            "video_id": 7,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "product_detection": {
+            "video_id": 7,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "corroboration": {
+            "video_id": 7,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 8,
+        "platform_video_id": "7660555038258924814",
+        "url": "https://www.tiktok.com/@airlandolists/video/7660555038258924814",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": null,
+        "priority": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "enrichment_priority": 1,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": false,
+          "hypothesis": false,
+          "creator_unknown": true
+        },
+        "discovery_enrichment_priority": 4,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "caption_insufficient"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 8,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "comments": {
+            "video_id": 8,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "creator": {
+            "video_id": 8,
+            "step": "creator",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "product_detection": {
+            "video_id": 8,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          },
+          "corroboration": {
+            "video_id": 8,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.873826+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 14,
+        "platform_video_id": "7639794804339019022",
+        "url": "https://www.tiktok.com/@elnazhamai/video/7639794804339019022",
+        "first_seen_at": "2026-10-21T23:23:38.363643+00:00",
+        "caption": "🔗In Bio! Kitchen Gadgeg I Use Daily🥚🤍",
+        "priority": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 100,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 14,
+            "step": "detail",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "comments": {
+            "video_id": 14,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "creator": {
+            "video_id": 14,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 20,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "product_detection": {
+            "video_id": 14,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          },
+          "corroboration": {
+            "video_id": 14,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.875809+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 2,
+        "platform_video_id": "7537701539553496334",
+        "url": "https://www.tiktok.com/@airlandolists/video/7537701539553496334",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": "Easy to clean kitchen😏 #gadgets",
+        "priority": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 100,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 2,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 12,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "comments": {
+            "video_id": 2,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "creator": {
+            "video_id": 2,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 16,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "product_detection": {
+            "video_id": 2,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          },
+          "corroboration": {
+            "video_id": 2,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.871811+00:00"
+          }
+        },
+        "status": "pending"
+      },
+      {
+        "video_id": 4,
+        "platform_video_id": "7688040645037952278",
+        "url": "https://www.tiktok.com/@goodfinds366/video/7688040645037952278",
+        "first_seen_at": "2026-10-21T16:21:20.251686+00:00",
+        "caption": "🔗Link in bio. Amazon Home Finds",
+        "priority": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "enrichment_priority": 100,
+        "priority_reason": {
+          "new_video": false,
+          "useful_caption": true,
+          "hypothesis": false,
+          "creator_unknown": false
+        },
+        "discovery_enrichment_priority": 3,
+        "discovery_priority_reasons": [
+          "candidate_absent",
+          "thumbnail"
+        ],
+        "stages": {
+          "detail": {
+            "video_id": 4,
+            "step": "detail",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 17,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "comments": {
+            "video_id": 4,
+            "step": "comments",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "creator": {
+            "video_id": 4,
+            "step": "creator",
+            "status": "complete",
+            "command_id": null,
+            "observation_id": 18,
+            "reason": "Existing valid observation reused",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "product_detection": {
+            "video_id": 4,
+            "step": "product_detection",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          },
+          "corroboration": {
+            "video_id": 4,
+            "step": "corroboration",
+            "status": "pending",
+            "command_id": null,
+            "observation_id": null,
+            "reason": "Awaiting enrichment",
+            "updated_at": "2026-10-22T12:27:58.872814+00:00"
+          }
+        },
+        "status": "pending"
+      }
+    ],
+    "security_stop": {
+      "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "observed_at": "2026-10-22T12:25:59.604Z"
+    },
+    "counts": {
+      "pending": 38,
+      "running": 0,
+      "complete": 5,
+      "failed": 2
+    },
+    "coverage": {
+      "detail": 10,
+      "comments": 6,
+      "creator": 17,
+      "product_detection": 6,
+      "corroboration": 6
+    },
+    "total": 45,
+    "batches": [
+      {
+        "id": 2,
+        "created_at": "2026-10-22T12:24:31.919071+00:00",
+        "finished_at": "2026-10-22T12:26:01.024257+00:00",
+        "status": "failed",
+        "stop_requested": 0,
+        "current_video": 40,
+        "current_step": "detail",
+        "error": "Security stop",
+        "video_ids": [
+          39,
+          40,
+          45,
+          43,
+          44
+        ],
+        "checkpoint": {
+          "videos_processed": 2,
+          "detail_complete": 1,
+          "comments_complete": 1,
+          "creator_complete": 0,
+          "failed": 2,
+          "new_candidates": 0,
+          "updated_candidates": 1,
+          "new_evidence": 1,
+          "new_unresolved_phrases": 0,
+          "intelligence": {
+            "candidates": 8,
+            "observed": 7,
+            "corroborated": 1,
+            "cross_video": 1,
+            "cross_creator": 1,
+            "unresolved": 2
+          },
+          "detection_runs": [
+            20
+          ]
+        }
+      },
+      {
+        "id": 1,
+        "created_at": "2026-10-22T12:21:06.908860+00:00",
+        "finished_at": "2026-10-22T12:21:07.054132+00:00",
+        "status": "failed",
+        "stop_requested": 0,
+        "current_video": 39,
+        "current_step": "detail",
+        "error": "1 validation error for VideoDetailCommand\ntype\n  Field required [type=missing, input_value={'video_url': 'https://ww...eo/7657730138993446151'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing",
+        "video_ids": [
+          39,
+          40,
+          45,
+          43,
+          44
+        ],
+        "checkpoint": {
+          "videos_processed": 1,
+          "detail_complete": 0,
+          "comments_complete": 0,
+          "creator_complete": 0,
+          "failed": 1,
+          "new_candidates": 0,
+          "updated_candidates": 0,
+          "new_evidence": 0,
+          "new_unresolved_phrases": 0,
+          "intelligence": {
+            "candidates": 8,
+            "observed": 7,
+            "corroborated": 1,
+            "cross_video": 1,
+            "cross_creator": 1,
+            "unresolved": 2
+          },
+          "detection_runs": []
+        }
+      }
+    ],
+    "batch_size": 5
+  },
+  "mode": "normal_chrome_bridge",
+  "security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "observed_at": "2026-10-22T12:25:59.604Z",
+    "_updated_at": "2026-10-22T12:25:59.623002+00:00"
+  },
+  "bridge": {
+    "extension_version": "0.1.5",
+    "companion_version": "0.1.5",
+    "build_id": "d0d95f70d86508ef",
+    "current_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "page_title": "www.tiktok.com",
+    "authenticated_hint": false,
+    "page_ready_state": null,
+    "has_search_ui": false,
+    "playback_error_visible": false,
+    "tab_id": 244955580,
+    "window_id": 244955513,
+    "tiktok_tab_count": 1,
+    "document_visibility": null,
+    "window_state": "normal",
+    "window_width": 1063,
+    "window_height": 810,
+    "tab_active": true,
+    "security_stop": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "version": "0.1.5",
+    "chrome_connected": false,
+    "tiktok_open": false,
+    "connected": false,
+    "last_seen": "2026-10-22T14:38:35.944786+00:00",
+    "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "title": "www.tiktok.com",
+    "page_signals": {
+      "ready_state": null,
+      "has_search": false,
+      "playback_error_visible": false,
+      "content_script_connected": false
+    },
+    "_updated_at": "2026-10-22T14:38:35.947789+00:00",
+    "extension_connected": false
+  },
+  "last_browser_error": null,
+  "latest_mission": {
+    "id": 2,
+    "created_at": "2026-10-21T15:36:56.876745+00:00",
+    "status": "PENDING",
+    "market": "US",
+    "mode": "smart_discovery",
+    "max_videos": 300,
+    "read_comments": 1,
+    "capture_evidence": 1,
+    "discover_related": 1
+  }
+}

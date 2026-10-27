@@ -1,0 +1,99 @@
+{
+  "status": "suggested",
+  "provider_result": {
+    "data": {
+      "assessment": "identified",
+      "visual_description": "A handheld device with a broad, flat cleaning head is being pressed against a tiled wall surface. The device has a visible green indicator light and a design suggesting it is used for cleaning or scrubbing. A person's hand grips the handle of the device. The background includes a wooden panel and some flowers.",
+      "possible_product_names": [
+        {
+          "name": "Electric Window Cleaner",
+          "aliases": [
+            "Cordless Window Cleaner",
+            "Handheld Window Vacuum Cleaner"
+          ],
+          "supporting_features": [
+            "Broad flat cleaning head designed for flat smooth surfaces",
+            "Green indicator light suggesting electronic operation",
+            "Hand grip for manual operation"
+          ],
+          "uncertainties": [
+            "Exact cleaning mechanism not visible",
+            "Material of cleaning surface and head unclear"
+          ]
+        }
+      ],
+      "detected_objects": [
+        "handheld cleaning device",
+        "hand",
+        "tile wall",
+        "wooden panel",
+        "flowers"
+      ],
+      "functional_description": "A handheld cleaning tool designed to clean flat surfaces such as windows or tiles, likely through suction or wiping action facilitated by the broad cleaning head and powered electronically as indicated by the green light.",
+      "distinctive_features": [
+        "Wide angled flat cleaning head",
+        "Green illuminated indicator on device body",
+        "Ergonomic grip for handheld operation"
+      ],
+      "possible_category": "Cleaning Tool",
+      "quality": {
+        "demonstration_visibility": {
+          "status": "observed",
+          "reason": "The device is shown in direct contact with the cleaned surface being held by a hand"
+        },
+        "problem_solution_clarity": {
+          "status": "partial",
+          "reason": "The intended cleaning function is suggested by design and context but exact mechanism is not fully clear"
+        },
+        "before_after_possible": {
+          "status": "insufficient",
+          "reason": "No before or after cleaning condition visible"
+        },
+        "transformation_strength": {
+          "status": "insufficient",
+          "reason": "No transformation or effect on surface shown"
+        },
+        "visual_novelty": {
+          "status": "insufficient",
+          "reason": "No indication if device has novel features compared to common cleaning tools"
+        },
+        "product_visibility": {
+          "status": "observed",
+          "reason": "Product is clearly visible and distinguishable"
+        },
+        "creative_repeatability_possible": {
+          "status": "insufficient",
+          "reason": "Single frame shows use but does not demonstrate creative application or repeatability"
+        }
+      }
+    },
+    "response_id": "gen-1792793630-WBQbUWoSiwZJFVHjQbf4",
+    "model": "openai/gpt-4.1-mini",
+    "api_host": "openrouter.ai",
+    "usage": {
+      "prompt_tokens": 728,
+      "completion_tokens": 409,
+      "total_tokens": 1137,
+      "cost": 0.0009456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009456,
+        "upstream_inference_prompt_cost": 0.0002912,
+        "upstream_inference_completions_cost": 0.0006544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "annotations": []
+  },
+  "lens_status": "LENS_ASSISTED_REQUIRED"
+}

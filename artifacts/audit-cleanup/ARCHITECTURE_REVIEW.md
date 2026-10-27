@@ -1,0 +1,41 @@
+# Architecture and responsibility review
+
+Read-only static audit. Overlap below is a maintenance concern, not evidence that a module can be deleted. No Stage 1/2, session detector, security guard or paused reader is declared dead merely because its workflow is inactive.
+
+| Responsibility | Evidence | Assessment / suggested future review |
+|---|---|---|
+| Search batch policy | `app/safe_collection.py:132` start, `:153` advance, `:178` command_allowed, `:243` resume_stage2 | Shared policy/queue state. Keep. Stage 1/2 still used, not superseded. |
+| Stage orchestration | `scripts/quarantine_stage1.py:33`; `scripts/controlled_stage2.py:48`; `scripts/resume_stage2.py:8` imports controlled_stage2 as pilot | Three bounded operator entry points reuse the shared policy. Partial orchestration/polling/report duplication; not three independent collection engines. quarantine_stage1 also has a no-replay report guard. Keep until CLI workflow consolidation is explicitly approved. |
+| Process launcher | `scripts/background_runner.py:22` launch, `:41` worker | Fixed background process catalogue, not a second query runner. Used by APIs and operations. Do not remove. |
+| Global security | `app/browser_safety.py:26` stop; `extension/background.js:35` stopForSecurity; `extension/background.js:347` synchronization | Persistent backend latch + browser-local latch are intentionally layered across processes. Review incident ordering and reconciliation centrally; do not remove one side as a duplicate. |
+| Target isolation | `app/target_safety.py:47` blocked, `:94` circuit_open, `:117` classify_pending; `extension/target_security.js` browser holding/quarantine | Backend persistence and browser request interception enforce the same policy at different layers. Keep both; future shared policy/contract tests can limit drift. |
+| Development vs content | `app/dev_control.py:60` active_operations, `:129` drain, `:146` shutdown; `extension/dev_worker.js` | Maintenance lifecycle owns restart/reload/readiness; it is not an alternate enrichment API. Separate queues are intentional. |
+| Session detector | `extension/session_signals.js` ProductHunterSession.read; `extension/session_observer.js:9` delegates to it; `extension/content.js:18` fallback; `extension/session_probe.js` diagnostics | Observer/probe/content are adapters around one current detector, not proof of three competing detectors. Manifest loads session_signals before observer/content. Old evidence fallback in `app/browser_safety.py:8` is still reachable compatibility behavior; remove only with contract migration. |
+| Challenge text detection | `extension/safety.js:6` reason and `extension/session_signals.js` pageBlocker | Concrete repeated access-denied/challenge/CAPTCHA patterns. One is a read guard/latch; the other reports health/session evidence. Candidate for one shared pure blocker reader, preserving independent enforcement and tests. Not safe to delete either today. |
+| Recovery authorization | `app/browser_safety.py:54` clear_reviewed_stop; `app/safe_collection.py:112` release; `app/manual_captcha_recovery.py:23` pause guard | Multiple explicit recovery contexts overlap around incident validation/release/history. They have different proof types and must not be blindly merged. Current direct-enrichment pause must survive recovery and restart. |
+| Health/stability | `app/safe_collection.py:62` health; `extension/search_stability.js`; `extension/background.js:144`; `app/selective_enrichment.py:140` _guard | Backend admission and browser navigation settlement are different boundaries; similar predicates risk drift. Consolidate specifications/tests first, not by dropping checks. |
+| Trend writes vs projections | `app/observations.py:121` record_search_observation; `app/trend_history.py:38` record_trend_snapshot, `:147` import_history, `:195` build_aggregates | Search observation is raw provenance; snapshot is normalized temporal evidence; sources table dedupes provenance. Import/backfill and live recording share the writer. Paired rows are not evidence of duplicate data. |
+| Search-only intelligence | `app/search_intelligence.py` analyze/rebuild; `app/selective_api.py` paused branch | Separate pure search projection avoids bleeding detail/comment/profile evidence into search-only readiness. Derived cache is regenerable, source observations are not. Repeated category/specificity/temporal computation overlaps with older candidate pipeline, but intentionally uses restricted provenance. |
+| Candidate priority | `app/selective_enrichment.py:63` candidates; `app/search_intelligence.py` priority; `app/enrichment.py` queue; `app/category_intelligence.py` planner | Several scheduling priorities exist for different scopes (selective, search-only, backlog, query planner). Potential naming/policy drift. They are not a final Opportunity Score, nor equivalent interchangeable ranking functions. Document scheduling purpose before consolidating. |
+
+## Concrete possible legacy / debug candidates
+
+- Four CLI scripts have no static caller in scanned source/docs/config: `scripts/local_visual_assets_report.py`, `scripts/offline_intelligence_report.py`, `scripts/report_intelligence_core.py`, `scripts/validate_connection_panel.py`. They remain runnable operator/report entry points. REVIEW FIRST, confidence low; see STATIC_REFERENCES.json.
+- `scripts/read_video_details.py:1` advertises an older up-to-eight direct-reader batch while current operational mode pauses direct readers. This is a legacy interface/doc mismatch worth reviewing, not authorization to run or remove it. Backend pause remains authoritative.
+- `extension.crx` is a packaged build and can lag the unpacked extension. Review install/distribution references/version before considering removal; retain `extension.pem` securely outside any audit package. The signing key is not a disposable build artifact.
+- No app module lacked all external stem references. That broad heuristic is weaker than a full import graph, so this does not prove every function is live.
+- CODE_AUDIT.md lists endpoint literal-consumer gaps after resolving constant router prefixes and normalized duplicate function bodies with exact locations. Dynamic callers, APIRouter prefixes and public/local operator APIs make absence of a literal URL inconclusive.
+- No confirmed replace-and-delete relation was established for search/session/Stage 1/2 APIs. The correct classification is KEEP or REVIEW FIRST, not proven dead.
+
+## Database and state review
+
+DB_SCHEMA.txt includes only DDL and counts; DATABASE_INVENTORY.json includes no row contents. SQLite was opened `mode=ro&immutable=1`, without application imports or migrations. Immutable reads ignore an uncheckpointed WAL; no project DB WAL/SHM existed in the inventory. Browser-profile databases were not opened.
+
+- Main DB has 53 videos, 203 search observations, 22 video-detail observations, 428 trend snapshots and 428 source links. These are different evidence layers; equal counts alone do not prove duplication.
+- `video_observations` (8 rows) alongside `search_observations` (203) looks historical/compatibility-related. Review migration and read paths in `app/db.py` and `app/observations.py` before any schema proposal; no table should be dropped based on its age/name.
+- `intelligence_jobs` (320), history (360), decisions (237), dimension snapshots (136), events (1766), dev commands (67) and bridge commands (109) are retention candidates, not useless data. Define retention/export/incident exceptions before proposing cleanup.
+- Empty intelligence entities/matches/reviews, vocabulary and visual tables can be reserved feature/schema scaffolding. Empty does not mean unused; schema removal would affect migrations and contracts.
+- `system_state` and its latch, direct pause, security history, quarantines, stage authorizations and no-replay checkpoints are operational controls. Never prune them as cache.
+- Checkpoint DBs and `data/product_hunter.pre_*.db` are historical backups. Their current size is not evidence that they are redundant or reconstructible from the current DB.
+
+No changes are proposed to imports, dependencies, schema, application state or safety behavior in this audit.

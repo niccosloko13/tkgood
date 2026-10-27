@@ -1,0 +1,366 @@
+[
+  {
+    "video_id": 4,
+    "platform_video_id": "7688040645037952278",
+    "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oc6BtFw0IEEPuPuJlYaiBxBZEFiqBMrVOUaAo~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792839600&x-signature=RxdS3c6F5GqMLHMzjkvc8tgkK6U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p16-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": "🔗Link in bio. Amazon Home Finds",
+    "hashtags": [],
+    "relevant_comments": [],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "generic_or_functional",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  },
+  {
+    "video_id": 5,
+    "platform_video_id": "7505858880568691970",
+    "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIIBB1CPqAAi16AEa4oWCBcqKpiEQuAYPA4Cj~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792771200&x-signature=0fEZ%2Fxxn14veQeD28VrcBCt4g4c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p16-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": null,
+    "hashtags": [],
+    "relevant_comments": [],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "no_text",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  },
+  {
+    "video_id": 6,
+    "platform_video_id": "7672558839388048661",
+    "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oAYtDfJnBAF1i2dCu6iZTMI6PAqIwpXwxxIDMA~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792839600&x-signature=UZxIMbzf4eI8Bjc98B3Eut3n5vs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p16-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": "Você esqueceu de desconectar?",
+    "hashtags": [],
+    "relevant_comments": [
+      {
+        "id": 108,
+        "text": "alguém ja comprou e verdade?",
+        "sample_id": 8,
+        "author_username": "@emmit_fernandes"
+      },
+      {
+        "id": 105,
+        "text": "Tem para iPhone",
+        "sample_id": 8,
+        "author_username": "@valmir.silva.paulo"
+      },
+      {
+        "id": 106,
+        "text": "eu comprei um é excelente já estou comprando outro",
+        "sample_id": 8,
+        "author_username": "@nomi13729"
+      },
+      {
+        "id": 107,
+        "text": "muito top hein",
+        "sample_id": 8,
+        "author_username": "@sebast9822sebast"
+      },
+      {
+        "id": 109,
+        "text": "nenhum comentário 😳 rum",
+        "sample_id": 8,
+        "author_username": "@elysmiranda"
+      },
+      {
+        "id": 110,
+        "text": "Quero",
+        "sample_id": 8,
+        "author_username": null
+      },
+      {
+        "id": 111,
+        "text": "👍",
+        "sample_id": 8,
+        "author_username": "@carlos.oliveira8667"
+      },
+      {
+        "id": 112,
+        "text": "bom diaaaaaaa",
+        "sample_id": 8,
+        "author_username": "@ndio.castanho0"
+      },
+      {
+        "id": 113,
+        "text": "vc que comentou aqui , compra se vc se larca fala pramim , vou esperar vc comprar.",
+        "sample_id": 8,
+        "author_username": "@betoregis145"
+      },
+      {
+        "id": 114,
+        "text": "😳",
+        "sample_id": 8,
+        "author_username": "@achoulab.br"
+      }
+    ],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "generic_or_functional",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  },
+  {
+    "video_id": 11,
+    "platform_video_id": "7628036818079976735",
+    "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-useast8-p-0068-tx2/oks3DfphEEIVQldMMFpAFB44Q1RDAJ5a2ESa8e~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792771200&x-signature=EiUTr6Hg8ogsQ1wnQrdQxgQudeE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p16-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": null,
+    "hashtags": [],
+    "relevant_comments": [],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "no_text",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  },
+  {
+    "video_id": 12,
+    "platform_video_id": "7698002338652507405",
+    "thumbnail_url": "https://p19-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oEAAmIA5U41ADhNzszimBiaCIBHBRwYJQEfDNk~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792839600&x-signature=fH9VGxZ8ikUZ3q0dgOuqkmvoBB4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p19-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": "Easy to dry clothes in house😏 #gadgets",
+    "hashtags": [
+      "#gadgets"
+    ],
+    "relevant_comments": [
+      {
+        "id": 78,
+        "text": "Responder",
+        "sample_id": 5,
+        "author_username": null
+      },
+      {
+        "id": 80,
+        "text": "Perfeito gente 🥰🥰🥰",
+        "sample_id": 6,
+        "author_username": "@achadostiktok242"
+      },
+      {
+        "id": 81,
+        "text": "que legal",
+        "sample_id": 6,
+        "author_username": "@joiara.oliveira7"
+      },
+      {
+        "id": 82,
+        "text": "Waar te koop",
+        "sample_id": 6,
+        "author_username": "@hanterbeek"
+      },
+      {
+        "id": 83,
+        "text": "How much",
+        "sample_id": 6,
+        "author_username": "@letobon001"
+      },
+      {
+        "id": 84,
+        "text": "Looks really convenient",
+        "sample_id": 6,
+        "author_username": "@miahappy76"
+      },
+      {
+        "id": 85,
+        "text": "🥰🥰🥰",
+        "sample_id": 6,
+        "author_username": "@smart.tech.gadget84"
+      },
+      {
+        "id": 86,
+        "text": "🥰",
+        "sample_id": 6,
+        "author_username": "@wkkvdqwsunsg4p"
+      },
+      {
+        "id": 87,
+        "text": "nice.need one",
+        "sample_id": 6,
+        "author_username": "@sandisiwendhlovu2"
+      },
+      {
+        "id": 88,
+        "text": "🤩",
+        "sample_id": 6,
+        "author_username": "@tiendastoremagic"
+      }
+    ],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "generic_or_functional",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  },
+  {
+    "video_id": 14,
+    "platform_video_id": "7639794804339019022",
+    "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oUKYSjGkEg8AAi8BA4xEUAAiAsagsRIAJPvAB~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792807200&x-signature=%2FkFpnY2f43kEMLD3NphouF7hcSw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p16-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": "🔗In Bio! Kitchen Gadgeg I Use Daily🥚🤍",
+    "hashtags": [],
+    "relevant_comments": [],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "generic_or_functional",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  },
+  {
+    "video_id": 2,
+    "platform_video_id": "7537701539553496334",
+    "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/ogDL4RJ4E3GICeAt9efUbISei9AS6GaLbAIAAO~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792771200&x-signature=dcDVJE9fHvdgXTBGNtO33OGURVQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+    "image": {
+      "status": "visual_unavailable",
+      "source_type": "remote_thumbnail",
+      "sha256": null,
+      "image_source": null,
+      "remote_host": "p16-common-sign.tiktokcdn.com",
+      "reason": "blocked_by_security_stop_tiktok_cdn"
+    },
+    "assisted_prepared": false,
+    "caption": "Easy to clean kitchen😏 #gadgets",
+    "hashtags": [
+      "#gadgets"
+    ],
+    "relevant_comments": [],
+    "current_candidate": [],
+    "unresolved_phrases": [],
+    "category": null,
+    "subcategory": null,
+    "product_family": null,
+    "visual_priority_reason": [
+      "has_thumbnail",
+      "likely_product",
+      "candidate_missing",
+      "generic_or_functional",
+      "comments_insufficient",
+      "category_unclassified"
+    ],
+    "in_high_pilot": true,
+    "in_gold_high_pilot": true,
+    "gold_reference_name": null,
+    "proposals": []
+  }
+]

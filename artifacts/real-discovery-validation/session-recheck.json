@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-23T14:48:23.114740+00:00",
+  "dedicated_profile_process_ids": [],
+  "bridge": {
+    "extension_version": "0.1.5",
+    "companion_version": "0.1.5",
+    "build_id": "d0d95f70d86508ef",
+    "current_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "page_title": "www.tiktok.com",
+    "authenticated_hint": false,
+    "page_ready_state": null,
+    "has_search_ui": false,
+    "playback_error_visible": false,
+    "tab_id": 244955580,
+    "window_id": 244955513,
+    "tiktok_tab_count": 1,
+    "document_visibility": null,
+    "window_state": "normal",
+    "window_width": 1063,
+    "window_height": 810,
+    "tab_active": true,
+    "security_stop": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "version": "0.1.5",
+    "chrome_connected": false,
+    "tiktok_open": false,
+    "connected": false,
+    "last_seen": "2026-10-22T14:38:35.944786+00:00",
+    "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "title": "www.tiktok.com",
+    "page_signals": {
+      "ready_state": null,
+      "has_search": false,
+      "playback_error_visible": false,
+      "content_script_connected": false
+    },
+    "_updated_at": "2026-10-22T14:38:35.947789+00:00",
+    "extension_connected": false
+  },
+  "security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "observed_at": "2026-10-22T12:25:59.604Z",
+    "_updated_at": "2026-10-22T12:25:59.623002+00:00"
+  }
+}

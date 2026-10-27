@@ -1,0 +1,17 @@
+{
+  "version":"discovery-planner-v1",
+  "pack_version":"HOME_DISCOVERY_V1",
+  "queries":[
+    ["home gadgets","home",null,10], ["home finds","home",null,9],
+    ["amazon home finds","home",null,9], ["useful home products","home",null,9],
+    ["viral home products","home",null,8], ["kitchen gadgets","home","kitchen",10],
+    ["kitchen finds","home","kitchen",9], ["cleaning gadgets","home","cleaning",10],
+    ["cleaning tools","home","cleaning",9], ["home organization","home","organization",10],
+    ["organization gadgets","home","organization",9], ["bathroom gadgets","home","bathroom",9],
+    ["laundry gadgets","home","laundry",9], ["smart home gadgets","home","lighting",8],
+    ["tiktok made me buy it home","home",null,8]
+  ],
+  "planner":{"novelty_weight":4,"duplicate_penalty":3,"creator_weight":2,"underrepresented_bonus":2,"age_weight":2,"age_cap_hours":168,"repeat_cooldown_seconds":3600},
+  "runner":{"max_sessions":12,"max_new_videos_per_session":25,"max_total_new_videos":200,"max_runtime_seconds":3600,"poll_seconds":2,"cooldown_seconds":15,"command_timeout_seconds":115},
+  "enrichment_weights":{"category":3,"candidate_absent":2,"caption_insufficient":2,"unresolved":4,"comments_available":1,"thumbnail":1,"buy_intent":2}
+}

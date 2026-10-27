@@ -1,0 +1,22 @@
+{
+  "version":"virality-quality-v1",
+  "purchase":{"measured_sample":10,"known_author_coverage":0.7,"strong_authors":5,"strong_ratio":0.35,"moderate_authors":2,"moderate_ratio":0.15},
+  "signal":{"minimum_videos":2,"minimum_creators":2,"minimum_authors":5,"high_duplicate_dependency":0.5},
+  "quality":{"minimum_sample":30,"minimum_authors":15,"minimum_videos":2,"minimum_creators":2,"positive_authors":10,"complaint_authors":3,"concerning_ratio":0.2,"mixed_authors":2},
+  "trend":{"minimum_observations":3,"minimum_span_hours":24},
+  "repeatability":{"high_observed_features":3,"medium_supported_features":2},
+  "patterns":{
+    "WANT":["\\bwant\\b","\\bquer+o+\\b","\\bquiero\\b"],
+    "NEED":["\\bneed\\b","\\bpreciso\\b","\\bnecessito\\b","\\bnecesito\\b"],
+    "AVAILABILITY_QUESTION":["\\b(?:available|availability|in stock|disponivel|disponibilidad|tem estoque|tem no brasil|hay stock|esta disponible)\\b"],
+    "DOES_NOT_WORK":["\\b(?:doesn t work|doesnt work|does not work|not working|nao funciona|no funciona)\\b"],
+    "BROKE":["\\b(?:broke|broken|quebrou|quebrado|roto|se rompio)\\b"],
+    "FAKE":["\\b(?:fake|falso|fraude|scam|enganacao)\\b"],
+    "USEFUL":["\\b(?:useful|util|pratico)\\b"],
+    "EASY_TO_USE":["\\b(?:easy to use|facil de usar|facil usar|facil de utilizar)\\b"],
+    "HARD_TO_USE":["\\b(?:hard to use|difficult to use|dificil de usar|dificil usar|complicado de usar)\\b"]
+  },
+  "negations":{"WANT":["\\b(?:don t|dont|do not|not|nao|no) (?:want|quero|quiero)\\b"],"NEED":["\\b(?:don t|dont|do not|not|nao|no) (?:need|preciso|necessito|necesito)\\b"],"USEFUL":["\\b(?:not useful|isn t useful|nao e util|no es util|inutil)\\b"]},
+  "use_case_terms":["windows","mirrors","tiles","showers","worktops","car windscreens","car windows","condensation","spilled liquids"],
+  "caption":{"problem":["stain","dirty","sujeira","mancha","sujo","problem","problema"],"solution":["clean","remove","limpa","limpar","remover","solution","solucion"],"utility":["in one","maker","dispenser","brush","organizer","cleaner"],"cta":["buy","link","compre","comprar","link na bio","link in bio"],"novelty":["new","novel","novo","nuevo"],"wow":["wow","incredible","incrivel","increible"]}
+}

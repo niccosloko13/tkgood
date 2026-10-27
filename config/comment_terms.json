@@ -1,0 +1,23 @@
+{
+  "version": "comment-terms-v1",
+  "languages": {
+    "en": {
+      "price": ["price", "cost", "how much", "expensive", "cheap", "dollars", "$"],
+      "link": ["link", "url", "website", "where can i find"],
+      "buy": ["buy", "purchase", "order", "where can i get"],
+      "problem": ["broken", "doesn't work", "does not work", "problem", "leak", "defective"]
+    },
+    "pt": {
+      "price": ["preço", "valor", "quanto custa", "caro", "barato", "reais", "r$"],
+      "link": ["link", "site", "endereço", "onde encontro"],
+      "buy": ["comprar", "compro", "comprei", "compra", "pedido", "onde vende"],
+      "problem": ["quebrado", "não funciona", "problema", "vaza", "defeito"]
+    },
+    "es": {
+      "price": ["precio", "cuánto cuesta", "caro", "barato", "dólares"],
+      "link": ["link", "enlace", "sitio", "dónde encuentro"],
+      "buy": ["comprar", "compro", "compré", "pedido", "dónde venden"],
+      "problem": ["roto", "no funciona", "problema", "defecto"]
+    }
+  }
+}

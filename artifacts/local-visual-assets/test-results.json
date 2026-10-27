@@ -1,0 +1,27 @@
+{
+  "python": {
+    "passed": 302,
+    "warnings": 4,
+    "task_id": "2910b39ae89d4cb39e009c55d47fa461"
+  },
+  "node_dashboard": {
+    "passed": 118,
+    "failed": 0,
+    "task_id": "117415b180e644e1aa3067d57e77a17f"
+  },
+  "local_api": "200 OK",
+  "local_asset": "200 OK",
+  "pilot_FN_order": [
+    4,
+    5,
+    6,
+    11,
+    12,
+    14
+  ],
+  "intermediate_failed_test_tasks": [
+    "f7ff0c05b4a34f929a855c0b2fc20ed3",
+    "dc393bf8e4a147e7a19e7ccd783c014e"
+  ],
+  "intermediate_test_corrections": "Windows unread-body rejection checked deterministically with ASGI plus HTTP empty-body rejection; test scope corrected. Final suites pass without removed coverage."
+}

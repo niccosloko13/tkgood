@@ -1,0 +1,15 @@
+{
+  "python": {
+    "passed": 277,
+    "warnings": 4,
+    "task_id": "59b4cc4b04344cd28a70c0cc00aa7e97"
+  },
+  "node_dashboard": {
+    "passed": 114,
+    "failed": 0,
+    "task_id": "9e5013d523f141fca01e9988c2ed4ce9"
+  },
+  "local_api": "200 OK",
+  "local_asset": "200 OK",
+  "category_provenance_invalid": 0
+}

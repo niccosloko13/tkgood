@@ -1,0 +1,146 @@
+[
+  {
+    "path": "/api/dev/recovery/{ident}/clear-reviewed-stop",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/status",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/dev/drain",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/resume",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/shutdown",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/commands",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/commands/next",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/dev/commands/{ident}/accept",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/commands/{ident}/complete",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/safe-recovery/checks",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/safe-recovery/checks/{ident}",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/dev/safe-recovery/checks/{ident}/release",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/safe-collection",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/dev/safe-collection/{ident}/next",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/bridge/discovery/{command_id}/control",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/bridge/discovery/{command_id}/step",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/bridge/discovery/{command_id}/finish",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/bridge/heartbeat",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/bridge/state",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/commands",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/commands",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/bridge/commands/next",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "path": "/api/bridge/commands/{command_id}/result",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "path": "/api/bridge/security-stop",
+    "methods": [
+      "POST"
+    ]
+  }
+]

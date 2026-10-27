@@ -1,0 +1,8 @@
+{
+  "version": "discovery-v1",
+  "stages": {
+    "1": {"max_queries": 1, "max_results_per_query": 10, "max_new_videos": 10, "max_runtime_seconds": 180, "max_scrolls": 0, "search_only": true},
+    "2": {"max_queries": 5, "max_results_per_query": 10, "max_new_videos": 30, "max_runtime_seconds": 180, "max_scrolls": 0, "search_only": true}
+  },
+  "report_fields": ["stage", "queries", "status", "query_index", "results", "new_videos", "duplicates", "observations", "trend_snapshots", "stop_reason", "checkpoint"]
+}

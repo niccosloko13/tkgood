@@ -1,0 +1,150 @@
+{
+  "api_version": "1",
+  "companion_min_version": "0.1.6",
+  "bridge": {
+    "session_auth_groups": [
+      "account_identity",
+      "account_communication",
+      "followed_accounts"
+    ],
+    "live_page_blocker": null,
+    "session_signals": {
+      "profile_route_present": true,
+      "messages_route_present": true,
+      "activity_or_inbox_present": true,
+      "authenticated_sidebar_present": true,
+      "account_avatar_present": true,
+      "following_authenticated_present": true,
+      "logged_out_cta_present": false
+    },
+    "session_debug": {
+      "profile_route_present": {
+        "selector": "a[data-e2e=\"nav-profile\"],a[data-e2e=\"profile-icon\"],[data-e2e=\"profile-icon\"] a[href],nav a[data-e2e*=\"profile\"],[role=\"navigation\"] a[data-e2e*=\"profile\"]",
+        "matched_count": 1,
+        "visible_count": 1,
+        "sample_href": "/@porqueninguemtecontou",
+        "sample_aria": null,
+        "sample_data_e2e": "nav-profile"
+      },
+      "messages_route_present": {
+        "selector": "[data-e2e=\"nav-messages\"],a[href=\"/messages\"],a[href=\"/messages/\"],a[href=\"https://www.tiktok.com/messages\"],[data-e2e=\"message-icon\"]",
+        "matched_count": 1,
+        "visible_count": 1,
+        "sample_href": null,
+        "sample_aria": "Mensagens",
+        "sample_data_e2e": "nav-messages"
+      },
+      "activity_or_inbox_present": {
+        "selector": "[data-e2e=\"nav-activity\"],[data-e2e=\"inbox-icon\"],a[href=\"/activity\"],a[href=\"/inbox\"]",
+        "matched_count": 2,
+        "visible_count": 1,
+        "sample_href": null,
+        "sample_aria": "Atividade",
+        "sample_data_e2e": "nav-activity"
+      },
+      "account_avatar_present": {
+        "selector": "a[data-e2e=\"nav-profile\"] img,a[data-e2e=\"nav-profile\"] image,[data-e2e=\"profile-icon\"] img,[data-e2e=\"profile-icon\"] image,[data-e2e=\"account-avatar\"]",
+        "matched_count": 1,
+        "visible_count": 1,
+        "sample_href": null,
+        "sample_aria": null,
+        "sample_data_e2e": null
+      },
+      "following_authenticated_present": {
+        "selector": "a[data-e2e=\"following-user-button\"][href]",
+        "matched_count": 5,
+        "visible_count": 5,
+        "sample_href": "/@elansari.imane",
+        "sample_aria": null,
+        "sample_data_e2e": "following-user-button"
+      },
+      "logged_out_cta_present": {
+        "selector": "[data-e2e=\"top-login-button\"],[data-e2e=\"nav-login-button\"],[data-e2e=\"login-modal\"],[data-e2e=\"login-button\"],[data-e2e=\"sidebar-login-button\"],a[href=\"/login\"],a[href^=\"/login?\"]",
+        "matched_count": 0,
+        "visible_count": 0,
+        "sample_href": null,
+        "sample_aria": null,
+        "sample_data_e2e": null
+      },
+      "authenticated_sidebar_present": {
+        "selector": "shared navigation ancestor: nav-profile + nav-messages/nav-activity + nav-following/nav-foryou",
+        "matched_count": 1,
+        "visible_count": 1,
+        "sample_href": null,
+        "sample_aria": null,
+        "sample_data_e2e": null
+      }
+    },
+    "session_detector_version": "dom-v2",
+    "command_api_status": 200,
+    "command_api_error": null,
+    "api_version": "1",
+    "safe_collection_version": "v1",
+    "extension_version": "0.1.6",
+    "companion_version": "0.1.6",
+    "build_id": "09a458cc2f2b7148",
+    "current_url": "https://www.tiktok.com/",
+    "page_title": "TikTok - Make Your Day",
+    "authenticated_hint": true,
+    "page_ready_state": "complete",
+    "has_search_ui": true,
+    "playback_error_visible": false,
+    "tab_id": 618200484,
+    "window_id": 618199843,
+    "tiktok_tab_count": 1,
+    "document_visibility": "hidden",
+    "window_state": "maximized",
+    "window_width": 1552,
+    "window_height": 832,
+    "tab_active": false,
+    "security_stop": "HTTP 403: https://www.tiktok.com/",
+    "security_stop_observed_at": "2026-10-24T15:19:37.832Z",
+    "current_page_status": "healthy",
+    "tiktok_session_status": "confirmed",
+    "session_evidence": [
+      "visible_own_profile_with_avatar",
+      "visible_account_inbox"
+    ],
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "version": "0.1.6",
+    "chrome_connected": true,
+    "tiktok_open": true,
+    "connected": true,
+    "last_seen": "2026-10-24T19:09:31.072433+00:00",
+    "url": "https://www.tiktok.com/",
+    "title": "TikTok - Make Your Day",
+    "page_signals": {
+      "ready_state": "complete",
+      "has_search": true,
+      "playback_error_visible": false,
+      "content_script_connected": true
+    },
+    "_updated_at": "2026-10-24T19:09:31.085456+00:00",
+    "companion_min_version": "0.1.6",
+    "reported_companion_version": "0.1.6",
+    "reported_api_version": "1",
+    "companion_compatible": true,
+    "compatibility_status": "COMPATIBLE",
+    "companion_connected": true,
+    "heartbeat_fresh": true,
+    "security_stop_active": true,
+    "failed_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "extension_connected": true
+  },
+  "security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/",
+    "observed_at": "2026-10-24T15:19:37.832Z",
+    "_updated_at": "2026-10-24T15:19:37.892081+00:00"
+  },
+  "renewal": {
+    "id": "5c4771f9cf763c7653de88b4852f1f6a",
+    "status": "SUCCEEDED",
+    "detail": "Existing Chrome session ready for manual login/check; account unconfirmed; security stop unchanged",
+    "updated_at": "2026-10-24T16:06:33.554387+00:00"
+  },
+  "check": {
+    "id": "789192d31f878bff9e766d4cafa6d693",
+    "status": "HEALTHY",
+    "validated_at": "2026-10-24T19:07:37.111801+00:00"
+  }
+}

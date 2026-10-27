@@ -7,7 +7,8 @@ const {domFixture} = require('./dom-fixture.cjs');
 const root = path.resolve(__dirname, '..');
 const base = process.argv[2];
 if (!/^http:\/\/127\.0\.0\.1:[0-9]+$/.test(base)) throw new Error('Only a temporary loopback API is allowed');
-const {document, window} = domFixture(fs.readFileSync(path.join(__dirname, 'fixtures/tiktok-search.html'), 'utf8'));
+const fixture = process.argv.includes('--enrichment') ? 'tiktok-enrichment.html' : 'tiktok-search.html';
+const {document, window} = domFixture(fs.readFileSync(path.join(__dirname, 'fixtures', fixture), 'utf8'));
 document.readyState = 'complete';
 if (process.argv.includes('--update')) document.querySelector('[data-e2e="video-views"]').textContent = '1.3M';
 const event = () => ({addListener() {}});
@@ -21,7 +22,7 @@ vm.runInContext(fs.readFileSync(path.join(root, 'extension/content.js'), 'utf8')
 const stored = {};
 let completed;
 const done = new Promise(resolve => {completed = resolve;});
-const worker = vm.createContext({URL, AbortSignal, setInterval() {},
+const worker = vm.createContext({URL, AbortSignal, setInterval() {},setTimeout(fn){queueMicrotask(fn);},
   fetch: async (url, options) => {
     const requestUrl = new URL(url);
     if (requestUrl.origin !== 'http://127.0.0.1:8000') throw new Error('Unexpected destination');
@@ -37,12 +38,12 @@ const worker = vm.createContext({URL, AbortSignal, setInterval() {},
     alarms: {create: async () => {}, onAlarm: event()},
     storage: {local: {set: async value => Object.assign(stored, value), get: async key => ({[key]: stored[key]}), remove: async key => {delete stored[key];}}},
     tabs: {query: async () => [{id: 7, url: document.location.href, title: 'TikTok'}],
-      get: async () => ({id: 7, url: document.location.href}),
+      get: async () => ({id: 7, url: document.location.href,status:'complete'}),
       sendMessage: async (id, message) => new Promise(resolve => listener(message, {}, resolve)),
       update: async () => {throw new Error('Capture must never navigate');},
       onRemoved: event(), onUpdated: event()}
   }
 });
-vm.runInContext(fs.readFileSync(path.join(root, 'extension/background.js'), 'utf8'), worker);
+vm.runInContext(fs.readFileSync(path.join(root,'extension/pacing.js'),'utf8')+fs.readFileSync(path.join(root,'extension/search_discovery.js'),'utf8')+fs.readFileSync(path.join(root, 'extension/background.js'), 'utf8'), worker);
 const timer = setTimeout(() => {console.error('Capture client timed out', stored.bridgeStatus); process.exit(1);}, 12000);
 done.then(() => clearTimeout(timer));

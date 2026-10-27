@@ -1,0 +1,15 @@
+{
+  "browser_security_history": {
+    "items": [
+      {
+        "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+        "observed_at": "2026-10-22T12:25:59.604Z",
+        "_updated_at": "2026-10-22T12:25:59.623002+00:00"
+      }
+    ]
+  },
+  "browser_security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/",
+    "observed_at": "2026-10-23T16:23:11.456Z"
+  }
+}

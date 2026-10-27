@@ -1,0 +1,402 @@
+{
+  "at": "2026-10-23T18:40:09.011856+00:00",
+  "tables": {
+    "bridge_commands": {
+      "count": 98,
+      "hash": "4292b32dc3d947ee56dc48042f941d7aa94f2027a8451c35ed9350216035e639"
+    },
+    "candidate_evidence_groups": {
+      "count": 65,
+      "hash": "088667bbb407c2a3b341e7611ec920a4dacd23e42512d49498f8d8b7109d0aee"
+    },
+    "candidate_reference_urls": {
+      "count": 32,
+      "hash": "0dbad3aca3f89d20e2c4933e6a46803ab61cde984d95200dfa09c37fc183fcb2"
+    },
+    "candidate_relationships": {
+      "count": 5,
+      "hash": "7e87cbaef572f321c8a7a3914bc8e21e2a8686bd5b2c362acd2abae0c336d042"
+    },
+    "candidate_semantic_history": {
+      "count": 16,
+      "hash": "1fad216637e49a06c98e4ed651022fef60cbf468d8d07ca10046aa71f3355613"
+    },
+    "candidate_semantics": {
+      "count": 8,
+      "hash": "6d1eb59de1a278e98ace3673a04a6eab562e3f0f938014533f3dd3ee985a3387"
+    },
+    "comment_observations": {
+      "count": 232,
+      "hash": "238ee12b437ae41cdcabb2d587e8cbb0c5eabb275e3cff102c243ca2a218272b"
+    },
+    "comment_samples": {
+      "count": 12,
+      "hash": "02db7de11d9f214ca180fe66ac5310fd4e39ad8927bc1e2ae295b341b7900758"
+    },
+    "creator_profile_observations": {
+      "count": 22,
+      "hash": "017b6514859c31539285a97d1c37b77cf37a7b7a13da9965e005a5297ed0ef31"
+    },
+    "creators": {
+      "count": 29,
+      "hash": "d8bbc1d0bd4769acc8e258af8ab5f160e202849e53eead8e14f49750d0f4ffe9"
+    },
+    "detection_benchmark_runs": {
+      "count": 6,
+      "hash": "1e5b297a74527093725b50b9f19d3a9eb831cca56e6bec2f6d260fc49ce72ab6"
+    },
+    "dev_commands": {
+      "count": 42,
+      "hash": "a4ae57e1a6b117de0750f70c2524bd9c9af2b05fb95b628c5227c96a440641ec"
+    },
+    "discovery_session_videos": {
+      "count": 68,
+      "hash": "380ca130243456b0aab611885b8505c4b7af2841061cb0f83084620df332d8f6"
+    },
+    "discovery_sessions": {
+      "count": 7,
+      "hash": "4896e7740f699489ba639e9e00b34ee71bfb5bc547fa30c3cc167473e170bcbf"
+    },
+    "discovery_steps": {
+      "count": 13,
+      "hash": "407cb06092a0f290370863631d32e58abcf98308f9a0584b6a998d2efc48ad26"
+    },
+    "enrichment_batches": {
+      "count": 2,
+      "hash": "52f31d9e2e3af0002fb5e81b44190379c0a41f10d99f6ecd0e88e323beeae3e5"
+    },
+    "enrichment_stages": {
+      "count": 225,
+      "hash": "a7da35242c016b168ec1b95bf53460d97a53f9ca4286e9928f0201799a6cf6fe"
+    },
+    "events": {
+      "count": 1337,
+      "hash": "4a3d5930c247b9a57c28bee468488f70293ae33ba90a4b18990fa35ef4ef68b7"
+    },
+    "gold_candidate_reviews": {
+      "count": 6,
+      "hash": "7aa3359b5707535239555ec7a4739b6508e767832bf1f2d4ac752a9b5dad2a05"
+    },
+    "gold_review_history": {
+      "count": 16,
+      "hash": "3d39fc67b43e9f7d4707ef93fb50b0b9d32131c4b1b4172b56a16834afbf1ddd"
+    },
+    "gold_video_labels": {
+      "count": 45,
+      "hash": "e86669e7545c8c566616ff64fe260348447c45a4bfcd9acb5a41b427cdbc5e9a"
+    },
+    "human_category_reviews": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "missions": {
+      "count": 2,
+      "hash": "f3b8bcd379b29ae7b3f993b96f2d69d10934317c2c7a7c8436ce57aef241bade"
+    },
+    "night_discovery_checkpoints": {
+      "count": 1,
+      "hash": "02ddc3a86a63b05bda11eb0f1aa048ff6ba0eae6e7750a528b3b423c93ec7207"
+    },
+    "night_discovery_runs": {
+      "count": 1,
+      "hash": "43781b52b6ca6513da57b388ea0acc0ebfa42cdd528c216236bb7df7c81ff300"
+    },
+    "product_candidate_aliases": {
+      "count": 8,
+      "hash": "9cc1887265c9b63cc5bd0e3bf4aff7bd4c608a0edee9f9baae3444b9dbf23e56"
+    },
+    "product_candidate_evidence": {
+      "count": 65,
+      "hash": "d289d438911c80081b83d1dad520a661374e1f42396d1f827acaf72656912cf9"
+    },
+    "product_candidates": {
+      "count": 8,
+      "hash": "ad4b0d1276c459b01fe755eec731baa40a07219fdb0985509e798645f0c3a61f"
+    },
+    "product_detection_gaps": {
+      "count": 179,
+      "hash": "ed461d5b1c8d57ae2d52b012f1f24ca93623635fa8fdf55aa2a88944d6114918"
+    },
+    "product_detection_runs": {
+      "count": 22,
+      "hash": "5c4fc884e16c315f7e5d11a7d162c0a4f5946173f0d078286447137bd10a0d38"
+    },
+    "product_identity_evidence": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_identity_pairs": {
+      "count": 10,
+      "hash": "79772b63727960c509358e97001550ba890ac4270f3d8d0700ec73e57c5a3d8c"
+    },
+    "product_video_detection_state": {
+      "count": 45,
+      "hash": "a9da479dfbbfa0e484aa09d46a03a033ebc36e55a9eb84fe0b31376e7b59c8a7"
+    },
+    "product_vocabulary_reviews": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_vocabulary_state": {
+      "count": 1,
+      "hash": "8bc3de042d5511bf0d4df7eb3e09d5b2ebf41152f4d6ec7b958e21dd7901be0a"
+    },
+    "product_vocabulary_terms": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "schema_migrations": {
+      "count": 4,
+      "hash": "01c04c6197b873334bda264c9cf072526463c5ba2215f3998f61e38595dbd44e"
+    },
+    "search_captures": {
+      "count": 24,
+      "hash": "4a7966b5b6addf493de3ef5fb18eba9e6f23fb79180d4bff8e5532a74939cc6a"
+    },
+    "search_observations": {
+      "count": 167,
+      "hash": "29f496b8b4cd5d64f677c7f6641e26474d0b0c21c78855b0741193b232affd20"
+    },
+    "sqlite_sequence": {
+      "count": 11,
+      "hash": "f420162405341f34b1a3c1936eb89c8d062c6d94f20e736a1bfe694f923711a2"
+    },
+    "system_state": {
+      "count": 5,
+      "hash": "bc4a026ea7b6d969cd384309e39ee2024dca1103ca9e41393601c25ad1e372aa"
+    },
+    "unresolved_phrase_observations": {
+      "count": 4,
+      "hash": "ef921985a6e8204b439a2d76374c5cea340d9a0f742b7226ec87d3800a5c02b6"
+    },
+    "unresolved_product_phrases": {
+      "count": 2,
+      "hash": "a3a0fd456731aa404d10cf1efa2b9b743972018f51400d56106f93b30409926d"
+    },
+    "video_category_classifications": {
+      "count": 45,
+      "hash": "eae667e2b6e93c9842808fe83b2bd249fbadc7ed4d057cba03c1ea5485257692"
+    },
+    "video_creators": {
+      "count": 41,
+      "hash": "30e43a578f60a6c5e55cdb131f2e17deed7d740393cbc33dd8f5180ff5fb542a"
+    },
+    "video_detail_observations": {
+      "count": 21,
+      "hash": "259c3df6189b5df43b241870edffd46df2f9580a16a5b24f76a9aabab0f6f1a5"
+    },
+    "video_enrichment_queue": {
+      "count": 28,
+      "hash": "cbd4b3614591c6e5fc53515a5dbb17426ed7e387e767cce8c03d875c7afcb23e"
+    },
+    "video_observations": {
+      "count": 8,
+      "hash": "4880d564bbfebf60e175cd61e419d0157d498630c2ce27f1ff384225b97190e9"
+    },
+    "videos": {
+      "count": 45,
+      "hash": "874594a1ff65cb4a5ac47df389d45e9bec7eeda91816504ad50bc4fc2d1c9f10"
+    },
+    "visual_gold_assessments": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "visual_image_assets": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "visual_pilot_items": {
+      "count": 14,
+      "hash": "f2ab4d8e4af9231aeab663b45f2a483a47e51772779dbc97a65512453dd1f11e"
+    },
+    "visual_pilots": {
+      "count": 1,
+      "hash": "ebda65368fb233496f69714e25fcf16a110ee4bf5bc72a2b5dac4b34d7d242ca"
+    },
+    "visual_product_evidence": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "visual_product_search_evidence": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "visual_review_history": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "files": {
+    "app\\browser.py": "92531eba59065bb1b72f974c4bbb4731777dc2d43e7e1fbbd87137fd39afd547",
+    "app\\browser_safety.py": "dcf3365397f07efdf72f7c10461f701c34360c924360a8bf6cf2b499d0964772",
+    "app\\candidate_corroboration.py": "368fdf3f8a753e4242e343847438301375b63cf264d36df1e5f5b39759315823",
+    "app\\candidate_gaps.py": "59917392ddb67702421b0497dca23fbe8927dcec650eab47c8c9900ef964743f",
+    "app\\candidate_semantics.py": "19260e84107e8abf5305c783493170eadb5e5d979388d6b203dd795a958288a0",
+    "app\\category_api.py": "d27071c6a5c8e3174ae3063f4f68534aeafd5b2c2ee33cdc6d6969fd4b12c9fb",
+    "app\\category_intelligence.py": "2e0352a4461662536bc1c1e696df254f7becc53283b8c18ea75b8cd08936e0b1",
+    "app\\chrome_launcher.py": "88592ccd394b148651571bf87247724efcb278fca85d31710082e0967a2da38b",
+    "app\\comments.py": "2123aa32e0678ed20431fbf28d1cbba3938d047871091f046e2ea8094e185b6f",
+    "app\\comment_schemas.py": "cb8993ad1707ba767e94eaf4c69abb6ed1f4e56f4ef8574302067f37debb1e7e",
+    "app\\config.py": "c653d4a6143b410b80e659f3045de62c3b725b4d3444981834c372b7ddce295e",
+    "app\\creators.py": "434f86457fc2be597fc4a9de700087af1f915f5624845c383ac21bf69e3587fd",
+    "app\\creator_schemas.py": "ece323c16e419af0a6feeab0f23ac6e078247688351134e0efce684b955a7789",
+    "app\\db.py": "d38c0f0c2ca4834bc0f321a69b7f5316cbe58e599a179f26fd9a7d08676ebfc9",
+    "app\\dev_control.py": "22ee5442f07b47fc7bcc9e42cdc1db196b9d5bae4d5ee32f0f2b814a22803f76",
+    "app\\discovery.py": "30c48edd5ab027d6cf9847f9965f70d78335b8ae1663bc80c3a726ae2e75721f",
+    "app\\discovery_api.py": "761e5a43621c7e49edd9e3944aad877264a1b24442a7fe5a7b4e96a2ba946626",
+    "app\\enrichment.py": "8ec28bfe564f9a5077fe7cbcd1b7f0af42af36941983a9953c9d2a1608e67497",
+    "app\\enrichment_api.py": "65b97641913ee268ab3ff068c591e3f32251141924841d151dbff46709957c4d",
+    "app\\extraction.py": "3bc214aae7f48a1f68e4a9bd6ee9a74219e99b8631029bbd1a86a21ea0e2336e",
+    "app\\gold_set.py": "6c24101afc313bf25da98f65c10ebd11f874c902139c3983c51f3a008f0a226c",
+    "app\\gold_set_api.py": "459a43a7dde999c1721c917d4a1f08c0c314745fd2f71909f4771aa0ffc13f5c",
+    "app\\main.py": "b9db134963224364dad83da04376477fc98a02352724c62b97848658c9f2fafd",
+    "app\\night_discovery.py": "d2cbea244bf680582b2a6074ce1e4598f191172977a1e5dae9334779aceb8b21",
+    "app\\observations.py": "d8d16116d6874e0185e11fa4ff8a3687f08da1832ac2c2f7efaced6d9b03b5d5",
+    "app\\offline_api.py": "984ae7c3a19ab2fb48e2111f739a8be0de28dd759c0cfcb82db0b2cc62e82a38",
+    "app\\offline_intelligence.py": "3d6214ebb7b716f825f06dd98da0690819d67da960e5fb9950c5ffd611b2ded2",
+    "app\\policy.py": "b1fe805a8103036b61fc2d6168d737e8b057a702ed2e7ae3fe5ad77c77b87b06",
+    "app\\product_candidate_api.py": "0346c44a61a60922180b9edf2618188ba44290a1dcd333420253a938a0a2ad8a",
+    "app\\product_detection.py": "215773db2f8fef35e9f05d0a855c923599422511e78728a29c4437fe91414e3a",
+    "app\\product_identity_resolver.py": "186fad1caad88e329070f4294b45958f624c67944818204dfb8e9f908b397123",
+    "app\\product_vocabulary.py": "626995d84a7a32b465dce952909adaf5acd4f9b91e60be67d6ac8aa27b7b7063",
+    "app\\safe_actions.py": "02b132df0f8bba1545e6461deaba002114d22d90accdf5971f75ee5427414b1e",
+    "app\\schemas.py": "f05a2034de21dd0074da709fc78483eb6accc10b80c8bee29640f9a90e14be11",
+    "app\\supplier_foundation.py": "12104051374ff2ad8d3e56e4a8fd3ec1d21d22be55ce47896874af0b7469cf92",
+    "app\\visual_identification.py": "b549f89a4a56fe2062ddc43627b6a4cc5a4c23879ccf9345753b0f827cf4a909",
+    "app\\visual_identification_api.py": "d17ced8f44b409c71e20f1e9be917408f62f6600fa684b369afe68cf6ef624bc",
+    "app\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app\\static\\category-intelligence.js": "22da79d5f8d5cf7c9533ba0c883a3c56e29b1c4d43a0bc6a3fa0de2f6428914e",
+    "app\\static\\index.html": "6abc9b1626dd8b3d005a1cfe067e205ab6a34f71e6a924c681f89207144ad7f2",
+    "app\\static\\logo.png": "61eae559e84287016e9211812a107251c20ded4ee627e9127ebe53211c449ab6",
+    "app\\static\\offline-intelligence.js": "6e8820a82c5ad4418a013105dce36a9c20e475b65da1315708dc2c0b9c51a0e3",
+    "app\\static\\visual-identification.js": "8dabf0ae3dadb7eb47fe023cc87014942fc459064f6f22d94e2f359b14e2be53",
+    "app\\static\\assets\\babi-logo.png": "61eae559e84287016e9211812a107251c20ded4ee627e9127ebe53211c449ab6",
+    "extension\\background.js": "73e601c135c792fcff3791aba0db88de926eed6dfda865153b458f0bb246245b",
+    "extension\\build.js": "4ae3b3e93026de075f4bf0ddbf9721aa67396eaeea0db7c947b9993fd46454dd",
+    "extension\\comments.js": "239c95c069dc4f56bb9aca1748bb632191d429baa78d14fa5a9954e103e4373d",
+    "extension\\content.js": "1efafb85e15d1d433df13a6f576ba2451a773e5b87f77444c2e4d3e919e5c0a3",
+    "extension\\creator_profile.js": "9fddb5b726193a26f6f81d841f9f7ce9fc2efe451cd8efef9d1779e26db74054",
+    "extension\\dev_bootstrap.html": "30bb02bf9f5459daa8f0fe6e0b7567bb1ebb5af4409104f6cb41ca54a0bd975c",
+    "extension\\dev_bootstrap.js": "ff4bf6c84d071b18e9fe7f8c4c9293807a0b596283dc58c6184d0915f135b9ac",
+    "extension\\dev_worker.js": "b03af827fc49dcf0e6541407bbadbbef8424d3f82066c0e992bbe692f8da2a51",
+    "extension\\discovery_worker.js": "5621830203da415cd3768a5148b52c4195dcd959480d9d595e31346b42eb81af",
+    "extension\\manifest.json": "c083a8eb7254a5358afa0fcfb54fe0d9fbb6b14a838e2186700b6f1eebd4bd71",
+    "extension\\pacing.js": "6dbef94fb577806db17939959beec1dac2f5ab26b41c99f15fa84039e81e534f",
+    "extension\\popup.html": "753dde108ebcb5824399492fd80d5ea9074340a7332f1e785a049c9b471a31c1",
+    "extension\\popup.js": "c4127f95828726ef36cdcb242c898efbf55190a0a4e0b58327a0ba57c680d09d",
+    "extension\\README.md": "0bf0e20be9611278933a0ce6c96054b82b5b9b71e8199184650217f8d4741ef4",
+    "extension\\safety.js": "0cc0187a86ba373874e0c67eca64143672665996408041fda061b356bfa5887c",
+    "extension\\search_discovery.js": "fc2dcb8d3ea4326178e9d5630a3720fd22ef13092ab100d30b9514ac6087f960",
+    "extension\\search_results.js": "3d82f44872d174e0695334ddd69af3a595814ce224571336cc52a6a6bb94d010",
+    "extension\\session_signals.js": "1f217932a66f37ec88a9349dda826aaed8c7f97675d09ebfb092ccc0f5f45620",
+    "extension\\video_detail.js": "6a937b5068a5676c189115a7f171fbb6ae0ebaed81e39d86039e66ac41bc6e54",
+    "tests\\bridge.test.cjs": "1ce150b468d9bbb9a96f556f3fb1d2a457bbd509b674defbba4724a16d877065",
+    "tests\\capture_client.cjs": "7ffbb6e55b46dff1f3408bbdc41b974424cf45b9aec0486eaa48f407b0f5b582",
+    "tests\\category-ui.test.cjs": "b6e80870506e962b0f52c60938b82c54056b688e25fc8f6d27fef6cab69d6252",
+    "tests\\comments.test.cjs": "b41389161db1001d307cfa5c2550ad3808fbd946cfbc840720480831405bcd10",
+    "tests\\comments_payload.cjs": "e8da6e63cc89528204d9405e0b57e0e75d97c610a26a1863e528e2e7ee6f4729",
+    "tests\\creator-profile.test.cjs": "c1c54528e3b329f55ce58b1f6d5f1efe0860146521c20686425aba1875f96c32",
+    "tests\\creator_payload.cjs": "70b65788e075b575a774456cbc851c2d50f5673e039b68e63bbd119415ea1d30",
+    "tests\\dashboard-ui.test.cjs": "b09a2e54e6c62c4960da906729745b4e5076f826cff194a27f1d638e57118d8f",
+    "tests\\dashboard.test.cjs": "71d35e8d73d43f9a3de5397301c3481a16b2d6f1ab89789a59ce15bfb55a3b9b",
+    "tests\\detail-metrics.test.cjs": "80f9a6ac30bc2aa320a1cd5c2c2e97f8254a5023e3c3d7772ce05e1bec015f3f",
+    "tests\\detail-readiness.test.cjs": "7867773dd040d13f247e72b8061c22a8f5c05ea166d971bbc5423d6d9221cf9d",
+    "tests\\detail_payload.cjs": "f324b95f18a63e6ba305df71aa3ac096fe2f21f928d5cc0a552a9507c02efcb9",
+    "tests\\dev-control.test.cjs": "e736a00c5b345032adb769cebbdfe4c4a92827fedafdd13e7ce5e502e562a54d",
+    "tests\\discovery-worker.test.cjs": "872bef5c6636054b23d25f5a68e08ec68a1a82bc918a90d4c2d2792b78359b78",
+    "tests\\discovery.test.cjs": "057cc9c04fe7652f1bea521e070992ee3ac41e6bcedbfd3b5f738ccfa1eca0dd",
+    "tests\\dom-fixture.cjs": "d6fd84a4a641d5be5405ee027feb95e17b2ff14c83e75587360d46dfc9332559",
+    "tests\\enrichment.test.cjs": "75ecbe60a07eca0c3d1c6b2bb62c68907e5a1351d5e41f0cbccec6cd98dca888",
+    "tests\\extraction.test.cjs": "ee9fb0be1a5cb0c8b672e9a587d8bb29942717f5376a4d9f7c70ed2bdd24fe76",
+    "tests\\gold-set-ui.test.cjs": "f067ab9ba250f7b0065593e6c8f4a50f09d359ddcdc5482cf14a7cb2985b5ed6",
+    "tests\\heartbeat_payload.cjs": "807b9a517cce71a46fb62f24466b71ef87caf48e0a98f8afd809e6c1382bcdeb",
+    "tests\\identity-resolver-ui.test.cjs": "1dc26ed105a61499bb8f6cc9c7bd786f7f80047d955e1f887d8f4f447c28db46",
+    "tests\\offline-insights.test.cjs": "a000cdd84a5bbb4023f0dc816b3c6b2ca87441c5d1e3a9da1180ab73b6f70ff7",
+    "tests\\runtime-safety.test.cjs": "23ecb13d8b6da57b6fd2af9fff660f134bc84a5d092814de8fd333fda3a52ea8",
+    "tests\\session-recovery.test.cjs": "865f617f918eae9596469cfb3f2617030a08fd890738fd56c4a8e22ce6bbe6f0",
+    "tests\\test_backlog.py": "30642713ab4beceaa840080b9141fce52f0e09c12dbcdf2dfbbd87ed9f322af4",
+    "tests\\test_bridge.py": "4fd65829acefcd9c3310eb9b7b7d44bd620827ff8c4d0d5eda609c9b436eae2c",
+    "tests\\test_candidate_corroboration.py": "c3b181a8842279a6936e2301518f577489bf367bf69c792771f006c1f1470080",
+    "tests\\test_capture.py": "11e50d18c7fa1db1e8a71840327944e42e4a230e7cdfaba0eb9c13847678f459",
+    "tests\\test_category_intelligence.py": "000880116eddf41964a542bcda7dc82d5e696c51fdf5c2ccc47595e48feaaa17",
+    "tests\\test_comments.py": "c1fbd7d203d163309d06be22567548d742947977a9f64a951d023becf69430d4",
+    "tests\\test_creators.py": "06f323ca55ec6cd232f2dfeee4432aaed03c2b3f217094fa850d5a0d597fa5f8",
+    "tests\\test_detection_benchmark.py": "dc279f2a9d54c40b12d4a41415b65e42befa683f0fd363c52b9d38db318e23d1",
+    "tests\\test_dev_control.py": "4b80c43e9949f67ca6f1d697d9f50665c8e7b8cf039ae4d7c1962d579b9cad00",
+    "tests\\test_discovery.py": "c809381b1a04b8a2b25789d5d366266a43179c30085a096b71e416a0ea021aa3",
+    "tests\\test_enrichment.py": "86d4f984acbd3e5889208e5e1f16fc80a9382dc7ed037cd26f1169b2d15c7de5",
+    "tests\\test_gold_filters.py": "64738e8601be4ae678f7fe0d8004b4c196c34264e2755eb20732d7ac123940de",
+    "tests\\test_identity_resolver.py": "d8ca1e024e7037aa000abe616bc447bae0bf6900f044cfaa0c6dd999f2ab709f",
+    "tests\\test_offline_intelligence.py": "89c7c7f5ffe9ff691ddee5b3e9f95dcf0b28c698f1b6fdd45af42c0f9dece8b3",
+    "tests\\test_policy.py": "84fb7e2c6c264cc82c43e4caa60e20c6fbe84cd4a1d5a51c71e9d3544fb993d8",
+    "tests\\test_product_detection.py": "3b45863070a633c29c76f90ea49451e0bbb01e86157bf48e3608e8319a03e845",
+    "tests\\test_product_identity_semantics.py": "0c184ea37bafc5a000bce74b5aace9b5009840ee2b560d64efaddf4d972a4dca",
+    "tests\\test_runtime.py": "21ac83f172f355b9d4378115f073f4f202c392021b7b9f01cc3012ad5afc73e0",
+    "tests\\test_safe_actions.py": "763f8c1e5c7219d2480b8ae7a56a61e6e8425245f18f36fbfac0679da08e2101",
+    "tests\\test_session_recovery.py": "f0073e7a8c1dc97ea4949e8569fcc784154d0ce78f858679b668145d2e6328f8",
+    "tests\\test_visual_identification.py": "84124c1e8557f2ee38e24f83f81778d0705eb682afc2dd2026e9018840bed139",
+    "tests\\video-detail.test.cjs": "05050cc968e05b4835fa49e7d72df9f16027ed1893abdd0e6e1f1626d980a3d8",
+    "tests\\visual-identification.test.cjs": "431ee742cc6881ee8b3afb70db9c6c8b5d99efef98b2472086d95dd9364b4e38",
+    "tests\\fixtures\\gold-review-video-1.json": "11c55d113728cedb5e5ea031d59b43e41a8948c693597171b0b4f2b4a9855ea2",
+    "tests\\fixtures\\product-identity-escova.json": "682266f1fc5327617c392f642cafd87535e534733bd2d61796ec47ef0afd7ce8",
+    "tests\\fixtures\\tiktok-comments-live.html": "f3b61969d2ca4e6cc43d34f0eca1f2ef4a3ccea3d09dd30d1adbe592d49d3d6e",
+    "tests\\fixtures\\tiktok-comments.html": "14761b3d9dfd0cb98d0b01fc425acc0858d6c5e9ab625a30e3cd4f3196e55208",
+    "tests\\fixtures\\tiktok-creator-profile.html": "af5a07c1cd0439ab228ad5df55d201ed9c98006f012ec08b2a9064eaa4eb3734",
+    "tests\\fixtures\\tiktok-detail-metrics.html": "24ecdead1f4da51a2cdee863777d0891a665c1aee66fbebcc43f6f01e44eb0ea",
+    "tests\\fixtures\\tiktok-enrichment.html": "f96f0d90302d17f3e78445b2a6317ee8585d0dde5da80b6b87a803363de90249",
+    "tests\\fixtures\\tiktok-live-metadata.html": "73fbf8becd3bdadd99beb28cbe2b336a72390d3e15df804b1a3026acb6b411c2",
+    "tests\\fixtures\\tiktok-media-tile.html": "f4d5a67bc241145d9bdd12896d940d9d3992bb0df96d78019a272076f47f291c",
+    "tests\\fixtures\\tiktok-search.html": "f2ed2dbd5b18a52b2cb1f4fa0b285f8df6df90f3d71994eaf95a11eb3b4d42b8",
+    "tests\\fixtures\\tiktok-video-detail.html": "2ff6eaefa92b2eed9857956286726292c7301e0e981a5088b9d524eca3387e0c",
+    "tests\\fixtures\\view-formats.json": "425056663e9424d679f8bedfc6489c3e384f1a15283a591ad2b5069328874e90",
+    "config\\category_taxonomy.json": "d356c76de6a1f3db5e47d1b527cbb207740e351c175b197d358a54676472f11d",
+    "config\\comment_terms.json": "36a5978d1eb45d6e319abb625a1e9e2c71b0bbab02c925a207ea68b5ebdfd7c7",
+    "config\\creator_signals.json": "5efb85c593628aa284550e7a61bcb8d3c239af3739c61c6155690be9f68980ab",
+    "config\\discovery.json": "6465522da2da3ec66c5491365a75ada29bf8e64d5234bc757c305e272cf2faa4",
+    "config\\discovery_intelligence.json": "7784f14c066197dca89bbbf3514de60072ec7622a373851e960de0a9a3396224",
+    "config\\enrichment.json": "0d1ed3651d9ee268df7c392679ae56d15a4badc90869b3879683096458227afd",
+    "config\\product_detection.json": "3ac852a5bb7d4cfe0c6b45d0d3711ee5534d4fa12bf8d92ebe39e256b68cb790",
+    "config\\product_identity.json": "b79fac7230846914126d160c25fc013068e9cae33c6ac79e9d748fed864743f6",
+    "scripts\\background_runner.py": "230fe4fe6caaf76872d70c6f5923cba13d0a1b65ff1d96d96e9a1ce4c457fce4",
+    "scripts\\bootstrap_companion.py": "cf937a161677b1ab9f2fd579956eceb1fdae5236275a87022e02cdc9ec03f583",
+    "scripts\\check_enrichment_migration.py": "d47e61446f8bf0d0c109144ef4635561e8e93db71b700f48ad3ceea517e82e31",
+    "scripts\\detection_benchmark.py": "d6fe88a38e391e2833f878fee146fc293778acdcb7f422b63519809c80b3c325",
+    "scripts\\detect_products.py": "d26e8f71170b6615e45b9d9cc869c25963e2f8205c96caa4212e76506e9a2837",
+    "scripts\\devctl.py": "9b8b946db71348137da43ce34cf104bb8ad12f3f6418acd4ee3e95a8329dbed5",
+    "scripts\\devctl.pyw": "e98a8c8ed902ec5786bba4014f4a774713332477483a773cae91f52d9e231bb5",
+    "scripts\\dev_supervisor.py": "d8da903f170281120e2172c361b0dbe2cc29608b672a3ab79030a7af06b98e3a",
+    "scripts\\discovery_session.py": "32d12099ded528a2d1ba14189053f473c6e62a3c32daba55cc1a3090284045a1",
+    "scripts\\offline_candidate_audit.py": "84b4d73c87b80bf66488ee0cdec4600b6aecbc529774fdf1684bc4f6537cb85a",
+    "scripts\\offline_intelligence_report.py": "a5e6bac69ff542f8cdd519d75739872091cbd1f0598062d92d3a0b3c0f0c214c",
+    "scripts\\process_runtime.py": "0c9a463a286c8d163a6afe570dd2db6210f91e9b609db220bebc7b21b08d15d6",
+    "scripts\\product_semantics_report.py": "bf68b230678b80f8513a7fa44fd8d763093875a592fc7256ab6b8834e066d507",
+    "scripts\\read_creator_profiles.py": "d6bd465623cbb42c320f6afa2ff221283c1a35aa4e4334da63dac34b253af6d3",
+    "scripts\\read_video_details.py": "99520e523369b009a60ea751906e8c59764e4a0187f5584916151044d61e6b6a",
+    "scripts\\resolve_product_identity.py": "3a5dca213b63c5df3098510c8ffbe0532741c60bd2766153f62d51d2d7caade9",
+    "scripts\\sample_comments.py": "54fae85913c1cd6291542ea3cfca3f1cc1825b4a28de6936843c3b219c336962",
+    "scripts\\validate_persistent_runtime.py": "5efc36989fd2b1738bd0ac5a841486877bc1e0bd0c1b1390c2f6cba21578e9a1",
+    "scripts\\visual_identification_report.py": "7f03c26389ee917a2e3f776469eb65696c049bc0b477992e16ff13fc8f1baf44",
+    "docs\\BRIDGE.md": "8d3326c77631ecd45f88d7a0f3bee060b9d3241aa2503a3423c83457125a1ddb",
+    "docs\\CATEGORY_INTELLIGENCE.md": "c6310ddd4170f3b08d82fce0f4ebdd84c52dcf1524ef549cda82719ffdd268bb",
+    "docs\\COMMENTS.md": "9bab86181e8645891bc2e3ca56326f0d3013007aa4204a747b539c6fc4d221d2",
+    "docs\\CONTROLLED_DISCOVERY.md": "76e96624020e5b9bde40890f33f1ef7d23721160a11f095f9b4638fcbfa9ef20",
+    "docs\\CREATORS.md": "66b9dfe3c96bf42574cba603da55a7e8160054111c43dee3dd5977fe0cd0bd37",
+    "docs\\DETECTION_BENCHMARK.md": "33159f03e6cd27cb525451162220db5705bd82af26caa2319e1085aaec4b14cb",
+    "docs\\DEV_CONTROL.md": "6213d6b61b2cd833456fa1f0c2eed9a86372cb7e7505a5b06581ea0ce912621d",
+    "docs\\ENRICHMENT_BACKLOG.md": "5230c4c59ccba7549672b3dc630fed7b39bf2be5716c88a70e19382fab0b73ea",
+    "docs\\ESCOVA_REVIEW.md": "564df1ed4021970636f5f4d347d39f7f6931cb14d34f03bedbc5958b6909e040",
+    "docs\\EXTRACTION.md": "d031001310e9c86338a254508e13ab8e9d036e5cf1e9a5a5d849ae9c502783fd",
+    "docs\\NEXT_SESSION.md": "59bbc3deb41d2ba35cca986a46c0f64e6fdfcfcceadfa0708afaf14fcf8f0e0f",
+    "docs\\OFFLINE_AUDIT.md": "777ec19808f2b5a15a2639ca64e40f095851ee92625b218e780799bc6cd712c3",
+    "docs\\PERSISTENT_RUNTIME.md": "791ff6b2fc1125bfb968e7e725acbf06c7995010770539cb7261539d3555449e",
+    "docs\\PRODUCT_CANDIDATES.md": "72add6a6a70834b7a924102fa72afb7e91db7b53752b873c3ffd607700e0882a",
+    "docs\\PRODUCT_CORROBORATION.md": "670bdad8ee83b1201532b4b005d4a26f6f82f36b81af0b8ef7b62ec126a51711",
+    "docs\\PRODUCT_IDENTIFICATION_PIPELINE.md": "c6c73c942dc26cd8eaf139ace19aa99adfc8b3b5775f1fd665be9865503b788a",
+    "docs\\PRODUCT_IDENTITY.md": "0e930f44765d666b76c1d3680c0217157986a1824f6a22f770a0798d7f51e89e",
+    "docs\\PRODUCT_IDENTITY_RESOLVER.md": "ac0292d5f84b71f33952f85ecff1d2acbe8b852ac4e18571cd9c100ad3270ea6",
+    "docs\\ROADMAP.md": "68649d60fa8793cb3655866c8af33c73af1a1e1cbc4942a75a21b3583135586d",
+    "docs\\SAFETY.md": "d916ea75b890ac2eb6bd583d646dd3765a059bd401270850505759b794e9d498",
+    "docs\\VIDEO_DETAIL_METRICS.md": "2df92f51e3f0d647ee7fca1d4c045e5df28a0c48637a745d7acef67089198513",
+    "docs\\VISUAL_IDENTIFICATION.md": "92464b66a62efa259b1892c42088e4c5827ce621dc47f94cb993058bc79adc30"
+  }
+}

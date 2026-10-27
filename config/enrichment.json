@@ -1,0 +1,9 @@
+{
+  "version": "enrichment-backlog-v1",
+  "batch_size": 5,
+  "creator_reuse_hours": 168,
+  "comment_target": 30,
+  "poll_seconds": 2,
+  "command_timeout_seconds": 105,
+  "generic_heads": ["brush", "cleaner", "maker", "dispenser", "dryer", "tool", "device", "gadget", "escova"]
+}

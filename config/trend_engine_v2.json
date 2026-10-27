@@ -1,0 +1,37 @@
+{
+  "version": "trend-engine-v2",
+  "metric_names": ["views", "likes", "comments", "shares", "favorites"],
+  "velocity": {
+    "minimum_points": 2,
+    "acceleration_minimum_points": 3,
+    "stable_relative_tolerance": 0.05,
+    "stable_absolute_tolerance": 0.000000001
+  },
+  "evidence": {
+    "medium_minimum_observations": 3,
+    "medium_minimum_captures": 2,
+    "medium_minimum_query_spread": 2,
+    "high_minimum_observations": 6,
+    "high_minimum_captures": 3,
+    "high_minimum_query_spread": 2,
+    "high_minimum_creator_spread": 2,
+    "high_minimum_span_hours": 6
+  },
+  "saturation": {
+    "medium_duplicate_density": 0.5,
+    "high_duplicate_density": 0.8,
+    "minimum_observations": 5
+  },
+  "lifecycle": {
+    "emerging_minimum_query_spread": 2,
+    "breakout_minimum_query_spread": 4,
+    "breakout_minimum_creator_spread": 3,
+    "mainstream_minimum_query_spread": 5,
+    "mainstream_minimum_creator_spread": 4
+  },
+  "prediction": {
+    "horizons_hours": [6, 24, 72],
+    "eligible_lifecycles": ["EMERGING", "ACCELERATING", "BREAKOUT"],
+    "eligible_momentum": ["HIGH", "VERY_HIGH"]
+  }
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "name": "torch",
+    "declaration": "requirements-intelligence.txt",
+    "requirement": "torch==2.8.0",
+    "installed": "2.8.0+cpu",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_embeddings.py:168",
+      "app/intelligence_embeddings.py:212",
+      "app/intelligence_embeddings.py:137"
+    ],
+    "note": "Optional intelligence/model pipeline; not necessary for search-only mode"
+  },
+  {
+    "name": "torchvision",
+    "declaration": "requirements-intelligence.txt",
+    "requirement": "torchvision==0.23.0",
+    "installed": "0.23.0+cpu",
+    "classification": "USED",
+    "evidence": [
+      ".venv/Lib/site-packages/open_clip/transform.py:9",
+      ".venv/Lib/site-packages/open_clip/utils.py:8"
+    ],
+    "note": "Confirmed transitive import by open_clip; no direct app import does not mean unused."
+  },
+  {
+    "name": "open_clip_torch",
+    "declaration": "requirements-intelligence.txt",
+    "requirement": "open_clip_torch==3.3.0",
+    "installed": "3.3.0",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_embeddings.py:169"
+    ],
+    "note": "Optional intelligence/model pipeline; not necessary for search-only mode"
+  },
+  {
+    "name": "faiss-cpu",
+    "declaration": "requirements-intelligence.txt",
+    "requirement": "faiss-cpu==1.13.2",
+    "installed": "1.13.2",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_index.py:20",
+      "app/intelligence_index.py:63"
+    ],
+    "note": "Optional intelligence/model pipeline; not necessary for search-only mode"
+  },
+  {
+    "name": "numpy",
+    "declaration": "requirements-intelligence.txt",
+    "requirement": "numpy==2.2.6",
+    "installed": "2.2.6",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_index.py:19",
+      "app/intelligence_index.py:64",
+      "app/trend_history.py:264"
+    ],
+    "note": "Optional intelligence/model pipeline; not necessary for search-only mode"
+  },
+  {
+    "name": "psutil",
+    "declaration": "requirements-intelligence.txt",
+    "requirement": "psutil==7.2.2",
+    "installed": "7.2.2",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_embeddings.py:30",
+      "app/intelligence_jobs.py:109",
+      "tests/test_core_activation.py:100"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "fastapi",
+    "declaration": "requirements.txt",
+    "requirement": "fastapi==0.115.6",
+    "installed": "0.115.6",
+    "classification": "USED",
+    "evidence": [
+      "app/browser_safety.py:56",
+      "app/category_api.py:2",
+      "app/collection_mode.py:4",
+      "app/db.py:174",
+      "app/db.py:268",
+      "app/db.py:278",
+      "app/db.py:283",
+      "app/db.py:286",
+      "app/db.py:289",
+      "app/db.py:297",
+      "app/dev_control.py:9",
+      "app/discovery.py:6",
+      "app/discovery_api.py:2",
+      "app/enrichment.py:8",
+      "app/enrichment_api.py:1",
+      "app/gold_set_api.py:2",
+      "app/gold_set_api.py:62",
+      "app/intelligence_api.py:2",
+      "app/intelligence_api.py:3",
+      "app/main.py:3",
+      "app/main.py:4",
+      "app/main.py:58",
+      "app/main.py:63",
+      "app/main.py:111",
+      "app/manual_captcha_recovery.py:6",
+      "app/offline_api.py:1",
+      "app/product_candidate_api.py:1",
+      "app/safe_collection.py:11",
+      "app/safe_collection_api.py:2",
+      "app/selective_api.py:1",
+      "app/selective_api.py:2",
+      "app/selective_enrichment.py:12",
+      "app/session_api.py:3",
+      "app/target_safety.py:10",
+      "app/visual_identification_api.py:3",
+      "tests/test_controlled_stage2.py:4",
+      "tests/test_discovery.py:4",
+      "tests/test_intelligence_core.py:285",
+      "tests/test_local_visual_assets.py:11",
+      "tests/test_manual_captcha_recovery.py:4",
+      "tests/test_safe_collection.py:4",
+      "tests/test_search_only_mode.py:3",
+      "tests/test_selective_enrichment.py:3",
+      "tests/test_stage2_resume.py:4",
+      "tests/test_target_safety.py:4"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "uvicorn",
+    "declaration": "requirements.txt",
+    "requirement": "uvicorn[standard]==0.34.0",
+    "installed": "0.34.0",
+    "classification": "USED",
+    "evidence": [
+      "run.py:30",
+      "tests/test_bridge.py:12",
+      "tests/test_capture.py:13",
+      "tests/test_dev_control.py:14"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "pydantic",
+    "declaration": "requirements.txt",
+    "requirement": "pydantic==2.10.4",
+    "installed": "2.10.4",
+    "classification": "USED",
+    "evidence": [
+      "app/category_api.py:3",
+      "app/comment_schemas.py:2",
+      "app/creator_schemas.py:5",
+      "app/dev_control.py:10",
+      "app/discovery_api.py:3",
+      "app/enrichment_api.py:2",
+      "app/gold_set_api.py:3",
+      "app/intelligence_api.py:4",
+      "app/manual_captcha_recovery.py:7",
+      "app/product_candidate_api.py:2",
+      "app/safe_collection_api.py:3",
+      "app/schemas.py:1",
+      "app/supplier_foundation.py:6",
+      "app/target_safety.py:11",
+      "app/visual_assets.py:12",
+      "app/visual_identification.py:12",
+      "app/visual_identification_api.py:6",
+      "app/visual_providers.py:15",
+      "tests/test_bridge.py:13",
+      "tests/test_capture.py:14",
+      "tests/test_capture.py:240",
+      "tests/test_comments.py:9",
+      "tests/test_creators.py:10",
+      "tests/test_discovery.py:5",
+      "tests/test_enrichment.py:9",
+      "tests/test_offline_intelligence.py:4"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "Pillow",
+    "declaration": "requirements.txt",
+    "requirement": "Pillow==12.3.0",
+    "installed": "12.3.0",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_embeddings.py:213",
+      "app/visual_assets.py:11",
+      "tests/test_local_visual_assets.py:9"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "pytest",
+    "declaration": "requirements.txt",
+    "requirement": "pytest==8.3.4",
+    "installed": "8.3.4",
+    "classification": "DEV ONLY",
+    "evidence": [
+      "tests/test_authenticated_dom.py:2",
+      "tests/test_backlog.py:2",
+      "tests/test_bridge.py:11",
+      "tests/test_candidate_corroboration.py:4",
+      "tests/test_capture.py:12",
+      "tests/test_category_intelligence.py:3",
+      "tests/test_command_api_contract.py:5",
+      "tests/test_comments.py:8",
+      "tests/test_controlled_stage2.py:3",
+      "tests/test_core_activation.py:6",
+      "tests/test_creators.py:9",
+      "tests/test_detection_benchmark.py:2",
+      "tests/test_dev_control.py:13",
+      "tests/test_discovery.py:3",
+      "tests/test_enrichment.py:8",
+      "tests/test_identity_resolver.py:5",
+      "tests/test_intelligence_core.py:5",
+      "tests/test_local_visual_assets.py:8",
+      "tests/test_manual_captcha_recovery.py:3",
+      "tests/test_offline_intelligence.py:3",
+      "tests/test_policy.py:2",
+      "tests/test_product_detection.py:2",
+      "tests/test_product_identity_semantics.py:4",
+      "tests/test_runtime.py:3",
+      "tests/test_safe_actions.py:1",
+      "tests/test_safe_collection.py:3",
+      "tests/test_search_only_mode.py:2",
+      "tests/test_selective_enrichment.py:2",
+      "tests/test_session_recovery.py:4",
+      "tests/test_stage2_resume.py:3",
+      "tests/test_target_safety.py:3",
+      "tests/test_trend_history.py:5",
+      "tests/test_virality_quality.py:6",
+      "tests/test_visual_identification.py:5",
+      "tests/test_visual_identity_completion.py:4"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "psutil",
+    "declaration": "requirements.txt",
+    "requirement": "psutil==7.2.2",
+    "installed": "7.2.2",
+    "classification": "USED",
+    "evidence": [
+      "app/intelligence_embeddings.py:30",
+      "app/intelligence_jobs.py:109",
+      "tests/test_core_activation.py:100"
+    ],
+    "note": "Static imports only; transitive/dynamic use can exist"
+  },
+  {
+    "name": "linkedom",
+    "classification": "DEV ONLY",
+    "declaration": "package.json devDependencies",
+    "evidence": [
+      "package-lock.json:9",
+      "package.json:5",
+      "tests/category-ui.test.cjs:2",
+      "tests/connection-panel.test.cjs:2",
+      "tests/dashboard-ui.test.cjs:5",
+      "tests/dashboard.test.cjs:5",
+      "tests/dom-fixture.cjs:1",
+      "tests/gold-set-ui.test.cjs:5",
+      "tests/identity-resolver-ui.test.cjs:5",
+      "tests/intelligence-core.test.cjs:2",
+      "tests/local-visual-assets.test.cjs:2",
+      "tests/offline-insights.test.cjs:2",
+      "tests/session-recovery.test.cjs:5",
+      "tests/trend-history.test.cjs:2",
+      "tests/virality-quality.test.cjs:2",
+      "tests/visual-identification.test.cjs:2"
+    ]
+  }
+]

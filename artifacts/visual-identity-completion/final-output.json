@@ -1,0 +1,548 @@
+{
+  "source_run_snapshot": {
+    "asset_id": 1,
+    "decision": {
+      "confidence_is_probability": false,
+      "id": 235,
+      "policy_version": "intelligence-core-v1.2.2-activation",
+      "possible_product_name": "glass cleaner device",
+      "reason_code": "REVIEW_CONFLICTING_VISUAL_RESULTS",
+      "same_product": "possible_same_product",
+      "status": "REVIEW",
+      "video_id": 1
+    },
+    "evidence_ids": [
+      2,
+      3
+    ],
+    "hypotheses": [
+      {
+        "aliases": [
+          "Window vacuum",
+          "Window vacuum cleaner device"
+        ],
+        "evidence_id": 2,
+        "hypothesis_embedding": {
+          "cache_status": "hit",
+          "device": "cpu",
+          "dimension": 512,
+          "duration_ms": 0,
+          "kind": "text",
+          "model_loaded_during_inference": false,
+          "model_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+          "sha256": "5b84c1653375fff64af059b84a6063b1d2dff349be3503712decaf42c86c677d"
+        },
+        "image_text_similarity": 0.31409755974211895,
+        "name": "Window vacuum cleaner",
+        "similarity_is_probability": false,
+        "supporting_features": [
+          "squeegee blade edge",
+          "hand-held design",
+          "illuminated indicator light"
+        ],
+        "text_cross_check": {
+          "category_compatibility": "SUPPORTED",
+          "category_context": {
+            "category_confidence": 0.5,
+            "category_evidence": [
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "comment",
+                "source_id": 126,
+                "text": "vacuum cleaner",
+                "type": "comment",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.5
+              },
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "comment",
+                "source_id": 142,
+                "text": "Mini Vacuum Cleaner Price? very useful ✨",
+                "type": "comment",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.5
+              },
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "unresolved_phrase",
+                "source_id": 1,
+                "text": "vacuum cleaner",
+                "type": "unresolved",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.45
+              },
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "unresolved_phrase",
+                "source_id": 2,
+                "text": "Mini Vacuum Cleaner",
+                "type": "unresolved",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.45
+              }
+            ],
+            "category_status": "classified",
+            "classifier_version": "category-classifier-v1",
+            "human_review": null,
+            "id": 1,
+            "input_hash": "8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84",
+            "observed_at": "2026-10-23T06:00:54.873885+00:00",
+            "primary_category": "home",
+            "primary_subcategory": "cleaning",
+            "product_family": "cleaning tools",
+            "taxonomy_version": "category-taxonomy-v1",
+            "video_id": 1
+          },
+          "conflicts": [],
+          "context_did_not_enter_image_prompt": true,
+          "reason": "Generic or non-matching context cannot confirm or refute the visual hypothesis",
+          "status": "NEUTRAL",
+          "support": []
+        },
+        "uncertainties": [
+          "exact cleaning technology not visible"
+        ]
+      },
+      {
+        "aliases": [
+          "Glass cleaning tool",
+          "Glass squeegee cleaner"
+        ],
+        "evidence_id": 3,
+        "hypothesis_embedding": {
+          "cache_status": "hit",
+          "device": "cpu",
+          "dimension": 512,
+          "duration_ms": 0,
+          "kind": "text",
+          "model_loaded_during_inference": false,
+          "model_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+          "sha256": "78889b03638bc9a81dac5b3c638e0d46c02d3506e6f67ca599c085cc3ac17186"
+        },
+        "image_text_similarity": 0.28756441427114215,
+        "name": "Glass cleaner device",
+        "similarity_is_probability": false,
+        "supporting_features": [
+          "squeegee blade",
+          "hand-held usage",
+          "suitable for flat surfaces"
+        ],
+        "text_cross_check": {
+          "category_compatibility": "SUPPORTED",
+          "category_context": {
+            "category_confidence": 0.5,
+            "category_evidence": [
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "comment",
+                "source_id": 126,
+                "text": "vacuum cleaner",
+                "type": "comment",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.5
+              },
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "comment",
+                "source_id": 142,
+                "text": "Mini Vacuum Cleaner Price? very useful ✨",
+                "type": "comment",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.5
+              },
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "unresolved_phrase",
+                "source_id": 1,
+                "text": "vacuum cleaner",
+                "type": "unresolved",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.45
+              },
+              {
+                "matched_term": "vacuum cleaner",
+                "source_entity": "unresolved_phrase",
+                "source_id": 2,
+                "text": "Mini Vacuum Cleaner",
+                "type": "unresolved",
+                "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+                "weight": 0.45
+              }
+            ],
+            "category_status": "classified",
+            "classifier_version": "category-classifier-v1",
+            "human_review": null,
+            "id": 1,
+            "input_hash": "8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84",
+            "observed_at": "2026-10-23T06:00:54.873885+00:00",
+            "primary_category": "home",
+            "primary_subcategory": "cleaning",
+            "product_family": "cleaning tools",
+            "taxonomy_version": "category-taxonomy-v1",
+            "video_id": 1
+          },
+          "conflicts": [],
+          "context_did_not_enter_image_prompt": true,
+          "reason": "Generic or non-matching context cannot confirm or refute the visual hypothesis",
+          "status": "NEUTRAL",
+          "support": []
+        },
+        "uncertainties": [
+          "device power source and cleaning method"
+        ]
+      }
+    ],
+    "image_analysis_cached_from_run": 3,
+    "image_embedding": {
+      "cache_status": "hit",
+      "device": "cpu",
+      "dimension": 512,
+      "duration_ms": 0,
+      "kind": "image",
+      "model_loaded_during_inference": false,
+      "model_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+      "sha256": "e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09"
+    },
+    "image_sha256": "e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09",
+    "lens_status": "LENS_ASSISTED_REQUIRED",
+    "provider_states": {
+      "google_lens_assisted": {
+        "status": "AVAILABLE_ASSISTED",
+        "workflow_status": "LENS_ASSISTED_REQUIRED"
+      },
+      "google_lens_automatic": {
+        "status": "UNAVAILABLE"
+      },
+      "vision_model": {
+        "provider": "openrouter.ai",
+        "status": "AVAILABLE_AUTOMATIC"
+      }
+    },
+    "retrieval": [
+      {
+        "embedding_kind": "text",
+        "embedding_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+        "index_version": "3cab903facc842d2b7c05fb2ceb257c6",
+        "name": "Soap dispenser",
+        "observed_at": "2026-10-23T22:30:50.124828+00:00",
+        "product_id": null,
+        "reference_id": "candidate:1",
+        "reference_kind": "CANDIDATE_REFERENCE",
+        "similarity": 0.27313339710235596,
+        "source": {
+          "candidate_id": 1
+        }
+      },
+      {
+        "embedding_kind": "text",
+        "embedding_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+        "index_version": "3cab903facc842d2b7c05fb2ceb257c6",
+        "name": "Portable Dryer",
+        "observed_at": "2026-10-23T22:30:50.124828+00:00",
+        "product_id": null,
+        "reference_id": "candidate:7",
+        "reference_kind": "CANDIDATE_REFERENCE",
+        "similarity": 0.2708134949207306,
+        "source": {
+          "candidate_id": 7
+        }
+      },
+      {
+        "embedding_kind": "text",
+        "embedding_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+        "index_version": "3cab903facc842d2b7c05fb2ceb257c6",
+        "name": "3 in 1 Window Cleaner",
+        "observed_at": "2026-10-23T22:30:50.124828+00:00",
+        "product_id": null,
+        "reference_id": "candidate:6",
+        "reference_kind": "CANDIDATE_REFERENCE",
+        "similarity": 0.27028241753578186,
+        "source": {
+          "candidate_id": 6
+        }
+      }
+    ],
+    "run_id": 4,
+    "status": "complete",
+    "video_id": 1,
+    "visual_quality": {
+      "before_after_possible": {
+        "reason": "No before or after effect is shown in the single image.",
+        "status": "insufficient"
+      },
+      "creative_repeatability_possible": {
+        "reason": "No indication of a creative or repeatable process beyond typical cleaning use is shown.",
+        "status": "insufficient"
+      },
+      "demonstration_visibility": {
+        "reason": "The device is shown in active hand-held use against a surface.",
+        "status": "observed"
+      },
+      "problem_solution_clarity": {
+        "reason": "It's clear the device is for cleaning surfaces with water or moisture, but the exact cleaning method is not visible.",
+        "status": "partial"
+      },
+      "product_visibility": {
+        "reason": "The main product is fully visible in hand-held use.",
+        "status": "observed"
+      },
+      "transformation_strength": {
+        "reason": "No clear evidence of transformation or cleaning impact is visible in the single frame.",
+        "status": "insufficient"
+      },
+      "visual_novelty": {
+        "reason": "No indication of novelty beyond common hand-held cleaning tools is visible.",
+        "status": "insufficient"
+      }
+    },
+    "visual_search": {
+      "image_sha256": "e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09",
+      "lens_status": "LENS_ASSISTED_REQUIRED",
+      "provider_result": {
+        "annotations": [],
+        "api_host": "openrouter.ai",
+        "data": {
+          "assessment": "identified",
+          "detected_objects": [
+            "hand-held cleaning tool",
+            "human hand",
+            "wall tiles",
+            "flowers"
+          ],
+          "distinctive_features": [
+            "grey rubber blade edge in a squeegee shape",
+            "white plastic body with indicator light",
+            "hand-held ergonomic form",
+            "small indicator light illuminated"
+          ],
+          "functional_description": "The device is designed to clean flat surfaces such as tiles or glass by removing water or cleaning solution via a squeegee blade, possibly suctioning or vacuuming liquid to prevent streaks or drips.",
+          "possible_category": "Cleaning tools",
+          "possible_product_names": [
+            {
+              "aliases": [
+                "Window vacuum",
+                "Window vacuum cleaner device"
+              ],
+              "name": "Window vacuum cleaner",
+              "supporting_features": [
+                "squeegee blade edge",
+                "hand-held design",
+                "illuminated indicator light"
+              ],
+              "uncertainties": [
+                "exact cleaning technology not visible"
+              ]
+            },
+            {
+              "aliases": [
+                "Glass cleaning tool",
+                "Glass squeegee cleaner"
+              ],
+              "name": "Glass cleaner device",
+              "supporting_features": [
+                "squeegee blade",
+                "hand-held usage",
+                "suitable for flat surfaces"
+              ],
+              "uncertainties": [
+                "device power source and cleaning method"
+              ]
+            }
+          ],
+          "quality": {
+            "before_after_possible": {
+              "reason": "No before or after effect is shown in the single image.",
+              "status": "insufficient"
+            },
+            "creative_repeatability_possible": {
+              "reason": "No indication of a creative or repeatable process beyond typical cleaning use is shown.",
+              "status": "insufficient"
+            },
+            "demonstration_visibility": {
+              "reason": "The device is shown in active hand-held use against a surface.",
+              "status": "observed"
+            },
+            "problem_solution_clarity": {
+              "reason": "It's clear the device is for cleaning surfaces with water or moisture, but the exact cleaning method is not visible.",
+              "status": "partial"
+            },
+            "product_visibility": {
+              "reason": "The main product is fully visible in hand-held use.",
+              "status": "observed"
+            },
+            "transformation_strength": {
+              "reason": "No clear evidence of transformation or cleaning impact is visible in the single frame.",
+              "status": "insufficient"
+            },
+            "visual_novelty": {
+              "reason": "No indication of novelty beyond common hand-held cleaning tools is visible.",
+              "status": "insufficient"
+            }
+          },
+          "visual_description": "The image shows a hand-held cleaning device with a squeegee blade, held against a kitchen wall or backsplash with tile. The device has a white body with a grey rubber blade edge and a small illuminated indicator light on it. The device is being used near a kitchen counter with a flower arrangement visible in the background."
+        },
+        "model": "openai/gpt-4.1-mini",
+        "response_id": "gen-1792794333-dJCgnyXchwGn2vcMcqQG",
+        "usage": {
+          "completion_tokens": 471,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0010448,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0007536,
+            "upstream_inference_cost": 0.0010448,
+            "upstream_inference_prompt_cost": 0.0002912
+          },
+          "is_byok": false,
+          "prompt_tokens": 728,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 1199
+        }
+      },
+      "status": "suggested"
+    },
+    "web_confirmations": [
+      {
+        "compatibility": "SUPPORTED",
+        "domain": "www.kaercher.com",
+        "independence": "Not specified",
+        "independence_group": "kaercher.com",
+        "independence_verified": false,
+        "match_reason": "Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.",
+        "product_name": "Cordless window vacuum cleaner",
+        "source_excerpt": "Window Vacs, cleaning is three times faster than with conventional methods – for streak-free cleanliness without annoying ... and also efficiently vacuums up condensation. Spray, wipe, vacuum – sparkling results in no time at all. Please note that",
+        "title": "Window Vac | K\u000e4rcher International",
+        "url": "https://www.kaercher.com/int/home-garden/window-vacs.html"
+      },
+      {
+        "compatibility": "SUPPORTED",
+        "domain": "www.bosch-diy.com",
+        "independence": "Not explicitly stated",
+        "independence_group": "bosch-diy.com",
+        "independence_verified": false,
+        "match_reason": "Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.",
+        "product_name": "Cordless window vacuum cleaner",
+        "source_excerpt": "The only window vacuum with trusted Bosch wiper blade technology, for an easier glide and faster results. Perfect for cleaning windows and mirrors, as well as showers and spillages. Cleaning your home has never been so easy.\n\n...\n\nThe cordless Bosch window vacuums are extremely versatile. They are suitable for all smooth surfaces, such as windows, mirrors, tiles, showers, and car windows. They also safely vacuum up condensation and spilled liquids. What’s more, your job can be made even easier with the various attachments that can be added quickly and easily.\n\n...\n\nCordless window vacuums work similarly to traditional squeegees, but with one big difference. With a squeegee, you have to wipe up the water that collects on the windowpanes by hand. A window vacuum, on the other hand, sucks liquids directly from the window surface into an integrated tank, by using a mechanism similar to a",
+        "title": "Window vacuums for DIYers | Bosch DIY",
+        "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums"
+      }
+    ],
+    "web_observed_at": "2026-10-23T22:25:32.522989+00:00",
+    "web_search": {
+      "annotations": [
+        {
+          "type": "url_citation",
+          "url_citation": {
+            "content": "Window Vacs, cleaning is three times faster than with conventional methods – for streak-free cleanliness without annoying ... and also efficiently vacuums up condensation. Spray, wipe, vacuum – sparkling results in no time at all. Please note that",
+            "end_index": 0,
+            "start_index": 0,
+            "title": "Window Vac | Kärcher International",
+            "url": "https://www.kaercher.com/int/home-garden/window-vacs.html"
+          }
+        },
+        {
+          "type": "url_citation",
+          "url_citation": {
+            "content": "Window washing used to be a chore but our Window Vacs changed all that. Now you can clean your windows, mirrors, showers and other smooth surfaces up to 3X quicker – without streaks, drips or water spots. Designed in Germany. Made in Italy.\n\n...\n\nA multifunctional all-rounder: Apart from windows, the cordless window vac from Kärcher cleans almost all smooth surfaces such as windscreens, mirrors, shower cabins, hobs, glass tables and worktops.\n\n...\n\n| | WV 6 Premium | WV 6 Plus | WV 3 Comfort | WV 2 Universal | WV 1 Go | WV 1 Plus (White & Black) |\n| --- | --- | --- | --- | --- | --- | --- |\n| Battery Run Time (per full charge) | 100 minutes | 100 minutes | 35 minutes | 35 minutes | 25 minutes | 25 minutes |\n| Battery Type | Lithium-Ion | Lithium-Ion | Lithium-Ion | Lithium-Ion | Lithium-Ion | Lithium-Ion |\n| Digital Display | Yes | Yes | No | No | No | No |\n| 360° Cleaning | No | No | Yes | Yes | Yes | No |\n| Dirty water tank capacity | 5.07 ounces | 5.07 ounces | 6.76 ounces | 4.05 ounces | 3.38 ounces | 3.38 ounces |\n| Suction Nozzles | Wide (11\") + Narrow (6.7\") | Wide (11\") | Wide",
+            "end_index": 0,
+            "start_index": 0,
+            "title": "Window Vacs | Kärcher",
+            "url": "https://www.karcher.com/us/en/home-and-garden/products/cordless-window-vacs-c4258"
+          }
+        },
+        {
+          "type": "url_citation",
+          "url_citation": {
+            "content": "The only window vacuum with trusted Bosch wiper blade technology, for an easier glide and faster results. Perfect for cleaning windows and mirrors, as well as showers and spillages. Cleaning your home has never been so easy.\n\n...\n\nThe cordless Bosch window vacuums are extremely versatile. They are suitable for all smooth surfaces, such as windows, mirrors, tiles, showers, and car windows. They also safely vacuum up condensation and spilled liquids. What’s more, your job can be made even easier with the various attachments that can be added quickly and easily.\n\n...\n\nCordless window vacuums work similarly to traditional squeegees, but with one big difference. With a squeegee, you have to wipe up the water that collects on the windowpanes by hand. A window vacuum, on the other hand, sucks liquids directly from the window surface into an integrated tank, by using a mechanism similar to a",
+            "end_index": 0,
+            "start_index": 0,
+            "title": "Window vacuums for DIYers | Bosch DIY",
+            "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums"
+          }
+        }
+      ],
+      "api_host": "openrouter.ai",
+      "data": {
+        "limitations": "All products are designed primarily for cleaning smooth surfaces and may have some variation in features or battery life but share the same core compatibility for window and smooth surface cleaning.",
+        "results": [
+          {
+            "compatibility": "SUPPORTED",
+            "independence": "Not specified",
+            "match_reason": "Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.",
+            "product_name": "Cordless window vacuum cleaner",
+            "title": "Window Vac | K\u000e4rcher International",
+            "url": "https://www.kaercher.com/int/home-garden/window-vacs.html"
+          },
+          {
+            "compatibility": "SUPPORTED",
+            "independence": "Battery run time and features vary by model but do not affect product-type compatibility.",
+            "match_reason": "Suitable for windows, mirrors, showers, glass tables, worktops, and other smooth surfaces.",
+            "product_name": "Cordless window vacuum cleaner",
+            "title": "Window Vacs | K\u000e4rcher",
+            "url": "https://www.karcher.com/us/en/home-and-garden/products/cordless-window-vacs-c4258"
+          },
+          {
+            "compatibility": "SUPPORTED",
+            "independence": "Not explicitly stated",
+            "match_reason": "Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.",
+            "product_name": "Cordless window vacuum cleaner",
+            "title": "Window vacuums for DIYers | Bosch DIY",
+            "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums"
+          }
+        ]
+      },
+      "model": "openai/gpt-4.1-mini",
+      "normalization_response_id": "gen-1792794350-QRsdnLkV04ca9HK3x1xE",
+      "response_id": "gen-1792794345-kAjqLVk4hifT32qHR4dM",
+      "search_response": "1. From Kärcher International:  \nTitle: Window Vac | Kärcher International  \nURL: https://www.kaercher.com/int/home-garden/window-vacs.html  \nProduct type: Cordless window vacuum cleaner  \nCompatibility: Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.  \nLimitations: Not specified in detail, but aimed for smooth surfaces only.\n\n2. From Kärcher (U.S. site):  \nTitle: Window Vacs | Kärcher  \nURL: https://www.karcher.com/us/en/home-and-garden/products/cordless-window-vacs-c4258  \nProduct type: Cordless window vacuum cleaner  \nCompatibility: Suitable for windows, mirrors, showers, glass tables, worktops, and other smooth surfaces.  \nLimitations: Battery run time varies by model; models differ in features such as digital display and cleaning angles.\n\n3. From Bosch DIY:  \nTitle: Window vacuums for DIYers | Bosch DIY  \nURL: https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums  \nProduct type: Cordless window vacuum cleaner  \nCompatibility: Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.  \nLimitations: Not explicitly stated; designed for suction of liquids and vacuuming condensation.\n\nThese products match the device type described: handheld cleaning device with a squeegee blade and vacuum function for windows and other smooth surfaces.",
+      "usage": {
+        "completion_tokens": 339,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.008308399999999999,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0005424,
+          "upstream_inference_cost": 0.0013084,
+          "upstream_inference_prompt_cost": 0.000766
+        },
+        "prompt_tokens": 1915,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "server_tool_use_details": {
+          "tool_calls_executed": 1,
+          "tool_calls_requested": 1,
+          "web_search_requests": 1
+        },
+        "total_tokens": 2254
+      }
+    }
+  },
+  "current_decision": {
+    "id": 236,
+    "video_id": 1,
+    "input_hash": "57f9b41d3ac111ec1f6b0d08f5869b978c7dfb28aeb9a46c9b91802713a1587b",
+    "policy_version": "intelligence-core-v1.2.2-activation",
+    "status": "REVIEW",
+    "reason_code": "REVIEW_CONFLICTING_VISUAL_RESULTS",
+    "name": "window vacuum cleaner",
+    "result_json": "{\"confidence_is_probability\": false, \"policy_version\": \"intelligence-core-v1.2.2-activation\", \"possible_product_name\": \"window vacuum cleaner\", \"reason_code\": \"REVIEW_CONFLICTING_VISUAL_RESULTS\", \"same_product\": \"possible_same_product\", \"status\": \"REVIEW\"}",
+    "evidence_json": "{\"observation\": {\"candidates\": [], \"caption\": \"Easy to remove the stains😏 #gadgets\", \"category\": {\"category_confidence\": 0.5, \"category_evidence\": [{\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"comment\", \"source_id\": 126, \"text\": \"vacuum cleaner\", \"type\": \"comment\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.5}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"comment\", \"source_id\": 142, \"text\": \"Mini Vacuum Cleaner Price? very useful ✨\", \"type\": \"comment\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.5}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"unresolved_phrase\", \"source_id\": 1, \"text\": \"vacuum cleaner\", \"type\": \"unresolved\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.45}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"unresolved_phrase\", \"source_id\": 2, \"text\": \"Mini Vacuum Cleaner\", \"type\": \"unresolved\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.45}], \"category_status\": \"classified\", \"classifier_version\": \"category-classifier-v1\", \"human_review\": null, \"id\": 1, \"input_hash\": \"8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84\", \"observed_at\": \"2026-10-23T06:00:54.873885+00:00\", \"primary_category\": \"home\", \"primary_subcategory\": \"cleaning\", \"product_family\": \"cleaning tools\", \"taxonomy_version\": \"category-taxonomy-v1\", \"video_id\": 1}, \"comments\": [{\"author_username\": \"@eu.va_nessa\", \"id\": 1, \"text\": \"Qual link ,prático de mais\"}, {\"author_username\": \"@mac.sapatos\", \"id\": 2, \"text\": \"qual nome do produto?\"}, {\"author_username\": \"@almapachecozavala\", \"id\": 3, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@achadex91\", \"id\": 4, \"text\": \"Achadex\"}, {\"author_username\": null, \"id\": 5, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@achadex91\", \"id\": 6, \"text\": \"onde compro um desses?\"}, {\"author_username\": \"@vitrineviral597\", \"id\": 7, \"text\": \"qual o nome?\"}, {\"author_username\": \"@arturovalenciavil1\", \"id\": 8, \"text\": \"donde lo compro\"}, {\"author_username\": \"@zabeth53_4345\", \"id\": 9, \"text\": \"vacuum cleaner\"}, {\"author_username\": \"@muhadisamirzaie\", \"id\": 10, \"text\": \"Does it work on carpet ?\"}, {\"author_username\": \"@viralizou.por.iss\", \"id\": 11, \"text\": \"Preciso desse gadget agoraa\"}, {\"author_username\": \"@silvianogueira090\", \"id\": 12, \"text\": \"Link\"}, {\"author_username\": \"@cintia_eloi2009\", \"id\": 13, \"text\": \"eu quero o link por favor\"}, {\"author_username\": \"@kalel7073\", \"id\": 14, \"text\": \"where is the link?\"}, {\"author_username\": \"@pipolinistore\", \"id\": 15, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 16, \"text\": \"MRS great ✌️\"}, {\"author_username\": null, \"id\": 17, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 18, \"text\": \"Name is objet ?🙏\"}, {\"author_username\": \"@kazim.kazim606\", \"id\": 19, \"text\": \"link pls\"}, {\"author_username\": \"@agathaeariane\", \"id\": 20, \"text\": \"eu quero\"}, {\"author_username\": null, \"id\": 21, \"text\": \"Responder\"}, {\"author_username\": \"@bddbbd455\", \"id\": 22, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@achadosvirais.tk\", \"id\": 23, \"text\": \"uau😳 onde posso comprar?\"}, {\"author_username\": \"@arieneferreira0\", \"id\": 24, \"text\": \"link\"}, {\"author_username\": null, \"id\": 25, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@dedecoqueiro\", \"id\": 26, \"text\": \"eu quero um\"}, {\"author_username\": \"@birincihesabim8\", \"id\": 27, \"text\": \"link\"}, {\"author_username\": \"@elisabetegarcia67\", \"id\": 28, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@nexuzz.store\", \"id\": 29, \"text\": \"lo quiero\"}, {\"author_username\": null, \"id\": 30, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@eu.va_nessa\", \"id\": 120, \"text\": \"Qual link ,prático de mais\"}, {\"author_username\": \"@almapachecozavala\", \"id\": 121, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@mac.sapatos\", \"id\": 122, \"text\": \"qual nome do produto?\"}, {\"author_username\": \"@achadex91\", \"id\": 123, \"text\": \"onde compro um desses?\"}, {\"author_username\": \"@vitrineviral597\", \"id\": 124, \"text\": \"qual o nome?\"}, {\"author_username\": \"@arturovalenciavil1\", \"id\": 125, \"text\": \"donde lo compro\"}, {\"author_username\": \"@zabeth53_4345\", \"id\": 126, \"text\": \"vacuum cleaner\"}, {\"author_username\": \"@muhadisamirzaie\", \"id\": 127, \"text\": \"Does it work on carpet ?\"}, {\"author_username\": \"@viralizou.por.iss\", \"id\": 128, \"text\": \"Preciso desse gadget agoraa\"}, {\"author_username\": \"@cintia_eloi2009\", \"id\": 129, \"text\": \"eu quero o link por favor\"}, {\"author_username\": \"@silvianogueira090\", \"id\": 130, \"text\": \"Link\"}, {\"author_username\": \"@pipolinistore\", \"id\": 131, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@kalel7073\", \"id\": 132, \"text\": \"where is the link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 133, \"text\": \"Name is objet ?🙏\"}, {\"author_username\": \"@kazim.kazim606\", \"id\": 134, \"text\": \"link pls\"}, {\"author_username\": \"@agathaeariane\", \"id\": 135, \"text\": \"eu quero\"}, {\"author_username\": \"@achadosvirais.tk\", \"id\": 136, \"text\": \"uau😳 onde posso comprar?\"}, {\"author_username\": \"@arieneferreira0\", \"id\": 137, \"text\": \"link\"}, {\"author_username\": \"@bddbbd455\", \"id\": 138, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@dedecoqueiro\", \"id\": 139, \"text\": \"eu quero um\"}, {\"author_username\": \"@barbaracouuuto\", \"id\": 140, \"text\": \"link?\"}, {\"author_username\": \"@anaty.werneck\", \"id\": 141, \"text\": \"top!! já quero ✨\"}, {\"author_username\": \"@misss.don\", \"id\": 142, \"text\": \"Mini Vacuum Cleaner Price? very useful ✨\"}, {\"author_username\": \"@dicasdadaia_economiza\", \"id\": 143, \"text\": \"link por favor\"}, {\"author_username\": \"@delcentropadentro\", \"id\": 144, \"text\": \"Need\"}, {\"author_username\": \"@rsouzamind\", \"id\": 145, \"text\": \"preciso disso!\"}, {\"author_username\": \"@user92666780806347\", \"id\": 146, \"text\": \"link\"}, {\"author_username\": \"@user12310924777758\", \"id\": 147, \"text\": \"eu quero o link\"}, {\"author_username\": \"@elisabetegarcia67\", \"id\": 148, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@yessicarengifo\", \"id\": 149, \"text\": \"Super donde se consigue\"}], \"creator\": \"@airlandolists\", \"image\": {\"asset_id\": 1, \"height\": 372, \"image_source\": \"data/visual_assets/1/e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09.jpg\", \"mime_type\": \"image/jpeg\", \"reason\": \"validated_persisted_local_image\", \"sha256\": \"e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09\", \"source_type\": \"manual_upload\", \"status\": \"available\", \"visual_available\": true, \"width\": 257}, \"occurrences\": [{\"aliases\": [\"Window vacuum\", \"Window vacuum cleaner device\"], \"captions\": [\"Easy to remove the stains😏 #gadgets\"], \"comments\": [{\"author_username\": \"@eu.va_nessa\", \"id\": 1, \"text\": \"Qual link ,prático de mais\"}, {\"author_username\": \"@mac.sapatos\", \"id\": 2, \"text\": \"qual nome do produto?\"}, {\"author_username\": \"@almapachecozavala\", \"id\": 3, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@achadex91\", \"id\": 4, \"text\": \"Achadex\"}, {\"author_username\": null, \"id\": 5, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@achadex91\", \"id\": 6, \"text\": \"onde compro um desses?\"}, {\"author_username\": \"@vitrineviral597\", \"id\": 7, \"text\": \"qual o nome?\"}, {\"author_username\": \"@arturovalenciavil1\", \"id\": 8, \"text\": \"donde lo compro\"}, {\"author_username\": \"@zabeth53_4345\", \"id\": 9, \"text\": \"vacuum cleaner\"}, {\"author_username\": \"@muhadisamirzaie\", \"id\": 10, \"text\": \"Does it work on carpet ?\"}, {\"author_username\": \"@viralizou.por.iss\", \"id\": 11, \"text\": \"Preciso desse gadget agoraa\"}, {\"author_username\": \"@silvianogueira090\", \"id\": 12, \"text\": \"Link\"}, {\"author_username\": \"@cintia_eloi2009\", \"id\": 13, \"text\": \"eu quero o link por favor\"}, {\"author_username\": \"@kalel7073\", \"id\": 14, \"text\": \"where is the link?\"}, {\"author_username\": \"@pipolinistore\", \"id\": 15, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 16, \"text\": \"MRS great ✌️\"}, {\"author_username\": null, \"id\": 17, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 18, \"text\": \"Name is objet ?🙏\"}, {\"author_username\": \"@kazim.kazim606\", \"id\": 19, \"text\": \"link pls\"}, {\"author_username\": \"@agathaeariane\", \"id\": 20, \"text\": \"eu quero\"}, {\"author_username\": null, \"id\": 21, \"text\": \"Responder\"}, {\"author_username\": \"@bddbbd455\", \"id\": 22, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@achadosvirais.tk\", \"id\": 23, \"text\": \"uau😳 onde posso comprar?\"}, {\"author_username\": \"@arieneferreira0\", \"id\": 24, \"text\": \"link\"}, {\"author_username\": null, \"id\": 25, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@dedecoqueiro\", \"id\": 26, \"text\": \"eu quero um\"}, {\"author_username\": \"@birincihesabim8\", \"id\": 27, \"text\": \"link\"}, {\"author_username\": \"@elisabetegarcia67\", \"id\": 28, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@nexuzz.store\", \"id\": 29, \"text\": \"lo quiero\"}, {\"author_username\": null, \"id\": 30, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@eu.va_nessa\", \"id\": 120, \"text\": \"Qual link ,prático de mais\"}, {\"author_username\": \"@almapachecozavala\", \"id\": 121, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@mac.sapatos\", \"id\": 122, \"text\": \"qual nome do produto?\"}, {\"author_username\": \"@achadex91\", \"id\": 123, \"text\": \"onde compro um desses?\"}, {\"author_username\": \"@vitrineviral597\", \"id\": 124, \"text\": \"qual o nome?\"}, {\"author_username\": \"@arturovalenciavil1\", \"id\": 125, \"text\": \"donde lo compro\"}, {\"author_username\": \"@zabeth53_4345\", \"id\": 126, \"text\": \"vacuum cleaner\"}, {\"author_username\": \"@muhadisamirzaie\", \"id\": 127, \"text\": \"Does it work on carpet ?\"}, {\"author_username\": \"@viralizou.por.iss\", \"id\": 128, \"text\": \"Preciso desse gadget agoraa\"}, {\"author_username\": \"@cintia_eloi2009\", \"id\": 129, \"text\": \"eu quero o link por favor\"}, {\"author_username\": \"@silvianogueira090\", \"id\": 130, \"text\": \"Link\"}, {\"author_username\": \"@pipolinistore\", \"id\": 131, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@kalel7073\", \"id\": 132, \"text\": \"where is the link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 133, \"text\": \"Name is objet ?🙏\"}, {\"author_username\": \"@kazim.kazim606\", \"id\": 134, \"text\": \"link pls\"}, {\"author_username\": \"@agathaeariane\", \"id\": 135, \"text\": \"eu quero\"}, {\"author_username\": \"@achadosvirais.tk\", \"id\": 136, \"text\": \"uau😳 onde posso comprar?\"}, {\"author_username\": \"@arieneferreira0\", \"id\": 137, \"text\": \"link\"}, {\"author_username\": \"@bddbbd455\", \"id\": 138, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@dedecoqueiro\", \"id\": 139, \"text\": \"eu quero um\"}, {\"author_username\": \"@barbaracouuuto\", \"id\": 140, \"text\": \"link?\"}, {\"author_username\": \"@anaty.werneck\", \"id\": 141, \"text\": \"top!! já quero ✨\"}, {\"author_username\": \"@misss.don\", \"id\": 142, \"text\": \"Mini Vacuum Cleaner Price? very useful ✨\"}, {\"author_username\": \"@dicasdadaia_economiza\", \"id\": 143, \"text\": \"link por favor\"}, {\"author_username\": \"@delcentropadentro\", \"id\": 144, \"text\": \"Need\"}, {\"author_username\": \"@rsouzamind\", \"id\": 145, \"text\": \"preciso disso!\"}, {\"author_username\": \"@user92666780806347\", \"id\": 146, \"text\": \"link\"}, {\"author_username\": \"@user12310924777758\", \"id\": 147, \"text\": \"eu quero o link\"}, {\"author_username\": \"@elisabetegarcia67\", \"id\": 148, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@yessicarengifo\", \"id\": 149, \"text\": \"Super donde se consigue\"}], \"evidence_ids\": [\"visual:2\"], \"id\": \"visual:2\", \"phrase\": \"Window vacuum cleaner\", \"urls\": [], \"video_id\": 1}, {\"aliases\": [\"Glass cleaning tool\", \"Glass squeegee cleaner\"], \"captions\": [\"Easy to remove the stains😏 #gadgets\"], \"comments\": [{\"author_username\": \"@eu.va_nessa\", \"id\": 1, \"text\": \"Qual link ,prático de mais\"}, {\"author_username\": \"@mac.sapatos\", \"id\": 2, \"text\": \"qual nome do produto?\"}, {\"author_username\": \"@almapachecozavala\", \"id\": 3, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@achadex91\", \"id\": 4, \"text\": \"Achadex\"}, {\"author_username\": null, \"id\": 5, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@achadex91\", \"id\": 6, \"text\": \"onde compro um desses?\"}, {\"author_username\": \"@vitrineviral597\", \"id\": 7, \"text\": \"qual o nome?\"}, {\"author_username\": \"@arturovalenciavil1\", \"id\": 8, \"text\": \"donde lo compro\"}, {\"author_username\": \"@zabeth53_4345\", \"id\": 9, \"text\": \"vacuum cleaner\"}, {\"author_username\": \"@muhadisamirzaie\", \"id\": 10, \"text\": \"Does it work on carpet ?\"}, {\"author_username\": \"@viralizou.por.iss\", \"id\": 11, \"text\": \"Preciso desse gadget agoraa\"}, {\"author_username\": \"@silvianogueira090\", \"id\": 12, \"text\": \"Link\"}, {\"author_username\": \"@cintia_eloi2009\", \"id\": 13, \"text\": \"eu quero o link por favor\"}, {\"author_username\": \"@kalel7073\", \"id\": 14, \"text\": \"where is the link?\"}, {\"author_username\": \"@pipolinistore\", \"id\": 15, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 16, \"text\": \"MRS great ✌️\"}, {\"author_username\": null, \"id\": 17, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 18, \"text\": \"Name is objet ?🙏\"}, {\"author_username\": \"@kazim.kazim606\", \"id\": 19, \"text\": \"link pls\"}, {\"author_username\": \"@agathaeariane\", \"id\": 20, \"text\": \"eu quero\"}, {\"author_username\": null, \"id\": 21, \"text\": \"Responder\"}, {\"author_username\": \"@bddbbd455\", \"id\": 22, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@achadosvirais.tk\", \"id\": 23, \"text\": \"uau😳 onde posso comprar?\"}, {\"author_username\": \"@arieneferreira0\", \"id\": 24, \"text\": \"link\"}, {\"author_username\": null, \"id\": 25, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@dedecoqueiro\", \"id\": 26, \"text\": \"eu quero um\"}, {\"author_username\": \"@birincihesabim8\", \"id\": 27, \"text\": \"link\"}, {\"author_username\": \"@elisabetegarcia67\", \"id\": 28, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@nexuzz.store\", \"id\": 29, \"text\": \"lo quiero\"}, {\"author_username\": null, \"id\": 30, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@eu.va_nessa\", \"id\": 120, \"text\": \"Qual link ,prático de mais\"}, {\"author_username\": \"@almapachecozavala\", \"id\": 121, \"text\": \"Por favor digan donde los venden\"}, {\"author_username\": \"@mac.sapatos\", \"id\": 122, \"text\": \"qual nome do produto?\"}, {\"author_username\": \"@achadex91\", \"id\": 123, \"text\": \"onde compro um desses?\"}, {\"author_username\": \"@vitrineviral597\", \"id\": 124, \"text\": \"qual o nome?\"}, {\"author_username\": \"@arturovalenciavil1\", \"id\": 125, \"text\": \"donde lo compro\"}, {\"author_username\": \"@zabeth53_4345\", \"id\": 126, \"text\": \"vacuum cleaner\"}, {\"author_username\": \"@muhadisamirzaie\", \"id\": 127, \"text\": \"Does it work on carpet ?\"}, {\"author_username\": \"@viralizou.por.iss\", \"id\": 128, \"text\": \"Preciso desse gadget agoraa\"}, {\"author_username\": \"@cintia_eloi2009\", \"id\": 129, \"text\": \"eu quero o link por favor\"}, {\"author_username\": \"@silvianogueira090\", \"id\": 130, \"text\": \"Link\"}, {\"author_username\": \"@pipolinistore\", \"id\": 131, \"text\": \"q prático! alguém tem o link?\"}, {\"author_username\": \"@kalel7073\", \"id\": 132, \"text\": \"where is the link?\"}, {\"author_username\": \"@mariusgreat3\", \"id\": 133, \"text\": \"Name is objet ?🙏\"}, {\"author_username\": \"@kazim.kazim606\", \"id\": 134, \"text\": \"link pls\"}, {\"author_username\": \"@agathaeariane\", \"id\": 135, \"text\": \"eu quero\"}, {\"author_username\": \"@achadosvirais.tk\", \"id\": 136, \"text\": \"uau😳 onde posso comprar?\"}, {\"author_username\": \"@arieneferreira0\", \"id\": 137, \"text\": \"link\"}, {\"author_username\": \"@bddbbd455\", \"id\": 138, \"text\": \"the most funtional device i have ver seen\"}, {\"author_username\": \"@dedecoqueiro\", \"id\": 139, \"text\": \"eu quero um\"}, {\"author_username\": \"@barbaracouuuto\", \"id\": 140, \"text\": \"link?\"}, {\"author_username\": \"@anaty.werneck\", \"id\": 141, \"text\": \"top!! já quero ✨\"}, {\"author_username\": \"@misss.don\", \"id\": 142, \"text\": \"Mini Vacuum Cleaner Price? very useful ✨\"}, {\"author_username\": \"@dicasdadaia_economiza\", \"id\": 143, \"text\": \"link por favor\"}, {\"author_username\": \"@delcentropadentro\", \"id\": 144, \"text\": \"Need\"}, {\"author_username\": \"@rsouzamind\", \"id\": 145, \"text\": \"preciso disso!\"}, {\"author_username\": \"@user92666780806347\", \"id\": 146, \"text\": \"link\"}, {\"author_username\": \"@user12310924777758\", \"id\": 147, \"text\": \"eu quero o link\"}, {\"author_username\": \"@elisabetegarcia67\", \"id\": 148, \"text\": \"esse eu querooo\"}, {\"author_username\": \"@yessicarengifo\", \"id\": 149, \"text\": \"Super donde se consigue\"}], \"evidence_ids\": [\"visual:3\"], \"id\": \"visual:3\", \"phrase\": \"Glass cleaner device\", \"urls\": [], \"video_id\": 1}], \"proposals\": [{\"aliases_json\": \"[\\\"Window vacuum\\\", \\\"Window vacuum cleaner device\\\"]\", \"confidence\": null, \"context_cross_check_json\": \"{\\\"category_compatibility\\\": \\\"SUPPORTED\\\", \\\"category_context\\\": {\\\"category_confidence\\\": 0.5, \\\"category_evidence\\\": [{\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"comment\\\", \\\"source_id\\\": 126, \\\"text\\\": \\\"vacuum cleaner\\\", \\\"type\\\": \\\"comment\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.5}, {\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"comment\\\", \\\"source_id\\\": 142, \\\"text\\\": \\\"Mini Vacuum Cleaner Price? very useful ✨\\\", \\\"type\\\": \\\"comment\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.5}, {\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"unresolved_phrase\\\", \\\"source_id\\\": 1, \\\"text\\\": \\\"vacuum cleaner\\\", \\\"type\\\": \\\"unresolved\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.45}, {\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"unresolved_phrase\\\", \\\"source_id\\\": 2, \\\"text\\\": \\\"Mini Vacuum Cleaner\\\", \\\"type\\\": \\\"unresolved\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.45}], \\\"category_status\\\": \\\"classified\\\", \\\"classifier_version\\\": \\\"category-classifier-v1\\\", \\\"human_review\\\": null, \\\"id\\\": 1, \\\"input_hash\\\": \\\"8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84\\\", \\\"observed_at\\\": \\\"2026-10-23T06:00:54.873885+00:00\\\", \\\"primary_category\\\": \\\"home\\\", \\\"primary_subcategory\\\": \\\"cleaning\\\", \\\"product_family\\\": \\\"cleaning tools\\\", \\\"taxonomy_version\\\": \\\"category-taxonomy-v1\\\", \\\"video_id\\\": 1}, \\\"conflicts\\\": [], \\\"context_did_not_enter_image_prompt\\\": true, \\\"reason\\\": \\\"Generic or non-matching context cannot confirm or refute the visual hypothesis\\\", \\\"status\\\": \\\"NEUTRAL\\\", \\\"support\\\": []}\", \"history\": [], \"hypothesis\": {\"aliases\": [\"Window vacuum\", \"Window vacuum cleaner device\"], \"canonical_name_suggestion\": \"window vacuum cleaner\", \"confidence_is_probability\": false, \"evidence_sources\": {\"comments\": [], \"text\": [], \"visual\": [2], \"web_product_evidence\": [4, 5]}, \"identity_confidence\": 0.25, \"independent_listing_sources\": 0, \"name_evidence\": [{\"name\": \"Window vacuum cleaner\", \"source_id\": 2, \"source_type\": \"visual\"}, {\"name\": \"Window vacuum\", \"source_id\": 2, \"source_type\": \"provider_alias\"}, {\"name\": \"Window vacuum cleaner device\", \"source_id\": 2, \"source_type\": \"provider_alias\"}], \"possible_product_name\": \"Window vacuum cleaner\", \"product_confirmed\": false, \"reason\": [\"single_visual_result_is_not_confirmation\", \"insufficient_independent_listing_support\"], \"review_status\": \"suggested\"}, \"id\": 2, \"idempotency_key\": \"fbaecbdc7f7cf9dfab7ef316f6dceaef54494d91beefd1d5f7ff49486e35b846\", \"image_matches_current\": true, \"image_sha256\": \"e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09\", \"image_source\": \"data/visual_assets/1/e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09.jpg\", \"multimodal_json\": \"{\\\"image_text_similarity\\\": 0.31409755974211895, \\\"model_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"retrieval\\\": [{\\\"embedding_kind\\\": \\\"text\\\", \\\"embedding_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"index_version\\\": \\\"3cab903facc842d2b7c05fb2ceb257c6\\\", \\\"name\\\": \\\"Soap dispenser\\\", \\\"observed_at\\\": \\\"2026-10-23T22:30:50.124828+00:00\\\", \\\"product_id\\\": null, \\\"reference_id\\\": \\\"candidate:1\\\", \\\"reference_kind\\\": \\\"CANDIDATE_REFERENCE\\\", \\\"similarity\\\": 0.27313339710235596, \\\"source\\\": {\\\"candidate_id\\\": 1}}, {\\\"embedding_kind\\\": \\\"text\\\", \\\"embedding_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"index_version\\\": \\\"3cab903facc842d2b7c05fb2ceb257c6\\\", \\\"name\\\": \\\"Portable Dryer\\\", \\\"observed_at\\\": \\\"2026-10-23T22:30:50.124828+00:00\\\", \\\"product_id\\\": null, \\\"reference_id\\\": \\\"candidate:7\\\", \\\"reference_kind\\\": \\\"CANDIDATE_REFERENCE\\\", \\\"similarity\\\": 0.2708134949207306, \\\"source\\\": {\\\"candidate_id\\\": 7}}, {\\\"embedding_kind\\\": \\\"text\\\", \\\"embedding_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"index_version\\\": \\\"3cab903facc842d2b7c05fb2ceb257c6\\\", \\\"name\\\": \\\"3 in 1 Window Cleaner\\\", \\\"observed_at\\\": \\\"2026-10-23T22:30:50.124828+00:00\\\", \\\"product_id\\\": null, \\\"reference_id\\\": \\\"candidate:6\\\", \\\"reference_kind\\\": \\\"CANDIDATE_REFERENCE\\\", \\\"similarity\\\": 0.27028241753578186, \\\"source\\\": {\\\"candidate_id\\\": 6}}], \\\"similarity_is_probability\\\": false}\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_product_name\": \"Window vacuum cleaner\", \"provider\": \"vision_model\", \"provider_payload_json\": \"{\\\"annotations\\\": [], \\\"api_host\\\": \\\"openrouter.ai\\\", \\\"data\\\": {\\\"assessment\\\": \\\"identified\\\", \\\"detected_objects\\\": [\\\"hand-held cleaning tool\\\", \\\"human hand\\\", \\\"wall tiles\\\", \\\"flowers\\\"], \\\"distinctive_features\\\": [\\\"grey rubber blade edge in a squeegee shape\\\", \\\"white plastic body with indicator light\\\", \\\"hand-held ergonomic form\\\", \\\"small indicator light illuminated\\\"], \\\"functional_description\\\": \\\"The device is designed to clean flat surfaces such as tiles or glass by removing water or cleaning solution via a squeegee blade, possibly suctioning or vacuuming liquid to prevent streaks or drips.\\\", \\\"possible_category\\\": \\\"Cleaning tools\\\", \\\"possible_product_names\\\": [{\\\"aliases\\\": [\\\"Window vacuum\\\", \\\"Window vacuum cleaner device\\\"], \\\"name\\\": \\\"Window vacuum cleaner\\\", \\\"supporting_features\\\": [\\\"squeegee blade edge\\\", \\\"hand-held design\\\", \\\"illuminated indicator light\\\"], \\\"uncertainties\\\": [\\\"exact cleaning technology not visible\\\"]}, {\\\"aliases\\\": [\\\"Glass cleaning tool\\\", \\\"Glass squeegee cleaner\\\"], \\\"name\\\": \\\"Glass cleaner device\\\", \\\"supporting_features\\\": [\\\"squeegee blade\\\", \\\"hand-held usage\\\", \\\"suitable for flat surfaces\\\"], \\\"uncertainties\\\": [\\\"device power source and cleaning method\\\"]}], \\\"quality\\\": {\\\"before_after_possible\\\": {\\\"reason\\\": \\\"No before or after effect is shown in the single image.\\\", \\\"status\\\": \\\"insufficient\\\"}, \\\"creative_repeatability_possible\\\": {\\\"reason\\\": \\\"No indication of a creative or repeatable process beyond typical cleaning use is shown.\\\", \\\"status\\\": \\\"insufficient\\\"}, \\\"demonstration_visibility\\\": {\\\"reason\\\": \\\"The device is shown in active hand-held use against a surface.\\\", \\\"status\\\": \\\"observed\\\"}, \\\"problem_solution_clarity\\\": {\\\"reason\\\": \\\"It's clear the device is for cleaning surfaces with water or moisture, but the exact cleaning method is not visible.\\\", \\\"status\\\": \\\"partial\\\"}, \\\"product_visibility\\\": {\\\"reason\\\": \\\"The main product is fully visible in hand-held use.\\\", \\\"status\\\": \\\"observed\\\"}, \\\"transformation_strength\\\": {\\\"reason\\\": \\\"No clear evidence of transformation or cleaning impact is visible in the single frame.\\\", \\\"status\\\": \\\"insufficient\\\"}, \\\"visual_novelty\\\": {\\\"reason\\\": \\\"No indication of novelty beyond common hand-held cleaning tools is visible.\\\", \\\"status\\\": \\\"insufficient\\\"}}, \\\"visual_description\\\": \\\"The image shows a hand-held cleaning device with a squeegee blade, held against a kitchen wall or backsplash with tile. The device has a white body with a grey rubber blade edge and a small illuminated indicator light on it. The device is being used near a kitchen counter with a flower arrangement visible in the background.\\\"}, \\\"model\\\": \\\"openai/gpt-4.1-mini\\\", \\\"response_id\\\": \\\"gen-1792794333-dJCgnyXchwGn2vcMcqQG\\\", \\\"usage\\\": {\\\"completion_tokens\\\": 471, \\\"completion_tokens_details\\\": {\\\"audio_tokens\\\": 0, \\\"image_tokens\\\": 0, \\\"reasoning_tokens\\\": 0}, \\\"cost\\\": 0.0010448, \\\"cost_details\\\": {\\\"upstream_inference_completions_cost\\\": 0.0007536, \\\"upstream_inference_cost\\\": 0.0010448, \\\"upstream_inference_prompt_cost\\\": 0.0002912}, \\\"is_byok\\\": false, \\\"prompt_tokens\\\": 728, \\\"prompt_tokens_details\\\": {\\\"audio_tokens\\\": 0, \\\"cache_write_tokens\\\": 0, \\\"cached_tokens\\\": 0, \\\"video_tokens\\\": 0}, \\\"total_tokens\\\": 1199}}\", \"provider_version\": \"openai/gpt-4.1-mini\", \"reason\": \"{\\\"uncertainties\\\": [\\\"exact cleaning technology not visible\\\"], \\\"visible\\\": [\\\"squeegee blade edge\\\", \\\"hand-held design\\\", \\\"illuminated indicator light\\\"]}\", \"result_url\": null, \"review_status\": \"suggested\", \"source_type\": \"vision_model_output\", \"video_id\": 1, \"web_evidence\": [{\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.bosch-diy.com\", \"evidence_id\": 2, \"id\": 5, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"bosch-diy.com\", \"independence_reviewed\": 0, \"match_reason\": \"Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window vacuums for DIYers | Bosch DIY\", \"url\": \"https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums\", \"visual_compatible\": 0}, {\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.kaercher.com\", \"evidence_id\": 2, \"id\": 4, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"kaercher.com\", \"independence_reviewed\": 0, \"match_reason\": \"Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window Vac | K\\u000e4rcher International\", \"url\": \"https://www.kaercher.com/int/home-garden/window-vacs.html\", \"visual_compatible\": 0}]}, {\"aliases_json\": \"[\\\"Glass cleaning tool\\\", \\\"Glass squeegee cleaner\\\"]\", \"confidence\": null, \"context_cross_check_json\": \"{\\\"category_compatibility\\\": \\\"SUPPORTED\\\", \\\"category_context\\\": {\\\"category_confidence\\\": 0.5, \\\"category_evidence\\\": [{\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"comment\\\", \\\"source_id\\\": 126, \\\"text\\\": \\\"vacuum cleaner\\\", \\\"type\\\": \\\"comment\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.5}, {\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"comment\\\", \\\"source_id\\\": 142, \\\"text\\\": \\\"Mini Vacuum Cleaner Price? very useful ✨\\\", \\\"type\\\": \\\"comment\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.5}, {\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"unresolved_phrase\\\", \\\"source_id\\\": 1, \\\"text\\\": \\\"vacuum cleaner\\\", \\\"type\\\": \\\"unresolved\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.45}, {\\\"matched_term\\\": \\\"vacuum cleaner\\\", \\\"source_entity\\\": \\\"unresolved_phrase\\\", \\\"source_id\\\": 2, \\\"text\\\": \\\"Mini Vacuum Cleaner\\\", \\\"type\\\": \\\"unresolved\\\", \\\"url\\\": \\\"https://www.tiktok.com/@airlandolists/video/7462746836533677358\\\", \\\"weight\\\": 0.45}], \\\"category_status\\\": \\\"classified\\\", \\\"classifier_version\\\": \\\"category-classifier-v1\\\", \\\"human_review\\\": null, \\\"id\\\": 1, \\\"input_hash\\\": \\\"8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84\\\", \\\"observed_at\\\": \\\"2026-10-23T06:00:54.873885+00:00\\\", \\\"primary_category\\\": \\\"home\\\", \\\"primary_subcategory\\\": \\\"cleaning\\\", \\\"product_family\\\": \\\"cleaning tools\\\", \\\"taxonomy_version\\\": \\\"category-taxonomy-v1\\\", \\\"video_id\\\": 1}, \\\"conflicts\\\": [], \\\"context_did_not_enter_image_prompt\\\": true, \\\"reason\\\": \\\"Generic or non-matching context cannot confirm or refute the visual hypothesis\\\", \\\"status\\\": \\\"NEUTRAL\\\", \\\"support\\\": []}\", \"history\": [], \"hypothesis\": {\"aliases\": [\"Glass cleaning tool\", \"Glass squeegee cleaner\"], \"canonical_name_suggestion\": \"glass cleaner device\", \"confidence_is_probability\": false, \"evidence_sources\": {\"comments\": [], \"text\": [], \"visual\": [3], \"web_product_evidence\": [6, 7]}, \"identity_confidence\": 0.25, \"independent_listing_sources\": 0, \"name_evidence\": [{\"name\": \"Glass cleaner device\", \"source_id\": 3, \"source_type\": \"visual\"}, {\"name\": \"Glass cleaning tool\", \"source_id\": 3, \"source_type\": \"provider_alias\"}, {\"name\": \"Glass squeegee cleaner\", \"source_id\": 3, \"source_type\": \"provider_alias\"}], \"possible_product_name\": \"Glass cleaner device\", \"product_confirmed\": false, \"reason\": [\"single_visual_result_is_not_confirmation\", \"insufficient_independent_listing_support\"], \"review_status\": \"suggested\"}, \"id\": 3, \"idempotency_key\": \"a855160a1cc3162ced92288df800fb9c36d4a7f18f204501a1786d24370989aa\", \"image_matches_current\": true, \"image_sha256\": \"e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09\", \"image_source\": \"data/visual_assets/1/e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09.jpg\", \"multimodal_json\": \"{\\\"image_text_similarity\\\": 0.28756441427114215, \\\"model_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"retrieval\\\": [{\\\"embedding_kind\\\": \\\"text\\\", \\\"embedding_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"index_version\\\": \\\"3cab903facc842d2b7c05fb2ceb257c6\\\", \\\"name\\\": \\\"Soap dispenser\\\", \\\"observed_at\\\": \\\"2026-10-23T22:30:50.124828+00:00\\\", \\\"product_id\\\": null, \\\"reference_id\\\": \\\"candidate:1\\\", \\\"reference_kind\\\": \\\"CANDIDATE_REFERENCE\\\", \\\"similarity\\\": 0.27313339710235596, \\\"source\\\": {\\\"candidate_id\\\": 1}}, {\\\"embedding_kind\\\": \\\"text\\\", \\\"embedding_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"index_version\\\": \\\"3cab903facc842d2b7c05fb2ceb257c6\\\", \\\"name\\\": \\\"Portable Dryer\\\", \\\"observed_at\\\": \\\"2026-10-23T22:30:50.124828+00:00\\\", \\\"product_id\\\": null, \\\"reference_id\\\": \\\"candidate:7\\\", \\\"reference_kind\\\": \\\"CANDIDATE_REFERENCE\\\", \\\"similarity\\\": 0.2708134949207306, \\\"source\\\": {\\\"candidate_id\\\": 7}}, {\\\"embedding_kind\\\": \\\"text\\\", \\\"embedding_version\\\": \\\"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\\\", \\\"index_version\\\": \\\"3cab903facc842d2b7c05fb2ceb257c6\\\", \\\"name\\\": \\\"3 in 1 Window Cleaner\\\", \\\"observed_at\\\": \\\"2026-10-23T22:30:50.124828+00:00\\\", \\\"product_id\\\": null, \\\"reference_id\\\": \\\"candidate:6\\\", \\\"reference_kind\\\": \\\"CANDIDATE_REFERENCE\\\", \\\"similarity\\\": 0.27028241753578186, \\\"source\\\": {\\\"candidate_id\\\": 6}}], \\\"similarity_is_probability\\\": false}\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_product_name\": \"Glass cleaner device\", \"provider\": \"vision_model\", \"provider_payload_json\": \"{\\\"annotations\\\": [], \\\"api_host\\\": \\\"openrouter.ai\\\", \\\"data\\\": {\\\"assessment\\\": \\\"identified\\\", \\\"detected_objects\\\": [\\\"hand-held cleaning tool\\\", \\\"human hand\\\", \\\"wall tiles\\\", \\\"flowers\\\"], \\\"distinctive_features\\\": [\\\"grey rubber blade edge in a squeegee shape\\\", \\\"white plastic body with indicator light\\\", \\\"hand-held ergonomic form\\\", \\\"small indicator light illuminated\\\"], \\\"functional_description\\\": \\\"The device is designed to clean flat surfaces such as tiles or glass by removing water or cleaning solution via a squeegee blade, possibly suctioning or vacuuming liquid to prevent streaks or drips.\\\", \\\"possible_category\\\": \\\"Cleaning tools\\\", \\\"possible_product_names\\\": [{\\\"aliases\\\": [\\\"Window vacuum\\\", \\\"Window vacuum cleaner device\\\"], \\\"name\\\": \\\"Window vacuum cleaner\\\", \\\"supporting_features\\\": [\\\"squeegee blade edge\\\", \\\"hand-held design\\\", \\\"illuminated indicator light\\\"], \\\"uncertainties\\\": [\\\"exact cleaning technology not visible\\\"]}, {\\\"aliases\\\": [\\\"Glass cleaning tool\\\", \\\"Glass squeegee cleaner\\\"], \\\"name\\\": \\\"Glass cleaner device\\\", \\\"supporting_features\\\": [\\\"squeegee blade\\\", \\\"hand-held usage\\\", \\\"suitable for flat surfaces\\\"], \\\"uncertainties\\\": [\\\"device power source and cleaning method\\\"]}], \\\"quality\\\": {\\\"before_after_possible\\\": {\\\"reason\\\": \\\"No before or after effect is shown in the single image.\\\", \\\"status\\\": \\\"insufficient\\\"}, \\\"creative_repeatability_possible\\\": {\\\"reason\\\": \\\"No indication of a creative or repeatable process beyond typical cleaning use is shown.\\\", \\\"status\\\": \\\"insufficient\\\"}, \\\"demonstration_visibility\\\": {\\\"reason\\\": \\\"The device is shown in active hand-held use against a surface.\\\", \\\"status\\\": \\\"observed\\\"}, \\\"problem_solution_clarity\\\": {\\\"reason\\\": \\\"It's clear the device is for cleaning surfaces with water or moisture, but the exact cleaning method is not visible.\\\", \\\"status\\\": \\\"partial\\\"}, \\\"product_visibility\\\": {\\\"reason\\\": \\\"The main product is fully visible in hand-held use.\\\", \\\"status\\\": \\\"observed\\\"}, \\\"transformation_strength\\\": {\\\"reason\\\": \\\"No clear evidence of transformation or cleaning impact is visible in the single frame.\\\", \\\"status\\\": \\\"insufficient\\\"}, \\\"visual_novelty\\\": {\\\"reason\\\": \\\"No indication of novelty beyond common hand-held cleaning tools is visible.\\\", \\\"status\\\": \\\"insufficient\\\"}}, \\\"visual_description\\\": \\\"The image shows a hand-held cleaning device with a squeegee blade, held against a kitchen wall or backsplash with tile. The device has a white body with a grey rubber blade edge and a small illuminated indicator light on it. The device is being used near a kitchen counter with a flower arrangement visible in the background.\\\"}, \\\"model\\\": \\\"openai/gpt-4.1-mini\\\", \\\"response_id\\\": \\\"gen-1792794333-dJCgnyXchwGn2vcMcqQG\\\", \\\"usage\\\": {\\\"completion_tokens\\\": 471, \\\"completion_tokens_details\\\": {\\\"audio_tokens\\\": 0, \\\"image_tokens\\\": 0, \\\"reasoning_tokens\\\": 0}, \\\"cost\\\": 0.0010448, \\\"cost_details\\\": {\\\"upstream_inference_completions_cost\\\": 0.0007536, \\\"upstream_inference_cost\\\": 0.0010448, \\\"upstream_inference_prompt_cost\\\": 0.0002912}, \\\"is_byok\\\": false, \\\"prompt_tokens\\\": 728, \\\"prompt_tokens_details\\\": {\\\"audio_tokens\\\": 0, \\\"cache_write_tokens\\\": 0, \\\"cached_tokens\\\": 0, \\\"video_tokens\\\": 0}, \\\"total_tokens\\\": 1199}}\", \"provider_version\": \"openai/gpt-4.1-mini\", \"reason\": \"{\\\"uncertainties\\\": [\\\"device power source and cleaning method\\\"], \\\"visible\\\": [\\\"squeegee blade\\\", \\\"hand-held usage\\\", \\\"suitable for flat surfaces\\\"]}\", \"result_url\": null, \"review_status\": \"suggested\", \"source_type\": \"vision_model_output\", \"video_id\": 1, \"web_evidence\": [{\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.bosch-diy.com\", \"evidence_id\": 3, \"id\": 7, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"bosch-diy.com\", \"independence_reviewed\": 0, \"match_reason\": \"Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window vacuums for DIYers | Bosch DIY\", \"url\": \"https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums\", \"visual_compatible\": 0}, {\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.kaercher.com\", \"evidence_id\": 3, \"id\": 6, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"kaercher.com\", \"independence_reviewed\": 0, \"match_reason\": \"Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window Vac | K\\u000e4rcher International\", \"url\": \"https://www.kaercher.com/int/home-garden/window-vacs.html\", \"visual_compatible\": 0}]}], \"unresolved\": [{\"id\": 2, \"raw_phrase\": \"Mini Vacuum Cleaner\", \"status\": \"pending\"}, {\"id\": 1, \"raw_phrase\": \"vacuum cleaner\", \"status\": \"pending\"}], \"video_id\": 1}, \"signals\": {\"alternatives\": [\"glass cleaner device\"], \"candidate_recurrence\": 0, \"compatible_comment_authors\": 0, \"composition\": false, \"conflicts\": [\"visual_names\"], \"consumer_signals\": {\"consumer_classes\": {\"NEGATIVE_REACTION\": {\"count\": 0, \"evidence_ids\": []}, \"POSITIVE_REACTION\": {\"count\": 6, \"evidence_ids\": [1, 15, 16, 141, 142, 149]}, \"PRODUCT_COMPLAINT\": {\"count\": 0, \"evidence_ids\": []}, \"PURCHASE_INTENT\": {\"count\": 22, \"evidence_ids\": [1, 3, 6, 8, 11, 12, 13, 14, 15, 19, 20, 23, 26, 28, 29, 141, 142, 143, 144, 145, 147, 149]}, \"QUALITY_COMPLAINT\": {\"count\": 0, \"evidence_ids\": []}, \"QUESTION\": {\"count\": 18, \"evidence_ids\": [1, 2, 3, 6, 7, 8, 10, 12, 13, 14, 15, 18, 19, 23, 142, 143, 147, 149]}}, \"dedupe_basis\": \"normalized text across captures and anonymous copies; conservative lower bound\", \"evidence_ids\": [1, 3, 5, 6, 8, 11, 12, 13, 14, 15, 17, 19, 20, 23, 24, 26, 27, 28, 29, 30, 120, 121, 123, 125, 128, 129, 130, 131, 132, 134, 135, 136, 137, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], \"intent_ratio\": 0.7333333333333333, \"intent_types\": {\"link_request\": [1, 12, 13, 14, 15, 19, 143, 147], \"price_question\": [142], \"purchase_statement\": [], \"want_need\": [11, 13, 20, 26, 28, 29, 141, 144, 145, 147], \"where_to_buy\": [3, 6, 8, 23, 149]}, \"raw_observations\": 60, \"rules_version\": \"consumer-signals-v1\", \"sample_size\": 30, \"status\": \"measured\", \"strength\": \"STRONG\", \"unique_authors\": 26, \"unique_purchase_intent_comments\": 22}, \"generic_text\": false, \"independent_listings\": 0, \"lens_evidence\": [], \"matches\": [{\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Soap dispenser\", \"observed_at\": \"2026-10-23T22:34:19.394892+00:00\", \"product_id\": null, \"reason\": \"CANDIDATE_REFERENCE_IS_NOT_IDENTITY\", \"reference_id\": \"candidate:1\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"result\": \"insufficient\", \"similarity\": 0.27313339710235596, \"source\": {\"candidate_id\": 1}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Portable Dryer\", \"observed_at\": \"2026-10-23T22:34:19.394892+00:00\", \"product_id\": null, \"reason\": \"CANDIDATE_REFERENCE_IS_NOT_IDENTITY\", \"reference_id\": \"candidate:7\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"result\": \"insufficient\", \"similarity\": 0.2708134949207306, \"source\": {\"candidate_id\": 7}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"3 in 1 Window Cleaner\", \"observed_at\": \"2026-10-23T22:34:19.394892+00:00\", \"product_id\": null, \"reason\": \"CANDIDATE_REFERENCE_IS_NOT_IDENTITY\", \"reference_id\": \"candidate:6\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"result\": \"insufficient\", \"similarity\": 0.27028241753578186, \"source\": {\"candidate_id\": 6}}], \"name\": \"window vacuum cleaner\", \"retrieval\": [{\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Soap dispenser\", \"observed_at\": \"2026-10-23T22:34:19.394892+00:00\", \"product_id\": null, \"reference_id\": \"candidate:1\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.27313339710235596, \"source\": {\"candidate_id\": 1}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Portable Dryer\", \"observed_at\": \"2026-10-23T22:34:19.394892+00:00\", \"product_id\": null, \"reference_id\": \"candidate:7\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.2708134949207306, \"source\": {\"candidate_id\": 7}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"3 in 1 Window Cleaner\", \"observed_at\": \"2026-10-23T22:34:19.394892+00:00\", \"product_id\": null, \"reference_id\": \"candidate:6\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.27028241753578186, \"source\": {\"candidate_id\": 6}}], \"retrieval_unavailable\": false, \"source_ids\": {\"comments\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], \"text\": [], \"visual\": [2], \"web\": [5, 4]}, \"specific_terms\": [\"vacuum\", \"window\"], \"specificity\": {\"candidate_recurrence\": 0, \"caption_contradiction\": false, \"caption_literal_support\": false, \"comment_authors\": 0, \"comment_evidence_ids\": [], \"comment_recurrence\": 0, \"compound_tokens\": 3, \"contradicting_comment_ids\": [], \"known_head\": true, \"phrase\": \"window vacuum cleaner\", \"reason\": \"SPECIFIC_COMPOUND_WITH_CONTEXT\", \"specific\": true, \"specific_modifiers\": [\"window\", \"vacuum\"]}, \"text_candidate_supported\": false, \"text_caption_supported\": false, \"text_identity_specific\": false, \"text_supported\": false, \"visual_available\": true, \"visual_flow_status\": \"EVIDENCE_AVAILABLE\", \"visual_provider_evidence\": [{\"analysis\": {\"annotations\": [], \"api_host\": \"openrouter.ai\", \"data\": {\"assessment\": \"identified\", \"detected_objects\": [\"hand-held cleaning tool\", \"human hand\", \"wall tiles\", \"flowers\"], \"distinctive_features\": [\"grey rubber blade edge in a squeegee shape\", \"white plastic body with indicator light\", \"hand-held ergonomic form\", \"small indicator light illuminated\"], \"functional_description\": \"The device is designed to clean flat surfaces such as tiles or glass by removing water or cleaning solution via a squeegee blade, possibly suctioning or vacuuming liquid to prevent streaks or drips.\", \"possible_category\": \"Cleaning tools\", \"possible_product_names\": [{\"aliases\": [\"Window vacuum\", \"Window vacuum cleaner device\"], \"name\": \"Window vacuum cleaner\", \"supporting_features\": [\"squeegee blade edge\", \"hand-held design\", \"illuminated indicator light\"], \"uncertainties\": [\"exact cleaning technology not visible\"]}, {\"aliases\": [\"Glass cleaning tool\", \"Glass squeegee cleaner\"], \"name\": \"Glass cleaner device\", \"supporting_features\": [\"squeegee blade\", \"hand-held usage\", \"suitable for flat surfaces\"], \"uncertainties\": [\"device power source and cleaning method\"]}], \"quality\": {\"before_after_possible\": {\"reason\": \"No before or after effect is shown in the single image.\", \"status\": \"insufficient\"}, \"creative_repeatability_possible\": {\"reason\": \"No indication of a creative or repeatable process beyond typical cleaning use is shown.\", \"status\": \"insufficient\"}, \"demonstration_visibility\": {\"reason\": \"The device is shown in active hand-held use against a surface.\", \"status\": \"observed\"}, \"problem_solution_clarity\": {\"reason\": \"It's clear the device is for cleaning surfaces with water or moisture, but the exact cleaning method is not visible.\", \"status\": \"partial\"}, \"product_visibility\": {\"reason\": \"The main product is fully visible in hand-held use.\", \"status\": \"observed\"}, \"transformation_strength\": {\"reason\": \"No clear evidence of transformation or cleaning impact is visible in the single frame.\", \"status\": \"insufficient\"}, \"visual_novelty\": {\"reason\": \"No indication of novelty beyond common hand-held cleaning tools is visible.\", \"status\": \"insufficient\"}}, \"visual_description\": \"The image shows a hand-held cleaning device with a squeegee blade, held against a kitchen wall or backsplash with tile. The device has a white body with a grey rubber blade edge and a small illuminated indicator light on it. The device is being used near a kitchen counter with a flower arrangement visible in the background.\"}, \"model\": \"openai/gpt-4.1-mini\", \"response_id\": \"gen-1792794333-dJCgnyXchwGn2vcMcqQG\", \"usage\": {\"completion_tokens\": 471, \"completion_tokens_details\": {\"audio_tokens\": 0, \"image_tokens\": 0, \"reasoning_tokens\": 0}, \"cost\": 0.0010448, \"cost_details\": {\"upstream_inference_completions_cost\": 0.0007536, \"upstream_inference_cost\": 0.0010448, \"upstream_inference_prompt_cost\": 0.0002912}, \"is_byok\": false, \"prompt_tokens\": 728, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"video_tokens\": 0}, \"total_tokens\": 1199}}, \"evidence_id\": 2, \"model\": \"openai/gpt-4.1-mini\", \"multimodal\": {\"image_text_similarity\": 0.31409755974211895, \"model_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"retrieval\": [{\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Soap dispenser\", \"observed_at\": \"2026-10-23T22:30:50.124828+00:00\", \"product_id\": null, \"reference_id\": \"candidate:1\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.27313339710235596, \"source\": {\"candidate_id\": 1}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Portable Dryer\", \"observed_at\": \"2026-10-23T22:30:50.124828+00:00\", \"product_id\": null, \"reference_id\": \"candidate:7\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.2708134949207306, \"source\": {\"candidate_id\": 7}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"3 in 1 Window Cleaner\", \"observed_at\": \"2026-10-23T22:30:50.124828+00:00\", \"product_id\": null, \"reference_id\": \"candidate:6\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.27028241753578186, \"source\": {\"candidate_id\": 6}}], \"similarity_is_probability\": false}, \"provider\": \"vision_model\", \"text_cross_check\": {\"category_compatibility\": \"SUPPORTED\", \"category_context\": {\"category_confidence\": 0.5, \"category_evidence\": [{\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"comment\", \"source_id\": 126, \"text\": \"vacuum cleaner\", \"type\": \"comment\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.5}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"comment\", \"source_id\": 142, \"text\": \"Mini Vacuum Cleaner Price? very useful ✨\", \"type\": \"comment\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.5}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"unresolved_phrase\", \"source_id\": 1, \"text\": \"vacuum cleaner\", \"type\": \"unresolved\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.45}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"unresolved_phrase\", \"source_id\": 2, \"text\": \"Mini Vacuum Cleaner\", \"type\": \"unresolved\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.45}], \"category_status\": \"classified\", \"classifier_version\": \"category-classifier-v1\", \"human_review\": null, \"id\": 1, \"input_hash\": \"8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84\", \"observed_at\": \"2026-10-23T06:00:54.873885+00:00\", \"primary_category\": \"home\", \"primary_subcategory\": \"cleaning\", \"product_family\": \"cleaning tools\", \"taxonomy_version\": \"category-taxonomy-v1\", \"video_id\": 1}, \"conflicts\": [], \"context_did_not_enter_image_prompt\": true, \"reason\": \"Generic or non-matching context cannot confirm or refute the visual hypothesis\", \"status\": \"NEUTRAL\", \"support\": []}}, {\"analysis\": {\"annotations\": [], \"api_host\": \"openrouter.ai\", \"data\": {\"assessment\": \"identified\", \"detected_objects\": [\"hand-held cleaning tool\", \"human hand\", \"wall tiles\", \"flowers\"], \"distinctive_features\": [\"grey rubber blade edge in a squeegee shape\", \"white plastic body with indicator light\", \"hand-held ergonomic form\", \"small indicator light illuminated\"], \"functional_description\": \"The device is designed to clean flat surfaces such as tiles or glass by removing water or cleaning solution via a squeegee blade, possibly suctioning or vacuuming liquid to prevent streaks or drips.\", \"possible_category\": \"Cleaning tools\", \"possible_product_names\": [{\"aliases\": [\"Window vacuum\", \"Window vacuum cleaner device\"], \"name\": \"Window vacuum cleaner\", \"supporting_features\": [\"squeegee blade edge\", \"hand-held design\", \"illuminated indicator light\"], \"uncertainties\": [\"exact cleaning technology not visible\"]}, {\"aliases\": [\"Glass cleaning tool\", \"Glass squeegee cleaner\"], \"name\": \"Glass cleaner device\", \"supporting_features\": [\"squeegee blade\", \"hand-held usage\", \"suitable for flat surfaces\"], \"uncertainties\": [\"device power source and cleaning method\"]}], \"quality\": {\"before_after_possible\": {\"reason\": \"No before or after effect is shown in the single image.\", \"status\": \"insufficient\"}, \"creative_repeatability_possible\": {\"reason\": \"No indication of a creative or repeatable process beyond typical cleaning use is shown.\", \"status\": \"insufficient\"}, \"demonstration_visibility\": {\"reason\": \"The device is shown in active hand-held use against a surface.\", \"status\": \"observed\"}, \"problem_solution_clarity\": {\"reason\": \"It's clear the device is for cleaning surfaces with water or moisture, but the exact cleaning method is not visible.\", \"status\": \"partial\"}, \"product_visibility\": {\"reason\": \"The main product is fully visible in hand-held use.\", \"status\": \"observed\"}, \"transformation_strength\": {\"reason\": \"No clear evidence of transformation or cleaning impact is visible in the single frame.\", \"status\": \"insufficient\"}, \"visual_novelty\": {\"reason\": \"No indication of novelty beyond common hand-held cleaning tools is visible.\", \"status\": \"insufficient\"}}, \"visual_description\": \"The image shows a hand-held cleaning device with a squeegee blade, held against a kitchen wall or backsplash with tile. The device has a white body with a grey rubber blade edge and a small illuminated indicator light on it. The device is being used near a kitchen counter with a flower arrangement visible in the background.\"}, \"model\": \"openai/gpt-4.1-mini\", \"response_id\": \"gen-1792794333-dJCgnyXchwGn2vcMcqQG\", \"usage\": {\"completion_tokens\": 471, \"completion_tokens_details\": {\"audio_tokens\": 0, \"image_tokens\": 0, \"reasoning_tokens\": 0}, \"cost\": 0.0010448, \"cost_details\": {\"upstream_inference_completions_cost\": 0.0007536, \"upstream_inference_cost\": 0.0010448, \"upstream_inference_prompt_cost\": 0.0002912}, \"is_byok\": false, \"prompt_tokens\": 728, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"video_tokens\": 0}, \"total_tokens\": 1199}}, \"evidence_id\": 3, \"model\": \"openai/gpt-4.1-mini\", \"multimodal\": {\"image_text_similarity\": 0.28756441427114215, \"model_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"retrieval\": [{\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Soap dispenser\", \"observed_at\": \"2026-10-23T22:30:50.124828+00:00\", \"product_id\": null, \"reference_id\": \"candidate:1\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.27313339710235596, \"source\": {\"candidate_id\": 1}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"Portable Dryer\", \"observed_at\": \"2026-10-23T22:30:50.124828+00:00\", \"product_id\": null, \"reference_id\": \"candidate:7\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.2708134949207306, \"source\": {\"candidate_id\": 7}}, {\"embedding_kind\": \"text\", \"embedding_version\": \"openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad\", \"index_version\": \"3cab903facc842d2b7c05fb2ceb257c6\", \"name\": \"3 in 1 Window Cleaner\", \"observed_at\": \"2026-10-23T22:30:50.124828+00:00\", \"product_id\": null, \"reference_id\": \"candidate:6\", \"reference_kind\": \"CANDIDATE_REFERENCE\", \"similarity\": 0.27028241753578186, \"source\": {\"candidate_id\": 6}}], \"similarity_is_probability\": false}, \"provider\": \"vision_model\", \"text_cross_check\": {\"category_compatibility\": \"SUPPORTED\", \"category_context\": {\"category_confidence\": 0.5, \"category_evidence\": [{\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"comment\", \"source_id\": 126, \"text\": \"vacuum cleaner\", \"type\": \"comment\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.5}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"comment\", \"source_id\": 142, \"text\": \"Mini Vacuum Cleaner Price? very useful ✨\", \"type\": \"comment\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.5}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"unresolved_phrase\", \"source_id\": 1, \"text\": \"vacuum cleaner\", \"type\": \"unresolved\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.45}, {\"matched_term\": \"vacuum cleaner\", \"source_entity\": \"unresolved_phrase\", \"source_id\": 2, \"text\": \"Mini Vacuum Cleaner\", \"type\": \"unresolved\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"weight\": 0.45}], \"category_status\": \"classified\", \"classifier_version\": \"category-classifier-v1\", \"human_review\": null, \"id\": 1, \"input_hash\": \"8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84\", \"observed_at\": \"2026-10-23T06:00:54.873885+00:00\", \"primary_category\": \"home\", \"primary_subcategory\": \"cleaning\", \"product_family\": \"cleaning tools\", \"taxonomy_version\": \"category-taxonomy-v1\", \"video_id\": 1}, \"conflicts\": [], \"context_did_not_enter_image_prompt\": true, \"reason\": \"Generic or non-matching context cannot confirm or refute the visual hypothesis\", \"status\": \"NEUTRAL\", \"support\": []}}], \"visual_supported\": true, \"web_evidence\": [{\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.bosch-diy.com\", \"evidence_id\": 2, \"id\": 5, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"bosch-diy.com\", \"independence_reviewed\": 0, \"match_reason\": \"Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window vacuums for DIYers | Bosch DIY\", \"url\": \"https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums\", \"visual_compatible\": 0}, {\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.kaercher.com\", \"evidence_id\": 2, \"id\": 4, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"kaercher.com\", \"independence_reviewed\": 0, \"match_reason\": \"Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window Vac | K\\u000e4rcher International\", \"url\": \"https://www.kaercher.com/int/home-garden/window-vacs.html\", \"visual_compatible\": 0}, {\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.bosch-diy.com\", \"evidence_id\": 3, \"id\": 7, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"bosch-diy.com\", \"independence_reviewed\": 0, \"match_reason\": \"Suitable for all smooth surfaces including windows, mirrors, tiles, showers, and car windows.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window vacuums for DIYers | Bosch DIY\", \"url\": \"https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums\", \"visual_compatible\": 0}, {\"compatibility\": \"SUPPORTED\", \"contradiction\": 0, \"domain\": \"www.kaercher.com\", \"evidence_id\": 3, \"id\": 6, \"independence_basis\": \"publisher_domain_only_not_human_verified\", \"independence_group\": \"kaercher.com\", \"independence_reviewed\": 0, \"match_reason\": \"Designed for cleaning windows, mirrors, showers, hobs, glass tables, and other smooth surfaces.\", \"observed_at\": \"2026-10-23T22:25:32.522989+00:00\", \"possible_match\": 1, \"product_name\": \"Cordless window vacuum cleaner\", \"source\": \"automatic_cited_web_search\", \"title\": \"Window Vac | K\\u000e4rcher International\", \"url\": \"https://www.kaercher.com/int/home-garden/window-vacs.html\", \"visual_compatible\": 0}]}}",
+    "created_at": "2026-10-23T22:34:19.397893+00:00"
+  }
+}

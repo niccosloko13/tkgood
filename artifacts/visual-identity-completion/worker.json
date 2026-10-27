@@ -1,0 +1,355 @@
+{
+  "results": [],
+  "visual_summary": {
+    "available_assets": 1,
+    "needs_visual": 44,
+    "visual_processed": 1,
+    "running": 0,
+    "lens_assisted_required": 1,
+    "visual_hypotheses": 2,
+    "confirmed": 0,
+    "conflicted": 1,
+    "providers": {
+      "vision_model": {
+        "status": "AVAILABLE_AUTOMATIC",
+        "provider": "openrouter.ai"
+      },
+      "google_lens_assisted": {
+        "status": "AVAILABLE_ASSISTED",
+        "workflow_status": "LENS_ASSISTED_REQUIRED"
+      },
+      "google_lens_automatic": {
+        "status": "UNAVAILABLE"
+      }
+    },
+    "queue": [
+      {
+        "video_id": 3,
+        "priority": "A",
+        "reason": "REVIEW_WITHOUT_VISUAL_EVIDENCE",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 9,
+        "priority": "A",
+        "reason": "REVIEW_WITHOUT_VISUAL_EVIDENCE",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 10,
+        "priority": "A",
+        "reason": "REVIEW_WITHOUT_VISUAL_EVIDENCE",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 13,
+        "priority": "A",
+        "reason": "REVIEW_WITHOUT_VISUAL_EVIDENCE",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 15,
+        "priority": "A",
+        "reason": "REVIEW_WITHOUT_VISUAL_EVIDENCE",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 2,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 4,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 5,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 6,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 7,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 8,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 11,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 12,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 14,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 17,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 18,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 19,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 20,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 21,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 22,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 23,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 24,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 25,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 26,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 27,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 28,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 29,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 30,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 31,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 32,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 33,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 34,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 35,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 36,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 37,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 38,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 41,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 42,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 43,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 44,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 45,
+        "priority": "C",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 16,
+        "priority": "D",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 39,
+        "priority": "D",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      },
+      {
+        "video_id": 40,
+        "priority": "D",
+        "reason": "UNRESOLVED_VISUAL_GAP",
+        "local_asset": null,
+        "visual_status": "LOCAL_ASSET_REQUIRED"
+      }
+    ],
+    "hypotheses": [
+      {
+        "video_id": 1,
+        "evidence_id": 2,
+        "name": "Window vacuum cleaner",
+        "review_status": "suggested"
+      },
+      {
+        "video_id": 1,
+        "evidence_id": 3,
+        "name": "Glass cleaner device",
+        "review_status": "suggested"
+      }
+    ]
+  },
+  "counts": {
+    "AUTO": 0,
+    "REVIEW": 6,
+    "UNRESOLVED": 39
+  }
+}

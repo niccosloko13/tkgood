@@ -1,0 +1,9 @@
+{
+  "version": "controlled-discovery-v1",
+  "max_scrolls": 5,
+  "max_new_videos": 30,
+  "max_unique_videos": 30,
+  "max_runtime_seconds": 90,
+  "stagnant_cycles": 2,
+  "enrichment_sample_limit": 10
+}

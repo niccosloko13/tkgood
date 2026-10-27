@@ -1,0 +1,4756 @@
+[
+  {
+    "path": "artifacts/authenticated-dom-detection/checkpoint.db",
+    "size": 7671808,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 50
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1516
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 236
+      },
+      {
+        "table": "intelligence_dimension_snapshots",
+        "count": 135
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 318
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "safe_collection_batches",
+        "count": 0
+      },
+      {
+        "table": "safe_recovery_checks",
+        "count": 8
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "trend_snapshot_sources",
+        "count": 392
+      },
+      {
+        "table": "trend_snapshots",
+        "count": 392
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/command-api-mismatch/checkpoint.db",
+    "size": 7655424,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 44
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1475
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 236
+      },
+      {
+        "table": "intelligence_dimension_snapshots",
+        "count": 135
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 318
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "safe_collection_batches",
+        "count": 0
+      },
+      {
+        "table": "safe_recovery_checks",
+        "count": 4
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "trend_snapshot_sources",
+        "count": 392
+      },
+      {
+        "table": "trend_snapshots",
+        "count": 392
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/connection-panel-fix/checkpoint.db",
+    "size": 7671808,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 49
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1503
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 236
+      },
+      {
+        "table": "intelligence_dimension_snapshots",
+        "count": 135
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 318
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "safe_collection_batches",
+        "count": 0
+      },
+      {
+        "table": "safe_recovery_checks",
+        "count": 7
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "trend_snapshot_sources",
+        "count": 392
+      },
+      {
+        "table": "trend_snapshots",
+        "count": 392
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/core-activation/checkpoint.db",
+    "size": 3932160,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1352
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 94
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 178
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 181
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 1
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/discovery-recovery/checkpoint-20261023T150103Z.db",
+    "size": 3297280,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 41
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1303
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 4
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/intelligence-core-consolidation/checkpoint.db",
+    "size": 3358720,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1343
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 1
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/local-visual-assets/checkpoint.db",
+    "size": 3346432,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1337
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 0
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 1
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/offline-intelligence/checkpoint.db",
+    "size": 3297280,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1323
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/safe-collection-recovery/checkpoint.db",
+    "size": 7630848,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1390
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 236
+      },
+      {
+        "table": "intelligence_dimension_snapshots",
+        "count": 135
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 318
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "trend_snapshot_sources",
+        "count": 392
+      },
+      {
+        "table": "trend_snapshots",
+        "count": 392
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/trend-history-v1/checkpoint.db",
+    "size": 7221248,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1381
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 236
+      },
+      {
+        "table": "intelligence_dimension_snapshots",
+        "count": 135
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 318
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/virality-quality-v1/checkpoint.db",
+    "size": 5525504,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1375
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 236
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 318
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/visual-identification/checkpoint.db",
+    "size": 3297280,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1326
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "artifacts/visual-identity-completion/checkpoint.db",
+    "size": 5091328,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 42
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1362
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 45
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 232
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 10
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 358
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 316
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 3
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 5
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 45
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 1
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 0
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.db",
+    "size": 8572928,
+    "tables": [
+      {
+        "table": "blocked_targets",
+        "count": 1
+      },
+      {
+        "table": "bridge_commands",
+        "count": 109
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 31
+      },
+      {
+        "table": "detection_benchmark_runs",
+        "count": 6
+      },
+      {
+        "table": "dev_commands",
+        "count": 67
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 265
+      },
+      {
+        "table": "events",
+        "count": 1766
+      },
+      {
+        "table": "gold_candidate_reviews",
+        "count": 6
+      },
+      {
+        "table": "gold_review_history",
+        "count": 16
+      },
+      {
+        "table": "gold_video_labels",
+        "count": 53
+      },
+      {
+        "table": "human_category_reviews",
+        "count": 0
+      },
+      {
+        "table": "intelligence_cache_stats",
+        "count": 1
+      },
+      {
+        "table": "intelligence_decisions",
+        "count": 237
+      },
+      {
+        "table": "intelligence_dimension_snapshots",
+        "count": 136
+      },
+      {
+        "table": "intelligence_embeddings",
+        "count": 13
+      },
+      {
+        "table": "intelligence_entities",
+        "count": 0
+      },
+      {
+        "table": "intelligence_entity_observations",
+        "count": 0
+      },
+      {
+        "table": "intelligence_job_history",
+        "count": 360
+      },
+      {
+        "table": "intelligence_jobs",
+        "count": 320
+      },
+      {
+        "table": "intelligence_matches",
+        "count": 0
+      },
+      {
+        "table": "intelligence_retrievals",
+        "count": 15
+      },
+      {
+        "table": "intelligence_reviews",
+        "count": 0
+      },
+      {
+        "table": "manual_captcha_recoveries",
+        "count": 1
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "navigation_challenge_contexts",
+        "count": 2
+      },
+      {
+        "table": "night_discovery_checkpoints",
+        "count": 1
+      },
+      {
+        "table": "night_discovery_runs",
+        "count": 1
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "safe_collection_batches",
+        "count": 4
+      },
+      {
+        "table": "safe_query_metrics",
+        "count": 6
+      },
+      {
+        "table": "safe_recovery_checks",
+        "count": 19
+      },
+      {
+        "table": "safe_search_diagnostics",
+        "count": 4
+      },
+      {
+        "table": "safe_stage2_authorizations",
+        "count": 1
+      },
+      {
+        "table": "safe_stage2_resumptions",
+        "count": 1
+      },
+      {
+        "table": "schema_migrations",
+        "count": 4
+      },
+      {
+        "table": "search_captures",
+        "count": 30
+      },
+      {
+        "table": "search_observations",
+        "count": 203
+      },
+      {
+        "table": "search_only_intelligence",
+        "count": 53
+      },
+      {
+        "table": "selective_items",
+        "count": 5
+      },
+      {
+        "table": "selective_runs",
+        "count": 2
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 9
+      },
+      {
+        "table": "target_block_events",
+        "count": 1
+      },
+      {
+        "table": "temporary_target_quarantines",
+        "count": 1
+      },
+      {
+        "table": "trend_snapshot_sources",
+        "count": 428
+      },
+      {
+        "table": "trend_snapshots",
+        "count": 428
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_category_classifications",
+        "count": 70
+      },
+      {
+        "table": "video_creators",
+        "count": 45
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 22
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 53
+      },
+      {
+        "table": "visual_asset_selections",
+        "count": 1
+      },
+      {
+        "table": "visual_assisted_sessions",
+        "count": 0
+      },
+      {
+        "table": "visual_gold_assessments",
+        "count": 0
+      },
+      {
+        "table": "visual_image_assets",
+        "count": 1
+      },
+      {
+        "table": "visual_pilot_items",
+        "count": 14
+      },
+      {
+        "table": "visual_pilots",
+        "count": 4
+      },
+      {
+        "table": "visual_product_evidence",
+        "count": 3
+      },
+      {
+        "table": "visual_product_search_evidence",
+        "count": 7
+      },
+      {
+        "table": "visual_review_history",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_backlog.db",
+    "size": 2576384,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 94
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 64
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "comment_observations",
+        "count": 202
+      },
+      {
+        "table": "comment_samples",
+        "count": 11
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 28
+      },
+      {
+        "table": "dev_commands",
+        "count": 41
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "events",
+        "count": 1199
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 64
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 19
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 1
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 3
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 38
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 20
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_benchmark.db",
+    "size": 2863104,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "dev_commands",
+        "count": 41
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1258
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 10
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 3
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 4
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_corroboration.db",
+    "size": 925696,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 70
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 26
+      },
+      {
+        "table": "comment_observations",
+        "count": 149
+      },
+      {
+        "table": "comment_samples",
+        "count": 9
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 20
+      },
+      {
+        "table": "creators",
+        "count": 8
+      },
+      {
+        "table": "dev_commands",
+        "count": 29
+      },
+      {
+        "table": "events",
+        "count": 799
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 7
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 26
+      },
+      {
+        "table": "product_candidates",
+        "count": 7
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 8
+      },
+      {
+        "table": "schema_migrations",
+        "count": 1
+      },
+      {
+        "table": "search_captures",
+        "count": 11
+      },
+      {
+        "table": "search_observations",
+        "count": 32
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 13
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 18
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_discovery.db",
+    "size": 1404928,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 70
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 26
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 26
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "comment_observations",
+        "count": 149
+      },
+      {
+        "table": "comment_samples",
+        "count": 9
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 20
+      },
+      {
+        "table": "creators",
+        "count": 8
+      },
+      {
+        "table": "dev_commands",
+        "count": 30
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 0
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 0
+      },
+      {
+        "table": "discovery_steps",
+        "count": 0
+      },
+      {
+        "table": "events",
+        "count": 822
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 7
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 26
+      },
+      {
+        "table": "product_candidates",
+        "count": 7
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 66
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 14
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 1
+      },
+      {
+        "table": "search_captures",
+        "count": 11
+      },
+      {
+        "table": "search_observations",
+        "count": 32
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 2
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 13
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 18
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 0
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_persistent_runtime.db",
+    "size": 1806336,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 84
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 41
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 26
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "comment_observations",
+        "count": 172
+      },
+      {
+        "table": "comment_samples",
+        "count": 10
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 21
+      },
+      {
+        "table": "creators",
+        "count": 10
+      },
+      {
+        "table": "dev_commands",
+        "count": 34
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 8
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 5
+      },
+      {
+        "table": "discovery_steps",
+        "count": 3
+      },
+      {
+        "table": "events",
+        "count": 1113
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 7
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 41
+      },
+      {
+        "table": "product_candidates",
+        "count": 7
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 105
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 17
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 19
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 1
+      },
+      {
+        "table": "search_captures",
+        "count": 14
+      },
+      {
+        "table": "search_observations",
+        "count": 56
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 2
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 15
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 19
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 2
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_resolver.db",
+    "size": 2756608,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "candidate_semantic_history",
+        "count": 16
+      },
+      {
+        "table": "candidate_semantics",
+        "count": 8
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "dev_commands",
+        "count": 41
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1252
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_identity_evidence",
+        "count": 0
+      },
+      {
+        "table": "product_identity_pairs",
+        "count": 5
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 2
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 4
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      }
+    ]
+  },
+  {
+    "path": "data/product_hunter.pre_semantics.db",
+    "size": 2674688,
+    "tables": [
+      {
+        "table": "bridge_commands",
+        "count": 98
+      },
+      {
+        "table": "candidate_evidence_groups",
+        "count": 65
+      },
+      {
+        "table": "candidate_reference_urls",
+        "count": 32
+      },
+      {
+        "table": "candidate_relationships",
+        "count": 5
+      },
+      {
+        "table": "comment_observations",
+        "count": 232
+      },
+      {
+        "table": "comment_samples",
+        "count": 12
+      },
+      {
+        "table": "creator_profile_observations",
+        "count": 22
+      },
+      {
+        "table": "creators",
+        "count": 29
+      },
+      {
+        "table": "dev_commands",
+        "count": 41
+      },
+      {
+        "table": "discovery_session_videos",
+        "count": 68
+      },
+      {
+        "table": "discovery_sessions",
+        "count": 7
+      },
+      {
+        "table": "discovery_steps",
+        "count": 13
+      },
+      {
+        "table": "enrichment_batches",
+        "count": 2
+      },
+      {
+        "table": "enrichment_stages",
+        "count": 225
+      },
+      {
+        "table": "events",
+        "count": 1249
+      },
+      {
+        "table": "missions",
+        "count": 2
+      },
+      {
+        "table": "product_candidate_aliases",
+        "count": 8
+      },
+      {
+        "table": "product_candidate_evidence",
+        "count": 65
+      },
+      {
+        "table": "product_candidates",
+        "count": 8
+      },
+      {
+        "table": "product_detection_gaps",
+        "count": 179
+      },
+      {
+        "table": "product_detection_runs",
+        "count": 22
+      },
+      {
+        "table": "product_video_detection_state",
+        "count": 45
+      },
+      {
+        "table": "product_vocabulary_reviews",
+        "count": 0
+      },
+      {
+        "table": "product_vocabulary_state",
+        "count": 1
+      },
+      {
+        "table": "product_vocabulary_terms",
+        "count": 0
+      },
+      {
+        "table": "schema_migrations",
+        "count": 1
+      },
+      {
+        "table": "search_captures",
+        "count": 24
+      },
+      {
+        "table": "search_observations",
+        "count": 167
+      },
+      {
+        "table": "sqlite_sequence",
+        "count": 11
+      },
+      {
+        "table": "system_state",
+        "count": 4
+      },
+      {
+        "table": "unresolved_phrase_observations",
+        "count": 4
+      },
+      {
+        "table": "unresolved_product_phrases",
+        "count": 2
+      },
+      {
+        "table": "video_creators",
+        "count": 41
+      },
+      {
+        "table": "video_detail_observations",
+        "count": 21
+      },
+      {
+        "table": "video_enrichment_queue",
+        "count": 28
+      },
+      {
+        "table": "video_observations",
+        "count": 8
+      },
+      {
+        "table": "videos",
+        "count": 45
+      }
+    ]
+  }
+]

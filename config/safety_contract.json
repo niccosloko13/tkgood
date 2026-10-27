@@ -1,0 +1,6 @@
+{
+  "version": "babi-safety-v1",
+  "page_states": ["HEALTHY", "LOADING", "CHALLENGE", "LOGGED_OUT", "ERROR", "UNKNOWN"],
+  "security_states": ["OK", "TARGET_BLOCKED", "GLOBAL_BLOCKED"],
+  "principles": ["evidence only; no new detector", "no automatic clearance", "no retry against hard stops", "loading is a bounded hold", "target block never authorizes that target", "safety never computes intelligence"]
+}

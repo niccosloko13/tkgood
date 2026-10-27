@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-10-23T16:22:10.119447+00:00",
+  "bridge": {
+    "extension_version": "0.1.5",
+    "companion_version": "0.1.5",
+    "build_id": "1db642b5c5e17f10",
+    "current_url": "https://www.tiktok.com/",
+    "page_title": "(38)TikTok - Make Your Day",
+    "authenticated_hint": false,
+    "page_ready_state": null,
+    "has_search_ui": false,
+    "playback_error_visible": false,
+    "tab_id": 618200292,
+    "window_id": 618199843,
+    "tiktok_tab_count": 1,
+    "document_visibility": null,
+    "window_state": "maximized",
+    "window_width": 1552,
+    "window_height": 832,
+    "tab_active": false,
+    "security_stop": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "security_stop_observed_at": "2026-10-22T12:25:59.604Z",
+    "current_page_status": "unknown",
+    "tiktok_session_status": "unconfirmed",
+    "session_evidence": [],
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "version": "0.1.5",
+    "chrome_connected": true,
+    "tiktok_open": true,
+    "connected": true,
+    "last_seen": "2026-10-23T16:22:07.431835+00:00",
+    "url": "https://www.tiktok.com/",
+    "title": "(38)TikTok - Make Your Day",
+    "page_signals": {
+      "ready_state": null,
+      "has_search": false,
+      "playback_error_visible": false,
+      "content_script_connected": false
+    },
+    "_updated_at": "2026-10-23T16:22:07.490183+00:00",
+    "companion_connected": true,
+    "heartbeat_fresh": true,
+    "security_stop_active": true,
+    "failed_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "extension_connected": true
+  },
+  "security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "observed_at": "2026-10-22T12:25:59.604Z",
+    "_updated_at": "2026-10-22T12:25:59.623002+00:00"
+  },
+  "recent_dev_jobs": [
+    {
+      "id": "8e7bb34c70f74f30e53a1a5fa4b425bf",
+      "type": "DEV_RELOAD_EXTENSION",
+      "status": "SUCCEEDED",
+      "created_at": "2026-10-22T11:59:31.577401+00:00",
+      "updated_at": "2026-10-22T11:59:34.785908+00:00",
+      "detail": "Companion ready; existing TikTok tabs refreshed",
+      "build_id": "d0d95f70d86508ef",
+      "refreshed_tabs": 1
+    },
+    {
+      "id": "22b82d4f4cbf558bf013de23b6210554",
+      "type": "DEV_RELOAD_EXTENSION",
+      "status": "SUCCEEDED",
+      "created_at": "2026-10-22T11:53:00.640394+00:00",
+      "updated_at": "2026-10-22T11:53:04.076460+00:00",
+      "detail": "Companion ready; existing TikTok tabs refreshed",
+      "build_id": "b5ce88cce50527b2",
+      "refreshed_tabs": 1
+    },
+    {
+      "id": "4a75ff08ecd6e1ca289adae1bac25a6d",
+      "type": "DEV_RELOAD_EXTENSION",
+      "status": "SUCCEEDED",
+      "created_at": "2026-10-22T11:52:22.867251+00:00",
+      "updated_at": "2026-10-22T11:52:24.952425+00:00",
+      "detail": "Companion ready; existing TikTok tabs refreshed",
+      "build_id": "f60562abd86ba2a8",
+      "refreshed_tabs": 1
+    },
+    {
+      "id": "c1f175aa4e97640e8fff0cd105ad8ba1",
+      "type": "DEV_RELOAD_EXTENSION",
+      "status": "SUCCEEDED",
+      "created_at": "2026-10-22T11:49:40.235800+00:00",
+      "updated_at": "2026-10-22T11:49:41.903946+00:00",
+      "detail": "Companion ready; existing TikTok tabs refreshed",
+      "build_id": "b3c14fdc12635e96",
+      "refreshed_tabs": 1
+    },
+    {
+      "id": "ebf8ea674befcd174a7190689fabf1ca",
+      "type": "DEV_RELOAD_EXTENSION",
+      "status": "SUCCEEDED",
+      "created_at": "2026-10-22T11:48:08.072558+00:00",
+      "updated_at": "2026-10-22T11:48:13.512148+00:00",
+      "detail": "Companion ready; existing TikTok tabs refreshed",
+      "build_id": "4da2d1f44b73794d",
+      "refreshed_tabs": 1
+    }
+  ]
+}

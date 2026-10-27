@@ -1,0 +1,2554 @@
+[
+  {
+    "video_id": 2,
+    "platform_video_id": "7537701539553496334",
+    "caption": "Easy to clean kitchen😏 #gadgets",
+    "creator": "@airlandolists",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": true,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 2,
+      "video_id": 2,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "060adc93a271697c8ab05ba2588d97c9f84bbc9e3d2c36388cfa227c0cd34a37",
+      "observed_at": "2026-10-23T06:00:54.875885+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 4,
+    "platform_video_id": "7688040645037952278",
+    "caption": "🔗Link in bio. Amazon Home Finds",
+    "creator": "@goodfinds366",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": true,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 4,
+      "video_id": 4,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "c14b93de41464c9ed87d13bc235783b33f3d6271c59d78cebbca875d3aeb43ad",
+      "observed_at": "2026-10-23T06:00:54.888906+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "noise_filtered",
+      "explanation": "Caption consists only of promotional or navigation noise"
+    }
+  },
+  {
+    "video_id": 5,
+    "platform_video_id": "7505858880568691970",
+    "caption": null,
+    "creator": null,
+    "has_caption": false,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": false,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "no_text",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 5,
+      "video_id": 5,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "2a97bb654a28465db7435168a6ce26b449102760e2bbfab6b04a0cc39467a5ff",
+      "observed_at": "2026-10-23T06:00:54.888906+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "A",
+    "group_name": "missing_data",
+    "group_tags": [
+      "A",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "no_text",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "no_text",
+      "explanation": "No useful persisted caption or sampled comment text"
+    }
+  },
+  {
+    "video_id": 6,
+    "platform_video_id": "7672558839388048661",
+    "caption": "Você esqueceu de desconectar?",
+    "creator": "@megashopping39",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": true,
+    "persisted_comments_count": 30,
+    "comments_count": 15,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": true,
+    "buy_signals": {
+      "comment_buy_terms": 2,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 6,
+      "video_id": 6,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "9d1f2f54f3b471f4ec0b696f2b11d60caff8a4a0d42480fda81de5fca32dc37a",
+      "observed_at": "2026-10-23T06:00:54.891907+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 11,
+    "platform_video_id": "7628036818079976735",
+    "caption": null,
+    "creator": null,
+    "has_caption": false,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": false,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "no_text",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 11,
+      "video_id": 11,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "a6f541686c830075f59c9a3ad26ec3b6f859f95c902f0a35b12c3b8c442fc455",
+      "observed_at": "2026-10-23T06:00:54.897906+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "A",
+    "group_name": "missing_data",
+    "group_tags": [
+      "A",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "no_text",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "no_text",
+      "explanation": "No useful persisted caption or sampled comment text"
+    }
+  },
+  {
+    "video_id": 12,
+    "platform_video_id": "7698002338652507405",
+    "caption": "Easy to dry clothes in house😏 #gadgets",
+    "creator": "@airlandolists",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": true,
+    "persisted_comments_count": 59,
+    "comments_count": 10,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": true,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue",
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 12,
+      "video_id": 12,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "f7fe636e8db40485608fedc59a1d0996af39ea5f3c07f47acba6ae4366880dab",
+      "observed_at": "2026-10-23T06:00:54.900884+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 14,
+    "platform_video_id": "7639794804339019022",
+    "caption": "🔗In Bio! Kitchen Gadgeg I Use Daily🥚🤍",
+    "creator": "@elnazhamai",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 14,
+      "video_id": 14,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "287480ac5d3e8bec2a18d591d22c1d57bf69264404efd2849fe4757202a8eb7b",
+      "observed_at": "2026-10-23T06:00:54.904883+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "generic_only",
+      "explanation": "Promotional context removed; remaining text is only a generic category"
+    }
+  },
+  {
+    "video_id": 29,
+    "platform_video_id": "7572955043016559894",
+    "caption": "No more stirring! 🌪️☕",
+    "creator": "@alexfindsbest",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 29,
+      "video_id": 29,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "412ea071ac0ee879a1e8aa76f6aeb45b6aa9ec35ad5d936813f11771d63bff33",
+      "observed_at": "2026-10-23T06:00:54.919910+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 30,
+    "platform_video_id": "7698771758421118221",
+    "caption": "Easy to store eggs😏",
+    "creator": "@airlandolists",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 30,
+      "video_id": 30,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "a6fe40d2f60042119d9344bf2371d7f5d07f6eef3090d3a1cae52b6e5991aba9",
+      "observed_at": "2026-10-23T06:00:54.920907+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 33,
+    "platform_video_id": "7695041251682422030",
+    "caption": "Easy to store peppers😏",
+    "creator": "@airlandolists",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 33,
+      "video_id": 33,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "e4e9ce21114893a68a64420b7028aab1e216a91ac972e5b0b75dcaa024e10534",
+      "observed_at": "2026-10-23T06:00:54.922904+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 34,
+    "platform_video_id": "7673302468435954945",
+    "caption": "Prep like a pro, without doing the work 🔪🥑 Say goodbye to chopping by hand.",
+    "creator": "@layzguyprocessing",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 34,
+      "video_id": 34,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "90b0c7e6f7bed2722a537e179a9ebe695f873cbeb2eef00a733a322d11737f7c",
+      "observed_at": "2026-10-23T06:00:54.923904+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 35,
+    "platform_video_id": "7697638524341865742",
+    "caption": "Easy to squeeze out toothpaste😏",
+    "creator": "@airlandolists",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 35,
+      "video_id": 35,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "4c9f90018172327e4244aabb05c6dac2d18b32a6f036e7cec960559a77fe7706",
+      "observed_at": "2026-10-23T06:00:54.924885+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 38,
+    "platform_video_id": "7675686037334592782",
+    "caption": "Watching this thing slice is way too satisfying 🥕⚡ Just feed it in and the slices keep coming.",
+    "creator": "@fendo977",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 38,
+      "video_id": 38,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "20090488bfdf9a8baa80451f2ea52481e08317f07125e1ce407322bcef1928d0",
+      "observed_at": "2026-10-23T06:00:54.926906+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 43,
+    "platform_video_id": "7694173456987983156",
+    "caption": "Interruptor de um clique! Muito fácil de usar, até quem não tem prática na cozinha consegue. Triture temperos e grãos em segundos. Design moderno e tampa transparente para você ver o resultado!",
+    "creator": "@hh5ebk4",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "caption_product_function_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 43,
+      "video_id": 43,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "3dd889654454eac1b6eeaeea9c6f75699ade1b9af8339a6ef7d7e76ed8261bc4",
+      "observed_at": "2026-10-23T06:00:54.938887+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "HIGH",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 1,
+    "platform_video_id": "7462746836533677358",
+    "caption": "Easy to remove the stains😏 #gadgets",
+    "creator": "@airlandolists",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": true,
+    "persisted_comments_count": 60,
+    "comments_count": 30,
+    "has_creator": true,
+    "has_unresolved": true,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": true,
+    "buy_signals": {
+      "comment_buy_terms": 3,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "persisted_unresolved_phrase",
+      "caption_product_function_cue",
+      "existing_human_presence_review"
+    ],
+    "category_status": "classified",
+    "category": {
+      "id": 1,
+      "video_id": 1,
+      "primary_category": "home",
+      "primary_subcategory": "cleaning",
+      "product_family": "cleaning tools",
+      "category_status": "classified",
+      "category_confidence": 0.5,
+      "category_evidence": [
+        {
+          "matched_term": "vacuum cleaner",
+          "source_entity": "comment",
+          "source_id": 126,
+          "text": "vacuum cleaner",
+          "type": "comment",
+          "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+          "weight": 0.5
+        },
+        {
+          "matched_term": "vacuum cleaner",
+          "source_entity": "comment",
+          "source_id": 142,
+          "text": "Mini Vacuum Cleaner Price? very useful ✨",
+          "type": "comment",
+          "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+          "weight": 0.5
+        },
+        {
+          "matched_term": "vacuum cleaner",
+          "source_entity": "unresolved_phrase",
+          "source_id": 1,
+          "text": "vacuum cleaner",
+          "type": "unresolved",
+          "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+          "weight": 0.45
+        },
+        {
+          "matched_term": "vacuum cleaner",
+          "source_entity": "unresolved_phrase",
+          "source_id": 2,
+          "text": "Mini Vacuum Cleaner",
+          "type": "unresolved",
+          "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+          "weight": 0.45
+        }
+      ],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84",
+      "observed_at": "2026-10-23T06:00:54.873885+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [
+      {
+        "id": 2,
+        "raw_phrase": "Mini Vacuum Cleaner",
+        "status": "pending"
+      },
+      {
+        "id": 1,
+        "raw_phrase": "vacuum cleaner",
+        "status": "pending"
+      }
+    ],
+    "primary_group": "C",
+    "group_name": "possible_visual_product",
+    "group_tags": [
+      "B",
+      "C"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "has_unresolved",
+        "candidate_missing",
+        "generic_or_functional"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "unknown_product_phrase",
+      "explanation": "Unverified noun-like phrase outside the approved detector vocabulary"
+    }
+  },
+  {
+    "video_id": 18,
+    "platform_video_id": "7663847349050985742",
+    "caption": "🚚 Free Shipping Today! 360° Rotating Faucet Filter Set 💦",
+    "creator": "@kingkyhu9da",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": true,
+    "persisted_comments_count": 23,
+    "comments_count": 23,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": true,
+    "buy_signals": {
+      "comment_buy_terms": 3,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 18,
+      "video_id": 18,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "968afe024a9b4dd3d1dd5b933f832e480de44dded1ccb6486235806a2f5edab0",
+      "observed_at": "2026-10-23T06:00:54.912926+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 21,
+    "platform_video_id": "7696875163178110224",
+    "caption": "Mosquito Coil Box Home Gadgets Make your Life Easier... Home Appliances Smart Tech Gadgets 😍",
+    "creator": "@wareviews",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 21,
+      "video_id": 21,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "9a609b674743b57dbfef7802e5547365099aaf9771a2ba25cd419376ca34e92c",
+      "observed_at": "2026-10-23T06:00:54.914903+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 25,
+    "platform_video_id": "7663541311957372168",
+    "caption": "Difusor Aromatizador de ambientes!!!",
+    "creator": "@vvivistore",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 25,
+      "video_id": 25,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "20e6ec43d8ccb4c3c64e4bde28ab67aa2e984e7c63b94a9ae19f0beeba9973e4",
+      "observed_at": "2026-10-23T06:00:54.915884+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 28,
+    "platform_video_id": "7675904047030766868",
+    "caption": "👟✨ Chega de sapato úmido e com mau cheiro! Esse secador elétrico portátil deixa seus calçados secos de forma prática e ainda conta com 4 modos de temporizador. 🔥💨 Garanta já o seu no carrinho laranja! 🛒",
+    "creator": "@radardosachados97",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 28,
+      "video_id": 28,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "047541cb1ae0d59978f55bd96b456a8b89f0c4be33d1d25c6031edef1c6bf0a4",
+      "observed_at": "2026-10-23T06:00:54.918914+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 31,
+    "platform_video_id": "7677643118593789197",
+    "caption": "🔗In Bio! Wash & Store Colander 🍓🍇💚",
+    "creator": "@elnazhamai",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 31,
+      "video_id": 31,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "ab190378ee4fcb58105790ab6203cd54af8b2b377a2d74e32a1181cd109d8b6b",
+      "observed_at": "2026-10-23T06:00:54.921911+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 32,
+    "platform_video_id": "7681992973587975445",
+    "caption": "Rodinho absorvente de pia que limpa, absorve com praticidade e eficiência sem pano podi na pia da cozinha! Usou é só enxaguar e ele torce sozinho 🤌🏻",
+    "creator": "@ghclazmzhqjq",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 32,
+      "video_id": 32,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "8d159ccd4977749c086a1cd426e3be113f7dfc7fdd64ea39147cd0120992b36e",
+      "observed_at": "2026-10-23T06:00:54.922904+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 36,
+    "platform_video_id": "7695826187506994445",
+    "caption": "🔗In Bio! Cookie Press Set🍪🤍",
+    "creator": "@elnazhamai",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 36,
+      "video_id": 36,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "628d755a7cefc7f05edda3ef0eab17145b38f7902d1264088faeaf75e3bffcdd",
+      "observed_at": "2026-10-23T06:00:54.925907+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 37,
+    "platform_video_id": "7656867972094381325",
+    "caption": "2-in-1 Ceiling Fan with Light",
+    "creator": "@tkjusticebuy",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 37,
+      "video_id": 37,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "e4cb4ce84adf17280a590372a5c01fe399ff46be3ed290fe242fed9fda9f1044",
+      "observed_at": "2026-10-23T06:00:54.926906+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 41,
+    "platform_video_id": "7642072920306634014",
+    "caption": "professional juicer machine available - link 🔗 in the bio",
+    "creator": "@home.appliances513",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 41,
+      "video_id": 41,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "53055573d844b9c47d05df545b1f6f8a34823107165adbd207be3db80a7c0476",
+      "observed_at": "2026-10-23T06:00:54.937904+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 44,
+    "platform_video_id": "7637186594922958093",
+    "caption": "Ultra-Sharp Grater #gadgets",
+    "creator": "@tkjusticebuy",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 44,
+      "video_id": 44,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "aa238505bae633b4373ff9136be776e41ea31ad705d306e4d0451009c536055e",
+      "observed_at": "2026-10-23T06:00:54.939885+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 45,
+    "platform_video_id": "7640163903044979982",
+    "caption": "🔗In Bio! Motion Sensor Lights💡✨💛",
+    "creator": "@elnazhamai",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "descriptive",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "explicit_caption_noun_cue"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 45,
+      "video_id": 45,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "0e13ce27a597d4e871827f822b20f920fd0aa07614481b629b9fe37ff8c64382",
+      "observed_at": "2026-10-23T06:00:54.940918+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "F",
+    "group_name": "possible_classifier_coverage_gap",
+    "group_tags": [
+      "F"
+    ],
+    "visual": {
+      "priority": "MEDIUM",
+      "reasons": [
+        "has_thumbnail",
+        "likely_product",
+        "candidate_missing",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 7,
+    "platform_video_id": "7689057449575337238",
+    "caption": null,
+    "creator": null,
+    "has_caption": false,
+    "has_thumbnail": false,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": false,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "no_text",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 7,
+      "video_id": 7,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "fac678449654779a8173bb29068dd9e2d61b4521cd59916cf02439bf1776c990",
+      "observed_at": "2026-10-23T06:00:54.892918+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "A",
+    "group_name": "missing_data",
+    "group_tags": [
+      "A"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "likely_product",
+        "candidate_missing",
+        "no_text",
+        "comments_insufficient",
+        "category_unclassified",
+        "thumbnail_missing"
+      ],
+      "eligible": true,
+      "image_status": "missing"
+    },
+    "persisted_detection_gap": {
+      "reason": "no_text",
+      "explanation": "No useful persisted caption or sampled comment text"
+    }
+  },
+  {
+    "video_id": 8,
+    "platform_video_id": "7660555038258924814",
+    "caption": null,
+    "creator": null,
+    "has_caption": false,
+    "has_thumbnail": false,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": false,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "no_text",
+    "likely_product": true,
+    "likely_product_reasons": [
+      "existing_human_presence_review"
+    ],
+    "category_status": "unclassified",
+    "category": {
+      "id": 8,
+      "video_id": 8,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "e99cc7ff50ba20585de10418bd57fa17b7e1ebd31c4eec36725ccbec5751aeff",
+      "observed_at": "2026-10-23T06:00:54.892918+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "A",
+    "group_name": "missing_data",
+    "group_tags": [
+      "A"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "likely_product",
+        "candidate_missing",
+        "no_text",
+        "comments_insufficient",
+        "category_unclassified",
+        "thumbnail_missing"
+      ],
+      "eligible": true,
+      "image_status": "missing"
+    },
+    "persisted_detection_gap": {
+      "reason": "no_text",
+      "explanation": "No useful persisted caption or sampled comment text"
+    }
+  },
+  {
+    "video_id": 17,
+    "platform_video_id": "7698829746569858311",
+    "caption": "#Tecnologia #futuro",
+    "creator": "@jornadatop",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 17,
+      "video_id": 17,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "c13ae104ff2b5a6fcc39bff2dc2d5dd2b0ae8c22304992354de93ec205ec9276",
+      "observed_at": "2026-10-23T06:00:54.908905+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "generic_only",
+      "explanation": "Only generic category words, without a specific product phrase"
+    }
+  },
+  {
+    "video_id": 19,
+    "platform_video_id": "7659710911728438550",
+    "caption": "Buy Link in Bio",
+    "creator": "@football_clips_asr",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 19,
+      "video_id": 19,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "18835740340cf384ceb1893ec1963ed2cc60fe064bf9b9ed1ec44ced576dd000",
+      "observed_at": "2026-10-23T06:00:54.913904+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 20,
+    "platform_video_id": "7420091773810183455",
+    "caption": "Buy directly from us as your trusted Chinese source, for unbeatable prices and fast shipping!",
+    "creator": "@chinauniquefinds",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 20,
+      "video_id": 20,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "1351a741066ac4b57c935f3586cbedcae5624f13877150cefe58e981c36c5480",
+      "observed_at": "2026-10-23T06:00:54.913904+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 22,
+    "platform_video_id": "7695035642748669215",
+    "caption": "The Christmas gift your family will actually want and use every day.",
+    "creator": "@gavrcyai",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 22,
+      "video_id": 22,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "d38413871016689ac441afbbe5ea52d4ef354efda716aa5b74b5cfd680389715",
+      "observed_at": "2026-10-23T06:00:54.914903+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 23,
+    "platform_video_id": "7696924648633584918",
+    "caption": "#lights #tiktokmadebuythis",
+    "creator": "@homegadgets55",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 23,
+      "video_id": 23,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "536e9ef68767b15b686f7dbaf4d388eaaf69cbb51c95d958e5b890d36339a0b8",
+      "observed_at": "2026-10-23T06:00:54.915884+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 24,
+    "platform_video_id": "7688311146864069910",
+    "caption": "🧼✨ The easiest way to keep your soap clean & dry!",
+    "creator": "@home.gadgets17",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 24,
+      "video_id": 24,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "24b2c223f2f18e99cf6d52e0c22d28b15f55bd9fccfa1040d23115a814f94f60",
+      "observed_at": "2026-10-23T06:00:54.915884+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 26,
+    "platform_video_id": "7676829783585606930",
+    "caption": "#TikTokShop #AchadinhosTikTok",
+    "creator": "@angelo04261917",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 26,
+      "video_id": 26,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "36615c447c940181d5fc97c8801f34c5937b9ced5a5185da956b4c165f9a781f",
+      "observed_at": "2026-10-23T06:00:54.916885+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 27,
+    "platform_video_id": "7685726086520507669",
+    "caption": "#tiktokmademebuyit",
+    "creator": "@sapinho.cururu321",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": true
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "unclassified",
+    "category": {
+      "id": 27,
+      "video_id": 27,
+      "primary_category": null,
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "unclassified",
+      "category_confidence": 0.0,
+      "category_evidence": [],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "17275483aa598ff8417c93f3e9359b46a113b23c4e3fd54973b89e40e8fa7fb2",
+      "observed_at": "2026-10-23T06:00:54.917885+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient",
+        "category_unclassified"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  },
+  {
+    "video_id": 42,
+    "platform_video_id": "7614319393232719122",
+    "caption": "Chega de falta de tomada e carregador espalhado pela casa ⚡",
+    "creator": "@top_achadinhos_shopp",
+    "has_caption": true,
+    "has_thumbnail": true,
+    "has_comments": false,
+    "persisted_comments_count": 0,
+    "comments_count": 0,
+    "has_creator": true,
+    "has_unresolved": false,
+    "has_candidate": false,
+    "has_query": true,
+    "source_queries": [
+      "home gadgets"
+    ],
+    "has_detail": false,
+    "buy_signals": {
+      "comment_buy_terms": 0,
+      "caption_commercial_context": false
+    },
+    "caption_kind": "generic_or_functional",
+    "likely_product": false,
+    "likely_product_reasons": [],
+    "category_status": "classified",
+    "category": {
+      "id": 42,
+      "video_id": 42,
+      "primary_category": "electronics",
+      "primary_subcategory": null,
+      "product_family": null,
+      "category_status": "classified",
+      "category_confidence": 0.7,
+      "category_evidence": [
+        {
+          "matched_term": "carregador",
+          "source_entity": "video",
+          "source_id": 42,
+          "text": "Chega de falta de tomada e carregador espalhado pela casa ⚡",
+          "type": "caption",
+          "url": "https://www.tiktok.com/@top_achadinhos_shopp/video/7614319393232719122",
+          "weight": 0.7
+        }
+      ],
+      "classifier_version": "category-classifier-v1",
+      "taxonomy_version": "category-taxonomy-v1",
+      "input_hash": "1b0ba25bc4bf866849e510ba0d5aebbbe5cb91f553c0a684f8c4363e0ac96d39",
+      "observed_at": "2026-10-23T06:00:54.938887+00:00",
+      "human_review": null
+    },
+    "candidates": [],
+    "unresolved": [],
+    "primary_group": "B",
+    "group_name": "generic_text",
+    "group_tags": [
+      "B"
+    ],
+    "visual": {
+      "priority": "LOW",
+      "reasons": [
+        "has_thumbnail",
+        "candidate_missing",
+        "generic_or_functional",
+        "comments_insufficient"
+      ],
+      "eligible": true,
+      "image_status": "reference_only_not_fetched"
+    },
+    "persisted_detection_gap": {
+      "reason": "insufficient_evidence",
+      "explanation": "Persisted text describes a use, reaction or question without an identifiable product phrase"
+    }
+  }
+]

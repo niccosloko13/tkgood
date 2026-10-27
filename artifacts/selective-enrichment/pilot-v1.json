@@ -1,0 +1,766 @@
+{
+  "run": {
+    "id": 1,
+    "pilot_key": "selective-v1-20261025",
+    "status": "STOPPED",
+    "created_at": "2026-10-25T21:01:52.409434+00:00",
+    "finished_at": "2026-10-25T21:02:17.050369+00:00",
+    "deadline_at": "2026-10-25T21:11:52.409434+00:00",
+    "current_video": 3,
+    "current_step": "detail",
+    "stop_requested": 0,
+    "selected_json": "[3, 13, 9, 10]",
+    "stop_reason": "GLOBAL_SECURITY_EVENT",
+    "checkpoint_json": "{\"priority_version\": \"selective-enrichment-v1\", \"scope\": \"latest completed Stage 2 batch; local library evidence may support priority\", \"unselected_digest_before\": \"1a103435633e69b92c3052d78c54e9c3dd9fd30a5922da735c225377a570022d\"}",
+    "checkpoint": {
+      "priority_version": "selective-enrichment-v1",
+      "scope": "latest completed Stage 2 batch; local library evidence may support priority",
+      "unselected_digest_before": "1a103435633e69b92c3052d78c54e9c3dd9fd30a5922da735c225377a570022d",
+      "unselected_digest_after": "1a103435633e69b92c3052d78c54e9c3dd9fd30a5922da735c225377a570022d",
+      "unselected_unchanged": true
+    }
+  },
+  "items": [
+    {
+      "run_id": 1,
+      "video_id": 3,
+      "status": "INTERRUPTED",
+      "priority": {
+        "caption": "Soap dispenser and dish brush in one \u2728",
+        "creator": "@anya.bumag",
+        "enrichment_status": "NOT_SELECTED",
+        "features": {
+          "category_relevant": true,
+          "detail_evidence_ids": [
+            3,
+            13,
+            20
+          ],
+          "duplicate_density": 0.6875,
+          "engagement_available": false,
+          "existing_purchase_intent": "STRONG",
+          "intent_evidence_ids": [
+            174,
+            177,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            192,
+            193,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200
+          ],
+          "known_candidate_creators": 1,
+          "known_candidate_videos": 1,
+          "lifecycle": "EARLY_SIGNAL",
+          "metrics": {
+            "comments_count": null,
+            "favorites": null,
+            "likes": null,
+            "shares": null,
+            "views": 83600
+          },
+          "metrics_basis": "most recent nonnull historical persisted value; not assumed current",
+          "novelty": false,
+          "queries": [
+            "cleaning gadgets",
+            "home finds",
+            "home gadgets",
+            "kitchen gadgets",
+            "useful home products"
+          ],
+          "query_diversity": 5,
+          "recurrence": 16,
+          "search_evidence_ids": [
+            3,
+            11,
+            19,
+            26,
+            33,
+            41,
+            49,
+            57,
+            111,
+            115,
+            169,
+            177,
+            184,
+            188,
+            193,
+            198
+          ],
+          "specificity": [
+            "Soap dispenser",
+            "dish brush"
+          ],
+          "trend_observations": 20,
+          "trend_quality": {
+            "coverage": "Known sample; not market or platform-wide activity",
+            "creator_coverage": null,
+            "duplicate_dependency": 0.0,
+            "number_of_observations": 20,
+            "reason_codes": [
+              "LIMITED_LOCAL_COVERAGE"
+            ],
+            "source_coverage": [
+              "comment_sample_cumulative",
+              "search_observations",
+              "video_detail_observations"
+            ],
+            "status": "partial",
+            "strength": "LOW",
+            "time_span_seconds": 352535.500827,
+            "unique_creators": 2,
+            "unique_videos": 1
+          }
+        },
+        "platform_video_id": "7665799980480826642",
+        "priority": "HIGH",
+        "video_id": 3,
+        "video_url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+        "why": [
+          "SPECIFIC_LITERAL_PRODUCT: Soap dispenser, dish brush",
+          "QUERY_DIVERSITY: 5",
+          "RECAPTURES: 16; local recurrence, not independent products",
+          "PERSISTED_HOME_CATEGORY",
+          "EXISTING_PURCHASE_INTENT",
+          "VISIBLE_VIEWS_AT_LEAST_10000",
+          "LOCAL_TEMPORAL_COVERAGE_AVAILABLE; not a forecast"
+        ]
+      },
+      "before": {
+        "commercial_readiness": {
+          "classification": "PARTIAL",
+          "evidence_ids": [
+            174,
+            177,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            192,
+            193,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200
+          ],
+          "sample_size": 30,
+          "status": "partial"
+        },
+        "creative_dna": {
+          "classification": "PARTIAL",
+          "evidence_ids": [
+            "video:3:caption"
+          ],
+          "sample_size": 1,
+          "status": "partial"
+        },
+        "creator_signal": {
+          "evidence_ids": [
+            "creator_profile:22"
+          ],
+          "followers": 893400,
+          "observed_at": "2026-10-22T11:55:07.415866+00:00",
+          "status": "measured"
+        },
+        "identity": {
+          "decision_id": 188,
+          "status": "REVIEW"
+        },
+        "product_quality": {
+          "classification": "INSUFFICIENT_DATA",
+          "evidence_ids": [
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202
+          ],
+          "sample_size": 30,
+          "status": "partial"
+        },
+        "purchase_intent": {
+          "classification": "STRONG",
+          "evidence_ids": [
+            174,
+            177,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            192,
+            193,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200
+          ],
+          "sample_size": 30,
+          "status": "measured"
+        },
+        "signal_quality": {
+          "classification": "PARTIAL",
+          "evidence_ids": [
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202
+          ],
+          "sample_size": 30,
+          "status": "partial"
+        },
+        "trend_readiness": {
+          "classification": "INSUFFICIENT_HISTORY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        }
+      },
+      "after": null,
+      "steps": {
+        "detail": {
+          "command_id": 108,
+          "observation_id": null,
+          "reason": "Security stop: captcha",
+          "status": "FAILED"
+        }
+      }
+    },
+    {
+      "run_id": 1,
+      "video_id": 9,
+      "status": "SELECTED",
+      "priority": {
+        "caption": "\ud83d\udd17In Bio! Burger Patty Maker \ud83c\udf54\ud83e\udd0d",
+        "creator": "@elnazhamai",
+        "enrichment_status": "NOT_SELECTED",
+        "features": {
+          "category_relevant": true,
+          "detail_evidence_ids": [
+            5,
+            15
+          ],
+          "duplicate_density": 0.8181818181818182,
+          "engagement_available": false,
+          "existing_purchase_intent": null,
+          "intent_evidence_ids": [],
+          "known_candidate_creators": 1,
+          "known_candidate_videos": 1,
+          "lifecycle": "DISCOVERED",
+          "metrics": {
+            "comments_count": null,
+            "favorites": null,
+            "likes": null,
+            "shares": null,
+            "views": 276100
+          },
+          "metrics_basis": "most recent nonnull historical persisted value; not assumed current",
+          "novelty": false,
+          "queries": [
+            "home gadgets",
+            "kitchen gadgets"
+          ],
+          "query_diversity": 2,
+          "recurrence": 11,
+          "search_evidence_ids": [
+            13,
+            21,
+            25,
+            35,
+            43,
+            51,
+            58,
+            112,
+            116,
+            172,
+            192
+          ],
+          "specificity": [
+            "Burger Patty Maker"
+          ],
+          "trend_observations": 13,
+          "trend_quality": {
+            "coverage": "Known sample; not market or platform-wide activity",
+            "creator_coverage": null,
+            "duplicate_dependency": 0.0,
+            "number_of_observations": 13,
+            "reason_codes": [
+              "LIMITED_LOCAL_COVERAGE",
+              "SINGLE_CREATOR_DEPENDENCY"
+            ],
+            "source_coverage": [
+              "search_observations",
+              "video_detail_observations"
+            ],
+            "status": "partial",
+            "strength": "LOW",
+            "time_span_seconds": 350684.405388,
+            "unique_creators": 1,
+            "unique_videos": 1
+          }
+        },
+        "platform_video_id": "7670966128629288205",
+        "priority": "HIGH",
+        "video_id": 9,
+        "video_url": "https://www.tiktok.com/@elnazhamai/video/7670966128629288205",
+        "why": [
+          "SPECIFIC_LITERAL_PRODUCT: Burger Patty Maker",
+          "QUERY_DIVERSITY: 2",
+          "RECAPTURES: 11; local recurrence, not independent products",
+          "PERSISTED_HOME_CATEGORY",
+          "VISIBLE_VIEWS_AT_LEAST_10000",
+          "LOCAL_TEMPORAL_COVERAGE_AVAILABLE; not a forecast",
+          "HIGH_REPEAT_DENSITY; repeated captures are not independent corroboration"
+        ]
+      },
+      "before": {
+        "commercial_readiness": {
+          "classification": "NOT_READY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "creative_dna": {
+          "classification": "PARTIAL",
+          "evidence_ids": [
+            "video:9:caption"
+          ],
+          "sample_size": 1,
+          "status": "partial"
+        },
+        "creator_signal": {
+          "evidence_ids": [
+            "creator_profile:20"
+          ],
+          "followers": 529500,
+          "observed_at": "2026-10-22T00:05:16.475342+00:00",
+          "status": "measured"
+        },
+        "identity": {
+          "decision_id": 189,
+          "status": "REVIEW"
+        },
+        "product_quality": {
+          "classification": "INSUFFICIENT_DATA",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "purchase_intent": {
+          "classification": null,
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "signal_quality": {
+          "classification": "PARTIAL",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "partial"
+        },
+        "trend_readiness": {
+          "classification": "INSUFFICIENT_HISTORY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        }
+      },
+      "after": null,
+      "steps": {}
+    },
+    {
+      "run_id": 1,
+      "video_id": 10,
+      "status": "SELECTED",
+      "priority": {
+        "caption": "Washing and prepping strawberries \ud83c\udf53 this fruit spinner is a game changer \ud83e\udee7",
+        "creator": "@sam.shan.shops",
+        "enrichment_status": "NOT_SELECTED",
+        "features": {
+          "category_relevant": true,
+          "detail_evidence_ids": [
+            8,
+            18
+          ],
+          "duplicate_density": 0.3333333333333333,
+          "engagement_available": false,
+          "existing_purchase_intent": null,
+          "intent_evidence_ids": [],
+          "known_candidate_creators": 1,
+          "known_candidate_videos": 1,
+          "lifecycle": "DISCOVERED",
+          "metrics": {
+            "comments_count": null,
+            "favorites": null,
+            "likes": null,
+            "shares": null,
+            "views": null
+          },
+          "metrics_basis": "most recent nonnull historical persisted value; not assumed current",
+          "novelty": false,
+          "queries": [
+            "home gadgets",
+            "kitchen gadgets"
+          ],
+          "query_diversity": 2,
+          "recurrence": 3,
+          "search_evidence_ids": [
+            15,
+            24,
+            194
+          ],
+          "specificity": [
+            "fruit spinner"
+          ],
+          "trend_observations": 5,
+          "trend_quality": {
+            "coverage": "Known sample; not market or platform-wide activity",
+            "creator_coverage": null,
+            "duplicate_dependency": 0.0,
+            "number_of_observations": 5,
+            "reason_codes": [
+              "LIMITED_LOCAL_COVERAGE",
+              "SINGLE_CREATOR_DEPENDENCY"
+            ],
+            "source_coverage": [
+              "search_observations",
+              "video_detail_observations"
+            ],
+            "status": "partial",
+            "strength": "LOW",
+            "time_span_seconds": 350684.405388,
+            "unique_creators": 1,
+            "unique_videos": 1
+          }
+        },
+        "platform_video_id": "7649962108582399253",
+        "priority": "HIGH",
+        "video_id": 10,
+        "video_url": "https://www.tiktok.com/@sam.shan.shops/video/7649962108582399253",
+        "why": [
+          "SPECIFIC_LITERAL_PRODUCT: fruit spinner",
+          "QUERY_DIVERSITY: 2",
+          "RECAPTURES: 3; local recurrence, not independent products",
+          "PERSISTED_HOME_CATEGORY",
+          "LOCAL_TEMPORAL_COVERAGE_AVAILABLE; not a forecast"
+        ]
+      },
+      "before": {
+        "commercial_readiness": {
+          "classification": "NOT_READY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "creative_dna": {
+          "classification": "PARTIAL",
+          "evidence_ids": [
+            "video:10:caption"
+          ],
+          "sample_size": 1,
+          "status": "partial"
+        },
+        "creator_signal": {
+          "evidence_ids": [],
+          "followers": null,
+          "observed_at": null,
+          "status": "insufficient_data"
+        },
+        "identity": {
+          "decision_id": 190,
+          "status": "REVIEW"
+        },
+        "product_quality": {
+          "classification": "INSUFFICIENT_DATA",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "purchase_intent": {
+          "classification": null,
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "signal_quality": {
+          "classification": "PARTIAL",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "partial"
+        },
+        "trend_readiness": {
+          "classification": "INSUFFICIENT_HISTORY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        }
+      },
+      "after": null,
+      "steps": {}
+    },
+    {
+      "run_id": 1,
+      "video_id": 13,
+      "status": "SELECTED",
+      "priority": {
+        "caption": "Bestselling internet-famous cleaning helper &> This popular trending long-handled floor brush is a real lifesaver recommended all over the internet for floor cleaning. No more blind shopping! * No more following trends to kneel scrub!",
+        "creator": "@tiomi9526",
+        "enrichment_status": "NOT_SELECTED",
+        "features": {
+          "category_relevant": true,
+          "detail_evidence_ids": [],
+          "duplicate_density": 0.625,
+          "engagement_available": false,
+          "existing_purchase_intent": null,
+          "intent_evidence_ids": [],
+          "known_candidate_creators": 1,
+          "known_candidate_videos": 1,
+          "lifecycle": "DISCOVERED",
+          "metrics": {
+            "comments_count": null,
+            "favorites": null,
+            "likes": null,
+            "shares": null,
+            "views": 68100
+          },
+          "metrics_basis": "most recent nonnull historical persisted value; not assumed current",
+          "novelty": false,
+          "queries": [
+            "cleaning gadgets",
+            "home gadgets",
+            "useful home products"
+          ],
+          "query_diversity": 3,
+          "recurrence": 8,
+          "search_evidence_ids": [
+            27,
+            40,
+            48,
+            56,
+            136,
+            144,
+            190,
+            196
+          ],
+          "specificity": [
+            "long-handled floor brush"
+          ],
+          "trend_observations": 8,
+          "trend_quality": {
+            "coverage": "Known sample; not market or platform-wide activity",
+            "creator_coverage": null,
+            "duplicate_dependency": 0.0,
+            "number_of_observations": 8,
+            "reason_codes": [
+              "LIMITED_LOCAL_COVERAGE",
+              "SINGLE_CREATOR_DEPENDENCY"
+            ],
+            "source_coverage": [
+              "search_observations"
+            ],
+            "status": "partial",
+            "strength": "LOW",
+            "time_span_seconds": 327309.728344,
+            "unique_creators": 1,
+            "unique_videos": 1
+          }
+        },
+        "platform_video_id": "7671465879976086797",
+        "priority": "HIGH",
+        "video_id": 13,
+        "video_url": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+        "why": [
+          "SPECIFIC_LITERAL_PRODUCT: long-handled floor brush",
+          "QUERY_DIVERSITY: 3",
+          "RECAPTURES: 8; local recurrence, not independent products",
+          "PERSISTED_HOME_CATEGORY",
+          "VISIBLE_VIEWS_AT_LEAST_10000",
+          "LOCAL_TEMPORAL_COVERAGE_AVAILABLE; not a forecast"
+        ]
+      },
+      "before": {
+        "commercial_readiness": {
+          "classification": "NOT_READY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "creative_dna": {
+          "classification": "PARTIAL",
+          "evidence_ids": [
+            "video:13:caption"
+          ],
+          "sample_size": 1,
+          "status": "partial"
+        },
+        "creator_signal": {
+          "evidence_ids": [],
+          "followers": null,
+          "observed_at": null,
+          "status": "insufficient_data"
+        },
+        "identity": {
+          "decision_id": 191,
+          "status": "REVIEW"
+        },
+        "product_quality": {
+          "classification": "INSUFFICIENT_DATA",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "purchase_intent": {
+          "classification": null,
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        },
+        "signal_quality": {
+          "classification": "PARTIAL",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "partial"
+        },
+        "trend_readiness": {
+          "classification": "INSUFFICIENT_HISTORY",
+          "evidence_ids": [],
+          "sample_size": 0,
+          "status": "insufficient_data"
+        }
+      },
+      "after": null,
+      "steps": {}
+    }
+  ],
+  "selected": 4,
+  "enriched": 0,
+  "skipped": 3,
+  "blocked": 0,
+  "blocked_targets": [
+    {
+      "target_type": "VIDEO",
+      "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "reason": "HTTP_403",
+      "first_seen": "2026-10-25T01:32:10.269892+00:00",
+      "last_seen": "2026-10-25T01:32:10.269892+00:00",
+      "attempt_count": 1,
+      "status": "BLOCKED"
+    }
+  ],
+  "details_collected": 0,
+  "comment_samples_collected": 0,
+  "comments_collected": 0,
+  "creators_collected": 0,
+  "final_page": "challenge",
+  "session": "unconfirmed",
+  "global_security": {
+    "reason": "Error: Security challenge; human intervention required",
+    "observed_at": "2026-10-25T21:02:19.706020+00:00"
+  },
+  "stop_reason": "GLOBAL_SECURITY_EVENT",
+  "post_stop_check": {
+    "current_url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+    "current_page_status": "challenge",
+    "tiktok_session_status": "unconfirmed",
+    "last_seen": "2026-10-25T21:03:22.918668+00:00"
+  },
+  "audit": {
+    "commands": [
+      {
+        "id": 108,
+        "type": "READ_VIDEO_DETAIL",
+        "query": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+        "status": "FAILED",
+        "detail": "Security stop: captcha"
+      }
+    ],
+    "quarantine_preserved": true,
+    "unselected_unchanged": true,
+    "intelligence_recomputed": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "changed_tables": [
+    "events",
+    "sqlite_sequence",
+    "system_state"
+  ],
+  "changed_existing_sources": [
+    "app\\main.py",
+    "app\\static\\index.html"
+  ],
+  "security_stop_unchanged": true,
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "browser_runtime_unchanged": true,
+  "browser_security_history_unchanged": true,
+  "browser_security_clearance_unchanged": true
+}

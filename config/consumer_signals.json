@@ -1,0 +1,17 @@
+{
+  "version":"consumer-signals-v1",
+  "noise":["responder","reply"],
+  "purchase_types":["where_to_buy","link_request","price_question","want_need","purchase_statement"],
+  "patterns":{
+    "where_to_buy":["\\bwhere (?:can|do|to|could|is).*\\b(?:buy|get|find|purchase)","\\bonde.*\\b(?:compro|comprar|compramos|vende|encontro)","\\bdonde.*\\b(?:compro|comprar|compra|venden|vende|consig|consigue)","\\bdonde lo consigo\\b"],
+    "link_request":["\\blink\\b","\\benlace\\b","\\burl\\b"],
+    "price_question":["\\bprice\\b","\\bhow much\\b","\\bquanto custa\\b","\\bpreco\\b","\\bprecio\\b","\\bcuanto cuesta\\b"],
+    "want_need":["\\bwant\\b","\\bneed\\b","\\bquer+o+\\b","\\bquiero\\b","\\bpreciso\\b","\\bnecessito\\b"],
+    "purchase_statement":["\\b(?:i bought|i purchased|i ordered|comprei|compramos|ja pedi|lo compre|he comprado)\\b"],
+    "positive_reaction":["\\b(?:useful|pratico|util|muito bom|great|love it|good product|very good|top|super)\\b"],
+    "negative_reaction":["\\b(?:bad|terrible|useless|ruim|inutil|horrible|nao gostei)\\b"],
+    "product_complaint":["\\b(?:doesnt work|does not work|nao funciona|no funciona|leaks|vaza|broken|quebrado|roto)\\b"],
+    "quality_complaint":["\\b(?:poor quality|bad quality|baixa qualidade|mala calidad|fragil|broke after|quebrou|defective|defeito)\\b"],
+    "question":["\\b(?:does it|can it|qual nome|qual o nome|como funciona|how does)\\b"]
+  }
+}

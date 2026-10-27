@@ -1,0 +1,14 @@
+{
+  "version": "creator-independence-v1",
+  "minimum_metric_confidence": 0.6,
+  "buckets": [
+    {"name": "micro", "upper_exclusive": 10000, "bonus": 10},
+    {"name": "small", "upper_exclusive": 50000, "bonus": 8},
+    {"name": "medium", "upper_exclusive": 250000, "bonus": 5},
+    {"name": "large", "upper_exclusive": 1000000, "bonus": 2},
+    {"name": "mega", "upper_exclusive": null, "bonus": 0}
+  ],
+  "score": {"views_weight": 70, "views_ratio_cap": 10, "likes_weight": 20, "likes_ratio_cap": 0.5},
+  "shop_terms": ["shop", "store", "loja", "tienda"],
+  "commercial_terms": ["affiliate", "afiliado", "afiliada", "commission", "comissão", "comision", "discount", "cupom", "coupon"]
+}

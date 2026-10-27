@@ -1,0 +1,73 @@
+{
+  "api_version": "1",
+  "companion_min_version": "0.1.6",
+  "bridge": {
+    "command_api_status": 200,
+    "command_api_error": null,
+    "api_version": "1",
+    "safe_collection_version": "v1",
+    "extension_version": "0.1.6",
+    "companion_version": "0.1.6",
+    "build_id": "1facf896ea783d82",
+    "current_url": "https://www.tiktok.com/",
+    "page_title": "TikTok - Make Your Day",
+    "authenticated_hint": false,
+    "page_ready_state": "complete",
+    "has_search_ui": true,
+    "playback_error_visible": false,
+    "tab_id": 618200484,
+    "window_id": 618199843,
+    "tiktok_tab_count": 1,
+    "document_visibility": "hidden",
+    "window_state": "maximized",
+    "window_width": 1552,
+    "window_height": 832,
+    "tab_active": false,
+    "security_stop": "HTTP 403: https://www.tiktok.com/",
+    "security_stop_observed_at": "2026-10-24T15:19:37.832Z",
+    "current_page_status": "healthy",
+    "tiktok_session_status": "unconfirmed",
+    "session_evidence": [],
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "version": "0.1.6",
+    "chrome_connected": true,
+    "tiktok_open": true,
+    "connected": true,
+    "last_seen": "2026-10-24T18:57:51.821094+00:00",
+    "url": "https://www.tiktok.com/",
+    "title": "TikTok - Make Your Day",
+    "page_signals": {
+      "ready_state": "complete",
+      "has_search": true,
+      "playback_error_visible": false,
+      "content_script_connected": true
+    },
+    "_updated_at": "2026-10-24T18:57:51.835095+00:00",
+    "companion_min_version": "0.1.6",
+    "reported_companion_version": "0.1.6",
+    "reported_api_version": "1",
+    "companion_compatible": true,
+    "compatibility_status": "COMPATIBLE",
+    "companion_connected": true,
+    "heartbeat_fresh": true,
+    "security_stop_active": true,
+    "failed_url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "extension_connected": true
+  },
+  "security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/",
+    "observed_at": "2026-10-24T15:19:37.832Z",
+    "_updated_at": "2026-10-24T15:19:37.892081+00:00"
+  },
+  "renewal": {
+    "id": "5c4771f9cf763c7653de88b4852f1f6a",
+    "status": "SUCCEEDED",
+    "detail": "Existing Chrome session ready for manual login/check; account unconfirmed; security stop unchanged",
+    "updated_at": "2026-10-24T16:06:33.554387+00:00"
+  },
+  "check": {
+    "id": "370879459760b3ee9bb2b7f12a842a9a",
+    "status": "UNKNOWN",
+    "validated_at": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "python": {
+    "passed": 380,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 7,
+    "task": "4bfaff16601a41778530064f815143db"
+  },
+  "node": {
+    "passed": 122,
+    "failed": 0,
+    "skipped": 0,
+    "task": "b77ba0d9ca3540588b9595bc030d86c1"
+  },
+  "name_free_api_start_task": "1db6c28abc304dab9458e881b59ba0a4"
+}

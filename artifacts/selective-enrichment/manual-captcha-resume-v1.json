@@ -1,0 +1,498 @@
+{
+  "intent": "EXPLICIT_MANUAL_CAPTCHA_RECOVERY_ONE_CANDIDATE",
+  "parent_run_id": 1,
+  "max_candidates": 1,
+  "temporary_quarantine": {
+    "url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+    "target_type": "VIDEO",
+    "status": "TEMPORARILY_QUARANTINED",
+    "reason": "CHALLENGE_TRIGGER_CONTEXT",
+    "first_seen": "2026-10-25T21:20:27.569384+00:00",
+    "last_seen": "2026-10-25T21:20:27.569384+00:00",
+    "context_run_id": 1,
+    "context_command_id": 108,
+    "incident_json": "{\"observed_at\": \"2026-10-25T21:02:19.706020+00:00\", \"reason\": \"Error: Security challenge; human intervention required\"}",
+    "note": "Associated with the moment of challenge; not evidence this target technically caused CAPTCHA. No automatic expiry or reopen."
+  },
+  "passive_check": {
+    "id": "4ac3dfef09d3b9a43050c31bcfef9009",
+    "status": "HEALTHY",
+    "created_at": "2026-10-25T22:28:49.309113+00:00",
+    "validated_at": "2026-10-25T22:28:52.816029+00:00",
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "build_id": "0fe481dd775ea6c8",
+    "incident_json": "{\"observed_at\": \"2026-10-25T21:02:19.706020+00:00\", \"reason\": \"Error: Security challenge; human intervention required\"}",
+    "samples_json": "[{\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T22:28:49.770264+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200584}, {\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T22:28:52.776003+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200584}]",
+    "evidence_json": "{\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T22:28:52.776003+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200584}",
+    "release_json": null
+  },
+  "release": {
+    "release_type": "EXPLICIT_MANUAL_CAPTCHA_RECOVERY",
+    "released_at": "2026-10-25T22:28:53.401018+00:00",
+    "validation_id": "4ac3dfef09d3b9a43050c31bcfef9009",
+    "parent_run_id": 1,
+    "previous_incident": {
+      "reason": "Error: Security challenge; human intervention required",
+      "observed_at": "2026-10-25T21:02:19.706020+00:00"
+    },
+    "validation_samples": [
+      {
+        "account_signals": [
+          "visible_own_profile_with_avatar",
+          "visible_account_inbox"
+        ],
+        "build_matches": true,
+        "challenge_indicators": false,
+        "companion_connected": true,
+        "current_url": "https://www.tiktok.com/",
+        "document_ready": true,
+        "heartbeat_at": "2026-10-25T22:28:49.770264+00:00",
+        "heartbeat_fresh": true,
+        "http_403_indicators": false,
+        "mode": "SAFE_RECOVERY_CHECK",
+        "page_status": "healthy",
+        "session": "confirmed",
+        "status": "HEALTHY",
+        "tab_id": 618200584
+      },
+      {
+        "account_signals": [
+          "visible_own_profile_with_avatar",
+          "visible_account_inbox"
+        ],
+        "build_matches": true,
+        "challenge_indicators": false,
+        "companion_connected": true,
+        "current_url": "https://www.tiktok.com/",
+        "document_ready": true,
+        "heartbeat_at": "2026-10-25T22:28:52.776003+00:00",
+        "heartbeat_fresh": true,
+        "http_403_indicators": false,
+        "mode": "SAFE_RECOVERY_CHECK",
+        "page_status": "healthy",
+        "session": "confirmed",
+        "status": "HEALTHY",
+        "tab_id": 618200584
+      }
+    ],
+    "validated_url": "https://www.tiktok.com/",
+    "temporary_quarantine": {
+      "url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+      "target_type": "VIDEO",
+      "status": "TEMPORARILY_QUARANTINED",
+      "reason": "CHALLENGE_TRIGGER_CONTEXT",
+      "first_seen": "2026-10-25T21:20:27.569384+00:00",
+      "last_seen": "2026-10-25T21:20:27.569384+00:00",
+      "context_run_id": 1,
+      "context_command_id": 108,
+      "incident_json": "{\"observed_at\": \"2026-10-25T21:02:19.706020+00:00\", \"reason\": \"Error: Security challenge; human intervention required\"}",
+      "note": "Associated with the moment of challenge; not evidence this target technically caused CAPTCHA. No automatic expiry or reopen."
+    },
+    "reused": false
+  },
+  "child": {
+    "id": 2,
+    "video_id": 13,
+    "video_url": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+    "max_candidates": 1,
+    "reused": false
+  },
+  "result": {
+    "run": {
+      "id": 2,
+      "pilot_key": "manual-captcha-next:1",
+      "status": "STOPPED",
+      "created_at": "2026-10-25T22:28:53.417021+00:00",
+      "finished_at": "2026-10-25T22:29:31.391206+00:00",
+      "deadline_at": "2026-10-25T22:33:53.417021+00:00",
+      "current_video": 13,
+      "current_step": "detail",
+      "stop_requested": 0,
+      "selected_json": "[13]",
+      "stop_reason": "GLOBAL_SECURITY_EVENT",
+      "checkpoint_json": "{\"manual_recovery_check_id\": \"4ac3dfef09d3b9a43050c31bcfef9009\", \"max_candidates\": 1, \"parent_run_id\": 1, \"pre_check\": {\"final_page\": \"healthy\", \"samples\": [{\"consecutive\": 1, \"observed_at\": \"2026-10-25T22:28:55.775039+00:00\", \"page\": \"healthy\", \"ready_state\": \"complete\", \"session\": \"confirmed\", \"state\": \"HEALTHY_CONFIRMED\"}, {\"consecutive\": 2, \"observed_at\": \"2026-10-25T22:28:58.776333+00:00\", \"page\": \"healthy\", \"ready_state\": \"complete\", \"session\": \"confirmed\", \"state\": \"HEALTHY_CONFIRMED\"}], \"session\": \"confirmed\", \"status\": \"HEALTHY\"}, \"priority_version\": \"selective-enrichment-v1\", \"scope\": \"one next unprocessed frozen HIGH after explicit manual recovery\", \"unselected_digest_before\": \"dbff65b3897a2791e54eeea361491e7267f95a6ead6b65fd9989333978317db3\"}",
+      "checkpoint": {
+        "manual_recovery_check_id": "4ac3dfef09d3b9a43050c31bcfef9009",
+        "max_candidates": 1,
+        "parent_run_id": 1,
+        "pre_check": {
+          "final_page": "healthy",
+          "samples": [
+            {
+              "consecutive": 1,
+              "observed_at": "2026-10-25T22:28:55.775039+00:00",
+              "page": "healthy",
+              "ready_state": "complete",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED"
+            },
+            {
+              "consecutive": 2,
+              "observed_at": "2026-10-25T22:28:58.776333+00:00",
+              "page": "healthy",
+              "ready_state": "complete",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED"
+            }
+          ],
+          "session": "confirmed",
+          "status": "HEALTHY"
+        },
+        "priority_version": "selective-enrichment-v1",
+        "scope": "one next unprocessed frozen HIGH after explicit manual recovery",
+        "unselected_digest_before": "dbff65b3897a2791e54eeea361491e7267f95a6ead6b65fd9989333978317db3",
+        "unselected_digest_after": "dbff65b3897a2791e54eeea361491e7267f95a6ead6b65fd9989333978317db3",
+        "unselected_unchanged": true
+      }
+    },
+    "items": [
+      {
+        "run_id": 2,
+        "video_id": 13,
+        "status": "INTERRUPTED",
+        "priority": {
+          "caption": "Bestselling internet-famous cleaning helper &> This popular trending long-handled floor brush is a real lifesaver recommended all over the internet for floor cleaning. No more blind shopping! * No more following trends to kneel scrub!",
+          "creator": "@tiomi9526",
+          "enrichment_status": "NOT_SELECTED",
+          "features": {
+            "category_relevant": true,
+            "detail_evidence_ids": [],
+            "duplicate_density": 0.625,
+            "engagement_available": false,
+            "existing_purchase_intent": null,
+            "intent_evidence_ids": [],
+            "known_candidate_creators": 1,
+            "known_candidate_videos": 1,
+            "lifecycle": "DISCOVERED",
+            "metrics": {
+              "comments_count": null,
+              "favorites": null,
+              "likes": null,
+              "shares": null,
+              "views": 68100
+            },
+            "metrics_basis": "most recent nonnull historical persisted value; not assumed current",
+            "novelty": false,
+            "queries": [
+              "cleaning gadgets",
+              "home gadgets",
+              "useful home products"
+            ],
+            "query_diversity": 3,
+            "recurrence": 8,
+            "search_evidence_ids": [
+              27,
+              40,
+              48,
+              56,
+              136,
+              144,
+              190,
+              196
+            ],
+            "specificity": [
+              "long-handled floor brush"
+            ],
+            "trend_observations": 8,
+            "trend_quality": {
+              "coverage": "Known sample; not market or platform-wide activity",
+              "creator_coverage": null,
+              "duplicate_dependency": 0.0,
+              "number_of_observations": 8,
+              "reason_codes": [
+                "LIMITED_LOCAL_COVERAGE",
+                "SINGLE_CREATOR_DEPENDENCY"
+              ],
+              "source_coverage": [
+                "search_observations"
+              ],
+              "status": "partial",
+              "strength": "LOW",
+              "time_span_seconds": 327309.728344,
+              "unique_creators": 1,
+              "unique_videos": 1
+            }
+          },
+          "platform_video_id": "7671465879976086797",
+          "priority": "HIGH",
+          "video_id": 13,
+          "video_url": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+          "why": [
+            "SPECIFIC_LITERAL_PRODUCT: long-handled floor brush",
+            "QUERY_DIVERSITY: 3",
+            "RECAPTURES: 8; local recurrence, not independent products",
+            "PERSISTED_HOME_CATEGORY",
+            "VISIBLE_VIEWS_AT_LEAST_10000",
+            "LOCAL_TEMPORAL_COVERAGE_AVAILABLE; not a forecast"
+          ]
+        },
+        "before": {
+          "commercial_readiness": {
+            "classification": "NOT_READY",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          },
+          "creative_dna": {
+            "classification": "PARTIAL",
+            "evidence_ids": [
+              "video:13:caption"
+            ],
+            "sample_size": 1,
+            "status": "partial"
+          },
+          "creator_signal": {
+            "evidence_ids": [],
+            "followers": null,
+            "observed_at": null,
+            "status": "insufficient_data"
+          },
+          "identity": {
+            "decision_id": 191,
+            "status": "REVIEW"
+          },
+          "product_quality": {
+            "classification": "INSUFFICIENT_DATA",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          },
+          "purchase_intent": {
+            "classification": null,
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          },
+          "signal_quality": {
+            "classification": "PARTIAL",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "partial"
+          },
+          "trend_readiness": {
+            "classification": "INSUFFICIENT_HISTORY",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          }
+        },
+        "after": {
+          "commercial_readiness": {
+            "classification": "NOT_READY",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          },
+          "creative_dna": {
+            "classification": "PARTIAL",
+            "evidence_ids": [
+              "video:13:caption"
+            ],
+            "sample_size": 1,
+            "status": "partial"
+          },
+          "creator_signal": {
+            "evidence_ids": [],
+            "followers": null,
+            "observed_at": null,
+            "status": "insufficient_data"
+          },
+          "identity": {
+            "decision_id": 237,
+            "status": "REVIEW"
+          },
+          "product_quality": {
+            "classification": "INSUFFICIENT_DATA",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          },
+          "purchase_intent": {
+            "classification": null,
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          },
+          "signal_quality": {
+            "classification": "PARTIAL",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "partial"
+          },
+          "trend_readiness": {
+            "classification": "INSUFFICIENT_HISTORY",
+            "evidence_ids": [],
+            "sample_size": 0,
+            "status": "insufficient_data"
+          }
+        },
+        "steps": {
+          "detail": {
+            "command_id": 109,
+            "observation_id": 22,
+            "post_check": {
+              "reason": "GLOBAL_SECURITY_EVENT",
+              "samples": [],
+              "status": "BLOCKED"
+            },
+            "reason": "Visible video metadata read (READ ONLY, no engagement)",
+            "status": "COLLECTED"
+          }
+        },
+        "detail_summary": {
+          "observed_at": "2026-10-25T22:29:29.756366+00:00",
+          "observation_id": 22,
+          "fields": {
+            "likes": "68.5K",
+            "comments_count": "639",
+            "shares": "13.5K",
+            "favorites": "14.9K",
+            "views": null,
+            "caption": "Bestselling internet-famous cleaning helper &> This popular trending long-handled floor brush is a real lifesaver recommended all over the internet for floor cleaning. No more blind shopping! * No more following trends to kneel scrub!"
+          },
+          "hashtags": [],
+          "hashtag_provenance": {
+            "method": "derived_from_visible_caption",
+            "source_id": 22
+          },
+          "field_evidence": {
+            "video_url": {
+              "value": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+              "raw_value": null,
+              "confidence": 1.0,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": null
+            },
+            "video_id": {
+              "value": "7671465879976086797",
+              "raw_value": null,
+              "confidence": 1.0,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": null
+            },
+            "creator_username": {
+              "value": "@tiomi9526",
+              "raw_value": null,
+              "confidence": 0.98,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": null
+            },
+            "caption": {
+              "value": "Bestselling internet-famous cleaning helper &> This popular trending long-handled floor brush is a real lifesaver recommended all over the internet for floor cleaning. No more blind shopping! * No more following trends to kneel scrub!",
+              "raw_value": null,
+              "confidence": 0.95,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": null
+            },
+            "likes": {
+              "value": 68500,
+              "raw_value": "68.5K",
+              "confidence": 0.98,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": "semantic_text"
+            },
+            "comments_count": {
+              "value": 639,
+              "raw_value": "639",
+              "confidence": 0.98,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": "semantic_text"
+            },
+            "shares": {
+              "value": 13500,
+              "raw_value": "13.5K",
+              "confidence": 0.98,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": "semantic_text"
+            },
+            "favorites": {
+              "value": 14900,
+              "raw_value": "14.9K",
+              "confidence": 0.98,
+              "source": "video_detail",
+              "observed_at": "2026-10-25T22:29:29.756366+00:00",
+              "method": "semantic_text"
+            }
+          }
+        }
+      }
+    ],
+    "selected": 1,
+    "enriched": 0,
+    "skipped": 0,
+    "blocked": 0,
+    "blocked_targets": [
+      {
+        "target_type": "VIDEO",
+        "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+        "reason": "HTTP_403",
+        "first_seen": "2026-10-25T01:32:10.269892+00:00",
+        "last_seen": "2026-10-25T01:32:10.269892+00:00",
+        "attempt_count": 1,
+        "status": "BLOCKED"
+      },
+      {
+        "url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+        "target_type": "VIDEO",
+        "status": "TEMPORARILY_QUARANTINED",
+        "reason": "CHALLENGE_TRIGGER_CONTEXT",
+        "first_seen": "2026-10-25T21:20:27.569384+00:00",
+        "last_seen": "2026-10-25T21:20:27.569384+00:00",
+        "context_run_id": 1,
+        "context_command_id": 108,
+        "incident_json": "{\"observed_at\": \"2026-10-25T21:02:19.706020+00:00\", \"reason\": \"Error: Security challenge; human intervention required\"}",
+        "note": "Associated with the moment of challenge; not evidence this target technically caused CAPTCHA. No automatic expiry or reopen.",
+        "attempt_count": 0
+      }
+    ],
+    "details_collected": 1,
+    "comment_samples_collected": 0,
+    "comments_collected": 0,
+    "creators_collected": 0,
+    "final_page": "challenge",
+    "session": "unconfirmed",
+    "global_security": {
+      "reason": "GLOBAL_BLOCK: challenge/captcha/verification",
+      "observed_at": "2026-10-25T22:29:30.817062+00:00"
+    },
+    "stop_reason": "GLOBAL_SECURITY_EVENT"
+  },
+  "final_page": "challenge",
+  "session": "unconfirmed",
+  "global_security": {
+    "reason": "GLOBAL_BLOCK: challenge/captcha/verification",
+    "observed_at": "2026-10-25T22:29:30.817062+00:00"
+  },
+  "audit": {
+    "post_stop": {
+      "current_page_status": "challenge",
+      "tiktok_session_status": "unconfirmed",
+      "last_seen": "2026-10-25T22:30:16.781063+00:00"
+    },
+    "global_security": {
+      "reason": "GLOBAL_BLOCK: challenge/captcha/verification",
+      "observed_at": "2026-10-25T22:29:30.817062+00:00"
+    },
+    "commands": [
+      {
+        "id": 109,
+        "type": "READ_VIDEO_DETAIL",
+        "query": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+        "status": "SUCCEEDED"
+      }
+    ],
+    "original_context_temp": {
+      "url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+      "status": "TEMPORARILY_QUARANTINED",
+      "reason": "CHALLENGE_TRIGGER_CONTEXT"
+    },
+    "manual_releases": 1
+  }
+}

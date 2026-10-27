@@ -1,0 +1,17 @@
+{
+  "python": {
+    "passed": 364,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 7,
+    "task": "c2423404cf7e446bbd75b18369acfe90"
+  },
+  "node": {
+    "passed": 121,
+    "failed": 0,
+    "skipped": 0,
+    "task": "9f9e98dfab3d4bd5a80b450c5b55142b"
+  },
+  "cold_real_inference_task": "6702bb6d03fb40c3b89ceb67e9a04769",
+  "final_pilot_task": "c08fd88568714de583b7962756abb322"
+}

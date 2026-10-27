@@ -1,0 +1,9 @@
+{
+  "protected_existing_source_and_project_db_metadata": "UNCHANGED",
+  "missing_existing_protected_files": [],
+  "changed_existing_protected_files": [],
+  "local_backend_8000_listening": false,
+  "no_application_imports_or_migrations": true,
+  "database_mode": "ro&immutable=1",
+  "deletion_move_dependency_import_changes": false
+}

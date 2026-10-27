@@ -1,0 +1,95 @@
+{
+  "data": {
+    "results": [
+      {
+        "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums",
+        "title": "Window vacuums for DIYers | Bosch DIY",
+        "product_name": "Bosch cordless window vacuum",
+        "compatibility": "SUPPORTED",
+        "match_reason": "Suitable for all smooth surfaces such as windows, mirrors, tiles, showers, and car windows; designed for vacuuming liquids from smooth surfaces.",
+        "independence": "Not assessed"
+      },
+      {
+        "url": "https://www.kaercher.com/int/home-garden/window-vacs.html",
+        "title": "Window Vac | Kärcher International",
+        "product_name": "Kärcher Window Vac",
+        "compatibility": "SUPPORTED",
+        "match_reason": "Suitable for all smooth surfaces including windows, mirrors, shower enclosures, hobs, glass tables, car windscreens, and worktops.",
+        "independence": "Not assessed"
+      },
+      {
+        "url": "https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html",
+        "title": "WV 2 Plus | Kärcher International",
+        "product_name": "Kärcher WV 2 Plus Window Cleaner",
+        "compatibility": "SUPPORTED",
+        "match_reason": "Designed specifically to ease window cleaning on smooth surfaces, saving time and effort.",
+        "independence": "Not assessed"
+      }
+    ],
+    "limitations": "Product type compatibility observed only; exact product model identity and specific design features could not be confirmed. No assessment of power supply variations or additional features was made."
+  },
+  "response_id": "gen-1792793694-HkwrTfBiuFUykj4OaQkn",
+  "model": "openai/gpt-4.1-mini",
+  "api_host": "openrouter.ai",
+  "usage": {
+    "prompt_tokens": 1820,
+    "completion_tokens": 404,
+    "total_tokens": 2224,
+    "cost": 0.0083744,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013744,
+      "upstream_inference_prompt_cost": 0.000728,
+      "upstream_inference_completions_cost": 0.0006464
+    },
+    "server_tool_use_details": {
+      "web_search_requests": 1,
+      "tool_calls_requested": 1,
+      "tool_calls_executed": 1
+    }
+  },
+  "annotations": [
+    {
+      "type": "url_citation",
+      "url_citation": {
+        "url": "https://www.kaercher.com/int/home-garden/window-vacs.html",
+        "title": "Window Vac | Kärcher International",
+        "start_index": 0,
+        "end_index": 0,
+        "content": "No more streaks, dirty water or wet hands. With the Window Vacs, cleaning is three times faster than with conventional methods – for streak-free cleanliness without annoying drips. It effortlessly removes dirt from all smooth surfaces and also efficiently vacuums up condensation. Spray, wipe, vacuum – sparkling results in no time at all. Please note that different country versions are available for most products: 120 V / 60 Hz or 220-240 V / 50 Hz.\n\n...\n\nThe Window Vac from Kärcher is not only for windows, it also cleans all smooth surfaces, such as mirrors, shower enclosures, hobs, glass tables, car windscreens and worktops.\n\n...\n\nPreparation is everything: for the best possible cleaning results, the glass pane or surface must first be wetted and pre-cleaned. Only then"
+      }
+    },
+    {
+      "type": "url_citation",
+      "url_citation": {
+        "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums",
+        "title": "Window vacuums for DIYers | Bosch DIY",
+        "start_index": 0,
+        "end_index": 0,
+        "content": "The only window vacuum with trusted Bosch wiper blade technology, for an easier glide and faster results. Perfect for cleaning windows and mirrors, as well as showers and spillages. Cleaning your home has never been so easy.\n\n...\n\nThe cordless Bosch window vacuums are extremely versatile. They are suitable for all smooth surfaces, such as windows, mirrors, tiles, showers, and car windows. They also safely vacuum up condensation and spilled liquids. What’s more, your job can be made even easier with the various attachments that can be added quickly and easily.\n\n...\n\nCordless window vacuums work similarly to traditional squeegees, but with one big difference. With a squeegee, you have to wipe up the water that collects on the windowpanes by hand. A window vacuum, on the other hand, sucks liquids directly from the window surface into an integrated tank, by using a mechanism similar to a regular household vacuum.\n\n...\n\nThe terms \"electric window vacuum\" and \"electric window cleaner\" are usually used interchangeably for various devices that are designed to make window cleaning easier and more effective. In addition to window vacuums, there are also window cleaning robots and battery-powered window wipers."
+      }
+    },
+    {
+      "type": "url_citation",
+      "url_citation": {
+        "url": "https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html",
+        "title": "WV 2 Plus | Kärcher International",
+        "start_index": 0,
+        "end_index": 0,
+        "content": ", Kärcher has revolutionised window cleaning. When you use the original Kärcher Window ... 's play, saving you a great deal of time and effort. Thanks to the ... , the annoyance of dripping water is now a thing of the past. The intelligent combination of"
+      }
+    }
+  ],
+  "search_response": "The search returned relevant product pages, though none exactly match the visible device for certain identity confirmation. Here are the top public product pages from allowed manufacturer domains related to electric window cleaners or similar devices:\n\n1. Bosch DIY - Window Vacuums for DIYers\n   URL: https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums\n   - Product type: Cordless window vacuum (electric)\n   - Compatibility: Suitable for windows, mirrors, tiles, showers, car windows\n   - Limitations: Designed primarily for smooth surfaces and vacuuming liquids; no confirmation of green indicator light or cleaning head shape matching.\n\n2. Kärcher International - Window Vac | Kärcher International\n   URL: https://www.kaercher.com/int/home-garden/window-vacs.html\n   - Product type: Window vac, electric window cleaner\n   - Compatibility: Smooth surfaces including windows, mirrors, shower enclosures, hobs, glass tables, car windscreens, worktops\n   - Limitations: Different country versions for voltages; no confirmation of green indicator light or exact design as in the image.\n\n3. Kärcher International - WV 2 Plus | Kärcher International\n   URL: https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html\n   - Product type: Window cleaner, likely electric\n   - Compatibility: Designed to ease window cleaning, saving time and effort\n   - Limitations: Specific design details not confirmed to match image; no visible green light mentioned.\n\nNo other matching product identities from the allowed manufacturer domains were found. These products are close in product type (electric window cleaners or window vacuums) but do not fully confirm the exact identity from the image alone.",
+  "normalization_response_id": "gen-1792793699-ktCg3IUe7hda3gybP65e"
+}

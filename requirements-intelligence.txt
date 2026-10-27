@@ -1,0 +1,8 @@
+# Install CPU torch first to avoid a GPU workload. Existing .venv only:
+# python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0
+torchvision==0.23.0
+open_clip_torch==3.3.0
+faiss-cpu==1.13.2
+numpy==2.2.6
+psutil==7.2.2

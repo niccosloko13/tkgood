@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-23T14:53:06.010674+00:00",
+  "profile_pids": [],
+  "connected": false,
+  "last_seen": "2026-10-22T14:38:35.944786+00:00",
+  "security_stop": {
+    "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+    "observed_at": "2026-10-22T12:25:59.604Z",
+    "_updated_at": "2026-10-22T12:25:59.623002+00:00"
+  }
+}

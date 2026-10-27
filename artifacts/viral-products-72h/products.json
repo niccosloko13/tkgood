@@ -1,0 +1,1290 @@
+{
+  "mission_id": "e0156f9b26a6da456177bd3e80ae3619",
+  "contract": {
+    "mission": "viral-products-72h",
+    "max_queries": 20,
+    "max_results_per_query": 10,
+    "max_results_total": 200,
+    "max_unique_new_videos": 100,
+    "max_scrolls": 0,
+    "direct_video_enrichment": "PAUSED",
+    "engagement": "FORBIDDEN",
+    "expires_after_completion": true
+  },
+  "summary": {
+    "status": "SUCCEEDED",
+    "results": 59,
+    "new_videos": 23,
+    "duplicates": 36,
+    "observations": 59,
+    "snapshots": 59,
+    "stop_reason": "MISSION_LIMIT_REACHED"
+  },
+  "top_picks": [],
+  "watchlist": [
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@airlandolists/video/7537701539553496334",
+      "creator": null,
+      "queries": [
+        "amazon finds",
+        "cleaning gadgets",
+        "kitchen finds",
+        "useful gadgets"
+      ],
+      "observations": 4,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 4,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 4 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@tiomi9526/video/7671465879976086797",
+      "creator": null,
+      "queries": [
+        "cleaning gadgets",
+        "produtos em alta",
+        "trending products"
+      ],
+      "observations": 3,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 3,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 3 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@smkfinds/video/7623568346562186504",
+      "creator": null,
+      "queries": [
+        "achadinhos virais",
+        "new viral products",
+        "trending products"
+      ],
+      "observations": 3,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 3,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 3 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+      "creator": null,
+      "queries": [
+        "cleaning gadgets",
+        "home finds",
+        "tiktok made me buy it"
+      ],
+      "observations": 3,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 3,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 3 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Soap dispenser and dish brush in one ✨",
+      "video_url": "https://www.tiktok.com/@anya.bumag/video/7665799980480826642",
+      "creator": "@anya.bumag",
+      "queries": [
+        "amazon finds",
+        "home finds",
+        "kitchen finds"
+      ],
+      "observations": 3,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 3,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 3 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@football_clips_asr/video/7659710911728438550",
+      "creator": null,
+      "queries": [
+        "produtos em alta",
+        "trending products"
+      ],
+      "observations": 2,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 2,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 2 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@snappypick/video/7693267378322427167",
+      "creator": null,
+      "queries": [
+        "produtos novos tiktok",
+        "useful gadgets"
+      ],
+      "observations": 2,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 2,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 2 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@steamer.vault/video/7675140606477339934",
+      "creator": null,
+      "queries": [
+        "amazon finds",
+        "produtos novos tiktok"
+      ],
+      "observations": 2,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 2,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 2 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@elvarel.store/video/7614611657121271060",
+      "creator": null,
+      "queries": [
+        "amazon finds",
+        "new viral products"
+      ],
+      "observations": 2,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 2,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 2 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@cozyprimefinds/video/7588722390813740309",
+      "creator": null,
+      "queries": [
+        "amazon finds",
+        "useful gadgets"
+      ],
+      "observations": 2,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 2,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 2 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@dreambunny22/video/7628036818079976735",
+      "creator": null,
+      "queries": [
+        "kitchen finds",
+        "useful gadgets"
+      ],
+      "observations": 2,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 2,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 2 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@ujuansamp/video/7680276415396269320",
+      "creator": null,
+      "queries": [
+        "produtos virais hoje"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@epandw7da0/video/7687991900271398164",
+      "creator": null,
+      "queries": [
+        "produtos virais hoje"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@mavi.euu/video/7685575091819711752",
+      "creator": null,
+      "queries": [
+        "produtos virais hoje"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@gbprodutos_/video/7687102158126271752",
+      "creator": null,
+      "queries": [
+        "produtos virais hoje"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@acheiecompreishopee99w/video/7600869049471454472",
+      "creator": null,
+      "queries": [
+        "produtos em alta"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@mastershopcreator/video/7693185574764842260",
+      "creator": null,
+      "queries": [
+        "produtos em alta"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@carlabrunoassis/video/7667971813535681813",
+      "creator": null,
+      "queries": [
+        "produtos novos tiktok"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@casalgoat/video/7580917401504566536",
+      "creator": null,
+      "queries": [
+        "produtos novos tiktok"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@diicasdamell/video/7381879897423219973",
+      "creator": null,
+      "queries": [
+        "achadinhos virais"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@wodefa32/video/7689350067324505352",
+      "creator": null,
+      "queries": [
+        "achadinhos virais"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@nafisa6019/video/7683399772601945360",
+      "creator": null,
+      "queries": [
+        "achadinhos virais"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@sanvero.store/video/7673613036229315871",
+      "creator": null,
+      "queries": [
+        "trending products"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@kingkyhu9da/video/7663847349050985742",
+      "creator": null,
+      "queries": [
+        "new viral products"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@adrianwidjy/video/7677061311137697031",
+      "creator": null,
+      "queries": [
+        "new viral products"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@sapinho.cururu321/video/7685726086520507669",
+      "creator": null,
+      "queries": [
+        "tiktok made me buy it"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@sarvina450/video/7686197199415397662",
+      "creator": null,
+      "queries": [
+        "tiktok made me buy it"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@kitchenconqueror/video/7170801533565766958",
+      "creator": null,
+      "queries": [
+        "tiktok made me buy it"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "#fashion #ootd #clothes #style #shopping #look #goodproducts #productreview #greatfinds #amazonfinds #shoppinghaul #onlineshopping #moda #oo",
+      "video_url": "https://www.tiktok.com/@checiwq520/video/7654167497217854741",
+      "creator": "@checiwq520",
+      "queries": [
+        "amazon finds"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "🔗In Bio! Burger Patty Maker 🍔🤍 #amazonhome",
+      "video_url": "https://www.tiktok.com/@elnazhamai/video/7670966128629288205",
+      "creator": "@elnazhamai",
+      "queries": [
+        "amazon finds"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@everythingenvy/video/7699198635036167455",
+      "creator": null,
+      "queries": [
+        "amazon finds"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@sam.shan.shops/video/7696952986244861190",
+      "creator": null,
+      "queries": [
+        "home finds"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@a7azpfotp7/video/7681232168068156692",
+      "creator": null,
+      "queries": [
+        "home finds"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@mrs.nikialexa/video/7680933683120835862",
+      "creator": null,
+      "queries": [
+        "kitchen finds"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@stephaniarahme/video/7520696142154173701",
+      "creator": null,
+      "queries": [
+        "cleaning gadgets"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@dailyfulfilll/video/7698354763942890784",
+      "creator": null,
+      "queries": [
+        "problem solving products"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@dailyfulfillsourcing/video/7675322542978026766",
+      "creator": null,
+      "queries": [
+        "problem solving products"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@dropship/video/7630858971431079190",
+      "creator": null,
+      "queries": [
+        "problem solving products"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Você esqueceu de desconectar?",
+      "video_url": "https://www.tiktok.com/@megashopping39/video/7672558839388048661",
+      "creator": "@megashopping39",
+      "queries": [
+        "useful gadgets"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@bensbuyss/video/7684324362593258782",
+      "creator": null,
+      "queries": [
+        "useful gadgets"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@gavrcyai/video/7695035642748669215",
+      "creator": null,
+      "queries": [
+        "useful gadgets"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    },
+    {
+      "product": "Produto não identificado",
+      "video_url": "https://www.tiktok.com/@selsky88/video/7695642931704728845",
+      "creator": null,
+      "queries": [
+        "useful gadgets"
+      ],
+      "observations": 1,
+      "visible_metrics": {
+        "views": null,
+        "likes": null,
+        "comments_count": null,
+        "shares": null,
+        "favorites": null
+      },
+      "recency": "RECENCY_UNKNOWN",
+      "risks": [
+        "CONTENT_AGE_NOT_VISIBLE_ON_SEARCH_CARD",
+        "SEARCH_ONLY_EVIDENCE"
+      ],
+      "query_spread": 1,
+      "why": [
+        "Visible search result persisted",
+        "Observed in 1 query/queries",
+        "No content age claimed without visible evidence"
+      ]
+    }
+  ],
+  "query_performance": [
+    {
+      "query": "produtos virais hoje",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "produtos em alta",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "produtos novos tiktok",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "achadinhos virais",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "gadgets virais",
+      "status": "FAILED",
+      "results": 0,
+      "unique_videos": 0,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "viral products today",
+      "status": "FAILED",
+      "results": 0,
+      "unique_videos": 0,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "trending products",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "new viral products",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "tiktok made me buy it",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "amazon finds",
+      "status": "SUCCEEDED",
+      "results": 8,
+      "unique_videos": 8,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "home finds",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "kitchen finds",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "cleaning gadgets",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "unique_videos": 4,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "problem solving products",
+      "status": "SUCCEEDED",
+      "results": 3,
+      "unique_videos": 3,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    },
+    {
+      "query": "useful gadgets",
+      "status": "SUCCEEDED",
+      "results": 8,
+      "unique_videos": 8,
+      "novelty_rate": "UNKNOWN_WITHOUT_PRIOR_QUERY_BASELINE"
+    }
+  ],
+  "limitations": [
+    "No search-card content age was visible; RECENCY_UNKNOWN items were not promoted to Top Picks.",
+    "No video detail, comments or creator profile was opened."
+  ]
+}

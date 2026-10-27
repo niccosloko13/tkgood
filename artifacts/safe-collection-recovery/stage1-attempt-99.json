@@ -1,0 +1,232 @@
+{
+  "check": {
+    "id": "bf1d821a6464ab8b8c0036a015d3638e",
+    "status": "HEALTHY",
+    "created_at": "2026-10-25T01:20:50.847932+00:00",
+    "validated_at": "2026-10-25T01:20:55.137483+00:00",
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "build_id": "09a458cc2f2b7148",
+    "incident_json": "{\"observed_at\": \"2026-10-24T15:19:37.832Z\", \"reason\": \"HTTP 403: https://www.tiktok.com/\"}",
+    "samples_json": "[{\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T01:20:52.083802+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200551}, {\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T01:20:55.084465+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200551}]",
+    "evidence_json": "{\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T01:20:55.084465+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200551}",
+    "release_json": "{\"previous_incident\": {\"observed_at\": \"2026-10-24T15:19:37.832Z\", \"reason\": \"HTTP 403: https://www.tiktok.com/\"}, \"release_type\": \"EXPLICIT_OPERATOR_ACTION\", \"released_at\": \"2026-10-25T01:21:00.734453+00:00\", \"validated_url\": \"https://www.tiktok.com/\", \"validation_evidence\": [{\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T01:20:52.083802+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200551}, {\"account_signals\": [\"visible_own_profile_with_avatar\", \"visible_account_inbox\"], \"build_matches\": true, \"challenge_indicators\": false, \"companion_connected\": true, \"current_url\": \"https://www.tiktok.com/\", \"document_ready\": true, \"heartbeat_at\": \"2026-10-25T01:20:55.084465+00:00\", \"heartbeat_fresh\": true, \"http_403_indicators\": false, \"mode\": \"SAFE_RECOVERY_CHECK\", \"page_status\": \"healthy\", \"session\": \"confirmed\", \"status\": \"HEALTHY\", \"tab_id\": 618200551}], \"validation_id\": \"bf1d821a6464ab8b8c0036a015d3638e\"}"
+  },
+  "batch": {
+    "id": "1d55bb95e32a9ed5a3fda2a16dc10ef3",
+    "stage": 1,
+    "status": "FAILED",
+    "created_at": "2026-10-25T01:21:11.766408+00:00",
+    "validation_id": "bf1d821a6464ab8b8c0036a015d3638e",
+    "queries_json": "[\"home gadgets\"]",
+    "query_index": 1,
+    "command_id": 99,
+    "new_videos": 0,
+    "seen": 0,
+    "duplicates": 0,
+    "snapshots": 0,
+    "stop_reason": "COMMAND_FAILED_NO_RETRY",
+    "completed_at": "2026-10-25T01:21:15.854393+00:00"
+  },
+  "command": {
+    "id": 99,
+    "created_at": "2026-10-25T01:21:11.769409+00:00",
+    "updated_at": "2026-10-25T01:21:15.856392+00:00",
+    "type": "READ_SEARCH_RESULTS",
+    "query": "home gadgets",
+    "status": "FAILED",
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "detail": "Error: Safe search route changed",
+    "result_hash": "",
+    "options_json": "{\"expected_tab_id\": 618200551, \"max_results\": 10, \"max_runtime\": 60, \"max_scrolls\": 0, \"navigate_search\": true, \"safe_collection_id\": \"1d55bb95e32a9ed5a3fda2a16dc10ef3\", \"validated_url\": \"https://www.tiktok.com/\"}",
+    "ready_at": "2026-10-25T01:21:13.252408+00:00"
+  },
+  "states": {
+    "tiktok_bridge": {
+      "session_auth_groups": [
+        "account_identity",
+        "account_communication",
+        "followed_accounts"
+      ],
+      "live_page_blocker": null,
+      "session_signals": {
+        "profile_route_present": true,
+        "messages_route_present": true,
+        "activity_or_inbox_present": true,
+        "authenticated_sidebar_present": true,
+        "account_avatar_present": true,
+        "following_authenticated_present": true,
+        "logged_out_cta_present": false
+      },
+      "session_debug": {
+        "profile_route_present": {
+          "selector": "a[data-e2e=\"nav-profile\"],a[data-e2e=\"profile-icon\"],[data-e2e=\"profile-icon\"] a[href],nav a[data-e2e*=\"profile\"],[role=\"navigation\"] a[data-e2e*=\"profile\"]",
+          "matched_count": 1,
+          "visible_count": 1,
+          "sample_href": "/@porqueninguemtecontou",
+          "sample_aria": null,
+          "sample_data_e2e": "nav-profile"
+        },
+        "messages_route_present": {
+          "selector": "[data-e2e=\"nav-messages\"],a[href=\"/messages\"],a[href=\"/messages/\"],a[href=\"https://www.tiktok.com/messages\"],[data-e2e=\"message-icon\"]",
+          "matched_count": 1,
+          "visible_count": 1,
+          "sample_href": null,
+          "sample_aria": "Mensagens",
+          "sample_data_e2e": "nav-messages"
+        },
+        "activity_or_inbox_present": {
+          "selector": "[data-e2e=\"nav-activity\"],[data-e2e=\"inbox-icon\"],a[href=\"/activity\"],a[href=\"/inbox\"]",
+          "matched_count": 2,
+          "visible_count": 1,
+          "sample_href": null,
+          "sample_aria": "Atividade",
+          "sample_data_e2e": "nav-activity"
+        },
+        "account_avatar_present": {
+          "selector": "a[data-e2e=\"nav-profile\"] img,a[data-e2e=\"nav-profile\"] image,[data-e2e=\"profile-icon\"] img,[data-e2e=\"profile-icon\"] image,[data-e2e=\"account-avatar\"]",
+          "matched_count": 1,
+          "visible_count": 1,
+          "sample_href": null,
+          "sample_aria": null,
+          "sample_data_e2e": null
+        },
+        "following_authenticated_present": {
+          "selector": "a[data-e2e=\"following-user-button\"][href]",
+          "matched_count": 5,
+          "visible_count": 5,
+          "sample_href": "/@elansari.imane",
+          "sample_aria": null,
+          "sample_data_e2e": "following-user-button"
+        },
+        "logged_out_cta_present": {
+          "selector": "[data-e2e=\"top-login-button\"],[data-e2e=\"nav-login-button\"],[data-e2e=\"login-modal\"],[data-e2e=\"login-button\"],[data-e2e=\"sidebar-login-button\"],a[href=\"/login\"],a[href^=\"/login?\"]",
+          "matched_count": 0,
+          "visible_count": 0,
+          "sample_href": null,
+          "sample_aria": null,
+          "sample_data_e2e": null
+        },
+        "authenticated_sidebar_present": {
+          "selector": "shared navigation ancestor: nav-profile + nav-messages/nav-activity + nav-following/nav-foryou",
+          "matched_count": 1,
+          "visible_count": 1,
+          "sample_href": null,
+          "sample_aria": null,
+          "sample_data_e2e": null
+        }
+      },
+      "session_detector_version": "dom-v2",
+      "command_api_status": 200,
+      "command_api_error": null,
+      "api_version": "1",
+      "safe_collection_version": "v1",
+      "extension_version": "0.1.6",
+      "companion_version": "0.1.6",
+      "build_id": "09a458cc2f2b7148",
+      "current_url": "https://www.tiktok.com/search?q=home+gadgets",
+      "page_title": "Encontre 'home gadgets' no TikTok | Pesquisa do TikTok",
+      "authenticated_hint": true,
+      "page_ready_state": "complete",
+      "has_search_ui": true,
+      "playback_error_visible": false,
+      "tab_id": 618200551,
+      "window_id": 618199843,
+      "tiktok_tab_count": 1,
+      "document_visibility": "visible",
+      "window_state": "maximized",
+      "window_width": 1552,
+      "window_height": 832,
+      "tab_active": true,
+      "security_stop": null,
+      "security_stop_observed_at": null,
+      "current_page_status": "healthy",
+      "tiktok_session_status": "confirmed",
+      "session_evidence": [
+        "visible_own_profile_with_avatar",
+        "visible_account_inbox"
+      ],
+      "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+      "version": "0.1.6",
+      "chrome_connected": true,
+      "tiktok_open": true,
+      "connected": true,
+      "last_seen": "2026-10-25T01:21:31.087844+00:00",
+      "url": "https://www.tiktok.com/search?q=home+gadgets",
+      "title": "Encontre 'home gadgets' no TikTok | Pesquisa do TikTok",
+      "page_signals": {
+        "ready_state": "complete",
+        "has_search": true,
+        "playback_error_visible": false,
+        "content_script_connected": true
+      }
+    },
+    "browser_security_stop": {},
+    "browser_security_history": {
+      "items": [
+        {
+          "_updated_at": "2026-10-22T12:25:59.623002+00:00",
+          "observed_at": "2026-10-22T12:25:59.604Z",
+          "reason": "HTTP 403: https://www.tiktok.com/@vitrineglei/video/7673992589036506388"
+        },
+        {
+          "_updated_at": "2026-10-23T16:23:11.721818+00:00",
+          "observed_at": "2026-10-23T16:23:11.456Z",
+          "reason": "HTTP 403: https://www.tiktok.com/"
+        },
+        {
+          "observed_at": "2026-10-24T15:19:37.832Z",
+          "previous_incident": {
+            "observed_at": "2026-10-24T15:19:37.832Z",
+            "reason": "HTTP 403: https://www.tiktok.com/"
+          },
+          "reason": "HTTP 403: https://www.tiktok.com/",
+          "release_type": "EXPLICIT_OPERATOR_ACTION",
+          "released_at": "2026-10-25T01:21:00.734453+00:00",
+          "validated_url": "https://www.tiktok.com/",
+          "validation_evidence": [
+            {
+              "account_signals": [
+                "visible_own_profile_with_avatar",
+                "visible_account_inbox"
+              ],
+              "build_matches": true,
+              "challenge_indicators": false,
+              "companion_connected": true,
+              "current_url": "https://www.tiktok.com/",
+              "document_ready": true,
+              "heartbeat_at": "2026-10-25T01:20:52.083802+00:00",
+              "heartbeat_fresh": true,
+              "http_403_indicators": false,
+              "mode": "SAFE_RECOVERY_CHECK",
+              "page_status": "healthy",
+              "session": "confirmed",
+              "status": "HEALTHY",
+              "tab_id": 618200551
+            },
+            {
+              "account_signals": [
+                "visible_own_profile_with_avatar",
+                "visible_account_inbox"
+              ],
+              "build_matches": true,
+              "challenge_indicators": false,
+              "companion_connected": true,
+              "current_url": "https://www.tiktok.com/",
+              "document_ready": true,
+              "heartbeat_at": "2026-10-25T01:20:55.084465+00:00",
+              "heartbeat_fresh": true,
+              "http_403_indicators": false,
+              "mode": "SAFE_RECOVERY_CHECK",
+              "page_status": "healthy",
+              "session": "confirmed",
+              "status": "HEALTHY",
+              "tab_id": 618200551
+            }
+          ],
+          "validation_id": "bf1d821a6464ab8b8c0036a015d3638e"
+        }
+      ]
+    }
+  },
+  "search_observations": 0
+}

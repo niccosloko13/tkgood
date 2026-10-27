@@ -1,0 +1,104 @@
+{
+  "query": "home gadgets",
+  "max_results": 10,
+  "max_scrolls": 0,
+  "stage": 1,
+  "validation_id": "cac98c924f9f3cb65f6252481f0f5fd6",
+  "authorization": {
+    "authorization_type": "SEARCH_ONLY_STAGE1",
+    "authorized_at": "2026-10-25T17:14:10.282156+00:00",
+    "validated_url": "https://www.tiktok.com/",
+    "validation_evidence": [
+      {
+        "account_signals": [
+          "visible_own_profile_with_avatar",
+          "visible_account_inbox"
+        ],
+        "build_matches": true,
+        "challenge_indicators": false,
+        "companion_connected": true,
+        "current_url": "https://www.tiktok.com/",
+        "document_ready": true,
+        "heartbeat_at": "2026-10-25T17:14:06.646460+00:00",
+        "heartbeat_fresh": true,
+        "http_403_indicators": false,
+        "mode": "SAFE_RECOVERY_CHECK",
+        "page_status": "healthy",
+        "session": "confirmed",
+        "status": "HEALTHY",
+        "tab_id": 618200584
+      },
+      {
+        "account_signals": [
+          "visible_own_profile_with_avatar",
+          "visible_account_inbox"
+        ],
+        "build_matches": true,
+        "challenge_indicators": false,
+        "companion_connected": true,
+        "current_url": "https://www.tiktok.com/",
+        "document_ready": true,
+        "heartbeat_at": "2026-10-25T17:14:09.595014+00:00",
+        "heartbeat_fresh": true,
+        "http_403_indicators": false,
+        "mode": "SAFE_RECOVERY_CHECK",
+        "page_status": "healthy",
+        "session": "confirmed",
+        "status": "HEALTHY",
+        "tab_id": 618200584
+      }
+    ]
+  },
+  "submission": "INTENT_RECORDED_NO_REPLAY",
+  "job": {
+    "id": "8d963de836e5a68b602d726bc7fc11c9",
+    "command_id": 101,
+    "stage": 1,
+    "max_results": 10,
+    "status": "PENDING"
+  },
+  "command": {
+    "id": 101,
+    "status": "SUCCEEDED",
+    "detail": "Single bounded viewport captured; STOP; zero scroll or engagement; {\"actual_path\":\"/search\",\"actual_query\":\"home gadgets\",\"actual_url\":\"https://www.tiktok.com/search?q=home+gadgets\",\"expected_path\":\"/search\",\"expected_query\":\"home gadgets\",\"expected_url\":\"https://www.tiktok.com/search?q=home+gadgets\",\"redirect_chain\":null}"
+  },
+  "batch": {
+    "id": "8d963de836e5a68b602d726bc7fc11c9",
+    "stage": 1,
+    "status": "SUCCEEDED",
+    "created_at": "2026-10-25T17:14:10.302140+00:00",
+    "validation_id": "cac98c924f9f3cb65f6252481f0f5fd6",
+    "queries_json": "[\"home gadgets\"]",
+    "query_index": 1,
+    "command_id": 101,
+    "new_videos": 1,
+    "seen": 8,
+    "duplicates": 7,
+    "snapshots": 8,
+    "stop_reason": "CAPTURE_COMPLETED_STOP",
+    "completed_at": "2026-10-25T17:14:22.351832+00:00"
+  },
+  "actual_search_url": "https://www.tiktok.com/search?q=home+gadgets",
+  "results": 8,
+  "observations": 8,
+  "new_videos": 1,
+  "duplicates": 7,
+  "trend_snapshots": 8,
+  "skipped_targets": [],
+  "blocked_targets": [
+    {
+      "target_type": "VIDEO",
+      "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "reason": "HTTP_403",
+      "first_seen": "2026-10-25T01:32:10.269892+00:00",
+      "last_seen": "2026-10-25T01:32:10.269892+00:00",
+      "attempt_count": 1,
+      "status": "BLOCKED"
+    }
+  ],
+  "global_security": {},
+  "target_security_pending": {},
+  "final_page": "healthy",
+  "final_session": "confirmed",
+  "stage2_executed": false
+}

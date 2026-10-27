@@ -1,0 +1,78 @@
+[
+  {
+    "phrase_id": 1,
+    "video_id": 1,
+    "raw_phrase": "vacuum cleaner",
+    "status": "pending",
+    "human_rejected": false,
+    "reviews": [],
+    "observations": [
+      {
+        "id": 1,
+        "phrase_id": 1,
+        "source_entity_type": "comment_observations",
+        "source_entity_id": "visible:63f7660405bd00c8654ca39b943c0a4c3cbb1a5b07ec9ede9f3d7079dc20666e",
+        "raw_text": "vacuum cleaner",
+        "source_url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+        "observed_at": "2026-10-21T18:35:07.782041+00:00",
+        "method": "lexical_noun_pattern"
+      },
+      {
+        "id": 2,
+        "phrase_id": 1,
+        "source_entity_type": "comment_observations",
+        "source_entity_id": "visible:0f7ce80a38442babbe2be8d520a76d70ac0102290c877e8ea090ca973f9d9fb3",
+        "raw_text": "vacuum cleaner",
+        "source_url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+        "observed_at": "2026-10-21T18:46:35.610448+00:00",
+        "method": "lexical_noun_pattern"
+      },
+      {
+        "id": 4,
+        "phrase_id": 1,
+        "source_entity_type": "comment_observations",
+        "source_entity_id": "visible:2b5d739096aec36acc714367ce7db88f8c51d93b7a6ceffe63181bf356999a5d",
+        "raw_text": "Mini Vacuum Cleaner Price? very useful ✨",
+        "source_url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+        "observed_at": "2026-10-21T18:46:35.610448+00:00",
+        "method": "recurring_phrase"
+      }
+    ],
+    "detector_matches": [],
+    "blocker": "outside_approved_vocabulary",
+    "blocking_stage": "configured_product_patterns",
+    "vocabulary_version": "product-vocabulary-v1",
+    "mode": "reviewable_suggestion",
+    "reviewable": true,
+    "automatic_candidate": false,
+    "explanation": "Unresolved is not a rejection. Approval remains an explicit human vocabulary decision; precision impact is unmeasured."
+  },
+  {
+    "phrase_id": 2,
+    "video_id": 1,
+    "raw_phrase": "Mini Vacuum Cleaner",
+    "status": "pending",
+    "human_rejected": false,
+    "reviews": [],
+    "observations": [
+      {
+        "id": 3,
+        "phrase_id": 2,
+        "source_entity_type": "comment_observations",
+        "source_entity_id": "visible:2b5d739096aec36acc714367ce7db88f8c51d93b7a6ceffe63181bf356999a5d",
+        "raw_text": "Mini Vacuum Cleaner Price? very useful ✨",
+        "source_url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+        "observed_at": "2026-10-21T18:46:35.610448+00:00",
+        "method": "lexical_noun_pattern"
+      }
+    ],
+    "detector_matches": [],
+    "blocker": "outside_approved_vocabulary",
+    "blocking_stage": "configured_product_patterns",
+    "vocabulary_version": "product-vocabulary-v1",
+    "mode": "reviewable_suggestion",
+    "reviewable": true,
+    "automatic_candidate": false,
+    "explanation": "Unresolved is not a rejection. Approval remains an explicit human vocabulary decision; precision impact is unmeasured."
+  }
+]

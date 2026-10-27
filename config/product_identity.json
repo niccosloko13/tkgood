@@ -1,0 +1,200 @@
+{
+  "version": "product-identity-foundation-v1",
+  "generic_heads": [
+    "brush",
+    "cleaner",
+    "maker",
+    "tool",
+    "device",
+    "gadget",
+    "dispenser",
+    "dryer",
+    "organizer",
+    "scrubber",
+    "spinner",
+    "blender",
+    "massager",
+    "escova",
+    "liquidificador",
+    "organizador",
+    "licuadora",
+    "خلاط"
+  ],
+  "weak_modifiers": {
+    "portable": 0.3,
+    "mini": 0.2,
+    "usb": 0.15,
+    "travel": 0.2,
+    "new": 0.0,
+    "viral": 0.0,
+    "home": 0.05
+  },
+  "modifier_sequences": {
+    "long handle": "long-handle",
+    "long handled": "long-handle"
+  },
+  "bundle_sequences": [
+    "3 in 1",
+    "9 em 1"
+  ],
+  "function_tokens": [
+    "in",
+    "em",
+    "de",
+    "a",
+    "the",
+    "and",
+    "for"
+  ],
+  "specificity": {
+    "head_weight": 0.05,
+    "specific_modifier_weight": 0.25,
+    "bundle_weight": 0.15,
+    "maximum": 1.0,
+    "medium_threshold": 0.3,
+    "high_threshold": 0.65
+  },
+  "recurrence": {
+    "minimum_videos": 2,
+    "second_video": 0.35,
+    "additional_video": 0.1,
+    "second_creator": 0.25,
+    "additional_creator": 0.1,
+    "cap": 0.95
+  },
+  "identity": {
+    "minimum_videos": 2,
+    "minimum_creators": 2,
+    "minimum_shared_specific_modifiers": 2,
+    "minimum_specificity": 0.65,
+    "possible_threshold": 0.75,
+    "exact_specific_phrase": 0.75,
+    "specific_shared_alias": 0.75,
+    "shared_modifiers": 0.1,
+    "matching_bound_listing_url": 0.9,
+    "cap": 0.95
+  },
+  "concept": {
+    "same_phrase": 1.0,
+    "shared_head": 0.4,
+    "token_overlap_weight": 0.4,
+    "different_head_overlap_weight": 0.3,
+    "cap": 1.0
+  },
+  "listing_path_pattern": "/(?:products?|item|listing|dp)/[^/]+",
+  "excluded_listing_hosts": [
+    "www.tiktok.com",
+    "tiktok.com",
+    "linktr.ee",
+    "bio.site",
+    "l.markable.ai"
+  ],
+  "active_identity_signal_types": [
+    "exact_specific_phrase",
+    "strong_shared_alias",
+    "specific_modifiers_shared",
+    "matching_bound_commercial_url"
+  ],
+  "future_signal_types": [
+    "matching_brand_model_text",
+    "same_merchant_listing_reference",
+    "visual_similarity",
+    "structured_product_attributes"
+  ],
+  "automatic_product_matched": false,
+  "resolver": {
+    "version": "product-identity-resolver-v1",
+    "possible_threshold": 70,
+    "different_below": 40,
+    "score_cap": 100,
+    "insufficient_cap": 39,
+    "minimum_specific_tokens": 2,
+    "context_window_tokens": 8,
+    "max_pairs": 1000,
+    "max_bucket_size": 100,
+    "max_ngram": 4,
+    "weights": {
+      "exact_normalized_phrase": 30,
+      "specific_token_overlap": 20,
+      "modifier_overlap": 20,
+      "generic_head_overlap": 0,
+      "number_match": 5,
+      "dimension_match": 10,
+      "brand_token_match": 35,
+      "model_token_match": 25,
+      "commercial_url_match": 75,
+      "shared_external_reference": 0,
+      "supporting_comment_phrase_overlap": 10,
+      "weak_modifier_overlap": 5,
+      "modifier_conflict": -50,
+      "number_conflict": -60,
+      "dimension_conflict": -60,
+      "model_conflict": -60,
+      "unshared_specialization": -8
+    },
+    "context_modifiers": [
+      "electric",
+      "rotating",
+      "magnetic",
+      "spin",
+      "long-handle",
+      "rechargeable",
+      "foldable",
+      "cordless",
+      "silicone",
+      "elétrica",
+      "eletrica",
+      "giratória",
+      "giratoria",
+      "extensível",
+      "extensivel"
+    ],
+    "domain_tokens": [
+      "dish",
+      "floor",
+      "shower",
+      "window",
+      "clothes",
+      "hair",
+      "soap",
+      "burger",
+      "patty",
+      "fruit",
+      "vacuum",
+      "pet",
+      "facial",
+      "makeup",
+      "kitchen",
+      "handle",
+      "long",
+      "steam"
+    ],
+    "conflict_groups": [
+      [
+        "dish",
+        "floor"
+      ],
+      [
+        "clothes",
+        "hair"
+      ],
+      [
+        "shower",
+        "dish"
+      ]
+    ],
+    "dimension_pattern": "(?<!\\w)(\\d+(?:[.,]\\d+)?)\\s*(mm|cm|ml|kg|inch|inches|oz|l)(?!\\w)",
+    "identity_evidence_types": [
+      "caption",
+      "hashtag",
+      "video_metadata",
+      "comment"
+    ],
+    "commercial_evidence_types": [
+      "external_link",
+      "commercial_link",
+      "exact_listing_url"
+    ],
+    "bundle_pattern": "(?<!\\w)\\d+\\s+(?:in|em)\\s+\\d+(?!\\w)"
+  }
+}

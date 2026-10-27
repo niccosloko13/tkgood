@@ -1,3 +1,7 @@
+"""Deprecated legacy target-policy compatibility; no production browser caller.
+
+Semantic Companion commands are the supported runtime. Retained for old tests.
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass

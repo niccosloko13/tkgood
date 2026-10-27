@@ -2,6 +2,12 @@
 
 ## Activating this update
 
+Use `python scripts/devctl.py reload-all` with the existing environment for normal
+development updates. It owns its backend process, drains collection operations,
+reloads the Companion and TikTok tabs, and verifies the loaded build and fresh
+heartbeat. See [DEV_CONTROL.md](DEV_CONTROL.md). The manual instructions below are
+fallback only if local control genuinely fails; do not use Computer Use for them.
+
 The running backend uses reload=False. Manually restart it in its existing terminal
 when ready, using the same virtual environment and `python run.py`. No environment
 recreation or second project copy is needed.
@@ -46,17 +52,37 @@ sprint; a packaged installation must be replaced/rebuilt manually.
   the heartbeat body. The backend maps these fields to the existing dashboard state.
 - POST /api/commands: {"type":"SEARCH","query":"..."} (1–200 chars, nonblank), or
   {"type":"READ_SEARCH_RESULTS"}. Capture query is taken from the current bridge
-  search URL. Both schemas forbid extra fields; all other command types are rejected.
+  search URL; or {"type":"READ_VIDEO_DETAIL","video_url":"..."} for an existing
+  library video only; or {"type":"READ_COMMENTS_SAMPLE","video_url":"...",
+  "target_count":30} for an already enriched library video (strict integer 1–100).
+  Schemas forbid extra fields; other command types are rejected.
 - GET /api/bridge/commands/next?extension_id=...: atomically claims one pending command.
 - POST /api/bridge/commands/{id}/result: only SUCCEEDED or FAILED from claimed owner.
   A successful READ_SEARCH_RESULTS includes `capture` with query, page_url,
   results_count, links_detected, results. Query must match the queued command and
   the search URL. Results must contain unique valid TikTok video URLs, at most 100.
   Capture data is forbidden on SEARCH and failed acknowledgements.
+  READ_VIDEO_DETAIL returns `video_detail` instead of capture, with matching video
+  identity and `video_detail` field provenance. It waits for document completion
+  and visible author/count metadata, with a 25-second limit. Failure diagnostics
+  contain only readiness, selector names and counts or a communication error.
+  Detail observations are stored separately; search coverage and capture counters
+  are unchanged. The bounded helper `scripts/read_video_details.py --capture-id
+  command:9 --limit 8` reads sequentially and stops on the first failed command.
+  The current detail extractor is `tiktok-video-detail-v2`: it waits for stable
+  numeric likes/comments, preserves partial nulls after a bounded wait, and
+  includes per-metric method/confidence. Rereading the current video does not
+  navigate again. See [VIDEO_DETAIL_METRICS.md](VIDEO_DETAIL_METRICS.md).
 - GET /api/videos/count: {total}, global unique video count.
 - GET /api/videos/recent: {total,items}, latest 20 observations ordered by last_seen_at.
+- GET /api/extraction/quality: latest capture metadata, six field coverage percentages,
+  Complete/Partial/Minimal counts and thresholds_met (minimum sample size 8), plus
+  library_total/current_capture/new_this_capture/updated_duplicates. These are
+  persisted-data metrics, not UI estimates. Library is cumulative; the other
+  three refer to the latest completed capture.
 - GET /api/commands: recent command states. Pending/dispatched expire after 45s,
-  evaluated on queue access. No automatic replay of dispatched commands.
+  or 90s for bounded comments sampling, evaluated on queue access.
+  No automatic replay of dispatched commands.
 - Retry of a lost acknowledgement is persisted in extension storage. Repeated
   identical acknowledgement is idempotent. Expired commands cannot finish.
 - ID scopes delivery to the reporting extension; it is not an authentication secret.
@@ -72,15 +98,27 @@ sprint; a packaged installation must be replaced/rebuilt manually.
 
 ## Storage and deduplication
 
-Startup safely migrates the existing SEARCH-only queue constraint, preserving
-commands. SQLite stores one `video_observations` row per canonical HTTPS TikTok
-video URL; query/fragment tracking is removed. Source is always tiktok.
-Each row includes search_query, visible creator/caption/metrics/raw text,
-extraction_version, collected_at, first_seen_at and last_seen_at. Timestamps are
-UTC server receipt times. collected_at and last_seen_at update on recapture;
-first_seen_at and id stay unchanged. search_query identifies the latest capture.
-The latest visible snapshot replaces prior values, including null when a field is
-no longer visible. Abbreviated metric text is preserved, without numeric inference.
+Startup preserves existing commands and imports the old `video_observations`
+table into `videos` and `search_observations` transactionally, once. The old table
+remains untouched as an archive. Numeric TikTok video_id is the strong identity;
+canonical URL is the fallback. Query/fragment tracking is removed. Source is tiktok.
+Each new command adds a historical observation for each visible video, without
+duplicating its identity. UTC first_seen_at remains; last_seen_at advances.
+The latest observation stores its own values/nulls, raw text, visual position,
+version and field evidence. Best-known video fields follow source precedence;
+missing or weaker fields do not erase stronger evidence. Views preserves both
+raw text and normalized integer. See [EXTRACTION.md](EXTRACTION.md) for the model.
+
+New results use extraction_version `tiktok-search-card-v2` and include video_id,
+views_raw, integer/null views, thumbnail_url, search_position, field_evidence,
+extraction_completeness, a bounded sanitized card_snapshot and card_diagnostics
+(viewport, node counts/geometry only; no offscreen text). Sources accepted
+from this extractor are only search_card and heuristic_text. Backend receipt time
+stamps each field's observed_at. Legacy `search-dom-v1` results remain accepted
+for an already-installed worker, but are unverified and cannot pass enrichment
+coverage targets. Reload the unpacked extension and TikTok tab after deployment.
+Reloading the extension alone does not update an already-open content script:
+reload the TikTok tab as well before requesting capture.
 
 Observations, completion state and capture log entries commit in one transaction.
 A persisted result hash makes a retry idempotent; a modified acknowledgement of
@@ -107,3 +145,35 @@ full requested sequence. On 2026-10-21 the user confirmed RECENT VIDEOS displaye
 all 8 collected videos, a second capture kept the total at 8, and Live Log showed
 8 result links detected, 0 unique observations stored and 8 duplicates updated.
 The READ-ONLY SEARCH CAPTURE sprint is closed. No next sprint was started.
+
+## Visible comments command
+
+READ_COMMENTS_SAMPLE returns `comments_sample` instead of capture/video_detail;
+result types are mutually exclusive and failed results cannot contain observations.
+Video identity, requested target, consecutive positions, numeric/raw consistency,
+versions and maximum size are validated. Only one collection command may be active
+when sampling starts. Receipt/storage/completion are transactional; acknowledgement
+retries are idempotent. Historical samples are preserved separately from videos,
+search observations and approved detail metrics.
+
+GET /api/comments/summaries returns the latest sample per video, objective signals,
+field coverage and bounded diagnostics. GET /api/videos/{numeric_video_id}/comments
+also returns its structured comment observations. Both use strict response schemas.
+The dashboard displays the latest sample and offers SAMPLE COMMENTS (30).
+See [COMMENTS.md](COMMENTS.md) for extraction, limits and real validation.
+
+## Creator profile read
+
+`READ_CREATOR_PROFILE` accepts only `video_url` of a captured video with an observed
+creator username. The server resolves and pins profile identity and originating
+video in command options. A successful result contains `creator_profile`, mutually
+exclusive with capture, video_detail and comments_sample. Strict schemas verify
+visible username/profile identity, numeric raw consistency and method confidence.
+History, completion and logs commit atomically; retries are idempotent. Existing
+commands, endpoints and evidence schemas retain their behavior.
+
+The worker opens only the resolved public profile, waits for its rendered header,
+reads it and returns to the related video. No clicks, scrolling or external-link
+navigation. GET /api/creators and GET /api/creators/{id} expose strict creator,
+latest observation, provenance, signals and related-video records with URLs.
+See [CREATORS.md](CREATORS.md) for the data model, formula and missing-data policy.

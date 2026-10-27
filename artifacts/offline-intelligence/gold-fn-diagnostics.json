@@ -1,0 +1,187 @@
+[
+  {
+    "video_id": 14,
+    "caption": "🔗In Bio! Kitchen Gadgeg I Use Daily🥚🤍",
+    "coverage": {
+      "has_detail": false,
+      "comments_count": 0,
+      "has_thumbnail": true,
+      "caption_kind": "generic_or_functional"
+    },
+    "causes": [
+      "generic_caption",
+      "insufficient_text_evidence",
+      "missing_enrichment",
+      "likely_visual_dependency"
+    ],
+    "primary_cause": "generic_caption",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 12,
+    "caption": "Easy to dry clothes in house😏 #gadgets",
+    "coverage": {
+      "has_detail": true,
+      "comments_count": 10,
+      "has_thumbnail": true,
+      "caption_kind": "generic_or_functional"
+    },
+    "causes": [
+      "generic_caption",
+      "insufficient_text_evidence",
+      "missing_enrichment",
+      "likely_visual_dependency"
+    ],
+    "primary_cause": "generic_caption",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 11,
+    "caption": null,
+    "coverage": {
+      "has_detail": false,
+      "comments_count": 0,
+      "has_thumbnail": true,
+      "caption_kind": "no_text"
+    },
+    "causes": [
+      "no_text",
+      "insufficient_text_evidence",
+      "missing_enrichment",
+      "likely_visual_dependency"
+    ],
+    "primary_cause": "no_text",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 8,
+    "caption": null,
+    "coverage": {
+      "has_detail": false,
+      "comments_count": 0,
+      "has_thumbnail": false,
+      "caption_kind": "no_text"
+    },
+    "causes": [
+      "no_text",
+      "insufficient_text_evidence",
+      "missing_enrichment"
+    ],
+    "primary_cause": "no_text",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 7,
+    "caption": null,
+    "coverage": {
+      "has_detail": false,
+      "comments_count": 0,
+      "has_thumbnail": false,
+      "caption_kind": "no_text"
+    },
+    "causes": [
+      "no_text",
+      "insufficient_text_evidence",
+      "missing_enrichment"
+    ],
+    "primary_cause": "no_text",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "nao tem o preview",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 6,
+    "caption": "Você esqueceu de desconectar?",
+    "coverage": {
+      "has_detail": true,
+      "comments_count": 15,
+      "has_thumbnail": true,
+      "caption_kind": "generic_or_functional"
+    },
+    "causes": [
+      "generic_caption",
+      "insufficient_text_evidence",
+      "missing_enrichment",
+      "likely_visual_dependency"
+    ],
+    "primary_cause": "generic_caption",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "nao especifica mas vi pelo google lens ",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 5,
+    "caption": null,
+    "coverage": {
+      "has_detail": false,
+      "comments_count": 0,
+      "has_thumbnail": true,
+      "caption_kind": "no_text"
+    },
+    "causes": [
+      "no_text",
+      "insufficient_text_evidence",
+      "missing_enrichment",
+      "likely_visual_dependency"
+    ],
+    "primary_cause": "no_text",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "nao diz o nome só soube pelo google lens",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 4,
+    "caption": "🔗Link in bio. Amazon Home Finds",
+    "coverage": {
+      "has_detail": true,
+      "comments_count": 0,
+      "has_thumbnail": true,
+      "caption_kind": "generic_or_functional"
+    },
+    "causes": [
+      "generic_caption",
+      "insufficient_text_evidence",
+      "missing_enrichment",
+      "likely_visual_dependency"
+    ],
+    "primary_cause": "generic_caption",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "nome nao esta na legenda, mas consigo identificar",
+    "review_status_preserved": "reviewed"
+  },
+  {
+    "video_id": 1,
+    "caption": "Easy to remove the stains😏 #gadgets",
+    "coverage": {
+      "has_detail": true,
+      "comments_count": 30,
+      "has_thumbnail": true,
+      "caption_kind": "generic_or_functional"
+    },
+    "causes": [
+      "unknown_vocabulary",
+      "generic_caption"
+    ],
+    "primary_cause": "unknown_vocabulary",
+    "diagnostic_only": true,
+    "human_fn_reason": null,
+    "human_notes": "",
+    "review_status_preserved": "reviewed"
+  }
+]

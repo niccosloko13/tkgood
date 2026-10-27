@@ -1,0 +1,11 @@
+{
+  "version":"visual-identity-v1.1",
+  "model":"gpt-4.1-mini",
+  "max_hypotheses":3,
+  "max_items":14,
+  "timeout_seconds":75,
+  "max_output_tokens":2200,
+  "web_domains":["kaercher.com","leifheit.com","bosch-diy.com","vileda.com","bissell.com","blackanddecker.com","philips.com","oxo.com"],
+  "max_web_results":3
+  ,"historical_priority_ids":[4,5,6,11,12,14]
+}

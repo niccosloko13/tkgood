@@ -1,0 +1,11 @@
+{
+  "version": "trend-history-v1",
+  "velocity_min_points": 2,
+  "acceleration_min_points": 3,
+  "stable_relative_tolerance": 0.05,
+  "stable_absolute_tolerance": 0.000000001,
+  "quality": {"observations": 3, "span_hours": 24, "videos": 2, "creators": 2, "minimum_creator_coverage": 0.7, "maximum_duplicate_dependency": 0.5},
+  "category": {"observations": 3, "span_hours": 168, "videos": 5, "creators": 3},
+  "change_point": {"minimum_points": 30, "minimum_span_hours": 168, "minimum_segment": 5, "penalty": 3},
+  "lifecycle": {"minimum_videos": 3, "minimum_creators": 3, "minimum_span_hours": 48}
+}

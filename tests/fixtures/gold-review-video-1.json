@@ -1,0 +1,279 @@
+{
+  "video_id": 1,
+  "platform_video_id": "7462746836533677358",
+  "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+  "caption": "Easy to remove the stains😏 #gadgets",
+  "creator_username": "@airlandolists",
+  "thumbnail_url": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYLeB8AlEijhplABIAzCRBPByIbrJlAvwADiCI~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1792771200&x-signature=0JNgBhgc3YxgjR%2FYPxeEcFzZy0s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+  "review_version": "gold-set-v1",
+  "review_status": "pending",
+  "product_presence": null,
+  "canonical_product_name": null,
+  "raw_product_name": null,
+  "specificity": null,
+  "review_notes": "",
+  "language": "unknown",
+  "fn_reason": null,
+  "fp_reason": null,
+  "reviewed_at": null,
+  "reviewer_type": null,
+  "candidates": [],
+  "human_reviewed": false,
+  "comment_sample": {
+    "id": 9,
+    "observed_at": "2026-10-21T18:46:35.610448+00:00",
+    "stop_reason": "target_reached",
+    "signals_json": "{\"comments_sampled\": 30, \"unique_commenters\": 30, \"duplicate_ratio\": 0.066667, \"comments_with_question_mark\": 10, \"comments_with_price_terms\": 1, \"comments_with_link_terms\": 11, \"comments_with_buy_terms\": 3, \"comments_with_problem_terms\": 0, \"by_language\": {\"en\": {\"comments_with_price_terms\": 1, \"comments_with_link_terms\": 11, \"comments_with_buy_terms\": 0, \"comments_with_problem_terms\": 0}, \"pt\": {\"comments_with_price_terms\": 0, \"comments_with_link_terms\": 11, \"comments_with_buy_terms\": 3, \"comments_with_problem_terms\": 0}, \"es\": {\"comments_with_price_terms\": 0, \"comments_with_link_terms\": 11, \"comments_with_buy_terms\": 3, \"comments_with_problem_terms\": 0}}, \"terms_version\": \"comment-terms-v1\"}"
+  },
+  "comments": [
+    {
+      "id": 120,
+      "author_username": "@eu.va_nessa",
+      "text": "Qual link ,prático de mais",
+      "sample_id": 9
+    },
+    {
+      "id": 121,
+      "author_username": "@almapachecozavala",
+      "text": "Por favor digan donde los venden",
+      "sample_id": 9
+    },
+    {
+      "id": 122,
+      "author_username": "@mac.sapatos",
+      "text": "qual nome do produto?",
+      "sample_id": 9
+    },
+    {
+      "id": 123,
+      "author_username": "@achadex91",
+      "text": "onde compro um desses?",
+      "sample_id": 9
+    },
+    {
+      "id": 124,
+      "author_username": "@vitrineviral597",
+      "text": "qual o nome?",
+      "sample_id": 9
+    },
+    {
+      "id": 125,
+      "author_username": "@arturovalenciavil1",
+      "text": "donde lo compro",
+      "sample_id": 9
+    },
+    {
+      "id": 126,
+      "author_username": "@zabeth53_4345",
+      "text": "vacuum cleaner",
+      "sample_id": 9
+    },
+    {
+      "id": 127,
+      "author_username": "@muhadisamirzaie",
+      "text": "Does it work on carpet ?",
+      "sample_id": 9
+    },
+    {
+      "id": 128,
+      "author_username": "@viralizou.por.iss",
+      "text": "Preciso desse gadget agoraa",
+      "sample_id": 9
+    },
+    {
+      "id": 129,
+      "author_username": "@cintia_eloi2009",
+      "text": "eu quero o link por favor",
+      "sample_id": 9
+    },
+    {
+      "id": 130,
+      "author_username": "@silvianogueira090",
+      "text": "Link",
+      "sample_id": 9
+    },
+    {
+      "id": 131,
+      "author_username": "@pipolinistore",
+      "text": "q prático! alguém tem o link?",
+      "sample_id": 9
+    },
+    {
+      "id": 132,
+      "author_username": "@kalel7073",
+      "text": "where is the link?",
+      "sample_id": 9
+    },
+    {
+      "id": 133,
+      "author_username": "@mariusgreat3",
+      "text": "Name is objet ?🙏",
+      "sample_id": 9
+    },
+    {
+      "id": 134,
+      "author_username": "@kazim.kazim606",
+      "text": "link pls",
+      "sample_id": 9
+    },
+    {
+      "id": 135,
+      "author_username": "@agathaeariane",
+      "text": "eu quero",
+      "sample_id": 9
+    },
+    {
+      "id": 136,
+      "author_username": "@achadosvirais.tk",
+      "text": "uau😳 onde posso comprar?",
+      "sample_id": 9
+    },
+    {
+      "id": 137,
+      "author_username": "@arieneferreira0",
+      "text": "link",
+      "sample_id": 9
+    },
+    {
+      "id": 138,
+      "author_username": "@bddbbd455",
+      "text": "the most funtional device i have ver seen",
+      "sample_id": 9
+    },
+    {
+      "id": 139,
+      "author_username": "@dedecoqueiro",
+      "text": "eu quero um",
+      "sample_id": 9
+    },
+    {
+      "id": 140,
+      "author_username": "@barbaracouuuto",
+      "text": "link?",
+      "sample_id": 9
+    },
+    {
+      "id": 141,
+      "author_username": "@anaty.werneck",
+      "text": "top!! já quero ✨",
+      "sample_id": 9
+    },
+    {
+      "id": 142,
+      "author_username": "@misss.don",
+      "text": "Mini Vacuum Cleaner Price? very useful ✨",
+      "sample_id": 9
+    },
+    {
+      "id": 143,
+      "author_username": "@dicasdadaia_economiza",
+      "text": "link por favor",
+      "sample_id": 9
+    },
+    {
+      "id": 144,
+      "author_username": "@delcentropadentro",
+      "text": "Need",
+      "sample_id": 9
+    },
+    {
+      "id": 145,
+      "author_username": "@rsouzamind",
+      "text": "preciso disso!",
+      "sample_id": 9
+    },
+    {
+      "id": 146,
+      "author_username": "@user92666780806347",
+      "text": "link",
+      "sample_id": 9
+    },
+    {
+      "id": 147,
+      "author_username": "@user12310924777758",
+      "text": "eu quero o link",
+      "sample_id": 9
+    },
+    {
+      "id": 148,
+      "author_username": "@elisabetegarcia67",
+      "text": "esse eu querooo",
+      "sample_id": 9
+    },
+    {
+      "id": 149,
+      "author_username": "@yessicarengifo",
+      "text": "Super donde se consigue",
+      "sample_id": 9
+    }
+  ],
+  "evidence": [],
+  "unresolved_phrases": [
+    {
+      "id": 1,
+      "video_id": 1,
+      "raw_phrase": "vacuum cleaner",
+      "normalized_phrase": "vacuum cleaner",
+      "signature": "vacuum cleaner",
+      "status": "pending",
+      "first_seen_at": "2026-10-21T18:35:07.782041+00:00",
+      "last_seen_at": "2026-10-21T18:46:35.610448+00:00",
+      "discovery_version": "product-corroboration-v1"
+    },
+    {
+      "id": 2,
+      "video_id": 1,
+      "raw_phrase": "Mini Vacuum Cleaner",
+      "normalized_phrase": "mini vacuum cleaner",
+      "signature": "mini vacuum cleaner",
+      "status": "pending",
+      "first_seen_at": "2026-10-21T18:46:35.610448+00:00",
+      "last_seen_at": "2026-10-21T18:46:35.610448+00:00",
+      "discovery_version": "product-corroboration-v1"
+    }
+  ],
+  "detection_gap": {
+    "run_id": 19,
+    "video_id": 1,
+    "reason": "unknown_product_phrase",
+    "explanation": "Unverified noun-like phrase outside the approved detector vocabulary",
+    "source_snapshot_json": "[{\"kind\": \"caption\", \"entity\": \"search_observations\", \"key\": \"17\", \"text\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets\", \"at\": \"2026-10-21T17:06:05.007646+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"caption\", \"entity\": \"video_detail_observations\", \"key\": \"1\", \"text\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets #coolstuff\", \"at\": \"2026-10-21T17:37:51.609725+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"caption\", \"entity\": \"video_detail_observations\", \"key\": \"9\", \"text\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets #coolstuff\", \"at\": \"2026-10-21T17:57:30.755971+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"caption\", \"entity\": \"video_detail_observations\", \"key\": \"10\", \"text\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets #coolstuff\", \"at\": \"2026-10-21T17:58:42.472809+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"caption\", \"entity\": \"video_detail_observations\", \"key\": \"11\", \"text\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets\", \"at\": \"2026-10-21T18:05:24.381091+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:31dc81221c77ed275b3baf76021ee7f808ab88fdd67d203487ffb9a94c12c8ef\", \"text\": \"Qual link ,pr\\u00e1tico de mais\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:501a7a24d5d1cdb23ca129be5f91379ce2e6a3e1248ac1c0f7c1f5aa35c9de6e\", \"text\": \"qual nome do produto?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:9f484f07183bdb9c55cd789909767f3eebf69abdd3b69a4ffefb98cfa46c5ee0\", \"text\": \"Por favor digan donde los venden\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:d664247388aea5e61e4e13368b3565340242fdaf64a1db20722eb9938bf476fb\", \"text\": \"Achadex\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:4d2e83c0bb314241ac311a48e2ff06829bdd240b6cd595762f963198e5b47800\", \"text\": \"Por favor digan donde los venden\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:527745f87834d73c9ca1e642f932381003dedcf861ba98099512ee2f43bf2618\", \"text\": \"onde compro um desses?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:6e79b6dab3279f809ee914ca3a96f521159a70cd0dc9cd075f879555ca4317d0\", \"text\": \"qual o nome?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:78a89a2c752ae431024f4d1744b8037027165cc54201180159de147c52f8a37c\", \"text\": \"donde lo compro\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:63f7660405bd00c8654ca39b943c0a4c3cbb1a5b07ec9ede9f3d7079dc20666e\", \"text\": \"vacuum cleaner\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:9a072bb2f2580daaf5e4cf87ad7e26a568ddc68fc331ede288fb80a11aeb4db8\", \"text\": \"Does it work on carpet ?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:c5c8691d08781fb5edc0d08cd756a876d193ab1033f4888a55a3d0871f05921c\", \"text\": \"Preciso desse gadget agoraa\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:9ea39e209791a3a971ec829c85ef81a7d6b321aace76a13a40c2ef094afb9fc4\", \"text\": \"Link\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:3e1e43b6b62aa6642a431bbe75b7cb227113bfd011782216fca40b56511374da\", \"text\": \"eu quero o link por favor\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:051b0ca4ff7248ed8848c31a2efd4f1cbba456a648d83ed6b0ce875f02112a8e\", \"text\": \"where is the link?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:cc9020a4d045ba30473e2ac50e02496c149874e2d8c60dd25d18226bde0928fc\", \"text\": \"q pr\\u00e1tico! algu\\u00e9m tem o link?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:7767c66215b9dfd3f78007b9417168f02e37e73ac01049d631fd9633b2db99fb\", \"text\": \"MRS great \\u270c\\ufe0f\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:c611af3c62de0c404473d1e065b67779258bea91d696b87f0593a4e2d25b8c4a\", \"text\": \"q pr\\u00e1tico! algu\\u00e9m tem o link?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:54c8ad85a661c8d146cb629368872ae67bd35c06344bbf251765da38b3df24cf\", \"text\": \"Name is objet ?\\ud83d\\ude4f\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:d01d15fbbb739dfb2ab6ced1caa9ac32e944f697b9cd69300e54d08c1b2753b6\", \"text\": \"link pls\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:f869011b64914af68ace8ab83ddbbbe7853b1bef47ed8ea5e1d8f80d6fe6c681\", \"text\": \"eu quero\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:552cf975f07591d371332bc92233c6ccd272a797dc74f0142a4a0f99d9823d37\", \"text\": \"Responder\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:50bea54fd4d531e92218fb7a837dd563e1c219a44004990089f97fe63411f01b\", \"text\": \"the most funtional device i have ver seen\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:8bb5f8bbb7b20bd5df9d37084e89b364e4139c2534ea462d244aa6a3a4a5be21\", \"text\": \"uau\\ud83d\\ude33 onde posso comprar?\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:efd935affcd9ae423397675c44791b4aacc2b248a904e5ef2a14be9d43359e62\", \"text\": \"link\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:b7f61d631add66d62081e0a4a7fcd8469cf9b8863467c4cc98ffef0080bf944a\", \"text\": \"the most funtional device i have ver seen\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:9214de47d3c1c144ff586deeebca45f969e0efe52852d8ee6155836cc929ca1d\", \"text\": \"eu quero um\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:bb2b7f97e51f768b68e8ec25ec5b1dbed71ebaf03fc8a9784e3ce78fba35aed1\", \"text\": \"link\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:ff60dc0530f98337ca26c4e88ea9d03ec34bdbe50a4be880025562ee250a71b3\", \"text\": \"esse eu querooo\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:8c8c15695c04ce0ec7d106eed267309b4a85b66983eba40a348e3777cac34feb\", \"text\": \"lo quiero\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:18b5bb363d0871457ab671e6b1afcbae518d7b7b966c7c5bcd2fa6abb80542a6\", \"text\": \"esse eu querooo\", \"at\": \"2026-10-21T18:35:07.782041+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:64d3307e827f2741e914b96ba4d2eec315a3bf1f62a58f87bb2ca7b3280cc758\", \"text\": \"Qual link ,pr\\u00e1tico de mais\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:4886836bf5b84d93b77e6bd5833d8c6ced4e0698b6e25e2cc5d2808463fbe2e6\", \"text\": \"Por favor digan donde los venden\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:0decf9bbd33df6c2885a62446fc01ef727ac00fbac4c080f7d6bc5b55e0a63ad\", \"text\": \"qual nome do produto?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:55809297cb954a65be1917524a8d91ac4210ffc759484a1c8bb808e066d7acc2\", \"text\": \"onde compro um desses?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:9e098dbd865123e9f099d6f43baae2da829a1dbc0256f789479052db30a48833\", \"text\": \"qual o nome?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:5981bc47c583380147da8fe2e49635a3ced0558d9f7c0317ed6786fbb64c66b1\", \"text\": \"donde lo compro\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:0f7ce80a38442babbe2be8d520a76d70ac0102290c877e8ea090ca973f9d9fb3\", \"text\": \"vacuum cleaner\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:4b74017e6044d23498d3c7fc240e83dde7ad527ecc342b8ee4a01fdf69405564\", \"text\": \"Does it work on carpet ?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:afcdb3eb754906430f5125f31633049708e8173622f48e454b0987c8dd4edd03\", \"text\": \"Preciso desse gadget agoraa\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:b9c334224e3fa33d0903ab93aee56eb9725fe99cc60f63307b1cc87e1aa7152e\", \"text\": \"eu quero o link por favor\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:d6f5d8ef0edb68eff056cdf2bebfc30acf605225d40580b8deb379b303015fb5\", \"text\": \"Link\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:058ac40e57ef9fe81ee0170512ff41f046cc79872200fc973a0c0775bc0c72f2\", \"text\": \"q pr\\u00e1tico! algu\\u00e9m tem o link?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:5290c6d7d236b9e02f07b249c337353e679215706cf1acc1955a883d7e533342\", \"text\": \"where is the link?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:e4bb04cbdbf433add1f5fe264ca14692b4338ac7937873db9b46a9b6f0f0216f\", \"text\": \"Name is objet ?\\ud83d\\ude4f\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:8225d0a0c3bd2d1748f1a1383e1466d9820d49717572be63b5cbc2ddabfd2126\", \"text\": \"link pls\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:99545627818479db5972f1c189f21bd85f0b0d796f66d1cd82a5773c792e7d01\", \"text\": \"eu quero\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:7a6092170eb7bd9dc42c31221ba47dbc405f0664d7df63d6ce5e9c35f4eb844e\", \"text\": \"uau\\ud83d\\ude33 onde posso comprar?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:9dc6e264de097420f2db67c77e2b2f5e8cf2c8fa1999d4dddb434c17f9b9ac63\", \"text\": \"link\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:86c569b05df1e2f3d188b05ec76bfd3a7b2ad610d8212196e062d7b79e4c35c8\", \"text\": \"the most funtional device i have ver seen\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:019ec680b5e40abc1144181c9e6e9130022c2009172b9c032e2b256068c8181e\", \"text\": \"eu quero um\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:4986a4fdf2aa3587e7e8396704e96d2c53cdf08ff13c6e8d4aafd84f6c5dec96\", \"text\": \"link?\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:8d52461d1f04dedbdb909c4f2d7a2b598b9a585ffaa6f094b3602a3e2cf393a2\", \"text\": \"top!! j\\u00e1 quero \\u2728\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:2b5d739096aec36acc714367ce7db88f8c51d93b7a6ceffe63181bf356999a5d\", \"text\": \"Mini Vacuum Cleaner Price? very useful \\u2728\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:3d373d065374f9e3a1bee3c8f67a377e4b2e7c884c196817d2603bbf30074893\", \"text\": \"link por favor\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:2f67497fca19b4888b51a6fb69a9ddab6c83da9b9d2b5f068f6b3d8ac218ef8a\", \"text\": \"Need\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:013e4f03ff4b592cc4827a67442f7babd18e6b852b9a984cf951839ace1e752d\", \"text\": \"preciso disso!\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:a6d86078dc303a0b54b119e2fad60a591ad875ea93d3456b7c687de0b2e50b56\", \"text\": \"link\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:cebbb8ee85ad5d03cc379ce16b235d2564a634499339557461858dc6762cf196\", \"text\": \"eu quero o link\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:e1b0aacabf165175bb41b9c4c56d695fd72eaaf45f27863b2e0a1daa3b768198\", \"text\": \"esse eu querooo\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}, {\"kind\": \"comment\", \"entity\": \"comment_observations\", \"key\": \"visible:4b47381efcb042bfec908637ba6323e1bf747d4bfbd2339da2c69532dc635b4f\", \"text\": \"Super donde se consigue\", \"at\": \"2026-10-21T18:46:35.610448+00:00\", \"url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\"}]",
+    "analyzed_at": "2026-10-22T11:57:56.773870+00:00",
+    "analysis_version": "product-corroboration-v1"
+  },
+  "source_observations": {
+    "search_observations": {
+      "id": 17,
+      "observed_at": "2026-10-21T17:06:05.007646+00:00",
+      "extractor_version": "tiktok-search-card-v2",
+      "fields_json": "{\"video_url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"video_id\": \"7462746836533677358\", \"creator_username\": \"@airlandolists\", \"creator_display_name\": null, \"caption\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets\", \"views\": 31200, \"thumbnail_url\": null, \"likes\": null, \"comments_count\": null, \"shares\": null, \"favorites\": null, \"views_raw\": \"31.2K\", \"card_diagnostics\": {\"viewport\": {\"width\": 1536.0, \"height\": 730.0}, \"card_rect\": {\"top\": 84.0, \"bottom\": 462.5, \"left\": 272.0, \"right\": 512.6}, \"creator\": {\"candidates\": 0, \"visible\": 0, \"rects\": []}, \"caption\": {\"candidates\": 2, \"visible\": 2, \"rects\": [{\"top\": 404.5, \"bottom\": 456.5, \"left\": 272.0, \"right\": 512.6}, {\"top\": 412.5, \"bottom\": 430.5, \"left\": 274.0, \"right\": 510.6}]}, \"views\": {\"candidates\": 1, \"visible\": 1, \"rects\": [{\"top\": 377.9, \"bottom\": 393.9, \"left\": 302.0, \"right\": 338.8}]}}}",
+      "field_evidence_json": "{\"video_url\": {\"value\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"raw_value\": null, \"confidence\": 1.0, \"source\": \"search_card\", \"observed_at\": \"2026-10-21T17:06:05.007646+00:00\"}, \"video_id\": {\"value\": \"7462746836533677358\", \"raw_value\": null, \"confidence\": 1.0, \"source\": \"search_card\", \"observed_at\": \"2026-10-21T17:06:05.007646+00:00\"}, \"creator_username\": {\"value\": \"@airlandolists\", \"raw_value\": null, \"confidence\": 0.95, \"source\": \"search_card\", \"observed_at\": \"2026-10-21T17:06:05.007646+00:00\"}, \"caption\": {\"value\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets\", \"raw_value\": null, \"confidence\": 0.95, \"source\": \"search_card\", \"observed_at\": \"2026-10-21T17:06:05.007646+00:00\"}, \"views\": {\"value\": 31200, \"raw_value\": \"31.2K\", \"confidence\": 0.98, \"source\": \"search_card\", \"observed_at\": \"2026-10-21T17:06:05.007646+00:00\"}}"
+    },
+    "video_detail_observations": {
+      "id": 11,
+      "observed_at": "2026-10-21T18:05:24.381091+00:00",
+      "extractor_version": "tiktok-video-detail-v2",
+      "fields_json": "{\"video_url\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"video_id\": \"7462746836533677358\", \"creator_username\": \"@airlandolists\", \"creator_display_name\": null, \"caption\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets\", \"views\": null, \"thumbnail_url\": null, \"likes\": \"31.2K\", \"comments_count\": \"1408\", \"shares\": \"21.4K\", \"favorites\": \"17.5K\", \"views_raw\": null, \"card_diagnostics\": null}",
+      "field_evidence_json": "{\"video_url\": {\"value\": \"https://www.tiktok.com/@airlandolists/video/7462746836533677358\", \"raw_value\": null, \"confidence\": 1.0, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": null}, \"video_id\": {\"value\": \"7462746836533677358\", \"raw_value\": null, \"confidence\": 1.0, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": null}, \"creator_username\": {\"value\": \"@airlandolists\", \"raw_value\": null, \"confidence\": 0.98, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": null}, \"caption\": {\"value\": \"Easy to remove the stains\\ud83d\\ude0f #gadgets\", \"raw_value\": null, \"confidence\": 0.95, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": null}, \"likes\": {\"value\": 31200, \"raw_value\": \"31.2K\", \"confidence\": 0.98, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": \"semantic_text\"}, \"comments_count\": {\"value\": 1408, \"raw_value\": \"1408\", \"confidence\": 0.98, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": \"semantic_text\"}, \"shares\": {\"value\": 21400, \"raw_value\": \"21.4K\", \"confidence\": 0.98, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": \"semantic_text\"}, \"favorites\": {\"value\": 17500, \"raw_value\": \"17.5K\", \"confidence\": 0.98, \"source\": \"video_detail\", \"observed_at\": \"2026-10-21T18:05:24.381091+00:00\", \"method\": \"semantic_text\"}}"
+    }
+  },
+  "creator_profile_context": {
+    "id": 16,
+    "creator_id": 1,
+    "command_id": 66,
+    "observed_at": "2026-10-22T00:04:36.858314+00:00",
+    "followers": 2200000,
+    "following": 12,
+    "total_likes": 21800000,
+    "video_count": null,
+    "bio": "Share Cool Inventions…🥰 Collab: contact@airlandostore.com Buy Link👇",
+    "external_link": "https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists",
+    "raw_visible_text": "username: airlandolists\nprofile_url: https://www.tiktok.com/@airlandolists\ndisplay_name: airlandolists\nbio: Share Cool Inventions…🥰 Collab: contact@airlandostore.com Buy Link👇\nfollowers: 2.2M\nfollowing: 12\ntotal_likes: 21.8M\nlink: linktr.ee/airlandolists https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\nexternal_link: https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists",
+    "extractor_version": "tiktok-creator-profile-v1",
+    "fields_json": "{\"username\": \"@airlandolists\", \"profile_url\": \"https://www.tiktok.com/@airlandolists\", \"display_name\": \"airlandolists\", \"bio\": \"Share Cool Inventions\\u2026\\ud83e\\udd70 Collab: contact@airlandostore.com Buy Link\\ud83d\\udc47\", \"avatar_url\": null, \"followers\": 2200000, \"following\": 12, \"total_likes\": 21800000, \"video_count\": null, \"external_link\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"profile_category\": null, \"profile_type\": null, \"links\": [{\"url\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"label\": \"linktr.ee/airlandolists\", \"source\": \"creator_profile\", \"confidence\": 0.98, \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}], \"raw_visible_text\": \"username: airlandolists\\nprofile_url: https://www.tiktok.com/@airlandolists\\ndisplay_name: airlandolists\\nbio: Share Cool Inventions\\u2026\\ud83e\\udd70 Collab: contact@airlandostore.com Buy Link\\ud83d\\udc47\\nfollowers: 2.2M\\nfollowing: 12\\ntotal_likes: 21.8M\\nlink: linktr.ee/airlandolists https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\\nexternal_link: https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"field_evidence\": {\"username\": {\"value\": \"@airlandolists\", \"raw_value\": \"airlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.99, \"method\": \"semantic_text\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"profile_url\": {\"value\": \"https://www.tiktok.com/@airlandolists\", \"raw_value\": \"https://www.tiktok.com/@airlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.99, \"method\": \"profile_route\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"display_name\": {\"value\": \"airlandolists\", \"raw_value\": \"airlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.95, \"method\": \"semantic_text\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"bio\": {\"value\": \"Share Cool Inventions\\u2026\\ud83e\\udd70 Collab: contact@airlandostore.com Buy Link\\ud83d\\udc47\", \"raw_value\": \"Share Cool Inventions\\u2026\\ud83e\\udd70 Collab: contact@airlandostore.com Buy Link\\ud83d\\udc47\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.95, \"method\": \"semantic_text\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"followers\": {\"value\": 2200000, \"raw_value\": \"2.2M\", \"normalized_value\": 2200000, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"semantic_text\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"following\": {\"value\": 12, \"raw_value\": \"12\", \"normalized_value\": 12, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"semantic_text\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"total_likes\": {\"value\": 21800000, \"raw_value\": \"21.8M\", \"normalized_value\": 21800000, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"semantic_text\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"external_link\": {\"value\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"raw_value\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"visible_href\", \"observed_at\": null, \"extractor_version\": \"tiktok-creator-profile-v1\"}}, \"diagnostics\": [\"Profile header: true; visible username: true; document: complete; visibility: hidden\", \"Username nodes: 1; headings: 4; profile count nodes: 1\", \"Visible profile heading user-title: airlandolists\", \"Visible profile heading user-subtitle: airlandolists\", \"Username rect: 460,36,133,30\", \"display_name: 1 candidates; 1 visible\", \"bio: 1 candidates; 1 visible\", \"followers: 1 candidates; 1 visible\", \"following: 1 candidates; 1 visible\", \"total_likes: 1 candidates; 1 visible\", \"video_count: 0 candidates; 0 visible\", \"profile_category: 0 candidates; 0 visible\", \"profile_type: 0 candidates; 0 visible\"], \"extractor_version\": \"tiktok-creator-profile-v1\"}",
+    "field_evidence_json": "{\"username\": {\"value\": \"@airlandolists\", \"raw_value\": \"airlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.99, \"method\": \"semantic_text\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"profile_url\": {\"value\": \"https://www.tiktok.com/@airlandolists\", \"raw_value\": \"https://www.tiktok.com/@airlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.99, \"method\": \"profile_route\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"display_name\": {\"value\": \"airlandolists\", \"raw_value\": \"airlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.95, \"method\": \"semantic_text\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"bio\": {\"value\": \"Share Cool Inventions\\u2026\\ud83e\\udd70 Collab: contact@airlandostore.com Buy Link\\ud83d\\udc47\", \"raw_value\": \"Share Cool Inventions\\u2026\\ud83e\\udd70 Collab: contact@airlandostore.com Buy Link\\ud83d\\udc47\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.95, \"method\": \"semantic_text\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"followers\": {\"value\": 2200000, \"raw_value\": \"2.2M\", \"normalized_value\": 2200000, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"semantic_text\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"following\": {\"value\": 12, \"raw_value\": \"12\", \"normalized_value\": 12, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"semantic_text\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"total_likes\": {\"value\": 21800000, \"raw_value\": \"21.8M\", \"normalized_value\": 21800000, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"semantic_text\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}, \"external_link\": {\"value\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"raw_value\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"normalized_value\": null, \"source\": \"creator_profile\", \"confidence\": 0.98, \"method\": \"visible_href\", \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}}",
+    "links_json": "[{\"url\": \"https://www.tiktok.com/link/v2?aid=1988&lang=pt-BR&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Fairlandolists\", \"label\": \"linktr.ee/airlandolists\", \"source\": \"creator_profile\", \"confidence\": 0.98, \"observed_at\": \"2026-10-22T00:04:36.858314+00:00\", \"extractor_version\": \"tiktok-creator-profile-v1\"}]",
+    "signals_json": "{\"has_external_link\": true, \"has_commercial_link\": false, \"has_shop_signal\": false, \"follower_count\": 2200000, \"total_likes\": 21800000, \"video_count\": null, \"followers_to_video_ratio\": null, \"likes_per_follower_ratio\": 9.909091, \"creator_size_bucket\": \"mega\", \"config_version\": \"creator-independence-v1\"}",
+    "config_json": "{\"version\": \"creator-independence-v1\", \"minimum_metric_confidence\": 0.6, \"buckets\": [{\"name\": \"micro\", \"upper_exclusive\": 10000, \"bonus\": 10}, {\"name\": \"small\", \"upper_exclusive\": 50000, \"bonus\": 8}, {\"name\": \"medium\", \"upper_exclusive\": 250000, \"bonus\": 5}, {\"name\": \"large\", \"upper_exclusive\": 1000000, \"bonus\": 2}, {\"name\": \"mega\", \"upper_exclusive\": null, \"bonus\": 0}], \"score\": {\"views_weight\": 70, \"views_ratio_cap\": 10, \"likes_weight\": 20, \"likes_ratio_cap\": 0.5}, \"shop_terms\": [\"shop\", \"store\", \"loja\", \"tienda\"], \"commercial_terms\": [\"affiliate\", \"afiliado\", \"afiliada\", \"commission\", \"comiss\\u00e3o\", \"comision\", \"discount\", \"cupom\", \"coupon\"]}"
+  }
+}

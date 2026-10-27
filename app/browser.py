@@ -1,3 +1,7 @@
+"""Deprecated legacy adapter; production uses the Companion bridge.
+
+Retained for compatibility only. Intelligence Core must never import this module.
+"""
 from __future__ import annotations
 
 import queue

@@ -1,0 +1,266 @@
+{
+  "events": {
+    "count": 1352,
+    "sha256": "d71cde3d0513e62a25a50a08b3d391e3fa4781b38330ef7edadc3d6c077e94ba"
+  },
+  "missions": {
+    "count": 2,
+    "sha256": "d09455997c446cf43e54d1edf5b848c3a9fdae3a82a863dd6ecd7a762d8ec371"
+  },
+  "system_state": {
+    "count": 5,
+    "sha256": "3ca260f674116c4eba74a8b9b7d5124a39c5c5ec839edac00dfede3610ccb8f6"
+  },
+  "video_observations": {
+    "count": 8,
+    "sha256": "ecbe36fe64ec846c39a77ca5c4176d4d392c7a10e6b9b51e3c23043105b51d91"
+  },
+  "schema_migrations": {
+    "count": 4,
+    "sha256": "cc23e4ca833e115048259cf79f8ebee87162984c6bfd6c6751b482511c91ce8b"
+  },
+  "videos": {
+    "count": 45,
+    "sha256": "8a3ae487bcdb1afe23b9351771e281aa5cbc2fb0881c5d6a2522e8b373a37ba7"
+  },
+  "search_captures": {
+    "count": 24,
+    "sha256": "44c2e005354cdd017b760b8048f6b3709b0919ef1452c62141d5e84b025645a8"
+  },
+  "search_observations": {
+    "count": 167,
+    "sha256": "2e7cc98a2a3e7c60e6a95de7a136b99c9da91385814dca6d7053fb6152732edf"
+  },
+  "video_detail_observations": {
+    "count": 21,
+    "sha256": "c2447abd897bce4d1c8edd902f1b38859a30469e895d011d13af1310a7860b69"
+  },
+  "dev_commands": {
+    "count": 42,
+    "sha256": "da116722c348a72fbfbbe6ebc0d313fca0a460383eb9d4f419a9648173693116"
+  },
+  "comment_samples": {
+    "count": 12,
+    "sha256": "8c5afa1349c3e478752d625136686beb17d3574a66f1960c6e539d81ce402cd8"
+  },
+  "comment_observations": {
+    "count": 232,
+    "sha256": "e3d0c66aa0afd428ffb3a06e4bd33dd253fb282d86700b5edfce5fdc5d15ee1a"
+  },
+  "creators": {
+    "count": 29,
+    "sha256": "49c8bc63d737eaf092fb02e50471f3fdad2f24059abc31a92e5b91e97f0bbf0f"
+  },
+  "video_creators": {
+    "count": 41,
+    "sha256": "df75b58091f547f88a4b879fcc1e158642f0b67f0059e9b66834f6c112b9dab9"
+  },
+  "creator_profile_observations": {
+    "count": 22,
+    "sha256": "9cfead6a8dc3c0584ac7a4f18f80354d57d130d5750f4bb8d3bb359446e9816f"
+  },
+  "product_candidates": {
+    "count": 8,
+    "sha256": "59a11eb0f90649d87c1e1e77bb8706ec5e00e8c03f3acafc4f74c9efaae755be"
+  },
+  "product_candidate_aliases": {
+    "count": 8,
+    "sha256": "ba7581d9ae068eed702053be3899eb9270d3d3a61f684c8d7ca155a99884d69a"
+  },
+  "product_candidate_evidence": {
+    "count": 65,
+    "sha256": "924d8f3aa8f0fa820807aa86f6e0765548b78ed852878beab5456e3431a8b8f8"
+  },
+  "candidate_reference_urls": {
+    "count": 32,
+    "sha256": "13034f4aae85697c3fee05ec0d053bc56a15b621b39e42897efc60267533ee14"
+  },
+  "product_detection_runs": {
+    "count": 22,
+    "sha256": "138a2b946467c79a08597206cd7b357830bbc387fbf7c9388b4ceca0d408f946"
+  },
+  "candidate_evidence_groups": {
+    "count": 65,
+    "sha256": "ec97874a7defa334879c35b1e56c53e5af02392ce17222d107391c5cf9923afd"
+  },
+  "candidate_relationships": {
+    "count": 5,
+    "sha256": "d730e4b2370c0115fb1eeb6a0428cbc8f7f155c47bdba7c7c6da394e74280c63"
+  },
+  "product_detection_gaps": {
+    "count": 179,
+    "sha256": "ab0b47fb7a22878b05485946c93588868ad4eca01c8603bd2c7c486baf07f392"
+  },
+  "unresolved_product_phrases": {
+    "count": 2,
+    "sha256": "596dbffe8005c3530916be03f89f64ab132fe1c849aebc84b6e2785b79324f6d"
+  },
+  "unresolved_phrase_observations": {
+    "count": 4,
+    "sha256": "a9a8fb530485e29e7ac013082905c942b7a18b2a061f99963fc489840eeba45c"
+  },
+  "product_vocabulary_reviews": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "product_vocabulary_terms": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "product_vocabulary_state": {
+    "count": 1,
+    "sha256": "5cbac499fd8bfedb0e0d57b2cd1c51ca9cbb4f58f98ef4bc92b36242e5a92bf7"
+  },
+  "discovery_sessions": {
+    "count": 7,
+    "sha256": "9294c28d36073f03bc45a0dafaeb69a11afff677880a2bca1322aa26604988a7"
+  },
+  "discovery_session_videos": {
+    "count": 68,
+    "sha256": "ea73f3f345cc13f55bff87b32cf8477a191a6625867e4190cdb9a8b3763d3059"
+  },
+  "discovery_steps": {
+    "count": 13,
+    "sha256": "157f0da028c3fbfd87f6b2857bd991f6b1ac1941e00795a91a57aeec83e52170"
+  },
+  "video_enrichment_queue": {
+    "count": 28,
+    "sha256": "84ca56025270cc413717f8b2c9564f2231fc3590368d76cd47cb55628f3668de"
+  },
+  "product_video_detection_state": {
+    "count": 45,
+    "sha256": "d4be95ba1be76984e28d34883319c30f3d8b1969c6527bcdd2a353289354452b"
+  },
+  "bridge_commands": {
+    "count": 98,
+    "sha256": "30f1e5c2e1ac7fdea1a160abc761be43a83392a0e0d4c2563e0c1a86c3163aa2"
+  },
+  "enrichment_stages": {
+    "count": 225,
+    "sha256": "76639711fc0cda7c14d799c9d936821c973c65cf40c09ebe336b4b7634b3277d"
+  },
+  "enrichment_batches": {
+    "count": 2,
+    "sha256": "21c6d5f590077bf381eeebef8efe0dc6fcf74af7581abf93a68dd292a824c201"
+  },
+  "candidate_semantics": {
+    "count": 8,
+    "sha256": "c91b49af734a41adc2a7766bf3bd35e67dc0497ceafa6dda8f3f5162d0c437e2"
+  },
+  "candidate_semantic_history": {
+    "count": 16,
+    "sha256": "51c9e36dde0d307f852e07b2b414cbc3b78627da562bba360a41041beb166f18"
+  },
+  "product_identity_pairs": {
+    "count": 10,
+    "sha256": "98575d6dd8e52c7641e6988be38efb935d1c09f1e2810a32caee4ce974ab5346"
+  },
+  "product_identity_evidence": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "gold_video_labels": {
+    "count": 45,
+    "sha256": "01868add196c6eeb494d566740f59871585aac2e5034f7dfe7df786547e58f72"
+  },
+  "gold_candidate_reviews": {
+    "count": 6,
+    "sha256": "0ce0fd988bab8343587ae438d97fee69d366716b8de45d287807b17918688602"
+  },
+  "gold_review_history": {
+    "count": 16,
+    "sha256": "f7430bc5d24e6712df67a9485fae554255f0b71bd2578db26fe646371c8345d1"
+  },
+  "detection_benchmark_runs": {
+    "count": 6,
+    "sha256": "191bcc3d9a55606fe3a3f8a5c7772b298ad8a34d71458c2065b063c320330361"
+  },
+  "video_category_classifications": {
+    "count": 45,
+    "sha256": "8bde51c071915ecb1523eb534eadea9945abe98818831b883f36d1ab482224c3"
+  },
+  "human_category_reviews": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_product_evidence": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "night_discovery_runs": {
+    "count": 1,
+    "sha256": "99eda44b5fb27885e35d8f16f815b24ae49d271216b17a3a68ac9a1834359579"
+  },
+  "night_discovery_checkpoints": {
+    "count": 1,
+    "sha256": "173285a34fac2b3f07803cfce1d1bb7c5d2eb479376f01995ee011ff19b35a4e"
+  },
+  "visual_image_assets": {
+    "count": 1,
+    "sha256": "b07260d1d7d28d3871a970c6d82681fbcc5cbc09d713173cfae6a2bdd60007b1"
+  },
+  "visual_review_history": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_product_search_evidence": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_pilots": {
+    "count": 1,
+    "sha256": "a47a989daad41fa203c98225ee43383451281e0c68e5d144cf2a3e5811a77c3e"
+  },
+  "visual_pilot_items": {
+    "count": 14,
+    "sha256": "a3848d72620cb497c3ff403a003c4f23911ed3e6d4c482e417b989857e6446c1"
+  },
+  "visual_gold_assessments": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_asset_selections": {
+    "count": 1,
+    "sha256": "5e09adc577042fe9f9c7881a7ad9801a2d6059dec46cb69979d42a84c2ffb845"
+  },
+  "visual_assisted_sessions": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "intelligence_jobs": {
+    "count": 181,
+    "sha256": "d3a60c334ea0541e7ce82227c72011554c27a47855e74aa98a43210a79316f22"
+  },
+  "intelligence_job_history": {
+    "count": 178,
+    "sha256": "2c44d49a24ea26315c718119fb205fc56162260d206fd2772a9734f2551967a6"
+  },
+  "intelligence_embeddings": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "intelligence_cache_stats": {
+    "count": 1,
+    "sha256": "182b77e38efae503abf58a12f7c83c1ff2a91b8d1a8fc47da71ae46d59e3621a"
+  },
+  "intelligence_decisions": {
+    "count": 94,
+    "sha256": "2bd55d2427523dfa74d1692e956cf9043ed5b57f4aa24cb3f5ae62e0832d0fbb"
+  },
+  "intelligence_entities": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "intelligence_entity_observations": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "intelligence_matches": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "intelligence_reviews": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

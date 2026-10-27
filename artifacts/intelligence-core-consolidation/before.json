@@ -1,0 +1,888 @@
+{
+  "events": {
+    "columns": [
+      "id",
+      "created_at",
+      "level",
+      "event_type",
+      "message"
+    ],
+    "rows": 1343,
+    "sha256": "e8213314e0db0bcc1d96517ff11a034aabeb9bd77c6f7b0739a8fee816a0f79c"
+  },
+  "missions": {
+    "columns": [
+      "id",
+      "created_at",
+      "status",
+      "market",
+      "mode",
+      "max_videos",
+      "read_comments",
+      "capture_evidence",
+      "discover_related"
+    ],
+    "rows": 2,
+    "sha256": "d09455997c446cf43e54d1edf5b848c3a9fdae3a82a863dd6ecd7a762d8ec371"
+  },
+  "system_state": {
+    "columns": [
+      "key",
+      "value_json",
+      "updated_at"
+    ],
+    "rows": 5,
+    "sha256": "e82ec06099bc2cb7c0e60e1a3f2407cb690e5565a222cd0ebd4b9d208751eef9"
+  },
+  "video_observations": {
+    "columns": [
+      "id",
+      "source",
+      "search_query",
+      "video_url",
+      "creator_username",
+      "creator_display_name",
+      "caption",
+      "views",
+      "likes",
+      "comments_count",
+      "shares",
+      "collected_at",
+      "first_seen_at",
+      "last_seen_at",
+      "raw_visible_text",
+      "extraction_version"
+    ],
+    "rows": 8,
+    "sha256": "ecbe36fe64ec846c39a77ca5c4176d4d392c7a10e6b9b51e3c23043105b51d91"
+  },
+  "schema_migrations": {
+    "columns": [
+      "name"
+    ],
+    "rows": 4,
+    "sha256": "cc23e4ca833e115048259cf79f8ebee87162984c6bfd6c6751b482511c91ce8b"
+  },
+  "videos": {
+    "columns": [
+      "id",
+      "source",
+      "video_id",
+      "canonical_url",
+      "creator_username",
+      "creator_display_name",
+      "caption",
+      "thumbnail_url",
+      "first_seen_at",
+      "last_seen_at",
+      "field_evidence_json",
+      "first_search_query",
+      "latest_search_query"
+    ],
+    "rows": 45,
+    "sha256": "8a3ae487bcdb1afe23b9351771e281aa5cbc2fb0881c5d6a2522e8b373a37ba7"
+  },
+  "search_captures": {
+    "columns": [
+      "capture_id",
+      "search_query",
+      "observed_at",
+      "extractor_version",
+      "new_count",
+      "updated_count"
+    ],
+    "rows": 24,
+    "sha256": "44c2e005354cdd017b760b8048f6b3709b0919ef1452c62141d5e84b025645a8"
+  },
+  "search_observations": {
+    "columns": [
+      "id",
+      "video_id",
+      "capture_id",
+      "search_query",
+      "search_position",
+      "observed_at",
+      "raw_visible_text",
+      "card_snapshot",
+      "extractor_version",
+      "extraction_completeness",
+      "fields_json",
+      "field_evidence_json",
+      "legacy_id",
+      "visible_position",
+      "global_position_estimate",
+      "scroll_iteration"
+    ],
+    "rows": 167,
+    "sha256": "2e7cc98a2a3e7c60e6a95de7a136b99c9da91385814dca6d7053fb6152732edf"
+  },
+  "video_detail_observations": {
+    "columns": [
+      "id",
+      "video_id",
+      "command_id",
+      "observed_at",
+      "extractor_version",
+      "raw_visible_text",
+      "card_snapshot",
+      "fields_json",
+      "field_evidence_json"
+    ],
+    "rows": 21,
+    "sha256": "c2447abd897bce4d1c8edd902f1b38859a30469e895d011d13af1310a7860b69"
+  },
+  "dev_commands": {
+    "columns": [
+      "id",
+      "type",
+      "status",
+      "extension_id",
+      "expected_build",
+      "created_at",
+      "updated_at",
+      "detail",
+      "refreshed_tabs",
+      "build_id",
+      "options_json"
+    ],
+    "rows": 42,
+    "sha256": "da116722c348a72fbfbbe6ebc0d313fca0a460383eb9d4f419a9648173693116"
+  },
+  "comment_samples": {
+    "columns": [
+      "id",
+      "video_id",
+      "command_id",
+      "observed_at",
+      "target_count",
+      "stop_reason",
+      "scroll_steps",
+      "extractor_version",
+      "signals_json",
+      "terms_config_json",
+      "diagnostics_json"
+    ],
+    "rows": 12,
+    "sha256": "8c5afa1349c3e478752d625136686beb17d3574a66f1960c6e539d81ce402cd8"
+  },
+  "comment_observations": {
+    "columns": [
+      "id",
+      "sample_id",
+      "video_id",
+      "comment_key",
+      "comment_id",
+      "author_username",
+      "text",
+      "likes",
+      "likes_raw",
+      "timestamp",
+      "position",
+      "is_reply",
+      "reply_count",
+      "source",
+      "observed_at",
+      "raw_visible_text",
+      "extraction_method",
+      "confidence",
+      "extractor_version"
+    ],
+    "rows": 232,
+    "sha256": "e3d0c66aa0afd428ffb3a06e4bd33dd253fb282d86700b5edfce5fdc5d15ee1a"
+  },
+  "creators": {
+    "columns": [
+      "creator_id",
+      "platform",
+      "username",
+      "profile_url",
+      "display_name",
+      "bio",
+      "avatar_url",
+      "followers",
+      "following",
+      "total_likes",
+      "video_count",
+      "external_link",
+      "profile_category",
+      "profile_type",
+      "first_seen_at",
+      "last_seen_at",
+      "extractor_version",
+      "field_evidence_json"
+    ],
+    "rows": 29,
+    "sha256": "49c8bc63d737eaf092fb02e50471f3fdad2f24059abc31a92e5b91e97f0bbf0f"
+  },
+  "video_creators": {
+    "columns": [
+      "video_id",
+      "creator_id",
+      "linked_at",
+      "source"
+    ],
+    "rows": 41,
+    "sha256": "df75b58091f547f88a4b879fcc1e158642f0b67f0059e9b66834f6c112b9dab9"
+  },
+  "creator_profile_observations": {
+    "columns": [
+      "id",
+      "creator_id",
+      "command_id",
+      "observed_at",
+      "followers",
+      "following",
+      "total_likes",
+      "video_count",
+      "bio",
+      "external_link",
+      "raw_visible_text",
+      "extractor_version",
+      "fields_json",
+      "field_evidence_json",
+      "links_json",
+      "signals_json",
+      "config_json"
+    ],
+    "rows": 22,
+    "sha256": "9cfead6a8dc3c0584ac7a4f18f80354d57d130d5750f4bb8d3bb359446e9816f"
+  },
+  "product_candidates": {
+    "columns": [
+      "id",
+      "platform",
+      "canonical_name",
+      "normalized_name",
+      "status",
+      "manual_status",
+      "confidence",
+      "first_seen_at",
+      "last_seen_at",
+      "primary_reference_url",
+      "detection_version",
+      "summary_json",
+      "signature",
+      "broad_concept"
+    ],
+    "rows": 8,
+    "sha256": "59a11eb0f90649d87c1e1e77bb8706ec5e00e8c03f3acafc4f74c9efaae755be"
+  },
+  "product_candidate_aliases": {
+    "columns": [
+      "candidate_id",
+      "alias",
+      "normalized_alias",
+      "source",
+      "confidence",
+      "observed_at",
+      "detected_language"
+    ],
+    "rows": 8,
+    "sha256": "ba7581d9ae068eed702053be3899eb9270d3d3a61f684c8d7ca155a99884d69a"
+  },
+  "product_candidate_evidence": {
+    "columns": [
+      "id",
+      "candidate_id",
+      "evidence_type",
+      "source_entity_type",
+      "source_entity_id",
+      "video_id",
+      "creator_id",
+      "commenter",
+      "source_url",
+      "raw_text",
+      "extracted_text",
+      "confidence",
+      "observed_at",
+      "extractor_version",
+      "dedup_key"
+    ],
+    "rows": 65,
+    "sha256": "924d8f3aa8f0fa820807aa86f6e0765548b78ed852878beab5456e3431a8b8f8"
+  },
+  "candidate_reference_urls": {
+    "columns": [
+      "candidate_id",
+      "url",
+      "url_type",
+      "source",
+      "observed_at"
+    ],
+    "rows": 32,
+    "sha256": "13034f4aae85697c3fee05ec0d053bc56a15b621b39e42897efc60267533ee14"
+  },
+  "product_detection_runs": {
+    "columns": [
+      "id",
+      "created_at",
+      "detection_version",
+      "input_scope",
+      "videos_processed",
+      "candidates_created",
+      "candidates_updated",
+      "evidence_created",
+      "status",
+      "report_json",
+      "config_json",
+      "vocabulary_version"
+    ],
+    "rows": 22,
+    "sha256": "138a2b946467c79a08597206cd7b357830bbc387fbf7c9388b4ceca0d408f946"
+  },
+  "candidate_evidence_groups": {
+    "columns": [
+      "evidence_id",
+      "candidate_id",
+      "group_key",
+      "group_type",
+      "identity_support"
+    ],
+    "rows": 65,
+    "sha256": "ec97874a7defa334879c35b1e56c53e5af02392ce17222d107391c5cf9923afd"
+  },
+  "candidate_relationships": {
+    "columns": [
+      "id",
+      "candidate_a",
+      "candidate_b",
+      "relationship_type",
+      "score",
+      "reason",
+      "evidence_json",
+      "created_at",
+      "updated_at",
+      "relationship_version"
+    ],
+    "rows": 5,
+    "sha256": "d730e4b2370c0115fb1eeb6a0428cbc8f7f155c47bdba7c7c6da394e74280c63"
+  },
+  "product_detection_gaps": {
+    "columns": [
+      "run_id",
+      "video_id",
+      "reason",
+      "explanation",
+      "source_snapshot_json",
+      "analyzed_at",
+      "analysis_version"
+    ],
+    "rows": 179,
+    "sha256": "ab0b47fb7a22878b05485946c93588868ad4eca01c8603bd2c7c486baf07f392"
+  },
+  "unresolved_product_phrases": {
+    "columns": [
+      "id",
+      "video_id",
+      "raw_phrase",
+      "normalized_phrase",
+      "signature",
+      "status",
+      "first_seen_at",
+      "last_seen_at",
+      "discovery_version"
+    ],
+    "rows": 2,
+    "sha256": "596dbffe8005c3530916be03f89f64ab132fe1c849aebc84b6e2785b79324f6d"
+  },
+  "unresolved_phrase_observations": {
+    "columns": [
+      "id",
+      "phrase_id",
+      "source_entity_type",
+      "source_entity_id",
+      "raw_text",
+      "source_url",
+      "observed_at",
+      "method"
+    ],
+    "rows": 4,
+    "sha256": "a9a8fb530485e29e7ac013082905c942b7a18b2a061f99963fc489840eeba45c"
+  },
+  "product_vocabulary_reviews": {
+    "columns": [
+      "id",
+      "phrase_id",
+      "normalized_phrase",
+      "decision",
+      "note",
+      "reviewed_at"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "product_vocabulary_terms": {
+    "columns": [
+      "normalized_phrase",
+      "raw_phrase",
+      "active",
+      "updated_at"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "product_vocabulary_state": {
+    "columns": [
+      "id",
+      "revision"
+    ],
+    "rows": 1,
+    "sha256": "5cbac499fd8bfedb0e0d57b2cd1c51ca9cbb4f58f98ef4bc92b36242e5a92bf7"
+  },
+  "discovery_sessions": {
+    "columns": [
+      "id",
+      "command_id",
+      "query",
+      "created_at",
+      "started_at",
+      "finished_at",
+      "scroll_count",
+      "results_seen",
+      "unique_videos",
+      "new_videos",
+      "duplicates",
+      "visible_start",
+      "status",
+      "stop_reason",
+      "stagnant_cycles",
+      "max_scrolls",
+      "max_new_videos",
+      "max_runtime",
+      "discovery_version",
+      "document_token",
+      "dom_stagnant_cycles",
+      "stop_detail"
+    ],
+    "rows": 7,
+    "sha256": "9294c28d36073f03bc45a0dafaeb69a11afff677880a2bca1322aa26604988a7"
+  },
+  "discovery_session_videos": {
+    "columns": [
+      "session_id",
+      "video_id",
+      "first_iteration",
+      "is_new"
+    ],
+    "rows": 68,
+    "sha256": "ea73f3f345cc13f55bff87b32cf8477a191a6625867e4190cdb9a8b3763d3059"
+  },
+  "discovery_steps": {
+    "columns": [
+      "session_id",
+      "scroll_iteration",
+      "capture_id",
+      "payload_hash",
+      "new_links_detected",
+      "duplicates_seen",
+      "total_visible",
+      "total_unique_session",
+      "dom_card_count",
+      "observed_at",
+      "scroll_target",
+      "scroll_before",
+      "scroll_after"
+    ],
+    "rows": 13,
+    "sha256": "157f0da028c3fbfd87f6b2857bd991f6b1ac1941e00795a91a57aeec83e52170"
+  },
+  "video_enrichment_queue": {
+    "columns": [
+      "video_id",
+      "needs_detail",
+      "needs_comments",
+      "needs_creator",
+      "needs_product_detection",
+      "enrichment_priority",
+      "created_at",
+      "updated_at"
+    ],
+    "rows": 28,
+    "sha256": "84ca56025270cc413717f8b2c9564f2231fc3590368d76cd47cb55628f3668de"
+  },
+  "product_video_detection_state": {
+    "columns": [
+      "video_id",
+      "detected_at",
+      "vocabulary_version"
+    ],
+    "rows": 45,
+    "sha256": "d4be95ba1be76984e28d34883319c30f3d8b1969c6527bcdd2a353289354452b"
+  },
+  "bridge_commands": {
+    "columns": [
+      "id",
+      "created_at",
+      "updated_at",
+      "type",
+      "query",
+      "status",
+      "extension_id",
+      "detail",
+      "result_hash",
+      "options_json",
+      "ready_at"
+    ],
+    "rows": 98,
+    "sha256": "30f1e5c2e1ac7fdea1a160abc761be43a83392a0e0d4c2563e0c1a86c3163aa2"
+  },
+  "enrichment_stages": {
+    "columns": [
+      "video_id",
+      "step",
+      "status",
+      "command_id",
+      "observation_id",
+      "reason",
+      "updated_at"
+    ],
+    "rows": 225,
+    "sha256": "76639711fc0cda7c14d799c9d936821c973c65cf40c09ebe336b4b7634b3277d"
+  },
+  "enrichment_batches": {
+    "columns": [
+      "id",
+      "created_at",
+      "finished_at",
+      "status",
+      "stop_requested",
+      "current_video",
+      "current_step",
+      "video_ids_json",
+      "checkpoint_json",
+      "error"
+    ],
+    "rows": 2,
+    "sha256": "21c6d5f590077bf381eeebef8efe0dc6fcf74af7581abf93a68dd292a824c201"
+  },
+  "candidate_semantics": {
+    "columns": [
+      "candidate_id",
+      "semantic_status",
+      "detection_confidence",
+      "recurrence_confidence",
+      "identity_confidence",
+      "phrase_specificity",
+      "details_json",
+      "fingerprint",
+      "version",
+      "updated_at"
+    ],
+    "rows": 8,
+    "sha256": "c91b49af734a41adc2a7766bf3bd35e67dc0497ceafa6dda8f3f5162d0c437e2"
+  },
+  "candidate_semantic_history": {
+    "columns": [
+      "id",
+      "candidate_id",
+      "prior_semantic_status",
+      "semantic_status",
+      "legacy_status",
+      "legacy_confidence",
+      "legacy_reason_json",
+      "semantic_snapshot_json",
+      "fingerprint",
+      "observed_at"
+    ],
+    "rows": 16,
+    "sha256": "51c9e36dde0d307f852e07b2b414cbc3b78627da562bba360a41041beb166f18"
+  },
+  "product_identity_pairs": {
+    "columns": [
+      "pair_key",
+      "candidate_a",
+      "candidate_b",
+      "video_a",
+      "video_b",
+      "concept_similarity_score",
+      "product_identity_score",
+      "eligible",
+      "details_json",
+      "version",
+      "updated_at",
+      "id",
+      "candidate_a_id",
+      "candidate_b_id",
+      "occurrence_a_id",
+      "occurrence_b_id",
+      "video_a_id",
+      "video_b_id",
+      "identity_score",
+      "semantic_result",
+      "reason",
+      "evidence_json",
+      "resolver_version",
+      "created_at"
+    ],
+    "rows": 10,
+    "sha256": "98575d6dd8e52c7641e6988be38efb935d1c09f1e2810a32caee4ce974ab5346"
+  },
+  "product_identity_evidence": {
+    "columns": [
+      "pair_key",
+      "signal_type",
+      "evidence_json",
+      "version",
+      "observed_at"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "gold_video_labels": {
+    "columns": [
+      "video_id",
+      "review_version",
+      "review_status",
+      "product_presence",
+      "canonical_product_name",
+      "raw_product_name",
+      "specificity",
+      "review_notes",
+      "language",
+      "fn_reason",
+      "fp_reason",
+      "reviewed_at",
+      "reviewer_type",
+      "review_method"
+    ],
+    "rows": 45,
+    "sha256": "01868add196c6eeb494d566740f59871585aac2e5034f7dfe7df786547e58f72"
+  },
+  "gold_candidate_reviews": {
+    "columns": [
+      "video_id",
+      "candidate_id",
+      "review_version",
+      "name_match",
+      "evidence_quality",
+      "notes",
+      "reviewed_at",
+      "reviewer_type"
+    ],
+    "rows": 6,
+    "sha256": "0ce0fd988bab8343587ae438d97fee69d366716b8de45d287807b17918688602"
+  },
+  "gold_review_history": {
+    "columns": [
+      "id",
+      "video_id",
+      "review_version",
+      "snapshot_json",
+      "reviewed_at"
+    ],
+    "rows": 16,
+    "sha256": "f7430bc5d24e6712df67a9485fae554255f0b71bd2578db26fe646371c8345d1"
+  },
+  "detection_benchmark_runs": {
+    "columns": [
+      "id",
+      "created_at",
+      "gold_set_version",
+      "detector_version",
+      "vocabulary_version",
+      "rules_version",
+      "reviewed_videos",
+      "tp",
+      "fp",
+      "fn",
+      "tn",
+      "precision",
+      "recall",
+      "f1",
+      "fingerprint",
+      "report_json"
+    ],
+    "rows": 6,
+    "sha256": "191bcc3d9a55606fe3a3f8a5c7772b298ad8a34d71458c2065b063c320330361"
+  },
+  "video_category_classifications": {
+    "columns": [
+      "id",
+      "video_id",
+      "primary_category",
+      "primary_subcategory",
+      "product_family",
+      "category_status",
+      "category_confidence",
+      "category_evidence",
+      "classifier_version",
+      "taxonomy_version",
+      "input_hash",
+      "observed_at"
+    ],
+    "rows": 45,
+    "sha256": "8bde51c071915ecb1523eb534eadea9945abe98818831b883f36d1ab482224c3"
+  },
+  "human_category_reviews": {
+    "columns": [
+      "id",
+      "video_id",
+      "primary_category",
+      "primary_subcategory",
+      "product_family",
+      "notes",
+      "reviewed_at",
+      "taxonomy_version",
+      "prior_classification_id"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_product_evidence": {
+    "columns": [
+      "id",
+      "video_id",
+      "image_source",
+      "provider",
+      "possible_product_name",
+      "result_url",
+      "confidence",
+      "review_status",
+      "observed_at",
+      "source_type",
+      "aliases_json",
+      "image_sha256",
+      "reason",
+      "provider_version",
+      "idempotency_key"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "night_discovery_runs": {
+    "columns": [
+      "id",
+      "created_at",
+      "updated_at",
+      "status",
+      "stop_reason",
+      "stop_requested",
+      "settings_json",
+      "checkpoint_json"
+    ],
+    "rows": 1,
+    "sha256": "99eda44b5fb27885e35d8f16f815b24ae49d271216b17a3a68ac9a1834359579"
+  },
+  "night_discovery_checkpoints": {
+    "columns": [
+      "id",
+      "run_id",
+      "session_id",
+      "query",
+      "stage",
+      "data_json",
+      "created_at"
+    ],
+    "rows": 1,
+    "sha256": "173285a34fac2b3f07803cfce1d1bb7c5d2eb479376f01995ee011ff19b35a4e"
+  },
+  "visual_image_assets": {
+    "columns": [
+      "id",
+      "video_id",
+      "relative_path",
+      "source_type",
+      "sha256",
+      "mime_type",
+      "observed_at",
+      "width",
+      "height",
+      "created_at",
+      "original_filename",
+      "source_metadata_json"
+    ],
+    "rows": 1,
+    "sha256": "b07260d1d7d28d3871a970c6d82681fbcc5cbc09d713173cfae6a2bdd60007b1"
+  },
+  "visual_review_history": {
+    "columns": [
+      "id",
+      "evidence_id",
+      "previous_status",
+      "review_status",
+      "notes",
+      "observed_at",
+      "reviewer_type"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_product_search_evidence": {
+    "columns": [
+      "id",
+      "evidence_id",
+      "title",
+      "url",
+      "source",
+      "observed_at",
+      "possible_match",
+      "match_reason",
+      "visual_compatible",
+      "contradiction",
+      "independence_group",
+      "independence_reviewed",
+      "domain"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_pilots": {
+    "columns": [
+      "id",
+      "created_at",
+      "provider",
+      "selected_ids_json",
+      "status",
+      "completed_at"
+    ],
+    "rows": 1,
+    "sha256": "a47a989daad41fa203c98225ee43383451281e0c68e5d144cf2a3e5811a77c3e"
+  },
+  "visual_pilot_items": {
+    "columns": [
+      "pilot_id",
+      "video_id",
+      "availability",
+      "reason",
+      "source_type",
+      "image_sha256",
+      "provider_status"
+    ],
+    "rows": 14,
+    "sha256": "a3848d72620cb497c3ff403a003c4f23911ed3e6d4c482e417b989857e6446c1"
+  },
+  "visual_gold_assessments": {
+    "columns": [
+      "id",
+      "video_id",
+      "evidence_id",
+      "name_match",
+      "helpful",
+      "notes",
+      "observed_at",
+      "reviewer_type"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "visual_asset_selections": {
+    "columns": [
+      "video_id",
+      "asset_id",
+      "selected_at"
+    ],
+    "rows": 1,
+    "sha256": "5e09adc577042fe9f9c7881a7ad9801a2d6059dec46cb69979d42a84c2ffb845"
+  },
+  "visual_assisted_sessions": {
+    "columns": [
+      "id",
+      "video_id",
+      "image_sha256",
+      "asset_id",
+      "created_at"
+    ],
+    "rows": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

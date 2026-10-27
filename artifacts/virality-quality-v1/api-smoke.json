@@ -1,0 +1,22 @@
+{
+  "http_status": 200,
+  "duration_seconds": 3.703,
+  "counts": {
+    "AUTO": 0,
+    "REVIEW": 6,
+    "UNRESOLVED": 39
+  },
+  "items": 45,
+  "dimensions": [
+    "purchase_intent",
+    "signal_quality",
+    "viral_potential",
+    "creative_dna",
+    "product_quality",
+    "saturation",
+    "trend_readiness",
+    "commercial_readiness"
+  ],
+  "all_45_have_dimensions": true,
+  "purchase_intent_measured_items": 4
+}

@@ -1,0 +1,18 @@
+{
+  "session": "Confirmed",
+  "action": "waiting_for_collection_recovery",
+  "evidence": "Profile: ✓Messages: ✓Activity: ✓Avatar: ✓Following: ✓Logged-out signal: ✗",
+  "mini_log": [
+    "16:09:33 Heartbeat recent",
+    "16:09:33 TikTok tab detected",
+    "16:09:33 Current URL: https://www.tiktok.com/",
+    "16:09:33 Page healthy",
+    "16:09:33 Profile route detected",
+    "16:09:33 Messages route/control detected",
+    "16:09:33 Authenticated sidebar detected",
+    "16:09:33 Session evidence: Profile=yes Messages=yes Activity=yes Avatar=yes Following=yes Logged-out signal=no",
+    "16:09:33 Session CONFIRMED",
+    "16:09:33 Security stop active: HTTP 403: https://www.tiktok.com/"
+  ],
+  "debug_collapsed": true
+}

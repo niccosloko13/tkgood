@@ -1,0 +1,49 @@
+[
+  {
+    "preferences_path": "browser-profiles\\chrome-tiktok-main\\Default\\Preferences",
+    "companion_registered": false,
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "extension_path": null,
+    "disable_reasons": null,
+    "active_permissions": null
+  },
+  {
+    "preferences_path": "browser-profiles\\chrome-tiktok-main\\Default\\Secure Preferences",
+    "companion_registered": true,
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "extension_path": "C:\\product-hunter-tiktok-v0.1.4\\extension",
+    "disable_reasons": null,
+    "active_permissions": {
+      "api": [
+        "alarms",
+        "storage",
+        "tabs",
+        "webRequest"
+      ],
+      "explicit_host": [
+        "http://127.0.0.1:8000/*",
+        "https://www.tiktok.com/*"
+      ],
+      "manifest_permissions": [],
+      "scriptable_host": [
+        "https://www.tiktok.com/*"
+      ]
+    }
+  },
+  {
+    "preferences_path": "C:\\Users\\veigh\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Preferences",
+    "companion_registered": false,
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "extension_path": null,
+    "disable_reasons": null,
+    "active_permissions": null
+  },
+  {
+    "preferences_path": "C:\\Users\\veigh\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Secure Preferences",
+    "companion_registered": false,
+    "extension_id": "kaohbkldpeejomnmbeedchokglokbbgk",
+    "extension_path": null,
+    "disable_reasons": null,
+    "active_permissions": null
+  }
+]

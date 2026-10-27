@@ -1,0 +1,1059 @@
+{
+  "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+  "queries": [
+    "home gadgets",
+    "home finds",
+    "useful home products",
+    "kitchen gadgets",
+    "cleaning gadgets"
+  ],
+  "queries_skipped": [
+    "home gadgets"
+  ],
+  "baseline": {
+    "results": 8,
+    "new_videos": 3,
+    "duplicates": 5,
+    "observations": 8,
+    "trend_snapshots": 8
+  },
+  "commands": [
+    104,
+    105,
+    106,
+    107
+  ],
+  "stage3_executed": false,
+  "resume_intent": "EXPLICIT_ONCE",
+  "fresh_check_id": "f93cff435fa723185066833a861da7da",
+  "batch": {
+    "id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+    "stage": 2,
+    "status": "SUCCEEDED",
+    "created_at": "2026-10-25T17:34:35.939061+00:00",
+    "validation_id": "cac98c924f9f3cb65f6252481f0f5fd6",
+    "queries_json": "[\"home gadgets\", \"home finds\", \"useful home products\", \"kitchen gadgets\", \"cleaning gadgets\"]",
+    "query_index": 5,
+    "command_id": 107,
+    "new_videos": 7,
+    "seen": 28,
+    "duplicates": 21,
+    "snapshots": 28,
+    "stop_reason": "MAX_QUERIES",
+    "completed_at": "2026-10-25T18:18:48.130986+00:00"
+  },
+  "query_metrics": [
+    {
+      "command_id": 102,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "home gadgets",
+      "status": "SUCCEEDED",
+      "results": 8,
+      "new_videos": 3,
+      "duplicates": 5,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 3,
+      "category_matches": 2,
+      "observed_at": "2026-10-25T17:34:38.338468+00:00",
+      "snapshots": 8,
+      "stability": null
+    },
+    {
+      "command_id": 103,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "home finds",
+      "status": "FAILED",
+      "results": 0,
+      "new_videos": 0,
+      "duplicates": 0,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 0,
+      "observed_at": "2026-10-25T17:34:45.533900+00:00",
+      "snapshots": 0,
+      "stability": null
+    },
+    {
+      "command_id": 104,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "home finds",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "new_videos": 0,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 2,
+      "observed_at": "2026-10-25T18:18:11.677003+00:00",
+      "snapshots": 4,
+      "stability": {
+        "query": "home finds",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 80,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1132,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1132,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 5,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1040,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2095,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 3115,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 3115,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    },
+    {
+      "command_id": 105,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "useful home products",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "new_videos": 0,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 3,
+      "observed_at": "2026-10-25T18:18:23.241636+00:00",
+      "snapshots": 4,
+      "stability": {
+        "query": "useful home products",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 7,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1095,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1095,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 19,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1038,
+            "tab_status": "loading",
+            "ready_state": "unknown",
+            "page": "unknown",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2052,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 3082,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 4087,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 5107,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 5107,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    },
+    {
+      "command_id": 106,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "kitchen gadgets",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "new_videos": 0,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 3,
+      "observed_at": "2026-10-25T18:18:35.666033+00:00",
+      "snapshots": 4,
+      "stability": {
+        "query": "kitchen gadgets",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 2,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1014,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1014,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 6,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1050,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2061,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 3076,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 4141,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 5158,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 6216,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 6216,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    },
+    {
+      "command_id": 107,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "cleaning gadgets",
+      "status": "SUCCEEDED",
+      "results": 8,
+      "new_videos": 4,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 4,
+      "category_matches": 3,
+      "observed_at": "2026-10-25T18:18:48.091987+00:00",
+      "snapshots": 8,
+      "stability": {
+        "query": "cleaning gadgets",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 3,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1015,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1015,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 20,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1026,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2052,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 3107,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 4123,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 5149,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 6164,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 6164,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    }
+  ],
+  "queries_completed": 5,
+  "results": 28,
+  "new_videos": 7,
+  "duplicates": 21,
+  "blocked_targets_skipped": 0,
+  "invalid": 0,
+  "observations": 28,
+  "trend_snapshots": 28,
+  "unique_creators": 6,
+  "final_page": "healthy",
+  "session": "confirmed",
+  "global_security": {},
+  "blocked_targets": [
+    {
+      "target_type": "VIDEO",
+      "url": "https://www.tiktok.com/@vitrineglei/video/7673992589036506388",
+      "reason": "HTTP_403",
+      "first_seen": "2026-10-25T01:32:10.269892+00:00",
+      "last_seen": "2026-10-25T01:32:10.269892+00:00",
+      "attempt_count": 1,
+      "status": "BLOCKED"
+    }
+  ],
+  "final_url": "https://www.tiktok.com/search?q=cleaning+gadgets",
+  "resume_query_metrics": [
+    {
+      "command_id": 104,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "home finds",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "new_videos": 0,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 2,
+      "observed_at": "2026-10-25T18:18:11.677003+00:00",
+      "snapshots": 4,
+      "stability": {
+        "query": "home finds",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 80,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1132,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1132,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 5,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1040,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2095,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 3115,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 3115,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    },
+    {
+      "command_id": 105,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "useful home products",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "new_videos": 0,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 3,
+      "observed_at": "2026-10-25T18:18:23.241636+00:00",
+      "snapshots": 4,
+      "stability": {
+        "query": "useful home products",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 7,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1095,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1095,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 19,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1038,
+            "tab_status": "loading",
+            "ready_state": "unknown",
+            "page": "unknown",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2052,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 3082,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 4087,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 5107,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 5107,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    },
+    {
+      "command_id": 106,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "kitchen gadgets",
+      "status": "SUCCEEDED",
+      "results": 4,
+      "new_videos": 0,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 0,
+      "category_matches": 3,
+      "observed_at": "2026-10-25T18:18:35.666033+00:00",
+      "snapshots": 4,
+      "stability": {
+        "query": "kitchen gadgets",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 2,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1014,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1014,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 6,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1050,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2061,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 3076,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 4141,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 5158,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 6216,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 6216,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    },
+    {
+      "command_id": 107,
+      "batch_id": "fc47743b6ef8a8a3418ab0e0fb94d8dd",
+      "query": "cleaning gadgets",
+      "status": "SUCCEEDED",
+      "results": 8,
+      "new_videos": 4,
+      "duplicates": 4,
+      "blocked": 0,
+      "invalid": 0,
+      "unique_creators": 4,
+      "category_matches": 3,
+      "observed_at": "2026-10-25T18:18:48.091987+00:00",
+      "snapshots": 8,
+      "stability": {
+        "query": "cleaning gadgets",
+        "pre_health": {
+          "samples": [
+            {
+              "elapsed_ms": 3,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 1
+            },
+            {
+              "elapsed_ms": 1015,
+              "tab_status": "complete",
+              "ready_state": "complete",
+              "page": "healthy",
+              "session": "confirmed",
+              "state": "HEALTHY_CONFIRMED",
+              "consecutive": 2
+            }
+          ],
+          "final_health": {
+            "elapsed_ms": 1015,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        },
+        "navigation_state": "CAPTURED",
+        "settle_samples": [
+          {
+            "elapsed_ms": 20,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 1026,
+            "tab_status": "loading",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 2052,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 3107,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 4123,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "unconfirmed",
+            "state": "TRANSIENT_LOADING",
+            "consecutive": 0
+          },
+          {
+            "elapsed_ms": 5149,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 1
+          },
+          {
+            "elapsed_ms": 6164,
+            "tab_status": "complete",
+            "ready_state": "complete",
+            "page": "healthy",
+            "session": "confirmed",
+            "state": "HEALTHY_CONFIRMED",
+            "consecutive": 2
+          }
+        ],
+        "final_health": {
+          "elapsed_ms": 6164,
+          "tab_status": "complete",
+          "ready_state": "complete",
+          "page": "healthy",
+          "session": "confirmed",
+          "state": "HEALTHY_CONFIRMED",
+          "consecutive": 2
+        },
+        "stop_reason": "CAPTURE_COMPLETED"
+      }
+    }
+  ],
+  "active_runtime_seconds": 52.818276999999995,
+  "next_query_intent": "cleaning gadgets",
+  "stop_reason": "MAX_QUERIES",
+  "audit": {
+    "same_batch_as_original": true,
+    "stage2_batches": 1,
+    "resumptions": 1,
+    "new_command_types": [
+      "READ_SEARCH_RESULTS",
+      "READ_SEARCH_RESULTS",
+      "READ_SEARCH_RESULTS",
+      "READ_SEARCH_RESULTS"
+    ],
+    "repeated_home_gadgets": 0,
+    "old_home_gadgets_observations": 8,
+    "later_commands": [],
+    "timestamp_mismatches": 0,
+    "duplicate_video_rows": 0
+  },
+  "post_stop_check": {
+    "observed_at": "2026-10-25T18:20:13.082941+00:00",
+    "page": "healthy",
+    "session": "confirmed",
+    "global_security": {},
+    "target_security_pending": {}
+  }
+}

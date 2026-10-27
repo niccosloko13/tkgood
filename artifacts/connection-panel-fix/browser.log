@@ -1,0 +1,30 @@
+
+DevTools listening on ws://127.0.0.1:53197/devtools/browser/2a52b44a-39ab-4a15-b9ac-57415cbbbe43
+[51968:48692:1024/132605.534:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[51968:48692:1024/132605.540:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[51968:48692:1024/132605.583:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[51968:48692:1024/132605.725:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[51968:48692:1024/132605.725:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[51968:87824:1024/132620.743:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 81372: Acesso negado. (0x5)
+[51968:47600:1024/132620.743:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 81372: Acesso negado. (0x5)
+[51968:87824:1024/132622.813:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 87552: Acesso negado. (0x5)
+[51968:47600:1024/132624.886:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 75248: Acesso negado. (0x5)
+[51968:87824:1024/132624.950:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 84924: Acesso negado. (0x5)
+[51968:47600:1024/132627.029:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 87816: Acesso negado. (0x5)
+[51968:48692:1024/132630.837:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+
+DevTools listening on ws://127.0.0.1:53932/devtools/browser/fd933286-94d0-4664-8bf7-58c17bf3537b
+[18916:5796:1024/132822.468:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[18916:5796:1024/132822.468:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[18916:5796:1024/132822.497:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[18916:5796:1024/132822.574:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[18916:5796:1024/132822.574:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[18916:74468:1024/132837.462:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 61476: Acesso negado. (0x5)
+[18916:73308:1024/132837.463:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 61476: Acesso negado. (0x5)
+[18916:74468:1024/132837.524:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 89532: Acesso negado. (0x5)
+[18916:73308:1024/132837.586:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 8248: Acesso negado. (0x5)
+[18916:74468:1024/132837.648:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 71896: Acesso negado. (0x5)
+[18916:73308:1024/132837.711:ERROR:chrome\updater\ipc\update_service_dialer_win.cc:76] Failed to open named pipe server process 90368: Acesso negado. (0x5)
+[18916:5796:1024/132850.263:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

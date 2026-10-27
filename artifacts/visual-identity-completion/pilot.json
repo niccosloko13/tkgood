@@ -1,0 +1,432 @@
+{
+  "run_id": 2,
+  "video_id": 1,
+  "asset_id": 1,
+  "image_sha256": "e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09",
+  "lens_status": "LENS_ASSISTED_REQUIRED",
+  "provider_states": {
+    "vision_model": {
+      "status": "AVAILABLE_AUTOMATIC",
+      "provider": "openrouter.ai"
+    },
+    "google_lens_assisted": {
+      "status": "AVAILABLE_ASSISTED",
+      "workflow_status": "LENS_ASSISTED_REQUIRED"
+    },
+    "google_lens_automatic": {
+      "status": "UNAVAILABLE"
+    }
+  },
+  "visual_search": {
+    "status": "suggested",
+    "provider_result": {
+      "data": {
+        "assessment": "identified",
+        "visual_description": "A handheld device with a broad, flat cleaning head is being pressed against a tiled wall surface. The device has a visible green indicator light and a design suggesting it is used for cleaning or scrubbing. A person's hand grips the handle of the device. The background includes a wooden panel and some flowers.",
+        "possible_product_names": [
+          {
+            "name": "Electric Window Cleaner",
+            "aliases": [
+              "Cordless Window Cleaner",
+              "Handheld Window Vacuum Cleaner"
+            ],
+            "supporting_features": [
+              "Broad flat cleaning head designed for flat smooth surfaces",
+              "Green indicator light suggesting electronic operation",
+              "Hand grip for manual operation"
+            ],
+            "uncertainties": [
+              "Exact cleaning mechanism not visible",
+              "Material of cleaning surface and head unclear"
+            ]
+          }
+        ],
+        "detected_objects": [
+          "handheld cleaning device",
+          "hand",
+          "tile wall",
+          "wooden panel",
+          "flowers"
+        ],
+        "functional_description": "A handheld cleaning tool designed to clean flat surfaces such as windows or tiles, likely through suction or wiping action facilitated by the broad cleaning head and powered electronically as indicated by the green light.",
+        "distinctive_features": [
+          "Wide angled flat cleaning head",
+          "Green illuminated indicator on device body",
+          "Ergonomic grip for handheld operation"
+        ],
+        "possible_category": "Cleaning Tool",
+        "quality": {
+          "demonstration_visibility": {
+            "status": "observed",
+            "reason": "The device is shown in direct contact with the cleaned surface being held by a hand"
+          },
+          "problem_solution_clarity": {
+            "status": "partial",
+            "reason": "The intended cleaning function is suggested by design and context but exact mechanism is not fully clear"
+          },
+          "before_after_possible": {
+            "status": "insufficient",
+            "reason": "No before or after cleaning condition visible"
+          },
+          "transformation_strength": {
+            "status": "insufficient",
+            "reason": "No transformation or effect on surface shown"
+          },
+          "visual_novelty": {
+            "status": "insufficient",
+            "reason": "No indication if device has novel features compared to common cleaning tools"
+          },
+          "product_visibility": {
+            "status": "observed",
+            "reason": "Product is clearly visible and distinguishable"
+          },
+          "creative_repeatability_possible": {
+            "status": "insufficient",
+            "reason": "Single frame shows use but does not demonstrate creative application or repeatability"
+          }
+        }
+      },
+      "response_id": "gen-1792793630-WBQbUWoSiwZJFVHjQbf4",
+      "model": "openai/gpt-4.1-mini",
+      "api_host": "openrouter.ai",
+      "usage": {
+        "prompt_tokens": 728,
+        "completion_tokens": 409,
+        "total_tokens": 1137,
+        "cost": 0.0009456,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009456,
+          "upstream_inference_prompt_cost": 0.0002912,
+          "upstream_inference_completions_cost": 0.0006544
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "annotations": []
+    },
+    "lens_status": "LENS_ASSISTED_REQUIRED",
+    "image_sha256": "e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09",
+    "cache_provenance": "Image-only request captured in the initial provider smoke for the unchanged local asset 1"
+  },
+  "status": "complete",
+  "hypotheses": [
+    {
+      "name": "Electric Window Cleaner",
+      "aliases": [
+        "Cordless Window Cleaner",
+        "Handheld Window Vacuum Cleaner"
+      ],
+      "supporting_features": [
+        "Broad flat cleaning head designed for flat smooth surfaces",
+        "Green indicator light suggesting electronic operation",
+        "Hand grip for manual operation"
+      ],
+      "uncertainties": [
+        "Exact cleaning mechanism not visible",
+        "Material of cleaning surface and head unclear"
+      ],
+      "evidence_id": 1,
+      "text_cross_check": {
+        "status": "NEUTRAL",
+        "support": [],
+        "conflicts": [],
+        "reason": "Generic or non-matching context cannot confirm or refute the visual hypothesis",
+        "category_context": {
+          "id": 1,
+          "video_id": 1,
+          "primary_category": "home",
+          "primary_subcategory": "cleaning",
+          "product_family": "cleaning tools",
+          "category_status": "classified",
+          "category_confidence": 0.5,
+          "category_evidence": [
+            {
+              "matched_term": "vacuum cleaner",
+              "source_entity": "comment",
+              "source_id": 126,
+              "text": "vacuum cleaner",
+              "type": "comment",
+              "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+              "weight": 0.5
+            },
+            {
+              "matched_term": "vacuum cleaner",
+              "source_entity": "comment",
+              "source_id": 142,
+              "text": "Mini Vacuum Cleaner Price? very useful ✨",
+              "type": "comment",
+              "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+              "weight": 0.5
+            },
+            {
+              "matched_term": "vacuum cleaner",
+              "source_entity": "unresolved_phrase",
+              "source_id": 1,
+              "text": "vacuum cleaner",
+              "type": "unresolved",
+              "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+              "weight": 0.45
+            },
+            {
+              "matched_term": "vacuum cleaner",
+              "source_entity": "unresolved_phrase",
+              "source_id": 2,
+              "text": "Mini Vacuum Cleaner",
+              "type": "unresolved",
+              "url": "https://www.tiktok.com/@airlandolists/video/7462746836533677358",
+              "weight": 0.45
+            }
+          ],
+          "classifier_version": "category-classifier-v1",
+          "taxonomy_version": "category-taxonomy-v1",
+          "input_hash": "8fd5d991f24ddd7f02ea7cdedb3c5dc942b69ac9322e5fee90f2d60968cafe84",
+          "observed_at": "2026-10-23T06:00:54.873885+00:00",
+          "human_review": null
+        },
+        "context_did_not_enter_image_prompt": true
+      },
+      "image_text_similarity": 0.30496015360239065,
+      "similarity_is_probability": false
+    }
+  ],
+  "visual_quality": {
+    "demonstration_visibility": {
+      "status": "observed",
+      "reason": "The device is shown in direct contact with the cleaned surface being held by a hand"
+    },
+    "problem_solution_clarity": {
+      "status": "partial",
+      "reason": "The intended cleaning function is suggested by design and context but exact mechanism is not fully clear"
+    },
+    "before_after_possible": {
+      "status": "insufficient",
+      "reason": "No before or after cleaning condition visible"
+    },
+    "transformation_strength": {
+      "status": "insufficient",
+      "reason": "No transformation or effect on surface shown"
+    },
+    "visual_novelty": {
+      "status": "insufficient",
+      "reason": "No indication if device has novel features compared to common cleaning tools"
+    },
+    "product_visibility": {
+      "status": "observed",
+      "reason": "Product is clearly visible and distinguishable"
+    },
+    "creative_repeatability_possible": {
+      "status": "insufficient",
+      "reason": "Single frame shows use but does not demonstrate creative application or repeatability"
+    }
+  },
+  "evidence_ids": [
+    1
+  ],
+  "image_embedding": {
+    "kind": "image",
+    "sha256": "e1695b03fa73573443487a0ae0ae56547a5ed5dc11a71c37e96088a8313e8e09",
+    "model_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+    "device": "cpu",
+    "duration_ms": 0,
+    "dimension": 512,
+    "cache_status": "hit",
+    "model_loaded_during_inference": false
+  },
+  "retrieval": [
+    {
+      "reference_id": "candidate:1",
+      "reference_kind": "CANDIDATE_REFERENCE",
+      "name": "Soap dispenser",
+      "source": {
+        "candidate_id": 1
+      },
+      "product_id": null,
+      "embedding_kind": "text",
+      "similarity": 0.27313339710235596,
+      "embedding_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+      "index_version": "3cab903facc842d2b7c05fb2ceb257c6",
+      "observed_at": "2026-10-23T22:18:51.565938+00:00"
+    },
+    {
+      "reference_id": "candidate:7",
+      "reference_kind": "CANDIDATE_REFERENCE",
+      "name": "Portable Dryer",
+      "source": {
+        "candidate_id": 7
+      },
+      "product_id": null,
+      "embedding_kind": "text",
+      "similarity": 0.2708134949207306,
+      "embedding_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+      "index_version": "3cab903facc842d2b7c05fb2ceb257c6",
+      "observed_at": "2026-10-23T22:18:51.565938+00:00"
+    },
+    {
+      "reference_id": "candidate:6",
+      "reference_kind": "CANDIDATE_REFERENCE",
+      "name": "3 in 1 Window Cleaner",
+      "source": {
+        "candidate_id": 6
+      },
+      "product_id": null,
+      "embedding_kind": "text",
+      "similarity": 0.27028241753578186,
+      "embedding_version": "openclip-3.3.0-ViT-B-32-laion2b_s34b_b79k-fp32-v1:1bd3c7172de5b207ceac554f5ab5266166f3b9baccc9af5989bc801016d080ad",
+      "index_version": "3cab903facc842d2b7c05fb2ceb257c6",
+      "observed_at": "2026-10-23T22:18:51.565938+00:00"
+    }
+  ],
+  "web_search": {
+    "data": {
+      "results": [
+        {
+          "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums",
+          "title": "Window vacuums for DIYers | Bosch DIY",
+          "product_name": "Bosch cordless window vacuum",
+          "compatibility": "SUPPORTED",
+          "match_reason": "Suitable for all smooth surfaces such as windows, mirrors, tiles, showers, and car windows; designed for vacuuming liquids from smooth surfaces.",
+          "independence": "Not assessed"
+        },
+        {
+          "url": "https://www.kaercher.com/int/home-garden/window-vacs.html",
+          "title": "Window Vac | Kärcher International",
+          "product_name": "Kärcher Window Vac",
+          "compatibility": "SUPPORTED",
+          "match_reason": "Suitable for all smooth surfaces including windows, mirrors, shower enclosures, hobs, glass tables, car windscreens, and worktops.",
+          "independence": "Not assessed"
+        },
+        {
+          "url": "https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html",
+          "title": "WV 2 Plus | Kärcher International",
+          "product_name": "Kärcher WV 2 Plus Window Cleaner",
+          "compatibility": "SUPPORTED",
+          "match_reason": "Designed specifically to ease window cleaning on smooth surfaces, saving time and effort.",
+          "independence": "Not assessed"
+        }
+      ],
+      "limitations": "Product type compatibility observed only; exact product model identity and specific design features could not be confirmed. No assessment of power supply variations or additional features was made."
+    },
+    "response_id": "gen-1792793694-HkwrTfBiuFUykj4OaQkn",
+    "model": "openai/gpt-4.1-mini",
+    "api_host": "openrouter.ai",
+    "usage": {
+      "prompt_tokens": 1820,
+      "completion_tokens": 404,
+      "total_tokens": 2224,
+      "cost": 0.0083744,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013744,
+        "upstream_inference_prompt_cost": 0.000728,
+        "upstream_inference_completions_cost": 0.0006464
+      },
+      "server_tool_use_details": {
+        "web_search_requests": 1,
+        "tool_calls_requested": 1,
+        "tool_calls_executed": 1
+      }
+    },
+    "annotations": [
+      {
+        "type": "url_citation",
+        "url_citation": {
+          "url": "https://www.kaercher.com/int/home-garden/window-vacs.html",
+          "title": "Window Vac | Kärcher International",
+          "start_index": 0,
+          "end_index": 0,
+          "content": "No more streaks, dirty water or wet hands. With the Window Vacs, cleaning is three times faster than with conventional methods – for streak-free cleanliness without annoying drips. It effortlessly removes dirt from all smooth surfaces and also efficiently vacuums up condensation. Spray, wipe, vacuum – sparkling results in no time at all. Please note that different country versions are available for most products: 120 V / 60 Hz or 220-240 V / 50 Hz.\n\n...\n\nThe Window Vac from Kärcher is not only for windows, it also cleans all smooth surfaces, such as mirrors, shower enclosures, hobs, glass tables, car windscreens and worktops.\n\n...\n\nPreparation is everything: for the best possible cleaning results, the glass pane or surface must first be wetted and pre-cleaned. Only then"
+        }
+      },
+      {
+        "type": "url_citation",
+        "url_citation": {
+          "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums",
+          "title": "Window vacuums for DIYers | Bosch DIY",
+          "start_index": 0,
+          "end_index": 0,
+          "content": "The only window vacuum with trusted Bosch wiper blade technology, for an easier glide and faster results. Perfect for cleaning windows and mirrors, as well as showers and spillages. Cleaning your home has never been so easy.\n\n...\n\nThe cordless Bosch window vacuums are extremely versatile. They are suitable for all smooth surfaces, such as windows, mirrors, tiles, showers, and car windows. They also safely vacuum up condensation and spilled liquids. What’s more, your job can be made even easier with the various attachments that can be added quickly and easily.\n\n...\n\nCordless window vacuums work similarly to traditional squeegees, but with one big difference. With a squeegee, you have to wipe up the water that collects on the windowpanes by hand. A window vacuum, on the other hand, sucks liquids directly from the window surface into an integrated tank, by using a mechanism similar to a regular household vacuum.\n\n...\n\nThe terms \"electric window vacuum\" and \"electric window cleaner\" are usually used interchangeably for various devices that are designed to make window cleaning easier and more effective. In addition to window vacuums, there are also window cleaning robots and battery-powered window wipers."
+        }
+      },
+      {
+        "type": "url_citation",
+        "url_citation": {
+          "url": "https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html",
+          "title": "WV 2 Plus | Kärcher International",
+          "start_index": 0,
+          "end_index": 0,
+          "content": ", Kärcher has revolutionised window cleaning. When you use the original Kärcher Window ... 's play, saving you a great deal of time and effort. Thanks to the ... , the annoyance of dripping water is now a thing of the past. The intelligent combination of"
+        }
+      }
+    ],
+    "search_response": "The search returned relevant product pages, though none exactly match the visible device for certain identity confirmation. Here are the top public product pages from allowed manufacturer domains related to electric window cleaners or similar devices:\n\n1. Bosch DIY - Window Vacuums for DIYers\n   URL: https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums\n   - Product type: Cordless window vacuum (electric)\n   - Compatibility: Suitable for windows, mirrors, tiles, showers, car windows\n   - Limitations: Designed primarily for smooth surfaces and vacuuming liquids; no confirmation of green indicator light or cleaning head shape matching.\n\n2. Kärcher International - Window Vac | Kärcher International\n   URL: https://www.kaercher.com/int/home-garden/window-vacs.html\n   - Product type: Window vac, electric window cleaner\n   - Compatibility: Smooth surfaces including windows, mirrors, shower enclosures, hobs, glass tables, car windscreens, worktops\n   - Limitations: Different country versions for voltages; no confirmation of green indicator light or exact design as in the image.\n\n3. Kärcher International - WV 2 Plus | Kärcher International\n   URL: https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html\n   - Product type: Window cleaner, likely electric\n   - Compatibility: Designed to ease window cleaning, saving time and effort\n   - Limitations: Specific design details not confirmed to match image; no visible green light mentioned.\n\nNo other matching product identities from the allowed manufacturer domains were found. These products are close in product type (electric window cleaners or window vacuums) but do not fully confirm the exact identity from the image alone.",
+    "normalization_response_id": "gen-1792793699-ktCg3IUe7hda3gybP65e"
+  },
+  "web_confirmations": [
+    {
+      "url": "https://www.bosch-diy.com/gb/en/cleaning-tools/window-vacuums",
+      "title": "Window vacuums for DIYers | Bosch DIY",
+      "product_name": "Bosch cordless window vacuum",
+      "compatibility": "SUPPORTED",
+      "match_reason": "Suitable for all smooth surfaces such as windows, mirrors, tiles, showers, and car windows; designed for vacuuming liquids from smooth surfaces.",
+      "independence": "Not assessed",
+      "domain": "www.bosch-diy.com",
+      "source_excerpt": "The only window vacuum with trusted Bosch wiper blade technology, for an easier glide and faster results. Perfect for cleaning windows and mirrors, as well as showers and spillages. Cleaning your home has never been so easy.\n\n...\n\nThe cordless Bosch window vacuums are extremely versatile. They are suitable for all smooth surfaces, such as windows, mirrors, tiles, showers, and car windows. They also safely vacuum up condensation and spilled liquids. What’s more, your job can be made even easier with the various attachments that can be added quickly and easily.\n\n...\n\nCordless window vacuums work similarly to traditional squeegees, but with one big difference. With a squeegee, you have to wipe up the water that collects on the windowpanes by hand. A window vacuum, on the other hand, sucks liquids directly from the window surface into an integrated tank, by using a mechanism similar to a regular household vacuum.\n\n...\n\nThe terms \"electric window vacuum\" and \"electric window cleaner\" are usually used interchangeably for various devices that are designed to make window cleaning easier and more effective. In addition to window vacuums, there are also window cleaning robots and battery-powered window wipers.",
+      "independence_group": "bosch-diy.com",
+      "independence_verified": false
+    },
+    {
+      "url": "https://www.kaercher.com/int/home-garden/window-vacs.html",
+      "title": "Window Vac | Kärcher International",
+      "product_name": "Kärcher Window Vac",
+      "compatibility": "SUPPORTED",
+      "match_reason": "Suitable for all smooth surfaces including windows, mirrors, shower enclosures, hobs, glass tables, car windscreens, and worktops.",
+      "independence": "Not assessed",
+      "domain": "www.kaercher.com",
+      "source_excerpt": "No more streaks, dirty water or wet hands. With the Window Vacs, cleaning is three times faster than with conventional methods – for streak-free cleanliness without annoying drips. It effortlessly removes dirt from all smooth surfaces and also efficiently vacuums up condensation. Spray, wipe, vacuum – sparkling results in no time at all. Please note that different country versions are available for most products: 120 V / 60 Hz or 220-240 V / 50 Hz.\n\n...\n\nThe Window Vac from Kärcher is not only for windows, it also cleans all smooth surfaces, such as mirrors, shower enclosures, hobs, glass tables, car windscreens and worktops.\n\n...\n\nPreparation is everything: for the best possible cleaning results, the glass pane or surface must first be wetted and pre-cleaned. Only then",
+      "independence_group": "kaercher.com",
+      "independence_verified": false
+    },
+    {
+      "url": "https://www.kaercher.com/int/home-garden/window-vacs/wv-2-plus-16336400.html",
+      "title": "WV 2 Plus | Kärcher International",
+      "product_name": "Kärcher WV 2 Plus Window Cleaner",
+      "compatibility": "SUPPORTED",
+      "match_reason": "Designed specifically to ease window cleaning on smooth surfaces, saving time and effort.",
+      "independence": "Not assessed",
+      "domain": "www.kaercher.com",
+      "source_excerpt": ", Kärcher has revolutionised window cleaning. When you use the original Kärcher Window ... 's play, saving you a great deal of time and effort. Thanks to the ... , the annoyance of dripping water is now a thing of the past. The intelligent combination of",
+      "independence_group": "kaercher.com",
+      "independence_verified": false
+    }
+  ],
+  "decision": {
+    "id": 233,
+    "video_id": 1,
+    "status": "REVIEW",
+    "reason_code": "REVIEW_INSUFFICIENT_CORROBORATION",
+    "possible_product_name": "electric window cleaner",
+    "same_product": "insufficient",
+    "policy_version": "intelligence-core-v1.2.2-activation",
+    "confidence_is_probability": false
+  }
+}

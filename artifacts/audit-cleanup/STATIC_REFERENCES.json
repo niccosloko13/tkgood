@@ -1,0 +1,3307 @@
+{
+  "scripts": [
+    {
+      "path": "scripts/background_runner.py",
+      "entrypoint": true,
+      "references": [
+        "AGENTS.md:45",
+        "README.md:139",
+        "app/intelligence_jobs.py:121",
+        "app/selective_api.py:37",
+        "docs/CONTROLLED_DISCOVERY.md:69",
+        "docs/DETECTION_BENCHMARK.md:187",
+        "docs/DEV_CONTROL.md:223",
+        "docs/INTELLIGENCE_CORE.md:50",
+        "docs/NEXT_SESSION.md:29",
+        "docs/PERSISTENT_RUNTIME.md:6",
+        "docs/PRODUCT_CANDIDATES.md:55",
+        "docs/PRODUCT_IDENTITY.md:117",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:150",
+        "docs/TARGET_QUARANTINE.md:48",
+        "docs/VISUAL_IDENTITY_COMPLETION.md:10",
+        "scripts/devctl.pyw:4",
+        "tests/test_runtime.py:108"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/bootstrap_companion.py",
+      "entrypoint": false,
+      "references": [
+        "scripts/devctl.py:100",
+        "tests/test_dev_control.py:22",
+        "tests/test_session_recovery.py:112"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/check_enrichment_migration.py",
+      "entrypoint": true,
+      "references": [
+        "docs/EXTRACTION.md:54"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/controlled_stage2.py",
+      "entrypoint": true,
+      "references": [
+        "scripts/background_runner.py:51",
+        "scripts/resume_stage2.py:9"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/core_activation.py",
+      "entrypoint": true,
+      "references": [
+        "scripts/background_runner.py:54"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/detection_benchmark.py",
+      "entrypoint": true,
+      "references": [
+        "docs/DETECTION_BENCHMARK.md:185",
+        "docs/NEXT_SESSION.md:432"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/detect_products.py",
+      "entrypoint": false,
+      "references": [
+        "docs/PRODUCT_CANDIDATES.md:55",
+        "docs/PRODUCT_CORROBORATION.md:128",
+        "scripts/background_runner.py:59"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/devctl.py",
+      "entrypoint": true,
+      "references": [
+        "AGENTS.md:10",
+        "README.md:88",
+        "run.py:1",
+        "docs/BRIDGE.md:5",
+        "docs/COMMENTS.md:6",
+        "docs/DEV_CONTROL.md:36",
+        "docs/NEXT_SESSION.md:125",
+        "docs/PERSISTENT_RUNTIME.md:5",
+        "docs/PRODUCT_IDENTITY.md:124",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:157",
+        "docs/ROADMAP.md:60",
+        "docs/VIDEO_DETAIL_METRICS.md:121",
+        "extension/dev_bootstrap.js:18",
+        "scripts/background_runner.py:23",
+        "scripts/devctl.pyw:6",
+        "scripts/dev_supervisor.py:107",
+        "scripts/offline_intelligence_report.py:38",
+        "tests/test_dev_control.py:21",
+        "tests/test_runtime.py:119"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/devctl.pyw",
+      "entrypoint": false,
+      "references": [
+        "AGENTS.md:10",
+        "README.md:88",
+        "run.py:1",
+        "docs/BRIDGE.md:5",
+        "docs/COMMENTS.md:6",
+        "docs/DEV_CONTROL.md:36",
+        "docs/NEXT_SESSION.md:125",
+        "docs/PERSISTENT_RUNTIME.md:5",
+        "docs/PRODUCT_IDENTITY.md:124",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:157",
+        "docs/ROADMAP.md:60",
+        "docs/VIDEO_DETAIL_METRICS.md:121",
+        "extension/dev_bootstrap.js:18",
+        "scripts/background_runner.py:23",
+        "scripts/devctl.py:125",
+        "scripts/dev_supervisor.py:107",
+        "scripts/offline_intelligence_report.py:38",
+        "tests/test_dev_control.py:21",
+        "tests/test_runtime.py:119"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/dev_supervisor.py",
+      "entrypoint": true,
+      "references": [
+        "run.py:42",
+        "docs/DEV_CONTROL.md:129",
+        "scripts/background_runner.py:56",
+        "scripts/bootstrap_companion.py:11",
+        "scripts/controlled_stage2.py:8",
+        "scripts/devctl.py:11",
+        "scripts/manual_captcha_resume.py:7",
+        "scripts/quarantine_stage1.py:8",
+        "scripts/resume_stage2.py:7",
+        "scripts/safe_collection.py:8",
+        "tests/test_dev_control.py:20",
+        "tests/test_session_recovery.py:113"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/discovery_session.py",
+      "entrypoint": true,
+      "references": [
+        "scripts/background_runner.py:58",
+        "scripts/validate_persistent_runtime.py:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/install_intelligence_model.py",
+      "entrypoint": true,
+      "references": [
+        "docs/INTELLIGENCE_CORE.md:95"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/intelligence_core.py",
+      "entrypoint": true,
+      "references": [
+        "app/db.py:127",
+        "app/intelligence_api.py:7",
+        "app/intelligence_decisions.py:12",
+        "app/intelligence_evaluation.py:11",
+        "app/intelligence_signals.py:127",
+        "app/safe_collection.py:295",
+        "app/selective_enrichment.py:48",
+        "app/visual_identification.py:320",
+        "app/visual_identification_api.py:20",
+        "docs/INTELLIGENCE_CORE.md:90",
+        "docs/SELECTIVE_ENRICHMENT.md:68",
+        "scripts/core_activation.py:17",
+        "scripts/report_core_activation.py:8",
+        "scripts/report_intelligence_core.py:8",
+        "scripts/report_visual_identity.py:7",
+        "scripts/virality_quality.py:8",
+        "scripts/visual_identity.py:10",
+        "tests/test_core_activation.py:7",
+        "tests/test_intelligence_core.py:6",
+        "tests/test_visual_identity_completion.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/local_visual_assets_report.py",
+      "entrypoint": true,
+      "references": [],
+      "status": "NO_STATIC_CALLSITE_FOUND"
+    },
+    {
+      "path": "scripts/manual_captcha_resume.py",
+      "entrypoint": true,
+      "references": [
+        "scripts/background_runner.py:48"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/offline_candidate_audit.py",
+      "entrypoint": true,
+      "references": [
+        "docs/NEXT_SESSION.md:736",
+        "docs/OFFLINE_AUDIT.md:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/offline_intelligence_report.py",
+      "entrypoint": true,
+      "references": [],
+      "status": "NO_STATIC_CALLSITE_FOUND"
+    },
+    {
+      "path": "scripts/process_runtime.py",
+      "entrypoint": false,
+      "references": [
+        "run.py:20",
+        "app/chrome_launcher.py:22",
+        "app/intelligence_jobs.py:110",
+        "docs/PERSISTENT_RUNTIME.md:4",
+        "scripts/background_runner.py:11",
+        "scripts/bootstrap_companion.py:12",
+        "scripts/devctl.py:9",
+        "scripts/devctl.pyw:3",
+        "scripts/dev_supervisor.py:2",
+        "scripts/offline_candidate_audit.py:43",
+        "scripts/validate_connection_panel.py:15",
+        "tests/test_bridge.py:1",
+        "tests/test_capture.py:1",
+        "tests/test_comments.py:1",
+        "tests/test_creators.py:1",
+        "tests/test_runtime.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/product_semantics_report.py",
+      "entrypoint": true,
+      "references": [
+        "docs/NEXT_SESSION.md:664",
+        "docs/PRODUCT_IDENTITY.md:115"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/quarantine_stage1.py",
+      "entrypoint": true,
+      "references": [
+        "docs/TARGET_QUARANTINE.md:47",
+        "scripts/background_runner.py:52"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/read_creator_profiles.py",
+      "entrypoint": true,
+      "references": [
+        "docs/CREATORS.md:118",
+        "scripts/background_runner.py:63"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/read_video_details.py",
+      "entrypoint": true,
+      "references": [
+        "README.md:100",
+        "docs/BRIDGE.md:70",
+        "docs/VIDEO_DETAIL_METRICS.md:122",
+        "scripts/background_runner.py:61"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/report_core_activation.py",
+      "entrypoint": true,
+      "references": [
+        "docs/INTELLIGENCE_CORE.md:51"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/report_intelligence_core.py",
+      "entrypoint": true,
+      "references": [],
+      "status": "NO_STATIC_CALLSITE_FOUND"
+    },
+    {
+      "path": "scripts/report_visual_identity.py",
+      "entrypoint": true,
+      "references": [
+        "docs/VISUAL_IDENTITY_COMPLETION.md:11"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/resolve_product_identity.py",
+      "entrypoint": true,
+      "references": [
+        "docs/NEXT_SESSION.md:580",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:148"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/resume_stage2.py",
+      "entrypoint": true,
+      "references": [
+        "app/safe_collection.py:243",
+        "app/safe_collection_api.py:33",
+        "scripts/background_runner.py:50",
+        "tests/test_stage2_resume.py:33"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/safe_collection.py",
+      "entrypoint": true,
+      "references": [
+        "app/collection_mode.py:5",
+        "app/db.py:131",
+        "app/intelligence_core.py:374",
+        "app/main.py:191",
+        "app/manual_captcha_recovery.py:9",
+        "app/safe_collection_api.py:5",
+        "app/search_intelligence.py:8",
+        "app/selective_enrichment.py:13",
+        "app/session_api.py:34",
+        "app/target_safety.py:13",
+        "docs/SAFE_COLLECTION_RECOVERY.md:9",
+        "scripts/controlled_stage2.py:9",
+        "scripts/manual_captcha_resume.py:8",
+        "scripts/quarantine_stage1.py:10",
+        "scripts/resume_stage2.py:8",
+        "tests/test_controlled_stage2.py:5",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_safe_collection.py:5",
+        "tests/test_search_only_mode.py:4",
+        "tests/test_selective_enrichment.py:4",
+        "tests/test_stage2_resume.py:5",
+        "tests/test_target_safety.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/sample_comments.py",
+      "entrypoint": true,
+      "references": [
+        "README.md:111",
+        "docs/COMMENTS.md:5",
+        "scripts/background_runner.py:62"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/selective_enrichment.py",
+      "entrypoint": true,
+      "references": [
+        "app/db.py:135",
+        "app/main.py:97",
+        "app/manual_captcha_recovery.py:9",
+        "app/safe_collection.py:181",
+        "app/selective_api.py:3",
+        "scripts/background_runner.py:49",
+        "scripts/manual_captcha_resume.py:8",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_selective_enrichment.py:4"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/trend_history.py",
+      "entrypoint": true,
+      "references": [
+        "app/db.py:129",
+        "app/intelligence_api.py:25",
+        "app/intelligence_core.py:370",
+        "app/observations.py:121",
+        "app/search_intelligence.py:8",
+        "app/selective_enrichment.py:67",
+        "app/trend_history.py:12",
+        "app/static/intelligence-core.js:14",
+        "docs/TREND_HISTORY.md:3",
+        "tests/test_trend_history.py:6",
+        "tests/trend-history.test.cjs:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/validate_connection_panel.py",
+      "entrypoint": true,
+      "references": [],
+      "status": "NO_STATIC_CALLSITE_FOUND"
+    },
+    {
+      "path": "scripts/validate_persistent_runtime.py",
+      "entrypoint": true,
+      "references": [
+        "scripts/background_runner.py:57"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/virality_quality.py",
+      "entrypoint": true,
+      "references": [
+        "app/comments.py:99",
+        "app/intelligence_signals.py:13",
+        "docs/VIRALITY_QUALITY.md:12"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/visual_identification_report.py",
+      "entrypoint": true,
+      "references": [
+        "docs/NEXT_SESSION.md:127",
+        "docs/VISUAL_IDENTIFICATION.md:115"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "scripts/visual_identity.py",
+      "entrypoint": true,
+      "references": [
+        "app/intelligence_core.py:384",
+        "app/intelligence_jobs.py:34",
+        "app/visual_providers.py:19",
+        "app/static/intelligence-core.js:4",
+        "scripts/background_runner.py:53",
+        "scripts/report_visual_identity.py:47",
+        "tests/intelligence-core.test.cjs:45"
+      ],
+      "status": "REFERENCED"
+    }
+  ],
+  "modules": [
+    {
+      "path": "app/browser.py",
+      "references": [
+        "AGENTS.md:50",
+        "README.md:9",
+        "app/chrome_launcher.py:14",
+        "app/collection_mode.py:70",
+        "app/config.py:5",
+        "app/discovery.py:1",
+        "app/enrichment.py:170",
+        "app/intelligence_core.py:3",
+        "app/intelligence_jobs.py:1",
+        "app/manual_captcha_recovery.py:79",
+        "app/product_identity_resolver.py:1",
+        "app/safe_actions.py:1",
+        "app/search_intelligence.py:1",
+        "app/selective_enrichment.py:3",
+        "app/visual_assets.py:1",
+        "app/visual_providers.py:4",
+        "app/static/index.html:243",
+        "app/static/intelligence-core.js:1",
+        "app/static/offline-intelligence.js:1",
+        "docs/BRIDGE.md:136",
+        "docs/CATEGORY_INTELLIGENCE.md:39",
+        "docs/CONTROLLED_DISCOVERY.md:14",
+        "docs/DEV_CONTROL.md:59",
+        "docs/ENRICHMENT_BACKLOG.md:16",
+        "docs/INTELLIGENCE_CORE.md:73",
+        "docs/LOCAL_VISUAL_ASSETS.md:4",
+        "docs/NEXT_SESSION.md:164",
+        "docs/PERSISTENT_RUNTIME.md:52",
+        "docs/PRODUCT_IDENTIFICATION_PIPELINE.md:96",
+        "docs/SAFETY.md:40",
+        "docs/SELECTIVE_ENRICHMENT.md:5",
+        "docs/VIRALITY_QUALITY.md:18",
+        "docs/VISUAL_IDENTIFICATION.md:20",
+        "extension/background.js:66",
+        "extension/dev_worker.js:73",
+        "extension/pacing.js:1",
+        "scripts/bootstrap_companion.py:45",
+        "scripts/detect_products.py:1",
+        "scripts/discovery_session.py:22",
+        "scripts/intelligence_core.py:1",
+        "scripts/offline_intelligence_report.py:74",
+        "scripts/product_semantics_report.py:1",
+        "scripts/read_video_details.py:3",
+        "scripts/resolve_product_identity.py:1",
+        "scripts/validate_connection_panel.py:1",
+        "scripts/validate_persistent_runtime.py:1",
+        "scripts/visual_identification_report.py:1",
+        "tests/dev-control.test.cjs:47",
+        "tests/discovery-worker.test.cjs:39",
+        "tests/search-only-mode.test.cjs:3",
+        "tests/test_identity_resolver.py:1"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/browser_safety.py",
+      "references": [
+        "app/dev_control.py:111",
+        "app/main.py:74",
+        "app/manual_captcha_recovery.py:10",
+        "app/safe_collection.py:63",
+        "app/safe_collection_api.py:49",
+        "app/target_safety.py:155",
+        "scripts/offline_intelligence_report.py:38",
+        "tests/test_authenticated_dom.py:4",
+        "tests/test_backlog.py:102",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_runtime.py:16",
+        "tests/test_safe_collection.py:5",
+        "tests/test_selective_enrichment.py:4",
+        "tests/test_session_recovery.py:5",
+        "tests/test_target_safety.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/candidate_corroboration.py",
+      "references": [
+        "app/candidate_gaps.py:99",
+        "app/product_candidate_api.py:5",
+        "app/product_detection.py:61",
+        "docs/PRODUCT_CORROBORATION.md:13",
+        "scripts/detect_products.py:8",
+        "tests/test_candidate_corroboration.py:8"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/candidate_gaps.py",
+      "references": [
+        "app/offline_intelligence.py:6",
+        "app/product_candidate_api.py:6",
+        "app/product_detection.py:62",
+        "docs/PRODUCT_CORROBORATION.md:14",
+        "scripts/detect_products.py:9",
+        "tests/test_candidate_corroboration.py:9",
+        "tests/test_discovery.py:141"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/candidate_semantics.py",
+      "references": [
+        "app/category_intelligence.py:110",
+        "app/db.py:117",
+        "app/gold_set.py:185",
+        "app/intelligence_core.py:12",
+        "app/intelligence_decisions.py:16",
+        "app/intelligence_evaluation.py:7",
+        "app/product_detection.py:170",
+        "app/product_identity_resolver.py:10",
+        "app/visual_identification.py:303",
+        "docs/NEXT_SESSION.md:582",
+        "docs/PRODUCT_IDENTITY.md:16",
+        "scripts/product_semantics_report.py:25",
+        "tests/test_detection_benchmark.py:82",
+        "tests/test_identity_resolver.py:117",
+        "tests/test_product_identity_semantics.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/category_api.py",
+      "references": [
+        "app/main.py:47"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/category_intelligence.py",
+      "references": [
+        "app/category_api.py:5",
+        "app/db.py:123",
+        "app/enrichment.py:69",
+        "app/intelligence_core.py:9",
+        "app/night_discovery.py:7",
+        "app/offline_intelligence.py:5",
+        "app/safe_collection.py:230",
+        "app/search_intelligence.py:33",
+        "app/visual_identification.py:14",
+        "scripts/controlled_stage2.py:10",
+        "tests/test_category_intelligence.py:4",
+        "tests/test_controlled_stage2.py:5",
+        "tests/test_offline_intelligence.py:5",
+        "tests/test_visual_identification.py:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/chrome_launcher.py",
+      "references": [
+        "app/main.py:8",
+        "scripts/validate_connection_panel.py:14",
+        "tests/test_runtime.py:31"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/collection_mode.py",
+      "references": [
+        "app/db.py:139",
+        "app/enrichment.py:118",
+        "app/manual_captcha_recovery.py:23",
+        "app/selective_api.py:5",
+        "app/selective_enrichment.py:121",
+        "tests/test_search_only_mode.py:4"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/comments.py",
+      "references": [
+        "AGENTS.md:32",
+        "README.md:103",
+        "app/comment_schemas.py:5",
+        "app/creators.py:32",
+        "app/db.py:9",
+        "app/enrichment.py:11",
+        "app/gold_set.py:95",
+        "app/intelligence_api.py:48",
+        "app/intelligence_core.py:61",
+        "app/intelligence_decisions.py:15",
+        "app/intelligence_signals.py:11",
+        "app/main.py:22",
+        "app/offline_intelligence.py:124",
+        "app/product_identity_resolver.py:43",
+        "app/schemas.py:15",
+        "app/search_intelligence.py:1",
+        "app/selective_enrichment.py:19",
+        "app/trend_history.py:13",
+        "app/visual_identification.py:169",
+        "app/static/index.html:123",
+        "app/static/intelligence-core.js:5",
+        "app/static/visual-identification.js:6",
+        "docs/BRIDGE.md:73",
+        "docs/CATEGORY_INTELLIGENCE.md:7",
+        "docs/COMMENTS.md:1",
+        "docs/CONTROLLED_STAGE2.md:12",
+        "docs/DETECTION_BENCHMARK.md:42",
+        "docs/DEV_CONTROL.md:66",
+        "docs/ENRICHMENT_BACKLOG.md:30",
+        "docs/ESCOVA_REVIEW.md:14",
+        "docs/EXTRACTION.md:19",
+        "docs/INTELLIGENCE_CORE.md:8",
+        "docs/LOCAL_VISUAL_ASSETS.md:86",
+        "docs/NEXT_SESSION.md:142",
+        "docs/OFFLINE_AUDIT.md:54",
+        "docs/PRODUCT_CANDIDATES.md:36",
+        "docs/PRODUCT_CORROBORATION.md:189",
+        "docs/PRODUCT_IDENTIFICATION_PIPELINE.md:75",
+        "docs/PRODUCT_IDENTITY.md:99",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:124",
+        "docs/ROADMAP.md:52",
+        "docs/SAFETY.md:42",
+        "docs/SAFE_COLLECTION_RECOVERY.md:53",
+        "docs/SEARCH_ONLY_MODE.md:26",
+        "docs/SELECTIVE_ENRICHMENT.md:14",
+        "docs/TREND_HISTORY.md:17",
+        "docs/VIDEO_DETAIL_METRICS.md:22",
+        "docs/VIRALITY_QUALITY.md:28",
+        "docs/VISUAL_IDENTIFICATION.md:79",
+        "extension/background.js:209",
+        "extension/comments.js:1",
+        "extension/content.js:5",
+        "extension/manifest.json:35",
+        "extension/video_detail.js:1",
+        "scripts/background_runner.py:23",
+        "scripts/local_visual_assets_report.py:53",
+        "scripts/offline_intelligence_report.py:51",
+        "scripts/sample_comments.py:26",
+        "scripts/visual_identification_report.py:66",
+        "tests/comments.test.cjs:7",
+        "tests/comments_payload.cjs:3",
+        "tests/dashboard-ui.test.cjs:45",
+        "tests/dashboard.test.cjs:31",
+        "tests/detail-metrics.test.cjs:46",
+        "tests/gold-set-ui.test.cjs:11",
+        "tests/intelligence-core.test.cjs:5",
+        "tests/test_backlog.py:22",
+        "tests/test_comments.py:12",
+        "tests/test_core_activation.py:11",
+        "tests/test_identity_resolver.py:90",
+        "tests/test_intelligence_core.py:162",
+        "tests/test_manual_captcha_recovery.py:67",
+        "tests/test_selective_enrichment.py:25",
+        "tests/test_trend_history.py:29",
+        "tests/test_virality_quality.py:7",
+        "tests/test_visual_identification.py:125",
+        "tests/test_visual_identity_completion.py:119",
+        "tests/trend-history.test.cjs:6",
+        "tests/virality-quality.test.cjs:5",
+        "tests/visual-identification.test.cjs:28",
+        "tests/fixtures/gold-review-video-1.json:28",
+        "tests/fixtures/tiktok-detail-metrics.html:18"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/comment_schemas.py",
+      "references": [
+        "app/enrichment.py:157",
+        "app/main.py:21",
+        "app/schemas.py:6",
+        "tests/test_comments.py:11"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/companion_contract.py",
+      "references": [
+        "app/main.py:78",
+        "app/session_api.py:13",
+        "tests/test_command_api_contract.py:7"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/config.py",
+      "references": [
+        "app/browser.py:15",
+        "app/candidate_corroboration.py:27",
+        "app/candidate_gaps.py:33",
+        "app/candidate_semantics.py:14",
+        "app/category_api.py:33",
+        "app/category_intelligence.py:10",
+        "app/chrome_launcher.py:11",
+        "app/comments.py:9",
+        "app/companion_contract.py:6",
+        "app/creators.py:8",
+        "app/db.py:7",
+        "app/dev_control.py:29",
+        "app/discovery.py:13",
+        "app/enrichment.py:15",
+        "app/gold_set.py:186",
+        "app/intelligence_decisions.py:12",
+        "app/intelligence_signals.py:13",
+        "app/manual_captcha_recovery.py:122",
+        "app/night_discovery.py:70",
+        "app/offline_intelligence.py:74",
+        "app/product_detection.py:11",
+        "app/product_identity_resolver.py:26",
+        "app/product_vocabulary.py:30",
+        "app/safe_collection.py:230",
+        "app/safe_collection_api.py:33",
+        "app/session_api.py:23",
+        "app/trend_history.py:12",
+        "app/visual_identification.py:366",
+        "app/visual_providers.py:19",
+        "docs/CATEGORY_INTELLIGENCE.md:3",
+        "docs/COMMENTS.md:44",
+        "docs/CONTROLLED_DISCOVERY.md:24",
+        "docs/CREATORS.md:69",
+        "docs/DEV_CONTROL.md:47",
+        "docs/ENRICHMENT_BACKLOG.md:7",
+        "docs/INTELLIGENCE_CORE.md:109",
+        "docs/NEXT_SESSION.md:404",
+        "docs/PRODUCT_CANDIDATES.md:11",
+        "docs/PRODUCT_CORROBORATION.md:15",
+        "docs/PRODUCT_IDENTITY.md:17",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:9",
+        "docs/TREND_HISTORY.md:75",
+        "docs/VIRALITY_QUALITY.md:23",
+        "extension/dev_worker.js:5",
+        "extension/video_detail.js:31",
+        "scripts/bootstrap_companion.py:58",
+        "scripts/controlled_stage2.py:10",
+        "scripts/dev_supervisor.py:74",
+        "scripts/offline_candidate_audit.py:38",
+        "scripts/visual_identity.py:11",
+        "tests/discovery.test.cjs:53",
+        "tests/test_category_intelligence.py:12",
+        "tests/test_comments.py:69",
+        "tests/test_identity_resolver.py:105"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/creators.py",
+      "references": [
+        "app/candidate_corroboration.py:71",
+        "app/candidate_semantics.py:136",
+        "app/category_intelligence.py:157",
+        "app/db.py:10",
+        "app/enrichment.py:66",
+        "app/intelligence_core.py:392",
+        "app/intelligence_signals.py:38",
+        "app/main.py:25",
+        "app/product_detection.py:48",
+        "app/product_identity_resolver.py:150",
+        "app/safe_collection.py:286",
+        "app/selective_enrichment.py:57",
+        "app/trend_history.py:112",
+        "app/static/category-intelligence.js:5",
+        "app/static/index.html:437",
+        "config/product_detection.json:141",
+        "config/trend_history.json:7",
+        "docs/BRIDGE.md:177",
+        "docs/CREATORS.md:14",
+        "docs/ESCOVA_REVIEW.md:11",
+        "docs/NEXT_SESSION.md:522",
+        "docs/OFFLINE_AUDIT.md:41",
+        "docs/PRODUCT_CANDIDATES.md:15",
+        "docs/PRODUCT_CORROBORATION.md:37",
+        "docs/PRODUCT_IDENTITY.md:53",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:145",
+        "docs/ROADMAP.md:79",
+        "docs/TARGET_QUARANTINE.md:6",
+        "docs/TREND_HISTORY.md:63",
+        "docs/VIRALITY_QUALITY.md:50",
+        "scripts/controlled_stage2.py:36",
+        "scripts/offline_candidate_audit.py:75",
+        "scripts/product_semantics_report.py:39",
+        "scripts/read_creator_profiles.py:1",
+        "tests/dashboard.test.cjs:33",
+        "tests/test_backlog.py:10",
+        "tests/test_creators.py:13",
+        "tests/test_product_detection.py:15"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/creator_schemas.py",
+      "references": [
+        "app/creators.py:6",
+        "app/enrichment.py:158",
+        "app/main.py:24",
+        "app/schemas.py:7",
+        "tests/test_creators.py:12"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/db.py",
+      "references": [
+        "app/browser.py:16",
+        "app/browser_safety.py:5",
+        "app/category_api.py:4",
+        "app/chrome_launcher.py:12",
+        "app/config.py:6",
+        "app/dev_control.py:13",
+        "app/discovery_api.py:4",
+        "app/enrichment.py:9",
+        "app/enrichment_api.py:3",
+        "app/gold_set_api.py:4",
+        "app/intelligence_api.py:6",
+        "app/main.py:6",
+        "app/manual_captcha_recovery.py:9",
+        "app/night_discovery.py:7",
+        "app/offline_api.py:2",
+        "app/product_candidate_api.py:3",
+        "app/safe_collection_api.py:5",
+        "app/selective_api.py:3",
+        "app/selective_enrichment.py:13",
+        "app/session_api.py:4",
+        "app/target_safety.py:12",
+        "app/visual_assets.py:13",
+        "app/visual_identification_api.py:7",
+        "docs/DETECTION_BENCHMARK.md:210",
+        "docs/ENRICHMENT_BACKLOG.md:67",
+        "docs/NEXT_SESSION.md:59",
+        "docs/OFFLINE_AUDIT.md:6",
+        "docs/PRODUCT_CANDIDATES.md:55",
+        "docs/PRODUCT_CORROBORATION.md:207",
+        "docs/PRODUCT_IDENTITY.md:122",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:156",
+        "scripts/background_runner.py:60",
+        "scripts/check_enrichment_migration.py:10",
+        "scripts/controlled_stage2.py:9",
+        "scripts/core_activation.py:16",
+        "scripts/detection_benchmark.py:16",
+        "scripts/detect_products.py:6",
+        "scripts/dev_supervisor.py:124",
+        "scripts/intelligence_core.py:7",
+        "scripts/local_visual_assets_report.py:17",
+        "scripts/manual_captcha_resume.py:8",
+        "scripts/offline_candidate_audit.py:1",
+        "scripts/offline_intelligence_report.py:18",
+        "scripts/product_semantics_report.py:20",
+        "scripts/quarantine_stage1.py:9",
+        "scripts/report_core_activation.py:17",
+        "scripts/report_intelligence_core.py:22",
+        "scripts/report_visual_identity.py:13",
+        "scripts/resolve_product_identity.py:17",
+        "scripts/resume_stage2.py:8",
+        "scripts/trend_history.py:8",
+        "scripts/virality_quality.py:7",
+        "scripts/visual_identification_report.py:12",
+        "scripts/visual_identity.py:9",
+        "tests/test_authenticated_dom.py:3",
+        "tests/test_backlog.py:3",
+        "tests/test_bridge.py:14",
+        "tests/test_candidate_corroboration.py:6",
+        "tests/test_capture.py:16",
+        "tests/test_category_intelligence.py:73",
+        "tests/test_command_api_contract.py:6",
+        "tests/test_comments.py:10",
+        "tests/test_controlled_stage2.py:5",
+        "tests/test_core_activation.py:156",
+        "tests/test_creators.py:11",
+        "tests/test_detection_benchmark.py:116",
+        "tests/test_dev_control.py:15",
+        "tests/test_discovery.py:6",
+        "tests/test_enrichment.py:10",
+        "tests/test_identity_resolver.py:140",
+        "tests/test_intelligence_core.py:150",
+        "tests/test_local_visual_assets.py:136",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_offline_intelligence.py:88",
+        "tests/test_product_detection.py:3",
+        "tests/test_product_identity_semantics.py:120",
+        "tests/test_runtime.py:4",
+        "tests/test_safe_collection.py:5",
+        "tests/test_search_only_mode.py:4",
+        "tests/test_selective_enrichment.py:4",
+        "tests/test_session_panel.py:1",
+        "tests/test_session_recovery.py:5",
+        "tests/test_stage2_resume.py:5",
+        "tests/test_target_safety.py:5",
+        "tests/test_visual_identification.py:154",
+        "tests/test_visual_identity_completion.py:78"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/dev_control.py",
+      "references": [
+        "app/main.py:19",
+        "app/manual_captcha_recovery.py:11",
+        "app/safe_collection.py:166",
+        "app/safe_collection_api.py:6",
+        "app/selective_enrichment.py:166",
+        "app/session_api.py:5",
+        "docs/NEXT_SESSION.md:901",
+        "scripts/offline_intelligence_report.py:38",
+        "tests/test_dev_control.py:15"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/discovery.py",
+      "references": [
+        "app/browser_safety.py:46",
+        "app/db.py:113",
+        "app/discovery_api.py:6",
+        "app/enrichment.py:65",
+        "app/main.py:117",
+        "app/night_discovery.py:73",
+        "app/offline_intelligence.py:108",
+        "app/visual_providers.py:147",
+        "app/static/category-intelligence.js:5",
+        "app/static/index.html:554",
+        "config/discovery.json:2",
+        "config/discovery_intelligence.json:2",
+        "docs/BRIDGE.md:97",
+        "docs/CONTROLLED_DISCOVERY.md:20",
+        "docs/CONTROLLED_STAGE2.md:32",
+        "docs/CREATORS.md:19",
+        "docs/DEV_CONTROL.md:66",
+        "docs/ENRICHMENT_BACKLOG.md:4",
+        "docs/NEXT_SESSION.md:55",
+        "docs/PERSISTENT_RUNTIME.md:35",
+        "docs/TREND_HISTORY.md:61",
+        "docs/VISUAL_IDENTIFICATION.md:12",
+        "extension/background.js:475",
+        "extension/discovery_worker.js:4",
+        "extension/search_discovery.js:1",
+        "scripts/background_runner.py:23",
+        "scripts/discovery_session.py:53",
+        "scripts/local_visual_assets_report.py:63",
+        "scripts/validate_persistent_runtime.py:35",
+        "tests/dashboard-ui.test.cjs:197",
+        "tests/discovery-worker.test.cjs:49",
+        "tests/discovery.test.cjs:17",
+        "tests/test_discovery.py:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/discovery_api.py",
+      "references": [
+        "app/main.py:37"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/enrichment.py",
+      "references": [
+        "AGENTS.md:58",
+        "README.md:97",
+        "app/category_api.py:45",
+        "app/category_intelligence.py:125",
+        "app/collection_mode.py:37",
+        "app/db.py:115",
+        "app/dev_control.py:67",
+        "app/discovery_api.py:36",
+        "app/enrichment_api.py:3",
+        "app/main.py:93",
+        "app/observations.py:1",
+        "app/safe_collection.py:300",
+        "app/selective_api.py:10",
+        "app/selective_enrichment.py:3",
+        "app/static/category-intelligence.js:5",
+        "app/static/index.html:417",
+        "app/static/intelligence-core.html:16",
+        "app/static/selective-enrichment.js:13",
+        "config/enrichment.json:2",
+        "docs/BRIDGE.md:118",
+        "docs/CATEGORY_INTELLIGENCE.md:22",
+        "docs/CONTROLLED_DISCOVERY.md:103",
+        "docs/CONTROLLED_STAGE2.md:3",
+        "docs/CREATORS.md:1",
+        "docs/ENRICHMENT_BACKLOG.md:7",
+        "docs/ESCOVA_REVIEW.md:3",
+        "docs/EXTRACTION.md:24",
+        "docs/NEXT_SESSION.md:165",
+        "docs/PRODUCT_IDENTITY.md:122",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:4",
+        "docs/ROADMAP.md:78",
+        "docs/SAFETY.md:94",
+        "docs/SAFE_COLLECTION_RECOVERY.md:41",
+        "docs/SEARCH_ONLY_MODE.md:3",
+        "docs/SELECTIVE_ENRICHMENT.md:1",
+        "docs/TREND_HISTORY.md:10",
+        "scripts/background_runner.py:23",
+        "scripts/discovery_session.py:63",
+        "scripts/manual_captcha_resume.py:10",
+        "scripts/offline_intelligence_report.py:77",
+        "scripts/selective_enrichment.py:12",
+        "tests/capture_client.cjs:10",
+        "tests/enrichment.test.cjs:6",
+        "tests/search-only-mode.test.cjs:15",
+        "tests/selective-ui.test.cjs:7",
+        "tests/test_backlog.py:3",
+        "tests/test_capture.py:186",
+        "tests/test_category_intelligence.py:32",
+        "tests/test_discovery.py:125",
+        "tests/test_enrichment.py:128"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/enrichment_api.py",
+      "references": [
+        "app/main.py:39",
+        "docs/NEXT_SESSION.md:899"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/extraction.py",
+      "references": [
+        "app/comments.py:7",
+        "app/comment_schemas.py:3",
+        "app/creators.py:114",
+        "app/creator_schemas.py:6",
+        "app/db.py:404",
+        "app/main.py:330",
+        "app/observations.py:6",
+        "app/schemas.py:5",
+        "app/trend_history.py:150",
+        "app/visual_providers.py:153",
+        "app/static/index.html:128",
+        "docs/BRIDGE.md:78",
+        "docs/CONTROLLED_DISCOVERY.md:86",
+        "docs/CREATORS.md:38",
+        "docs/EXTRACTION.md:20",
+        "docs/PRODUCT_CANDIDATES.md:11",
+        "docs/ROADMAP.md:36",
+        "docs/SAFETY.md:73",
+        "docs/SELECTIVE_ENRICHMENT.md:52",
+        "docs/VIDEO_DETAIL_METRICS.md:129",
+        "scripts/check_enrichment_migration.py:11",
+        "tests/dashboard.test.cjs:34",
+        "tests/safe-collection.test.cjs:4",
+        "tests/test_capture.py:20",
+        "tests/test_comments.py:79",
+        "tests/test_creators.py:82",
+        "tests/test_enrichment.py:11"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/gold_set.py",
+      "references": [
+        "app/db.py:121",
+        "app/gold_set_api.py:5",
+        "app/offline_intelligence.py:5",
+        "app/visual_identification.py:14",
+        "app/visual_identification_api.py:213",
+        "docs/DETECTION_BENCHMARK.md:8",
+        "docs/NEXT_SESSION.md:261",
+        "scripts/detection_benchmark.py:10",
+        "tests/test_detection_benchmark.py:3",
+        "tests/test_gold_filters.py:1",
+        "tests/test_local_visual_assets.py:12",
+        "tests/test_offline_intelligence.py:5",
+        "tests/test_visual_identification.py:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/gold_set_api.py",
+      "references": [
+        "app/main.py:45",
+        "docs/DETECTION_BENCHMARK.md:8",
+        "docs/NEXT_SESSION.md:261",
+        "tests/test_gold_filters.py:11"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_api.py",
+      "references": [
+        "app/main.py:53",
+        "app/selective_api.py:4",
+        "app/session_api.py:6",
+        "tests/test_intelligence_core.py:202"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_core.py",
+      "references": [
+        "app/db.py:127",
+        "app/intelligence_api.py:7",
+        "app/intelligence_decisions.py:12",
+        "app/intelligence_evaluation.py:11",
+        "app/intelligence_signals.py:127",
+        "app/safe_collection.py:295",
+        "app/selective_enrichment.py:48",
+        "app/visual_identification.py:320",
+        "app/visual_identification_api.py:20",
+        "docs/INTELLIGENCE_CORE.md:90",
+        "docs/SELECTIVE_ENRICHMENT.md:68",
+        "scripts/core_activation.py:17",
+        "scripts/intelligence_core.py:8",
+        "scripts/report_core_activation.py:8",
+        "scripts/report_intelligence_core.py:8",
+        "scripts/report_visual_identity.py:7",
+        "scripts/virality_quality.py:8",
+        "scripts/visual_identity.py:10",
+        "tests/test_core_activation.py:7",
+        "tests/test_intelligence_core.py:6",
+        "tests/test_visual_identity_completion.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_decisions.py",
+      "references": [
+        "app/comments.py:47",
+        "app/intelligence_core.py:13",
+        "app/intelligence_embeddings.py:15",
+        "app/intelligence_evaluation.py:66",
+        "app/intelligence_jobs.py:7",
+        "app/search_intelligence.py:35",
+        "app/selective_enrichment.py:49",
+        "app/trend_history.py:205",
+        "app/visual_identification.py:332",
+        "scripts/install_intelligence_model.py:11",
+        "scripts/report_core_activation.py:37",
+        "scripts/report_intelligence_core.py:37",
+        "scripts/report_visual_identity.py:29",
+        "tests/test_core_activation.py:8",
+        "tests/test_intelligence_core.py:7",
+        "tests/test_selective_enrichment.py:52",
+        "tests/test_trend_history.py:157"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_embeddings.py",
+      "references": [
+        "app/intelligence_core.py:24",
+        "app/visual_identification.py:383",
+        "scripts/core_activation.py:18",
+        "scripts/install_intelligence_model.py:18",
+        "scripts/report_core_activation.py:33",
+        "scripts/report_intelligence_core.py:10",
+        "scripts/report_visual_identity.py:43",
+        "scripts/visual_identity.py:12",
+        "tests/test_core_activation.py:9",
+        "tests/test_intelligence_core.py:8",
+        "tests/test_visual_identity_completion.py:7"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_evaluation.py",
+      "references": [
+        "docs/INTELLIGENCE_CORE.md:71",
+        "scripts/core_activation.py:64",
+        "scripts/intelligence_core.py:28",
+        "scripts/report_core_activation.py:9",
+        "scripts/report_intelligence_core.py:9",
+        "scripts/report_visual_identity.py:8",
+        "tests/test_intelligence_core.py:182"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_index.py",
+      "references": [
+        "app/intelligence_core.py:146",
+        "app/visual_identification.py:384",
+        "scripts/core_activation.py:19",
+        "scripts/report_intelligence_core.py:11",
+        "tests/test_core_activation.py:10",
+        "tests/test_intelligence_core.py:9",
+        "tests/test_visual_identity_completion.py:8"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_jobs.py",
+      "references": [
+        "app/intelligence_core.py:14",
+        "app/intelligence_embeddings.py:226",
+        "app/intelligence_index.py:11",
+        "app/safe_collection.py:296",
+        "scripts/intelligence_core.py:23",
+        "scripts/visual_identity.py:10",
+        "tests/test_controlled_stage2.py:39",
+        "tests/test_core_activation.py:7",
+        "tests/test_intelligence_core.py:6",
+        "tests/test_safe_collection.py:75"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/intelligence_signals.py",
+      "references": [
+        "app/intelligence_core.py:369",
+        "app/selective_enrichment.py:48",
+        "docs/VIRALITY_QUALITY.md:3",
+        "scripts/virality_quality.py:9",
+        "tests/test_virality_quality.py:8"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/main.py",
+      "references": [
+        "README.md:9",
+        "run.py:31",
+        "app/chrome_launcher.py:14",
+        "app/config.py:5",
+        "app/enrichment.py:155",
+        "app/night_discovery.py:27",
+        "app/session_api.py:12",
+        "app/static/index.html:144",
+        "docs/CREATORS.md:115",
+        "docs/NEXT_SESSION.md:178",
+        "docs/PERSISTENT_RUNTIME.md:49",
+        "docs/PRODUCT_CANDIDATES.md:55",
+        "docs/ROADMAP.md:85",
+        "extension/session_signals.js:45",
+        "scripts/bootstrap_companion.py:45",
+        "scripts/check_enrichment_migration.py:14",
+        "scripts/controlled_stage2.py:42",
+        "scripts/core_activation.py:25",
+        "scripts/detection_benchmark.py:13",
+        "scripts/devctl.py:59",
+        "scripts/discovery_session.py:30",
+        "scripts/install_intelligence_model.py:14",
+        "scripts/intelligence_core.py:11",
+        "scripts/local_visual_assets_report.py:15",
+        "scripts/manual_captcha_resume.py:18",
+        "scripts/offline_intelligence_report.py:16",
+        "scripts/product_semantics_report.py:15",
+        "scripts/quarantine_stage1.py:33",
+        "scripts/read_creator_profiles.py:15",
+        "scripts/read_video_details.py:11",
+        "scripts/report_core_activation.py:15",
+        "scripts/report_intelligence_core.py:19",
+        "scripts/report_visual_identity.py:11",
+        "scripts/resolve_product_identity.py:13",
+        "scripts/resume_stage2.py:37",
+        "scripts/safe_collection.py:11",
+        "scripts/sample_comments.py:8",
+        "scripts/selective_enrichment.py:9",
+        "scripts/trend_history.py:12",
+        "scripts/validate_connection_panel.py:54",
+        "scripts/validate_persistent_runtime.py:11",
+        "scripts/virality_quality.py:12",
+        "scripts/visual_identification_report.py:15",
+        "scripts/visual_identity.py:15",
+        "tests/session-recovery.test.cjs:16",
+        "tests/test_backlog.py:122",
+        "tests/test_bridge.py:15",
+        "tests/test_capture.py:17",
+        "tests/test_command_api_contract.py:47",
+        "tests/test_dev_control.py:16",
+        "tests/test_session_recovery.py:6",
+        "tests/test_visual_identification.py:56",
+        "tests/fixtures/tiktok-creator-profile.html:11",
+        "tests/fixtures/tiktok-detail-metrics.html:1",
+        "tests/fixtures/tiktok-enrichment.html:1",
+        "tests/fixtures/tiktok-live-metadata.html:1",
+        "tests/fixtures/tiktok-media-tile.html:1",
+        "tests/fixtures/tiktok-search.html:1",
+        "tests/fixtures/tiktok-video-detail.html:2"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/manual_captcha_recovery.py",
+      "references": [
+        "app/db.py:137",
+        "app/main.py:43",
+        "app/selective_enrichment.py:199",
+        "tests/test_manual_captcha_recovery.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/night_discovery.py",
+      "references": [
+        "app/category_api.py:81",
+        "app/main.py:95",
+        "scripts/offline_intelligence_report.py:38",
+        "tests/test_category_intelligence.py:5",
+        "tests/test_session_recovery.py:90"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/observations.py",
+      "references": [
+        "AGENTS.md:59",
+        "app/candidate_gaps.py:132",
+        "app/category_api.py:32",
+        "app/comments.py:1",
+        "app/creators.py:136",
+        "app/db.py:8",
+        "app/discovery.py:106",
+        "app/enrichment.py:89",
+        "app/intelligence_decisions.py:3",
+        "app/intelligence_signals.py:23",
+        "app/manual_captcha_recovery.py:79",
+        "app/offline_intelligence.py:79",
+        "app/product_identity_resolver.py:43",
+        "app/safe_collection.py:284",
+        "app/schemas.py:375",
+        "app/search_intelligence.py:80",
+        "app/selective_enrichment.py:73",
+        "app/trend_history.py:115",
+        "app/visual_identification.py:170",
+        "app/visual_providers.py:153",
+        "app/static/index.html:570",
+        "app/static/intelligence-core.js:14",
+        "config/trend_history.json:7",
+        "docs/BRIDGE.md:39",
+        "docs/CATEGORY_INTELLIGENCE.md:11",
+        "docs/CONTROLLED_DISCOVERY.md:47",
+        "docs/CONTROLLED_STAGE2.md:49",
+        "docs/CREATORS.md:27",
+        "docs/DEV_CONTROL.md:86",
+        "docs/ENRICHMENT_BACKLOG.md:29",
+        "docs/EXTRACTION.md:17",
+        "docs/INTELLIGENCE_CORE.md:7",
+        "docs/NEXT_SESSION.md:851",
+        "docs/PRODUCT_CORROBORATION.md:205",
+        "docs/PRODUCT_IDENTIFICATION_PIPELINE.md:87",
+        "docs/ROADMAP.md:18",
+        "docs/SAFETY.md:20",
+        "docs/SAFE_COLLECTION_RECOVERY.md:96",
+        "docs/SELECTIVE_ENRICHMENT.md:5",
+        "docs/TARGET_QUARANTINE.md:35",
+        "docs/TREND_HISTORY.md:39",
+        "docs/VIDEO_DETAIL_METRICS.md:74",
+        "docs/VIRALITY_QUALITY.md:56",
+        "docs/VISUAL_IDENTIFICATION.md:62",
+        "docs/VISUAL_IDENTITY_COMPLETION.md:46",
+        "scripts/check_enrichment_migration.py:36",
+        "scripts/controlled_stage2.py:35",
+        "scripts/core_activation.py:33",
+        "scripts/offline_candidate_audit.py:81",
+        "scripts/quarantine_stage1.py:27",
+        "scripts/resume_stage2.py:40",
+        "scripts/trend_history.py:20",
+        "tests/comments.test.cjs:104",
+        "tests/dashboard-ui.test.cjs:162",
+        "tests/test_candidate_corroboration.py:206",
+        "tests/test_capture.py:143",
+        "tests/test_enrichment.py:13",
+        "tests/test_offline_intelligence.py:7",
+        "tests/test_safe_collection.py:6",
+        "tests/test_search_only_mode.py:5",
+        "tests/test_selective_enrichment.py:5",
+        "tests/test_trend_history.py:21",
+        "tests/trend-history.test.cjs:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/offline_api.py",
+      "references": [
+        "app/main.py:49",
+        "scripts/offline_intelligence_report.py:75"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/offline_intelligence.py",
+      "references": [
+        "app/offline_api.py:3",
+        "app/visual_identification.py:15",
+        "scripts/offline_intelligence_report.py:12",
+        "tests/test_offline_intelligence.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/policy.py",
+      "references": [
+        "app/browser.py:17",
+        "app/collection_mode.py:1",
+        "app/comments.py:99",
+        "app/intelligence_core.py:128",
+        "app/intelligence_decisions.py:1",
+        "app/intelligence_signals.py:28",
+        "app/safe_actions.py:1",
+        "app/trend_history.py:86",
+        "docs/BRIDGE.md:179",
+        "docs/EXTRACTION.md:224",
+        "docs/INTELLIGENCE_CORE.md:3",
+        "docs/PERSISTENT_RUNTIME.md:9",
+        "docs/PRODUCT_IDENTIFICATION_PIPELINE.md:31",
+        "docs/ROADMAP.md:92",
+        "docs/SELECTIVE_ENRICHMENT.md:3",
+        "docs/TARGET_QUARANTINE.md:1",
+        "docs/VISUAL_IDENTIFICATION.md:34",
+        "tests/dashboard-ui.test.cjs:62",
+        "tests/safe-collection.test.cjs:23",
+        "tests/test_capture.py:18",
+        "tests/test_comments.py:13",
+        "tests/test_creators.py:14",
+        "tests/test_policy.py:1"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/product_candidate_api.py",
+      "references": [
+        "app/main.py:35",
+        "docs/NEXT_SESSION.md:583",
+        "docs/PRODUCT_CANDIDATES.md:55",
+        "docs/PRODUCT_CORROBORATION.md:127"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/product_detection.py",
+      "references": [
+        "app/candidate_corroboration.py:28",
+        "app/candidate_gaps.py:34",
+        "app/candidate_semantics.py:18",
+        "app/db.py:111",
+        "app/enrichment.py:11",
+        "app/gold_set.py:183",
+        "app/night_discovery.py:139",
+        "app/offline_intelligence.py:5",
+        "app/product_candidate_api.py:4",
+        "app/search_intelligence.py:34",
+        "app/selective_enrichment.py:64",
+        "docs/NEXT_SESSION.md:583",
+        "docs/PRODUCT_CANDIDATES.md:11",
+        "docs/PRODUCT_CORROBORATION.md:15",
+        "scripts/detect_products.py:7",
+        "tests/dashboard-ui.test.cjs:45",
+        "tests/test_backlog.py:45",
+        "tests/test_candidate_corroboration.py:7",
+        "tests/test_detection_benchmark.py:4",
+        "tests/test_discovery.py:140",
+        "tests/test_identity_resolver.py:8",
+        "tests/test_product_detection.py:4",
+        "tests/test_product_identity_semantics.py:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/product_identity_resolver.py",
+      "references": [
+        "app/db.py:119",
+        "app/intelligence_core.py:11",
+        "app/product_candidate_api.py:35",
+        "app/product_detection.py:172",
+        "docs/NEXT_SESSION.md:521",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:8",
+        "scripts/resolve_product_identity.py:10",
+        "tests/test_identity_resolver.py:7"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/product_vocabulary.py",
+      "references": [
+        "app/candidate_gaps.py:154",
+        "app/discovery.py:190",
+        "app/gold_set.py:184",
+        "app/offline_intelligence.py:73",
+        "app/product_detection.py:65",
+        "tests/test_candidate_corroboration.py:209",
+        "tests/test_discovery.py:142"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/safe_actions.py",
+      "references": [
+        "tests/test_safe_actions.py:3"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/safe_collection.py",
+      "references": [
+        "app/collection_mode.py:5",
+        "app/db.py:131",
+        "app/intelligence_core.py:374",
+        "app/main.py:191",
+        "app/manual_captcha_recovery.py:9",
+        "app/safe_collection_api.py:5",
+        "app/search_intelligence.py:8",
+        "app/selective_enrichment.py:13",
+        "app/session_api.py:34",
+        "app/target_safety.py:13",
+        "docs/SAFE_COLLECTION_RECOVERY.md:9",
+        "scripts/controlled_stage2.py:9",
+        "scripts/manual_captcha_resume.py:8",
+        "scripts/quarantine_stage1.py:10",
+        "scripts/resume_stage2.py:8",
+        "tests/test_controlled_stage2.py:5",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_safe_collection.py:5",
+        "tests/test_search_only_mode.py:4",
+        "tests/test_selective_enrichment.py:4",
+        "tests/test_stage2_resume.py:5",
+        "tests/test_target_safety.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/safe_collection_api.py",
+      "references": [
+        "app/main.py:29"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/schemas.py",
+      "references": [
+        "app/discovery_api.py:5",
+        "app/enrichment.py:156",
+        "app/main.py:5",
+        "app/night_discovery.py:35",
+        "docs/BRIDGE.md:127",
+        "docs/DEV_CONTROL.md:154",
+        "tests/test_bridge.py:16",
+        "tests/test_capture.py:19",
+        "tests/test_discovery.py:7",
+        "tests/test_enrichment.py:12"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/search_intelligence.py",
+      "references": [
+        "app/db.py:141",
+        "app/selective_api.py:5",
+        "app/static/selective-enrichment.js:13",
+        "tests/search-only-mode.test.cjs:14",
+        "tests/test_search_only_mode.py:4"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/selective_api.py",
+      "references": [
+        "app/main.py:41"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/selective_enrichment.py",
+      "references": [
+        "app/db.py:135",
+        "app/main.py:97",
+        "app/manual_captcha_recovery.py:9",
+        "app/safe_collection.py:181",
+        "app/selective_api.py:3",
+        "scripts/background_runner.py:49",
+        "scripts/manual_captcha_resume.py:8",
+        "scripts/selective_enrichment.py:6",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_selective_enrichment.py:4"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/session_api.py",
+      "references": [
+        "app/main.py:33"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/supplier_foundation.py",
+      "references": [
+        "docs/PRODUCT_IDENTIFICATION_PIPELINE.md:36",
+        "scripts/offline_intelligence_report.py:13",
+        "tests/test_offline_intelligence.py:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/target_safety.py",
+      "references": [
+        "app/db.py:133",
+        "app/main.py:31",
+        "app/manual_captcha_recovery.py:9",
+        "app/safe_collection.py:283",
+        "app/search_intelligence.py:8",
+        "app/selective_enrichment.py:13",
+        "scripts/controlled_stage2.py:9",
+        "scripts/manual_captcha_resume.py:8",
+        "scripts/quarantine_stage1.py:9",
+        "tests/test_controlled_stage2.py:5",
+        "tests/test_manual_captcha_recovery.py:5",
+        "tests/test_selective_enrichment.py:4",
+        "tests/test_target_safety.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/trend_history.py",
+      "references": [
+        "app/db.py:129",
+        "app/intelligence_api.py:25",
+        "app/intelligence_core.py:370",
+        "app/observations.py:121",
+        "app/search_intelligence.py:8",
+        "app/selective_enrichment.py:67",
+        "app/static/intelligence-core.js:14",
+        "docs/TREND_HISTORY.md:3",
+        "scripts/trend_history.py:9",
+        "tests/test_trend_history.py:6",
+        "tests/trend-history.test.cjs:6"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/visual_assets.py",
+      "references": [
+        "app/visual_identification.py:63",
+        "app/visual_identification_api.py:9",
+        "docs/LOCAL_VISUAL_ASSETS.md:47",
+        "docs/NEXT_SESSION.md:65",
+        "scripts/local_visual_assets_report.py:51",
+        "tests/test_local_visual_assets.py:12",
+        "tests/test_visual_identity_completion.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/visual_identification.py",
+      "references": [
+        "app/category_intelligence.py:189",
+        "app/db.py:125",
+        "app/intelligence_core.py:10",
+        "app/intelligence_evaluation.py:65",
+        "app/visual_identification_api.py:8",
+        "app/visual_providers.py:16",
+        "scripts/local_visual_assets_report.py:12",
+        "scripts/report_visual_identity.py:7",
+        "scripts/visual_identification_report.py:12",
+        "scripts/visual_identity.py:10",
+        "tests/test_local_visual_assets.py:12",
+        "tests/test_visual_identification.py:6",
+        "tests/test_visual_identity_completion.py:5"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/visual_identification_api.py",
+      "references": [
+        "app/main.py:51",
+        "scripts/local_visual_assets_report.py:64",
+        "scripts/visual_identification_report.py:74",
+        "tests/test_local_visual_assets.py:13",
+        "tests/test_visual_identification.py:7"
+      ],
+      "status": "REFERENCED"
+    },
+    {
+      "path": "app/visual_providers.py",
+      "references": [
+        "app/visual_identification.py:295",
+        "scripts/visual_identity.py:11",
+        "tests/test_visual_identity_completion.py:6"
+      ],
+      "status": "REFERENCED"
+    }
+  ],
+  "endpoints": [
+    {
+      "location": "app/category_api.py:28",
+      "method": "GET",
+      "declared_path": "",
+      "consumers": [
+        "app/static/category-intelligence.js:13",
+        "tests/category-ui.test.cjs:18",
+        "docs/CATEGORY_INTELLIGENCE.md:74"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence"
+    },
+    {
+      "location": "app/category_api.py:43",
+      "method": "GET",
+      "declared_path": "/library",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:75"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/library"
+    },
+    {
+      "location": "app/category_api.py:51",
+      "method": "POST",
+      "declared_path": "/classify",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:76"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/classify"
+    },
+    {
+      "location": "app/category_api.py:55",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/review",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:77"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/videos/{video_id}/review"
+    },
+    {
+      "location": "app/category_api.py:62",
+      "method": "GET",
+      "declared_path": "/videos/{video_id}/history",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:77"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/videos/{video_id}/history"
+    },
+    {
+      "location": "app/category_api.py:69",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/visual-evidence",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:77"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/videos/{video_id}/visual-evidence"
+    },
+    {
+      "location": "app/category_api.py:80",
+      "method": "POST",
+      "declared_path": "/night/start",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:80"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/night/start"
+    },
+    {
+      "location": "app/category_api.py:86",
+      "method": "POST",
+      "declared_path": "/night/{run_id}/stop",
+      "consumers": [
+        "docs/CATEGORY_INTELLIGENCE.md:80"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/category-intelligence/night/{run_id}/stop"
+    },
+    {
+      "location": "app/dev_control.py:110",
+      "method": "POST",
+      "declared_path": "/recovery/{ident}/clear-reviewed-stop",
+      "consumers": [
+        "scripts/devctl.py:88",
+        "tests/test_session_recovery.py:24"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/recovery/{ident}/clear-reviewed-stop"
+    },
+    {
+      "location": "app/dev_control.py:118",
+      "method": "GET",
+      "declared_path": "/status",
+      "consumers": [
+        "extension/dev_bootstrap.js:8",
+        "scripts/devctl.py:40",
+        "scripts/dev_supervisor.py:165",
+        "tests/test_dev_control.py:54"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/status"
+    },
+    {
+      "location": "app/dev_control.py:129",
+      "method": "POST",
+      "declared_path": "/drain",
+      "consumers": [
+        "scripts/dev_supervisor.py:198",
+        "tests/test_dev_control.py:80"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/drain"
+    },
+    {
+      "location": "app/dev_control.py:139",
+      "method": "POST",
+      "declared_path": "/resume",
+      "consumers": [
+        "scripts/devctl.py:117",
+        "tests/test_dev_control.py:91"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/resume"
+    },
+    {
+      "location": "app/dev_control.py:146",
+      "method": "POST",
+      "declared_path": "/shutdown",
+      "consumers": [
+        "scripts/dev_supervisor.py:216",
+        "tests/test_dev_control.py:82"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/shutdown"
+    },
+    {
+      "location": "app/dev_control.py:162",
+      "method": "POST",
+      "declared_path": "/commands",
+      "consumers": [
+        "app/static/index.html:370",
+        "extension/dev_worker.js:31",
+        "scripts/devctl.py:37",
+        "tests/connection-panel.test.cjs:55",
+        "tests/test_authenticated_dom.py:36",
+        "tests/test_command_api_contract.py:21",
+        "tests/test_dev_control.py:57",
+        "tests/test_session_panel.py:7",
+        "tests/test_session_recovery.py:19",
+        "docs/DEV_CONTROL.md:41"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/commands"
+    },
+    {
+      "location": "app/dev_control.py:188",
+      "method": "GET",
+      "declared_path": "/commands/next",
+      "consumers": [
+        "app/static/index.html:370",
+        "extension/dev_worker.js:31",
+        "tests/connection-panel.test.cjs:55",
+        "tests/test_command_api_contract.py:21",
+        "tests/test_dev_control.py:57",
+        "tests/test_session_panel.py:7",
+        "docs/DEV_CONTROL.md:41"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/commands/next"
+    },
+    {
+      "location": "app/dev_control.py:199",
+      "method": "POST",
+      "declared_path": "/commands/{ident}/accept",
+      "consumers": [
+        "app/static/index.html:370",
+        "extension/dev_worker.js:31",
+        "scripts/devctl.py:37",
+        "tests/connection-panel.test.cjs:55",
+        "tests/test_authenticated_dom.py:36",
+        "tests/test_command_api_contract.py:21",
+        "tests/test_dev_control.py:57",
+        "tests/test_session_panel.py:7",
+        "tests/test_session_recovery.py:19",
+        "docs/DEV_CONTROL.md:41"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/commands/{ident}/accept"
+    },
+    {
+      "location": "app/dev_control.py:212",
+      "method": "POST",
+      "declared_path": "/commands/{ident}/complete",
+      "consumers": [
+        "app/static/index.html:370",
+        "extension/dev_worker.js:31",
+        "scripts/devctl.py:37",
+        "tests/connection-panel.test.cjs:55",
+        "tests/test_authenticated_dom.py:36",
+        "tests/test_command_api_contract.py:21",
+        "tests/test_dev_control.py:57",
+        "tests/test_session_panel.py:7",
+        "tests/test_session_recovery.py:19",
+        "docs/DEV_CONTROL.md:41"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/commands/{ident}/complete"
+    },
+    {
+      "location": "app/discovery_api.py:30",
+      "method": "GET",
+      "declared_path": "/api/discovery/sessions",
+      "consumers": [
+        "app/static/index.html:554",
+        "scripts/discovery_session.py:56",
+        "scripts/validate_persistent_runtime.py:35",
+        "tests/dashboard-ui.test.cjs:207",
+        "tests/test_discovery.py:122",
+        "docs/CONTROLLED_DISCOVERY.md:101"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/discovery/sessions"
+    },
+    {
+      "location": "app/discovery_api.py:37",
+      "method": "GET",
+      "declared_path": "/api/discovery/enrichment-queue",
+      "consumers": [
+        "scripts/discovery_session.py:63",
+        "tests/test_discovery.py:125",
+        "docs/CONTROLLED_DISCOVERY.md:103"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/discovery/enrichment-queue"
+    },
+    {
+      "location": "app/discovery_api.py:43",
+      "method": "GET",
+      "declared_path": "/api/videos/{video_id}/search-appearances",
+      "consumers": [
+        "app/main.py:320",
+        "app/static/index.html:439",
+        "scripts/read_video_details.py:25",
+        "scripts/sample_comments.py:26",
+        "scripts/validate_persistent_runtime.py:39",
+        "tests/dashboard.test.cjs:30",
+        "tests/test_capture.py:110",
+        "tests/test_comments.py:78",
+        "tests/test_creators.py:82",
+        "tests/test_discovery.py:118",
+        "docs/BRIDGE.md:76",
+        "docs/CONTROLLED_DISCOVERY.md:104",
+        "docs/EXTRACTION.md:170"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/videos/{video_id}/search-appearances"
+    },
+    {
+      "location": "app/discovery_api.py:57",
+      "method": "POST",
+      "declared_path": "/api/discovery/sessions/{session_id}/stop",
+      "consumers": [
+        "app/static/index.html:554",
+        "scripts/discovery_session.py:56",
+        "scripts/validate_persistent_runtime.py:35",
+        "tests/dashboard-ui.test.cjs:207",
+        "tests/test_discovery.py:122",
+        "docs/CONTROLLED_DISCOVERY.md:101"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/discovery/sessions/{session_id}/stop"
+    },
+    {
+      "location": "app/discovery_api.py:68",
+      "method": "GET",
+      "declared_path": "/api/bridge/discovery/{command_id}/control",
+      "consumers": [
+        "extension/background.js:475",
+        "extension/discovery_worker.js:4",
+        "tests/test_discovery.py:117",
+        "docs/CONTROLLED_DISCOVERY.md:105"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/discovery/{command_id}/control"
+    },
+    {
+      "location": "app/discovery_api.py:74",
+      "method": "POST",
+      "declared_path": "/api/bridge/discovery/{command_id}/step",
+      "consumers": [
+        "extension/background.js:475",
+        "extension/discovery_worker.js:4",
+        "tests/test_discovery.py:117",
+        "docs/CONTROLLED_DISCOVERY.md:105"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/discovery/{command_id}/step"
+    },
+    {
+      "location": "app/discovery_api.py:83",
+      "method": "POST",
+      "declared_path": "/api/bridge/discovery/{command_id}/finish",
+      "consumers": [
+        "extension/background.js:475",
+        "extension/discovery_worker.js:4",
+        "tests/test_discovery.py:117",
+        "docs/CONTROLLED_DISCOVERY.md:105"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/discovery/{command_id}/finish"
+    },
+    {
+      "location": "app/enrichment_api.py:12",
+      "method": "GET",
+      "declared_path": "",
+      "consumers": [
+        "app/static/index.html:587",
+        "tests/test_backlog.py:113",
+        "docs/ENRICHMENT_BACKLOG.md:49",
+        "docs/NEXT_SESSION.md:914"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/enrichment"
+    },
+    {
+      "location": "app/enrichment_api.py:16",
+      "method": "POST",
+      "declared_path": "/batches",
+      "consumers": [
+        "app/static/index.html:587",
+        "tests/test_backlog.py:113",
+        "docs/ENRICHMENT_BACKLOG.md:50",
+        "docs/NEXT_SESSION.md:914"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/enrichment/batches"
+    },
+    {
+      "location": "app/enrichment_api.py:20",
+      "method": "POST",
+      "declared_path": "/batches/{batch_id}/stop",
+      "consumers": [
+        "app/static/index.html:587",
+        "tests/test_backlog.py:113",
+        "docs/ENRICHMENT_BACKLOG.md:50",
+        "docs/NEXT_SESSION.md:914"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/enrichment/batches/{batch_id}/stop"
+    },
+    {
+      "location": "app/gold_set_api.py:35",
+      "method": "GET",
+      "declared_path": "",
+      "consumers": [
+        "app/static/index.html:607",
+        "tests/gold-set-ui.test.cjs:45",
+        "tests/test_detection_benchmark.py:120",
+        "docs/DETECTION_BENCHMARK.md:76",
+        "docs/NEXT_SESSION.md:230"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/gold-set"
+    },
+    {
+      "location": "app/gold_set_api.py:40",
+      "method": "POST",
+      "declared_path": "/benchmark",
+      "consumers": [
+        "app/static/index.html:642",
+        "tests/test_detection_benchmark.py:123",
+        "docs/DETECTION_BENCHMARK.md:79"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/gold-set/benchmark"
+    },
+    {
+      "location": "app/gold_set_api.py:48",
+      "method": "GET",
+      "declared_path": "/benchmark/latest",
+      "consumers": [
+        "app/static/index.html:642",
+        "tests/test_detection_benchmark.py:125",
+        "docs/DETECTION_BENCHMARK.md:80"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/gold-set/benchmark/latest"
+    },
+    {
+      "location": "app/gold_set_api.py:56",
+      "method": "GET",
+      "declared_path": "/export",
+      "consumers": [
+        "app/static/index.html:607",
+        "tests/gold-set-ui.test.cjs:45",
+        "docs/NEXT_SESSION.md:230"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/gold-set/export"
+    },
+    {
+      "location": "app/gold_set_api.py:94",
+      "method": "GET",
+      "declared_path": "/{video_id}",
+      "consumers": [
+        "app/static/index.html:607",
+        "tests/gold-set-ui.test.cjs:45",
+        "tests/test_detection_benchmark.py:120",
+        "docs/DETECTION_BENCHMARK.md:76",
+        "docs/NEXT_SESSION.md:230"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/gold-set/{video_id}"
+    },
+    {
+      "location": "app/gold_set_api.py:102",
+      "method": "POST",
+      "declared_path": "/{video_id}/review",
+      "consumers": [
+        "app/static/index.html:607",
+        "tests/gold-set-ui.test.cjs:45",
+        "tests/test_detection_benchmark.py:120",
+        "docs/DETECTION_BENCHMARK.md:76",
+        "docs/NEXT_SESSION.md:230"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/gold-set/{video_id}/review"
+    },
+    {
+      "location": "app/intelligence_api.py:20",
+      "method": "GET",
+      "declared_path": "/api/intelligence-core",
+      "consumers": [
+        "app/static/intelligence-core.js:6",
+        "tests/intelligence-core.test.cjs:9",
+        "tests/virality-quality.test.cjs:17",
+        "docs/INTELLIGENCE_CORE.md:43",
+        "docs/TREND_HISTORY.md:110"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/intelligence-core"
+    },
+    {
+      "location": "app/intelligence_api.py:25",
+      "method": "GET",
+      "declared_path": "/api/trend-history",
+      "consumers": [
+        "docs/TREND_HISTORY.md:109"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/trend-history"
+    },
+    {
+      "location": "app/intelligence_api.py:33",
+      "method": "POST",
+      "declared_path": "/api/intelligence-core/reconcile",
+      "consumers": [
+        "app/static/intelligence-core.js:30"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/intelligence-core/reconcile"
+    },
+    {
+      "location": "app/intelligence_api.py:42",
+      "method": "POST",
+      "declared_path": "/api/intelligence-core/prepare/{vid}",
+      "consumers": [
+        "app/static/intelligence-core.js:24"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/intelligence-core/prepare/{vid}"
+    },
+    {
+      "location": "app/intelligence_api.py:53",
+      "method": "POST",
+      "declared_path": "/api/intelligence-core/matching-local",
+      "consumers": [
+        "app/static/intelligence-core.js:33",
+        "docs/INTELLIGENCE_CORE.md:43"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/intelligence-core/matching-local"
+    },
+    {
+      "location": "app/intelligence_api.py:59",
+      "method": "POST",
+      "declared_path": "/api/intelligence-core/visual-start",
+      "consumers": [
+        "app/static/intelligence-core.js:6",
+        "tests/intelligence-core.test.cjs:51"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/intelligence-core/visual-start"
+    },
+    {
+      "location": "app/intelligence_api.py:74",
+      "method": "POST",
+      "declared_path": "/api/intelligence-core/review/{did}",
+      "consumers": [
+        "app/static/intelligence-core.js:22",
+        "tests/intelligence-core.test.cjs:27"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/intelligence-core/review/{did}"
+    },
+    {
+      "location": "app/intelligence_api.py:82",
+      "method": "GET",
+      "declared_path": "/intelligence-core",
+      "consumers": [
+        "app/static/index.html:140",
+        "app/static/intelligence-core.html:16",
+        "app/static/intelligence-core.js:6",
+        "scripts/intelligence_core.py:30",
+        "scripts/report_intelligence_core.py:20",
+        "tests/intelligence-core.test.cjs:3",
+        "tests/trend-history.test.cjs:4",
+        "tests/virality-quality.test.cjs:4",
+        "docs/INTELLIGENCE_CORE.md:43",
+        "docs/NEXT_SESSION.md:41",
+        "docs/TREND_HISTORY.md:110",
+        "docs/VIRALITY_QUALITY.md:81",
+        "docs/VISUAL_IDENTITY_COMPLETION.md:4"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/intelligence-core"
+    },
+    {
+      "location": "app/intelligence_api.py:86",
+      "method": "GET",
+      "declared_path": "/assets/intelligence-core.js",
+      "consumers": [
+        "app/static/intelligence-core.html:16"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/assets/intelligence-core.js"
+    },
+    {
+      "location": "app/main.py:57",
+      "method": "GET",
+      "declared_path": "/assets/visual-identification.js",
+      "consumers": [
+        "app/static/index.html:699"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/assets/visual-identification.js"
+    },
+    {
+      "location": "app/main.py:62",
+      "method": "GET",
+      "declared_path": "/assets/offline-intelligence.js",
+      "consumers": [
+        "app/static/index.html:698"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/assets/offline-intelligence.js"
+    },
+    {
+      "location": "app/main.py:104",
+      "method": "GET",
+      "declared_path": "/",
+      "consumers": [
+        "app/extraction.py:25",
+        "app/intelligence_api.py:15",
+        "app/manual_captcha_recovery.py:101",
+        "app/night_discovery.py:51",
+        "app/safe_collection.py:58",
+        "app/schemas.py:53",
+        "app/selective_api.py:21",
+        "app/target_safety.py:25",
+        "app/trend_history.py:213",
+        "app/visual_identification.py:409",
+        "app/visual_identification_api.py:124",
+        "app/visual_providers.py:83",
+        "app/static/intelligence-core.html:6",
+        "extension/background.js:183",
+        "extension/comments.js:14",
+        "extension/dev_worker.js:80",
+        "extension/search_discovery.js:34",
+        "extension/search_results.js:76",
+        "extension/search_stability.js:10",
+        "extension/target_security.js:16",
+        "extension/video_detail.js:106",
+        "scripts/discovery_session.py:47",
+        "scripts/offline_intelligence_report.py:53",
+        "scripts/sample_comments.py:25",
+        "tests/safe-collection.test.cjs:36",
+        "tests/target-security.test.cjs:36",
+        "tests/test_intelligence_core.py:287",
+        "tests/test_local_visual_assets.py:65"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/"
+    },
+    {
+      "location": "app/main.py:110",
+      "method": "GET",
+      "declared_path": "/assets/category-intelligence.js",
+      "consumers": [
+        "app/static/index.html:697"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/assets/category-intelligence.js"
+    },
+    {
+      "location": "app/main.py:116",
+      "method": "GET",
+      "declared_path": "/api/status",
+      "consumers": [
+        "app/static/index.html:411",
+        "scripts/devctl.py:47",
+        "scripts/dev_supervisor.py:146",
+        "scripts/discovery_session.py:44",
+        "scripts/validate_persistent_runtime.py:17",
+        "tests/dashboard.test.cjs:21",
+        "tests/test_bridge.py:106",
+        "tests/test_command_api_contract.py:17",
+        "tests/test_dev_control.py:108",
+        "tests/test_runtime.py:12"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/status"
+    },
+    {
+      "location": "app/main.py:137",
+      "method": "POST",
+      "declared_path": "/api/tiktok/open",
+      "consumers": [
+        "app/static/index.html:465",
+        "scripts/validate_persistent_runtime.py:40",
+        "tests/test_runtime.py:24",
+        "docs/PERSISTENT_RUNTIME.md:16"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/tiktok/open"
+    },
+    {
+      "location": "app/main.py:144",
+      "method": "POST",
+      "declared_path": "/api/bridge/heartbeat",
+      "consumers": [
+        "extension/background.js:169",
+        "tests/heartbeat_payload.cjs:29",
+        "tests/runtime-safety.test.cjs:46",
+        "tests/test_authenticated_dom.py:24",
+        "tests/test_bridge.py:104",
+        "tests/test_capture.py:112",
+        "tests/test_command_api_contract.py:19",
+        "tests/test_comments.py:27",
+        "tests/test_creators.py:23",
+        "tests/test_dev_control.py:174",
+        "tests/test_discovery.py:113",
+        "tests/test_runtime.py:18",
+        "tests/test_session_panel.py:7",
+        "tests/test_session_recovery.py:82",
+        "docs/BRIDGE.md:46"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/heartbeat"
+    },
+    {
+      "location": "app/main.py:219",
+      "method": "GET",
+      "declared_path": "/api/bridge/state",
+      "consumers": [
+        "tests/test_command_api_contract.py:22",
+        "docs/DEV_CONTROL.md:105"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/state"
+    },
+    {
+      "location": "app/main.py:224",
+      "method": "POST",
+      "declared_path": "/api/commands",
+      "consumers": [
+        "app/static/index.html:424",
+        "scripts/discovery_session.py:18",
+        "scripts/read_creator_profiles.py:32",
+        "scripts/read_video_details.py:32",
+        "scripts/sample_comments.py:17",
+        "scripts/validate_persistent_runtime.py:23",
+        "tests/dashboard.test.cjs:23",
+        "tests/test_bridge.py:100",
+        "tests/test_capture.py:111",
+        "tests/test_comments.py:28",
+        "tests/test_creators.py:28",
+        "tests/test_discovery.py:114",
+        "tests/test_runtime.py:23",
+        "docs/BRIDGE.md:53",
+        "docs/CONTROLLED_DISCOVERY.md:100",
+        "docs/CREATORS.md:106"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/commands"
+    },
+    {
+      "location": "app/main.py:286",
+      "method": "GET",
+      "declared_path": "/api/commands",
+      "consumers": [
+        "app/static/index.html:424",
+        "scripts/discovery_session.py:18",
+        "scripts/read_creator_profiles.py:32",
+        "scripts/read_video_details.py:32",
+        "scripts/sample_comments.py:17",
+        "scripts/validate_persistent_runtime.py:23",
+        "tests/dashboard.test.cjs:23",
+        "tests/test_bridge.py:100",
+        "tests/test_capture.py:111",
+        "tests/test_comments.py:28",
+        "tests/test_creators.py:28",
+        "tests/test_discovery.py:114",
+        "tests/test_runtime.py:23",
+        "docs/BRIDGE.md:53",
+        "docs/CONTROLLED_DISCOVERY.md:100",
+        "docs/CREATORS.md:106"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/commands"
+    },
+    {
+      "location": "app/main.py:291",
+      "method": "GET",
+      "declared_path": "/api/bridge/commands/next",
+      "consumers": [
+        "extension/background.js:394",
+        "tests/test_bridge.py:110",
+        "tests/test_capture.py:171",
+        "tests/test_comments.py:29",
+        "tests/test_creators.py:29",
+        "tests/test_discovery.py:116",
+        "docs/BRIDGE.md:59"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/commands/next"
+    },
+    {
+      "location": "app/main.py:299",
+      "method": "POST",
+      "declared_path": "/api/bridge/commands/{command_id}/result",
+      "consumers": [
+        "extension/background.js:378",
+        "tests/test_bridge.py:110",
+        "tests/test_capture.py:145",
+        "tests/test_comments.py:29",
+        "tests/test_creators.py:29",
+        "tests/test_discovery.py:116",
+        "tests/test_selective_enrichment.py:116",
+        "docs/BRIDGE.md:59"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/commands/{command_id}/result"
+    },
+    {
+      "location": "app/main.py:321",
+      "method": "GET",
+      "declared_path": "/api/videos/count",
+      "consumers": [
+        "scripts/validate_persistent_runtime.py:39",
+        "tests/test_capture.py:110",
+        "docs/BRIDGE.md:76"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/videos/count"
+    },
+    {
+      "location": "app/main.py:326",
+      "method": "GET",
+      "declared_path": "/api/videos/recent",
+      "consumers": [
+        "app/static/index.html:439",
+        "scripts/read_video_details.py:25",
+        "tests/dashboard.test.cjs:30",
+        "tests/test_capture.py:128",
+        "tests/test_comments.py:78",
+        "tests/test_creators.py:82",
+        "docs/BRIDGE.md:77",
+        "docs/EXTRACTION.md:170"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/videos/recent"
+    },
+    {
+      "location": "app/main.py:331",
+      "method": "GET",
+      "declared_path": "/api/extraction/quality",
+      "consumers": [
+        "app/static/index.html:440",
+        "tests/dashboard.test.cjs:34",
+        "tests/test_capture.py:137",
+        "tests/test_comments.py:79",
+        "tests/test_creators.py:82",
+        "docs/BRIDGE.md:78",
+        "docs/EXTRACTION.md:145"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/extraction/quality"
+    },
+    {
+      "location": "app/main.py:336",
+      "method": "GET",
+      "declared_path": "/api/events",
+      "consumers": [
+        "app/static/index.html:423",
+        "tests/dashboard.test.cjs:37",
+        "tests/test_bridge.py:115",
+        "tests/test_capture.py:144"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/events"
+    },
+    {
+      "location": "app/main.py:341",
+      "method": "GET",
+      "declared_path": "/api/comments/summaries",
+      "consumers": [
+        "app/static/index.html:439",
+        "tests/dashboard.test.cjs:31",
+        "tests/test_comments.py:94",
+        "docs/BRIDGE.md:159"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/comments/summaries"
+    },
+    {
+      "location": "app/main.py:347",
+      "method": "GET",
+      "declared_path": "/api/creators",
+      "consumers": [
+        "app/static/index.html:437",
+        "scripts/read_creator_profiles.py:20",
+        "tests/dashboard.test.cjs:33",
+        "tests/test_creators.py:87",
+        "docs/BRIDGE.md:177",
+        "docs/CREATORS.md:110"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/creators"
+    },
+    {
+      "location": "app/main.py:353",
+      "method": "GET",
+      "declared_path": "/api/creators/{creator_id}",
+      "consumers": [
+        "app/static/index.html:437",
+        "scripts/read_creator_profiles.py:20",
+        "tests/dashboard.test.cjs:33",
+        "tests/test_creators.py:87",
+        "docs/BRIDGE.md:177",
+        "docs/CREATORS.md:110"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/creators/{creator_id}"
+    },
+    {
+      "location": "app/main.py:362",
+      "method": "GET",
+      "declared_path": "/api/videos/{video_id}/comments",
+      "consumers": [
+        "app/discovery_api.py:42",
+        "app/static/index.html:439",
+        "scripts/read_video_details.py:25",
+        "scripts/sample_comments.py:26",
+        "scripts/validate_persistent_runtime.py:39",
+        "tests/dashboard.test.cjs:30",
+        "tests/test_capture.py:110",
+        "tests/test_comments.py:78",
+        "tests/test_creators.py:82",
+        "tests/test_discovery.py:118",
+        "docs/BRIDGE.md:76",
+        "docs/CONTROLLED_DISCOVERY.md:104",
+        "docs/EXTRACTION.md:170"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/videos/{video_id}/comments"
+    },
+    {
+      "location": "app/main.py:370",
+      "method": "POST",
+      "declared_path": "/api/missions",
+      "consumers": [
+        "app/static/index.html:483"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/missions"
+    },
+    {
+      "location": "app/main.py:392",
+      "method": "POST",
+      "declared_path": "/api/bridge/security-stop",
+      "consumers": [
+        "extension/background.js:47"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/security-stop"
+    },
+    {
+      "location": "app/manual_captcha_recovery.py:122",
+      "method": "POST",
+      "declared_path": "/api/dev/manual-captcha/release",
+      "consumers": [
+        "scripts/manual_captcha_resume.py:33"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/manual-captcha/release"
+    },
+    {
+      "location": "app/manual_captcha_recovery.py:127",
+      "method": "POST",
+      "declared_path": "/api/dev/manual-captcha/{check_id}/next-high",
+      "consumers": [
+        "scripts/manual_captcha_resume.py:33"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/manual-captcha/{check_id}/next-high"
+    },
+    {
+      "location": "app/offline_api.py:8",
+      "method": "GET",
+      "declared_path": "",
+      "consumers": [
+        "app/static/offline-intelligence.js:38",
+        "tests/offline-insights.test.cjs:10",
+        "tests/test_offline_intelligence.py:94",
+        "docs/NEXT_SESSION.md:155"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/offline-intelligence"
+    },
+    {
+      "location": "app/product_candidate_api.py:23",
+      "method": "GET",
+      "declared_path": "/relationships",
+      "consumers": [
+        "scripts/discovery_session.py:80",
+        "tests/test_candidate_corroboration.py:227"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/relationships"
+    },
+    {
+      "location": "app/product_candidate_api.py:28",
+      "method": "GET",
+      "declared_path": "/identity-pairs",
+      "consumers": [
+        "tests/test_product_identity_semantics.py:130",
+        "docs/NEXT_SESSION.md:626",
+        "docs/PRODUCT_IDENTITY.md:26"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/identity-pairs"
+    },
+    {
+      "location": "app/product_candidate_api.py:34",
+      "method": "GET",
+      "declared_path": "/resolver-pairs",
+      "consumers": [
+        "tests/test_identity_resolver.py:146",
+        "docs/NEXT_SESSION.md:537",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:141"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/resolver-pairs"
+    },
+    {
+      "location": "app/product_candidate_api.py:39",
+      "method": "GET",
+      "declared_path": "/resolver-pairs/{pair_id}",
+      "consumers": [
+        "tests/test_identity_resolver.py:146",
+        "docs/NEXT_SESSION.md:537",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:141"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/resolver-pairs/{pair_id}"
+    },
+    {
+      "location": "app/product_candidate_api.py:47",
+      "method": "POST",
+      "declared_path": "/resolve-identity",
+      "consumers": [
+        "tests/test_identity_resolver.py:144",
+        "docs/NEXT_SESSION.md:538",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:142"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/resolve-identity"
+    },
+    {
+      "location": "app/product_candidate_api.py:52",
+      "method": "GET",
+      "declared_path": "/gap-report",
+      "consumers": [
+        "tests/test_candidate_corroboration.py:226"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/gap-report"
+    },
+    {
+      "location": "app/product_candidate_api.py:57",
+      "method": "GET",
+      "declared_path": "/unresolved-phrases",
+      "consumers": [
+        "app/static/index.html:555",
+        "scripts/discovery_session.py:81",
+        "tests/dashboard-ui.test.cjs:218",
+        "tests/test_candidate_corroboration.py:228"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/unresolved-phrases"
+    },
+    {
+      "location": "app/product_candidate_api.py:62",
+      "method": "POST",
+      "declared_path": "/unresolved-phrases/{phrase_id}/review",
+      "consumers": [
+        "app/static/index.html:555",
+        "scripts/discovery_session.py:81",
+        "tests/dashboard-ui.test.cjs:218",
+        "tests/test_candidate_corroboration.py:228"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/unresolved-phrases/{phrase_id}/review"
+    },
+    {
+      "location": "app/product_candidate_api.py:70",
+      "method": "GET",
+      "declared_path": "",
+      "consumers": [
+        "app/static/index.html:438",
+        "scripts/discovery_session.py:78",
+        "scripts/validate_persistent_runtime.py:50",
+        "tests/dashboard-ui.test.cjs:218",
+        "tests/dashboard.test.cjs:32",
+        "tests/test_candidate_corroboration.py:225",
+        "tests/test_identity_resolver.py:143",
+        "tests/test_product_detection.py:105",
+        "tests/test_product_identity_semantics.py:123",
+        "docs/NEXT_SESSION.md:537",
+        "docs/PRODUCT_CORROBORATION.md:105",
+        "docs/PRODUCT_IDENTITY.md:25",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:141"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates"
+    },
+    {
+      "location": "app/product_candidate_api.py:75",
+      "method": "POST",
+      "declared_path": "/detect",
+      "consumers": [
+        "app/static/index.html:545",
+        "scripts/discovery_session.py:78",
+        "scripts/validate_persistent_runtime.py:50",
+        "tests/test_candidate_corroboration.py:225",
+        "tests/test_identity_resolver.py:143",
+        "tests/test_product_detection.py:105",
+        "tests/test_product_identity_semantics.py:123"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/detect"
+    },
+    {
+      "location": "app/product_candidate_api.py:84",
+      "method": "GET",
+      "declared_path": "/{candidate_id}",
+      "consumers": [
+        "app/static/index.html:438",
+        "scripts/discovery_session.py:78",
+        "scripts/validate_persistent_runtime.py:50",
+        "tests/dashboard-ui.test.cjs:218",
+        "tests/dashboard.test.cjs:32",
+        "tests/test_candidate_corroboration.py:225",
+        "tests/test_identity_resolver.py:143",
+        "tests/test_product_detection.py:105",
+        "tests/test_product_identity_semantics.py:123",
+        "docs/NEXT_SESSION.md:537",
+        "docs/PRODUCT_CORROBORATION.md:105",
+        "docs/PRODUCT_IDENTITY.md:25",
+        "docs/PRODUCT_IDENTITY_RESOLVER.md:141"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/product-candidates/{candidate_id}"
+    },
+    {
+      "location": "app/safe_collection_api.py:33",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-collection/{ident}/resume-stage2",
+      "consumers": [
+        "scripts/controlled_stage2.py:56",
+        "scripts/quarantine_stage1.py:58",
+        "scripts/resume_stage2.py:51",
+        "scripts/safe_collection.py:29"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-collection/{ident}/resume-stage2"
+    },
+    {
+      "location": "app/safe_collection_api.py:39",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-collection/authorize-stage2",
+      "consumers": [
+        "scripts/controlled_stage2.py:56"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-collection/authorize-stage2"
+    },
+    {
+      "location": "app/safe_collection_api.py:45",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-recovery/checks",
+      "consumers": [
+        "scripts/controlled_stage2.py:51",
+        "scripts/manual_captcha_resume.py:27",
+        "scripts/quarantine_stage1.py:48",
+        "scripts/resume_stage2.py:45",
+        "scripts/safe_collection.py:20",
+        "tests/test_safe_collection.py:109"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-recovery/checks"
+    },
+    {
+      "location": "app/safe_collection_api.py:54",
+      "method": "GET",
+      "declared_path": "/api/dev/safe-recovery/checks/{ident}",
+      "consumers": [
+        "scripts/controlled_stage2.py:51",
+        "scripts/manual_captcha_resume.py:27",
+        "scripts/quarantine_stage1.py:48",
+        "scripts/resume_stage2.py:45",
+        "scripts/safe_collection.py:20",
+        "tests/test_safe_collection.py:109"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-recovery/checks/{ident}"
+    },
+    {
+      "location": "app/safe_collection_api.py:61",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-recovery/checks/{ident}/release",
+      "consumers": [
+        "scripts/controlled_stage2.py:51",
+        "scripts/manual_captcha_resume.py:27",
+        "scripts/quarantine_stage1.py:48",
+        "scripts/resume_stage2.py:45",
+        "scripts/safe_collection.py:20",
+        "tests/test_safe_collection.py:109"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-recovery/checks/{ident}/release"
+    },
+    {
+      "location": "app/safe_collection_api.py:66",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-collection",
+      "consumers": [
+        "scripts/controlled_stage2.py:56",
+        "scripts/quarantine_stage1.py:58",
+        "scripts/resume_stage2.py:51",
+        "scripts/safe_collection.py:29"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-collection"
+    },
+    {
+      "location": "app/safe_collection_api.py:72",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-recovery/checks/{ident}/authorize-stage1",
+      "consumers": [
+        "scripts/controlled_stage2.py:51",
+        "scripts/manual_captcha_resume.py:27",
+        "scripts/quarantine_stage1.py:48",
+        "scripts/resume_stage2.py:45",
+        "scripts/safe_collection.py:20",
+        "tests/test_safe_collection.py:109"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-recovery/checks/{ident}/authorize-stage1"
+    },
+    {
+      "location": "app/safe_collection_api.py:77",
+      "method": "POST",
+      "declared_path": "/api/dev/safe-collection/{ident}/next",
+      "consumers": [
+        "scripts/controlled_stage2.py:56",
+        "scripts/quarantine_stage1.py:58",
+        "scripts/resume_stage2.py:51",
+        "scripts/safe_collection.py:29"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/dev/safe-collection/{ident}/next"
+    },
+    {
+      "location": "app/safe_collection_api.py:82",
+      "method": "GET",
+      "declared_path": "/api/collection-health",
+      "consumers": [
+        "scripts/safe_collection.py:18",
+        "docs/SAFE_COLLECTION_RECOVERY.md:86"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/collection-health"
+    },
+    {
+      "location": "app/selective_api.py:11",
+      "method": "GET",
+      "declared_path": "/api/selective-enrichment",
+      "consumers": [
+        "app/static/selective-enrichment.js:16",
+        "tests/search-only-mode.test.cjs:20",
+        "docs/SELECTIVE_ENRICHMENT.md:88"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/selective-enrichment"
+    },
+    {
+      "location": "app/selective_api.py:32",
+      "method": "POST",
+      "declared_path": "/api/selective-enrichment/start",
+      "consumers": [
+        "app/static/selective-enrichment.js:20",
+        "docs/SELECTIVE_ENRICHMENT.md:89"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/selective-enrichment/start"
+    },
+    {
+      "location": "app/selective_api.py:42",
+      "method": "POST",
+      "declared_path": "/api/selective-enrichment/{ident}/stop",
+      "consumers": [
+        "app/static/selective-enrichment.js:16",
+        "tests/search-only-mode.test.cjs:20",
+        "docs/SELECTIVE_ENRICHMENT.md:88"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/selective-enrichment/{ident}/stop"
+    },
+    {
+      "location": "app/selective_api.py:49",
+      "method": "GET",
+      "declared_path": "/assets/selective-enrichment.js",
+      "consumers": [
+        "app/static/index.html:696",
+        "app/static/intelligence-core.html:16"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/assets/selective-enrichment.js"
+    },
+    {
+      "location": "app/selective_api.py:52",
+      "method": "GET",
+      "declared_path": "/api/search-only-intelligence",
+      "consumers": [],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/search-only-intelligence"
+    },
+    {
+      "location": "app/session_api.py:11",
+      "method": "GET",
+      "declared_path": "/api/session/state",
+      "consumers": [
+        "app/static/index.html:384",
+        "scripts/validate_connection_panel.py:77",
+        "tests/connection-panel.test.cjs:62",
+        "tests/test_authenticated_dom.py:28",
+        "tests/test_session_panel.py:12"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/session/state"
+    },
+    {
+      "location": "app/session_api.py:21",
+      "method": "POST",
+      "declared_path": "/api/tiktok/renew",
+      "consumers": [
+        "app/static/index.html:385",
+        "tests/connection-panel.test.cjs:68",
+        "tests/test_command_api_contract.py:28"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/tiktok/renew"
+    },
+    {
+      "location": "app/session_api.py:31",
+      "method": "POST",
+      "declared_path": "/api/tiktok/verify",
+      "consumers": [
+        "app/static/index.html:386",
+        "tests/connection-panel.test.cjs:68",
+        "tests/test_command_api_contract.py:32"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/tiktok/verify"
+    },
+    {
+      "location": "app/target_safety.py:191",
+      "method": "POST",
+      "declared_path": "/api/bridge/target-403",
+      "consumers": [
+        "extension/target_security.js:32",
+        "tests/test_target_safety.py:144",
+        "docs/TARGET_QUARANTINE.md:27"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/target-403"
+    },
+    {
+      "location": "app/target_safety.py:201",
+      "method": "GET",
+      "declared_path": "/api/bridge/blocked-targets",
+      "consumers": [
+        "extension/target_security.js:23",
+        "docs/TARGET_QUARANTINE.md:28"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/bridge/blocked-targets"
+    },
+    {
+      "location": "app/visual_identification_api.py:105",
+      "method": "GET",
+      "declared_path": "",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:11",
+        "tests/intelligence-core.test.cjs:52",
+        "tests/local-visual-assets.test.cjs:12",
+        "tests/test_local_visual_assets.py:130",
+        "tests/test_visual_identification.py:158",
+        "tests/visual-identification.test.cjs:10",
+        "docs/LOCAL_VISUAL_ASSETS.md:81",
+        "docs/VISUAL_IDENTIFICATION.md:100"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification"
+    },
+    {
+      "location": "app/visual_identification_api.py:117",
+      "method": "GET",
+      "declared_path": "/videos/{video_id}",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}"
+    },
+    {
+      "location": "app/visual_identification_api.py:121",
+      "method": "GET",
+      "declared_path": "/videos/{video_id}/image",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}/image"
+    },
+    {
+      "location": "app/visual_identification_api.py:129",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/assets",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}/assets"
+    },
+    {
+      "location": "app/visual_identification_api.py:153",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/assisted-identification",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}/assisted-identification"
+    },
+    {
+      "location": "app/visual_identification_api.py:157",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/lens-assisted",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}/lens-assisted"
+    },
+    {
+      "location": "app/visual_identification_api.py:173",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/image",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}/image"
+    },
+    {
+      "location": "app/visual_identification_api.py:177",
+      "method": "POST",
+      "declared_path": "/videos/{video_id}/suggestions",
+      "consumers": [
+        "app/visual_identification.py:156",
+        "app/static/intelligence-core.js:7",
+        "app/static/visual-identification.js:22",
+        "tests/local-visual-assets.test.cjs:25",
+        "tests/test_local_visual_assets.py:130",
+        "tests/visual-identification.test.cjs:30",
+        "docs/LOCAL_VISUAL_ASSETS.md:81"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/videos/{video_id}/suggestions"
+    },
+    {
+      "location": "app/visual_identification_api.py:181",
+      "method": "POST",
+      "declared_path": "/evidence/{evidence_id}/review",
+      "consumers": [
+        "tests/test_local_visual_assets.py:174",
+        "tests/test_visual_identification.py:158",
+        "tests/visual-identification.test.cjs:34"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/evidence/{evidence_id}/review"
+    },
+    {
+      "location": "app/visual_identification_api.py:185",
+      "method": "POST",
+      "declared_path": "/evidence/{evidence_id}/product-search",
+      "consumers": [
+        "tests/test_local_visual_assets.py:174",
+        "tests/test_visual_identification.py:158",
+        "tests/visual-identification.test.cjs:34"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/evidence/{evidence_id}/product-search"
+    },
+    {
+      "location": "app/visual_identification_api.py:209",
+      "method": "POST",
+      "declared_path": "/evidence/{evidence_id}/gold-comparison",
+      "consumers": [
+        "tests/test_local_visual_assets.py:174",
+        "tests/test_visual_identification.py:158",
+        "tests/visual-identification.test.cjs:34"
+      ],
+      "certainty": "Includes constant APIRouter prefix; literal/dynamic-prefix evidence only, not full call graph",
+      "effective_path": "/api/visual-identification/evidence/{evidence_id}/gold-comparison"
+    }
+  ],
+  "duplicate_function_bodies": [
+    [
+      {
+        "location": "app/comments.py:49",
+        "name": "folded"
+      },
+      {
+        "location": "app/comments.py:101",
+        "name": "fold"
+      }
+    ],
+    [
+      {
+        "location": "app/gold_set.py:19",
+        "name": "digest"
+      },
+      {
+        "location": "app/intelligence_core.py:18",
+        "name": "fingerprint"
+      }
+    ],
+    [
+      {
+        "location": "app/visual_identification.py:261",
+        "name": "aware"
+      },
+      {
+        "location": "app/visual_identification_api.py:59",
+        "name": "timezone_required"
+      },
+      {
+        "location": "app/visual_identification_api.py:93",
+        "name": "timestamp"
+      }
+    ],
+    [
+      {
+        "location": "app/visual_identification.py:267",
+        "name": "bounded_aliases"
+      },
+      {
+        "location": "app/visual_identification_api.py:99",
+        "name": "alias_bounds"
+      }
+    ],
+    [
+      {
+        "location": "scripts/discovery_session.py:9",
+        "name": "call"
+      },
+      {
+        "location": "scripts/read_creator_profiles.py:8",
+        "name": "call"
+      }
+    ],
+    [
+      {
+        "location": "scripts/local_visual_assets_report.py:44",
+        "name": "esc"
+      },
+      {
+        "location": "scripts/offline_intelligence_report.py:44",
+        "name": "text"
+      }
+    ],
+    [
+      {
+        "location": "scripts/local_visual_assets_report.py:45",
+        "name": "table"
+      },
+      {
+        "location": "scripts/visual_identification_report.py:53",
+        "name": "table"
+      }
+    ],
+    [
+      {
+        "location": "tests/test_core_activation.py:156",
+        "name": "guard"
+      },
+      {
+        "location": "tests/test_intelligence_core.py:251",
+        "name": "authorize"
+      }
+    ],
+    [
+      {
+        "location": "tests/test_manual_captcha_recovery.py:22",
+        "name": "checked"
+      },
+      {
+        "location": "tests/test_stage2_resume.py:24",
+        "name": "fresh"
+      }
+    ]
+  ]
+}

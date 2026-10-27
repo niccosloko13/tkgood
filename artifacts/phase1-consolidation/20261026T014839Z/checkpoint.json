@@ -1,0 +1,1430 @@
+{
+  "created_at": "20261026T014839Z",
+  "source_manifest": {
+    "AGENTS.md": {
+      "size": 3866,
+      "sha256": "0e370533ed904757e88b370e4218dbd3e44b7536b2995dc62ae805135e49d926"
+    },
+    "app/__init__.py": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "app/browser.py": {
+      "size": 12333,
+      "sha256": "71b973f75206536359f5420fefc0e62fbda8201028c1917970e94e781d711afa"
+    },
+    "app/browser_safety.py": {
+      "size": 5465,
+      "sha256": "25a845be6a023f1d017f0da53b8142b38760185896f5e423922faa70968b5720"
+    },
+    "app/candidate_corroboration.py": {
+      "size": 17563,
+      "sha256": "368fdf3f8a753e4242e343847438301375b63cf264d36df1e5f5b39759315823"
+    },
+    "app/candidate_gaps.py": {
+      "size": 10580,
+      "sha256": "59917392ddb67702421b0497dca23fbe8927dcec650eab47c8c9900ef964743f"
+    },
+    "app/candidate_semantics.py": {
+      "size": 16210,
+      "sha256": "19260e84107e8abf5305c783493170eadb5e5d979388d6b203dd795a958288a0"
+    },
+    "app/category_api.py": {
+      "size": 4823,
+      "sha256": "d27071c6a5c8e3174ae3063f4f68534aeafd5b2c2ee33cdc6d6969fd4b12c9fb"
+    },
+    "app/category_intelligence.py": {
+      "size": 16024,
+      "sha256": "fa9ec12296a114e08ccc8d4ea010927ea185ab10e31133e8a725dd89cd3bb11c"
+    },
+    "app/chrome_launcher.py": {
+      "size": 4294,
+      "sha256": "88592ccd394b148651571bf87247724efcb278fca85d31710082e0967a2da38b"
+    },
+    "app/collection_mode.py": {
+      "size": 5353,
+      "sha256": "f6751d3698b0a4d57aee24f082d0dba2f514b74ce7b70e67ce5018282677d77c"
+    },
+    "app/comment_schemas.py": {
+      "size": 4986,
+      "sha256": "cb8993ad1707ba767e94eaf4c69abb6ed1f4e56f4ef8574302067f37debb1e7e"
+    },
+    "app/comments.py": {
+      "size": 15472,
+      "sha256": "65f393a328b56a7af1f9244ef48869735634f2e087607a128c17a09d416766cd"
+    },
+    "app/companion_contract.py": {
+      "size": 999,
+      "sha256": "fb034b72803375bb2fa039cebcd3096c00362e1513f2616657f79b715566ecac"
+    },
+    "app/config.py": {
+      "size": 283,
+      "sha256": "c653d4a6143b410b80e659f3045de62c3b725b4d3444981834c372b7ddce295e"
+    },
+    "app/creator_schemas.py": {
+      "size": 9074,
+      "sha256": "ece323c16e419af0a6feeab0f23ac6e078247688351134e0efce684b955a7789"
+    },
+    "app/creators.py": {
+      "size": 11507,
+      "sha256": "c47d09c1a43a0bf095a3abc3bfa07c2465c6d01da28bbbef4c6b47037dc230aa"
+    },
+    "app/db.py": {
+      "size": 25796,
+      "sha256": "1cb041bfc88be6ab69a621ce29a7ba97f304466ae90888548f23b6b181331d6c"
+    },
+    "app/dev_control.py": {
+      "size": 11914,
+      "sha256": "6dcf81b3b1fdbec7a31fb35a191b9800d730ea94aa6238da5669a7d7cd032b81"
+    },
+    "app/discovery.py": {
+      "size": 15339,
+      "sha256": "30c48edd5ab027d6cf9847f9965f70d78335b8ae1663bc80c3a726ae2e75721f"
+    },
+    "app/discovery_api.py": {
+      "size": 3751,
+      "sha256": "761e5a43621c7e49edd9e3944aad877264a1b24442a7fe5a7b4e96a2ba946626"
+    },
+    "app/enrichment.py": {
+      "size": 16932,
+      "sha256": "6713bb61a7379949a469ef002cd7d6f34b854f7f889f76d2c1ef4783fa795b13"
+    },
+    "app/enrichment_api.py": {
+      "size": 908,
+      "sha256": "65b97641913ee268ab3ff068c591e3f32251141924841d151dbff46709957c4d"
+    },
+    "app/extraction.py": {
+      "size": 4375,
+      "sha256": "3bc214aae7f48a1f68e4a9bd6ee9a74219e99b8631029bbd1a86a21ea0e2336e"
+    },
+    "app/gold_set.py": {
+      "size": 20476,
+      "sha256": "6c24101afc313bf25da98f65c10ebd11f874c902139c3983c51f3a008f0a226c"
+    },
+    "app/gold_set_api.py": {
+      "size": 5787,
+      "sha256": "459a43a7dde999c1721c917d4a1f08c0c314745fd2f71909f4771aa0ffc13f5c"
+    },
+    "app/intelligence_api.py": {
+      "size": 3241,
+      "sha256": "71c8dd10f0af3edaf4f8f3251606c46a2a2bce67df935483ab34ee9a7c6efbc4"
+    },
+    "app/intelligence_core.py": {
+      "size": 33775,
+      "sha256": "9168facffd3c5a0e4862df5d0235132ba2644554bc166017d5c54ea2e17b641f"
+    },
+    "app/intelligence_decisions.py": {
+      "size": 6088,
+      "sha256": "a0b68c379f6397426c6b76fd09fdb736e2cb8a9872f87ef0265f6f47b5c20a47"
+    },
+    "app/intelligence_embeddings.py": {
+      "size": 11628,
+      "sha256": "d53f74b40c09327f0a28e06af1906a7f76b553c838c372248875c5e0dda8e9fb"
+    },
+    "app/intelligence_evaluation.py": {
+      "size": 7457,
+      "sha256": "b5468b95334e66c9a97d64ce489c6bea1fabdcd88637845cfdd12a1663a851a8"
+    },
+    "app/intelligence_index.py": {
+      "size": 5011,
+      "sha256": "4433500c2787cf6d51a0dfd01030dacf1c3adf1ab2a3d4b6589a0842716e77b3"
+    },
+    "app/intelligence_jobs.py": {
+      "size": 8026,
+      "sha256": "07ad396656422e2f9aa202e9ad380c096f0539abdf62f454fa039f9b7ebe029f"
+    },
+    "app/intelligence_signals.py": {
+      "size": 16175,
+      "sha256": "66ce292801d6379fe179f0a645ed0234c6868c05e3953a240d5779abf0ce1ac3"
+    },
+    "app/main.py": {
+      "size": 18684,
+      "sha256": "d3ffe1aae1126f4f5fb35b7885bd40b70df74b37d6fb4da3ea21e001c955b5f0"
+    },
+    "app/manual_captcha_recovery.py": {
+      "size": 9820,
+      "sha256": "6aa29a4574deb51bad30b3a98e3014d538d25925a3d5b1a78943529bcfa658a3"
+    },
+    "app/night_discovery.py": {
+      "size": 10907,
+      "sha256": "d2cbea244bf680582b2a6074ce1e4598f191172977a1e5dae9334779aceb8b21"
+    },
+    "app/observations.py": {
+      "size": 15500,
+      "sha256": "3f04dfe2e394347f020c752c4b4bfaa0a7efca6efb335bdfa27c9122ca111afe"
+    },
+    "app/offline_api.py": {
+      "size": 278,
+      "sha256": "984ae7c3a19ab2fb48e2111f739a8be0de28dd759c0cfcb82db0b2cc62e82a38"
+    },
+    "app/offline_intelligence.py": {
+      "size": 14550,
+      "sha256": "3d6214ebb7b716f825f06dd98da0690819d67da960e5fb9950c5ffd611b2ded2"
+    },
+    "app/policy.py": {
+      "size": 2143,
+      "sha256": "b1fe805a8103036b61fc2d6168d737e8b057a702ed2e7ae3fe5ad77c77b87b06"
+    },
+    "app/product_candidate_api.py": {
+      "size": 3312,
+      "sha256": "0346c44a61a60922180b9edf2618188ba44290a1dcd333420253a938a0a2ad8a"
+    },
+    "app/product_detection.py": {
+      "size": 15944,
+      "sha256": "215773db2f8fef35e9f05d0a855c923599422511e78728a29c4437fe91414e3a"
+    },
+    "app/product_identity_resolver.py": {
+      "size": 18700,
+      "sha256": "186fad1caad88e329070f4294b45958f624c67944818204dfb8e9f908b397123"
+    },
+    "app/product_vocabulary.py": {
+      "size": 1976,
+      "sha256": "626995d84a7a32b465dce952909adaf5acd4f9b91e60be67d6ac8aa27b7b7063"
+    },
+    "app/safe_actions.py": {
+      "size": 2081,
+      "sha256": "caca60ee2d0f619b16e0cf0ce327c777c77cdd2088e8075d52e6abb3d76fd364"
+    },
+    "app/safe_collection.py": {
+      "size": 25837,
+      "sha256": "32b8e6b23ed1c46e2f8ef1ee7f1fa29a0ec502516d342e0fc7f94d055fc67bd9"
+    },
+    "app/safe_collection_api.py": {
+      "size": 3522,
+      "sha256": "b5c8720faf1f1a8487bb035c2f9046df478b340777268061e38b3ee464fd4bff"
+    },
+    "app/schemas.py": {
+      "size": 17809,
+      "sha256": "dfde4385ddff8e9fb736f447c80b70fcc407b3c29009846a37c9d2bdfbfc6af1"
+    },
+    "app/search_intelligence.py": {
+      "size": 8738,
+      "sha256": "fe5da6fbe73669a1ce6cfa9513df161503028e0b96408bf78aa1c225c8ff2e2c"
+    },
+    "app/selective_api.py": {
+      "size": 3676,
+      "sha256": "060e84d29d8e18c689f4e052f5aa0f2d68a8ba494463096fa924e7df1e5e7e2b"
+    },
+    "app/selective_enrichment.py": {
+      "size": 25398,
+      "sha256": "fdc4d0a1d4a8216ef842799c48d03291f376683ca6f3fe0aef69c82e84535707"
+    },
+    "app/session_api.py": {
+      "size": 1908,
+      "sha256": "31a7f324d5da74a824808c788a014096d2a02e01a240109e55a791096f7165b5"
+    },
+    "app/static/assets/babi-logo.png": {
+      "size": 302065,
+      "sha256": "61eae559e84287016e9211812a107251c20ded4ee627e9127ebe53211c449ab6"
+    },
+    "app/static/category-intelligence.js": {
+      "size": 14830,
+      "sha256": "22da79d5f8d5cf7c9533ba0c883a3c56e29b1c4d43a0bc6a3fa0de2f6428914e"
+    },
+    "app/static/index.html": {
+      "size": 554699,
+      "sha256": "f8b890818cb4f1c20d0686281b7f45eb135ed0d577087c3d5bf979af5a69fec3"
+    },
+    "app/static/intelligence-core.html": {
+      "size": 2203,
+      "sha256": "c8450592828d2b582a525215160fc5cd590cadce8f6b08bf249fa2c370a5bffe"
+    },
+    "app/static/intelligence-core.js": {
+      "size": 15937,
+      "sha256": "73397e07d7e0cc5fffd5cc82807053efcfdc29b7818e7208c40f6763a4d69316"
+    },
+    "app/static/logo.png": {
+      "size": 302065,
+      "sha256": "61eae559e84287016e9211812a107251c20ded4ee627e9127ebe53211c449ab6"
+    },
+    "app/static/offline-intelligence.js": {
+      "size": 5000,
+      "sha256": "6e8820a82c5ad4418a013105dce36a9c20e475b65da1315708dc2c0b9c51a0e3"
+    },
+    "app/static/selective-enrichment.js": {
+      "size": 4962,
+      "sha256": "84574583be61876822d376db7bf833d5ba9ca5cbdc74af89fe353399d61f6d3c"
+    },
+    "app/static/visual-identification.js": {
+      "size": 21747,
+      "sha256": "d1c66c019e6fa93b7155eee4707884dcf457f802ff8832f62901e15be9119cff"
+    },
+    "app/supplier_foundation.py": {
+      "size": 2667,
+      "sha256": "12104051374ff2ad8d3e56e4a8fd3ec1d21d22be55ce47896874af0b7469cf92"
+    },
+    "app/target_safety.py": {
+      "size": 11015,
+      "sha256": "de0f073e2e58fa773af0887c2c3704cd1d01a1e4115e9144fd75c3ee7db185b1"
+    },
+    "app/trend_history.py": {
+      "size": 22739,
+      "sha256": "a6bbe692fddc5c8bc8156e02d36feede1c70f9bf821bdd360b5302e952f25c9d"
+    },
+    "app/visual_assets.py": {
+      "size": 7841,
+      "sha256": "1961cae6a83a1e929043bd0348bdacefd6cbaeef3ea65028faa8320ed8522ee9"
+    },
+    "app/visual_identification.py": {
+      "size": 49216,
+      "sha256": "afd3b34351167edcacb812dde2e8a70c0906fa8f8d1264c8f112a5cedcaa8aff"
+    },
+    "app/visual_identification_api.py": {
+      "size": 11116,
+      "sha256": "e1716fbd87626a7eee3ae30ed791585c576515e7c07e0f4a4a809beb01eaf089"
+    },
+    "app/visual_providers.py": {
+      "size": 9280,
+      "sha256": "9c6ab723702df23d4f35436b804e1abc9a78edf2d471572acd07c299aafd8522"
+    },
+    "BABI_V1_EXECUTION_PLAN_PART1.md": {
+      "size": 10610,
+      "sha256": "ce3cd4ab0e0fa64918211b930f0bf3b6c0ef769fb881cca18ff45678b8cd7cae"
+    },
+    "config/category_taxonomy.json": {
+      "size": 4673,
+      "sha256": "d356c76de6a1f3db5e47d1b527cbb207740e351c175b197d358a54676472f11d"
+    },
+    "config/comment_terms.json": {
+      "size": 997,
+      "sha256": "36a5978d1eb45d6e319abb625a1e9e2c71b0bbab02c925a207ea68b5ebdfd7c7"
+    },
+    "config/companion_api.json": {
+      "size": 52,
+      "sha256": "a6ae5451700b78b86eb7e998864cf22aaced2b9220943e04cf49e08422709acc"
+    },
+    "config/consumer_signals.json": {
+      "size": 1407,
+      "sha256": "06c5227a5804638e8d353b405ced61b95edc8126b1c8d6e780660558e0505a3f"
+    },
+    "config/creator_signals.json": {
+      "size": 690,
+      "sha256": "5efb85c593628aa284550e7a61bcb8d3c239af3739c61c6155690be9f68980ab"
+    },
+    "config/discovery.json": {
+      "size": 200,
+      "sha256": "6465522da2da3ec66c5491365a75ada29bf8e64d5234bc757c305e272cf2faa4"
+    },
+    "config/discovery_intelligence.json": {
+      "size": 1245,
+      "sha256": "7784f14c066197dca89bbbf3514de60072ec7622a373851e960de0a9a3396224"
+    },
+    "config/enrichment.json": {
+      "size": 279,
+      "sha256": "0d1ed3651d9ee268df7c392679ae56d15a4badc90869b3879683096458227afd"
+    },
+    "config/intelligence_core.json": {
+      "size": 1428,
+      "sha256": "a91695deea577418651f9f4df28bf4cb31d3f4c70c8ca690b8e4b4201b4ec44b"
+    },
+    "config/product_detection.json": {
+      "size": 6438,
+      "sha256": "3ac852a5bb7d4cfe0c6b45d0d3711ee5534d4fa12bf8d92ebe39e256b68cb790"
+    },
+    "config/product_identity.json": {
+      "size": 4477,
+      "sha256": "b79fac7230846914126d160c25fc013068e9cae33c6ac79e9d748fed864743f6"
+    },
+    "config/trend_history.json": {
+      "size": 601,
+      "sha256": "2a0b71b91d1f397eafcc2612fed5bfd2109945de3f77b69c11c8ef32b8e2d7ee"
+    },
+    "config/virality_quality.json": {
+      "size": 2194,
+      "sha256": "bf9ccb3f80561c6ad8ceb16834f5e5ae270941bb7864786be560d9ad40f4f906"
+    },
+    "config/visual_identity.json": {
+      "size": 363,
+      "sha256": "33846c92c49be1a3eeba7b23c716d2bff052810cc63a5c889b48a5fbccec6e70"
+    },
+    "docs/BRIDGE.md": {
+      "size": 12004,
+      "sha256": "8d3326c77631ecd45f88d7a0f3bee060b9d3241aa2503a3423c83457125a1ddb"
+    },
+    "docs/CATEGORY_INTELLIGENCE.md": {
+      "size": 5819,
+      "sha256": "c6310ddd4170f3b08d82fce0f4ebdd84c52dcf1524ef549cda82719ffdd268bb"
+    },
+    "docs/COMMENTS.md": {
+      "size": 4527,
+      "sha256": "9bab86181e8645891bc2e3ca56326f0d3013007aa4204a747b539c6fc4d221d2"
+    },
+    "docs/CONTROLLED_DISCOVERY.md": {
+      "size": 6425,
+      "sha256": "76e96624020e5b9bde40890f33f1ef7d23721160a11f095f9b4638fcbfa9ef20"
+    },
+    "docs/CONTROLLED_STAGE2.md": {
+      "size": 4907,
+      "sha256": "c2a416a64dff260d9c37249825da2d7f52bffa56a60d43fea8dc8183fe5bc693"
+    },
+    "docs/CREATORS.md": {
+      "size": 9968,
+      "sha256": "66b9dfe3c96bf42574cba603da55a7e8160054111c43dee3dd5977fe0cd0bd37"
+    },
+    "docs/DETECTION_BENCHMARK.md": {
+      "size": 14106,
+      "sha256": "33159f03e6cd27cb525451162220db5705bd82af26caa2319e1085aaec4b14cb"
+    },
+    "docs/DEV_CONTROL.md": {
+      "size": 13481,
+      "sha256": "c01ea41195c50ba0920c5a410822265d0f1355813c49e4cdd349ffd1c6c0b7c4"
+    },
+    "docs/ENRICHMENT_BACKLOG.md": {
+      "size": 3917,
+      "sha256": "5230c4c59ccba7549672b3dc630fed7b39bf2be5716c88a70e19382fab0b73ea"
+    },
+    "docs/ESCOVA_REVIEW.md": {
+      "size": 3469,
+      "sha256": "564df1ed4021970636f5f4d347d39f7f6931cb14d34f03bedbc5958b6909e040"
+    },
+    "docs/EXTRACTION.md": {
+      "size": 13176,
+      "sha256": "d031001310e9c86338a254508e13ab8e9d036e5cf1e9a5a5d849ae9c502783fd"
+    },
+    "docs/INTELLIGENCE_CORE.md": {
+      "size": 10355,
+      "sha256": "b20dea422a35cfc9de92443957e53324333e8b836c0d09cb1f4755071e4fa39c"
+    },
+    "docs/LOCAL_VISUAL_ASSETS.md": {
+      "size": 8197,
+      "sha256": "21f58aebb592896bc95136b29b6eac11ccb3a243ef75decdc5e3bb77d93ac32e"
+    },
+    "docs/NEXT_SESSION.md": {
+      "size": 57674,
+      "sha256": "cbfaec064e4f928dc16833afe5f3600de7208262f4b62e7d4878204999d6901c"
+    },
+    "docs/OFFLINE_AUDIT.md": {
+      "size": 9836,
+      "sha256": "777ec19808f2b5a15a2639ca64e40f095851ee92625b218e780799bc6cd712c3"
+    },
+    "docs/PERSISTENT_RUNTIME.md": {
+      "size": 4074,
+      "sha256": "791ff6b2fc1125bfb968e7e725acbf06c7995010770539cb7261539d3555449e"
+    },
+    "docs/PRODUCT_CANDIDATES.md": {
+      "size": 6014,
+      "sha256": "72add6a6a70834b7a924102fa72afb7e91db7b53752b873c3ffd607700e0882a"
+    },
+    "docs/PRODUCT_CORROBORATION.md": {
+      "size": 14003,
+      "sha256": "670bdad8ee83b1201532b4b005d4a26f6f82f36b81af0b8ef7b62ec126a51711"
+    },
+    "docs/PRODUCT_IDENTIFICATION_PIPELINE.md": {
+      "size": 5838,
+      "sha256": "c6c73c942dc26cd8eaf139ace19aa99adfc8b3b5775f1fd665be9865503b788a"
+    },
+    "docs/PRODUCT_IDENTITY.md": {
+      "size": 7398,
+      "sha256": "0e930f44765d666b76c1d3680c0217157986a1824f6a22f770a0798d7f51e89e"
+    },
+    "docs/PRODUCT_IDENTITY_RESOLVER.md": {
+      "size": 9248,
+      "sha256": "ac0292d5f84b71f33952f85ecff1d2acbe8b852ac4e18571cd9c100ad3270ea6"
+    },
+    "docs/ROADMAP.md": {
+      "size": 5548,
+      "sha256": "68649d60fa8793cb3655866c8af33c73af1a1e1cbc4942a75a21b3583135586d"
+    },
+    "docs/SAFE_COLLECTION_RECOVERY.md": {
+      "size": 5276,
+      "sha256": "99c09eef95f977b3ec79602d04ecfe93f712b32a231ce1b34f959e9242f1135b"
+    },
+    "docs/SAFETY.md": {
+      "size": 5921,
+      "sha256": "d916ea75b890ac2eb6bd583d646dd3765a059bd401270850505759b794e9d498"
+    },
+    "docs/SEARCH_ONLY_MODE.md": {
+      "size": 2194,
+      "sha256": "6f59fdf01dfaa1e80faaf6bd1129b9646bc166508c8d4694d05a207290bcd9d0"
+    },
+    "docs/SELECTIVE_ENRICHMENT.md": {
+      "size": 8267,
+      "sha256": "d4add1df2c53179e0fe4e637de4d1cc38a1c3661792b258043b2e1b6539f9035"
+    },
+    "docs/TARGET_QUARANTINE.md": {
+      "size": 3236,
+      "sha256": "736c3052c036cbf7ed82cfc34502b845768ec59007885bca1b193b114c4cf8c7"
+    },
+    "docs/TREND_HISTORY.md": {
+      "size": 6386,
+      "sha256": "07eed10a6c2b49660dd9dcfed0f4d43256e7a2c6d3e0d831c0c12584cb09c298"
+    },
+    "docs/VIDEO_DETAIL_METRICS.md": {
+      "size": 6566,
+      "sha256": "2df92f51e3f0d647ee7fca1d4c045e5df28a0c48637a745d7acef67089198513"
+    },
+    "docs/VIRALITY_QUALITY.md": {
+      "size": 4785,
+      "sha256": "91f0540fb2edb09d7a2c3c55507c162d15802238d7f6b020d76d1ea92670ed16"
+    },
+    "docs/VISUAL_IDENTIFICATION.md": {
+      "size": 6983,
+      "sha256": "e8c9eb0dd818831b58d220e9fa93e832cd6d6fc1f842ef21fd76972448747841"
+    },
+    "docs/VISUAL_IDENTITY_COMPLETION.md": {
+      "size": 4067,
+      "sha256": "dde55471a45126d34178694d6c9f5c8aa4e60088756cd078af876aa9948ea514"
+    },
+    "extension/background.js": {
+      "size": 34622,
+      "sha256": "7df12d2200cd63bec949c00b68673de1697799648b8a0e4776e6f8dfec497850"
+    },
+    "extension/build.js": {
+      "size": 80,
+      "sha256": "f6cc61a8527969261152aaf2620d5dc739540f9c75b64a38435f0adb03f78c84"
+    },
+    "extension/comments.js": {
+      "size": 15325,
+      "sha256": "239c95c069dc4f56bb9aca1748bb632191d429baa78d14fa5a9954e103e4373d"
+    },
+    "extension/content.js": {
+      "size": 5472,
+      "sha256": "3102e76f0f9e88c0b10a842618c44a21ec061d1550c1835bebf8960d22303373"
+    },
+    "extension/creator_profile.js": {
+      "size": 8703,
+      "sha256": "9fddb5b726193a26f6f81d841f9f7ce9fc2efe451cd8efef9d1779e26db74054"
+    },
+    "extension/dev_bootstrap.html": {
+      "size": 308,
+      "sha256": "30bb02bf9f5459daa8f0fe6e0b7567bb1ebb5af4409104f6cb41ca54a0bd975c"
+    },
+    "extension/dev_bootstrap.js": {
+      "size": 1152,
+      "sha256": "ff4bf6c84d071b18e9fe7f8c4c9293807a0b596283dc58c6184d0915f135b9ac"
+    },
+    "extension/dev_worker.js": {
+      "size": 15439,
+      "sha256": "4b89878282d11a46c4d07fd32c4dac3d5cf767fa89eb9cc8ba890da1f101d9eb"
+    },
+    "extension/discovery_worker.js": {
+      "size": 3463,
+      "sha256": "5621830203da415cd3768a5148b52c4195dcd959480d9d595e31346b42eb81af"
+    },
+    "extension/manifest.json": {
+      "size": 1051,
+      "sha256": "859d2b32b4749db996f1ad824383abc00985d003d270c220ce6a164bbfbbef26"
+    },
+    "extension/pacing.js": {
+      "size": 471,
+      "sha256": "be30c086079e292386164bb9138bd04daf313369fe13c847d16ed292c83851b7"
+    },
+    "extension/popup.html": {
+      "size": 734,
+      "sha256": "753dde108ebcb5824399492fd80d5ea9074340a7332f1e785a049c9b471a31c1"
+    },
+    "extension/popup.js": {
+      "size": 894,
+      "sha256": "c4127f95828726ef36cdcb242c898efbf55190a0a4e0b58327a0ba57c680d09d"
+    },
+    "extension/README.md": {
+      "size": 605,
+      "sha256": "0bf0e20be9611278933a0ce6c96054b82b5b9b71e8199184650217f8d4741ef4"
+    },
+    "extension/safety.js": {
+      "size": 1180,
+      "sha256": "88c616315d6fd4d8164b51fb920733714286aa60e1d7da426e27dcfa5f336a21"
+    },
+    "extension/search_discovery.js": {
+      "size": 7307,
+      "sha256": "657a6fea3ee23e171ee93ec56e864711766baa2c3ad8a2bb657b4eb27e202283"
+    },
+    "extension/search_results.js": {
+      "size": 16388,
+      "sha256": "d681a2dd1054755c51dbc5385cfa82133888e660d45ef622798f237256b79119"
+    },
+    "extension/search_stability.js": {
+      "size": 3997,
+      "sha256": "54b1f5b472789c22cd6491ee7eb9a4ff88752c810f30c69378040a7ed83e5f8c"
+    },
+    "extension/session_observer.js": {
+      "size": 910,
+      "sha256": "9a4dbb05b454396dada5c66f63b77029b5f84cde00a1945b6f3e922bf8483f23"
+    },
+    "extension/session_probe.js": {
+      "size": 2190,
+      "sha256": "5f018a9982d57f3df451976cec6e5a117806bb1eb1791264aaa1661c6672e865"
+    },
+    "extension/session_signals.js": {
+      "size": 5570,
+      "sha256": "f80f13649ea0eb3eee8ed4245e0e46d3c7c194b055e16f5e01306777c1876049"
+    },
+    "extension/target_security.js": {
+      "size": 3975,
+      "sha256": "0651158d5e786e0577bc9a0c83333d87e303e848cc6c47b1af831d26f9e58380"
+    },
+    "extension/video_detail.js": {
+      "size": 12202,
+      "sha256": "6a937b5068a5676c189115a7f171fbb6ae0ebaed81e39d86039e66ac41bc6e54"
+    },
+    "package-lock.json": {
+      "size": 7293,
+      "sha256": "964c8e49bcd12a08f8491d860a02f2150cdc9f80943a2e42b3ea9cbe15b2b3ed"
+    },
+    "package.json": {
+      "size": 167,
+      "sha256": "68b0bcab05a39a5f5b846bed10d9f8c538d486aa030e8fe611e4d7444f75069a"
+    },
+    "README.md": {
+      "size": 6883,
+      "sha256": "e3a5c356877b4053076a501dc44db48433763f3d960f930c09e96c6b1051bed3"
+    },
+    "requirements-intelligence.txt": {
+      "size": 279,
+      "sha256": "21b5b95c694d25b544baa5b4ba3348b4a351d94bc926a3e0f91e353908e80446"
+    },
+    "requirements.txt": {
+      "size": 104,
+      "sha256": "e04b62306ca0658dbd792ebcf7c5ed0dc415fed154c30d48a3f42bc6e4c37e55"
+    },
+    "run.py": {
+      "size": 2627,
+      "sha256": "7559e04a1ca5f3601429687ca75c6915d45f81bb3afe4c053250f85b7c2f34db"
+    },
+    "scripts/background_runner.py": {
+      "size": 4923,
+      "sha256": "245d830cf73733b3823b0892f2915cf41f7d1abc135464902caa7a18ec7ccd29"
+    },
+    "scripts/bootstrap_companion.py": {
+      "size": 3520,
+      "sha256": "cf937a161677b1ab9f2fd579956eceb1fdae5236275a87022e02cdc9ec03f583"
+    },
+    "scripts/check_enrichment_migration.py": {
+      "size": 2647,
+      "sha256": "d47e61446f8bf0d0c109144ef4635561e8e93db71b700f48ad3ceea517e82e31"
+    },
+    "scripts/controlled_stage2.py": {
+      "size": 6918,
+      "sha256": "31055c42a6f1f3645e3ecf24738b0d4e93df69892dcf026a3c8078ea6da50077"
+    },
+    "scripts/core_activation.py": {
+      "size": 4542,
+      "sha256": "a38c308fdf156dfffaea396986c6064563103066cc673f08a7c00946e12fc670"
+    },
+    "scripts/detect_products.py": {
+      "size": 1776,
+      "sha256": "d26e8f71170b6615e45b9d9cc869c25963e2f8205c96caa4212e76506e9a2837"
+    },
+    "scripts/detection_benchmark.py": {
+      "size": 1171,
+      "sha256": "d6fe88a38e391e2833f878fee146fc293778acdcb7f422b63519809c80b3c325"
+    },
+    "scripts/dev_supervisor.py": {
+      "size": 10598,
+      "sha256": "1e4a6645118e3426c543672d2c4c14ad29abd52d105242a263d43fe3d589812b"
+    },
+    "scripts/devctl.py": {
+      "size": 6510,
+      "sha256": "9b8b946db71348137da43ce34cf104bb8ad12f3f6418acd4ee3e95a8329dbed5"
+    },
+    "scripts/devctl.pyw": {
+      "size": 385,
+      "sha256": "e98a8c8ed902ec5786bba4014f4a774713332477483a773cae91f52d9e231bb5"
+    },
+    "scripts/discovery_session.py": {
+      "size": 4996,
+      "sha256": "32d12099ded528a2d1ba14189053f473c6e62a3c32daba55cc1a3090284045a1"
+    },
+    "scripts/install_intelligence_model.py": {
+      "size": 1078,
+      "sha256": "e5e2fb69c03c52340c3b19a4074edb48e22bc89eb790a025e71550db29bee786"
+    },
+    "scripts/intelligence_core.py": {
+      "size": 1669,
+      "sha256": "5c986e890346230a0cfa4b583de8508da467c94dabe037d4fbea0e3d3b832037"
+    },
+    "scripts/local_visual_assets_report.py": {
+      "size": 10870,
+      "sha256": "3ba4b1dace6b37dbeee1f0c029c779b8329acf657af88a858d2fcf3f42987264"
+    },
+    "scripts/manual_captcha_resume.py": {
+      "size": 2534,
+      "sha256": "162c2508e7257c1ef79a01b4fdf3615149990da18ad41f82ea5708d927f6403a"
+    },
+    "scripts/offline_candidate_audit.py": {
+      "size": 7098,
+      "sha256": "84b4d73c87b80bf66488ee0cdec4600b6aecbc529774fdf1684bc4f6537cb85a"
+    },
+    "scripts/offline_intelligence_report.py": {
+      "size": 13314,
+      "sha256": "a5e6bac69ff542f8cdd519d75739872091cbd1f0598062d92d3a0b3c0f0c214c"
+    },
+    "scripts/process_runtime.py": {
+      "size": 1263,
+      "sha256": "0c9a463a286c8d163a6afe570dd2db6210f91e9b609db220bebc7b21b08d15d6"
+    },
+    "scripts/product_semantics_report.py": {
+      "size": 3034,
+      "sha256": "bf68b230678b80f8513a7fa44fd8d763093875a592fc7256ab6b8834e066d507"
+    },
+    "scripts/quarantine_stage1.py": {
+      "size": 4156,
+      "sha256": "2e1d1e6a94c964fb9298e5d1d8358b9e084172ecdf875f4240dc43de662b01fe"
+    },
+    "scripts/read_creator_profiles.py": {
+      "size": 2266,
+      "sha256": "d6bd465623cbb42c320f6afa2ff221283c1a35aa4e4334da63dac34b253af6d3"
+    },
+    "scripts/read_video_details.py": {
+      "size": 2584,
+      "sha256": "99520e523369b009a60ea751906e8c59764e4a0187f5584916151044d61e6b6a"
+    },
+    "scripts/report_core_activation.py": {
+      "size": 3547,
+      "sha256": "45f67a77cf7c5b834fc5fb32a43846dcbe4037ae6fa45b1b77062b619f7a7890"
+    },
+    "scripts/report_intelligence_core.py": {
+      "size": 3180,
+      "sha256": "86eb51dd7183b62ff055d7830a1e4de70dc0917e33ce6e4194dcb32db87cf8e3"
+    },
+    "scripts/report_visual_identity.py": {
+      "size": 4057,
+      "sha256": "47a8064e7c33340f37aa11794c13b21fe5d165f4a144a83b1aa1abc479b6647c"
+    },
+    "scripts/resolve_product_identity.py": {
+      "size": 2332,
+      "sha256": "3a5dca213b63c5df3098510c8ffbe0532741c60bd2766153f62d51d2d7caade9"
+    },
+    "scripts/resume_stage2.py": {
+      "size": 4614,
+      "sha256": "26c3be377f5b45ab77062b42c32c95d510786901dbf2f64e91ce8d1a9e9c7226"
+    },
+    "scripts/safe_collection.py": {
+      "size": 1862,
+      "sha256": "3a7b7f7a9c83884d0bc2821be861849e34e36096f26cd72c3c8a6c1c24e5a0e3"
+    },
+    "scripts/sample_comments.py": {
+      "size": 1646,
+      "sha256": "54fae85913c1cd6291542ea3cfca3f1cc1825b4a28de6936843c3b219c336962"
+    },
+    "scripts/selective_enrichment.py": {
+      "size": 680,
+      "sha256": "4cc31e35c67033f952f7666cf6ed563accc112aab7e98bf4c0976b2e909e8c58"
+    },
+    "scripts/trend_history.py": {
+      "size": 3733,
+      "sha256": "3c425724618b3605db9e6bdfedd122c1543d2f9d98623f96e900dcbb0e196bd8"
+    },
+    "scripts/validate_connection_panel.py": {
+      "size": 8264,
+      "sha256": "a26d7bd872aaef62471528fbbd3d6988aaeed4b3a635834e30e7b778f33a9d0f"
+    },
+    "scripts/validate_persistent_runtime.py": {
+      "size": 3170,
+      "sha256": "5efc36989fd2b1738bd0ac5a841486877bc1e0bd0c1b1390c2f6cba21578e9a1"
+    },
+    "scripts/virality_quality.py": {
+      "size": 2678,
+      "sha256": "17a2a096b3eb8738f32440e85753499b2da27274466c3783539d85d84b68a495"
+    },
+    "scripts/visual_identification_report.py": {
+      "size": 11353,
+      "sha256": "7f03c26389ee917a2e3f776469eb65696c049bc0b477992e16ff13fc8f1baf44"
+    },
+    "scripts/visual_identity.py": {
+      "size": 3292,
+      "sha256": "9b3dc9301837fd83b750d1c054d9cead9cf6d3e8faed197b87f1531dfb62f9d0"
+    },
+    "tests/bridge.test.cjs": {
+      "size": 3780,
+      "sha256": "1ce150b468d9bbb9a96f556f3fb1d2a457bbd509b674defbba4724a16d877065"
+    },
+    "tests/capture_client.cjs": {
+      "size": 3223,
+      "sha256": "7ffbb6e55b46dff1f3408bbdc41b974424cf45b9aec0486eaa48f407b0f5b582"
+    },
+    "tests/category-ui.test.cjs": {
+      "size": 2180,
+      "sha256": "b6e80870506e962b0f52c60938b82c54056b688e25fc8f6d27fef6cab69d6252"
+    },
+    "tests/comments.test.cjs": {
+      "size": 9002,
+      "sha256": "b41389161db1001d307cfa5c2550ad3808fbd946cfbc840720480831405bcd10"
+    },
+    "tests/comments_payload.cjs": {
+      "size": 670,
+      "sha256": "e8da6e63cc89528204d9405e0b57e0e75d97c610a26a1863e528e2e7ee6f4729"
+    },
+    "tests/connection-panel.test.cjs": {
+      "size": 7166,
+      "sha256": "1d5ad5a4450399f21aa837fc05b1ddf722b8536726f58b93153441c0292d308b"
+    },
+    "tests/creator-profile.test.cjs": {
+      "size": 10167,
+      "sha256": "c1c54528e3b329f55ce58b1f6d5f1efe0860146521c20686425aba1875f96c32"
+    },
+    "tests/creator_payload.cjs": {
+      "size": 414,
+      "sha256": "70b65788e075b575a774456cbc851c2d50f5673e039b68e63bbd119415ea1d30"
+    },
+    "tests/dashboard-ui.test.cjs": {
+      "size": 17885,
+      "sha256": "df84220f706db7d852450626735f17d19a9a85ed9ed9c3341947c0412f879f5e"
+    },
+    "tests/dashboard.test.cjs": {
+      "size": 5412,
+      "sha256": "71d35e8d73d43f9a3de5397301c3481a16b2d6f1ab89789a59ce15bfb55a3b9b"
+    },
+    "tests/detail-metrics.test.cjs": {
+      "size": 6000,
+      "sha256": "80f9a6ac30bc2aa320a1cd5c2c2e97f8254a5023e3c3d7772ce05e1bec015f3f"
+    },
+    "tests/detail-readiness.test.cjs": {
+      "size": 3435,
+      "sha256": "7867773dd040d13f247e72b8061c22a8f5c05ea166d971bbc5423d6d9221cf9d"
+    },
+    "tests/detail_payload.cjs": {
+      "size": 700,
+      "sha256": "f324b95f18a63e6ba305df71aa3ac096fe2f21f928d5cc0a552a9507c02efcb9"
+    },
+    "tests/dev-control.test.cjs": {
+      "size": 12607,
+      "sha256": "eb6f1023a2dfd3a24334584454bd6c66ad1713441797a2d7b5fb1b8dcf2f672d"
+    },
+    "tests/discovery-worker.test.cjs": {
+      "size": 3265,
+      "sha256": "872bef5c6636054b23d25f5a68e08ec68a1a82bc918a90d4c2d2792b78359b78"
+    },
+    "tests/discovery.test.cjs": {
+      "size": 4389,
+      "sha256": "057cc9c04fe7652f1bea521e070992ee3ac41e6bcedbfd3b5f738ccfa1eca0dd"
+    },
+    "tests/dom-fixture.cjs": {
+      "size": 946,
+      "sha256": "d6fd84a4a641d5be5405ee027feb95e17b2ff14c83e75587360d46dfc9332559"
+    },
+    "tests/enrichment.test.cjs": {
+      "size": 8200,
+      "sha256": "75ecbe60a07eca0c3d1c6b2bb62c68907e5a1351d5e41f0cbccec6cd98dca888"
+    },
+    "tests/extraction.test.cjs": {
+      "size": 2571,
+      "sha256": "ee9fb0be1a5cb0c8b672e9a587d8bb29942717f5376a4d9f7c70ed2bdd24fe76"
+    },
+    "tests/fixtures/gold-review-video-1.json": {
+      "size": 41779,
+      "sha256": "11c55d113728cedb5e5ea031d59b43e41a8948c693597171b0b4f2b4a9855ea2"
+    },
+    "tests/fixtures/product-identity-escova.json": {
+      "size": 7515,
+      "sha256": "682266f1fc5327617c392f642cafd87535e534733bd2d61796ec47ef0afd7ce8"
+    },
+    "tests/fixtures/tiktok-comments-live.html": {
+      "size": 829,
+      "sha256": "f3b61969d2ca4e6cc43d34f0eca1f2ef4a3ccea3d09dd30d1adbe592d49d3d6e"
+    },
+    "tests/fixtures/tiktok-comments.html": {
+      "size": 1041,
+      "sha256": "14761b3d9dfd0cb98d0b01fc425acc0858d6c5e9ab625a30e3cd4f3196e55208"
+    },
+    "tests/fixtures/tiktok-creator-profile.html": {
+      "size": 849,
+      "sha256": "af5a07c1cd0439ab228ad5df55d201ed9c98006f012ec08b2a9064eaa4eb3734"
+    },
+    "tests/fixtures/tiktok-detail-metrics.html": {
+      "size": 1139,
+      "sha256": "24ecdead1f4da51a2cdee863777d0891a665c1aee66fbebcc43f6f01e44eb0ea"
+    },
+    "tests/fixtures/tiktok-enrichment.html": {
+      "size": 2546,
+      "sha256": "f96f0d90302d17f3e78445b2a6317ee8585d0dde5da80b6b87a803363de90249"
+    },
+    "tests/fixtures/tiktok-live-metadata.html": {
+      "size": 1249,
+      "sha256": "73fbf8becd3bdadd99beb28cbe2b336a72390d3e15df804b1a3026acb6b411c2"
+    },
+    "tests/fixtures/tiktok-media-tile.html": {
+      "size": 1263,
+      "sha256": "f4d5a67bc241145d9bdd12896d940d9d3992bb0df96d78019a272076f47f291c"
+    },
+    "tests/fixtures/tiktok-search.html": {
+      "size": 1564,
+      "sha256": "f2ed2dbd5b18a52b2cb1f4fa0b285f8df6df90f3d71994eaf95a11eb3b4d42b8"
+    },
+    "tests/fixtures/tiktok-video-detail.html": {
+      "size": 745,
+      "sha256": "2ff6eaefa92b2eed9857956286726292c7301e0e981a5088b9d524eca3387e0c"
+    },
+    "tests/fixtures/view-formats.json": {
+      "size": 467,
+      "sha256": "425056663e9424d679f8bedfc6489c3e384f1a15283a591ad2b5069328874e90"
+    },
+    "tests/gold-set-ui.test.cjs": {
+      "size": 15985,
+      "sha256": "f067ab9ba250f7b0065593e6c8f4a50f09d359ddcdc5482cf14a7cb2985b5ed6"
+    },
+    "tests/heartbeat_payload.cjs": {
+      "size": 1904,
+      "sha256": "807b9a517cce71a46fb62f24466b71ef87caf48e0a98f8afd809e6c1382bcdeb"
+    },
+    "tests/identity-resolver-ui.test.cjs": {
+      "size": 3457,
+      "sha256": "1dc26ed105a61499bb8f6cc9c7bd786f7f80047d955e1f887d8f4f447c28db46"
+    },
+    "tests/intelligence-core.test.cjs": {
+      "size": 4711,
+      "sha256": "73a5c10fc45eba6ae2ef0cae4346924d366fdf18927171bce338be920aa93cc6"
+    },
+    "tests/local-visual-assets.test.cjs": {
+      "size": 4863,
+      "sha256": "1f1aeb11e92b01e085e7de536a63d3ea91210b421d36ec89d24c787557ebc189"
+    },
+    "tests/offline-insights.test.cjs": {
+      "size": 2195,
+      "sha256": "a000cdd84a5bbb4023f0dc816b3c6b2ca87441c5d1e3a9da1180ab73b6f70ff7"
+    },
+    "tests/runtime-safety.test.cjs": {
+      "size": 5760,
+      "sha256": "1c27dadad6d6aa5c577dd01e5c8111dc32769c8544ca3fe299946bd502b8728d"
+    },
+    "tests/safe-collection.test.cjs": {
+      "size": 7630,
+      "sha256": "2f966987dbdade0718fe2b27214d9d087bd94be2772fda94117d34ce5dc7782a"
+    },
+    "tests/search-only-mode.test.cjs": {
+      "size": 2509,
+      "sha256": "29e1893521509f48d2401e55d29fa8d6975f005ce8f7ac62be53529060d3e8a5"
+    },
+    "tests/search-stability.test.cjs": {
+      "size": 4104,
+      "sha256": "8fbc2c03687289b5e4326c3f4229d19ca8c2ee3024c21da2e86c50f6ddef97f0"
+    },
+    "tests/selective-ui.test.cjs": {
+      "size": 1393,
+      "sha256": "a4d0c5f0e437e6b483ca885b6ca0b39d0874a9e58f88720774fee9364c869013"
+    },
+    "tests/session-recovery.test.cjs": {
+      "size": 4757,
+      "sha256": "8f7312e180a2f2577a94c5be8ce74b325452bc53d0ca41efa155d30bfaea0b72"
+    },
+    "tests/target-security.test.cjs": {
+      "size": 4071,
+      "sha256": "cd307d3b8c3d8c5b76f5b3d291c8ffa1e3928f225765effcc5f4c62d1c48b4c6"
+    },
+    "tests/test_authenticated_dom.py": {
+      "size": 3016,
+      "sha256": "5739fc8c4718124970de31e310efbc5ddafd93bc83ed849c4ead4b97981d0b65"
+    },
+    "tests/test_backlog.py": {
+      "size": 6597,
+      "sha256": "30642713ab4beceaa840080b9141fce52f0e09c12dbcdf2dfbbd87ed9f322af4"
+    },
+    "tests/test_bridge.py": {
+      "size": 6872,
+      "sha256": "4fd65829acefcd9c3310eb9b7b7d44bd620827ff8c4d0d5eda609c9b436eae2c"
+    },
+    "tests/test_candidate_corroboration.py": {
+      "size": 13111,
+      "sha256": "c3b181a8842279a6936e2301518f577489bf367bf69c792771f006c1f1470080"
+    },
+    "tests/test_capture.py": {
+      "size": 15542,
+      "sha256": "11e50d18c7fa1db1e8a71840327944e42e4a230e7cdfaba0eb9c13847678f459"
+    },
+    "tests/test_category_intelligence.py": {
+      "size": 6829,
+      "sha256": "000880116eddf41964a542bcda7dc82d5e696c51fdf5c2ccc47595e48feaaa17"
+    },
+    "tests/test_command_api_contract.py": {
+      "size": 3244,
+      "sha256": "d08c29bea09d0b3ad7896bcf7638d60d65646a0ac0dbf299c636af9580d6af04"
+    },
+    "tests/test_comments.py": {
+      "size": 8047,
+      "sha256": "c1fbd7d203d163309d06be22567548d742947977a9f64a951d023becf69430d4"
+    },
+    "tests/test_controlled_stage2.py": {
+      "size": 4741,
+      "sha256": "e38d8f7e170e165b6f0d8acd64f452844837e263ffa10b6838451dceedb43be0"
+    },
+    "tests/test_core_activation.py": {
+      "size": 9361,
+      "sha256": "9f1e1fc818d02095daa291d3203aff31329dad22cd970c260a5b7da9ab48b279"
+    },
+    "tests/test_creators.py": {
+      "size": 9994,
+      "sha256": "06f323ca55ec6cd232f2dfeee4432aaed03c2b3f217094fa850d5a0d597fa5f8"
+    },
+    "tests/test_detection_benchmark.py": {
+      "size": 9406,
+      "sha256": "dc279f2a9d54c40b12d4a41415b65e42befa683f0fd363c52b9d38db318e23d1"
+    },
+    "tests/test_dev_control.py": {
+      "size": 9525,
+      "sha256": "4b80c43e9949f67ca6f1d697d9f50665c8e7b8cf039ae4d7c1962d579b9cad00"
+    },
+    "tests/test_discovery.py": {
+      "size": 8611,
+      "sha256": "c809381b1a04b8a2b25789d5d366266a43179c30085a096b71e416a0ea021aa3"
+    },
+    "tests/test_enrichment.py": {
+      "size": 9058,
+      "sha256": "86d4f984acbd3e5889208e5e1f16fc80a9382dc7ed037cd26f1169b2d15c7de5"
+    },
+    "tests/test_gold_filters.py": {
+      "size": 3800,
+      "sha256": "64738e8601be4ae678f7fe0d8004b4c196c34264e2755eb20732d7ac123940de"
+    },
+    "tests/test_identity_resolver.py": {
+      "size": 8646,
+      "sha256": "d8ca1e024e7037aa000abe616bc447bae0bf6900f044cfaa0c6dd999f2ab709f"
+    },
+    "tests/test_intelligence_core.py": {
+      "size": 14196,
+      "sha256": "ebeb5c526df2bec82bc9bce46f5a09bda2ff3ebc3a5355990b7c19f28cfd555f"
+    },
+    "tests/test_local_visual_assets.py": {
+      "size": 12296,
+      "sha256": "b6bd53e8cbeaa8cff4def8c2972bf85af1ebca07b5dc045e094b03b8701e4cce"
+    },
+    "tests/test_manual_captcha_recovery.py": {
+      "size": 6587,
+      "sha256": "a38e2cca643dcc919e0fd5bbe95fd94d2172562496aa527ac3e55fca592b6086"
+    },
+    "tests/test_offline_intelligence.py": {
+      "size": 6204,
+      "sha256": "89c7c7f5ffe9ff691ddee5b3e9f95dcf0b28c698f1b6fdd45af42c0f9dece8b3"
+    },
+    "tests/test_policy.py": {
+      "size": 1008,
+      "sha256": "84fb7e2c6c264cc82c43e4caa60e20c6fbe84cd4a1d5a51c71e9d3544fb993d8"
+    },
+    "tests/test_product_detection.py": {
+      "size": 7291,
+      "sha256": "3b45863070a633c29c76f90ea49451e0bbb01e86157bf48e3608e8319a03e845"
+    },
+    "tests/test_product_identity_semantics.py": {
+      "size": 7559,
+      "sha256": "0c184ea37bafc5a000bce74b5aace9b5009840ee2b560d64efaddf4d972a4dca"
+    },
+    "tests/test_runtime.py": {
+      "size": 6352,
+      "sha256": "21ac83f172f355b9d4378115f073f4f202c392021b7b9f01cc3012ad5afc73e0"
+    },
+    "tests/test_safe_actions.py": {
+      "size": 926,
+      "sha256": "763f8c1e5c7219d2480b8ae7a56a61e6e8425245f18f36fbfac0679da08e2101"
+    },
+    "tests/test_safe_collection.py": {
+      "size": 9151,
+      "sha256": "7d0f3e37f1195c8010245ae123de8c6cd8f7f21f16a6e286202093a382cd0108"
+    },
+    "tests/test_search_only_mode.py": {
+      "size": 4011,
+      "sha256": "449c9184ac40381d7cda8346883c091842336556a3687774dcf476b17a5ba437"
+    },
+    "tests/test_selective_enrichment.py": {
+      "size": 7893,
+      "sha256": "df81bb30147711d274d6ceb2ac738ab525a732b75025de4dab55955b76fbf821"
+    },
+    "tests/test_session_panel.py": {
+      "size": 1635,
+      "sha256": "251b5b11816273994089358ca4f06400c9049c524b754951a433697fb1b3cd69"
+    },
+    "tests/test_session_recovery.py": {
+      "size": 5915,
+      "sha256": "f0073e7a8c1dc97ea4949e8569fcc784154d0ce78f858679b668145d2e6328f8"
+    },
+    "tests/test_stage2_resume.py": {
+      "size": 5091,
+      "sha256": "a73a72d2539a686d37b0af39d189260b72824f4ca8a281ec0752a4b86913a181"
+    },
+    "tests/test_target_safety.py": {
+      "size": 8144,
+      "sha256": "635b78bf0ec1a99b64fe475e59955f271cfd4ecb5c752727ce6badf3e8d87570"
+    },
+    "tests/test_trend_history.py": {
+      "size": 8517,
+      "sha256": "942f03859f6ff29498ac2890686f2a43c1de05d189579d762dc0c4db1ca7b9e4"
+    },
+    "tests/test_virality_quality.py": {
+      "size": 6550,
+      "sha256": "5dbf9c9ce6891dd7318be502b897aac8954754f169e0a7c6f16ecd069bb83d83"
+    },
+    "tests/test_visual_identification.py": {
+      "size": 11436,
+      "sha256": "84124c1e8557f2ee38e24f83f81778d0705eb682afc2dd2026e9018840bed139"
+    },
+    "tests/test_visual_identity_completion.py": {
+      "size": 11785,
+      "sha256": "b684094075a7529494bda297d39fa79c600332f4b4c53a3ce6b937ef9e345ca6"
+    },
+    "tests/trend-history.test.cjs": {
+      "size": 2030,
+      "sha256": "d7c838e663d41a97a2763ea24c0ad7a549d7b90e8c9f5ff9d5f814a4dce1878e"
+    },
+    "tests/video-detail.test.cjs": {
+      "size": 5624,
+      "sha256": "05050cc968e05b4835fa49e7d72df9f16027ed1893abdd0e6e1f1626d980a3d8"
+    },
+    "tests/virality-quality.test.cjs": {
+      "size": 2123,
+      "sha256": "c607c0b2f02272ebb838405872aae0b5a697ea2e287aad417953c0f3431f37a8"
+    },
+    "tests/visual-identification.test.cjs": {
+      "size": 3031,
+      "sha256": "431ee742cc6881ee8b3afb70db9c6c8b5d99efef98b2472086d95dd9364b4e38"
+    }
+  },
+  "protected_files": {
+    "data/babi_analysis_bundle.json": {
+      "size": 129577,
+      "sha256": "262c78bc7570f582990e0ce7e287ec1d577f06cd7c7e68c594f3ec9f87fdfac3"
+    },
+    "data/babi_analysis_summary.md": {
+      "size": 4384,
+      "sha256": "50cb9ef4dda77a17246e4a86fb816d0482c36c05985cdc616715e0287cdce900"
+    },
+    "data/backlog_before.json": {
+      "size": 60262,
+      "sha256": "4398400f2a96158dcae90f0d47ae985427da2c8c0820418a735c0384cda8fafb"
+    },
+    "data/backlog_validation.json": {
+      "size": 112699,
+      "sha256": "6ac81a5d93f293ece4fde443708bfd3820fdadca496659740bebed81dc9bf475"
+    },
+    "data/benchmark_after.json": {
+      "size": 76131,
+      "sha256": "b8c4f7fd4713854a636f4a4eb6f1ac998038361c2e2c603bdb8c4dd0d532c675"
+    },
+    "data/benchmark_before.json": {
+      "size": 75196,
+      "sha256": "1b9f4511491cdd3a05e39c93b38e8520c2dcd36fc8e332bf78542239e4f92190"
+    },
+    "data/benchmark_verification.json": {
+      "size": 777,
+      "sha256": "022b7d0c7e15fb26cf864d7166f6adf8a04ae9bf090da91c83deadf3118464a6"
+    },
+    "data/category_mission_after.json": {
+      "size": 77536,
+      "sha256": "4668665783a531eccc4d9cb2535c3b7a12ef7fec648561b81d95bd9fcfcd39ce"
+    },
+    "data/category_mission_before.json": {
+      "size": 76129,
+      "sha256": "a6614766a4687e207bdb49cc8ae40b5ebf33d721e8afe1f82ec34238666d83db"
+    },
+    "data/controlled_discovery_validation.json": {
+      "size": 106669,
+      "sha256": "6eed635a077c37cb53fdf987d955fdb70e300af2304bbacf3757edf1cd88e357"
+    },
+    "data/detection_benchmark_v1.json": {
+      "size": 81204,
+      "sha256": "14a538f1c81b666f04e1912fd5ce69ecf894fa2a891ac9709f1ddba1b41b49a7"
+    },
+    "data/discovery_enrichment_validation.json": {
+      "size": 8596,
+      "sha256": "87927a76b7a50da26480147a66f9cc82d3b24b9bd709b71f9ee742c086dc56df"
+    },
+    "data/discovery_validation.json": {
+      "size": 690,
+      "sha256": "4001d3688329e8e6dbd6fe68d9bfce7cf7dafee68fe964a6c20c44c2e7792d6d"
+    },
+    "data/escova_after_backlog.json": {
+      "size": 8784,
+      "sha256": "22cdb88a10d472a8cbc29523bda0e202ef68606add8a44dd27536442e22292af"
+    },
+    "data/escova_before_backlog.json": {
+      "size": 8831,
+      "sha256": "1b832a28e763c3b6aa7193c8d76339a5051c1e0faf2026733680f425559093b7"
+    },
+    "data/gold_filters_after.json": {
+      "size": 76129,
+      "sha256": "cc63099a25a7199698ef54af4b590c95ba18c0ae56a54b3d0edddd5ee030a062"
+    },
+    "data/gold_filters_before.json": {
+      "size": 76075,
+      "sha256": "942a80064407d81ed520edaf309bb01487adef48af3806492b7d4a44c06812dd"
+    },
+    "data/gold_set_v1.json": {
+      "size": 55057,
+      "sha256": "e1624aac30f2e925b73e011730dc4254e1426768323e7afd8b342de3afe9babe"
+    },
+    "data/gold_visual_after.json": {
+      "size": 76074,
+      "sha256": "c4ee7348c541c81107b10483742370961769014c486bfea53ce24aa5f1c5ba6b"
+    },
+    "data/gold_visual_before.json": {
+      "size": 76074,
+      "sha256": "fb6c25e4925bab58cf3e7811b555d2f038261efc67c9edab349a311b9851fdd5"
+    },
+    "data/gold_visual_verification.json": {
+      "size": 350,
+      "sha256": "ea4bbc266aa3fb76574016da4204bfa120a34a6c14e0bef2dd66da287f1bdff3"
+    },
+    "data/next_session_pre_backlog.md": {
+      "size": 10771,
+      "sha256": "c9fbce77bf0b6953009cbbca94a6a7d75e3ce413b4630a0f6eab0155b9f91e65"
+    },
+    "data/next_session_pre_persistent_runtime.md": {
+      "size": 19898,
+      "sha256": "81f5ef6cb0a7206cb9b649af7fd69cf3f8ddf3f2495c173a204935fc61af6b60"
+    },
+    "data/offline_candidate_audit.json": {
+      "size": 106991,
+      "sha256": "f4bc3290fb0683ae0384d2774839928a2f82d55bff79b99a7b0dcc5ad7499402"
+    },
+    "data/offline_recovery_after.json": {
+      "size": 74144,
+      "sha256": "24946311c7adece66c1f29ae6bf27b483d8192889700ba0064ee05ccc11c2167"
+    },
+    "data/offline_recovery_before.json": {
+      "size": 74141,
+      "sha256": "3aa6dee20b1d4a3d71be8414367bab5348ba26377725bbc85a37db5bfc1abf07"
+    },
+    "data/offline_recovery_verification.json": {
+      "size": 696,
+      "sha256": "b0b5d47adb03dfff36f38e517b3faa9f3b9ffe77fcd990bb97623e9c1dc81b78"
+    },
+    "data/persistent_runtime_validation.json": {
+      "size": 69411,
+      "sha256": "735f505e07bbbb3549743058efed28918c3b496efa429c2e89c3c5f310a74667"
+    },
+    "data/product_detection_validation.json": {
+      "size": 84487,
+      "sha256": "11c25b7712b3e9db38970bddd3c4aa2e6bc9767401259d391bc23327bc16e07d"
+    },
+    "data/product_hunter.db": {
+      "size": 8572928,
+      "sha256": "61bba21e1e2e9a6893b3690c9b6f4d352c4b87898f91312bd0ad2488439087ba"
+    },
+    "data/product_hunter.pre_backlog.db": {
+      "size": 2576384,
+      "sha256": "1768cbdffbb1993f8101802fc4525c41b0918c4210ae37ad9d2d247667ba599e"
+    },
+    "data/product_hunter.pre_benchmark.db": {
+      "size": 2863104,
+      "sha256": "9a1890dec9840e1c7f1097dc057aaf225d47769959982901e6caef4614260c55"
+    },
+    "data/product_hunter.pre_corroboration.db": {
+      "size": 925696,
+      "sha256": "bee8f232a6df7554acc9ff0251cb0ca0c742c6abce32460fe79b9d2482402097"
+    },
+    "data/product_hunter.pre_discovery.db": {
+      "size": 1404928,
+      "sha256": "b8299d3baf3dacdb83946ce2785a910ce14d2035fd24e4a6d1b421cc828a7c15"
+    },
+    "data/product_hunter.pre_persistent_runtime.db": {
+      "size": 1806336,
+      "sha256": "81506735233bcad4189aa7b2ce29abda7cf3f480a9a2ad20cb5b6ebd89c88773"
+    },
+    "data/product_hunter.pre_resolver.db": {
+      "size": 2756608,
+      "sha256": "c39797d113ed29a57e713eb028f7fefc599dc43a2ae31af521cef7e2823f5a5a"
+    },
+    "data/product_hunter.pre_semantics.db": {
+      "size": 2674688,
+      "sha256": "2c668ee5dc715dca8b27eed261f3679a56a6e007127ef6b674dee046e4968605"
+    },
+    "data/product_identity_resolver_report.json": {
+      "size": 118958,
+      "sha256": "f64acdaba6d0e08115f7715a8ee8fdb8ced18e465879794920ff4ef16e725a14"
+    },
+    "data/product_semantics_report.json": {
+      "size": 167293,
+      "sha256": "2149d69f04e7495cda7c9ee568d28da486c72d9500c25276b5c341fe26989ec7"
+    },
+    "data/resolver_after.json": {
+      "size": 75196,
+      "sha256": "2f668b05938dae4de04069cbe5a8f538db2b543f986b22ebd1da12dc7b0dcee3"
+    },
+    "data/resolver_before.json": {
+      "size": 75192,
+      "sha256": "56798d5cba2ad1e363821275fd08b38c693252ad62c76ec2203f92ecd013ddf8"
+    },
+    "data/resolver_verification.json": {
+      "size": 1562,
+      "sha256": "894160d920b0e36f00d5aeca686daac78e4555dc5b1b09e62af9645ab5fd64ca"
+    },
+    "data/review_support_after.json": {
+      "size": 76128,
+      "sha256": "ecf3a6a1f3dd6396dfab001ec4eb79be5906b5cc11fe5808bee4004f58285cb1"
+    },
+    "data/review_support_before.json": {
+      "size": 76131,
+      "sha256": "cf7661d5e824db9b56230c488567a1788da9a868f6a15d3217a62d8cf3d4d8d2"
+    },
+    "data/review_support_verification.json": {
+      "size": 523,
+      "sha256": "0d928ce923447826d01106fc36bbf763d5ceae7f193c18e0b775e8cc7f1e51d2"
+    },
+    "data/semantics_after.json": {
+      "size": 75192,
+      "sha256": "9b159a3294242b7cb513596195f97554dc7e5367737e7838a736c68a36b94c76"
+    },
+    "data/semantics_before.json": {
+      "size": 74144,
+      "sha256": "9a1433b837d07575811a41cf51f5bd930401248d3f2ce8936ce9eb11d3d65122"
+    },
+    "data/semantics_live_validation.json": {
+      "size": 522,
+      "sha256": "0e9c4fdaee122cebc69be3a6b9a01fdb2af650f72aafad9ccb91d118224f2503"
+    },
+    "data/semantics_verification.json": {
+      "size": 2918,
+      "sha256": "3a5eaa338c94003fe198ccf9360e49bfcf1b05c9de924bac233196a5bb396519"
+    },
+    "data/intelligence/product-index/current.json": {
+      "size": 50,
+      "sha256": "e3b13986ad1444b8f3d4c8eb99c1e3b5f844d385bfdde97c6e1d7f82320f255a"
+    },
+    "data/intelligence/product-index/34ec94ca47954826a7c10169f63f6576/metadata.json": {
+      "size": 368,
+      "sha256": "19db91d1d30b80a81cdd6d808925ca17679c3a2679ba80156017a098d52169c6"
+    },
+    "data/intelligence/product-index/3cab903facc842d2b7c05fb2ceb257c6/metadata.json": {
+      "size": 1705,
+      "sha256": "7459c86e45467b90ec34f7beb3fd70691921521d6dfad8b947a340ba5bde0c4a"
+    },
+    "data/intelligence/product-index/abdb5c346a8c4615a426f1dcc3db6301/metadata.json": {
+      "size": 451,
+      "sha256": "c1877036aeaa1efb169ed541f1f05c2c3996a0ef2963f6a0e91742170ae1f026"
+    },
+    "artifacts/authenticated-dom-detection/checkpoint.db": {
+      "size": 7671808,
+      "sha256": "81d98ffc3a3fe49af6ddf79286fdbe5318744114c48cd8c596718dc432097086"
+    },
+    "artifacts/command-api-mismatch/checkpoint.db": {
+      "size": 7655424,
+      "sha256": "678c9f39d4179023539c5299ba4749ab7d46d8e186d889a90670662ce9327b26"
+    },
+    "artifacts/connection-panel-fix/checkpoint.db": {
+      "size": 7671808,
+      "sha256": "678655a3ae63b79f85bffe875d63833b668d203a4a58eb253beb7eb82fb502e5"
+    },
+    "artifacts/core-activation/checkpoint.db": {
+      "size": 3932160,
+      "sha256": "607b8c7c157bfb6724b182d7d6c1d38f60db3bc703962ddf7436e49117029a73"
+    },
+    "artifacts/discovery-recovery/checkpoint-20261023T150103Z.db": {
+      "size": 3297280,
+      "sha256": "acd9a02e2d90f3d13bb71a051ef2eb39c8de118835f0f0decf1914892d70fa71"
+    },
+    "artifacts/intelligence-core-consolidation/checkpoint.db": {
+      "size": 3358720,
+      "sha256": "5276c53b3384a2b8cdf248b3767f01717ca0bcffd0da1a72d222c5bfdb4aeb40"
+    },
+    "artifacts/local-visual-assets/checkpoint.db": {
+      "size": 3346432,
+      "sha256": "ed87b257472dd734109a6d8ae80845923f6a894b2ade8d362fa141467bd30d8e"
+    },
+    "artifacts/offline-intelligence/checkpoint.db": {
+      "size": 3297280,
+      "sha256": "9659962f9b877e2c764b59b777add4ff343db44a122c403fa76004d94cd86f3a"
+    },
+    "artifacts/safe-collection-recovery/checkpoint.db": {
+      "size": 7630848,
+      "sha256": "8dda01209e86bf107dec51e05fd8a574cad02be811959f31b8c8fc140db98360"
+    },
+    "artifacts/trend-history-v1/checkpoint.db": {
+      "size": 7221248,
+      "sha256": "878dc4482232bc4ebbadc8934feda98a11c4500ea0539c3ad221c0d2163c849b"
+    },
+    "artifacts/virality-quality-v1/checkpoint.db": {
+      "size": 5525504,
+      "sha256": "cb760ef81317d43d1d9a058a157eb6e297b83f29dd653bf972cd7d106de65448"
+    },
+    "artifacts/visual-identification/checkpoint.db": {
+      "size": 3297280,
+      "sha256": "0d362b875370453db0379416a253acef4923bacd139d8af95daab47b470ed1aa"
+    },
+    "artifacts/visual-identity-completion/checkpoint.db": {
+      "size": 5091328,
+      "sha256": "7893b875cb3ba08aef9e5fffdd02c8f39c6dbfa8d716d72a28cf3105a4f466b2"
+    }
+  },
+  "table_counts": {
+    "events": 1766,
+    "sqlite_sequence": 11,
+    "missions": 2,
+    "system_state": 9,
+    "video_observations": 8,
+    "schema_migrations": 4,
+    "videos": 53,
+    "search_captures": 30,
+    "search_observations": 203,
+    "video_detail_observations": 22,
+    "dev_commands": 67,
+    "comment_samples": 12,
+    "comment_observations": 232,
+    "creators": 31,
+    "video_creators": 45,
+    "creator_profile_observations": 22,
+    "product_candidates": 8,
+    "product_candidate_aliases": 8,
+    "product_candidate_evidence": 65,
+    "candidate_reference_urls": 32,
+    "product_detection_runs": 22,
+    "candidate_evidence_groups": 65,
+    "candidate_relationships": 5,
+    "product_detection_gaps": 179,
+    "unresolved_product_phrases": 2,
+    "unresolved_phrase_observations": 4,
+    "product_vocabulary_reviews": 0,
+    "product_vocabulary_terms": 0,
+    "product_vocabulary_state": 1,
+    "discovery_sessions": 7,
+    "discovery_session_videos": 68,
+    "discovery_steps": 13,
+    "video_enrichment_queue": 28,
+    "product_video_detection_state": 45,
+    "bridge_commands": 109,
+    "enrichment_stages": 265,
+    "enrichment_batches": 2,
+    "candidate_semantics": 8,
+    "candidate_semantic_history": 16,
+    "product_identity_pairs": 10,
+    "product_identity_evidence": 0,
+    "gold_video_labels": 53,
+    "gold_candidate_reviews": 6,
+    "gold_review_history": 16,
+    "detection_benchmark_runs": 6,
+    "video_category_classifications": 70,
+    "human_category_reviews": 0,
+    "visual_product_evidence": 3,
+    "night_discovery_runs": 1,
+    "night_discovery_checkpoints": 1,
+    "visual_image_assets": 1,
+    "visual_review_history": 0,
+    "visual_product_search_evidence": 7,
+    "visual_pilots": 4,
+    "visual_pilot_items": 14,
+    "visual_gold_assessments": 0,
+    "visual_asset_selections": 1,
+    "visual_assisted_sessions": 0,
+    "intelligence_jobs": 320,
+    "intelligence_job_history": 360,
+    "intelligence_embeddings": 13,
+    "intelligence_cache_stats": 1,
+    "intelligence_decisions": 237,
+    "intelligence_entities": 0,
+    "intelligence_entity_observations": 0,
+    "intelligence_matches": 0,
+    "intelligence_reviews": 0,
+    "intelligence_retrievals": 15,
+    "intelligence_dimension_snapshots": 136,
+    "trend_snapshots": 428,
+    "trend_snapshot_sources": 428,
+    "safe_recovery_checks": 19,
+    "safe_collection_batches": 4,
+    "blocked_targets": 1,
+    "target_block_events": 1,
+    "safe_stage2_authorizations": 1,
+    "safe_query_metrics": 6,
+    "safe_stage2_resumptions": 1,
+    "safe_search_diagnostics": 4,
+    "selective_runs": 2,
+    "selective_items": 5,
+    "temporary_target_quarantines": 1,
+    "manual_captcha_recoveries": 1,
+    "navigation_challenge_contexts": 2,
+    "search_only_intelligence": 53
+  },
+  "signing_key_sha256": "a665ae6bd6d02fe063d30720e9534e106bf0cc1b0904f51ffb94f497fcae71e9",
+  "profile": {
+    "path": "C:\\product-hunter-tiktok-v0.1.4\\browser-profiles\\chrome-tiktok-main",
+    "exists": true,
+    "modified_by_task": false
+  },
+  "security_latch_cleared": false,
+  "backend_was_stopped": true
+}

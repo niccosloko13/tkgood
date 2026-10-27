@@ -15,7 +15,8 @@ test('video links extracted, canonicalized and deduplicated without CSS class de
   assert.equal(results[0].creator_username, '@maker');
   assert.equal(results[0].creator_display_name, 'Maker Studio');
   assert.equal(results[0].caption, 'Portable home gadget');
-  assert.equal(results[0].views, '1.2M');
+  assert.equal(results[0].views, 1200000);
+  assert.equal(results[0].views_raw, '1.2M');
   assert.equal(results[0].likes, '42K');
 });
 test('invalid URLs, hidden and offscreen cards are ignored', () => {
