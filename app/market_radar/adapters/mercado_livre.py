@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import json
-import os
 from datetime import datetime, timezone
 from typing import Any, Callable
 from urllib.error import HTTPError, URLError
@@ -36,7 +35,12 @@ class MercadoLivreClient:
     base_url = "https://api.mercadolibre.com"
 
     def __init__(self, access_token: str | None = None, request_json: Callable[[str, dict[str, str]], Any] | None = None):
-        self.access_token = access_token if access_token is not None else os.environ.get("MERCADO_LIVRE_ACCESS_TOKEN")
+        if access_token is None:
+            # Tokens remain server-side; hosted environments load them from the
+            # encrypted OAuth store while local development keeps its .env flow.
+            from ..mercado_livre_auth import config
+            access_token = config().access_token
+        self.access_token = access_token
         self._request_json = request_json
 
     @property

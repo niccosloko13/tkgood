@@ -9,7 +9,8 @@ from .market_radar.scheduler import schedule
 from .market_radar.service import get_market_trends, get_top_products, run_marketplace_collection, sources_read_model
 from .market_radar.adapters.mercado_livre import MercadoLivreAdapter, MercadoLivreError
 from .market_radar.mercado_livre_auth import (MercadoLivreOAuthError, config as mercado_livre_auth_config,
-                                               exchange_code, refresh_mercado_livre_token, start_authorization)
+                                               exchange_code, refresh_mercado_livre_token, start_authorization,
+                                               storage_mode)
 
 
 router = APIRouter(prefix="/api/v2/market-radar")
@@ -81,7 +82,7 @@ def collect_mercado_livre(payload: MercadoLivreCollectionRequest):
 def mercado_livre_auth_status():
     settings = mercado_livre_auth_config()
     return {"app_configured": settings.app_configured, "authorized": bool(settings.access_token),
-            "refresh_available": bool(settings.refresh_token), "storage": "local_env"}
+            "refresh_available": bool(settings.refresh_token), "storage": storage_mode()}
 
 
 @router.post("/mercado-livre/auth/start")
