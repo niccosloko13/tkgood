@@ -42,9 +42,11 @@ credenciais Mercado Livre persistidas após a validação.
 
 ## Proteção de endpoints
 
-O deployment de produção permanece protegido por Vercel Authentication. Assim,
-`auth/start`, `auth/refresh` e `collect` não são acessíveis anonimamente pela
-internet. O callback OAuth não contém tokens e valida o `state` de uso único.
+Os POSTs `auth/start`, `auth/refresh` e `collect` exigem o header server-only
+`X-Babi-Market-Radar-Control`, validado contra o secret de produção
+`BABI_MARKET_RADAR_CONTROL_TOKEN`. Pedidos anônimos recebem `401`; o valor não
+é exposto ao frontend. O callback OAuth não contém tokens e valida o `state` de
+uso único.
 
 ## Pendência obrigatória antes de nova autorização
 

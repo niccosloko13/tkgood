@@ -1,6 +1,8 @@
 from datetime import datetime, timedelta, timezone
+import hmac
+import os
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import BaseModel, ConfigDict, Field
 
 from . import db
@@ -14,6 +16,18 @@ from .market_radar.mercado_livre_auth import (MercadoLivreOAuthError, config as 
 
 
 router = APIRouter(prefix="/api/v2/market-radar")
+
+
+def _require_market_radar_control(request: Request) -> None:
+    """Keep OAuth initiation, refresh and collection off the public surface."""
+    if not os.environ.get("VERCEL"):
+        return
+    expected = os.environ.get("BABI_MARKET_RADAR_CONTROL_TOKEN")
+    supplied = request.headers.get("X-Babi-Market-Radar-Control")
+    if not expected:
+        raise HTTPException(503, "Market Radar control is not configured")
+    if not supplied or not hmac.compare_digest(supplied, expected):
+        raise HTTPException(401, "Market Radar operator authorization is required")
 
 
 @router.get("")
@@ -69,7 +83,8 @@ class MercadoLivreCollectionRequest(BaseModel):
 
 
 @router.post("/mercado-livre/collect")
-def collect_mercado_livre(payload: MercadoLivreCollectionRequest):
+def collect_mercado_livre(payload: MercadoLivreCollectionRequest, request: Request):
+    _require_market_radar_control(request)
     if not payload.collect_best_sellers and not payload.collect_trends:
         raise HTTPException(422, "Choose at least one official Mercado Livre collection")
     with db.connect() as con:
@@ -86,7 +101,8 @@ def mercado_livre_auth_status():
 
 
 @router.post("/mercado-livre/auth/start")
-def mercado_livre_auth_start():
+def mercado_livre_auth_start(request: Request):
+    _require_market_radar_control(request)
     try:
         return start_authorization()
     except MercadoLivreOAuthError as exc:
@@ -102,7 +118,8 @@ def mercado_livre_auth_callback(code: str, state: str):
 
 
 @router.post("/mercado-livre/auth/refresh")
-def mercado_livre_auth_refresh():
+def mercado_livre_auth_refresh(request: Request):
+    _require_market_radar_control(request)
     try:
         return {"authorized": True, **refresh_mercado_livre_token()}
     except MercadoLivreOAuthError as exc:

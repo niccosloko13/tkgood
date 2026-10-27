@@ -1,9 +1,12 @@
 import base64
 
 import pytest
+from fastapi import HTTPException
+from starlette.requests import Request
 
 from app.market_radar import mercado_livre_auth as oauth
 from app.market_radar.oauth_store import OAuthCrypto, OAuthStoreError
+from app.api_v2_market_radar import _require_market_radar_control
 
 
 def _key(byte: int = 7) -> str:
@@ -67,3 +70,14 @@ def test_durable_state_is_single_use_and_refresh_delegates_to_atomic_store(monke
         oauth.exchange_code(code="code", state=start["state"])
     assert oauth.refresh_mercado_livre_token()["expires_in"] == 1
     assert store.saved["refresh_token"] == "rotated"
+
+
+def test_hosted_control_actions_require_a_server_only_secret(monkeypatch):
+    monkeypatch.setenv("VERCEL", "1")
+    monkeypatch.setenv("BABI_MARKET_RADAR_CONTROL_TOKEN", "operator-secret")
+    no_header = Request({"type": "http", "headers": []})
+    with pytest.raises(HTTPException) as denied:
+        _require_market_radar_control(no_header)
+    assert denied.value.status_code == 401
+    allowed = Request({"type": "http", "headers": [(b"x-babi-market-radar-control", b"operator-secret")]})
+    _require_market_radar_control(allowed)
