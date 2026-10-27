@@ -123,7 +123,7 @@ class PostgresMarketStore:
                 evidence["detail_resolved"]=meaningful
                 evidence["detail_rechecked_at"]=_now()
                 if not meaningful:
-                    outcome=adapter.client.last_resolution_outcomes.get(ranking["id"], "EXTERNAL_FAILURE")
+                    outcome=getattr(adapter, "last_resolution_outcomes", {}).get(ranking["id"], "EXTERNAL_FAILURE")
                     reason=("USER_PRODUCT_" if ranking.get("type")=="USER_PRODUCT" else "PRODUCT_") + outcome
                     evidence["detail_reason"]=reason; reasons[reason]=reasons.get(reason,0)+1; remaining+=1
                 else:
