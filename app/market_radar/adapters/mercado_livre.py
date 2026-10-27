@@ -42,6 +42,7 @@ class MercadoLivreClient:
             access_token = config().access_token
         self.access_token = access_token
         self._request_json = request_json
+        self.last_resolution_outcomes: dict[str, str] = {}
 
     @property
     def configured(self) -> bool:
@@ -64,7 +65,9 @@ class MercadoLivreClient:
                 raise MercadoLivreAuthError("Mercado Livre authorization is required") from exc
             if exc.code == 404 and (path.startswith("/highlights/") or path.startswith("/categories/")):
                 raise MercadoLivreCategoryNotRanked("The category does not expose a best-seller ranking") from exc
-            raise MercadoLivreError(f"Mercado Livre API returned HTTP {exc.code}") from exc
+            failure = MercadoLivreError(f"Mercado Livre API returned HTTP {exc.code}")
+            failure.code = f"HTTP_{exc.code}"
+            raise failure from exc
         except (URLError, TimeoutError, ValueError) as exc:
             raise MercadoLivreTransportError("Mercado Livre API could not be reached") from exc
 
@@ -113,20 +116,25 @@ class MercadoLivreAdapter(MarketplaceAdapter):
 
     def resolve_rankings(self, rankings: list[dict]) -> dict[str, dict | None]:
         result: dict[str, dict | None] = {}
+        self.last_resolution_outcomes = {}
         item_ids = [str(row["id"]) for row in rankings if row.get("type") == "ITEM"]
         if item_ids:
             for entry in self._bulk_items(item_ids):
                 result[entry["id"]] = entry
+                self.last_resolution_outcomes[entry["id"]] = "RESOLVED"
         for row in rankings:
             external_id = str(row["id"])
             kind = row.get("type")
             if kind == "ITEM":
                 result.setdefault(external_id, None)
+                self.last_resolution_outcomes.setdefault(external_id, "ITEM_DETAIL_UNAVAILABLE")
                 continue
             try:
                 result[external_id] = self._single_product(external_id, kind)
-            except MercadoLivreError:
+                self.last_resolution_outcomes[external_id] = "RESOLVED" if result[external_id] else "EMPTY_RESPONSE"
+            except MercadoLivreError as exc:
                 result[external_id] = None
+                self.last_resolution_outcomes[external_id] = getattr(exc, "code", "EXTERNAL_FAILURE")
         return result
 
     def _bulk_items(self, ids: list[str]) -> list[dict]:
