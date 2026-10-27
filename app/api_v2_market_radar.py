@@ -10,6 +10,7 @@ from .market_radar.models import Marketplace
 from .market_radar.scheduler import schedule
 from .market_radar.service import get_market_trends, get_top_products, run_marketplace_collection, sources_read_model
 from .market_radar.adapters.mercado_livre import MercadoLivreAdapter, MercadoLivreError
+from .market_radar.postgres_store import hosted_market_store
 from .market_radar.mercado_livre_auth import (MercadoLivreOAuthError, config as mercado_livre_auth_config,
                                                exchange_code, refresh_mercado_livre_token, start_authorization,
                                                storage_mode)
@@ -65,12 +66,18 @@ def _with_period(payload: dict, period: str) -> dict:
 
 @router.get("/mercado-livre/top")
 def mercado_livre_top(category: str | None = None, period: str = Query("1d", pattern="^(1d|3d|7d|15d|30d|60d|90d)$")):
+    store = hosted_market_store()
+    if store:
+        return _with_period(store.top(category=category, limit=20), period)
     with db.connect() as con:
         return _with_period(get_top_products(con, marketplace=Marketplace.MERCADO_LIVRE, category=category, limit=20), period)
 
 
 @router.get("/mercado-livre/trends")
 def mercado_livre_trends(category: str | None = None):
+    store = hosted_market_store()
+    if store:
+        return store.trends(category=category)
     with db.connect() as con:
         return get_market_trends(con, marketplace=Marketplace.MERCADO_LIVRE, category=category)
 
@@ -87,6 +94,9 @@ def collect_mercado_livre(payload: MercadoLivreCollectionRequest, request: Reque
     _require_market_radar_control(request)
     if not payload.collect_best_sellers and not payload.collect_trends:
         raise HTTPException(422, "Choose at least one official Mercado Livre collection")
+    store = hosted_market_store()
+    if store:
+        return store.collect(MercadoLivreAdapter(), category=payload.category_id, limit=20, collect_trends=payload.collect_trends)
     with db.connect() as con:
         return run_marketplace_collection(con, marketplace=Marketplace.MERCADO_LIVRE, category=payload.category_id,
                                           limit=20, collect_best_sellers=payload.collect_best_sellers,
