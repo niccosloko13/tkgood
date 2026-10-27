@@ -144,7 +144,10 @@ class MercadoLivreAdapter(MarketplaceAdapter):
 
     def _observation(self, ranking: dict, detail: dict | None, category_id: str, observed_at: str) -> MarketplaceProductObservation:
         detail = detail or {}
-        title = normalize_text(detail.get("title")) or f"Mercado Livre {ranking['id']}"
+        # Catalog products use `name`; listing items use `title`. A catalog
+        # record is not a sale listing, so price/permalink can legitimately be
+        # absent even when its product identity is available.
+        title = normalize_text(detail.get("title") or detail.get("name")) or f"Mercado Livre {ranking['id']}"
         pictures = detail.get("pictures") or []
         image = detail.get("thumbnail") or detail.get("thumbnail_id")
         if not image and pictures and isinstance(pictures[0], dict): image = pictures[0].get("secure_url") or pictures[0].get("url")
@@ -152,11 +155,12 @@ class MercadoLivreAdapter(MarketplaceAdapter):
         product = NormalizedProduct(Marketplace.MERCADO_LIVRE, str(ranking["id"]), title, normalized_title(title) or title.lower(),
           category=None, source_category=detail.get("category_id") or category_id, image_url=normalize_url(image),
           product_url=normalize_url(detail.get("permalink")), seller_name=normalize_text(seller))
+        detail_resolved = bool(normalize_text(detail.get("title") or detail.get("name")) or detail.get("permalink") or detail.get("price") is not None or image)
         return MarketplaceProductObservation(product=product, observed_at=observed_at, rank=ranking.get("position") if isinstance(ranking.get("position"), int) else None,
           price=normalize_number(detail.get("price")), currency=normalize_currency(detail.get("currency_id")),
           source_type=SourceType.OFFICIAL_API, source_confidence=source_confidence(SourceType.OFFICIAL_API),
           source_window=None, evidence={"ranking_type": ranking.get("type"), "source_category_id": category_id,
-            "source_context": f"/highlights/MLB/category/{category_id}", "detail_resolved": bool(detail)})
+            "source_context": f"/highlights/MLB/category/{category_id}", "detail_resolved": detail_resolved})
 
     def fetch_trends(self, *, category: str | None = None) -> list[dict]:
         path = f"/trends/MLB/{category}" if category else "/trends/MLB"

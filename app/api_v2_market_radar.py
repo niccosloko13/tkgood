@@ -103,6 +103,16 @@ def collect_mercado_livre(payload: MercadoLivreCollectionRequest, request: Reque
                                           collect_trends=payload.collect_trends)
 
 
+@router.post("/mercado-livre/enrich-existing")
+def enrich_mercado_livre_existing(payload: MercadoLivreCollectionRequest, request: Request):
+    """Bounded repair for persisted official rankings; never fetches a new ranking."""
+    _require_market_radar_control(request)
+    store = hosted_market_store()
+    if not store:
+        raise HTTPException(409, "Hosted Market Radar storage is required")
+    return store.enrich_existing(MercadoLivreAdapter(), category=payload.category_id, limit=20)
+
+
 @router.get("/mercado-livre/auth/status")
 def mercado_livre_auth_status():
     settings = mercado_livre_auth_config()

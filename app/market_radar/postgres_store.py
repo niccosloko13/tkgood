@@ -95,6 +95,42 @@ class PostgresMarketStore:
             rows=cur.fetchall()
         return {"marketplace":"MERCADO_LIVRE","category":category,"source_window":"weekly","trends":[dict(item) for item in rows]}
 
+    def enrich_existing(self, adapter, *, category: str, limit: int = 20) -> dict:
+        """Re-read only official detail endpoints for persisted ranking identities."""
+        self.migrate()
+        with self._connect() as con, con.cursor(row_factory=psycopg.rows.dict_row) as cur:
+            cur.execute("""SELECT p.id,p.external_id,p.title,s.rank,s.evidence_json FROM market_radar_products p
+                JOIN market_radar_snapshots s ON s.product_id=p.id WHERE p.marketplace='MERCADO_LIVRE'
+                AND p.source_category=%s ORDER BY s.rank NULLS LAST LIMIT %s""", (category,min(max(1,limit),20)))
+            rows=cur.fetchall()
+        rankings=[]
+        for row in rows:
+            evidence=row["evidence_json"] if isinstance(row["evidence_json"],dict) else json.loads(row["evidence_json"])
+            rankings.append({"id":row["external_id"],"position":row["rank"],"type":evidence.get("ranking_type")})
+        resolved=adapter.resolve_rankings(rankings)
+        recovered=remaining=0; reasons={}
+        with self._connect() as con, con.cursor() as cur:
+            for row, ranking in zip(rows,rankings):
+                detail=resolved.get(ranking["id"]) or {}
+                title=detail.get("title") or detail.get("name")
+                pictures=detail.get("pictures") or []
+                image=detail.get("thumbnail") or detail.get("thumbnail_id")
+                if not image and pictures and isinstance(pictures[0],dict): image=pictures[0].get("secure_url") or pictures[0].get("url")
+                price=detail.get("price")
+                url=detail.get("permalink")
+                meaningful=bool(title or image or price is not None or url)
+                evidence=row["evidence_json"] if isinstance(row["evidence_json"],dict) else json.loads(row["evidence_json"])
+                evidence["detail_resolved"]=meaningful
+                evidence["detail_rechecked_at"]=_now()
+                if not meaningful:
+                    reason="USER_PRODUCT_FIELDS_UNAVAILABLE" if ranking.get("type")=="USER_PRODUCT" else "PRODUCT_FIELDS_UNAVAILABLE"
+                    evidence["detail_reason"]=reason; reasons[reason]=reasons.get(reason,0)+1; remaining+=1
+                else:
+                    evidence.pop("detail_reason",None); recovered+=1
+                cur.execute("UPDATE market_radar_products SET title=COALESCE(%s,title),image_url=COALESCE(%s,image_url),product_url=COALESCE(%s,product_url) WHERE id=%s",(title,image,url,row["id"]))
+                cur.execute("UPDATE market_radar_snapshots SET price=COALESCE(%s,price),currency=COALESCE(%s,currency),product_url=COALESCE(%s,product_url),evidence_json=%s::jsonb WHERE product_id=%s AND rank=%s",(price,detail.get("currency_id"),url,json.dumps(evidence,ensure_ascii=False),row["id"],row["rank"]))
+        return {"category":category,"checked":len(rows),"recovered":recovered,"remaining_partial":remaining,"reasons":reasons}
+
 
 def hosted_market_store() -> PostgresMarketStore | None:
     url=os.environ.get("OAUTH_DATABASE_URL")
