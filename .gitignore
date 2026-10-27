@@ -12,3 +12,6 @@ data/
 storage-state*.json
 .runtime/
 extension/dev_config.js
+
+.vercel
+.env*
