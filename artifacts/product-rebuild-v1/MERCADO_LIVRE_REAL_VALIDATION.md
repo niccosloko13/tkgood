@@ -27,30 +27,54 @@ Os snapshots, produtos, run record e tendências foram persistidos no Neon
 Postgres. A API V2 confirmou 20 itens no Top 20 e histórico disponível a partir
 da primeira observação. Como há apenas uma coleta, `history_complete=false`.
 
-## Top 5 oficial
+## Correção de detalhes (Etapa 8.2)
 
-Os cinco primeiros rankings foram retornados pela fonte, mas vieram entre os
-seis detalhes parciais. Portanto título, preço e link não foram inventados:
+O resolver de `PRODUCT` tratava o retorno oficial como resolvido, mas procurava
+somente `title`. Produtos de catálogo usam `name`, e não representam uma oferta
+individual: preço e permalink podem não existir. A normalização foi corrigida e
+os 20 registros persistidos foram reconsultados por endpoints oficiais, sem
+nova coleta de ranking.
 
-| Posição | Identidade da fonte | Nome/preço/link |
+- Recuperados: 14 de 20 (70%).
+- Permanecem parciais: 6 de 20 (30%).
+- Os seis são `USER_PRODUCT` e todos retornaram `HTTP 403` no endpoint oficial
+  `/user-products/{id}` para esta credencial.
+- Não houve 404, ID reinterpretado, preço ou URL inventados.
+
+### Cinco produtos com dados oficiais disponíveis
+
+| Posição | Produto | Preço/link |
 | --- | --- | --- |
-| 1 | `MLB26644010` | Dados de detalhe indisponíveis nesta captura |
-| 2 | `MLB60089412` | Dados de detalhe indisponíveis nesta captura |
-| 3 | `MLBU4780209752` | Dados de detalhe indisponíveis nesta captura |
-| 4 | `MLBU1968068328` | Dados de detalhe indisponíveis nesta captura |
-| 5 | `MLB54081467` | Dados de detalhe indisponíveis nesta captura |
+| 1 | Tesoura Supercort 8 Polegadas Tramontina | Não disponível no catálogo |
+| 2 | Kit 3 Tesouras de Aço Inox Multiuso | Não disponível no catálogo |
+| 5 | Tesoura de Cozinha Preta We Varejo | Não disponível no catálogo |
+| 6 | Tesoura Tramontina de Aço Inox 8 | Não disponível no catálogo |
+| 7 | Tesoura Profissional de Cozinha para Frango/Peixe | Não disponível no catálogo |
+
+### Falhas remanescentes
+
+`MLBU4780209752`, `MLBU1968068328`, `MLBU5065646851`, `MLBU4396956254`,
+`MLBU1446588474` e `MLBU4325935739`: `USER_PRODUCT_HTTP_403`.
+
+Esses IDs permanecem como User Products; não foram convertidos para ITEM e não
+foram usados endpoints de scraping ou caminhos não suportados.
 
 ## Refresh token
 
 O access token funciona, mas a resposta OAuth persistida não continha refresh
-token (`refresh_available=false`). O payload integral não é retido nem logado,
-logo não é possível atribuir uma causa com certeza sem reduzir a proteção de
-segredos. A documentação oficial indica que `offline_access` é necessário para
-refresh token e que uma troca por authorization code normalmente o devolve.
+token (`refresh_available=false`). A URL OAuth atual não solicita `scope`
+explicitamente; a concessão depende das permissões configuradas no DevCenter.
+Como o payload original não é retido nem logado, não é possível provar
+retroativamente se `offline_access` foi concedido nesta autorização.
 
-Antes da próxima autorização, verificar no Mercado Livre DevCenter se o app tem
-o escopo `offline_access` habilitado, além das permissões mínimas de leitura.
-Não foi feita nova autorização automática.
+A documentação oficial indica que o fluxo Authorization Code com
+`offline_access` retorna `refresh_token`. Assim, a hipótese operacional é
+escopo offline não habilitado/concedido, mas isso ainda não é uma certeza.
+
+Antes de uma próxima autorização, verificar no Mercado Livre DevCenter se o app
+tem o escopo `offline_access` habilitado junto de `read`, sem adicionar `write`.
+Se estiver ausente, salvar e solicitar uma nova autorização humana; não houve
+nova autorização automática nesta etapa.
 
 ## Endpoints validados
 
