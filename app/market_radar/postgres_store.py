@@ -84,6 +84,33 @@ class PostgresMarketStore:
         with self._connect() as con, con.cursor(row_factory=psycopg.rows.dict_row) as cur:
             cur.execute(query,params); rows=cur.fetchall()
         rows.sort(key=lambda item:(item["rank"] is None,item["rank"] or 999))
+        for item in rows:
+            evidence = item.get("evidence_json") or {}
+            if not isinstance(evidence, dict):
+                evidence = json.loads(evidence)
+            available = []
+            if item.get("title") and not str(item["title"]).startswith("Mercado Livre "):
+                available.append("title")
+            if item.get("image_url"):
+                available.append("image")
+            if item.get("price") is not None:
+                available.append("price")
+            if item.get("product_url"):
+                available.append("url")
+            reason = evidence.get("detail_reason")
+            if reason == "USER_PRODUCT_HTTP_403":
+                status, priority = "DETAILS_RESTRICTED", 2
+            elif set(("title", "image", "price", "url")).issubset(available):
+                status, priority = "DETAILS_AVAILABLE", 0
+            else:
+                status, priority = "DETAILS_PARTIAL", 1
+            # `rank` remains the official Top 20 order.  A future browsing UI
+            # may use this separate presentation hint to show rich entries first.
+            item["detail_status"] = status
+            item["available_detail_fields"] = available
+            item["missing_detail_fields"] = [field for field in ("title", "image", "price", "url") if field not in available]
+            item["detail_reason"] = reason
+            item["exploration_priority"] = priority
         first=min((item["first_seen_at"] for item in rows),default=None)
         return {"marketplace":"MERCADO_LIVRE","category":category,"limit":limit,"history_available_from":first.isoformat() if first else None,"history_complete":False,"products":[dict(item) for item in rows[:limit]]}
 

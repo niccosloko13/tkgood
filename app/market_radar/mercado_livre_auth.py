@@ -83,8 +83,39 @@ def start_authorization() -> dict:
             _pending[state] = verifier
     except OAuthStoreError as exc:
         raise MercadoLivreOAuthError("OAuth authorization state could not be stored") from exc
-    params = {"response_type": "code", "client_id": settings.client_id, "redirect_uri": settings.redirect_uri, "state": state, "code_challenge": challenge, "code_challenge_method": "S256"}
+    # Ask only for the two capabilities this read-only integration needs.  The
+    # grant remains subject to the permissions configured in Mercado Livre's
+    # DevCenter and to the account holder's manual consent.
+    params = {"response_type": "code", "client_id": settings.client_id, "redirect_uri": settings.redirect_uri,
+              "state": state, "code_challenge": challenge, "code_challenge_method": "S256",
+              "scope": "read offline_access"}
     return {"authorization_url": f"{AUTHORIZATION_URL}?{urlencode(params)}", "state": state}
+
+
+def authorization_grants_summary() -> dict:
+    """Return a safe, aggregate view of the official application grants.
+
+    Individual account identifiers and the raw OAuth payload stay server-side.
+    This is deliberately separate from token persistence so a grant can be
+    audited without exposing an access token to an API client.
+    """
+    settings = config()
+    if not settings.client_id or not settings.access_token:
+        raise MercadoLivreOAuthError("Mercado Livre authorization is required")
+    from .adapters.mercado_livre import MercadoLivreClient, MercadoLivreError
+    try:
+        payload = MercadoLivreClient(settings.access_token).get(f"/applications/{settings.client_id}/grants")
+    except MercadoLivreError as exc:
+        raise MercadoLivreOAuthError("Mercado Livre grants could not be read") from exc
+    grants = payload.get("grants") if isinstance(payload, dict) else None
+    if not isinstance(grants, list):
+        raise MercadoLivreOAuthError("Mercado Livre returned an invalid grants response")
+    scopes = sorted({str(scope) for grant in grants if isinstance(grant, dict)
+                     for scope in (grant.get("scopes") or []) if isinstance(scope, str)})
+    return {"grant_count": len(grants), "scopes": scopes,
+            "read_granted": "read" in scopes,
+            "offline_access_granted": "offline_access" in scopes,
+            "write_granted": "write" in scopes}
 
 
 def _post_form(values: dict[str, str]) -> dict:

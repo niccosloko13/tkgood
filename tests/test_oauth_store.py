@@ -72,6 +72,30 @@ def test_durable_state_is_single_use_and_refresh_delegates_to_atomic_store(monke
     assert store.saved["refresh_token"] == "rotated"
 
 
+def test_authorization_requests_read_and_offline_access_without_write(monkeypatch):
+    store = _Store()
+    monkeypatch.setattr(oauth, "configured_store", lambda: store)
+    monkeypatch.setenv("MERCADO_LIVRE_CLIENT_ID", "client")
+    monkeypatch.setenv("MERCADO_LIVRE_CLIENT_SECRET", "secret")
+    monkeypatch.setenv("MERCADO_LIVRE_REDIRECT_URI", "https://example.test/callback")
+    url = oauth.start_authorization()["authorization_url"]
+    assert "scope=read+offline_access" in url
+    assert "write" not in url
+
+
+def test_grants_summary_redacts_accounts_and_reports_only_scope_flags(monkeypatch):
+    monkeypatch.setattr(oauth, "config", lambda: oauth.OAuthConfig("app", "secret", "https://callback", "access", None))
+    class Client:
+        def __init__(self, token): assert token == "access"
+        def get(self, path):
+            assert path == "/applications/app/grants"
+            return {"grants": [{"user_id": 123, "scopes": ["read", "offline_access"]}]}
+    monkeypatch.setattr("app.market_radar.adapters.mercado_livre.MercadoLivreClient", Client)
+    result = oauth.authorization_grants_summary()
+    assert result == {"grant_count": 1, "scopes": ["offline_access", "read"], "read_granted": True,
+                      "offline_access_granted": True, "write_granted": False}
+
+
 def test_hosted_control_actions_require_a_server_only_secret(monkeypatch):
     monkeypatch.setenv("VERCEL", "1")
     monkeypatch.setenv("BABI_MARKET_RADAR_CONTROL_TOKEN", "operator-secret")

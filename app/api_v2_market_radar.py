@@ -13,7 +13,7 @@ from .market_radar.adapters.mercado_livre import MercadoLivreAdapter, MercadoLiv
 from .market_radar.postgres_store import hosted_market_store
 from .market_radar.mercado_livre_auth import (MercadoLivreOAuthError, config as mercado_livre_auth_config,
                                                exchange_code, refresh_mercado_livre_token, start_authorization,
-                                               storage_mode)
+                                               storage_mode, authorization_grants_summary)
 
 
 router = APIRouter(prefix="/api/v2/market-radar")
@@ -127,6 +127,16 @@ def mercado_livre_auth_start(request: Request):
         return start_authorization()
     except MercadoLivreOAuthError as exc:
         raise HTTPException(409, "Mercado Livre authorization configuration is required") from exc
+
+
+@router.get("/mercado-livre/auth/grants")
+def mercado_livre_auth_grants(request: Request):
+    """Operator-only, sanitized grant audit; never returns tokens or user IDs."""
+    _require_market_radar_control(request)
+    try:
+        return authorization_grants_summary()
+    except MercadoLivreOAuthError as exc:
+        raise HTTPException(409, "Mercado Livre grants are unavailable") from exc
 
 
 @router.get("/mercado-livre/auth/callback")

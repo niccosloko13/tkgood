@@ -53,7 +53,9 @@ class PostgresOAuthStore:
     def migrate(self) -> None:
         with self._connect() as con, con.cursor() as cur:
             cur.execute("CREATE TABLE IF NOT EXISTS market_oauth_transactions (state_hash TEXT PRIMARY KEY, verifier_ciphertext BYTEA NOT NULL, expires_at TIMESTAMPTZ NOT NULL, consumed_at TIMESTAMPTZ)")
-            cur.execute("CREATE TABLE IF NOT EXISTS market_oauth_credentials (provider TEXT PRIMARY KEY, access_token_ciphertext BYTEA NOT NULL, refresh_token_ciphertext BYTEA, issued_at TIMESTAMPTZ NOT NULL, expires_at TIMESTAMPTZ, updated_at TIMESTAMPTZ NOT NULL)")
+            cur.execute("CREATE TABLE IF NOT EXISTS market_oauth_credentials (provider TEXT PRIMARY KEY, access_token_ciphertext BYTEA NOT NULL, refresh_token_ciphertext BYTEA, refresh_token_received BOOLEAN NOT NULL DEFAULT FALSE, issued_at TIMESTAMPTZ NOT NULL, expires_at TIMESTAMPTZ, updated_at TIMESTAMPTZ NOT NULL)")
+            # Existing hosted installations predate the receipt marker.
+            cur.execute("ALTER TABLE market_oauth_credentials ADD COLUMN IF NOT EXISTS refresh_token_received BOOLEAN NOT NULL DEFAULT FALSE")
 
     @staticmethod
     def _state_hash(state: str) -> str:
@@ -88,8 +90,10 @@ class PostgresOAuthStore:
             raise OAuthStoreError("Mercado Livre response has no access token")
         issued = _now(); seconds = int(payload.get("expires_in") or 0); expires = issued + timedelta(seconds=seconds) if seconds else None
         with self._connect() as con, con.cursor() as cur:
-            cur.execute("INSERT INTO market_oauth_credentials(provider,access_token_ciphertext,refresh_token_ciphertext,issued_at,expires_at,updated_at) VALUES ('mercado_livre',%s,%s,%s,%s,%s) ON CONFLICT(provider) DO UPDATE SET access_token_ciphertext=EXCLUDED.access_token_ciphertext,refresh_token_ciphertext=COALESCE(EXCLUDED.refresh_token_ciphertext,market_oauth_credentials.refresh_token_ciphertext),issued_at=EXCLUDED.issued_at,expires_at=EXCLUDED.expires_at,updated_at=EXCLUDED.updated_at", (self.crypto.encrypt(access), self.crypto.encrypt(refresh) if isinstance(refresh, str) and refresh else None, issued, expires, issued))
-        return {"issued_at": issued.isoformat(), "expires_in": seconds, "expires_at": expires.isoformat() if expires else None}
+            refresh_received = isinstance(refresh, str) and bool(refresh)
+            cur.execute("INSERT INTO market_oauth_credentials(provider,access_token_ciphertext,refresh_token_ciphertext,refresh_token_received,issued_at,expires_at,updated_at) VALUES ('mercado_livre',%s,%s,%s,%s,%s,%s) ON CONFLICT(provider) DO UPDATE SET access_token_ciphertext=EXCLUDED.access_token_ciphertext,refresh_token_ciphertext=COALESCE(EXCLUDED.refresh_token_ciphertext,market_oauth_credentials.refresh_token_ciphertext),refresh_token_received=EXCLUDED.refresh_token_received,issued_at=EXCLUDED.issued_at,expires_at=EXCLUDED.expires_at,updated_at=EXCLUDED.updated_at", (self.crypto.encrypt(access), self.crypto.encrypt(refresh) if refresh_received else None, refresh_received, issued, expires, issued))
+        return {"issued_at": issued.isoformat(), "expires_in": seconds, "expires_at": expires.isoformat() if expires else None,
+                "refresh_token_received": refresh_received}
 
     def refresh_atomically(self, exchange: Callable[[str], dict]) -> dict:
         self.migrate()
@@ -104,7 +108,8 @@ class PostgresOAuthStore:
                 raise OAuthStoreError("Mercado Livre response has no access token")
             issued = _now(); seconds = int(payload.get("expires_in") or 0); expires = issued + timedelta(seconds=seconds) if seconds else None
             cur.execute("UPDATE market_oauth_credentials SET access_token_ciphertext=%s,refresh_token_ciphertext=COALESCE(%s,refresh_token_ciphertext),issued_at=%s,expires_at=%s,updated_at=%s WHERE provider='mercado_livre'", (self.crypto.encrypt(access), self.crypto.encrypt(refresh) if isinstance(refresh, str) and refresh else None, issued, expires, issued))
-        return {"issued_at": issued.isoformat(), "expires_in": seconds, "expires_at": expires.isoformat() if expires else None}
+        return {"issued_at": issued.isoformat(), "expires_in": seconds, "expires_at": expires.isoformat() if expires else None,
+                "refresh_token_received": isinstance(refresh, str) and bool(refresh)}
 
 
 def configured_store() -> PostgresOAuthStore | None:
