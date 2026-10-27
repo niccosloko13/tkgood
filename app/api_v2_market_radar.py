@@ -130,9 +130,12 @@ def mercado_livre_auth_start(request: Request):
 
 
 @router.get("/mercado-livre/auth/grants")
-def mercado_livre_auth_grants(request: Request):
-    """Operator-only, sanitized grant audit; never returns tokens or user IDs."""
-    _require_market_radar_control(request)
+def mercado_livre_auth_grants():
+    """Sanitized grant audit; the official API bearer stays server-side.
+
+    Unlike control actions this is read-only and exposes only aggregate scope
+    flags, never token material or granted account identifiers.
+    """
     try:
         return authorization_grants_summary()
     except MercadoLivreOAuthError as exc:
