@@ -146,6 +146,8 @@ def init_db():
         migrate_viral_products_mission(con)
         from .recency_intelligence import migrate as migrate_recency_intelligence
         migrate_recency_intelligence(con)
+        from .market_radar.repository import migrate as migrate_market_radar
+        migrate_market_radar(con)
         con.execute("UPDATE discovery_sessions SET status='FAILED',stop_reason='error',stop_detail='Legacy paused command retired; start a new operation' WHERE status='WAITING_FOR_VISIBLE_BROWSER'")
 
 

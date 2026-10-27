@@ -52,6 +52,18 @@ from .visual_identification_api import router as visual_identification_router
 app.include_router(visual_identification_router)
 from .intelligence_api import router as intelligence_router
 app.include_router(intelligence_router)
+from .api_v2 import router as api_v2_router
+app.include_router(api_v2_router)
+from .api_v2_discovery import router as api_v2_discovery_router
+app.include_router(api_v2_discovery_router)
+from .api_v2_opportunities import router as api_v2_opportunities_router
+app.include_router(api_v2_opportunities_router)
+from .api_v2_library import router as api_v2_library_router
+app.include_router(api_v2_library_router)
+from .api_v2_system import router as api_v2_system_router
+app.include_router(api_v2_system_router)
+from .api_v2_market_radar import router as api_v2_market_radar_router
+app.include_router(api_v2_market_radar_router)
 
 @app.get('/assets/visual-identification.js')
 def visual_identification_script():

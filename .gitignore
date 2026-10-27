@@ -2,11 +2,13 @@
 node_modules/
 __pycache__/
 *.pyc
+*.tsbuildinfo
 .env
 browser-profiles/
 data/
 *.db
 *.auth.json
+*.pem
 storage-state*.json
 .runtime/
 extension/dev_config.js
