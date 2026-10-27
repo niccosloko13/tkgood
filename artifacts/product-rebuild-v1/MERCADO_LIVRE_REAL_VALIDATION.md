@@ -82,3 +82,54 @@ nova autorização automática nesta etapa.
 - `GET /api/v2/market-radar/mercado-livre/trends?category=MLB432600`
 
 Nenhum fluxo TikTok, Safety ou AliExpress foi acionado.
+
+## Fechamento de integraÃ§Ã£o (Etapa 8.3)
+
+### Grant e renovaÃ§Ã£o OAuth
+
+Em 27/10/2026, o runtime hospedado consultou o recurso oficial
+`GET /applications/{APP_ID}/grants` usando o bearer armazenado somente no
+servidor. A resposta foi reduzida antes de sair do servidor: nenhum token e
+nenhum identificador de usuÃ¡rio foram retornados ou registrados.
+
+- Grants encontrados: 1.
+- `read`: concedido.
+- `offline_access`: **nÃ£o concedido**.
+- `write`: consta no grant existente, embora a Babi nÃ£o o use nem o solicite.
+
+Isso fornece a causa operacional para `refresh_available=false`: sem
+`offline_access`, a API nÃ£o tem obrigaÃ§Ã£o de retornar `refresh_token`. O parser
+jÃ¡ aceita e persiste o campo quando ele existe, mas o payload histÃ³rico bruto
+nÃ£o Ã© retido por design; portanto nÃ£o Ã© possÃ­vel reproduzir sua ausÃªncia
+retroativamente. A persistÃªncia agora registra, sem guardar o token, se uma
+prÃ³xima resposta trouxe `refresh_token`.
+
+**AÃ§Ã£o manual necessÃ¡ria no DevCenter antes de uma nova autorizaÃ§Ã£o:** deixar o
+app no modo de somente leitura, habilitar/conceder `offline_access` junto de
+`read` e revisar/remover permissÃµes de escrita que nÃ£o sejam necessÃ¡rias. Depois
+disso, uma nova autorizaÃ§Ã£o humana deve ser iniciada manualmente. A URL OAuth
+agora solicita explicitamente `scope=read offline_access` e nunca solicita
+`write`; esta etapa nÃ£o iniciou uma nova autorizaÃ§Ã£o.
+
+### Estados de detalhe comercial
+
+Os 20 rankings oficiais permanecem preservados na ordem da fonte. A API de Top
+20 agora expÃµe, separadamente da posiÃ§Ã£o oficial, os campos
+`detail_status`, campos disponÃ­veis/ausentes e `exploration_priority`, para que
+uma UI futura possa priorizar conteÃºdo rico sem reordenar o ranking Mercado
+Livre.
+
+| Estado | Quantidade | EvidÃªncia real |
+| --- | ---: | --- |
+| `DETAILS_AVAILABLE` | 0 | exigiria nome, imagem, preÃ§o e URL oficiais |
+| `DETAILS_PARTIAL` | 14 | nome e imagem de catÃ¡logo; preÃ§o e URL indisponÃ­veis |
+| `DETAILS_RESTRICTED` | 6 | `USER_PRODUCT_HTTP_403` no endpoint oficial |
+
+O `HTTP 403` dos seis User Products Ã© classificado como detalhe restrito; a
+causa precisa (escopo, titularidade, polÃ­tica do recurso ou outra restriÃ§Ã£o da
+API) continua nÃ£o confirmada. NÃ£o houve tentativa de contorno, scraping ou
+reinterpretaÃ§Ã£o desses IDs como ITEM.
+
+O Top 20 hospedado foi validado depois da alteraÃ§Ã£o: as primeiras entradas
+recuperadas tÃªm nome e imagem, mas continuam sem preÃ§o/permalink. Portanto
+"nome recuperado" nÃ£o Ã© tratado como "produto comercial completo".
