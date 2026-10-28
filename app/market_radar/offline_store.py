@@ -52,10 +52,14 @@ class MarketImportStore:
             cur.execute("CREATE INDEX IF NOT EXISTS market_radar_offline_import_time_idx ON market_radar_offline_imports(imported_at DESC)")
 
     def save(self, observations: list[MarketplaceProductObservation], *, source_kind: str) -> str:
-        if source_kind not in {"IMPORTED_FILE", "FIXTURE"} or len(observations) > 20:
+        if source_kind not in {"IMPORTED_FILE", "FIXTURE"} or not 1 <= len(observations) <= 20:
             raise ValueError("Invalid import batch")
         if any(item.product.marketplace.value not in {"SHOPEE", "ALIEXPRESS"} for item in observations):
             raise ValueError("Only Shopee and AliExpress offline imports are accepted")
+        if len({item.product.marketplace.value for item in observations}) != 1:
+            raise ValueError("One marketplace per import batch")
+        if any(item.rank is not None for item in observations):
+            raise ValueError("Offline import cannot contain official ranks")
         if len({(item.product.marketplace.value, item.product.external_id) for item in observations}) != len(observations):
             raise ValueError("Duplicate product in import batch")
         batch_id = str(uuid.uuid4())
@@ -63,7 +67,7 @@ class MarketImportStore:
         with self._connection() as con, con.cursor() as cur:
             cur.execute(
                 "INSERT INTO market_radar_offline_imports (id,marketplace,imported_at,product_count,source_kind) VALUES (%s,%s,%s,%s,%s)",
-                (batch_id, observations[0].product.marketplace.value if observations else "SHOPEE",
+                (batch_id, observations[0].product.marketplace.value,
                  datetime.now(timezone.utc), len(observations), source_kind),
             )
             for observation in observations:
