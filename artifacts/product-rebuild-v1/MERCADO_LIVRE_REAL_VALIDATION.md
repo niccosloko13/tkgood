@@ -133,3 +133,22 @@ reinterpretaÃ§Ã£o desses IDs como ITEM.
 O Top 20 hospedado foi validado depois da alteraÃ§Ã£o: as primeiras entradas
 recuperadas tÃªm nome e imagem, mas continuam sem preÃ§o/permalink. Portanto
 "nome recuperado" nÃ£o Ã© tratado como "produto comercial completo".
+
+## Encerramento operacional
+
+ApÃ³s nova autorizaÃ§Ã£o humana, a validaÃ§Ã£o passiva hospedada confirmou:
+
+- `read=true` e `offline_access=true` no grant oficial;
+- `refresh_available=true` e armazenamento `postgres_encrypted`;
+- probe `/users/me` com `site_id=MLB`;
+- Top 20 (20 rankings) e tendÃªncias semanais anteriormente persistidas
+  acessÃ­veis sem nova coleta;
+- os seis `USER_PRODUCT_HTTP_403` ainda classificados como
+  `DETAILS_RESTRICTED`, sem nova tentativa de detalhe ou contorno.
+
+O fluxo de refresh nÃ£o foi forÃ§ado: o access token atual continua vÃ¡lido. A
+implementaÃ§Ã£o delega a troca para uma transaÃ§Ã£o no Postgres com bloqueio de
+linha (`FOR UPDATE`) e substitui access/refresh de forma atÃ´mica; o teste de
+OAuth cobre a delegaÃ§Ã£o para esse caminho atÃ´mico e a rotaÃ§Ã£o do refresh
+retornado. Nenhum segredo foi versionado (varredura de arquivos rastreados
+concluÃ­da).
