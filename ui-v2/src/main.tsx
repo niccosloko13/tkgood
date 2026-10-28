@@ -115,6 +115,7 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
       <section className="market-controls"><div className="market-filter"><label>Categoria<select value={category || ''} onChange={event => setCategory(event.target.value || null)}><option value="">Todas as categorias observadas</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label><label>Período<select value={period} onChange={event => setPeriod(event.target.value)}>{['1d','3d','7d','15d','30d','60d','90d'].map(item => <option key={item} value={item}>{marketPeriodLabel(item)}</option>)}</select></label><button onClick={() => void applyFilters()} disabled={filterLoading}>{filterLoading ? 'Atualizando…' : 'Aplicar filtros'}</button></div><div className="market-view-toggle" aria-label="Visualização"><button className={view === 'grid' ? 'active' : ''} aria-pressed={view === 'grid'} onClick={() => setView('grid')}>Grade</button><button className={view === 'list' ? 'active' : ''} aria-pressed={view === 'list'} onClick={() => setView('list')}>Lista</button></div></section>
       {filterError && <p className="action-error">Não foi possível atualizar os filtros. Os dados anteriores continuam visíveis.</p>}
       {history.availableFrom && <p className="market-history-note">Histórico observado pela Babi desde {formatDetectedAt(history.availableFrom).replace('Detectado pela Babi ', '')}.{history.complete ? ' A janela selecionada está completa.' : ' A janela selecionada ainda está em construção.'}</p>}
+      <VerifiedSalesWindow category={category} />
       <SectionTitle eyebrow="RANKING OFICIAL" title="Produtos mais vendidos" />
       {products.length ? <section className={`market-products ${view}`} aria-label="Produtos do ranking">{products.slice(0, 20).map(item => <MarketProductCard key={item.external_id} item={item} view={view} onSelect={() => setSelected(item)} />)}</section> : <section className="state-card empty-state"><h3>Ainda não há produtos observados nesta seleção.</h3><p>Nenhuma coleta é iniciada automaticamente por esta página.</p></section>}
       <SectionTitle eyebrow="TENDÊNCIAS DE BUSCA" title="O que as pessoas estão pesquisando" />
@@ -122,6 +123,54 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
     </>}
     {selected && <MarketProductDrawer item={selected} history={history} onClose={() => setSelected(null)} />}
   </>;
+}
+
+function VerifiedSalesWindow({category}:{category:string|null}) {
+  type Entry = {external_id:string;title:string;source_category:string|null;rank:number|null;price:number|null;currency:string|null;observed_at:string;product_url:string|null;image_url:string|null;units_sold_in_window:number|null;visits_in_window:number|null};
+  type Payload = {products:Entry[];observation_count:number;window_hours:number;complete_window:boolean;notice:string};
+  const [hours,setHours]=useState('48');
+  const [sort,setSort]=useState('ranking');
+  const [top,setTop]=useState('');
+  const [result,setResult]=useState<Payload|null>(null);
+  const [loading,setLoading]=useState(false);
+  const [error,setError]=useState(false);
+  useEffect(()=>{
+    let active=true;
+    setLoading(true);setError(false);setResult(null);
+    const params=new URLSearchParams({hours,sort});
+    if(category) params.set('category',category);
+    if(top) params.set('top',top);
+    fetch('/api/v2/market-radar/sales-window?'+params,{headers:{Accept:'application/json'}})
+      .then(async response=>{if(!response.ok)throw new Error('unavailable');return response.json() as Promise<Payload>;})
+      .then(value=>{if(active)setResult(value);})
+      .catch(()=>{if(active)setError(true);})
+      .finally(()=>{if(active)setLoading(false);});
+    return ()=>{active=false;};
+  },[hours,sort,top,category]);
+  return <section className="market-unavailable" aria-label="Janela observada de mais vendidos">
+    <h3>Mais vendidos observados · 48 horas / semanas</h3>
+    <p>Posições do ranking oficial observadas pela Babi no período escolhido. Não são quantidades de vendas. Sem autorização para unidades vendidas ou visitas de concorrentes, os valores aparecem indisponíveis.</p>
+    <div className="market-controls"><div className="market-filter">
+      <label>Janela<select value={hours} onChange={event=>setHours(event.target.value)}><option value="48">Últimas 48 horas</option><option value="168">Últimos 7 dias</option><option value="720">Últimos 30 dias</option></select></label>
+      <label>Ordenar<select value={sort} onChange={event=>setSort(event.target.value)}><option value="ranking">Posição no ranking</option><option value="recent">Mais recente</option><option value="price_low">Menor preço disponível</option><option value="price_high">Maior preço disponível</option></select></label>
+      <label>Filtro<select value={top} onChange={event=>setTop(event.target.value)}><option value="">Todas as posições</option><option value="5">Top 5</option><option value="10">Top 10</option><option value="20">Top 20</option></select></label>
+    </div></div>
+    {loading?<p>Consultando observações…</p>:error?<p>Falha na consulta das observações.</p>:!result?<p>Sem dados.</p>:<>
+      <p>{result.observation_count} produtos observados na janela selecionada. Histórico completo: {result.complete_window?'Sim':'Ainda não comprovado'}.</p>
+      <div className="market-products grid">{result.products.map(item=><article className="market-product-card" key={item.external_id+'-'+item.source_category}>
+        <div className="market-product-main">
+        {item.image_url&&<img src={item.image_url} alt="" loading="lazy" style={{maxWidth:'100%',maxHeight:110,objectFit:'contain'}}/>}
+        <span className="market-rank">{item.rank?'#'+item.rank+' no ranking':'Sem posição'}</span>
+        <h3>{item.title}</h3><small>{item.source_category||'Categoria não informada'}</small>
+        <p>{item.price!==null&&item.currency?formatCurrency(item.price,item.currency):'Preço indisponível'}</p>
+        <small>Vendas em {hours==='48'?'48h':hours==='168'?'7 dias':'30 dias'}: indisponível · Visitas: indisponível</small>
+        <small>Observado: {formatDetectedAt(item.observed_at)}</small>
+        {item.product_url&&<a href={item.product_url} target="_blank" rel="noreferrer">Ver produto na fonte</a>}
+        </div>
+      </article>)}</div>
+      {result.products.length===0&&<p>Não há observações comprovadas nesta janela. Nenhum número foi estimado.</p>}
+    </>}
+  </section>;
 }
 
 function ImportedMarketProducts({marketplace}: {marketplace: 'SHOPEE' | 'ALIEXPRESS'}) {
