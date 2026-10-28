@@ -96,7 +96,7 @@ def library(page: int = Query(1, ge=1), page_size: int = Query(25, ge=1, le=50),
     if sort not in {"recent", "oldest", "views", "complete"}:
         raise HTTPException(422, "Ordenação inválida")
     import os
-    if os.environ.get('VERCEL') and os.environ.get('OAUTH_DATABASE_URL'):
+    if os.environ.get('VERCEL') and os.environ.get('OAUTH_DATABASE_URL') and os.environ.get('BABI_TIKTOK_NEON_READS') == '1':
         from .tiktok_neon_mirror import read_library
         return read_library(page=page, page_size=page_size, text=text, quality=quality,
                             identified=identified, query=query, creator=creator, sort=sort, candidate_id=candidate_id)
@@ -107,7 +107,7 @@ def library(page: int = Query(1, ge=1), page_size: int = Query(25, ge=1, le=50),
 @router.get("/library/{video_id}")
 def library_detail(video_id: str):
     import os
-    if os.environ.get("VERCEL") and os.environ.get("OAUTH_DATABASE_URL"):
+    if os.environ.get("VERCEL") and os.environ.get("OAUTH_DATABASE_URL") and os.environ.get("BABI_TIKTOK_NEON_READS") == "1":
         from .tiktok_neon_mirror import read_library
         # Mirror is a dedicated view; it does not contain historical
         # appearances until a subsequent audited migration.
