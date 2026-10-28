@@ -8,14 +8,16 @@ from datetime import datetime,timezone
 from urllib import request,error
 from app.market_radar.commercial_metrics import hosted_commercial_store,nexscope_shopee_rows
 
-URL="https://api.nexscope.ai/api/skill-api/v1/skills/shopee-product-search/run"
+URL="https://api.nexscope.ai/yy/shopee/getProductInfos"
 
 def run(*, keyword:str="", page_size:int=10, dry_run:bool=False)->dict:
     if not 1<=page_size<=20:raise ValueError("Maximum 20 products per request")
     token=os.environ.get("NEXSCOPE_API_KEY")
     if not token or len(token)<12:raise RuntimeError("NEXSCOPE_API_KEY is not configured")
     args={"station":"BR","page":1,"pageSize":page_size,"orderBy":"sold","orderByType":"DESC"}
-    if keyword:args["keyword"]=keyword[:100]
+    if keyword:
+        args["keyword"]=keyword[:100]
+        args["keywordType"]=2
     req=request.Request(URL,data=json.dumps(args).encode(),method="POST",
           headers={"Authorization":"Bearer "+token,"Content-Type":"application/json"})
     with request.urlopen(req,timeout=35) as resp:
