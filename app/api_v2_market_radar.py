@@ -113,7 +113,7 @@ def market_sales_window(
     marketplace: Literal["MERCADO_LIVRE"] = "MERCADO_LIVRE",
     category: str | None = None,
     hours: Literal[48, 168, 720] = 48,
-    sort: Literal["ranking", "recent", "price_low", "price_high"] = "ranking",
+    sort: Literal["ranking", "recent", "price_low", "price_high", "rising"] = "ranking",
     top: int | None = Query(None, ge=1, le=20),
 ):
     """Official best-seller observations; NOT measured sales or visit counts."""
