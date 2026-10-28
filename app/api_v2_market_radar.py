@@ -108,6 +108,21 @@ def _with_period(payload: dict, period: str) -> dict:
 
 
 
+@router.get("/commercial-ranking")
+def commercial_ranking(
+    marketplace: Literal["SHOPEE","ALIEXPRESS","MERCADO_LIVRE","TIKTOK_SHOP"] = "SHOPEE",
+    metric: Literal["sold_30d","estimated_sold_30d","historical_sold","views_total","revenue_30d"] = "sold_30d",
+    limit: int = Query(20, ge=1, le=50),
+):
+    """Verified provider-origin metrics, isolated from official ML bestseller ranking."""
+    from .market_radar.commercial_metrics import hosted_commercial_store
+    store=hosted_commercial_store()
+    if not store:
+        return {"marketplace":marketplace,"metric":metric,"products":[],"total":0,
+                "observed_not_live":True,"note":"Neon commercial metrics not configured"}
+    return store.ranking(marketplace=marketplace,metric=metric,limit=limit)
+
+
 @router.get("/sales-window")
 def market_sales_window(
     marketplace: Literal["MERCADO_LIVRE"] = "MERCADO_LIVRE",
