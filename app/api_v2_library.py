@@ -95,6 +95,11 @@ def library(page: int = Query(1, ge=1), page_size: int = Query(25, ge=1, le=50),
             creator: str | None = None, sort: str = "recent", candidate_id: str | None = None):
     if sort not in {"recent", "oldest", "views", "complete"}:
         raise HTTPException(422, "Ordenação inválida")
+    import os
+    if os.environ.get('VERCEL') and os.environ.get('OAUTH_DATABASE_URL'):
+        from .tiktok_neon_mirror import read_library
+        return read_library(page=page, page_size=page_size, text=text, quality=quality,
+                            identified=identified, query=query, creator=creator, sort=sort, candidate_id=candidate_id)
     with connect() as con:
         return library_read_model(con, page, page_size, text, quality, identified, query, creator, sort, candidate_id)
 
