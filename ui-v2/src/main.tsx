@@ -10,6 +10,28 @@ const navigation: Array<{page: Page; icon: string}> = [
   {page: 'Visão geral', icon: '⌂'}, {page: 'Descobrir', icon: '⌕'}, {page: 'Oportunidades', icon: '✦'}, {page: 'Biblioteca', icon: '▤'}, {page: 'Market Radar', icon: '◉'}, {page: 'Sistema', icon: '⚙'},
 ];
 
+function TikTokConnection() {
+  type Status = {configured:boolean;connected:boolean;scope:string|null;token_expired?:boolean;collector_session_shared:boolean};
+  const [status,setStatus]=useState<Status|null>(null);
+  const [error,setError]=useState(false);
+  useEffect(()=>{let active=true;fetch('/api/v2/tiktok-connect/status',{credentials:'same-origin'})
+    .then(async r=>{if(!r.ok)throw Error('status unavailable');return r.json() as Promise<Status>})
+    .then(value=>{if(active)setStatus(value)}).catch(()=>{if(active)setError(true)});
+    return()=>{active=false}},[]);
+  const reconnect=()=>{window.location.assign('/api/v2/tiktok-connect/start')};
+  return <section className="state-card" aria-label="Conectar conta TikTok">
+    <p className="eyebrow">CONEXÃO TIKTOK</p>
+    <h2>{status?.connected?'TikTok conectado':'Conectar TikTok com segurança'}</h2>
+    <p>Você autoriza diretamente no TikTok. A Babi nunca solicita sua senha. A conexão oficial permite apenas os dados aprovados por você; não transfere a sessão do aplicativo para o coletor Chrome.</p>
+    {!status&&!error?<p>Verificando conexão…</p>:error?<p>Não foi possível consultar a conexão.</p>:status?.connected?<div>
+      <p>Conta autorizada · {status.scope||'Escopo não informado'}{status.token_expired?' · Token precisa ser renovado':''}</p>
+      <button onClick={reconnect}>Autorizar novamente</button>
+      <form method="post" action="/api/v2/tiktok-connect/disconnect"><button type="submit" className="secondary">Desconectar deste navegador</button></form>
+    </div>:status?.configured?<button onClick={reconnect}>Continuar com TikTok</button>:<p>Login oficial aguardando configuração do aplicativo TikTok Developers.</p>}
+    <small>Para a descoberta com Chrome, a sessão é separada e permanece no computador coletor. Não armazenamos cookies nem senhas do TikTok no Neon.</small>
+  </section>;
+}
+
 function App() {
   const [page, setPage] = useState<Page>('Visão geral');
   const [home, setHome] = useState<HomeData | null>(null);
@@ -50,6 +72,7 @@ function App() {
     <aside className="desktop-sidebar"><div className="brand">babi<span>.</span></div><p>Inteligência de produto</p><nav aria-label="Navegação principal">{navigation.map(item => <NavButton key={item.page} item={item} active={page === item.page} onClick={() => navigate(item.page)} />)}</nav><small>Pesquisa segura</small></aside>
     <main><header className="app-header"><div><div className="mobile-brand">babi<span>.</span></div><p className="eyebrow">{page}</p><h1>{page === 'Visão geral' ? 'O que merece sua atenção?' : page}</h1><p className="sub">Sinais claros para você decidir o próximo passo.</p></div><button className="mobile-more" aria-label="Abrir menu" aria-expanded={moreOpen} onClick={() => setMoreOpen(value => !value)}>•••</button></header>
       {moreOpen && <div className="more-menu"><button onClick={() => navigate('Market Radar')}>Market Radar</button><button onClick={() => navigate('Sistema')}>Sistema</button></div>}
+      {page === 'Sistema' && <TikTokConnection />}
       {page === 'Visão geral' ? <Home data={home} loading={loading} error={error} retry={loadHome} go={navigate} /> : page === 'Descobrir' ? <Discover data={discovery} loading={discoveryLoading} error={discoveryError} retry={loadDiscovery} go={navigate} /> : page === 'Oportunidades' ? <Opportunities data={opportunities} loading={opportunitiesLoading} error={opportunitiesError} retry={loadOpportunities} openEvidence={openLibraryForCandidate} /> : page === 'Market Radar' ? <MarketRadar data={marketRadar} loading={marketRadarLoading} error={marketRadarError} retry={loadMarketRadar} /> : page === 'Biblioteca' ? <Library data={library} loading={libraryLoading} error={libraryError} load={loadLibrary} go={navigate} /> : page === 'Sistema' ? <System data={system} loading={systemLoading} error={systemError} retry={loadSystem} /> : <Skeleton page={page} />}
     </main><MobileNav page={page} go={navigate} moreOpen={moreOpen} setMoreOpen={setMoreOpen} />
   </div>;
