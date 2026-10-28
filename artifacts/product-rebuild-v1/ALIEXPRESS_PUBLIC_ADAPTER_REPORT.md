@@ -55,10 +55,10 @@ executados para confirmar que o bloqueio de escopo nÃ£o introduziu regressÃ£
 
 ## ReferÃªncias
 
-- AliExpress Terms of Use, restriÃ§Ã£o de recuperaÃ§Ã£o sistemÃ¡tica: 
+- AliExpress Terms of Use, restriÃ§Ã£o de recuperaÃ§Ã£o sistemÃ¡tica:
   <https://terms.alicdn.com/legal-agreement/terms/suit_bu1_aliexpress/suit_bu1_aliexpress202204182115_66077.html>
-- AliExpress Open Platform, cadastro/aprovaÃ§Ã£o: 
+- AliExpress Open Platform, cadastro/aprovaÃ§Ã£o:
   <https://developer.alibaba.com/docs/doc.htm?articleId=120673&docType=1&treeId=727>
 - Affiliate Product Query: <https://developer.alibaba.com/docs/api.htm?apiId=45803>
-- Seller authorization: 
+- Seller authorization:
   <https://developer.alibaba.com/docs/doc.htm?articleId=120677&docType=1&source=search&treeId=727>
