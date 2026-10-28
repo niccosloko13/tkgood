@@ -58,6 +58,18 @@ def test_market_radar_overview_handles_unconfigured_storage_without_collecting(m
     assert result["sources"][0]["status"] == "AGUARDANDO_AUTORIZACAO"
 
 
+def test_market_radar_category_tree_requires_control_and_returns_sanitized_categories(monkeypatch):
+    class Client:
+        def get(self, path):
+            assert path == "/categories/MLB1"
+            return {"id": "MLB1", "name": "Casa", "children_categories": [{"id": "MLB2", "name": "Folha"}]}
+
+    monkeypatch.setattr(api_v2_market_radar, "_require_market_radar_control", lambda request: None)
+    monkeypatch.setattr(api_v2_market_radar, "MercadoLivreAdapter", lambda: SimpleNamespace(client=Client()))
+    result = api_v2_market_radar.mercado_livre_categories(SimpleNamespace(), "MLB1")
+    assert result == {"parent": {"id": "MLB1", "name": "Casa", "is_leaf": False}, "categories": [{"id": "MLB2", "name": "Folha", "is_leaf": False}]}
+
+
 def test_home_read_model_is_empty_and_read_only():
     con = database()
     before = con.total_changes

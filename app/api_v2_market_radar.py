@@ -134,6 +134,26 @@ def collect_mercado_livre(payload: MercadoLivreCollectionRequest, request: Reque
                                           collect_trends=payload.collect_trends)
 
 
+@router.get("/mercado-livre/categories")
+def mercado_livre_categories(request: Request, parent_id: str | None = Query(None, pattern="^MLB[0-9]+$")):
+    """Protected, sanitized official category-tree reader for manual ranking runs."""
+    _require_market_radar_control(request)
+    client = MercadoLivreAdapter().client
+    if parent_id:
+        payload = client.get(f"/categories/{parent_id}")
+        children = payload.get("children_categories", []) if isinstance(payload, dict) else []
+        parent = {"id": payload.get("id"), "name": payload.get("name"), "is_leaf": not bool(children)} if isinstance(payload, dict) else None
+    else:
+        children = client.get("/sites/MLB/categories")
+        parent = {"id": "MLB", "name": "Brasil", "is_leaf": False}
+    if not isinstance(children, list):
+        raise HTTPException(502, "Mercado Livre returned an invalid category response")
+    return {"parent": parent, "categories": [
+        {"id": item.get("id"), "name": item.get("name"), "is_leaf": False}
+        for item in children if isinstance(item, dict) and item.get("id") and item.get("name")
+    ]}
+
+
 @router.post("/mercado-livre/enrich-existing")
 def enrich_mercado_livre_existing(payload: MercadoLivreCollectionRequest, request: Request):
     """Bounded repair for persisted official rankings; never fetches a new ranking."""
