@@ -1,5 +1,6 @@
 import sqlite3
 import os
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
 from app.market_radar.capabilities import as_dict, default_capabilities, source_confidence
@@ -13,6 +14,23 @@ from app.market_radar.adapters.aliexpress import AliExpressAffiliateAdapter, Ali
 from app.market_radar.repository import search_trends
 from app.market_radar.service import get_top_products, run_marketplace_collection, sources_read_model
 from app.market_radar import mercado_livre_auth as oauth
+
+
+def test_postgres_store_keeps_category_on_each_snapshot_not_on_mutable_product():
+    """Regression: one external product may rank in more than one category."""
+    source = Path("app/market_radar/postgres_store.py").read_text(encoding="utf-8")
+    assert "source_category TEXT" in source
+    assert "INSERT INTO market_radar_snapshots(product_id,observed_at,source_category" in source
+    assert "AND s.source_category=%s" in source
+    assert "DISTINCT ON (p.id,s.source_category)" in source
+    assert "ON CONFLICT(marketplace,external_id) DO UPDATE SET title=EXCLUDED.title,normalized_title=EXCLUDED.normalized_title,image_url" in source
+
+
+def test_postgres_store_backfills_legacy_snapshot_categories_from_official_evidence():
+    source = Path("app/market_radar/postgres_store.py").read_text(encoding="utf-8")
+    assert "ADD COLUMN IF NOT EXISTS source_category TEXT" in source
+    assert "evidence_json->>'source_category_id'" in source
+    assert "market_radar_snapshot_category_time_idx" in source
 
 
 def database():

@@ -26,23 +26,26 @@ class PostgresMarketStore:
     def migrate(self) -> None:
         with self._connect() as con, con.cursor() as cur:
             cur.execute("CREATE TABLE IF NOT EXISTS market_radar_products (id BIGSERIAL PRIMARY KEY, marketplace TEXT NOT NULL, external_id TEXT NOT NULL, title TEXT NOT NULL, normalized_title TEXT NOT NULL, source_category TEXT, image_url TEXT, product_url TEXT, seller_name TEXT, first_seen_at TIMESTAMPTZ NOT NULL, last_seen_at TIMESTAMPTZ NOT NULL, UNIQUE(marketplace,external_id))")
-            cur.execute("CREATE TABLE IF NOT EXISTS market_radar_snapshots (id BIGSERIAL PRIMARY KEY, product_id BIGINT NOT NULL REFERENCES market_radar_products(id), observed_at TIMESTAMPTZ NOT NULL, rank INTEGER, price NUMERIC, currency TEXT, source_type TEXT NOT NULL, source_confidence TEXT NOT NULL, source_window TEXT, product_url TEXT, evidence_json JSONB NOT NULL DEFAULT '{}'::jsonb, UNIQUE(product_id,observed_at))")
+            cur.execute("CREATE TABLE IF NOT EXISTS market_radar_snapshots (id BIGSERIAL PRIMARY KEY, product_id BIGINT NOT NULL REFERENCES market_radar_products(id), observed_at TIMESTAMPTZ NOT NULL, source_category TEXT, rank INTEGER, price NUMERIC, currency TEXT, source_type TEXT NOT NULL, source_confidence TEXT NOT NULL, source_window TEXT, product_url TEXT, evidence_json JSONB NOT NULL DEFAULT '{}'::jsonb, UNIQUE(product_id,observed_at,source_category))")
             cur.execute("CREATE TABLE IF NOT EXISTS market_radar_runs (id UUID PRIMARY KEY, marketplace TEXT NOT NULL, category TEXT, started_at TIMESTAMPTZ NOT NULL, finished_at TIMESTAMPTZ, status TEXT NOT NULL, requested_limit INTEGER NOT NULL, received_count INTEGER NOT NULL DEFAULT 0, enriched_count INTEGER NOT NULL DEFAULT 0, partial_count INTEGER NOT NULL DEFAULT 0, failure_count INTEGER NOT NULL DEFAULT 0, error_code TEXT)")
             cur.execute("CREATE TABLE IF NOT EXISTS market_radar_trends (id BIGSERIAL PRIMARY KEY, marketplace TEXT NOT NULL, keyword TEXT NOT NULL, trend_type TEXT NOT NULL, position INTEGER NOT NULL, category TEXT, url TEXT, observed_at TIMESTAMPTZ NOT NULL, source_type TEXT NOT NULL, source_window TEXT, evidence_json JSONB NOT NULL DEFAULT '{}'::jsonb, UNIQUE(marketplace,keyword,trend_type,category,observed_at))")
             cur.execute("CREATE INDEX IF NOT EXISTS market_radar_snapshot_time_idx ON market_radar_snapshots(observed_at DESC)")
+            cur.execute("ALTER TABLE market_radar_snapshots ADD COLUMN IF NOT EXISTS source_category TEXT")
+            cur.execute("UPDATE market_radar_snapshots SET source_category=evidence_json->>'source_category_id' WHERE source_category IS NULL AND evidence_json ? 'source_category_id'")
+            cur.execute("CREATE INDEX IF NOT EXISTS market_radar_snapshot_category_time_idx ON market_radar_snapshots(source_category,observed_at DESC)")
             cur.execute("CREATE INDEX IF NOT EXISTS market_radar_trend_time_idx ON market_radar_trends(marketplace,category,observed_at DESC)")
 
     def _save_observation(self, cur, item: MarketplaceProductObservation) -> None:
         p = item.product
         cur.execute("""INSERT INTO market_radar_products(marketplace,external_id,title,normalized_title,source_category,image_url,product_url,seller_name,first_seen_at,last_seen_at)
             VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
-            ON CONFLICT(marketplace,external_id) DO UPDATE SET title=EXCLUDED.title,normalized_title=EXCLUDED.normalized_title,source_category=EXCLUDED.source_category,image_url=EXCLUDED.image_url,product_url=EXCLUDED.product_url,seller_name=EXCLUDED.seller_name,last_seen_at=EXCLUDED.last_seen_at RETURNING id""",
+            ON CONFLICT(marketplace,external_id) DO UPDATE SET title=EXCLUDED.title,normalized_title=EXCLUDED.normalized_title,image_url=EXCLUDED.image_url,product_url=EXCLUDED.product_url,seller_name=EXCLUDED.seller_name,last_seen_at=EXCLUDED.last_seen_at RETURNING id""",
             (p.marketplace.value,p.external_id,p.title,p.normalized_title,p.source_category,p.image_url,p.product_url,p.seller_name,item.observed_at,item.observed_at))
         product_id = cur.fetchone()[0]
-        cur.execute("""INSERT INTO market_radar_snapshots(product_id,observed_at,rank,price,currency,source_type,source_confidence,source_window,product_url,evidence_json)
-            VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s::jsonb)
-            ON CONFLICT(product_id,observed_at) DO UPDATE SET rank=EXCLUDED.rank,price=EXCLUDED.price,currency=EXCLUDED.currency,evidence_json=EXCLUDED.evidence_json""",
-            (product_id,item.observed_at,item.rank,item.price,item.currency,item.source_type.value,item.source_confidence.value,item.source_window,p.product_url,json.dumps(item.evidence,ensure_ascii=False)))
+        cur.execute("""INSERT INTO market_radar_snapshots(product_id,observed_at,source_category,rank,price,currency,source_type,source_confidence,source_window,product_url,evidence_json)
+            VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s::jsonb)
+            ON CONFLICT(product_id,observed_at,source_category) DO UPDATE SET rank=EXCLUDED.rank,price=EXCLUDED.price,currency=EXCLUDED.currency,evidence_json=EXCLUDED.evidence_json""",
+            (product_id,item.observed_at,p.source_category,item.rank,item.price,item.currency,item.source_type.value,item.source_confidence.value,item.source_window,p.product_url,json.dumps(item.evidence,ensure_ascii=False)))
 
     def collect(self, adapter, *, category: str, limit: int = 20, collect_trends: bool = True) -> dict:
         self.migrate(); run_id = str(uuid.uuid4()); started = _now(); limit = min(max(1,limit),20)
@@ -77,10 +80,11 @@ class PostgresMarketStore:
     def top(self, category: str | None = None, limit: int = 20) -> dict:
         self.migrate(); limit=min(max(1,limit),20)
         clause="WHERE p.marketplace='MERCADO_LIVRE'"; params=[]
-        if category: clause += " AND p.source_category=%s"; params.append(category)
-        query=f"""SELECT DISTINCT ON (p.id) p.external_id,p.title,p.image_url,p.product_url,p.source_category,p.first_seen_at,p.last_seen_at,s.rank,s.price,s.currency,s.observed_at,s.evidence_json
+        if category: clause += " AND s.source_category=%s"; params.append(category)
+        query=f"""SELECT DISTINCT ON (p.id,s.source_category) p.external_id,p.title,p.image_url,p.product_url,s.source_category,
+            p.first_seen_at,p.last_seen_at,s.rank,s.price,s.currency,s.observed_at,s.evidence_json
             FROM market_radar_products p JOIN market_radar_snapshots s ON s.product_id=p.id {clause}
-            ORDER BY p.id,s.observed_at DESC"""
+            ORDER BY p.id,s.source_category,s.observed_at DESC"""
         with self._connect() as con, con.cursor(row_factory=psycopg.rows.dict_row) as cur:
             cur.execute(query,params); rows=cur.fetchall()
         rows.sort(key=lambda item:(item["rank"] is None,item["rank"] or 999))
@@ -111,7 +115,7 @@ class PostgresMarketStore:
             item["missing_detail_fields"] = [field for field in ("title", "image", "price", "url") if field not in available]
             item["detail_reason"] = reason
             item["exploration_priority"] = priority
-        first=min((item["first_seen_at"] for item in rows),default=None)
+        first=min((item["observed_at"] for item in rows),default=None)
         return {"marketplace":"MERCADO_LIVRE","category":category,"limit":limit,"history_available_from":first.isoformat() if first else None,"history_complete":False,"products":[dict(item) for item in rows[:limit]]}
 
     def trends(self, category: str | None = None) -> dict:
@@ -126,9 +130,10 @@ class PostgresMarketStore:
         """Return only categories that have actually been observed by Babi."""
         self.migrate()
         with self._connect() as con, con.cursor(row_factory=psycopg.rows.dict_row) as cur:
-            cur.execute("""SELECT source_category AS id, MAX(last_seen_at) AS last_observed_at
-                FROM market_radar_products WHERE marketplace='MERCADO_LIVRE' AND source_category IS NOT NULL
-                GROUP BY source_category ORDER BY last_observed_at DESC""")
+            cur.execute("""SELECT s.source_category AS id, MAX(s.observed_at) AS last_observed_at
+                FROM market_radar_snapshots s JOIN market_radar_products p ON p.id=s.product_id
+                WHERE p.marketplace='MERCADO_LIVRE' AND s.source_category IS NOT NULL
+                GROUP BY s.source_category ORDER BY last_observed_at DESC""")
             rows = cur.fetchall()
         return [{"id": row["id"], "label": row["id"], "last_observed_at": row["last_observed_at"].isoformat()}
                 for row in rows]
@@ -139,7 +144,7 @@ class PostgresMarketStore:
         with self._connect() as con, con.cursor(row_factory=psycopg.rows.dict_row) as cur:
             cur.execute("""SELECT p.id,p.external_id,p.title,s.rank,s.evidence_json FROM market_radar_products p
                 JOIN market_radar_snapshots s ON s.product_id=p.id WHERE p.marketplace='MERCADO_LIVRE'
-                AND p.source_category=%s ORDER BY s.rank NULLS LAST LIMIT %s""", (category,min(max(1,limit),20)))
+                AND s.source_category=%s ORDER BY s.observed_at DESC,s.rank NULLS LAST LIMIT %s""", (category,min(max(1,limit),20)))
             rows=cur.fetchall()
         rankings=[]
         for row in rows:
