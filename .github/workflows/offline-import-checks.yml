@@ -1,0 +1,21 @@
+name: Babi offline import checks
+on:
+  push:
+    branches: [feat/babi-product-rebuild-v1]
+    paths:
+      - 'app/market_radar/offline_import.py'
+      - 'tests/test_market_radar_offline_import.py'
+      - '.github/workflows/offline-import-checks.yml'
+  workflow_dispatch:
+jobs:
+  offline-import:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pytest pydantic
+      - run: python -m pytest tests/test_market_radar_offline_import.py -q
