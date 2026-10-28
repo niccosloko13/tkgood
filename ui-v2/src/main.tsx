@@ -1,13 +1,13 @@
 import {StrictMode, useEffect, useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {getDiscovery, getHome, getLibrary, getLibraryDetail, getOpportunities, getSystem, startMission, startSearch} from './lib/api';
-import {formatDetectedAt, formatNumber} from './lib/formatters';
-import type {Discovery, DiscoveryData, HomeData, LibraryData, LibraryDetail, LibraryItem, OpportunitiesData, Opportunity, OpportunityV2, SystemData} from './types';
+import {getDiscovery, getHome, getLibrary, getLibraryDetail, getMarketRadar, getMarketTop, getMarketTrends, getOpportunities, getSystem, startMission, startSearch} from './lib/api';
+import {formatCurrency, formatDetectedAt, formatNumber} from './lib/formatters';
+import type {Discovery, DiscoveryData, HomeData, LibraryData, LibraryDetail, LibraryItem, MarketProduct, MarketRadarData, MarketSource, MarketTrend, OpportunitiesData, Opportunity, OpportunityV2, SystemData} from './types';
 import './styles.css';
 
-type Page = 'Visão geral' | 'Descobrir' | 'Oportunidades' | 'Biblioteca' | 'Sistema';
+type Page = 'Visão geral' | 'Descobrir' | 'Oportunidades' | 'Biblioteca' | 'Market Radar' | 'Sistema';
 const navigation: Array<{page: Page; icon: string}> = [
-  {page: 'Visão geral', icon: '⌂'}, {page: 'Descobrir', icon: '⌕'}, {page: 'Oportunidades', icon: '✦'}, {page: 'Biblioteca', icon: '▤'}, {page: 'Sistema', icon: '⚙'},
+  {page: 'Visão geral', icon: '⌂'}, {page: 'Descobrir', icon: '⌕'}, {page: 'Oportunidades', icon: '✦'}, {page: 'Biblioteca', icon: '▤'}, {page: 'Market Radar', icon: '◉'}, {page: 'Sistema', icon: '⚙'},
 ];
 
 function App() {
@@ -28,6 +28,9 @@ function App() {
   const [system, setSystem] = useState<SystemData | null>(null);
   const [systemError, setSystemError] = useState(false);
   const [systemLoading, setSystemLoading] = useState(false);
+  const [marketRadar, setMarketRadar] = useState<MarketRadarData | null>(null);
+  const [marketRadarError, setMarketRadarError] = useState(false);
+  const [marketRadarLoading, setMarketRadarLoading] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const loadHome = async () => { setLoading(true); setError(false); try { setHome(await getHome()); } catch { setError(true); } finally { setLoading(false); } };
   useEffect(() => { void loadHome(); }, []);
@@ -39,19 +42,21 @@ function App() {
   useEffect(() => { if (page === 'Biblioteca') void loadLibrary(); }, [page]);
   const loadSystem = async () => { setSystemLoading(true); setSystemError(false); try { setSystem(await getSystem()); } catch { setSystemError(true); } finally { setSystemLoading(false); } };
   useEffect(() => { if (page === 'Sistema') void loadSystem(); }, [page]);
+  const loadMarketRadar = async () => { setMarketRadarLoading(true); setMarketRadarError(false); try { setMarketRadar(await getMarketRadar()); } catch { setMarketRadarError(true); } finally { setMarketRadarLoading(false); } };
+  useEffect(() => { if (page === 'Market Radar') void loadMarketRadar(); }, [page]);
   const navigate = (next: Page) => { if (next !== 'Biblioteca') setLibraryCandidate(null); setPage(next); setMoreOpen(false); };
   const openLibraryForCandidate = (candidateId: string) => { setLibraryCandidate(candidateId); setPage('Biblioteca'); setMoreOpen(false); };
   return <div className="app-shell">
     <aside className="desktop-sidebar"><div className="brand">babi<span>.</span></div><p>Inteligência de produto</p><nav aria-label="Navegação principal">{navigation.map(item => <NavButton key={item.page} item={item} active={page === item.page} onClick={() => navigate(item.page)} />)}</nav><small>Pesquisa segura</small></aside>
     <main><header className="app-header"><div><div className="mobile-brand">babi<span>.</span></div><p className="eyebrow">{page}</p><h1>{page === 'Visão geral' ? 'O que merece sua atenção?' : page}</h1><p className="sub">Sinais claros para você decidir o próximo passo.</p></div><button className="mobile-more" aria-label="Abrir menu" aria-expanded={moreOpen} onClick={() => setMoreOpen(value => !value)}>•••</button></header>
-      {moreOpen && <div className="more-menu"><button onClick={() => navigate('Sistema')}>Sistema</button></div>}
-      {page === 'Visão geral' ? <Home data={home} loading={loading} error={error} retry={loadHome} go={navigate} /> : page === 'Descobrir' ? <Discover data={discovery} loading={discoveryLoading} error={discoveryError} retry={loadDiscovery} go={navigate} /> : page === 'Oportunidades' ? <Opportunities data={opportunities} loading={opportunitiesLoading} error={opportunitiesError} retry={loadOpportunities} openEvidence={openLibraryForCandidate} /> : page === 'Biblioteca' ? <Library data={library} loading={libraryLoading} error={libraryError} load={loadLibrary} go={navigate} /> : page === 'Sistema' ? <System data={system} loading={systemLoading} error={systemError} retry={loadSystem} /> : <Skeleton page={page} />}
+      {moreOpen && <div className="more-menu"><button onClick={() => navigate('Market Radar')}>Market Radar</button><button onClick={() => navigate('Sistema')}>Sistema</button></div>}
+      {page === 'Visão geral' ? <Home data={home} loading={loading} error={error} retry={loadHome} go={navigate} /> : page === 'Descobrir' ? <Discover data={discovery} loading={discoveryLoading} error={discoveryError} retry={loadDiscovery} go={navigate} /> : page === 'Oportunidades' ? <Opportunities data={opportunities} loading={opportunitiesLoading} error={opportunitiesError} retry={loadOpportunities} openEvidence={openLibraryForCandidate} /> : page === 'Market Radar' ? <MarketRadar data={marketRadar} loading={marketRadarLoading} error={marketRadarError} retry={loadMarketRadar} /> : page === 'Biblioteca' ? <Library data={library} loading={libraryLoading} error={libraryError} load={loadLibrary} go={navigate} /> : page === 'Sistema' ? <System data={system} loading={systemLoading} error={systemError} retry={loadSystem} /> : <Skeleton page={page} />}
     </main><MobileNav page={page} go={navigate} moreOpen={moreOpen} setMoreOpen={setMoreOpen} />
   </div>;
 }
 
 function NavButton({item, active, onClick}: {item: {page: Page; icon: string}; active: boolean; onClick: () => void}) { return <button className={active ? 'active' : ''} aria-current={active ? 'page' : undefined} onClick={onClick}><span aria-hidden="true">{item.icon}</span>{item.page}</button>; }
-function MobileNav({page, go, moreOpen, setMoreOpen}: {page: Page; go: (page: Page) => void; moreOpen: boolean; setMoreOpen: (value: boolean) => void}) { return <nav className="mobile-nav" aria-label="Navegação móvel">{navigation.slice(0, 4).map(item => <NavButton key={item.page} item={item} active={page === item.page} onClick={() => go(item.page)} />)}<button className={moreOpen || page === 'Sistema' ? 'active' : ''} onClick={() => setMoreOpen(!moreOpen)}><span aria-hidden="true">•••</span>Mais</button></nav>; }
+function MobileNav({page, go, moreOpen, setMoreOpen}: {page: Page; go: (page: Page) => void; moreOpen: boolean; setMoreOpen: (value: boolean) => void}) { return <nav className="mobile-nav" aria-label="Navegação móvel">{navigation.slice(0, 4).map(item => <NavButton key={item.page} item={item} active={page === item.page} onClick={() => go(item.page)} />)}<button className={moreOpen || page === 'Sistema' || page === 'Market Radar' ? 'active' : ''} onClick={() => setMoreOpen(!moreOpen)}><span aria-hidden="true">•••</span>Mais</button></nav>; }
 
 function Discover({data, loading, error, retry, go}: {data: DiscoveryData | null; loading: boolean; error: boolean; retry: () => Promise<void>; go: (page: Page) => void}) {
   const [query, setQuery] = useState(''); const [actionError, setActionError] = useState<string | null>(null); const [starting, setStarting] = useState(false);
@@ -67,6 +72,65 @@ function ActiveRun({run}:{run:DiscoveryData['active_run']}) { if (!run) return n
 function CompletedRun({run}:{run:DiscoveryData['last_run']}) { if (!run || run.status === 'PENDING' || run.status === 'READY') return null; return <><SectionTitle eyebrow="ÚLTIMA DESCOBERTA" title="Resumo recente" /><section className="completed-run"><div><h3>{run.status === 'SUCCEEDED' ? 'Descoberta concluída' : 'Descoberta encerrada'}</h3><p>{formatNumber(run.queries_total)} buscas · {formatNumber(run.results)} resultados · {formatNumber(run.new_videos)} novos · {formatNumber(run.duplicates)} já conhecidos</p></div>{run.identified_products !== null && <span>{formatNumber(run.identified_products)} produtos identificados</span>}</section></>; }
 function Performance({items}:{items:DiscoveryData['query_performance']}) { if (!items.length) return null; return <><SectionTitle eyebrow="APRENDIZADO" title="Buscas que estão funcionando" /><section className="performance-list">{items.map(item => <article key={item.query}><div><b>{item.query}</b><span>{Math.round((item.novelty_rate || 0)*100)}% de resultados novos</span></div><p>{item.duplicates > item.new_videos ? 'Muitos resultados já conhecidos' : `${formatNumber(item.new_videos)} resultados novos`}</p></article>)}</section></>; }
 function DiscoverSkeleton() { return <><section className="discover-intro skeleton-block" /><section className="preset-list">{[1,2,3].map(item => <article className="skeleton-block" key={item} />)}</section></>; }
+
+function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | null; loading: boolean; error: boolean; retry: () => Promise<void>}) {
+  const [source, setSource] = useState<MarketSource | null>(null);
+  const [category, setCategory] = useState<string | null>(null);
+  const [period, setPeriod] = useState('1d');
+  const [view, setView] = useState<'grid' | 'list'>('grid');
+  const [products, setProducts] = useState<MarketProduct[]>([]);
+  const [trends, setTrends] = useState<MarketTrend[]>([]);
+  const [history, setHistory] = useState({availableFrom: null as string | null, complete: false});
+  const [selected, setSelected] = useState<MarketProduct | null>(null);
+  const [filterLoading, setFilterLoading] = useState(false);
+  const [filterError, setFilterError] = useState(false);
+
+  useEffect(() => {
+    if (!data) return;
+    setSource(previous => previous && data.sources.some(item => item.id === previous.id) ? previous : data.sources[0] || null);
+    setCategory(previous => previous && data.categories.some(item => item.id === previous) ? previous : data.default_category);
+    setProducts(data.products);
+    setTrends(data.trends);
+  }, [data]);
+
+  const applyFilters = async () => {
+    if (!source || source.id !== 'MERCADO_LIVRE') return;
+    setFilterLoading(true); setFilterError(false);
+    try {
+      const [top, nextTrends] = await Promise.all([getMarketTop(category, period), getMarketTrends(category)]);
+      setProducts(top.products); setTrends(nextTrends.trends);
+      setHistory({availableFrom: top.history_available_from, complete: top.history_complete});
+    } catch { setFilterError(true); }
+    finally { setFilterLoading(false); }
+  };
+
+  if (loading && !data) return <MarketRadarSkeleton />;
+  if (error || !data) return <section className="state-card error"><h2>Não foi possível carregar o Market Radar.</h2><p>Tente novamente em alguns instantes.</p><button onClick={() => void retry()}>Tentar novamente</button></section>;
+  const operational = source?.id === 'MERCADO_LIVRE' && source.status === 'OPERACIONAL';
+  return <>
+    <section className="market-hero"><div><p className="eyebrow">MARKET RADAR</p><h2>Descubra produtos e tendências de marketplaces.</h2><p>Dados observados pela Babi a partir das fontes disponíveis.</p></div><div className="market-update"><span>{source?.quality || 'Fonte indisponível'}</span><small>{data.last_updated_at ? `Atualizado ${formatDetectedAt(data.last_updated_at).replace('Detectado pela Babi ', '')}` : 'Sem atualização real'}</small></div></section>
+    <section className="market-sources" aria-label="Marketplaces disponíveis">{data.sources.map(item => <button key={item.id} className={source?.id === item.id ? 'active' : ''} aria-pressed={source?.id === item.id} onClick={() => setSource(item)}><b>{item.label}</b><span className={`market-source-status ${item.status.toLowerCase()}`}>{marketSourceLabel(item.status)}</span><small>{item.description}</small></button>)}</section>
+    {!operational ? <section className="market-unavailable"><h3>{source?.label || 'Fonte'} {marketSourceLabel(source?.status || 'INDISPONIVEL')}</h3><p>{source?.id === 'ALIEXPRESS' ? 'O adapter existe apenas para fixtures de teste; ainda não há acesso à API para dados reais.' : source?.description || 'Esta fonte ainda não está disponível para consulta.'}</p></section> : <>
+      <section className="market-controls"><div className="market-filter"><label>Categoria<select value={category || ''} onChange={event => setCategory(event.target.value || null)}><option value="">Todas as categorias observadas</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label><label>Período<select value={period} onChange={event => setPeriod(event.target.value)}>{['1d','3d','7d','15d','30d','60d','90d'].map(item => <option key={item} value={item}>{marketPeriodLabel(item)}</option>)}</select></label><button onClick={() => void applyFilters()} disabled={filterLoading}>{filterLoading ? 'Atualizando…' : 'Aplicar filtros'}</button></div><div className="market-view-toggle" aria-label="Visualização"><button className={view === 'grid' ? 'active' : ''} aria-pressed={view === 'grid'} onClick={() => setView('grid')}>Grade</button><button className={view === 'list' ? 'active' : ''} aria-pressed={view === 'list'} onClick={() => setView('list')}>Lista</button></div></section>
+      {filterError && <p className="action-error">Não foi possível atualizar os filtros. Os dados anteriores continuam visíveis.</p>}
+      {history.availableFrom && <p className="market-history-note">Histórico observado pela Babi desde {formatDetectedAt(history.availableFrom).replace('Detectado pela Babi ', '')}.{history.complete ? ' A janela selecionada está completa.' : ' A janela selecionada ainda está em construção.'}</p>}
+      <SectionTitle eyebrow="RANKING OFICIAL" title="Produtos mais vendidos" />
+      {products.length ? <section className={`market-products ${view}`} aria-label="Produtos do ranking">{products.slice(0, 20).map(item => <MarketProductCard key={item.external_id} item={item} view={view} onSelect={() => setSelected(item)} />)}</section> : <section className="state-card empty-state"><h3>Ainda não há produtos observados nesta seleção.</h3><p>Nenhuma coleta é iniciada automaticamente por esta página.</p></section>}
+      <SectionTitle eyebrow="TENDÊNCIAS DE BUSCA" title="O que as pessoas estão pesquisando" />
+      {trends.length ? <section className="market-trends"><p>Tendências semanais da fonte. Não representam ranking de vendas.</p><div>{trends.map(item => <article key={`${item.trend_type}-${item.position}-${item.keyword}`}><span>{item.position}</span><div><b>{item.keyword}</b><small>{marketTrendLabel(item.trend_type)}</small></div>{item.url && <a href={item.url} target="_blank" rel="noreferrer">Ver busca</a>}</article>)}</div></section> : <section className="quiet-empty">Ainda não há tendências observadas para esta categoria.</section>}
+    </>}
+    {selected && <MarketProductDrawer item={selected} history={history} onClose={() => setSelected(null)} />}
+  </>;
+}
+function MarketProductCard({item,view,onSelect}:{item:MarketProduct;view:'grid'|'list';onSelect:()=>void}) { const price = formatCurrency(item.price, item.currency); return <article className="market-product-card"><div className="market-product-image">{item.image_url ? <img src={item.image_url} alt="" /> : <span>Sem imagem</span>}</div><div className="market-product-main"><div className="market-product-meta"><span className="market-rank">{item.rank ? `#${item.rank}` : 'Sem posição'}</span><span>{detailStatusLabel(item.detail_status)}</span></div><h3>{item.title || 'Produto sem nome disponível'}</h3><p>{item.source_category || 'Categoria não informada'}</p>{price ? <strong>{price}</strong> : <small>Preço não informado pela fonte</small>}</div><div className="market-product-actions"><button className="text-action" onClick={onSelect}>Ver evidências →</button>{item.product_url && <a href={item.product_url} target="_blank" rel="noreferrer">Abrir fonte</a>}</div>{view === 'list' && <p className="market-list-source">Mercado Livre · {item.observed_at ? formatDetectedAt(item.observed_at) : 'Observação sem data'}</p>}</article>; }
+function MarketProductDrawer({item,history,onClose}:{item:MarketProduct;history:{availableFrom:string|null;complete:boolean};onClose:()=>void}) { const price = formatCurrency(item.price,item.currency); return <div className="drawer-backdrop" role="presentation" onMouseDown={onClose}><aside className="opportunity-drawer market-drawer" role="dialog" aria-modal="true" aria-label={`Detalhes de ${item.title}`} onMouseDown={event => event.stopPropagation()}><button className="drawer-close" onClick={onClose} aria-label="Fechar detalhes">×</button>{item.image_url && <img className="drawer-image" src={item.image_url} alt=""/>}<p className="eyebrow">MERCADO LIVRE · FONTE OFICIAL</p><h2>{item.title || 'Produto sem nome disponível'}</h2><div className="drawer-state"><span>{item.rank ? `#${item.rank} no ranking oficial` : 'Posição não informada'}</span><span>{detailStatusLabel(item.detail_status)}</span></div><h3>Dados observados</h3><dl className="market-detail-list"><div><dt>Categoria</dt><dd>{item.source_category || 'Não informada'}</dd></div><div><dt>Preço</dt><dd>{price || 'Não informado pela fonte'}</dd></div><div><dt>Observado</dt><dd>{item.observed_at ? formatDetectedAt(item.observed_at) : 'Data indisponível'}</dd></div></dl>{item.product_url && <a className="market-official-link" href={item.product_url} target="_blank" rel="noreferrer">Abrir produto na fonte oficial</a>}<h3>Detalhes e evidências</h3><p>{detailStatusExplanation(item)}</p>{item.missing_detail_fields.length > 0 && <p className="market-missing">Não informado: {item.missing_detail_fields.map(marketFieldLabel).join(', ')}.</p>}<h3>Histórico do produto</h3>{history.complete ? <p>Há observações suficientes para a janela selecionada. A evolução será exibida quando houver posições ou preços comparáveis.</p> : <p>Estamos construindo o histórico deste produto.</p>}<details><summary>Detalhes técnicos</summary><dl><div><dt>ID externo</dt><dd>{item.external_id}</dd></div><div><dt>Origem</dt><dd>API oficial do Mercado Livre</dd></div><div><dt>Tipo de ranking</dt><dd>{item.evidence_json.ranking_type || 'Não informado'}</dd></div></dl></details></aside></div>; }
+function marketSourceLabel(status: MarketSource['status']) { return ({OPERACIONAL:'Operacional',AGUARDANDO_AUTORIZACAO:'Aguardando autorização',EM_PREPARACAO:'Em preparação',INDISPONIVEL:'Indisponível'} as Record<MarketSource['status'],string>)[status]; }
+function marketPeriodLabel(value:string) { return ({'1d':'1 dia','3d':'3 dias','7d':'7 dias','15d':'15 dias','30d':'30 dias','60d':'60 dias','90d':'90 dias'} as Record<string,string>)[value] || value; }
+function marketTrendLabel(value:string) { return ({FASTEST_GROWING:'Maior crescimento',MOST_WANTED:'Mais desejada',POPULAR_TREND:'Tendência popular'} as Record<string,string>)[value] || 'Tendência observada'; }
+function detailStatusLabel(status:MarketProduct['detail_status']) { return ({DETAILS_AVAILABLE:'Detalhes disponíveis',DETAILS_PARTIAL:'Detalhes parciais',DETAILS_RESTRICTED:'Detalhes restritos'} as Record<MarketProduct['detail_status'],string>)[status]; }
+function marketFieldLabel(field:string) { return ({title:'nome',image:'imagem',price:'preço',url:'link oficial'} as Record<string,string>)[field] || field; }
+function detailStatusExplanation(item:MarketProduct) { if (item.detail_status === 'DETAILS_RESTRICTED') return 'A fonte retornou uma restrição para detalhes adicionais. O registro do ranking oficial foi preservado.'; if (item.detail_status === 'DETAILS_PARTIAL') return 'A fonte forneceu apenas parte dos detalhes comerciais deste produto.'; return 'Os detalhes disponíveis foram obtidos pela fonte oficial.'; }
+function MarketRadarSkeleton() { return <><section className="market-hero skeleton-block" /><section className="market-sources">{[1,2,3,4,5].map(item => <div className="skeleton-block" key={item} />)}</section><section className="market-products grid">{[1,2,3].map(item => <article className="skeleton-block" key={item} />)}</section></>; }
 
 function Opportunities({data, loading, error, retry, openEvidence}: {data: OpportunitiesData | null; loading: boolean; error: boolean; retry: () => Promise<void>; openEvidence: (candidateId: string) => void}) {
   const [selected, setSelected] = useState<OpportunityV2 | null>(null);

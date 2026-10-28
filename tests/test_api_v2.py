@@ -1,12 +1,14 @@
 import json
 import sqlite3
 from datetime import datetime, timezone
+from types import SimpleNamespace
 
 from app.api_v2 import home_read_model
 from app.api_v2_discovery import discovery_read_model
 from app.api_v2_opportunities import opportunities_read_model
 from app.api_v2_library import library_read_model
 from app.api_v2_system import system_read_model
+from app import api_v2_market_radar
 
 
 def database():
@@ -22,6 +24,38 @@ def database():
         results INTEGER, new_videos INTEGER, duplicates INTEGER);
     ''')
     return con
+
+
+def test_market_radar_overview_is_read_only_and_uses_persisted_market_data(monkeypatch):
+    class Store:
+        def categories(self):
+            return [{"id": "MLB432600", "label": "MLB432600", "last_observed_at": "2026-10-28T10:00:00+00:00"}]
+
+        def top(self, *, category, limit):
+            assert category == "MLB432600" and limit == 20
+            return {"products": [{"external_id": "MLB1", "observed_at": "2026-10-28T10:00:00+00:00", "rank": 1}]}
+
+        def trends(self, *, category):
+            assert category == "MLB432600"
+            return {"trends": [{"keyword": "tesoura", "position": 1}]}
+
+    monkeypatch.setattr(api_v2_market_radar, "hosted_market_store", lambda: Store())
+    monkeypatch.setattr(api_v2_market_radar, "mercado_livre_auth_config", lambda: SimpleNamespace(access_token="server-only"))
+    result = api_v2_market_radar.market_radar_overview()
+    assert result["default_category"] == "MLB432600"
+    assert result["source_quality"] == "HIGH"
+    assert len(result["products"]) == 1
+    assert result["trends"][0]["keyword"] == "tesoura"
+    assert result["sources"][0]["status"] == "OPERACIONAL"
+
+
+def test_market_radar_overview_handles_unconfigured_storage_without_collecting(monkeypatch):
+    monkeypatch.setattr(api_v2_market_radar, "hosted_market_store", lambda: None)
+    monkeypatch.setattr(api_v2_market_radar, "mercado_livre_auth_config", lambda: SimpleNamespace(access_token=None))
+    result = api_v2_market_radar.market_radar_overview()
+    assert result["products"] == []
+    assert result["trends"] == []
+    assert result["sources"][0]["status"] == "AGUARDANDO_AUTORIZACAO"
 
 
 def test_home_read_model_is_empty_and_read_only():

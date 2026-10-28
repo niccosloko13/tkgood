@@ -3,6 +3,12 @@ export function formatNumber(value: number | null | undefined): string {
   return new Intl.NumberFormat('pt-BR', {maximumFractionDigits: 0}).format(value);
 }
 
+export function formatCurrency(value: number | null | undefined, currency: string | null | undefined): string | null {
+  if (value === null || value === undefined || !Number.isFinite(value) || !currency) return null;
+  try { return new Intl.NumberFormat('pt-BR', {style: 'currency', currency, maximumFractionDigits: 2}).format(value); }
+  catch { return `${currency} ${formatNumber(value)}`; }
+}
+
 export function formatDetectedAt(value: string | null | undefined): string {
   if (!value) return 'Data de detecção indisponível';
   const stamp = new Date(value);

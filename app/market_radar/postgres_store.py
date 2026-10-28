@@ -122,6 +122,17 @@ class PostgresMarketStore:
             rows=cur.fetchall()
         return {"marketplace":"MERCADO_LIVRE","category":category,"source_window":"weekly","trends":[dict(item) for item in rows]}
 
+    def categories(self) -> list[dict[str, str]]:
+        """Return only categories that have actually been observed by Babi."""
+        self.migrate()
+        with self._connect() as con, con.cursor(row_factory=psycopg.rows.dict_row) as cur:
+            cur.execute("""SELECT source_category AS id, MAX(last_seen_at) AS last_observed_at
+                FROM market_radar_products WHERE marketplace='MERCADO_LIVRE' AND source_category IS NOT NULL
+                GROUP BY source_category ORDER BY last_observed_at DESC""")
+            rows = cur.fetchall()
+        return [{"id": row["id"], "label": row["id"], "last_observed_at": row["last_observed_at"].isoformat()}
+                for row in rows]
+
     def enrich_existing(self, adapter, *, category: str, limit: int = 20) -> dict:
         """Re-read only official detail endpoints for persisted ranking identities."""
         self.migrate()

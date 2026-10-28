@@ -19,6 +19,37 @@ from .market_radar.mercado_livre_auth import (MercadoLivreOAuthError, config as 
 router = APIRouter(prefix="/api/v2/market-radar")
 
 
+@router.get("/overview")
+def market_radar_overview():
+    """Small product-facing read model; it never initiates a collection."""
+    store = hosted_market_store()
+    auth = mercado_livre_auth_config()
+    if store:
+        categories = store.categories()
+        default_category = categories[0]["id"] if categories else None
+        top = store.top(category=default_category, limit=20)
+        trends = store.trends(category=default_category)
+        last_updated = max((item.get("observed_at") for item in top.get("products", [])), default=None)
+    else:
+        categories, default_category, top, trends, last_updated = [], None, {"products": []}, {"trends": []}, None
+    sources = [
+        {"id": "MERCADO_LIVRE", "label": "Mercado Livre", "status": "OPERACIONAL" if auth.access_token else "AGUARDANDO_AUTORIZACAO",
+         "quality": "Fonte oficial", "description": "Rankings e tendências oficiais", "last_updated_at": last_updated},
+        {"id": "ALIEXPRESS", "label": "AliExpress", "status": "EM_PREPARACAO",
+         "quality": "Adapter de fixtures", "description": "Aguardando credenciais da API oficial", "last_updated_at": None},
+        {"id": "SHOPEE", "label": "Shopee", "status": "INDISPONIVEL",
+         "quality": "Sem fonte geral", "description": "Nenhuma fonte de ranking configurada", "last_updated_at": None},
+        {"id": "ALIBABA", "label": "Alibaba", "status": "EM_PREPARACAO",
+         "quality": "Em preparação", "description": "Fonte ainda não configurada", "last_updated_at": None},
+        {"id": "SHEIN", "label": "SHEIN", "status": "INDISPONIVEL",
+         "quality": "Sem fonte", "description": "Nenhuma fonte configurada", "last_updated_at": None},
+    ]
+    return {"generated_at": datetime.now(timezone.utc).isoformat(), "sources": sources,
+            "categories": categories, "default_category": default_category,
+            "last_updated_at": last_updated, "source_quality": "HIGH" if top.get("products") else None,
+            "products": top.get("products", []), "trends": trends.get("trends", [])}
+
+
 def _require_market_radar_control(request: Request) -> None:
     """Keep OAuth initiation, refresh and collection off the public surface."""
     if not os.environ.get("VERCEL"):

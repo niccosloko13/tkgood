@@ -69,3 +69,20 @@ test('System V2 keeps diagnostics progressive and uses Portuguese human status c
   assert.match(source, /Fontes externas/);
   assert.match(source, /Nenhuma fonte de marketplace configurada/);
 });
+
+test('Market Radar V2 separates official rankings, trends and incomplete details', () => {
+  assert.match(source, /Descubra produtos e tendências de marketplaces/);
+  assert.match(source, /RANKING OFICIAL/);
+  assert.match(source, /TENDÊNCIAS DE BUSCA/);
+  assert.match(source, /Não representam ranking de vendas/);
+  assert.match(source, /Estamos construindo o histórico deste produto/);
+  assert.match(source, /Detalhes parciais/);
+  assert.match(source, /Detalhes restritos/);
+  assert.match(source, /getMarketRadar/);
+  assert.doesNotMatch(source, /market-radar\/mercado-livre\/collect/);
+});
+
+test('Market Radar V2 centralizes the Brazilian currency formatter', () => {
+  assert.match(formatters, /formatCurrency/);
+  assert.match(formatters, /style: 'currency'/);
+});

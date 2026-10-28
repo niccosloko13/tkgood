@@ -1,4 +1,4 @@
-import type {DiscoveryData, HomeData, LibraryData, LibraryDetail, OpportunitiesData, SystemData} from '../types';
+import type {DiscoveryData, HomeData, LibraryData, LibraryDetail, MarketRadarData, MarketTopData, MarketTrendData, OpportunitiesData, SystemData} from '../types';
 export async function getHome(): Promise<HomeData> {
   const response = await fetch('/api/v2/home', {headers: {Accept: 'application/json'}});
   if (!response.ok) throw new Error(`Não foi possível carregar a Home (${response.status}).`);
@@ -38,4 +38,21 @@ export async function getLibraryDetail(videoId: string): Promise<LibraryDetail> 
 export async function getSystem(): Promise<SystemData> {
   const response = await fetch('/api/v2/system', {headers: {Accept: 'application/json'}});
   if (!response.ok) throw new Error('Não foi possível carregar o sistema.'); return response.json() as Promise<SystemData>;
+}
+export async function getMarketRadar(): Promise<MarketRadarData> {
+  const response = await fetch('/api/v2/market-radar/overview', {headers: {Accept: 'application/json'}});
+  if (!response.ok) throw new Error('NÃ£o foi possÃ­vel carregar o Market Radar.');
+  return response.json() as Promise<MarketRadarData>;
+}
+export async function getMarketTop(category: string | null, period: string): Promise<MarketTopData> {
+  const query = new URLSearchParams({period}); if (category) query.set('category', category);
+  const response = await fetch(`/api/v2/market-radar/mercado-livre/top?${query}`, {headers: {Accept: 'application/json'}});
+  if (!response.ok) throw new Error('NÃ£o foi possÃ­vel carregar os produtos do Mercado Livre.');
+  return response.json() as Promise<MarketTopData>;
+}
+export async function getMarketTrends(category: string | null): Promise<MarketTrendData> {
+  const query = category ? `?category=${encodeURIComponent(category)}` : '';
+  const response = await fetch(`/api/v2/market-radar/mercado-livre/trends${query}`, {headers: {Accept: 'application/json'}});
+  if (!response.ok) throw new Error('NÃ£o foi possÃ­vel carregar as tendÃªncias do Mercado Livre.');
+  return response.json() as Promise<MarketTrendData>;
 }
