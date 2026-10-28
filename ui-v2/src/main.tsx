@@ -110,6 +110,7 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
   return <>
     <section className="market-hero"><div><p className="eyebrow">MARKET RADAR</p><h2>Descubra produtos e tendências de marketplaces.</h2><p>Dados observados pela Babi a partir das fontes disponíveis.</p></div><div className="market-update"><span>{source?.quality || 'Fonte indisponível'}</span><small>{data.last_updated_at ? `Atualizado ${formatDetectedAt(data.last_updated_at).replace('Detectado pela Babi ', '')}` : 'Sem atualização real'}</small></div></section>
     <section className="market-sources" aria-label="Marketplaces disponíveis">{data.sources.map(item => <button key={item.id} className={source?.id === item.id ? 'active' : ''} aria-pressed={source?.id === item.id} onClick={() => setSource(item)}><b>{item.label}</b><span className={`market-source-status ${item.status.toLowerCase()}`}>{marketSourceLabel(item.status)}</span><small>{item.description}</small></button>)}</section>
+    {(source?.id === "SHOPEE" || source?.id === "ALIEXPRESS") && <CommercialRanking marketplace={source.id} />}
     {(source?.id === "SHOPEE" || source?.id === "ALIEXPRESS") && <ImportedMarketProducts marketplace={source.id} />}
     {!operational ? <section className="market-unavailable"><h3>{source?.label || 'Fonte'} {marketSourceLabel(source?.status || 'INDISPONIVEL')}</h3><p>{source?.id === 'ALIEXPRESS' ? 'O adapter existe apenas para fixtures de teste; ainda não há acesso à API para dados reais.' : source?.description || 'Esta fonte ainda não está disponível para consulta.'}</p></section> : <>
       <section className="market-controls"><div className="market-filter"><label>Categoria<select value={category || ''} onChange={event => setCategory(event.target.value || null)}><option value="">Todas as categorias observadas</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label><label>Período<select value={period} onChange={event => setPeriod(event.target.value)}>{['1d','3d','7d','15d','30d','60d','90d'].map(item => <option key={item} value={item}>{marketPeriodLabel(item)}</option>)}</select></label><button onClick={() => void applyFilters()} disabled={filterLoading}>{filterLoading ? 'Atualizando…' : 'Aplicar filtros'}</button></div><div className="market-view-toggle" aria-label="Visualização"><button className={view === 'grid' ? 'active' : ''} aria-pressed={view === 'grid'} onClick={() => setView('grid')}>Grade</button><button className={view === 'list' ? 'active' : ''} aria-pressed={view === 'list'} onClick={() => setView('list')}>Lista</button></div></section>
@@ -170,6 +171,44 @@ function VerifiedSalesWindow({category}:{category:string|null}) {
       </article>)}</div>
       {result.products.length===0&&<p>Não há observações comprovadas nesta janela. Nenhum número foi estimado.</p>}
     </>}
+  </section>;
+}
+
+function CommercialRanking({marketplace}:{marketplace:'SHOPEE'|'ALIEXPRESS'}) {
+  type Product = {product_id:string;title:string;image_url:string|null;product_url:string|null;price:number|null;currency:string|null;rating:number|null;rating_count:number|null;metric_value:number;metric_kind:string;provider:string;observed_at:string;window_start:string|null;window_end:string|null};
+  const [metric,setMetric]=useState('sold_30d');
+  const [result,setResult]=useState<{products:Product[];total:number;note:string}|null>(null);
+  const [loading,setLoading]=useState(false);
+  const [error,setError]=useState(false);
+  useEffect(()=>{
+    let active=true;
+    setLoading(true);setError(false);setResult(null);
+    fetch('/api/v2/market-radar/commercial-ranking?'+new URLSearchParams({marketplace,metric,limit:'30'}))
+      .then(async r=>{if(!r.ok)throw new Error('unavailable');return r.json() as Promise<{products:Product[];total:number;note:string}>;})
+      .then(data=>{if(active)setResult(data);})
+      .catch(()=>{if(active)setError(true);})
+      .finally(()=>{if(active)setLoading(false);});
+    return ()=>{active=false;};
+  },[marketplace,metric]);
+  const labels:Record<string,string>={sold_30d:'Unidades vendidas (30 dias)',estimated_sold_30d:'Vendas estimadas (30 dias)',historical_sold:'Vendas acumuladas',views_total:'Visualizações acumuladas',revenue_30d:'Faturamento (30 dias)'};
+  return <section className="market-unavailable" aria-label="Ranking comercial por métricas de fornecedor">
+    <h3>Ranking comercial · {marketplace==='SHOPEE'?'Shopee':'AliExpress'}</h3>
+    <p>Métricas observadas por fornecedor com origem identificada. Valores estimados nunca são tratados como vendas exatas. Contadores acumulados não representam vendas em 48 horas.</p>
+    <div className="market-controls"><div className="market-filter"><label>Ordenar por métrica<select value={metric} onChange={e=>setMetric(e.target.value)}>{Object.entries(labels).map(([key,label])=><option key={key} value={key}>{label}</option>)}</select></label></div></div>
+    {loading?<p>Consultando métricas…</p>:error?<p>Não foi possível carregar o ranking comercial.</p>:!result||result.products.length===0?<p>Ainda não temos dados comerciais reais autorizados para este filtro. Nenhum produto foi inventado.</p>:
+      <div className="market-products grid">{result.products.map(item=><article className="market-product-card" key={item.product_id+'-'+item.metric_kind+'-'+item.provider}>
+        <div className="market-product-main">
+          {item.image_url&&<img src={item.image_url} alt="" loading="lazy" style={{maxWidth:'100%',maxHeight:120,objectFit:'contain'}}/>}
+          <h3>{item.title}</h3>
+          <strong>{formatNumber(item.metric_value)} {metric==='revenue_30d'?'em receita':metric==='views_total'?'visualizações':'unidades'}</strong>
+          <small>{item.metric_kind==='ESTIMATED_PROVIDER'?'Estimativa do fornecedor':item.metric_kind==='CUMULATIVE_OBSERVED'?'Contador acumulado':'Métrica reportada pelo fornecedor'} · {item.provider}</small>
+          <small>{item.window_start&&item.window_end?'Janela: '+item.window_start.slice(0,10)+' a '+item.window_end.slice(0,10):'Período acumulado não especificado'}</small>
+          {item.price!==null&&item.currency&&<p>{formatCurrency(item.price,item.currency)}</p>}
+          {item.rating!==null&&<small>Avaliação: {item.rating} · {item.rating_count??'—'} avaliações</small>}
+          <small>Observado: {formatDetectedAt(item.observed_at)}</small>
+          {item.product_url&&<a href={item.product_url} target="_blank" rel="noreferrer">Abrir produto</a>}
+        </div>
+      </article>)}</div>}
   </section>;
 }
 
