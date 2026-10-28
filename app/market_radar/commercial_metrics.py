@@ -86,6 +86,46 @@ class CommercialStore:
                 "total":len(rows),"observed_not_live":True,
                 "note":"Dados do fornecedor rotulados com janela e tipo. Vendas de 48h dependem de snapshots comparáveis."}
 
+def cumulative_growth(samples: list[dict], *, hours: int, now: datetime | None = None) -> list[dict]:
+    """Only differences between SAME-source, SAME-metric cumulative counters.
+
+    Compare nearest measurements bounding the requested period; otherwise
+    report unavailable rather than treating a shorter interval as full-window.
+    """
+    if hours not in (48,168,720): raise ValueError("Unsupported growth window")
+    now=now or datetime.now(timezone.utc)
+    cutoff=now-timedelta(hours=hours)
+    groups={}
+    for raw in samples:
+        if raw.get("metric_name") not in {"historical_sold","views_total"}: continue
+        at=raw.get("observed_at")
+        if isinstance(at,str):
+            try: at=datetime.fromisoformat(at.replace("Z","+00:00"))
+            except ValueError: continue
+        if not isinstance(at,datetime) or at.tzinfo is None: continue
+        key=(raw.get("marketplace"),raw.get("product_id"),raw.get("metric_name"),raw.get("provider"))
+        groups.setdefault(key,[]).append({**raw,"observed_at":at})
+    result=[]
+    for key,entries in groups.items():
+        baseline=[v for v in entries if v["observed_at"]<=cutoff]
+        latest=[v for v in entries if cutoff<v["observed_at"]<=now]
+        if not baseline or not latest:continue
+        start=max(baseline,key=lambda v:v["observed_at"])
+        end=max(latest,key=lambda v:v["observed_at"])
+        a,b=Decimal(str(start["metric_value"])),Decimal(str(end["metric_value"]))
+        if b<a:continue
+        result.append({"marketplace":key[0],"product_id":key[1],"metric":key[2],
+                       "provider":key[3],"growth":float(b-a),
+                       "growth_pct":float((b-a)/a*100) if a>0 else None,
+                       "baseline_at":start["observed_at"].isoformat(),
+                       "latest_at":end["observed_at"].isoformat(),
+                       "sampled_hours":round((end["observed_at"]-start["observed_at"]).total_seconds()/3600,2),
+                       "requested_hours":hours,
+                       "measurement":"COUNTER_DELTA_OBSERVED",
+                       "note":"Diferença entre contadores observados; não representa necessariamente todas as vendas no período."})
+    result.sort(key=lambda v:v["growth"],reverse=True)
+    return result
+
 def nexscope_shopee_rows(payload: dict, *, observed_at: datetime, provider: str="NEXSCOPE_YOUYING") -> list[dict]:
     """Parse a SUCCESSFUL provider data payload, never a documentation fixture."""
     if not isinstance(payload,dict): raise ValueError("Invalid provider data")
