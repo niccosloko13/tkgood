@@ -1,0 +1,18 @@
+[
+  {
+    "id": "BABI-STAGE12-001",
+    "name": "Produto de validação Babi — não comercial",
+    "price": "19.90",
+    "currency": "BRL",
+    "url": "https://shopee.com.br/product/babi-stage12-001",
+    "category": "Validação interna"
+  },
+  {
+    "id": "BABI-STAGE12-002",
+    "name": "Acessório de validação Babi — não comercial",
+    "price": "29.90",
+    "currency": "BRL",
+    "url": "https://shopee.com.br/product/babi-stage12-002",
+    "category": "Validação interna"
+  }
+]
