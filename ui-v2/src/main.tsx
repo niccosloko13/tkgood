@@ -111,6 +111,7 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
     <section className="market-hero"><div><p className="eyebrow">MARKET RADAR</p><h2>Descubra produtos e tendências de marketplaces.</h2><p>Dados observados pela Babi a partir das fontes disponíveis.</p></div><div className="market-update"><span>{source?.quality || 'Fonte indisponível'}</span><small>{data.last_updated_at ? `Atualizado ${formatDetectedAt(data.last_updated_at).replace('Detectado pela Babi ', '')}` : 'Sem atualização real'}</small></div></section>
     <section className="market-sources" aria-label="Marketplaces disponíveis">{data.sources.map(item => <button key={item.id} className={source?.id === item.id ? 'active' : ''} aria-pressed={source?.id === item.id} onClick={() => setSource(item)}><b>{item.label}</b><span className={`market-source-status ${item.status.toLowerCase()}`}>{marketSourceLabel(item.status)}</span><small>{item.description}</small></button>)}</section>
     {(source?.id === "SHOPEE" || source?.id === "ALIEXPRESS") && <CommercialRanking marketplace={source.id} />}
+    {(source?.id === "SHOPEE" || source?.id === "ALIEXPRESS") && <FreeCounterGrowth marketplace={source.id} />}
     {(source?.id === "SHOPEE" || source?.id === "ALIEXPRESS") && <ImportedMarketProducts marketplace={source.id} />}
     {!operational ? <section className="market-unavailable"><h3>{source?.label || 'Fonte'} {marketSourceLabel(source?.status || 'INDISPONIVEL')}</h3><p>{source?.id === 'ALIEXPRESS' ? 'O adapter existe apenas para fixtures de teste; ainda não há acesso à API para dados reais.' : source?.description || 'Esta fonte ainda não está disponível para consulta.'}</p></section> : <>
       <section className="market-controls"><div className="market-filter"><label>Categoria<select value={category || ''} onChange={event => setCategory(event.target.value || null)}><option value="">Todas as categorias observadas</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label><label>Período<select value={period} onChange={event => setPeriod(event.target.value)}>{['1d','3d','7d','15d','30d','60d','90d'].map(item => <option key={item} value={item}>{marketPeriodLabel(item)}</option>)}</select></label><button onClick={() => void applyFilters()} disabled={filterLoading}>{filterLoading ? 'Atualizando…' : 'Aplicar filtros'}</button></div><div className="market-view-toggle" aria-label="Visualização"><button className={view === 'grid' ? 'active' : ''} aria-pressed={view === 'grid'} onClick={() => setView('grid')}>Grade</button><button className={view === 'list' ? 'active' : ''} aria-pressed={view === 'list'} onClick={() => setView('list')}>Lista</button></div></section>
@@ -210,6 +211,25 @@ function CommercialRanking({marketplace}:{marketplace:'SHOPEE'|'ALIEXPRESS'}) {
         </div>
       </article>)}</div>}
   </section>;
+}
+
+function FreeCounterGrowth({marketplace}:{marketplace:'SHOPEE'|'ALIEXPRESS'}) {
+ type Growth = {product_id:string;metric:string;growth:number;growth_pct:number|null;provider:string;baseline_at:string;latest_at:string;sampled_hours:number};
+ const [hours,setHours]=useState('48');const [data,setData]=useState<Growth[]>([]);const [error,setError]=useState(false);
+ const [loading,setLoading]=useState(true);
+ useEffect(()=>{let live=true;setLoading(true);setError(false);
+ fetch('/api/v2/market-radar/commercial-growth?'+new URLSearchParams({marketplace,hours}))
+ .then(async r=>{if(!r.ok)throw Error('unavailable');return r.json() as Promise<{products:Growth[]}>})
+ .then(v=>{if(live)setData(v.products||[])})
+ .catch(()=>{if(live)setError(true)})
+ .finally(()=>{if(live)setLoading(false)});
+ return()=>{live=false};},[marketplace,hours]);
+ return <section className="market-unavailable" aria-label="Crescimento observado por contadores">
+ <h3>Crescimento por contadores públicos</h3>
+ <p>Motor próprio da Babi, sem API comercial paga. Compara duas medições do mesmo produto e fonte; não interpreta diferença como vendas exatas da janela.</p>
+ <div className="market-controls"><div className="market-filter"><label>Comparar<select value={hours} onChange={e=>setHours(e.target.value)}><option value="48">48 horas</option><option value="168">7 dias</option><option value="720">30 dias</option></select></label></div></div>
+ {loading?<p>Carregando histórico…</p>:error?<p>Não foi possível consultar o histórico.</p>:data.length===0?<p>Aguardando duas observações comparáveis do mesmo contador. Nenhum crescimento fictício.</p>:<div className="market-products grid">{data.map(item=><article key={item.product_id+'-'+item.metric+'-'+item.provider} className="market-product-card"><div className="market-product-main"><h3>Produto {item.product_id}</h3><strong>+{formatNumber(item.growth)} {item.metric==='views_total'?'visualizações observadas':'unidades no contador'}</strong><small>{item.growth_pct===null?'Variação percentual indisponível':item.growth_pct.toFixed(1)+'% de variação'}</small><small>Intervalo observado: {item.sampled_hours} horas · {item.provider}</small><small>{item.baseline_at.slice(0,16)} → {item.latest_at.slice(0,16)}</small></div></article>)}</div>}
+ </section>;
 }
 
 function ImportedMarketProducts({marketplace}: {marketplace: 'SHOPEE' | 'ALIEXPRESS'}) {
