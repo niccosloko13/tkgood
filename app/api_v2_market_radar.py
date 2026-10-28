@@ -107,6 +107,41 @@ def _with_period(payload: dict, period: str) -> dict:
     return payload
 
 
+
+@router.get("/sales-window")
+def market_sales_window(
+    marketplace: Literal["MERCADO_LIVRE"] = "MERCADO_LIVRE",
+    category: str | None = None,
+    hours: Literal[48, 168, 720] = 48,
+    sort: Literal["ranking", "recent", "price_low", "price_high"] = "ranking",
+    top: int | None = Query(None, ge=1, le=20),
+):
+    """Official best-seller observations; NOT measured sales or visit counts."""
+    from .market_radar.observation_windows import build_window
+    store = hosted_market_store()
+    if not store:
+        return {**build_window([], hours, sort=sort, min_rank=top),
+                "marketplace": marketplace, "category": category, "data_source": "NO_HOSTED_DATA"}
+    from psycopg.rows import dict_row
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    params = [cutoff]
+    clause = ""
+    if category:
+        clause = " AND s.source_category=%s"
+        params.append(category)
+    with store._connect() as con, con.cursor(row_factory=dict_row) as cur:
+        cur.execute("""
+            SELECT p.marketplace,p.external_id,p.title,p.image_url,p.product_url,
+                   s.source_category,s.rank,s.price,s.currency,s.observed_at
+            FROM market_radar_products p
+            JOIN market_radar_snapshots s ON s.product_id=p.id
+            WHERE p.marketplace='MERCADO_LIVRE' AND s.observed_at >= %s
+        """+clause+" ORDER BY s.observed_at DESC LIMIT 5000",params)
+        rows=cur.fetchall()
+    return {**build_window(rows, hours, sort=sort, min_rank=top),
+            "marketplace": marketplace, "category":category,"data_source":"MERCADO_LIVRE_OFFICIAL_HIGHLIGHTS_SNAPSHOTS"}
+
+
 @router.get("/mercado-livre/top")
 def mercado_livre_top(category: str | None = None, period: str = Query("1d", pattern="^(1d|3d|7d|15d|30d|60d|90d)$")):
     store = hosted_market_store()
