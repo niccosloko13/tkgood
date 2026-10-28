@@ -1,0 +1,39 @@
+name: Babi Market Radar excellence checks
+on:
+  push:
+    branches: [feat/babi-product-rebuild-v1]
+    paths:
+      - 'app/market_radar/observation_windows.py'
+      - 'app/api_v2_market_radar.py'
+      - 'tests/test_market_radar_*'
+      - 'ui-v2/src/main.tsx'
+      - '.github/workflows/market-radar-excellence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install pytest pydantic
+      - name: Market Radar observation and movement regression tests
+        run: python -m pytest tests/test_market_radar_observation_windows.py tests/test_market_radar_rank_momentum.py -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: ui-v2/package-lock.json
+      - name: Frontend dependencies
+        working-directory: ui-v2
+        run: npm ci
+      - name: TypeScript check
+        working-directory: ui-v2
+        run: npm run check
+      - name: UI build
+        working-directory: ui-v2
+        run: npm run build
