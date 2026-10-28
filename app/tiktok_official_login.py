@@ -54,6 +54,31 @@ def _session(req):
 def _require_config():
     if not settings()[-1]:raise HTTPException(503,"Login TikTok ainda não configurado")
 
+@router.get("/setup-check")
+def setup_check():
+    """Public, non-secret checklist for operator Sandbox readiness."""
+    key, secret, redirect, encryption, db, configured = settings()
+    encryption_valid = False
+    if encryption:
+        try:
+            Fernet(encryption.encode())
+            encryption_valid = True
+        except (ValueError, TypeError):
+            pass
+    return {
+        "login_kit_ready": bool(configured and encryption_valid),
+        "client_key_set": bool(key),
+        "client_secret_set": bool(secret),
+        "redirect_uri_set": redirect.startswith("https://"),
+        "redirect_host_matches_babi": redirect.startswith("https://babi-product-hunter.vercel.app/"),
+        "encryption_key_valid": encryption_valid,
+        "neon_set": bool(db),
+        "sandbox_credential_mode": os.environ.get("TIKTOK_LOGIN_ENV", "production") == "sandbox",
+        "scope_requested": "user.info.basic",
+        "note": "Status only; never returns keys or tokens. Sandbox uses its own TikTok credentials."
+    }
+
+
 @router.get("/status")
 def status(req:Request):
     enabled=settings()[-1]
