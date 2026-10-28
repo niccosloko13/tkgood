@@ -26,12 +26,25 @@ class PostgresMarketStore:
     def migrate(self) -> None:
         with self._connect() as con, con.cursor() as cur:
             cur.execute("CREATE TABLE IF NOT EXISTS market_radar_products (id BIGSERIAL PRIMARY KEY, marketplace TEXT NOT NULL, external_id TEXT NOT NULL, title TEXT NOT NULL, normalized_title TEXT NOT NULL, source_category TEXT, image_url TEXT, product_url TEXT, seller_name TEXT, first_seen_at TIMESTAMPTZ NOT NULL, last_seen_at TIMESTAMPTZ NOT NULL, UNIQUE(marketplace,external_id))")
-            cur.execute("CREATE TABLE IF NOT EXISTS market_radar_snapshots (id BIGSERIAL PRIMARY KEY, product_id BIGINT NOT NULL REFERENCES market_radar_products(id), observed_at TIMESTAMPTZ NOT NULL, source_category TEXT, rank INTEGER, price NUMERIC, currency TEXT, source_type TEXT NOT NULL, source_confidence TEXT NOT NULL, source_window TEXT, product_url TEXT, evidence_json JSONB NOT NULL DEFAULT '{}'::jsonb, UNIQUE(product_id,observed_at,source_category))")
+            cur.execute("CREATE TABLE IF NOT EXISTS market_radar_snapshots (id BIGSERIAL PRIMARY KEY, product_id BIGINT NOT NULL REFERENCES market_radar_products(id), observed_at TIMESTAMPTZ NOT NULL, source_category TEXT, rank INTEGER, price NUMERIC, currency TEXT, source_type TEXT NOT NULL, source_confidence TEXT NOT NULL, source_window TEXT, product_url TEXT, evidence_json JSONB NOT NULL DEFAULT '{}'::jsonb)")
             cur.execute("CREATE TABLE IF NOT EXISTS market_radar_runs (id UUID PRIMARY KEY, marketplace TEXT NOT NULL, category TEXT, started_at TIMESTAMPTZ NOT NULL, finished_at TIMESTAMPTZ, status TEXT NOT NULL, requested_limit INTEGER NOT NULL, received_count INTEGER NOT NULL DEFAULT 0, enriched_count INTEGER NOT NULL DEFAULT 0, partial_count INTEGER NOT NULL DEFAULT 0, failure_count INTEGER NOT NULL DEFAULT 0, error_code TEXT)")
             cur.execute("CREATE TABLE IF NOT EXISTS market_radar_trends (id BIGSERIAL PRIMARY KEY, marketplace TEXT NOT NULL, keyword TEXT NOT NULL, trend_type TEXT NOT NULL, position INTEGER NOT NULL, category TEXT, url TEXT, observed_at TIMESTAMPTZ NOT NULL, source_type TEXT NOT NULL, source_window TEXT, evidence_json JSONB NOT NULL DEFAULT '{}'::jsonb, UNIQUE(marketplace,keyword,trend_type,category,observed_at))")
             cur.execute("CREATE INDEX IF NOT EXISTS market_radar_snapshot_time_idx ON market_radar_snapshots(observed_at DESC)")
             cur.execute("ALTER TABLE market_radar_snapshots ADD COLUMN IF NOT EXISTS source_category TEXT")
             cur.execute("UPDATE market_radar_snapshots SET source_category=evidence_json->>'source_category_id' WHERE source_category IS NULL AND evidence_json ? 'source_category_id'")
+            # Earlier hosted rows inherited their category from the mutable
+            # product record and the old uniqueness constraint had no category.
+            # A ranking position is instead an observation in one source
+            # category, so retain all historic rows and make that scope explicit.
+            cur.execute("ALTER TABLE market_radar_snapshots DROP CONSTRAINT IF EXISTS market_radar_snapshots_product_id_observed_at_key")
+            cur.execute("""DO $$ BEGIN
+                IF NOT EXISTS (SELECT 1 FROM pg_constraint
+                    WHERE conname='market_radar_snapshots_product_observation_category_key') THEN
+                    ALTER TABLE market_radar_snapshots
+                    ADD CONSTRAINT market_radar_snapshots_product_observation_category_key
+                    UNIQUE(product_id,observed_at,source_category);
+                END IF;
+            END $$""")
             cur.execute("CREATE INDEX IF NOT EXISTS market_radar_snapshot_category_time_idx ON market_radar_snapshots(source_category,observed_at DESC)")
             cur.execute("CREATE INDEX IF NOT EXISTS market_radar_trend_time_idx ON market_radar_trends(marketplace,category,observed_at DESC)")
 
@@ -172,7 +185,7 @@ class PostgresMarketStore:
                 else:
                     evidence.pop("detail_reason",None); recovered+=1
                 cur.execute("UPDATE market_radar_products SET title=COALESCE(%s,title),image_url=COALESCE(%s,image_url),product_url=COALESCE(%s,product_url) WHERE id=%s",(title,image,url,row["id"]))
-                cur.execute("UPDATE market_radar_snapshots SET price=COALESCE(%s,price),currency=COALESCE(%s,currency),product_url=COALESCE(%s,product_url),evidence_json=%s::jsonb WHERE product_id=%s AND rank=%s",(price,detail.get("currency_id"),url,json.dumps(evidence,ensure_ascii=False),row["id"],row["rank"]))
+                cur.execute("UPDATE market_radar_snapshots SET price=COALESCE(%s,price),currency=COALESCE(%s,currency),product_url=COALESCE(%s,product_url),evidence_json=%s::jsonb WHERE product_id=%s AND rank=%s AND source_category=%s",(price,detail.get("currency_id"),url,json.dumps(evidence,ensure_ascii=False),row["id"],row["rank"],category))
         return {"category":category,"checked":len(rows),"recovered":recovered,"remaining_partial":remaining,"reasons":reasons}
 
 
