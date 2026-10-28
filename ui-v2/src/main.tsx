@@ -110,6 +110,7 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
   return <>
     <section className="market-hero"><div><p className="eyebrow">MARKET RADAR</p><h2>Descubra produtos e tendências de marketplaces.</h2><p>Dados observados pela Babi a partir das fontes disponíveis.</p></div><div className="market-update"><span>{source?.quality || 'Fonte indisponível'}</span><small>{data.last_updated_at ? `Atualizado ${formatDetectedAt(data.last_updated_at).replace('Detectado pela Babi ', '')}` : 'Sem atualização real'}</small></div></section>
     <section className="market-sources" aria-label="Marketplaces disponíveis">{data.sources.map(item => <button key={item.id} className={source?.id === item.id ? 'active' : ''} aria-pressed={source?.id === item.id} onClick={() => setSource(item)}><b>{item.label}</b><span className={`market-source-status ${item.status.toLowerCase()}`}>{marketSourceLabel(item.status)}</span><small>{item.description}</small></button>)}</section>
+    {(source?.id === "SHOPEE" || source?.id === "ALIEXPRESS") && <ImportedMarketProducts marketplace={source.id} />}
     {!operational ? <section className="market-unavailable"><h3>{source?.label || 'Fonte'} {marketSourceLabel(source?.status || 'INDISPONIVEL')}</h3><p>{source?.id === 'ALIEXPRESS' ? 'O adapter existe apenas para fixtures de teste; ainda não há acesso à API para dados reais.' : source?.description || 'Esta fonte ainda não está disponível para consulta.'}</p></section> : <>
       <section className="market-controls"><div className="market-filter"><label>Categoria<select value={category || ''} onChange={event => setCategory(event.target.value || null)}><option value="">Todas as categorias observadas</option>{data.categories.map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label><label>Período<select value={period} onChange={event => setPeriod(event.target.value)}>{['1d','3d','7d','15d','30d','60d','90d'].map(item => <option key={item} value={item}>{marketPeriodLabel(item)}</option>)}</select></label><button onClick={() => void applyFilters()} disabled={filterLoading}>{filterLoading ? 'Atualizando…' : 'Aplicar filtros'}</button></div><div className="market-view-toggle" aria-label="Visualização"><button className={view === 'grid' ? 'active' : ''} aria-pressed={view === 'grid'} onClick={() => setView('grid')}>Grade</button><button className={view === 'list' ? 'active' : ''} aria-pressed={view === 'list'} onClick={() => setView('list')}>Lista</button></div></section>
       {filterError && <p className="action-error">Não foi possível atualizar os filtros. Os dados anteriores continuam visíveis.</p>}
@@ -122,6 +123,36 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
     {selected && <MarketProductDrawer item={selected} history={history} onClose={() => setSelected(null)} />}
   </>;
 }
+
+function ImportedMarketProducts({marketplace}: {marketplace: 'SHOPEE' | 'ALIEXPRESS'}) {
+  type Imported = {external_id:string; title:string; source_category:string|null; price:number|null; currency:string|null; product_url:string|null; imported_at:string; source_kind:string};
+  const [items,setItems] = useState<Imported[]>([]);
+  const [loading,setLoading] = useState(true);
+  const [error,setError] = useState(false);
+  useEffect(() => {
+    let active = true;
+    setLoading(true);setError(false);setItems([]);
+    fetch('/api/v2/market-radar/offline-imports/'+marketplace,{headers:{Accept:'application/json'}})
+      .then(async response => {if (!response.ok) throw new Error('not available');return response.json() as Promise<{products:Imported[]}>;})
+      .then(payload => {if (active) setItems(payload.products || []);})
+      .catch(() => {if (active) setError(true);})
+      .finally(() => {if(active) setLoading(false);});
+    return () => {active=false;};
+  },[marketplace]);
+  return <section className="market-unavailable" aria-label="Produtos de arquivos importados">
+    <h3>Produtos importados · {marketplace === 'SHOPEE' ? 'Shopee' : 'AliExpress'}</h3>
+    <p>Arquivos locais. Não representam ranking oficial, coleta ao vivo, vendas confirmadas ou visitas em 48 horas.</p>
+    {loading ? <p>Carregando arquivos importados…</p> : error ? <p>Não foi possível consultar os arquivos importados.</p> :
+    items.length ? <div className="market-products grid">{items.map(item => <article className="market-product-card" key={item.external_id}>
+      <div className="market-product-main"><span className="market-rank">Sem posição oficial</span><h3>{item.title}</h3>
+      <p>{item.source_category || 'Sem categoria'}</p>
+      {item.price !== null && item.currency ? <strong>{formatCurrency(item.price,item.currency)}</strong> : <small>Preço não informado</small>}
+      <small>Origem: {item.source_kind === 'FIXTURE' ? 'Fixture de teste' : 'Arquivo importado'} · {formatDetectedAt(item.imported_at)}</small>
+      {item.product_url && <a href={item.product_url} target="_blank" rel="noreferrer">Abrir produto</a>}</div>
+    </article>)}</div> : <p>Nenhum arquivo importado disponível. A Babi não cria produtos fictícios.</p>}
+  </section>;
+}
+
 function MarketProductCard({item,view,onSelect}:{item:MarketProduct;view:'grid'|'list';onSelect:()=>void}) { const price = formatCurrency(item.price, item.currency); return <article className="market-product-card"><div className="market-product-image">{item.image_url ? <img src={item.image_url} alt="" /> : <span>Sem imagem</span>}</div><div className="market-product-main"><div className="market-product-meta"><span className="market-rank">{item.rank ? `#${item.rank}` : 'Sem posição'}</span><span>{detailStatusLabel(item.detail_status)}</span></div><h3>{item.title || 'Produto sem nome disponível'}</h3><p>{item.source_category || 'Categoria não informada'}</p>{price ? <strong>{price}</strong> : <small>Preço não informado pela fonte</small>}</div><div className="market-product-actions"><button className="text-action" onClick={onSelect}>Ver evidências →</button>{item.product_url && <a href={item.product_url} target="_blank" rel="noreferrer">Abrir fonte</a>}</div>{view === 'list' && <p className="market-list-source">Mercado Livre · {item.observed_at ? formatDetectedAt(item.observed_at) : 'Observação sem data'}</p>}</article>; }
 function MarketProductDrawer({item,history,onClose}:{item:MarketProduct;history:{availableFrom:string|null;complete:boolean};onClose:()=>void}) { const price = formatCurrency(item.price,item.currency); return <div className="drawer-backdrop" role="presentation" onMouseDown={onClose}><aside className="opportunity-drawer market-drawer" role="dialog" aria-modal="true" aria-label={`Detalhes de ${item.title}`} onMouseDown={event => event.stopPropagation()}><button className="drawer-close" onClick={onClose} aria-label="Fechar detalhes">×</button>{item.image_url && <img className="drawer-image" src={item.image_url} alt=""/>}<p className="eyebrow">MERCADO LIVRE · FONTE OFICIAL</p><h2>{item.title || 'Produto sem nome disponível'}</h2><div className="drawer-state"><span>{item.rank ? `#${item.rank} no ranking oficial` : 'Posição não informada'}</span><span>{detailStatusLabel(item.detail_status)}</span></div><h3>Dados observados</h3><dl className="market-detail-list"><div><dt>Categoria</dt><dd>{item.source_category || 'Não informada'}</dd></div><div><dt>Preço</dt><dd>{price || 'Não informado pela fonte'}</dd></div><div><dt>Observado</dt><dd>{item.observed_at ? formatDetectedAt(item.observed_at) : 'Data indisponível'}</dd></div></dl>{item.product_url && <a className="market-official-link" href={item.product_url} target="_blank" rel="noreferrer">Abrir produto na fonte oficial</a>}<h3>Detalhes e evidências</h3><p>{detailStatusExplanation(item)}</p>{item.missing_detail_fields.length > 0 && <p className="market-missing">Não informado: {item.missing_detail_fields.map(marketFieldLabel).join(', ')}.</p>}<h3>Histórico do produto</h3>{history.complete ? <p>Há observações suficientes para a janela selecionada. A evolução será exibida quando houver posições ou preços comparáveis.</p> : <p>Estamos construindo o histórico deste produto.</p>}<details><summary>Detalhes técnicos</summary><dl><div><dt>ID externo</dt><dd>{item.external_id}</dd></div><div><dt>Origem</dt><dd>API oficial do Mercado Livre</dd></div><div><dt>Tipo de ranking</dt><dd>{item.evidence_json.ranking_type || 'Não informado'}</dd></div></dl></details></aside></div>; }
 function marketSourceLabel(status: MarketSource['status']) { return ({OPERACIONAL:'Operacional',AGUARDANDO_AUTORIZACAO:'Aguardando autorização',EM_PREPARACAO:'Em preparação',INDISPONIVEL:'Indisponível'} as Record<MarketSource['status'],string>)[status]; }
