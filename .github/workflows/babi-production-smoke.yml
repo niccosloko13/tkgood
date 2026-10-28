@@ -1,0 +1,21 @@
+name: Babi production read-only smoke test
+on:
+  push:
+    branches: [feat/babi-product-rebuild-v1]
+    paths:
+      - 'scripts/smoke_babi_production.py'
+      - '.github/workflows/babi-production-smoke.yml'
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify Babi production read-only endpoints
+        run: python scripts/smoke_babi_production.py
