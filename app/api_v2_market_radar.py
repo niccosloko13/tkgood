@@ -71,6 +71,17 @@ def market_radar(marketplace: Marketplace | None = None, category: str | None = 
         return {"mode": schedule().mode, "sources": sources, "top_products": selected}
 
 
+@router.get("/offline-imports/{marketplace}")
+def offline_marketplace_products(marketplace: Literal["SHOPEE", "ALIEXPRESS"]):
+    """Read offline imports only. Never mix with official rankings."""
+    from .market_radar.offline_store import MarketImportStore
+    store = hosted_market_store()
+    if store is None:
+        return {"marketplace": marketplace, "mode": "OFFLINE_IMPORT", "products": [],
+                "official_ranking": False, "count": 0}
+    return MarketImportStore(store.database_url).latest(marketplace=marketplace, limit=20)
+
+
 @router.get("/sources")
 def market_radar_sources():
     with db.connect() as con:
