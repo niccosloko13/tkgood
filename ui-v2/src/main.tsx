@@ -126,7 +126,7 @@ function MarketRadar({data, loading, error, retry}: {data: MarketRadarData | nul
 }
 
 function VerifiedSalesWindow({category}:{category:string|null}) {
-  type Entry = {external_id:string;title:string;source_category:string|null;rank:number|null;price:number|null;currency:string|null;observed_at:string;product_url:string|null;image_url:string|null;units_sold_in_window:number|null;visits_in_window:number|null};
+  type Entry = {external_id:string;title:string;source_category:string|null;rank:number|null;price:number|null;currency:string|null;observed_at:string;product_url:string|null;image_url:string|null;units_sold_in_window:number|null;visits_in_window:number|null;rank_movement:number|null;observation_count:number;rank_movement_label:string};
   type Payload = {products:Entry[];observation_count:number;window_hours:number;complete_window:boolean;notice:string};
   const [hours,setHours]=useState('48');
   const [sort,setSort]=useState('ranking');
@@ -152,7 +152,7 @@ function VerifiedSalesWindow({category}:{category:string|null}) {
     <p>Posições do ranking oficial observadas pela Babi no período escolhido. Não são quantidades de vendas. Sem autorização para unidades vendidas ou visitas de concorrentes, os valores aparecem indisponíveis.</p>
     <div className="market-controls"><div className="market-filter">
       <label>Janela<select value={hours} onChange={event=>setHours(event.target.value)}><option value="48">Últimas 48 horas</option><option value="168">Últimos 7 dias</option><option value="720">Últimos 30 dias</option></select></label>
-      <label>Ordenar<select value={sort} onChange={event=>setSort(event.target.value)}><option value="ranking">Posição no ranking</option><option value="recent">Mais recente</option><option value="price_low">Menor preço disponível</option><option value="price_high">Maior preço disponível</option></select></label>
+      <label>Ordenar<select value={sort} onChange={event=>setSort(event.target.value)}><option value="ranking">Posição no ranking</option><option value="rising">Subindo no ranking</option><option value="recent">Mais recente</option><option value="price_low">Menor preço disponível</option><option value="price_high">Maior preço disponível</option></select></label>
       <label>Filtro<select value={top} onChange={event=>setTop(event.target.value)}><option value="">Todas as posições</option><option value="5">Top 5</option><option value="10">Top 10</option><option value="20">Top 20</option></select></label>
     </div></div>
     {loading?<p>Consultando observações…</p>:error?<p>Falha na consulta das observações.</p>:!result?<p>Sem dados.</p>:<>
@@ -163,7 +163,7 @@ function VerifiedSalesWindow({category}:{category:string|null}) {
         <span className="market-rank">{item.rank?'#'+item.rank+' no ranking':'Sem posição'}</span>
         <h3>{item.title}</h3><small>{item.source_category||'Categoria não informada'}</small>
         <p>{item.price!==null&&item.currency?formatCurrency(item.price,item.currency):'Preço indisponível'}</p>
-        <small>Vendas em {hours==='48'?'48h':hours==='168'?'7 dias':'30 dias'}: indisponível · Visitas: indisponível</small>
+        <small>Movimento: {item.rank_movement===null?"Histórico insuficiente":item.rank_movement>0?"Subiu "+item.rank_movement+" posições":item.rank_movement<0?"Caiu "+Math.abs(item.rank_movement)+" posições":"Estável"} · {item.observation_count} observações</small><small>Vendas em {hours==='48'?'48h':hours==='168'?'7 dias':'30 dias'}: indisponível · Visitas: indisponível</small>
         <small>Observado: {formatDetectedAt(item.observed_at)}</small>
         {item.product_url&&<a href={item.product_url} target="_blank" rel="noreferrer">Ver produto na fonte</a>}
         </div>
