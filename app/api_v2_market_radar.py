@@ -108,6 +108,30 @@ def _with_period(payload: dict, period: str) -> dict:
 
 
 
+@router.get("/commercial-growth")
+def commercial_growth(
+    marketplace: Literal["SHOPEE","ALIEXPRESS","MERCADO_LIVRE","TIKTOK_SHOP"]="SHOPEE",
+    hours: Literal[48,168,720]=48,
+):
+    """Counter differences across existing snapshots, with precise timestamps."""
+    from .market_radar.commercial_metrics import hosted_commercial_store,cumulative_growth
+    store=hosted_commercial_store()
+    if not store:
+        return {"marketplace":marketplace,"hours":hours,"products":[],"status":"NO_HOSTED_DATA"}
+    from psycopg.rows import dict_row
+    cutoff=datetime.now(timezone.utc)-timedelta(hours=hours)
+    # Latest baseline before cutoff plus all newer snapshots; bounded query.
+    with store.connect() as con,con.cursor(row_factory=dict_row) as cur:
+        cur.execute("""SELECT marketplace,product_id,metric_name,provider,metric_value,observed_at
+        FROM babi_commercial_metrics WHERE marketplace=%s
+        AND metric_name IN ('historical_sold','views_total')
+        AND observed_at >= %s ORDER BY observed_at DESC LIMIT 3000""",(marketplace,cutoff-timedelta(days=30)))
+        rows=cur.fetchall()
+    return {"marketplace":marketplace,"hours":hours,
+            "products":cumulative_growth(rows,hours=hours)[:50],
+            "status":"OBSERVED_COUNTER_DELTAS_NOT_EXACT_WINDOW_SALES"}
+
+
 @router.get("/commercial-ranking")
 def commercial_ranking(
     marketplace: Literal["SHOPEE","ALIEXPRESS","MERCADO_LIVRE","TIKTOK_SHOP"] = "SHOPEE",
