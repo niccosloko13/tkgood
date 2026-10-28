@@ -64,6 +64,8 @@ from .api_v2_system import router as api_v2_system_router
 app.include_router(api_v2_system_router)
 from .api_v2_market_radar import router as api_v2_market_radar_router
 app.include_router(api_v2_market_radar_router)
+from .tiktok_neon_mirror import router as tiktok_neon_router
+app.include_router(tiktok_neon_router)
 
 @app.get('/assets/visual-identification.js')
 def visual_identification_script():
