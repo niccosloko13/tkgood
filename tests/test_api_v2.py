@@ -70,6 +70,31 @@ def test_market_radar_category_tree_requires_control_and_returns_sanitized_categ
     assert result == {"parent": {"id": "MLB1", "name": "Casa", "is_leaf": False}, "categories": [{"id": "MLB2", "name": "Folha", "is_leaf": False}]}
 
 
+def test_market_radar_diagnostic_is_bounded_and_never_reads_orders(monkeypatch):
+    class Client:
+        def get(self, path, params=None):
+            if path == "/items/MLB123":
+                return {"title": "Item", "thumbnail": "https://image.example/a.jpg", "permalink": "https://ml.example/a", "sold_quantity": 9}
+            if path == "/items/MLB123/prices":
+                return [{"amount": 19.9, "currency_id": "BRL"}]
+            if path == "/items/MLB123/visits/time_window":
+                assert params == {"last": "2", "unit": "day"}
+                return {"total_visits": 42}
+            raise AssertionError(path)
+
+    monkeypatch.setattr(api_v2_market_radar, "_require_market_radar_control", lambda request: None)
+    monkeypatch.setattr(api_v2_market_radar, "MercadoLivreAdapter", lambda: SimpleNamespace(client=Client()))
+    request = api_v2_market_radar.MercadoLivreDiagnosticRequest(records=[
+        {"external_id": "MLB123", "ranking_type": "ITEM"},
+    ])
+    result = api_v2_market_radar.diagnose_mercado_livre_records(request, SimpleNamespace())
+    assert result["orders_checked"] is False and result["snapshots_written"] == 0
+    assert result["records"] == [{"external_id": "MLB123", "ranking_type": "ITEM", "detail_status": "AVAILABLE",
+        "price_status": "AVAILABLE", "visits_status": "AVAILABLE", "sold_quantity_status": "AVAILABLE",
+        "title": "Item", "image_url": "https://image.example/a.jpg", "product_url": "https://ml.example/a",
+        "sold_quantity": 9, "price": 19.9, "currency": "BRL", "visits": 42}]
+
+
 def test_home_read_model_is_empty_and_read_only():
     con = database()
     before = con.total_changes

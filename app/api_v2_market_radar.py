@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta, timezone
 import hmac
 import os
+from typing import Literal
 
 from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import BaseModel, ConfigDict, Field
@@ -118,6 +119,74 @@ class MercadoLivreCollectionRequest(BaseModel):
     category_id: str = Field(min_length=3, max_length=64, pattern="^MLB[0-9]+$")
     collect_best_sellers: bool = True
     collect_trends: bool = True
+
+
+class MercadoLivreDiagnosticRecord(BaseModel):
+    """A bounded, server-side-only read of official commercial fields."""
+    external_id: str = Field(min_length=4, max_length=64, pattern="^MLB(U)?[0-9]+$")
+    ranking_type: Literal["ITEM", "PRODUCT", "USER_PRODUCT"]
+
+
+class MercadoLivreDiagnosticRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    records: list[MercadoLivreDiagnosticRecord] = Field(min_length=1, max_length=5)
+
+
+def _official_probe(client, path: str, *, params: dict[str, str] | None = None) -> tuple[str, object | None]:
+    """Return an auditable availability code without exposing upstream bodies."""
+    try:
+        return "AVAILABLE", client.get(path, params)
+    except MercadoLivreError as exc:
+        return getattr(exc, "code", "EXTERNAL_FAILURE"), None
+
+
+@router.post("/mercado-livre/diagnose-records")
+def diagnose_mercado_livre_records(payload: MercadoLivreDiagnosticRequest, request: Request):
+    """Audit up to five persisted-ranking identities using official read APIs.
+
+    It does not create rankings, snapshots, orders, or any customer data.  The
+    endpoint is operator-protected because it uses the server-held OAuth token.
+    """
+    _require_market_radar_control(request)
+    client = MercadoLivreAdapter().client
+    audited = []
+    for record in payload.records:
+        identifier = record.external_id
+        kind = record.ranking_type
+        detail_path = f"/items/{identifier}" if kind == "ITEM" else (
+            f"/products/{identifier}" if kind == "PRODUCT" else f"/user-products/{identifier}")
+        detail_status, detail = _official_probe(client, detail_path)
+        result: dict[str, object] = {
+            "external_id": identifier, "ranking_type": kind,
+            "detail_status": detail_status,
+            "price_status": "NOT_APPLICABLE", "visits_status": "NOT_APPLICABLE",
+            "sold_quantity_status": "NOT_APPLICABLE",
+        }
+        if isinstance(detail, dict):
+            result["title"] = detail.get("title") or detail.get("name")
+            result["image_url"] = detail.get("thumbnail")
+            result["product_url"] = detail.get("permalink")
+            # This field, if present, is an item's accumulated quantity; it is
+            # never presented as sales in a requested time window.
+            if kind == "ITEM":
+                result["sold_quantity_status"] = "AVAILABLE" if detail.get("sold_quantity") is not None else "UNAVAILABLE"
+                result["sold_quantity"] = detail.get("sold_quantity")
+        if kind == "ITEM":
+            price_status, prices = _official_probe(client, f"/items/{identifier}/prices")
+            result["price_status"] = price_status
+            if isinstance(prices, list):
+                current = next((entry for entry in prices if isinstance(entry, dict) and entry.get("amount") is not None), None)
+                if current:
+                    result["price"] = current.get("amount")
+                    result["currency"] = current.get("currency_id")
+            visits_status, visits = _official_probe(client, f"/items/{identifier}/visits/time_window", params={"last": "2", "unit": "day"})
+            result["visits_status"] = visits_status
+            if isinstance(visits, dict):
+                # Store exactly the source response's aggregate only when it is
+                # explicitly supplied. No conversion or sales inference occurs.
+                result["visits"] = visits.get("total_visits")
+        audited.append(result)
+    return {"records": audited, "orders_checked": False, "snapshots_written": 0}
 
 
 @router.post("/mercado-livre/collect")
