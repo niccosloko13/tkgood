@@ -9,6 +9,7 @@ from app.market_radar.ranking import movement
 from app.market_radar.repository import history, migrate, save_observation
 from app.market_radar.adapters.mercado_livre import (MercadoLivreAdapter, MercadoLivreAuthError,
                                                       MercadoLivreCategoryNotRanked, MercadoLivreClient)
+from app.market_radar.adapters.aliexpress import AliExpressAffiliateAdapter, AliExpressAdapterError
 from app.market_radar.repository import search_trends
 from app.market_radar.service import get_top_products, run_marketplace_collection, sources_read_model
 from app.market_radar import mercado_livre_auth as oauth
@@ -148,6 +149,38 @@ def test_non_leaf_category_is_not_used_to_invent_a_top_twenty():
         adapter.fetch_top_products(category='MLB123')
     except MercadoLivreCategoryNotRanked as exc:
         assert exc.code == 'CATEGORY_NOT_RANKED'
+    else:
+        assert False
+
+
+def test_aliexpress_fixture_adapter_maps_official_affiliate_products_without_claiming_rank_or_sales():
+    fixture = {"aliexpress_affiliate_hotproduct_query_response": {"resp_result": {"result": {"products": {"product": [
+        {"product_id": "100", "product_title": "  Escova  ElÃ©trica ", "product_main_image_url": "https://img.example/100.jpg",
+         "target_sale_price": "12.50", "target_sale_price_currency": "usd", "product_detail_url": "https://www.aliexpress.com/item/100.html",
+         "second_level_category_name": "Home"},
+        {"product_id": "101"},
+    ]}}}}}
+    calls = []
+    adapter = AliExpressAffiliateAdapter(lambda **kwargs: calls.append(kwargs) or fixture)
+    rows = adapter.fetch_top_products(category="casa", limit=99)
+    assert calls == [{"method": "get_hotproducts", "category": "casa", "limit": 20}]
+    assert len(rows) == 1
+    assert rows[0].product.marketplace == Marketplace.ALIEXPRESS
+    assert rows[0].product.title == "Escova ElÃ©trica"
+    assert rows[0].price == 12.5 and rows[0].currency == "USD"
+    assert rows[0].rank is None and rows[0].sales_count is None
+    assert rows[0].evidence["collection_kind"] == "AFFILIATE_HOTPRODUCTS"
+    assert rows[0].evidence["ranking_available"] is False
+    assert adapter.capabilities().supports_rank is False
+
+
+def test_aliexpress_fixture_adapter_stays_unavailable_without_approved_transport():
+    adapter = AliExpressAffiliateAdapter()
+    assert adapter.available is False
+    try:
+        adapter.fetch_top_products(category="casa")
+    except AliExpressAdapterError as exc:
+        assert "not configured" in str(exc)
     else:
         assert False
 

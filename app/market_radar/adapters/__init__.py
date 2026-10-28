@@ -1,10 +1,11 @@
 from .base import UnavailableAdapter
 from .mercado_livre import MercadoLivreAdapter
+from .aliexpress import AliExpressAffiliateAdapter
 from ..models import Marketplace
 
 
-class AliExpressAdapter(UnavailableAdapter):
-    marketplace = Marketplace.ALIEXPRESS
+class AliExpressAdapter(AliExpressAffiliateAdapter):
+    """Default registry entry: no credentials/transport means unavailable."""
 
 
 class ShopeeAdapter(UnavailableAdapter):
