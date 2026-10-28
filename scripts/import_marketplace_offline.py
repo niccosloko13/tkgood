@@ -31,9 +31,12 @@ def main() -> int:
         if args.dry_run:
             print("Dry run: no database connection or writes.")
             return 0
-        url = os.getenv("OAUTH_DATABASE_URL") or os.getenv("DATABASE_URL")
+        url = os.getenv("OAUTH_DATABASE_URL")
         if not url:
             print("No database connection configured; nothing persisted.")
+            return 2
+        if not observations:
+            print("No valid products; nothing persisted.")
             return 2
         store = MarketImportStore(url)
         batch = store.save(observations, source_kind="FIXTURE" if args.fixture else "IMPORTED_FILE")
