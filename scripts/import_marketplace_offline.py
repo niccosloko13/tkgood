@@ -1,7 +1,7 @@
 """Operator-only offline import of legitimately obtained marketplace product files.
 
 Usage (local, with protected DB connection in environment):
-    python scripts/import_marketplace_offline.py --marketplace shopee --file path/to/products.json
+    python -m scripts.import_marketplace_offline --marketplace shopee --file path/to/products.json
 No browser requests, remote scraping or official ranking writes.
 """
 from __future__ import annotations
