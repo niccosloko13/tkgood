@@ -121,6 +121,16 @@ def read_library(*, page: int = 1, page_size: int = 25, text: str | None = None,
                        "creators":sorted({v["creator"] for v in all_rows if v.get("creator")})[:50]},
             "storage":"NEON_MIRROR"}
 
+
+def read_video(video_id: str) -> dict[str, Any] | None:
+    if not configured():
+        return None
+    migrate()
+    with _connect() as con, con.cursor() as cur:
+        cur.execute("SELECT payload FROM babi_tiktok_library_mirror WHERE video_id=%s", (video_id,))
+        row = cur.fetchone()
+    return row[0] if row else None
+
 @router.get("/status")
 def status():
     if not configured():
