@@ -106,6 +106,18 @@ def library(page: int = Query(1, ge=1), page_size: int = Query(25, ge=1, le=50),
 
 @router.get("/library/{video_id}")
 def library_detail(video_id: str):
+    import os
+    if os.environ.get("VERCEL") and os.environ.get("OAUTH_DATABASE_URL"):
+        from .tiktok_neon_mirror import read_library
+        # Mirror is a dedicated view; it does not contain historical
+        # appearances until a subsequent audited migration.
+        from .tiktok_neon_mirror import read_video
+        item = read_video(video_id)
+        if not item:
+            raise HTTPException(404, "Conteúdo não encontrado")
+        return {**item, "appearances": [],
+                "technical": {"video_id": item["video_id"], "data_quality": item["data_quality"],
+                              "history_status": "MIRROR_ONLY"}}
     with connect() as con:
         item = next((_item(row) for row in con.execute(_base_sql(con)).fetchall()
                      if str(row["video_id"] or row["id"]) == str(video_id)), None)
