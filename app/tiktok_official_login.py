@@ -72,6 +72,8 @@ def setup_check(req: Request):
         "redirect_uri_set": redirect.startswith("https://"),
         "redirect_host_matches_babi": bool(redirect and redirect.startswith(f"{req.url.scheme}://{req.url.netloc}/")),
         "redirect_uri_is_callback": redirect.endswith("/api/v2/tiktok-connect/callback"),
+        "redirect_uri_exact_sandbox": redirect == "https://babi-tiktok-sandbox.vercel.app/api/v2/tiktok-connect/callback",
+        "client_key_matches_sandbox": key == "sbawx3z44j9waciu09",
         "encryption_key_valid": encryption_valid,
         "neon_set": bool(db),
         "sandbox_credential_mode": os.environ.get("TIKTOK_LOGIN_ENV", "production") == "sandbox",
