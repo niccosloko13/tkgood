@@ -55,7 +55,7 @@ def _require_config():
     if not settings()[-1]:raise HTTPException(503,"Login TikTok ainda não configurado")
 
 @router.get("/setup-check")
-def setup_check():
+def setup_check(req: Request):
     """Public, non-secret checklist for operator Sandbox readiness."""
     key, secret, redirect, encryption, db, configured = settings()
     encryption_valid = False
@@ -70,12 +70,13 @@ def setup_check():
         "client_key_set": bool(key),
         "client_secret_set": bool(secret),
         "redirect_uri_set": redirect.startswith("https://"),
-        "redirect_host_matches_babi": redirect.startswith("https://babi-product-hunter.vercel.app/"),
+        "redirect_host_matches_babi": bool(redirect and redirect.startswith(f"{req.url.scheme}://{req.url.netloc}/")),
+        "redirect_uri_is_callback": redirect.endswith("/api/v2/tiktok-connect/callback"),
         "encryption_key_valid": encryption_valid,
         "neon_set": bool(db),
         "sandbox_credential_mode": os.environ.get("TIKTOK_LOGIN_ENV", "production") == "sandbox",
         "scope_requested": "user.info.basic",
-        "note": "Status only; never returns keys or tokens. Sandbox uses its own TikTok credentials."
+        "note": "Preview requires its own TikTok Sandbox credentials, Neon URL and callback registered for the same origin. Status only; no secrets."
     }
 
 
